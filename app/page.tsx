@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Bobr } from "@/components/Bobr";
 import { BobrBubble } from "@/components/BobrBubble";
@@ -5,6 +6,8 @@ import { getTopic } from "@/topics";
 import { Situace } from "@/components/Situace";
 import { buildSituaceView } from "@/lib/situace-view";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const impacts = [
   { value: "+1 p. b.", label: "růstu ročně" },

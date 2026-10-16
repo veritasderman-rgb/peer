@@ -10,6 +10,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Cesta do 2035",
   description: "Co se podle strategie stane kdy: datované milníky všech čtrnácti témat na jedné ose od roku 2026 do roku 2035 a za něj, s náběhem přínosu rok po roce.",
+  alternates: { canonical: "/cesta" },
 };
 
 /* Časová osa: milníky s rokem ve studii (data/osa.json), nad nimi náběh přínosu celé strategie. */

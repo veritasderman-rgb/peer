@@ -2,10 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
+import { JsonLd } from "@/components/JsonLd";
+import { webJsonLd } from "@/lib/seo";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
 
+/* metadataBase dělá z relativních cest absolutní URL (OG obrázky, canonical). Adresa viz lib/site.ts. */
 export const metadata: Metadata = {
-  title: { default: "Česko má na víc!", template: "%s · Česko má na víc!" },
-  description: "Hospodářská strategie Pirátské expertní ekonomické rady (PEER) vysvětlená pro běžné lidi. S bobrem, kalkulačkami a plným zněním.",
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: { type: "website", siteName: SITE_NAME, locale: "cs_CZ" },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
 };
 
 /* Písma podle styleguide.pirati.cz: Bebas Neue (nadpisy), Roboto (text), Roboto Condensed (popisky, čísla).
@@ -22,8 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <JsonLd data={webJsonLd()} />
+        <a className="skip" href="#obsah">Přeskočit na obsah</a>
         <SiteNav />
-        <main>{children}</main>
+        <main id="obsah" tabIndex={-1}>{children}</main>
         <SiteFooter />
       </body>
     </html>

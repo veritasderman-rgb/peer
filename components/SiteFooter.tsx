@@ -1,22 +1,49 @@
+import Link from "next/link";
+import { topics } from "@/topics";
+import styles from "./SiteFooter.module.css";
+
+/* Patička = mapa webu: témata, přehledy, o webu, zdroje. Modelové postavy a autorství v jedné větě. */
 export function SiteFooter() {
   return (
-    <footer style={{ borderTop: "1px solid var(--line)", marginTop: "4rem", padding: "2rem 0 3rem", color: "var(--muted)", fontSize: "var(--s-1)" }}>
-      <div className="wrap" style={{ display: "grid", gap: "0.5rem" }}>
-        <p>
-          Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π a dalšími odborníky.
-          Tento web ji převypráví pro běžné lidi; každé číslo má pod sebou zdroj a každá kapitola odkazuje na plné znění.
-        </p>
-        <p>
-          <a href="https://peer.pirati.cz/hospodarska-strategie/" target="_blank" rel="noreferrer">Strategie na peer.pirati.cz</a>
-          {" · "}
-          <a href="https://majak.pirati.cz/documents/647/Piratska_Hospodarska_strategie.pdf" target="_blank" rel="noreferrer">Celé PDF (99 stran)</a>
-          {" · "}
-          <a href="https://www.pirati.cz/" target="_blank" rel="noreferrer">Česká pirátská strana</a>
-        </p>
-        <p>
-          Modelové postavy na webu jsou ilustrační a složené z čísel ve studii. Strategii napsal tým PEER, web postavila AI pod lidským
-          vedením: <a href="/jak-vznikl">jak vznikl tento web</a>.
-        </p>
+    <footer className={styles.footer}>
+      <div className={`wrap ${styles.grid}`}>
+        <div className={styles.col}>
+          <h2 className={styles.h}>Témata</h2>
+          <ol className={styles.temata}>
+            {topics.map((t) => (
+              <li key={t.slug}>
+                <Link href={`/${t.slug}`}>{t.kratkyNazev}</Link>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div className={styles.col}>
+          <h2 className={styles.h}>Přehledy</h2>
+          <ul className={styles.list}>
+            <li><Link href="/dopad">Velký obraz</Link></li>
+            <li><Link href="/cesta">Cesta do 2035</Link></li>
+            <li><Link href="/zaplaceni">Jak se to zaplatí</Link></li>
+            <li><Link href="/videa">Videa Bobr za minutu</Link></li>
+          </ul>
+          <h2 className={styles.h}>O webu</h2>
+          <ul className={styles.list}>
+            <li><Link href="/proc-bobr">Proč bobr</Link></li>
+            <li><Link href="/jak-vznikl">Jak vznikl web a kdo napsal strategii</Link></li>
+          </ul>
+        </div>
+        <div className={styles.col}>
+          <h2 className={styles.h}>Zdroj</h2>
+          <ul className={styles.list}>
+            <li><a href="https://peer.pirati.cz/hospodarska-strategie/" target="_blank" rel="noreferrer">Strategie na peer.pirati.cz</a></li>
+            <li><a href="https://majak.pirati.cz/documents/647/Piratska_Hospodarska_strategie.pdf" target="_blank" rel="noreferrer">Celé PDF (99 stran)</a></li>
+            <li><a href="https://www.pirati.cz/" target="_blank" rel="noreferrer">Česká pirátská strana</a></li>
+          </ul>
+          <p className={styles.note}>
+            Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π
+            a dalšími odborníky. Web ji převypráví pro běžné lidi; každé číslo má pod sebou zdroj. Modelové postavy jsou
+            ilustrační. Web postavila AI pod lidským vedením.
+          </p>
+        </div>
       </div>
     </footer>
   );

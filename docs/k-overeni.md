@@ -109,3 +109,10 @@ Souhrn financování je sestavený jen z textu studie; při skládání vyšly n
 - **regiony**: dopad.json č. 18 („20 % příjmů obcí z místní ekonomiky do 2035“, „sdílená pokladna u ČNB“) v kapitole není; kapitola má „nejméně 20 % RUD (~60 mld. Kč ročně)“ a dobrovolné sdružování přes NRB; „~10 mld. Kč“ (dopad.json č. 8) v kapitole není.
 - **kapital a prumysl** v dopad.json (vyčíslená ani nevyčíslená opatření) vůbec nejsou.
 - Odvození plátce, která nejsou ve studii výslovně: stát doplácí strop dětské skupiny; stát přichází o daň u vyššího paušálu pronajímatelů; část obcí může posunem RUD dostat méně; spotřebitelé platí ETS2 v cenách paliv.
+
+## Sítě členů PEER (data/tym.json)
+- Odkazy jsou jen z lide.pirati.cz, pirati.cz nebo z osobních webů (ověřeno 16. 10. 2026). **Tereza Nislerová, Milan Damborský a Josef Pavlovic** nemají žádný ověřený profil; doplnit po potvrzení od nich.
+- **Milan Damborský**: na Univerzitě Tomáše Bati ve Zlíně působí doc. Ing. Milan Damborský, Ph.D. (fame.utb.cz), ale bez potvrzení, že jde o téhož člověka, odkaz na webu není.
+- **Václav Vislous**: Facebook se liší mezi jeho webem (`facebook.com/vislous`) a profilem na lide.pirati.cz (`facebook.com/vaclavvislous`); web používá odkaz z jeho vlastního webu.
+- **Libor Dušek**: odkaz označený na pirati.cz jako „Mastodon“ vede na Bluesky; web ho uvádí jako Bluesky.
+- **LinkedIn** má ověřený jen Václav Vislous; ostatní profily LinkedIn na svých stránkách neuvádějí.

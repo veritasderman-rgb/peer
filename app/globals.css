@@ -121,3 +121,11 @@ mark { background: var(--sun); color: var(--sun-ink); padding: 0 0.2em; border-r
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* odkaz „Přeskočit na obsah“: viditelný jen při zaměření klávesnicí */
+.skip { position: absolute; left: 1rem; top: -4rem; z-index: 30; background: var(--sun); color: var(--sun-ink); font-family: var(--f-data); font-weight: 700; padding: 0.6rem 1rem; border-radius: 6px; transition: top 0.15s; }
+.skip:focus { top: 0.6rem; outline: 3px solid var(--ink); }
+main:focus { outline: none; }
+
+/* jen pro čtečky obrazovky */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
