@@ -38,8 +38,11 @@ export const MUSIC: AudioFile | null = M.music?.bed ?? null;
 
 /** Dozvuk po konci řeči (s). */
 const TAIL = 0.9;
-/** Háček: řeč začíná až po naběhnutí čísla (s). */
+/** Řeč začíná až po prolnutí scény (s); háček až po naběhnutí čísla. */
+const LEAD = 0.35;
 const HOOK_LEAD = 0.6;
+/** Závěrečná karta s odkazem zůstane na obrazovce nejméně takto dlouho (s). */
+const OUTRO_MIN = 6;
 /** Nejmenší rozestup položek ve scéně se zvukem (snímky). */
 const MIN_GAP = 18;
 
@@ -142,9 +145,9 @@ export function buildTimeline(script: VideoScript): { segments: Segment[]; total
   const narr: Partial<Narration> = script.narration ?? {};
   const parts: { id: SceneId; duration: number; beats: number[]; audio?: Segment["audio"] }[] = [];
   /** délka scény se zvukem: řeč (+ náběh) + dozvuk; nejméně tak, aby poslední položka byla chvíli vidět */
-  const voiced = (id: SceneId, beats: number[], lead = 0) => {
+  const voiced = (id: SceneId, beats: number[], lead = LEAD, min = 0) => {
     const a = voice[id]!;
-    const duration = Math.max(s(lead + a.duration + TAIL), beats[beats.length - 1] + s(1.2) + XFADE);
+    const duration = Math.max(s(lead + a.duration + TAIL), beats[beats.length - 1] + s(1.2) + XFADE, s(min));
     parts.push({ id, duration, beats, audio: { file: a.file, from: s(lead) } });
   };
 
@@ -198,7 +201,7 @@ export function buildTimeline(script: VideoScript): { segments: Segment[]; total
   else parts.push({ id: "dopad", duration: s(2 + read(script.dopad.veta, 3.5, 5.5)), beats: [0, s(1), s(1.6)] });
 
   // 6) outro
-  if (voice.outro) voiced("outro", [0, s(0.6), s(1.2)]);
+  if (voice.outro) voiced("outro", [0, s(0.6), s(1.2)], LEAD, OUTRO_MIN);
   else parts.push({ id: "outro", duration: s(6), beats: [0, s(0.6), s(1.2)] });
 
   const segments: Segment[] = [];
