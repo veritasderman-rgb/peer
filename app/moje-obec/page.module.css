@@ -1,0 +1,30 @@
+.page { display: grid; }
+.section { padding-block: 3.5rem 0; display: grid; gap: 1.25rem; align-content: start; min-width: 0; }
+.last { padding-bottom: 4rem; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 1rem; }
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { font-size: var(--s1); max-width: 46ch; }
+.twoCol { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 1.25rem; align-items: start; }
+.twoCol :global(.prose) { display: grid; gap: 0.9rem; }
+
+.zdroje { list-style: none; margin: 0; padding: 1.1rem 1.2rem; display: grid; gap: 1.1rem; font-size: var(--s-1); min-width: 0; }
+.zdroje li { display: grid; gap: 0.3rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); min-width: 0; overflow-wrap: anywhere; }
+.zdroje li:last-child { padding-bottom: 0; border-bottom: 0; }
+.stitek {
+  display: inline-block;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+}
+.stitekStudie { background: var(--green-soft); border-color: var(--green); }
+.stitekZdroj { background: var(--river-soft); border-color: var(--river); }
+
+.links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+.link { display: grid; gap: 0.3rem; padding: 1rem 1.1rem; text-decoration: none; color: var(--ink); height: 100%; }
+.link:hover { border-color: var(--ink); }
+.link :global(.display) { font-size: var(--s2); }
+
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }

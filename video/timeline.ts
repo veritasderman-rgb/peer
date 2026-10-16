@@ -204,9 +204,11 @@ export function buildTimeline(script: VideoScript): { segments: Segment[]; total
   if (voice.outro) voiced("outro", [0, s(0.6), s(1.2)], LEAD, OUTRO_MIN);
   else parts.push({ id: "outro", duration: s(6), beats: [0, s(0.6), s(1.2)] });
 
+  /* pořadí scén podle scénáře (výchozí: jak byly přidány); scéna, která v pořadí chybí, se vynechá */
+  const ordered = script.poradi ? script.poradi.map((id) => parts.find((p) => p.id === id)!).filter(Boolean) : parts;
   const segments: Segment[] = [];
   let from = 0;
-  for (const p of parts) {
+  for (const p of ordered) {
     segments.push({ ...p, from });
     from += p.duration - XFADE;
   }

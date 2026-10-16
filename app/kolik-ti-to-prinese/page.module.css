@@ -1,0 +1,10 @@
+.page { display: grid; }
+.section { padding-block: 2rem 0; display: grid; gap: 1.25rem; align-content: start; min-width: 0; }
+.last { padding-block: 3.5rem 4rem; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 0.5rem; }
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { font-size: var(--s1); }
+.h2 { font-size: var(--s3); }
+.pravidla { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.6rem; line-height: 1.55; }
+.pravidla code { font-family: var(--f-data); font-size: 0.95em; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }

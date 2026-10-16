@@ -1,0 +1,47 @@
+.page { display: grid; }
+.section { padding-block: 3rem 0; display: grid; gap: 1.1rem; align-content: start; }
+.section h2 { scroll-margin-top: 5rem; }
+.last { padding-bottom: 4rem; }
+
+.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 1rem; }
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { display: grid; gap: 0.7rem; max-width: 52ch; }
+.lede p:first-child { font-size: var(--s1); }
+.lede p { margin: 0; }
+
+/* navigace po skupinách: chipy, na telefonu se zalamují do více řádků */
+.chips { padding-block: 1.5rem 0; }
+.chipList { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px;
+  padding: 0.35rem 0.95rem; border-radius: 999px; border: 2px solid var(--line-strong);
+  background: var(--surface); color: var(--ink); text-decoration: none;
+  font-family: var(--f-data); font-weight: 700; font-size: var(--s-1);
+}
+.chip:hover { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.chipN { font-weight: 400; color: var(--muted); }
+.chip:hover .chipN { color: var(--sun-ink); }
+
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.list > li { scroll-margin-top: 5rem; min-width: 0; }
+.detail { display: grid; }
+.detail[open] { padding-bottom: 1.1rem; gap: 0.9rem; }
+.summary { list-style: none; cursor: pointer; padding: 0.95rem 1.1rem; display: block; }
+.summary::-webkit-details-marker { display: none; }
+.summary:hover { background: var(--paper); }
+.summary:focus-visible { outline: 3px solid var(--sun); outline-offset: -3px; }
+.q { margin: 0; font-size: var(--s1); line-height: 1.25; overflow-wrap: anywhere; }
+.q::after { content: " +"; color: var(--river); font-family: var(--f-display); }
+.detail[open] .q::after { content: " −"; }
+
+.body { display: grid; gap: 0.8rem; padding-inline: 1.1rem; min-width: 0; }
+.odpoved { display: grid; gap: 0.75rem; }
+.odpoved p { margin: 0; line-height: 1.55; overflow-wrap: anywhere; }
+.links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; font-family: var(--f-data); font-size: var(--s-1); }
+.links b { text-transform: uppercase; letter-spacing: 0.06em; }
+.body :global(.src) { margin: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; }
+  .section { padding-block: 2.25rem 0; }
+}

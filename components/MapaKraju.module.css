@@ -1,0 +1,161 @@
+.root {
+  display: grid;
+  gap: 1.1rem;
+  min-width: 0;
+  /* Stupnice od světle žluté (sun) po tmavou řeku (river). Dlaždice mají vlastní barvu textu,
+     takže stupnice je ve světlém i tmavém režimu stejná. */
+  --c0: #fff3c2;
+  --c1: #d6e8b3;
+  --c2: #7cbba0;
+  --c3: #24747f;
+  --c4: #004958;
+  --t0: #000;
+  --t1: #000;
+  --t2: #000;
+  --t3: #fff;
+  --t4: #fff;
+}
+
+.step0 { --bg: var(--c0); --fg: var(--t0); }
+.step1 { --bg: var(--c1); --fg: var(--t1); }
+.step2 { --bg: var(--c2); --fg: var(--t2); }
+.step3 { --bg: var(--c3); --fg: var(--t3); }
+.step4 { --bg: var(--c4); --fg: var(--t4); }
+
+/* Ovládání */
+.controls { display: grid; gap: 0.9rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  font: inherit;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s-1);
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.chip:hover { border-color: var(--ink); }
+.chip:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.chipOn { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
+
+.pick { display: grid; gap: 0.3rem; font-family: var(--f-data); font-weight: 700; font-size: var(--s-1); max-width: 22rem; }
+.pick select {
+  font: inherit;
+  font-weight: 400;
+  font-size: var(--s0);
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  min-height: 44px;
+}
+
+/* Rozložení: na telefonu pod sebou, na šířce vedle sebe */
+.grid { display: grid; gap: 1.1rem; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 880px) {
+  .grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+}
+
+/* Kartogram */
+.mapBox { padding: 1rem 1rem 1.1rem; display: grid; gap: 0.75rem; min-width: 0; }
+.mapHead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.8rem; }
+.popis { font-size: var(--s-1); color: var(--muted); }
+.stitek {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+}
+.stitekStudie { background: var(--green-soft); color: var(--ink); border-color: var(--green); }
+.stitekZdroj { background: var(--river-soft); color: var(--ink); border-color: var(--river); }
+
+.svg { display: block; width: 100%; height: auto; max-width: 560px; margin-inline: auto; overflow: visible; }
+
+.tile { cursor: pointer; outline: none; }
+.bg { fill: var(--bg); stroke: var(--line-strong); stroke-width: 1; transition: transform 0.12s; }
+.ring { fill: none; stroke: transparent; stroke-width: 3; pointer-events: none; }
+.tile:hover .bg { stroke: var(--ink); stroke-width: 2; }
+.tile:focus-visible .ring { stroke: var(--ink); stroke-dasharray: 6 3; }
+.tileOn .bg { stroke: var(--ink); stroke-width: 4; }
+.label { fill: var(--fg); font-family: var(--f-data); font-size: 12.5px; font-weight: 600; pointer-events: none; }
+.value { fill: var(--fg); font-family: var(--f-data); font-size: 19px; font-weight: 700; font-variant-numeric: tabular-nums; pointer-events: none; }
+.dot { fill: var(--ink); stroke: var(--surface); stroke-width: 1.5; pointer-events: none; }
+
+/* Legenda */
+.legend { display: grid; gap: 0.5rem; }
+.legendTitle { font-size: 0.8rem; color: var(--muted); }
+.swatches { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
+.swatch { display: grid; gap: 0.25rem; min-width: 0; }
+.swatchColor { display: block; height: 14px; border-radius: 4px; background: var(--bg); border: 1px solid var(--line-strong); }
+.swatchText { font-family: var(--f-data); font-size: 0.74rem; color: var(--muted); font-variant-numeric: tabular-nums; text-align: center; overflow-wrap: anywhere; }
+
+/* Detail kraje */
+.detail { padding: 1.1rem 1.1rem 1.2rem; display: grid; gap: 0.9rem; min-width: 0; }
+.detailHead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem 1rem; }
+.detailName { font-family: var(--f-display); font-weight: 400; font-size: var(--s2); text-transform: uppercase; line-height: 1; }
+.forget {
+  font: inherit;
+  font-size: var(--s-1);
+  background: none;
+  border: 0;
+  padding: 0.5rem 0;
+  color: var(--river);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+}
+.rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.row { padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: 8px; display: grid; gap: 0.2rem; min-width: 0; }
+.rowOn { border-color: var(--ink); background: var(--paper); }
+.rowTop { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.2rem 0.8rem; }
+.rowName {
+  font: inherit;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s0);
+  background: none;
+  border: 0;
+  padding: 0.25rem 0;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.2em;
+}
+.rowName:hover { text-decoration-color: var(--ink); }
+.rowValue { font-size: var(--s2); font-weight: 700; line-height: 1; }
+.rowSub { font-size: var(--s-1); }
+.rowNar { font-size: 0.8rem; color: var(--muted); }
+.lepsi { color: var(--green); font-weight: 700; }
+.horsi { color: var(--alert); font-weight: 700; }
+.stejne { font-weight: 700; }
+
+.strategie { padding: 0.9rem 1rem; border-left: 4px solid var(--sun); background: var(--paper); border-radius: 0 8px 8px 0; display: grid; gap: 0.5rem; font-size: var(--s-1); }
+.strategie h4 { margin: 0; font-family: var(--f-data); font-size: var(--s0); line-height: 1.2; }
+.temaLink { font-weight: 700; justify-self: start; padding-block: 0.3rem; }
+
+.empty { display: grid; gap: 0.8rem; }
+
+/* Tabulka */
+.tabulka { padding: 0.5rem 1rem; }
+.tabulka summary { cursor: pointer; font-family: var(--f-data); font-weight: 700; padding: 0.6rem 0; }
+.tableWrap { overflow-x: auto; padding-bottom: 0.8rem; }
+.tableWrap table { border-collapse: collapse; width: 100%; font-size: var(--s-1); }
+.tableWrap th, .tableWrap td { padding: 0.45rem 0.6rem; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.tableWrap th[scope="col"] { font-family: var(--f-data); white-space: normal; vertical-align: bottom; }
+.tableWrap th[scope="row"], .tableWrap th:first-child { text-align: left; }
+.colOn { background: var(--paper); font-weight: 700; }
+.trOn th, .trOn td { background: var(--sun); color: var(--sun-ink); }
+.trNar th, .trNar td { border-top: 2px solid var(--ink); font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bg { transition: none; }
+}

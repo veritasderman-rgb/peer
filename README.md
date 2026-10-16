@@ -20,6 +20,20 @@ npm run build    # produkční build
 Projekt je běžná Next.js aplikace v kořeni repa. Ve Vercelu stačí **Add New Project → Import** tohoto repozitáře,
 framework se rozpozná automaticky (Next.js), žádné proměnné prostředí nejsou potřeba. Každý pull request dostane vlastní náhled.
 
+Volitelné proměnné prostředí (`lib/site.ts`): `NEXT_PUBLIC_SITE_URL` (adresa webu), `NEXT_PUBLIC_KONTAKT_EMAIL` a
+`NEXT_PUBLIC_REPO_URL` (kam vede tlačítko „Našel jsi chybu?“), `NEXT_PUBLIC_MEDIA_URL` (videa mimo repo, viz níže).
+
+## Testy a kontrola odkazů
+
+```bash
+npx tsc --noEmit                 # typy
+npm run build && npm test        # Playwright: každá stránka 200, h1, canonical, bez chyb v konzoli a bez posunu do šířky;
+                                 # sitemapa, robots, llms.txt, OG obrázky, video s titulky, 404, výběr situace
+npm run check:links              # externí odkazy ze stránek a dat (výjimky: scripts/link-allow.txt)
+```
+
+Totéž běží v GitHub Actions (`.github/workflows/ci.yml`): testy při každém PR a pushi do `main`, kontrola odkazů každé pondělí.
+
 ## Struktura
 
 | Cesta | Co je v ní |
@@ -45,6 +59,23 @@ npm run video:render -- --only euro,regiony
 
 Render potřebuje Chromium (`REMOTION_BROWSER`, výchozí `/opt/pw-browsers/chromium`); jedno téma trvá asi 6 minut.
 Pozor: Remotion je zdarma pro jednotlivce a malé firmy; pro stranu jako organizaci je potřeba ověřit licenci.
+
+Kromě témat je tu úvodní video `uvod` (celá strategie za minutu, `video/scripts/uvod.ts`), vložené na úvodní stránce
+a v `/videa`. Scénář může změnit pořadí scén (`poradi`), např. zdraví má po zpětné vazbě „proč“ před „problémem“.
+
+### Videa mimo git (Vercel Blob)
+
+Videa a zvuk mají přes 100 MB a v repu nemusí být. `scripts/upload-media.mjs` nahraje `public/video` a `public/audio`
+do Vercel Blob se zachováním cest; web pak stačí přepnout proměnnou:
+
+```bash
+BLOB_READ_WRITE_TOKEN=... npm run media:upload     # vypíše NEXT_PUBLIC_MEDIA_URL=https://....public.blob.vercel-storage.com
+```
+
+Postup: ve Vercelu **Storage → Create → Blob** (veřejný), připojit k projektu (vznikne `BLOB_READ_WRITE_TOKEN`), token
+použít lokálně pro nahrání, do projektu přidat `NEXT_PUBLIC_MEDIA_URL` z výpisu a znovu nasadit. Pak lze soubory
+`public/video/*.mp4` a `*.jpg` smazat z gitu (titulky `.vtt` zůstávají na webu, `<track>` z cizí domény potřebuje CORS).
+Bez proměnné se všechno bere z `public/` jako dosud (`media()` v `lib/site.ts`).
 
 ### Zvuk
 
@@ -74,6 +105,22 @@ Každé video má namluvený komentář a hudební podkres, titulky zůstávají
 - Sdílení: na stránce tématu tlačítka Sdílet (Web Share API na telefonu, jinak Facebook, X, LinkedIn, Bluesky, kopírování odkazu).
 - Sítě členů PEER: `data/tym.json` (jen ověřené odkazy z lide.pirati.cz, pirati.cz nebo osobních webů; jinak `null`),
   zobrazuje se na `/jak-vznikl` a na kartě garanta tématu.
+- Pro sdílení (`/pro-sdileni`, `data/sdileni.json`): hotové příspěvky pro Facebook, X, Instagram a LinkedIn ke každému
+  tématu, s odkazy na reel, široké video a náhled; strojově `/pro-sdileni/balicek.json`.
+- Pro média (`/pro-media`, `data/media.json`): shrnutí na jednu stranu, 14 čísel se zdroji, citace garantů, tým, loga
+  a ověřené kontakty (tisková mluvčí z pirati.cz/kontakt); textová verze `/pro-media/souhrn.txt`.
+- English (`/en`, `data/en.json`): jednostránkové shrnutí přeložené DeepL a ručně upravené; odkazy vedou na české stránky.
+
+## Další stránky
+
+- `/kolik-ti-to-prinese` (`lib/kviz.ts`, `components/Kviz.tsx`): pět otázek o životní situaci, výsledek jen z čísel studie,
+  odpovědi v hashi adresy (neodcházejí na server), obrázek výsledku ke stažení.
+- `/otazky` (`data/otazky.json`): otázky a námitky, odpovědi jen ze studie, s přiznanými mezerami a odkazem na téma;
+  strukturovaná data FAQPage.
+- `/moje-obec` (`data/kraje.json`, `components/MapaKraju.tsx`): mapa krajů; studie čísla po krajích skoro nemá, proto jsou
+  to aktuální data veřejných zdrojů (exekuce, nezaměstnanost, mzdy, HDP) a stránka to říká.
+- „Našel jsi chybu?“ (`components/NahlasitChybu.tsx`): předvyplněný e-mail a nové issue na GitHubu, u garanta tématu,
+  na `/jak-vznikl` a v patičce.
 
 ## Jak přidat další téma
 

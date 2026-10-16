@@ -40,6 +40,8 @@ export type VideoScript = {
   slug: string;
   titulek: string;
   narration?: Narration;
+  /* pořadí scén; výchozí je hook, problem, proc, navrh, dopad, outro. Scénář může dát „proč“ před „problém“. */
+  poradi?: ("hook" | "problem" | "proc" | "navrh" | "dopad" | "outro")[];
   hook: { cislo: string; jednotka: string; veta: string };
   problem: { veta: string; cislo?: string }[];
   proc: string[];

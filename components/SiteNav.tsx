@@ -11,8 +11,11 @@ const polozky = [
   { href: "/dopad", label: "Velký obraz" },
   { href: "/cesta", label: "Cesta do 2035" },
   { href: "/zaplaceni", label: "Jak se to zaplatí" },
-  { href: "/proc-bobr", label: "Proč bobr" },
-  { href: "/jak-vznikl", label: "Jak vznikl web" },
+  { href: "/kolik-ti-to-prinese", label: "Kolik ti to přinese" },
+  { href: "/moje-obec", label: "Můj kraj" },
+  { href: "/otazky", label: "Otázky a námitky" },
+  { href: "/jak-vznikl", label: "O webu" },
+  { href: "/en", label: "English" },
 ];
 
 /* Hlavička: na počítači všechny odkazy v řadě, na telefonu tlačítko Menu a seznam pod ním.

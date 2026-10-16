@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "video:studio": "remotion studio video/index.ts",
-    "video:render": "node scripts/render-videos.mjs"
+    "video:render": "node scripts/render-videos.mjs",
+    "test": "playwright test",
+    "check:links": "node scripts/check-links.mjs --allow-list scripts/link-allow.txt",
+    "media:upload": "node scripts/upload-media.mjs"
   },
   "dependencies": {
     "motion": "^14.3.0",
@@ -16,6 +19,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@remotion/bundler": "4.0.535",
     "@remotion/cli": "4.0.535",
     "@remotion/fonts": "4.0.535",
@@ -23,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vercel/blob": "^2.8.2",
     "esbuild": "0.28.1",
     "remotion": "4.0.535",
     "typescript": "^5"

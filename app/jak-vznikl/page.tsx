@@ -3,7 +3,9 @@ import Link from "next/link";
 import { Bobr } from "@/components/Bobr";
 import { BobrBubble } from "@/components/BobrBubble";
 import { Socialni } from "@/components/Socialni";
+import { NahlasitChybu } from "@/components/NahlasitChybu";
 import { clenove, tymPoznamka } from "@/lib/tym";
+import { topics } from "@/topics";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -12,19 +14,37 @@ export const metadata: Metadata = {
   alternates: { canonical: "/jak-vznikl" },
 };
 
-/* Členové PEER podle peer.pirati.cz (stav k říjnu 2026). */
+/* Co AI udělala, v pořadí, jak to šlo. Čísla jsou skutečná (počty stránek, videí, kalkulaček z registru). */
+const kroky = [
+  { n: "01", nazev: "Přečetla studii", text: "99 stran, 14 kapitol, přes 200 odkazů na zdroje." },
+  { n: "02", nazev: "Vytěžila čísla", text: "Každé číslo se zdrojem do strojově čitelných dat. Z nich čte text, grafy i videa." },
+  { n: "03", nazev: "Napsala lidskou verzi", text: "Tři hloubky čtení, modelové postavy, slovník, řádek „pro tebe“ u každého opatření." },
+  { n: "04", nazev: "Nakreslila bobra", text: "Pět nálad, klacík, pirátský klobouk. Čistý SVG, animace v CSS." },
+  { n: "05", nazev: "Naprogramovala web", text: "Grafy, kalkulačky, scrollytelling, tmavý režim, mobil. A otestovala ho." },
+  { n: "06", nazev: "Natočila a namluvila videa", text: "Scénář z dat, render, syntetický hlas, hudba, titulky. Široké i na výšku." },
+];
 
 /* Odhad ceny pilotní stránky u české agentury. Je to odhad bez zdroje, založený na běžných sazbách
    (grafik a animátor 800–1 500 Kč/h, vývojář 1 200–2 000 Kč/h). Rozpětí je schválně široké. */
 const odhad = [
-  { polozka: "Maskot: návrh, 5 nálad, varianta s klacíkem, animace", lidi: "ilustrátor a animátor, 5–8 dní", cena: "60–120 tis. Kč" },
-  { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč" },
-  { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč" },
-  { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč" },
-  { polozka: "Řízení, korektury, nasazení", lidi: "projektový manažer", cena: "30–50 tis. Kč" },
+  { polozka: "Maskot: návrh, 5 nálad, varianta s klacíkem, animace", lidi: "ilustrátor a animátor, 5–8 dní", cena: "60–120 tis. Kč", max: 120 },
+  { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč", max: 350 },
+  { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč", max: 60 },
+  { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč", max: 110 },
+  { polozka: "Řízení, korektury, nasazení", lidi: "projektový manažer", cena: "30–50 tis. Kč", max: 50 },
 ];
 
+const initials = (jmeno: string) =>
+  jmeno
+    .split(" ")
+    .filter(Boolean)
+    .map((s) => s[0])
+    .slice(0, 2)
+    .join("");
+
 export default function JakVzniklPage() {
+  const pocetKalkulacek = topics.reduce((n, t) => n + (t.kalkulacky?.length ?? 0), 0);
+  const pocetVidei = topics.filter((t) => t.video).length * 2;
   return (
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`}>
@@ -32,13 +52,39 @@ export default function JakVzniklPage() {
           <p className="eyebrow">O webu</p>
           <h1>Strategii napsali lidé. Web postavila AI.</h1>
           <p className={styles.lede}>
-            Na původním dokumentu pracoval celý tým ekonomů a odborníků. Tenhle web k němu napsala, nakreslila,
-            naprogramovala a animovala umělá inteligence. Jeden člověk ji řídil a kontroloval.
+            Na studii pracoval celý tým ekonomů a odborníků. Tenhle web k ní napsala, nakreslila, naprogramovala
+            a namluvila umělá inteligence. Jeden člověk ji zadal, řídil a kontroloval.
           </p>
         </div>
         <BobrBubble mood="thinking" side="left">
           Já jsem taky z AI. Nakreslila mě za pár hodin, včetně klobouku.
         </BobrBubble>
+      </section>
+
+      {/* dva sloupce: lidé vs. AI, v číslech */}
+      <section className={`wrap ${styles.section}`} aria-label="Lidé a AI v číslech">
+        <div className={styles.duo}>
+          <div className={`card ${styles.duoCard}`}>
+            <p className="eyebrow">Studie · lidé</p>
+            <p className={`display ${styles.duoBig}`}>8 autorů</p>
+            <ul className={styles.duoList}>
+              <li><b>99</b> stran</li>
+              <li><b>14</b> kapitol</li>
+              <li><b>200+</b> odkazů na zdroje</li>
+              <li><b>měsíce</b> práce expertní rady</li>
+            </ul>
+          </div>
+          <div className={`card ${styles.duoCard} ${styles.duoAi}`}>
+            <p className="eyebrow">Web · AI</p>
+            <p className={`display ${styles.duoBig}`}>1 člověk, pár dní</p>
+            <ul className={styles.duoList}>
+              <li><b>{topics.length}</b> témat ve třech hloubkách</li>
+              <li><b>{pocetVidei}</b> namluvených videí</li>
+              <li><b>{pocetKalkulacek}</b> kalkulaček</li>
+              <li><b>1</b> bobr v pěti náladách</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="tym">
@@ -48,13 +94,26 @@ export default function JakVzniklPage() {
           a dalšími odborníky. Členové rady a jejich témata:
         </p>
         <ul className={styles.team}>
-          {clenove.map((t) => (
-            <li key={t.jmeno} className="card">
-              <span className={`display ${styles.name}`}>{t.jmeno}</span>
-              <span className={`muted ${styles.role}`}>{t.role}</span>
-              <Socialni jmeno={t.jmeno} />
-            </li>
-          ))}
+          {clenove.map((c) => {
+            const temata = topics.filter((t) => c.temata.includes(t.slug));
+            return (
+              <li key={c.jmeno} className={`card ${styles.clen}`}>
+                <div className={styles.avatar} aria-hidden="true">{initials(c.jmeno)}</div>
+                <div className={styles.clenBody}>
+                  <p className={`display ${styles.name}`}>{c.jmeno}</p>
+                  <p className={`muted ${styles.role}`}>{c.role}</p>
+                  {temata.length > 0 && (
+                    <p className={styles.temata}>
+                      {temata.map((t) => (
+                        <Link key={t.slug} href={`/${t.slug}`}>{t.kratkyNazev}</Link>
+                      ))}
+                    </p>
+                  )}
+                  <Socialni jmeno={c.jmeno} compact />
+                </div>
+              </li>
+            );
+          })}
         </ul>
         <p className="src">
           <b>Zdroj:</b> <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">peer.pirati.cz</a>, představení rady 2. 9. 2026. {tymPoznamka}
@@ -62,25 +121,31 @@ export default function JakVzniklPage() {
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="ai">
-        <h2 id="ai">Kdo postavil web</h2>
-        <div className={styles.twoCol}>
-          <div className="prose">
+        <h2 id="ai">Co udělala AI</h2>
+        <p className="prose muted">
+          Web zadal a řídil <a href="https://josefpavlovic.cz" target="_blank" rel="noreferrer">Josef Pavlovic</a>, člen PEER.
+          Různé části dělaly různě silné modely: jednodušší vytěžování dat ty levnější, kreslení a skládání stránek ty
+          nejsilnější. Přesně tak, jak strategie píše o práci obecně: nejlepší nástroj na každou práci, ne nejdražší na všechno.
+        </p>
+        <ol className={styles.kroky}>
+          {kroky.map((k) => (
+            <li key={k.n} className={`card ${styles.krok}`}>
+              <span className={`display ${styles.krokN}`}>{k.n}</span>
+              <h3 className={styles.krokH}>{k.nazev}</h3>
+              <p className={styles.krokP}>{k.text}</p>
+            </li>
+          ))}
+        </ol>
+        <div className={styles.rucime}>
+          <Bobr mood="neutral" size={120} />
+          <div className={`card ${styles.rucimeBox}`}>
+            <h3>Co AI neumí: ručit za čísla</h3>
             <p>
-              Celý web vznikl za jeden den s pomocí AI (Claude). Jeden člověk zadal, co má web dělat, vybral bobra a klobouk a
-              kontroloval výsledek. AI přečetla 99 stran studie, vytěžila z ní čísla a zdroje, napsala lidskou verzi textu,
-              nakreslila a rozpohybovala bobra, naprogramovala grafy a kalkulačky a web otestovala na mobilu i na počítači.
+              Každé číslo na webu má pod sebou zdroj ze studie a plné znění kapitoly je o jedno kliknutí dál. Za správnost
+              strategie ručí její autoři, ne web. Kde si studie odporuje nebo kde jsme museli něco dopočítat, je to napsané
+              a garanti to kontrolují.
             </p>
-            <p>
-              Různé části dělaly různě silné modely: jednodušší vytěžování dat levnější, kreslení a skládání stránky ty nejsilnější.
-              Přesně tak, jak strategie píše o práci obecně: nejlepší nástroj na každou práci, ne nejdražší na všechno.
-            </p>
-            <p>
-              Co AI neumí: ručit za čísla. Každé číslo na webu má pod sebou zdroj ze studie a plné znění kapitoly je o jedno
-              kliknutí dál. Za správnost strategie ručí její autoři, ne web.
-            </p>
-          </div>
-          <div className={styles.bobrCol}>
-            <Bobr mood="happy" pointing size={220} />
+            <NahlasitChybu kde="Jak vznikl web" kompaktni />
           </div>
         </div>
       </section>
@@ -91,53 +156,51 @@ export default function JakVzniklPage() {
           Odhad, co by pilotní stránka o bydlení stála u běžné české agentury. Je to náš odhad podle obvyklých hodinových
           sazeb, žádná nabídka jsme nepoptávali.
         </p>
-        <div className={styles.tableWrap}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Co</th>
-                <th>Kdo a jak dlouho</th>
-                <th>Odhad</th>
-              </tr>
-            </thead>
-            <tbody>
-              {odhad.map((o) => (
-                <tr key={o.polozka}>
-                  <td>{o.polozka}</td>
-                  <td className="muted">{o.lidi}</td>
-                  <td className="num">{o.cena}</td>
-                </tr>
-              ))}
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Pilotní stránka celkem</td>
-                <td className="muted">5–7 týdnů práce</td>
-                <td className={`num ${styles.total}`}>360–690 tis. Kč</td>
-              </tr>
-              <tr>
-                <td>Celý web se 13 tématy a videi</td>
-                <td className="muted">půl roku práce týmu</td>
-                <td className={`num ${styles.total}`}>2–4 mil. Kč</td>
-              </tr>
-            </tfoot>
-          </table>
+        <ol className={styles.odhad}>
+          {odhad.map((o) => (
+            <li key={o.polozka} className={styles.polozka}>
+              <div className={styles.polozkaText}>
+                <span>{o.polozka}</span>
+                <span className={`muted ${styles.polozkaLidi}`}>{o.lidi}</span>
+              </div>
+              <div className={styles.bar} aria-hidden="true">
+                <span className={styles.barFill} style={{ width: `${Math.round((o.max / 350) * 100)}%` }} />
+              </div>
+              <span className={`num ${styles.polozkaCena}`}>{o.cena}</span>
+            </li>
+          ))}
+        </ol>
+        <div className={styles.souhrn}>
+          <div className={`card ${styles.souhrnCard}`}>
+            <span className="eyebrow">Pilotní stránka</span>
+            <span className={`display ${styles.souhrnBig}`}>360–690 tis. Kč</span>
+            <span className="muted">5–7 týdnů práce pěti lidí</span>
+          </div>
+          <div className={`card ${styles.souhrnCard}`}>
+            <span className="eyebrow">Celý web se 14 tématy a videi</span>
+            <span className={`display ${styles.souhrnBig}`}>2–4 mil. Kč</span>
+            <span className="muted">půl roku práce týmu</span>
+          </div>
+          <div className={`card ${styles.souhrnCard} ${styles.souhrnAi}`}>
+            <span className="eyebrow">Tenhle web</span>
+            <span className={`display ${styles.souhrnBig}`}>předplatné AI</span>
+            <span>a pár dní jednoho člověka; hlas a hudba za kredity za pár stokorun</span>
+          </div>
         </div>
         <div className={`card ${styles.sunBox}`}>
-          <p className={`display ${styles.sunBig}`}>Pilot: 1 den a 1 člověk místo 6 týdnů a 5 lidí</p>
+          <p className={`display ${styles.sunBig}`}>Ušetřené peníze nejsou cíl. Cíl je pracovat chytře.</p>
           <p>
-            Stál zhruba cenu jednodenního předplatného AI a jeden pracovní den. Namluvení všech čtrnácti videí a hudba k nim
-            vyšly na kredity za pár stokorun. Ušetřené peníze nejsou cíl. Cíl je, aby se
-            s nápady dalo pracovat rychle a levně. Strategie říká, že Česko musí přestat vydělávat levnou prací a začít
-            vydělávat chytrou. Tenhle web je malý důkaz, že to jde.
+            Strategie říká, že Česko musí přestat vydělávat levnou prací a začít vydělávat chytrou. Tenhle web je malý
+            důkaz, že to jde: s nápady se dá pracovat rychle, levně a poctivě, s každým číslem na dosah zdroje.
           </p>
         </div>
       </section>
 
-      <section className={`wrap ${styles.section}`}>
-        <p>
-          <Link className="btn" href="/bydleni">Podívej se na výsledek: Bydlení</Link>{" "}
+      <section className={`wrap ${styles.section} ${styles.last}`}>
+        <p className={styles.actions}>
+          <Link className="btn" href="/bydleni">Podívej se na výsledek: Bydlení</Link>
           <Link className="btn secondary" href="/proc-bobr">Proč bobr</Link>
+          <Link className="btn secondary" href="/videa">Videa</Link>
         </p>
       </section>
     </article>

@@ -1,0 +1,75 @@
+/* Kvíz: otázky jako čipy (vzor components/Situace.module.css), výsledek jako karty. Telefon první. */
+.form { display: grid; gap: 1.1rem; min-width: 0; scroll-margin-top: 5rem; }
+/* fieldset jako blok a legenda „float“: legenda se tak chová jako běžný nadpis uvnitř rámečku */
+.otazka { margin: 0; padding: 1rem 1.1rem 1.1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); display: block; min-width: 0; }
+.legend { float: left; width: 100%; margin: 0 0 0.75rem; padding: 0; font-family: var(--f-data); font-weight: 700; font-size: var(--s1); line-height: 1.25; display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+.legend + * { clear: both; }
+.cislo { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-size: var(--s-1); flex: 0 0 auto; }
+.nepovinne { font-weight: 400; color: var(--muted); font-size: var(--s-1); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; min-width: 0; }
+.chip { position: relative; display: inline-flex; max-width: 100%; cursor: pointer; }
+.radio { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
+.face {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s-1);
+  line-height: 1.3;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  border: 2px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  transition: background 0.15s, border-color 0.15s;
+  overflow-wrap: anywhere;
+}
+.chip:hover .face { border-color: var(--ink); }
+.radio:focus-visible + .face { outline: 3px solid var(--sun); outline-offset: 2px; border-color: var(--ink); }
+.radio:checked + .face { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
+.radio:checked + .face::before { content: "✓ "; }
+
+.mzdaPozn { margin: 0.6rem 0 0; }
+.akce { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; }
+.pocet { font-family: var(--f-data); font-size: var(--s-1); }
+.chyba { margin: 0; min-height: 1px; color: var(--alert); font-family: var(--f-data); font-weight: 700; font-size: var(--s-1); }
+.chyba:empty { display: none; }
+
+/* výsledek */
+.vysledek { display: grid; gap: 1.5rem; min-width: 0; }
+.hlava { display: grid; gap: 0.5rem; }
+.nadpis { font-size: var(--s3); scroll-margin-top: 5rem; }
+.nadpis:focus { outline: none; }
+.nadpis:focus-visible { outline: 3px solid var(--sun); outline-offset: 4px; }
+.souhrn { font-family: var(--f-data); font-size: var(--s-1); }
+.bobr { max-width: 100%; }
+
+.karty { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.karta { padding: 1.1rem 1.15rem; display: grid; gap: 0.55rem; align-content: start; min-width: 0; border-top: 6px solid var(--sun); }
+.kartaPrumer { border-top-color: var(--river); background: var(--river-soft); }
+.stitek { font-family: var(--f-data); font-size: var(--s-1); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: var(--river); }
+.kartaNadpis { font-size: var(--s1); }
+.hodnota { font-size: var(--s2); line-height: 1; overflow-wrap: anywhere; }
+.poznamka { font-size: var(--s-1); line-height: 1.5; }
+.zdroj { line-height: 1.45; overflow-wrap: anywhere; }
+.pole { font-family: var(--f-data); }
+.odkaz { font-family: var(--f-data); font-weight: 700; font-size: var(--s-1); justify-self: start; }
+
+.stoji { padding: 1.1rem 1.15rem; display: grid; gap: 0.7rem; border-top: 6px solid var(--alert); min-width: 0; }
+.stojiNadpis { font-family: var(--f-display); font-weight: 400; text-transform: uppercase; font-size: var(--s2); line-height: 1.05; }
+.stojiUvod { font-size: var(--s-1); max-width: var(--prose); }
+.stojiSeznam { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.7rem; font-size: var(--s-1); line-height: 1.5; }
+.proc { display: block; font-family: var(--f-data); font-weight: 700; }
+.kolik { display: inline-block; margin-left: 0.4rem; padding: 0 0.4rem; border-radius: 4px; background: var(--alert-soft); font-weight: 700; font-size: 0.95em; }
+.stojiZdroj { display: block; overflow-wrap: anywhere; }
+
+.sdilet { padding: 1.1rem 1.15rem; display: grid; gap: 1rem; min-width: 0; }
+.obrazek { display: grid; gap: 0.8rem; justify-items: start; }
+.platno { display: block; width: 100%; max-width: 420px; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; border: 1px solid var(--line); background: var(--sun); }
+.sdiletPozn { margin: 0; }
+.textBtn { font: inherit; font-weight: 700; color: var(--river); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 0.15em; cursor: pointer; }
+.textBtn:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+
+@media (max-width: 420px) {
+  .otazka { padding-inline: 0.85rem; }
+  .face { padding: 0.5rem 0.8rem; }
+}

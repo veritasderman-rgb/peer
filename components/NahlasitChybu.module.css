@@ -1,0 +1,5 @@
+.root { display: grid; gap: 0.6rem; padding: 1rem 1.1rem; border: 1px dashed var(--line-strong); border-radius: var(--radius); font-size: var(--s-1); }
+.text { margin: 0; line-height: 1.5; }
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.btn { padding: 0.4rem 0.9rem; font-size: var(--s-1); }
+.kompaktni { padding: 0; border: 0; }
