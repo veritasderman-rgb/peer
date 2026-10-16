@@ -41,7 +41,15 @@ export function TopicPage({ t }: { t: TopicConfig }) {
         <section className={`wrap ${styles.section}`} id="video" aria-labelledby="video-h">
           <p className="eyebrow">1 minuta</p>
           <h2 id="video-h">Bobr za minutu</h2>
-          <TopicVideo wide={t.video.wide} reel={t.video.reel} poster={t.video.poster} titulek={t.video.titulek} popis={t.video.popis} />
+          <TopicVideo
+            wide={t.video.wide}
+            reel={t.video.reel}
+            poster={t.video.poster}
+            titulek={t.video.titulek}
+            popis={t.video.popis}
+            titulky={t.video.titulky}
+            prepis={t.video.prepis}
+          />
         </section>
       )}
 

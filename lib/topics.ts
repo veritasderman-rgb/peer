@@ -83,6 +83,7 @@ export type TopicConfig = {
   plneZneni: Blok[];
   zdroje: { index: number; citace: string }[];
   slovnik: { pojem: string; vysvetleni: string }[];
-  video?: { wide: string; reel: string; poster?: string; titulek: string; popis?: string };
+  /* titulky = WebVTT k namluvenému komentáři (scripts/captions.mjs), prepis = odstavce komentáře pod přehrávačem */
+  video?: { wide: string; reel: string; poster?: string; titulek: string; popis?: string; titulky?: string; prepis?: string[] };
   dalsi?: string;
 };
