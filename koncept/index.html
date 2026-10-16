@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Koncept Česko má na víc</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +28,7 @@
   --river:#57b3bd; --river-soft:#16343a; --sun:#fec934; --sun-ink:#000000; --alert:#f1ae7b; --alert-soft:#3a2418; color-scheme:dark }
 
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.6;
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.6;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 4rem}
 .wrap{max-width:1080px;margin-inline:auto}
 .prose{max-width:68ch}
@@ -175,6 +180,8 @@ td b{font-family:var(--f-display)}
   @keyframes wave{0%,70%,100%{transform:rotate(0)}80%{transform:rotate(-8deg)}90%{transform:rotate(4deg)}}
 }
 </style>
+</head>
+<body>
 
 <div class="wrap">
 
@@ -634,3 +641,5 @@ td b{font-family:var(--f-display)}
   link('hyp-p-r','hyp-p',hypCalc); link('hyp-n-r','hyp-n',hypCalc); hypCalc();
 })();
 </script>
+</body>
+</html>
