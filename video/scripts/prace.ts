@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "prace",
   titulek: "Proč je u nás levná práce past?",
+  narration: {
+    hook: "Minimální mzda je dvacet dva tisíce čtyři sta korun, čtyřicet tři procenta průměru. Polsko, Litva i Chorvatsko mají víc.",
+    problem: "Až osmdesát procent minimálkářů má nárok na dávky. Na rekvalifikace šlo pět tisícin procenta výkonu ekonomiky, vyspělé země dávají desetinu. Dospělí se vzdělávají nejméně v Evropské unii, dvacet jedna celá dvě procenta proti třiceti devíti a půl.",
+    proc: "Levná montovna dochází, stát dotuje nízké mzdy a zamrzlý trh práce drží mzdy dole.",
+    navrh: "Flexicurity po česku: měsíc výpovědi v prvním roce a osmdesát procent podpory dva měsíce. Minimální mzda půjde nahoru, jak radí vyspělé země. A víc peněz na rekvalifikace a vzdělávací účty.",
+    dopad: "Minimálka na polovinu průměru a rekvalifikace na úroveň vyspělých zemí.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "22 400 Kč",
     jednotka: "minimální mzda",

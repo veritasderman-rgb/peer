@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "stat",
   titulek: "Stát jako lídr",
+  narration: {
+    hook: "Z téměř devíti tisíc služeb státu je plně digitálních jen osmnáct procent. Většina zůstává na papíře.",
+    problem: "Přes polovinu služeb je pořád papírových. Padesát tři procenta systémů vzniklo bez soutěže a provoz stojí osm a půl miliardy korun ročně. Jeden systém na dotace stál dvě miliardy sto milionů, v komerci sto až sto dvacet milionů.",
+    proc: "Stát digitalizuje zlomek, systémy jsou i z devadesátých let, platí se pořád stejnému dodavateli a každá změna stojí miliardy.",
+    navrh: "Finanční úřad, sociální zabezpečení a pojišťovna se sejdou v jednom inkasním místě. Staré systémy digitalizujeme znovu a líp, bez závislosti na jednom dodavateli. Velké investice projdou revizí v zákoně.",
+    dopad: "Stát dokončí včas tisíc čtyři sta služeb a finance půjdou přes jedno místo.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "18 %",
     jednotka: "státních služeb je digitálních",

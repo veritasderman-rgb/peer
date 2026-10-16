@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "regiony",
   titulek: "Úspěšné regiony",
+  narration: {
+    hook: "Z místní ekonomiky mají obce jen dvě procenta příjmů, v Evropské unii hůř jen v Řecku.",
+    problem: "Obce berou ze státu devadesát sedm až devadesát osm procent peněz. Na účtech leží tři sta až čtyři sta miliard, investice čekají na dotace. Čtyři tisíce sedm set malých obcí nemá odborníky.",
+    proc: "Obec z rozvoje nic nemá, peníze si hoví na účtech, malé obce nezvládnou projekty a mladí odcházejí.",
+    navrh: "Obec dostane podíl z rozvoje, nejméně dvacet procent daní se naváže na místní ekonomiku. Malé obce se dobrovolně spojí a zajistí odborníky. Obecní peníze půjdou do společného fondu u Národní rozvojové banky pro levnější úvěry.",
+    dopad: "Šedesát miliard korun ročně se naváže na místní ekonomiku a rozpočet to skoro nestojí.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "2 %",
     jednotka: "příjmů obcí z místní ekonomiky",

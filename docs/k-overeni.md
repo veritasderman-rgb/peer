@@ -79,3 +79,14 @@ je tak označuje; čísla v jejich příbězích jsou ze studie.
 
 ## Stránka /jak-vznikl
 - Odhad ceny webu „postaru“ (300–580 tis. Kč za pilot, 2–4 mil. Kč za celek) je redakční odhad podle běžných sazeb, žádná nabídka nebyla poptána. Stránka to uvádí.
+
+## Namluvený komentář videí (všechna témata)
+Komentář ve videích (`narration` ve `video/scripts/<slug>.ts`) je kratší než text na obrazovce, aby se vešel do minuty. Čísla čte slovy. Odchylky od obrazu k odsouhlasení:
+- **prace**: v mluvě chybí letopočet 2030 a srovnání vzdělávání dospělých u minimální mzdy; sazby 0,005 % a 0,1 % HDP se čtou „pět tisícin procenta“ a „desetina“.
+- **stat**: chybí podíl 30 % hybridních služeb, vzor Slovenska a Dánska a „za čtyři roky“ u drahého systému.
+- **vzdelanost**: chybí srovnání školek s vyspělými zeměmi (24 %).
+- **zdravi**: v části „proč“ chybí srovnání nemocnic s EU; v návrhu zůstalo „evropský podíl rozpočtu“.
+- **zeny**: strop dětské skupiny se čte „nejvýš 3 750 Kč“ bez „cca“; částka 7 466 Kč se nečte.
+- **oligarchie**: strop 100 tisíc eur zazní až v části „co to přinese“.
+- **bydleni** a **energie**: „2,7×“ se čte „skoro třikrát“.
+- Outro je všude stejné („Celou strategii najdeš na webu Česko má na víc.“), doména se nečte.

@@ -5,6 +5,14 @@ import type { VideoScript } from "../../lib/topics";
 export const script: VideoScript = {
   slug: "bydleni",
   titulek: "Bydlení",
+  narration: {
+    hook: "Hádej, kolik stojí nový byt. Patnáct celá jedna ročních platů, nejvíc v celé Evropské unii.",
+    problem: "Ceny bytů za deset let skočily o dvě stě čtyřicet šest procent, mzdy jen o osmdesát šest. Dvě stě tisíc bytů stojí prázdných. A Praha jich staví skoro třikrát míň než Varšava.",
+    proc: "Pozemky leží ladem a povolení trvá roky, takže se staví málo. Ceny i nájmy rostou třikrát rychleji než mzdy.",
+    navrh: "Obec dostane z dépéhá od dvou set deseti do pěti set šedesáti tisíc korun za nový byt. Povolení do půl roku, a když úřad mlčí, platí souhlas. Víc bytů u zastávek a dvakrát víc obecních.",
+    dopad: "Padesát tisíc nových bytů ročně a byt pod deset ročních platů místo patnácti.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "15,1",
     jednotka: "ročních platů",

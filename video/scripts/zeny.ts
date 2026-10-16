@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "zeny",
   titulek: "Proč nás v mzdách předběhlo Polsko?",
+  narration: {
+    hook: "Ženy berou o osmnáct a půl procenta méně než muži, druhý nejvyšší rozdíl v Evropské unii.",
+    problem: "Po dítěti vydělává žena dvacet let o deset procent míň než bezdětná kolegyně. Ve veřejném sektoru je rozdíl sedmnáct procent, největší v Unii. Školkám chybí třicet až čtyřicet tisíc míst.",
+    proc: "Žena se po dítěti vrací na horší místo a školek je málo.",
+    navrh: "Péče od jednoho roku, dětské skupiny i firemní školky. Dětská skupina vyjde nejvýš na tři tisíce sedm set padesát korun měsíčně. Stát půjde příkladem a do roku dva tisíce třicet pět sníží rozdíl platů na polovinu.",
+    dopad: "Každé procento menší mezery v soukromém sektoru dá rozpočtům čtyři miliardy devět set milionů korun ročně.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "18,5 %",
     jednotka: "mzdový rozdíl",
