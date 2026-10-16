@@ -9,7 +9,6 @@ Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.setCodec("h264");
 Config.setCrf(26);
-Config.setMuted(true);
 Config.setColorSpace("bt709");
 /* alias @/ jako v Next.js (tsconfig paths), aby scénáře mohly importovat "@/lib/topics" */
 Config.overrideWebpackConfig((c) => ({
