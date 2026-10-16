@@ -1,0 +1,101 @@
+{
+  "poznamka": "Odkazy převzaty jen z oficiálních profilů na lide.pirati.cz / pirati.cz nebo z osobních webů samotných lidí (ověřeno načtením stránek 16. 10. 2026); u koho nebyl profil spolehlivě ověřen, je hodnota null.",
+  "lide": [
+    {
+      "jmeno": "Libor Dušek",
+      "role": "ekonom a akademik, dostupné bydlení a moderní infrastruktura",
+      "temata": ["bydleni"],
+      "web": "https://sites.google.com/view/libordusek/",
+      "linkedin": null,
+      "facebook": "https://www.facebook.com/libor.dusek.77",
+      "x": "https://twitter.com/dusek_libor",
+      "bluesky": "https://bsky.app/profile/libordusekeu.bsky.social",
+      "instagram": null,
+      "zdroj": "https://www.pirati.cz/lide/libor-dusek/ (web, Facebook, X, Bluesky); https://lide.pirati.cz/profil/2473-libor-dusek/ (potvrzení všech čtyř odkazů); web navíc potvrzen načtením https://sites.google.com/view/libordusek/ (doc. Libor Dušek, PF UK)"
+    },
+    {
+      "jmeno": "Jiří Hlavenka",
+      "role": "podnikatel a investor, digitální stát, AI a efektivní instituce",
+      "temata": ["inovace", "stat"],
+      "web": null,
+      "linkedin": null,
+      "facebook": "https://www.facebook.com/jiri.hlavenka",
+      "x": "https://twitter.com/hlavenkajiri",
+      "bluesky": null,
+      "instagram": null,
+      "zdroj": "https://lide.pirati.cz/profil/3008-jiri-hlavenka/ (Facebook, X)"
+    },
+    {
+      "jmeno": "Tereza Nislerová",
+      "role": "ekonomka, evropská integrace a euro",
+      "temata": ["euro"],
+      "web": null,
+      "linkedin": null,
+      "facebook": null,
+      "x": null,
+      "bluesky": null,
+      "instagram": null,
+      "zdroj": ""
+    },
+    {
+      "jmeno": "Zuzana Freitas Lopesová",
+      "role": "mobilizace trhu práce a rovné šance",
+      "temata": ["prace", "zeny", "exekuce"],
+      "web": null,
+      "linkedin": null,
+      "facebook": "https://www.facebook.com/zuzana.freitas",
+      "x": "https://x.com/ZuzanaFreitas",
+      "bluesky": null,
+      "instagram": "https://www.instagram.com/zuzanafreitas/",
+      "zdroj": "https://lide.pirati.cz/profil/2893-zuzana-freitas-lopesova/ (Facebook, X, Instagram)"
+    },
+    {
+      "jmeno": "Jan Kříž",
+      "role": "vzdělávání pro budoucnost a silné regiony",
+      "temata": ["vzdelanost", "regiony"],
+      "web": "https://pyskor.cz",
+      "linkedin": null,
+      "facebook": "https://www.facebook.com/pyskor/",
+      "x": null,
+      "bluesky": null,
+      "instagram": null,
+      "zdroj": "https://lide.pirati.cz/profil/4009-jan-kriz/ (web, Facebook); web navíc načten: https://pyskor.cz (osobní blog Jana Kříže o školství)"
+    },
+    {
+      "jmeno": "Václav Vislous",
+      "role": "moderní průmysl a bezpečná energetika",
+      "temata": ["prumysl", "energie"],
+      "web": "https://vaclavvislous.cz",
+      "linkedin": "https://www.linkedin.com/in/vislous/",
+      "facebook": "https://facebook.com/vislous",
+      "x": "https://x.com/vaclavvislous",
+      "bluesky": null,
+      "instagram": null,
+      "zdroj": "https://vaclavvislous.cz (web, LinkedIn, Facebook, X – vlastní web); https://lide.pirati.cz/profil/2099-vaclav-vislous/ (web, Facebook, X); LinkedIn navíc potvrzen výsledkem hledání https://cz.linkedin.com/in/vislous (uvádí jej jako hlavního autora kapitol o průmyslu a energetice PEER)"
+    },
+    {
+      "jmeno": "Milan Damborský",
+      "role": "spravedlivý trh, chytré daně a udržitelné finance",
+      "temata": ["kapital", "oligarchie"],
+      "web": null,
+      "linkedin": null,
+      "facebook": null,
+      "x": null,
+      "bluesky": null,
+      "instagram": null,
+      "zdroj": ""
+    },
+    {
+      "jmeno": "Josef Pavlovic",
+      "role": "zdravý národ a udržitelné důchody",
+      "temata": ["zdravi"],
+      "web": null,
+      "linkedin": null,
+      "facebook": null,
+      "x": null,
+      "bluesky": null,
+      "instagram": null,
+      "zdroj": ""
+    }
+  ]
+}

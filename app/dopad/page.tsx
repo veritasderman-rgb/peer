@@ -10,6 +10,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Velký obraz",
   description: "Co strategie slibuje dohromady: o 1 procentní bod rychlejší růst, bilion korun ročně na konci dekády, 68 000 Kč ročně na pracujícího. A jak se k tomu došlo.",
+  alternates: { canonical: "/dopad" },
 };
 
 const nf = new Intl.NumberFormat("cs-CZ");

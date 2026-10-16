@@ -2,24 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Bobr } from "@/components/Bobr";
 import { BobrBubble } from "@/components/BobrBubble";
+import { Socialni } from "@/components/Socialni";
+import { clenove, tymPoznamka } from "@/lib/tym";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Jak vznikl tento web",
   description: "Strategii napsal tým ekonomů PEER. Web k ní postavila, napsala a nakreslila umělá inteligence. Kolik to ušetřilo a proč to děláme takhle.",
+  alternates: { canonical: "/jak-vznikl" },
 };
 
 /* Členové PEER podle peer.pirati.cz (stav k říjnu 2026). */
-const tym = [
-  { jmeno: "Libor Dušek", role: "ekonom a akademik, dostupné bydlení a moderní infrastruktura" },
-  { jmeno: "Jiří Hlavenka", role: "podnikatel a investor, digitální stát, AI a efektivní instituce" },
-  { jmeno: "Tereza Nislerová", role: "ekonomka, evropská integrace a euro" },
-  { jmeno: "Zuzana Freitas Lopesová", role: "mobilizace trhu práce a rovné šance" },
-  { jmeno: "Jan Kříž", role: "vzdělávání pro budoucnost a silné regiony" },
-  { jmeno: "Václav Vislous", role: "moderní průmysl a bezpečná energetika" },
-  { jmeno: "Milan Damborský", role: "spravedlivý trh, chytré daně a udržitelné finance" },
-  { jmeno: "Josef Pavlovic", role: "zdravý národ a udržitelné důchody" },
-];
 
 /* Odhad ceny pilotní stránky u české agentury. Je to odhad bez zdroje, založený na běžných sazbách
    (grafik a animátor 800–1 500 Kč/h, vývojář 1 200–2 000 Kč/h). Rozpětí je schválně široké. */
@@ -55,15 +48,16 @@ export default function JakVzniklPage() {
           a dalšími odborníky. Členové rady a jejich témata:
         </p>
         <ul className={styles.team}>
-          {tym.map((t) => (
+          {clenove.map((t) => (
             <li key={t.jmeno} className="card">
               <span className={`display ${styles.name}`}>{t.jmeno}</span>
               <span className={`muted ${styles.role}`}>{t.role}</span>
+              <Socialni jmeno={t.jmeno} />
             </li>
           ))}
         </ul>
         <p className="src">
-          <b>Zdroj:</b> <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">peer.pirati.cz</a>, představení rady 2. 9. 2026.
+          <b>Zdroj:</b> <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">peer.pirati.cz</a>, představení rady 2. 9. 2026. {tymPoznamka}
         </p>
       </section>
 

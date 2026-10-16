@@ -7,6 +7,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Videa Bobr za minutu",
   description: "Každé téma strategie za minutu: široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts. Obojí ke stažení a sdílení.",
+  alternates: { canonical: "/videa" },
 };
 
 /* Přehled všech videí: na telefonu na výšku se přehraje reel, jinak široká verze (viz TopicVideo).

@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Proč bobr",
   description: "Proč je maskotem webu bobr, jak se chová a jak se bude jmenovat.",
+  alternates: { canonical: "/proc-bobr" },
 };
 
 const reasons = [

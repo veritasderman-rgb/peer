@@ -61,6 +61,20 @@ Každé video má namluvený komentář a hudební podkres, titulky zůstávají
 - `node scripts/captions.mjs` vygeneruje titulky `public/video/<slug>.vtt` ze stejného časování jako render (věty
   komentáře rozložené v délce řeči). Přehrávač je nabízí jako volitelnou stopu a pod videem je přepis komentáře.
 
+## SEO, GEO a sdílení
+
+- Adresa webu: nastavte `NEXT_PUBLIC_SITE_URL` (např. `https://ceskomanavic.cz`); bez ní se na Vercelu použije produkční
+  doména projektu. Z ní se tvoří `metadataBase`, canonical, sitemapa a absolutní odkazy ve strukturovaných datech (`lib/site.ts`).
+- `/sitemap.xml` a `/robots.txt` se generují z registru témat (`app/sitemap.ts`, `app/robots.ts`), včetně obrázků a videí.
+- Každá stránka má canonical, Open Graph a Twitter karty; témata mají vlastní sdílecí obrázek (`app/[tema]/opengraph-image.tsx`),
+  ostatní stránky výchozí (`app/opengraph-image.tsx`).
+- Strukturovaná data (schema.org, `lib/seo.ts`): WebSite + Organization na všech stránkách, na tématech Article (autor = garant),
+  BreadcrumbList a VideoObject s přepisem komentáře.
+- Pro AI asistenty a generativní vyhledávače (GEO) je `/llms.txt` (`app/llms.txt/route.ts`): shrnutí webu a všech témat s čísly.
+- Sdílení: na stránce tématu tlačítka Sdílet (Web Share API na telefonu, jinak Facebook, X, LinkedIn, Bluesky, kopírování odkazu).
+- Sítě členů PEER: `data/tym.json` (jen ověřené odkazy z lide.pirati.cz, pirati.cz nebo osobních webů; jinak `null`),
+  zobrazuje se na `/jak-vznikl` a na kartě garanta tématu.
+
 ## Jak přidat další téma
 
 1. Vytěžit čísla kapitoly do `data/<tema>.json` (stejná struktura jako `bydleni.json`).

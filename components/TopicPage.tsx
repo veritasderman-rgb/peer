@@ -10,6 +10,8 @@ import { OpatreniGrid } from "@/components/Opatreni";
 import { PlneZneni } from "@/components/PlneZneni";
 import { Slovnik } from "@/components/Slovnik";
 import { TopicVideo } from "@/components/TopicVideo";
+import { Sdilet } from "@/components/Sdilet";
+import { Socialni } from "@/components/Socialni";
 import styles from "./TopicPage.module.css";
 
 const nf = new Intl.NumberFormat("cs-CZ");
@@ -21,6 +23,13 @@ export function TopicPage({ t }: { t: TopicConfig }) {
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`} id="hook">
         <div className={styles.heroText}>
+          <nav className={styles.crumbs} aria-label="Kde jsi">
+            <ol>
+              <li><Link href="/">Úvod</Link></li>
+              <li><Link href="/#temata">Témata</Link></li>
+              <li aria-current="page">{t.kratkyNazev}</li>
+            </ol>
+          </nav>
           <p className="eyebrow">Téma {t.cislo} · Pilíř {t.pilir} · 10 vteřin</p>
           <h1 className={styles.h1}>{t.hook.h1}</h1>
           <BigNumber value={t.hook.value} decimals={t.hook.decimals} unit={t.hook.unit} label={t.hook.label} />
@@ -31,6 +40,9 @@ export function TopicPage({ t }: { t: TopicConfig }) {
             <a href="#pribeh">2 minuty: příběh a návrh</a>
             <a href="#plne-zneni">20 minut: plné znění</a>
           </nav>
+          <div className={styles.sdilet}>
+            <Sdilet titulek={t.hook.h1} text={`${nf.format(t.hook.value)} ${t.hook.unit}: ${t.hook.label}`} />
+          </div>
         </div>
         <div className={styles.heroBobr}>
           <BobrBubble mood={t.hook.bobrMood ?? "surprised"} side="left">{t.hook.bobr}</BobrBubble>
@@ -139,6 +151,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
           <div>
             <p className={`display ${styles.garantName}`}>{t.garant.jmeno}</p>
             <p className="muted">{t.garant.role}, člen Pirátské expertní ekonomické rady</p>
+            <Socialni jmeno={t.garant.jmeno} />
             {t.garant.citace && <blockquote className={styles.quote}>„{t.garant.citace}“</blockquote>}
             {t.garant.citaceZdroj && (
               <p className="src">
@@ -181,6 +194,9 @@ export function TopicPage({ t }: { t: TopicConfig }) {
             Vyber si další téma na <Link href="/#temata">úvodní stránce</Link>, nebo se podívej, <Link href="/proc-bobr">proč to vysvětluje zrovna bobr</Link>.
           </p>
         </div>
+      </section>
+      <section className={`wrap ${styles.sdiletKonec}`}>
+        <Sdilet titulek={t.hook.h1} text={`${nf.format(t.hook.value)} ${t.hook.unit}: ${t.hook.label}`} />
       </section>
     </article>
   );

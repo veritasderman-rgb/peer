@@ -66,3 +66,10 @@
   .garantInitials { width: 64px; height: 64px; font-size: 1.5rem; }
   .outro { grid-template-columns: 1fr; justify-items: center; text-align: center; }
 }
+
+.crumbs { font-family: var(--f-data); font-size: var(--s-1); color: var(--muted); margin: 0 0 0.3rem; }
+.crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.crumbs li + li::before { content: "›"; margin-right: 0.3rem; }
+.crumbs a { color: var(--ink); }
+.sdilet { margin-top: 0.5rem; }
+.sdiletKonec { padding-block: 0 3rem; }

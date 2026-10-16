@@ -10,6 +10,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Jak se to zaplatí",
   description: "Kdo za strategii zaplatí a co z ní bude: po tématech, kdo nese náklady, co se vrátí, co je rozpočtově neutrální a co studie sama nevyčísluje.",
+  alternates: { canonical: "/zaplaceni" },
 };
 
 type Tema = (typeof z.temata)[number];
