@@ -49,11 +49,21 @@ export default function VideaPage() {
               <div className={styles.players}>
                 <video className={styles.wide} controls playsInline preload="none" poster={t.video!.poster} aria-label={`${t.video!.titulek}, široká verze`}>
                   <source src={t.video!.wide} type="video/mp4" />
+                  {t.video!.titulky && <track kind="subtitles" src={t.video!.titulky} srcLang="cs" label="Česky (komentář)" />}
                 </video>
                 <video className={styles.reel} controls playsInline preload="none" poster={t.video!.poster?.replace(/-poster\.jpg$/, "-poster-reel.jpg")} aria-label={`${t.video!.titulek}, reel`}>
                   <source src={t.video!.reel} type="video/mp4" />
+                  {t.video!.titulky && <track kind="subtitles" src={t.video!.titulky} srcLang="cs" label="Česky (komentář)" />}
                 </video>
               </div>
+              {t.video!.prepis && (
+                <details className={styles.prepis}>
+                  <summary>Přepis komentáře</summary>
+                  {t.video!.prepis.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </details>
+              )}
             </li>
           ))}
         </ol>

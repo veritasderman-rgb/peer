@@ -1,0 +1,31 @@
+.root { display: grid; gap: 1.25rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  font: inherit;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s-1);
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 2px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+.chip:hover { border-color: var(--ink); }
+.chip:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.chipOn { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
+.hint { font-size: var(--s-1); }
+.result { display: grid; gap: 1rem; }
+.bubble { max-width: 100%; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.topic { padding: 1rem 1.1rem; display: grid; gap: 0.6rem; align-content: start; min-width: 0; }
+.topicHead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
+.topicTitle { font-size: var(--s1); margin: 0; }
+.topicTitle a { color: var(--ink); text-decoration: none; }
+.topicTitle a:hover { text-decoration: underline; }
+.topicHook { font-size: var(--s-1); color: var(--river); font-weight: 700; }
+.items { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; font-size: var(--s-1); line-height: 1.5; }
+.items b { font-family: var(--f-data); }
+.more { font-family: var(--f-data); font-weight: 700; font-size: var(--s-1); }

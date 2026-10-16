@@ -1,0 +1,932 @@
+{
+  "uvod": [
+    "Studie nesčítá, kolik všechna opatření stojí. Jednu tabulku s celkovým účtem v ní nenajdete. U části opatření sama píše, že jde jen o přesun peněz, o odložené daně nebo o úspory, které opatření zaplatí. U ostatních náklady přiznává, ale nevyčísluje je.",
+    "Vyčíslený je hlavně přínos. Studie počítá, že reformy zrychlí růst ekonomiky nejméně o 1 procentní bod ročně. Na konci dekády to má být o 1 000 mld. Kč (bilion) vyšší roční výkon ekonomiky, o 440 mld. Kč víc ve mzdách včetně odvodů zaměstnavatele (v průměru 68 000 Kč ročně na pracujícího) a přes 300 mld. Kč ročně navíc ve státním rozpočtu. To je podle studie „takřka srovnání dnešního schodku do nuly“. Je to odvozený odhad, ne součet jednotlivých opatření. Studie sama říká, že vývoj HDP jako takový modelovat nelze.",
+    "Z 19 klíčových opatření ve vyhodnocení studie má u deseti uvedený odhad dopadu a u devíti ne. Odhady jsou v různých jednotkách (ročně, za dekádu, za 15–20 let), takže se nedají prostě sečíst. U většiny kapitol, například u bydlení, práce, žen, oligarchie, inovací a státu, studie celkové náklady nevyčísluje. U zdraví, energetiky a průmyslu uvádí několik konkrétních částek. Níže u každého tématu vidíte, kdo platí, co se vrací, co je neutrální a co studie neumí vyčíslit."
+  ],
+  "souhrn": {
+    "prijmyRocne": "Přes 300 mld. Kč ročně navíc do státního rozpočtu na konci dekády",
+    "vykonRocne": "1 000 mld. Kč (1 bilion) vyšší výkon ekonomiky ročně na konci dekády, při růstu aspoň o 1 procentní bod ročně navíc",
+    "naPracujiciho": "68 000 Kč ročně navíc ve mzdách a platech, v průměru na každého ekonomicky aktivního člověka",
+    "zdroj": "Hospodářská strategie PEER, část „Souhrnný dopad do HDP a státního rozpočtu“ (s. 88); data/dopad.json, klíče souhrn (rustNavicPb, hdpNavicMldRocneKonecDekady, mzdyNavicMld, rozpocetNavicMld, naPracujicihoKc), vycislena a nevycislena"
+  },
+  "principy": [
+    {
+      "nadpis": "Růst, který se zaplatí sám",
+      "text": "Studie počítá, že reformy zrychlí růst o nejméně 1 procentní bod ročně. Na konci dekády to znamená přes 300 mld. Kč ročně navíc ve státním rozpočtu, tedy „takřka srovnání dnešního schodku do nuly“. Vláda pak sama rozhodne, jestli schodek stáhne, nebo peníze dá do růstových investic.",
+      "zdroj": "Souhrnný dopad do HDP a státního rozpočtu (s. 88)"
+    },
+    {
+      "nadpis": "Žádné nové dotace, uvolnit to, co leží ladem",
+      "text": "Studie píše: „neotevíráme nové dotační programy, uvolňujeme, co leží ladem“. Míní tím úspory lidí v penzijních fondech, evropské peníze rozpouštěné v dotacích, zablokovanou kapacitu sítě a odpadní teplo.",
+      "zdroj": "Úvod pilíře 3 (před kapitolou 3.1; platí pro kapitoly 3.1 až 3.3)"
+    },
+    {
+      "nadpis": "Návratné nástroje místo dotací",
+      "text": "Dotace tam, kde nejsou nezbytné, mají nahradit záruky, úvěry a kapitálové vstupy, které se státu vracejí. Totéž platí pro obce (půjčky místo grantů), pro domácnosti (revolvingový fond renovačních půjček) a pro startupy (státní fond, který má být ziskový).",
+      "zdroj": "Kapitoly 3.1, 3.2, 3.3 a 4.1"
+    },
+    {
+      "nadpis": "Přesun peněz, ne nové peníze",
+      "text": "U několika reforem studie výslovně říká, že nepřidávají výdaje, jen mění, kam peníze míří. Reforma financování obcí má být „převážně fiskálně neutrální“, u investičních pobídek „objem podpory zůstane stejný, změní se jen adresát“ a u podpory energeticky náročného průmyslu „nejde o nové desítky miliard“.",
+      "zdroj": "Kapitoly 4.1, 3.1 a 3.2"
+    },
+    {
+      "nadpis": "Nejdřív výdaj nebo odklad, pak výnos",
+      "text": "Část opatření stát nejdřív něco stojí a vrátí se později. Okamžité odpisy a daňové prázdniny jsou z velké části odklad daně, ne její ztráta. Místo ve školce stojí asi 95 000 Kč ročně a podle studie přinese rozpočtům přes 100 000 Kč. Vzdělávací reformy ukazují výsledky až za 15–20 let. Studie připouští, že část výpadku u odpisů je trvalý náklad.",
+      "zdroj": "Kapitoly 3.1, 3.3, 1.3 a 1.2"
+    },
+    {
+      "nadpis": "Úspory platí investici",
+      "text": "U úspor energie ve státních budovách (EPC) dodavatel ručí za výsledek a platí se z uspořených účtů, bez dotací. Studie odhaduje potenciál až 20 mld. Kč ročně a „stát musí začít u sebe“. U zdravotnictví studie píše, že úspora z přesunu péče z lůžek vznikne jen tehdy, když zároveň vzniknou domácí a terénní služby.",
+      "zdroj": "Kapitoly 3.2 a 1.4"
+    },
+    {
+      "nadpis": "Výnos z daní jde tam, kde pomáhá",
+      "text": "Část výnosů je předem určena na konkrétní účel. Obce dostanou podíl z DPH ze stavebních prací a musí ho dát na školy, dopravu a sítě. Nejméně 40 % výnosu nových spotřebních daní jde do Fondu prevence. Polovina výnosů z povolenek na vytápění a dopravu se vrací lidem jako energetický kupón.",
+      "zdroj": "Kapitoly 1.1, 1.4 a 3.2"
+    }
+  ],
+  "temata": [
+    {
+      "slug": "bydleni",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Stát dá obcím, které povolí nové byty, podíl z DPH ze stavebních prací; obce ho musí použít na školy, dopravu a sítě.",
+          "kolik": "3 000–8 000 Kč za m² užitné plochy (210 000–560 000 Kč za byt o 70 m²)"
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát obnoví dotační a úvěrové programy pro obce, které staví obecní byty, a pro nezisková bytová družstva.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Při Státním fondu podpory investic vznikne Garanční fond, který majitelům bytů zaručí zaplacení nájemného a škod, když podepíšou smlouvu na dobu neurčitou s férovým nájmem.",
+          "kolik": null
+        },
+        {
+          "kdo": "investoři",
+          "co": "Soukromý investor u společných projektů s obcí (PPP) zajistí financování a předá obci část bytů pro obecní nájemní bydlení.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Kdo drží byty, domy a stavební pozemky prázdné a nevyužité, zaplatí vyšší daň z nemovitostí; obce si výši přirážky upraví samy.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Pro ruské rezidenty a firmy ovládané ruskými občany má platit zvláštní sazba daně z nemovitostí.",
+          "kolik": "68násobná sazba"
+        },
+        {
+          "kdo": "investoři",
+          "co": "Kdo prodá investiční byt, ve kterém sám nebydlel, zaplatí daň ze zisku, protože zmizí osvobození po časovém testu; pronajímatelé, kteří účtují skutečné náklady, si jich uznají nejvýš 60 % příjmů z nájmu.",
+          "kolik": "uznatelné náklady nejvýš 60 % příjmů z nájmu"
+        },
+        {
+          "kdo": "stát",
+          "co": "Pronajímatelům bytů k dlouhodobému bydlení stát zvýší paušál výdajů, takže od nich vybere na dani méně.",
+          "kolik": "paušál z 30 na 40 %"
+        },
+        {
+          "kdo": "lidé",
+          "co": "Váha daně z nemovitostí se přesune z budov na pozemky: víc se platí za hodnotu a polohu pozemku, méně za to, co na něm člověk postavil.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Byt bez povinného parkovacího místa u zastávky městské dopravy vyjde levněji.",
+          "kolik": "700 000–1 000 000 Kč na byt"
+        },
+        {
+          "co": "Obec dostane za každý nový byt peníze na infrastrukturu, takže výstavba pro ni přestane být jen zátěž.",
+          "kolik": "210 000–560 000 Kč za byt o 70 m²"
+        },
+        {
+          "co": "V zóně zrychlené výstavby přijde rozhodnutí do 6 měsíců, a když úřad mlčí, platí souhlas; povolování bytových domů má trvat méně než 1,5 roku.",
+          "kolik": "do 6 měsíců; cíl méně než 1,5 roku"
+        },
+        {
+          "co": "Dostupnější bydlení zvýší mobilitu pracovní síly, protože lidé snáze bydlí tam, kde najdou práci nebo studium.",
+          "kolik": null
+        },
+        {
+          "co": "Cíl je 50 000 nových bytů ročně (v roce 2025 bylo dokončeno asi 33 600) a cena bytu pod 10 ročních platů (dnes 15,1).",
+          "kolik": "50 000 bytů ročně; pod 10 ročních platů"
+        }
+      ],
+      "neutralni": [
+        "Studie neuvádí žádný náklad pro rozpočet u těchto změn pravidel: zóny zrychlené výstavby, hustší výstavba u zastávek, nové územní plánování a zrušení povinných parkovacích míst.",
+        "Zrušení povinných parkovacích míst u městské dopravy snižuje náklady na výstavbu bytu, ne výdaje rozpočtu."
+      ],
+      "nevycisleno": [
+        "Studie nevyčísluje, kolik bude stát podíl obcí z DPH, dotace a úvěry na obecní byty ani Garanční fond.",
+        "Nevyčísluje výnos ani dopady vyšší daně z prázdných bytů, přesunu daně na pozemky a zrušení daňových výhod pro pronajímatele.",
+        "Studie popisuje řetěz „málo bytů, vysoké ceny, blokace pracovní mobility a rostoucí výdaje na dávky na bydlení“, ale nepíše, kolik se na dávkách ušetří.",
+        "Dopad zrychlení výstavby na 50 000 bytů ročně není ve shrnutí dopadů vyčíslen.",
+        "Stát dnes dává až 10 mld. Kč na podporu hypoték, z níž těží hlavně domácnosti s vysokými příjmy; studie to kritizuje, ale nenavrhuje, co s tím."
+      ],
+      "zdroj": "Kapitola 1.1; souhrn dopadů č. 14 (nevyčíslený)"
+    },
+    {
+      "slug": "vzdelanost",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Stát má vytvořit kapacity pro děti do 3 let (cíl: aspoň 25 % dětí v péči, dnes 4 %), například proměnou nevyužitých tříd mateřských škol.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát zajistí psychology, speciální a sociální pedagogy ve školách a „dostatek financí“ na indexové financování škol s hodně znevýhodněnými žáky.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát zajistí dostatek peněz pro víc vysokoškoláků a konkurenceschopné mzdy vysokoškolských učitelů; dnes dává Česko na vzdělávání 4,1 % HDP, průměr OECD je 4,7 %.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Studenti vysokých škol dostanou vratné granty (půjčky) podle švédského vzoru; splácet začnou až po dosažení určité výše příjmů.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát bude přispívat na individuální vzdělávací účty dospělých a daňově zvýhodní firmy, které investují do vzdělávání zaměstnanců.",
+          "kolik": null
+        },
+        {
+          "kdo": "firmy",
+          "co": "Zaměstnavatel bude přispívat na individuální vzdělávací účet zaměstnance.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Zaměstnanec bude přispívat na svůj individuální vzdělávací účet.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Zapojení dalších 15 % dětí do 3 let do předškolní péče může zvýšit roční HDP; stát dostane za každou korunu zpět 3–4 Kč.",
+          "kolik": "10–30 mld. Kč ročně; 3–4 Kč na 1 Kč"
+        },
+        {
+          "co": "Menší vliv rodinného zázemí na výsledky žáků dá po 15–20 letech vyšší roční HDP.",
+          "kolik": "50–100 mld. Kč ročně po 15–20 letech (řádově 1 % HDP)"
+        },
+        {
+          "co": "Žák, který dokončí aspoň střední školu, odvede za život do veřejných rozpočtů víc než žák jen se základním vzděláním.",
+          "kolik": "o 2,3–2,8 mil. Kč víc za život"
+        },
+        {
+          "co": "Člověk se středním vzděláním bez maturity vydělá za život víc než s jen základním, s maturitou ještě víc.",
+          "kolik": "o více než třetinu (8 mil. Kč); s maturitou o více než 60 % (17 mil. Kč)"
+        },
+        {
+          "co": "Změny oborů a měření kvality škol mají podle studie realisticky přinést víc HDP v horizontu 20 let.",
+          "kolik": "1–2 % HDP za 20 let"
+        },
+        {
+          "co": "Celoživotní vzdělávání zvýší ve střednědobém horizontu HDP a dlouhodobě urychlí růst.",
+          "kolik": "20–40 mld. Kč HDP; růst o 0,1–0,4 % ročně navíc"
+        },
+        {
+          "co": "Celý vzdělávací balík zvýší ekonomický růst proti dnešku.",
+          "kolik": "o 0,3 % ročně, za dekádu o 3 %"
+        },
+        {
+          "co": "Každá koruna investovaná do výzkumu a vývoje se ekonomice dlouhodobě vrací několikanásobně (údaj z kapitoly 1.2).",
+          "kolik": "3–4 Kč na 1 Kč (konzervativně), optimisticky přes 20 Kč"
+        }
+      ],
+      "neutralni": [
+        "Balík celoživotního vzdělávání má být v krátkém horizontu fiskálně nulový: daňové úlevy a příspěvky se zhruba vyrovnají úsporami na sociálních dávkách a mírně vyššími daněmi."
+      ],
+      "nevycisleno": [
+        "Studie nevyčísluje náklady školek a jeslí, psychologů ve školách, indexového financování, reformy vysokých škol ani individuálních vzdělávacích účtů.",
+        "Neříká, kolik by stálo dorovnání výdajů na vzdělávání (4,1 % HDP, průměr OECD 4,7 %) a na výzkum (1,82 % HDP, cíl EU 3,0 %).",
+        "Nevyčísluje, kolik z vratných grantů (půjček) se stát nevrátí."
+      ],
+      "zdroj": "Kapitola 1.2; souhrn dopadů č. 1 a č. 2"
+    },
+    {
+      "slug": "prace",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Stát zvýší výdaje na rekvalifikace (aktivní politiku zaměstnanosti) do roku 2030 na průměr zemí OECD.",
+          "kolik": "dnes asi 0,005 % HDP (382 mil. Kč v roce 2023), průměr OECD 0,1 % HDP"
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát zachová 80% podporu v nezaměstnanosti v prvních 2 měsících; od pátého měsíce jen pro toho, kdo se rekvalifikuje.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát zřídí individuální vzdělávací účty pro každého dospělého podle vzoru Francie a Finska.",
+          "kolik": null
+        },
+        {
+          "kdo": "firmy",
+          "co": "Firmy zaplatí víc za nejhůř placené pracovníky, protože minimální mzda má vzrůst na polovinu průměrné mzdy; studie to bere jako tlak na vyšší produktivitu a automatizaci.",
+          "kolik": "50 % průměrné mzdy (dnes 43 %)"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Firmy, které dnes používají dohody o provedení práce (DPP) k obcházení odvodů, zaplatí vyšší odvody; kumulovat víc dohod smějí jen studenti.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Lidé, kteří si dnes kumulací DPP přivydělávají, o část přivýdělku přijdou.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Zaměstnanci mají v prvním roce výpovědní dobu jen 1 měsíc, takže mají menší jistotu; záchranná síť přijde až po ztrátě práce.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Narovnání odvodů u DPP a nižší daně u skutečných částečných úvazků mají podle shrnutí dopadů přinést vyšší příjmy veřejných rozpočtů a férovější podmínky; částka není uvedena.",
+          "kolik": null
+        },
+        {
+          "co": "Vyšší minimální mzda tlačí firmy k automatizaci a vyšší produktivitě.",
+          "kolik": null
+        },
+        {
+          "co": "Dánský model flexicurity (pružný trh práce a silná záchranná síť) má zvýšit pracovní mobilitu a produktivitu; shrnutí dopadů ji označuje za potenciálně zásadní, bez čísla.",
+          "kolik": null
+        }
+      ],
+      "neutralni": [],
+      "nevycisleno": [
+        "Studie náklady této kapitoly nevyčísluje.",
+        "Neuvádí, kolik bude stát vyšší podpora rekvalifikací; je tam jen cíl dojít z asi 0,005 % HDP na průměr OECD 0,1 % HDP.",
+        "Nevyčísluje, kolik vyberou vyšší odvody z DPP, ani dopad flexicurity na mobilitu práce a produktivitu (obojí patří mezi nevyčíslená opatření).",
+        "Nepíše, kolik by stát ušetřil na dávkách při vyšší minimální mzdě; uvádí jen, že dnes až 80 % lidí na minimální mzdě má nárok na sociální dávky."
+      ],
+      "zdroj": "Kapitola 1.3; souhrn dopadů č. 11 a č. 12 (nevyčíslené)"
+    },
+    {
+      "slug": "zeny",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Protože rodiče zaplatí méně, vzroste podíl, který na každé místo v dětské skupině dává stát; strop je asi 3 750 Kč měsíčně místo až 7 466 Kč.",
+          "kolik": "strop asi 3 750 Kč měsíčně místo až 7 466 Kč"
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát srovná financování sousedských dětských skupin s klasickými; dnes dostávají jen polovinu.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Jedno dodatečné místo ve školce stojí veřejné rozpočty ročně (výdaje podle tabulky IDEA CERGE-EI).",
+          "kolik": "95 032 Kč ročně na místo"
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát sníží rozdíl mezi platy mužů a žen ve veřejném sektoru na polovinu do roku 2035, takže platy žen tam porostou.",
+          "kolik": "rozdíl dnes 17 %"
+        },
+        {
+          "kdo": "stát",
+          "co": "Nižší daň z malých úvazků znamená menší příjmy z daní.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Jedno nové místo ve školce přinese veřejným rozpočtům na daních a odvodech víc, než stojí.",
+          "kolik": "více než 100 000 Kč ročně"
+        },
+        {
+          "co": "Po odečtení nákladů zbude z jednoho místa čistý přínos (tabulka IDEA CERGE-EI; v textu kapitoly 46 000–64 000 Kč).",
+          "kolik": "46 604–64 304 Kč ročně"
+        },
+        {
+          "co": "Každé snížení mzdové mezery v soukromém sektoru o 1 % přidá veřejným rozpočtům peníze.",
+          "kolik": "4,9 mld. Kč ročně"
+        },
+        {
+          "co": "Souhrn dopadů počítá, že 100 000 nových míst přinese rozpočtům asi 10 mld. Kč ročně; kapitola přitom uvádí potřebu 30–40 tisíc nových míst.",
+          "kolik": "~10 mld. Kč ročně"
+        },
+        {
+          "co": "Cíl je zaměstnanost žen s dětmi do 6 let 70 % (dnes 55 %) a mzdový rozdíl pod 12 % (dnes 18,5 %).",
+          "kolik": "70 %; pod 12 %"
+        }
+      ],
+      "neutralni": [
+        "Místo ve školce se podle studie rozpočtům vyplatí samo: stojí 95 032 Kč ročně a přinese víc než 100 000 Kč na daních a odvodech."
+      ],
+      "nevycisleno": [
+        "Celkový účet všech opatření kapitola nevyčísluje.",
+        "Nevyčísluje, kolik stojí strop ceny, srovnání financování sousedských skupin, vyrovnání platů ve veřejném sektoru a nižší daň z malých úvazků.",
+        "Počet nových míst není jasný: kapitola uvádí potřebu 30–40 tisíc míst, souhrn dopadů počítá se 100 000 místy."
+      ],
+      "zdroj": "Kapitola 1.3 (část o ženách; tabulka IDEA CERGE-EI); souhrn dopadů č. 3"
+    },
+    {
+      "slug": "exekuce",
+      "zaplati": [
+        {
+          "kdo": "firmy",
+          "co": "Věřitelé dostanou peníze pomaleji, protože srážka z příjmu bude nejvýš 50 % místo dnešních 66 až 100 %.",
+          "kolik": "nejvýš 50 % místo 66–100 %"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Věřitelé dostanou z nízkých příjmů méně, protože se zvýší nezabavitelné minimum, aby samoživitelé nepadli pod hranici chudoby.",
+          "kolik": "dnes cca 10 900–11 500 Kč; hranice chudoby 12 818 Kč"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Věřitel si nebude moci vybrat libovolného exekutora, protože jeden dlužník bude mít jednoho exekutora podle území.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Dluh se neruší: dlužník ho dál splácí, jen s nižší srážkou.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Návrat 100 000 lidí na legální trh práce přinese státu na daních a odvodech, které dnes unikají do šedé ekonomiky.",
+          "kolik": "3–5 mld. Kč ročně"
+        },
+        {
+          "co": "Souhrn dopadů uvádí u návratu na legální trh práce dalších 25 mld. Kč ročně do státního rozpočtu; s kapitolou (3–5 mld. Kč) se to nedá spojit.",
+          "kolik": "25 mld. Kč ročně"
+        },
+        {
+          "co": "Odhady, kolik se ušetří na dopadech předlužení: NERV 5–12, PAQ Research 9–15 (lepší oddlužení a dávky), exekutor Petr Kučera aspoň 16,5 (teritorialita exekutorů).",
+          "kolik": "5–16,5 mld. Kč ročně (rozpětí odhadů)"
+        },
+        {
+          "co": "Zaměstnavatelé dnes platí za administrativu exekucí; teritorialita podle nich sníží jejich náklady o víc než polovinu.",
+          "kolik": "500–3 000 Kč měsíčně na zaměstnance v exekuci dnes"
+        },
+        {
+          "co": "Exekuce rodičů patří mezi nejsilnější ukazatele, že dítě nedokončí střední školu; každý takový případ stojí společnost ztracené daně a vyšší sociální výdaje.",
+          "kolik": "2–3 mil. Kč na člověka"
+        },
+        {
+          "co": "Cíl do roku 2030: o 30 % méně lidí v exekuci a dvojnásobný roční pokles vymáhané částky.",
+          "kolik": "nejvýš 413 000 lidí; pokles ~10 mld. Kč ročně"
+        }
+      ],
+      "neutralni": [],
+      "nevycisleno": [
+        "Studie nevyčísluje, kolik věřitelé ztratí nižšími srážkami a vyšším nezabavitelným minimem.",
+        "Čísla ve studii si neodpovídají: kapitola počítá se 100 000 lidmi a přínosem 3–5 mld. Kč ročně, tabulka cílů s 200 000 lidmi a souhrn dopadů s dalšími 25 mld. Kč ročně. Nedají se spojit do jednoho čísla.",
+        "Souhrn dopadů připisuje rozpětí 5–16,5 mld. Kč ročně NERV a PAQ Research, kapitola ale 16,5 mld. Kč připisuje exekutorovi Petru Kučerovi.",
+        "Náklady reformy pro stát (například soudy a úřady) studie neuvádí."
+      ],
+      "zdroj": "Kapitola 1.3 (část o exekucích); souhrn dopadů č. 4"
+    },
+    {
+      "slug": "zdravi",
+      "zaplati": [
+        {
+          "kdo": "lidé",
+          "co": "Spotřebitelé zaplatí víc za slazené nápoje a alkohol, protože přibude spotřební daň a zruší se výjimka u tichého vína.",
+          "kolik": "výnos 10–15 mld. Kč ročně"
+        },
+        {
+          "kdo": "stát",
+          "co": "Financování terénních a odlehčovacích služeb se má v příštích deseti letech zvýšit; dnes jdou na sociální služby dotace ministerstva práce asi 57,6 mld. Kč (plán 2026). Kdo přesně doplatí, studie neurčuje.",
+          "kolik": "o 40–50 mld. Kč za deset let"
+        },
+        {
+          "kdo": "obce",
+          "co": "U lidí se zdravotním postižením má zůstat velká role státního rozpočtu a podílu krajů a obcí na státních daních (RUD).",
+          "kolik": "přibližně 3 % krajského a obecního RUD"
+        },
+        {
+          "kdo": "lidé",
+          "co": "U seniorů studie prověří vyšší spoluúčast, pojištění dlouhodobé péče a majetkové testování; nic z toho zatím není rozhodnuto.",
+          "kolik": null
+        },
+        {
+          "kdo": "lidé",
+          "co": "Zdravotní pojišťovna může část pojistného navázat na doloženou péči o vlastní zdraví; zavede se pilotně a povinně jen pro ročníky do 40 let.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Zdravotní pojišťovny budou platit lékařům i za práci se životním stylem pacienta, ne jen za počet prohlídek.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Spotřební daně z nápojů a alkoholu vynesou peníze, z nichž jde aspoň 40 % do Fondu prevence zdravotních pojišťoven.",
+          "kolik": "10–15 mld. Kč ročně; z toho 4–6 mld. Kč do prevence"
+        },
+        {
+          "co": "Špatné zdraví a předčasná úmrtí stojí dnes ekonomiku ročně velkou částku; studie čeká, že zlepšení zdraví přinese dodatečné HDP.",
+          "kolik": "ztráty ~700 mld. Kč ročně (~14 % HDP); dodatečné HDP ~840 mld. Kč do 2040 (+0,7 %)"
+        },
+        {
+          "co": "Investice do zdraví se podle studie vrací.",
+          "kolik": "1,7 Kč na 1 Kč (McKinsey), podle Lancetu až 10 : 1"
+        },
+        {
+          "co": "Dostupné terénní a odlehčovací služby umožní pečujícím zůstat v práci; podíl částečných úvazků pečujících má vzrůst.",
+          "kolik": "z asi 7 % na 15 % do roku 2040"
+        },
+        {
+          "co": "Přesun péče z lůžek do ambulantní a domácí péče sníží podíl nemocniční péče na rozpočtu.",
+          "kolik": "z 46,5 % na 36,4 % do roku 2035"
+        }
+      ],
+      "neutralni": [
+        "Prevence se zčásti platí z vlastních peněz: nejméně 40 % výnosu nových spotřebních daní (4–6 mld. Kč) jde do Fondu prevence zdravotních pojišťoven."
+      ],
+      "nevycisleno": [
+        "Studie nevyčísluje, kolik ušetří přesun péče z lůžek; píše, že bez připravených domácích a terénních služeb se úspora jen přesune do dotací na sociální služby, do rodin nebo do výpadku příjmů pečujících.",
+        "Nevyčísluje náklady pilotu pojistného podle životního stylu, pojištění dlouhodobé péče, vyšší spoluúčasti seniorů ani reformy daně z příjmů fyzických osob, která ho má doprovázet.",
+        "Částku 40–50 mld. Kč uvádí „během příštích deseti let“ a nerozepisuje, zda jde o součet za celé období, nebo o roční částku.",
+        "Nevyčísluje náklady na víc pracovníků (v pobytových službách je asi 48 tisíc úvazků, v terénních kolem 12 tisíc) ani na přesun asi 15 tisíc lidí z velkých zařízení do komunitních služeb."
+      ],
+      "zdroj": "Kapitola 1.4; souhrn dopadů č. 5"
+    },
+    {
+      "slug": "oligarchie",
+      "zaplati": [
+        {
+          "kdo": "firmy",
+          "co": "Největší hráči přijdou o plošné dotace, nebo o jejich velkou část; firmy s vysokým tržním podílem mají mít nulovou způsobilost.",
+          "kolik": "dnes 20–30 mld. Kč ročně dotací jde gigantům"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Velké zemědělské firmy dostanou strop dotací na plochu, počítaný na skutečného majitele (sleduje se propojenost firem).",
+          "kolik": "nejvýš 100 tis. EUR ročně"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Dominantní firmy čelí přísnějšímu posuzování fúzí, nuceným odprodejům části podniku, nižšímu stropu tržní dominance a vyšším pokutám podle obratu.",
+          "kolik": "tržní dominance pod 40 %; fúze od 200 mil. Kč obratu (dánský vzor)"
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Dotace, které dnes tečou největším hráčům a podle výzkumu CERGE-EI se mění v zisk, se mají vrátit malým a středním firmám.",
+          "kolik": "20–30 mld. Kč ročně (dnešní objem dotací, ne vyčíslená úspora)"
+        },
+        {
+          "co": "Víc konkurence má přinést nižší ceny, efektivnější veřejné zakázky a smysluplnější dotace pro inovace.",
+          "kolik": "veřejné zakázky skoro 1 bilion Kč, 14 % HDP (objem, ne úspora)"
+        }
+      ],
+      "neutralni": [
+        "Vyřazení největších hráčů z plošných dotací jde podle studie provést novelizací současných předpisů; nový výdaj rozpočtu studie neuvádí.",
+        "Studie neuvádí žádný náklad pro rozpočet u zákona o střetu zájmů a u pravidel pro vlastnictví médií."
+      ],
+      "nevycisleno": [
+        "Studie nevyčísluje, kolik stát díky omezení dotací největším ušetří nebo přesměruje; uvedených 20–30 mld. Kč ročně je dnešní objem dotací.",
+        "Nevyčísluje náklady vymáhání pravidel, například zjišťování skutečného majitele skrze propojené firmy.",
+        "Dopad posílení úřadu pro hospodářskou soutěž (podle dánského vzoru) na ceny a konkurenci není vyčíslen; patří mezi nevyčíslená opatření.",
+        "Studie sama říká, že boj proti oligarchické moci je extrémně těžký a dlouhodobý."
+      ],
+      "zdroj": "Kapitola 2.1; souhrn dopadů č. 10 a č. 13"
+    },
+    {
+      "slug": "euro",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Aby Česko mohlo přijmout euro, musí splnit podmínky: nízký schodek, nízký dluh, nízká inflace a stabilní úroky; v „čekárně na euro“ (ERM 2) musí být aspoň 2 roky.",
+          "kolik": "schodek pod 3 % HDP; dluh pod 60 % HDP nebo klesající"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Méně vydělá finanční sektor, který dnes bere zisky z převodů měn a ze zajištění kurzu.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Rozdíl v úrocích na průměrné hypotéce 4,7 mil. Kč na 30 let mezi Českem a Slovenskem (u téže banky v červnu 2026); pro průměrnou českou domácnost vychází úspora přes 40 000 Kč ročně.",
+          "kolik": "o 1 242 657 Kč méně na úrocích za 30 let; přes 40 000 Kč ročně"
+        },
+        {
+          "co": "Při každé směně korun za eura dnes lidé platí skrytou „malou daň“; rodina s dovolenou za 1 500 EUR tak ztratí na jedné cestě asi 1 100 Kč.",
+          "kolik": "2–3 % z objemu konverze"
+        },
+        {
+          "co": "Česko si půjčuje o 1–1,5 procentního bodu dráž než srovnatelné země eurozóny a každé 1 % navíc stojí stát jen na obsluze dluhu; přijetím eura má tato přirážka z velké části zmizet.",
+          "kolik": "40 mld. Kč ročně za každé 1 % navíc"
+        },
+        {
+          "co": "Malé a střední firmy by už nenesly kurzové riziko a mohly by sáhnout po levnějších úvěrech v eurech.",
+          "kolik": null
+        }
+      ],
+      "neutralni": [],
+      "nevycisleno": [
+        "Studie nevyčísluje, o co by Česko přišlo ztrátou vlastní měnové politiky (sazby ČNB, kurz koruny).",
+        "V textu kapitoly nejsou uvedeny náklady samotného přechodu na euro.",
+        "Rozdíl úroků vychází ze srovnání sazeb téže banky v Česku a na Slovensku, ne z modelu toho, jak se sazby v Česku po přijetí eura skutečně změní.",
+        "Studie nepřepočítává přirážku 1–1,5 procentního bodu na celkovou částku v mld. Kč; uvádí jen 40 mld. Kč za každé 1 %."
+      ],
+      "zdroj": "Kapitola 2.2; souhrn dopadů č. 7"
+    },
+    {
+      "slug": "kapital",
+      "zaplati": [
+        {
+          "kdo": "firmy",
+          "co": "Správci penzijních fondů přijdou o část příjmů z poplatků, které má zákon dramaticky snížit.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "U fondů provozovaných státem by správu zajišťoval stát; kolik to bude stát, studie neříká.",
+          "kolik": null
+        },
+        {
+          "kdo": "investoři",
+          "co": "Střadatelé, kteří dají peníze z běžného účtu do investic, ponesou riziko; studie proto navrhuje osvětu, větší diverzifikaci fondů a silnější dohled nad velmi rizikovými firemními dluhopisy.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "U českých střadatelů dnes leží „spící“ úspory, často na neúročených běžných účtech; mají začít pracovat.",
+          "kolik": "4000 mld. Kč"
+        },
+        {
+          "co": "Při pouhém tříprocentním ročním zhodnocení se úspory zdvojnásobí.",
+          "kolik": "za 25 let"
+        },
+        {
+          "co": "Při nižších poplatcích by český střadatel nemusel vkládat tolik peněz jako dnes, aby dosáhl stejného výnosu jako Slovák.",
+          "kolik": "dnes vkládá 10× víc peněz"
+        },
+        {
+          "co": "Přebudování penzijních fondů podle skandinávského vzoru má podle kapitoly o průmyslu postupně přinést dlouhodobý kapitál pro české firmy (údaj z kapitoly 3.1).",
+          "kolik": "stovky miliard Kč"
+        }
+      ],
+      "neutralni": [
+        "Studie neuvádí žádný náklad pro rozpočet u zákonného snížení poplatků penzijních fondů, u osvěty a syndikátů drobných investorů ani u zmírnění regulace krátkodobých hypoték."
+      ],
+      "nevycisleno": [
+        "Studie nevyčísluje riziko kolísání hodnoty úspor ani to, o kolik přijdou správci fondů na poplatcích.",
+        "Nevyčísluje, kolik by stálo provozování fondů státem a silnější dohled.",
+        "Kapitola není ve shrnutí dopadů strategie; dopad na HDP a rozpočet není uveden."
+      ],
+      "zdroj": "Kapitola 2.3; údaj o penzijním kapitálu z kapitoly 3.1"
+    },
+    {
+      "slug": "prumysl",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Stát vyčlení až 1 % zakázek veřejných zadavatelů na vývoj nových řešení; z velké části je to přesun nákupů, které stát stejně dělá, zbytek je investice s rizikem.",
+          "kolik": "až 1 % zakázek, zhruba 8,4 mld. Kč ročně (objem 2024)"
+        },
+        {
+          "kdo": "stát",
+          "co": "Firmy si budou moci odepsat celou investici do výzkumu, automatizace a softwaru hned v prvním roce, takže stát krátkodobě vybere méně daně z příjmů firem.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Víc evropských peněz půjde přes Národní rozvojovou banku jako záruky, úvěry a kapitálové vstupy místo dotací; podíl se zvýší násobně, na úroveň Litvy.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Posílí se exportní financování a pojištění a vznikne nástroj Národní rozvojové banky a České exportní banky na spolufinancování nákupu zahraničních firem.",
+          "kolik": null
+        },
+        {
+          "kdo": "firmy",
+          "co": "Zahraniční investoři s velkými objemovými investicemi dostanou méně: pobídky se přepnou z počtu pracovních míst na přidanou hodnotu na zaměstnance; objem podpory zůstane stejný.",
+          "kolik": null
+        },
+        {
+          "kdo": "firmy",
+          "co": "Kdo čerpá veřejnou podporu na výzkum, musí udržet práva k výsledkům v Evropském hospodářském prostoru, jinak podporu vrátí.",
+          "kolik": null
+        },
+        {
+          "kdo": "firmy",
+          "co": "Dodavatelé velkých obranných zakázek budou muset nabídnout spolupráci s českým průmyslem, například společný vývoj a podíl českých firem na know-how.",
+          "kolik": "zakázky nad 1 mld. Kč"
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Přebudování penzijních fondů po skandinávském vzoru (nižší poplatky, víc akcií a růstových investic) postupně přinese kapitál, o který se dnes připravujeme.",
+          "kolik": "stovky miliard Kč dlouhodobého kapitálu"
+        },
+        {
+          "co": "Zrychlené odpisy a předvídatelný odpočet na výzkum mají podle studie rozproudit soukromé investice rychleji než dotační program; většina výpadku daní se státu v dalších letech vrátí.",
+          "kolik": null
+        },
+        {
+          "co": "Víc firem má využít odpočet nákladů na výzkum; v roce 2024 ho využilo jen 721 firem a daňová podpora kryla jen 4 % jejich výdajů na výzkum.",
+          "kolik": "odpočet 150 % nákladů do 50 mil. Kč"
+        },
+        {
+          "co": "Stát jako první zákazník dostane lepší systémy a domácí firmy získají referenci, se kterou se prodává do světa.",
+          "kolik": null
+        },
+        {
+          "co": "Cíle: výdaje na výzkum a vývoj nad 2,1 % HDP (dnes 1,82 %), schodek důchodů z přímých zahraničních investic pod 4 % HDP (dnes 5,2 %) a 200 nových univerzitních spin-offů.",
+          "kolik": "VaV nad 2,1 % HDP; schodek pod 4 % HDP; 200 spin-offů"
+        }
+      ],
+      "neutralni": [
+        "Investiční pobídky: „objem podpory zůstane stejný, změní se jen adresát“.",
+        "Vyčlenění až 1 % zakázek na vývoj nových řešení je z velké části přesun existujících nákupů.",
+        "Okamžité odpisy jsou pro rozpočet z velké části odklad příjmu, který se vrátí; studie se opírá o zkušenost z Británie.",
+        "Dotace se nahrazují návratnými nástroji (záruky, úvěry, kapitálové vstupy), které se státu vracejí, a nové dotační programy se podle úvodu pilíře 3 neotevírají."
+      ],
+      "nevycisleno": [
+        "Část výpadku z okamžitých odpisů je podle studie trvalý náklad; studie ho nevyčísluje.",
+        "Neříká, kolik z částky asi 8,4 mld. Kč ročně je nový výdaj a kolik jen přesun stávajících nákupů.",
+        "Nevyčísluje cenu nových nástrojů Národní rozvojové banky a České exportní banky ani to, kolik velkých investic odejde jinam po změně pobídek.",
+        "Studie neslibuje vyšší mzdy příští rok; mzdy podle ní zvýší až to, že Česko bude vlastnit větší podíl přidané hodnoty.",
+        "Kapitola není ve shrnutí dopadů strategie; cíle (výzkum, spin-offy) nejsou převedeny na mld. Kč."
+      ],
+      "zdroj": "Kapitola 3.1 včetně úvodu pilíře 3"
+    },
+    {
+      "slug": "energie",
+      "zaplati": [
+        {
+          "kdo": "lidé",
+          "co": "Odběratelé elektřiny zaplatí platby za kapacitní mechanismus, tedy aukce na pohotovost zdrojů (baterie, přečerpávačky, plyn) pro dobu mezi koncem uhlí a novými bloky jádra.",
+          "kolik": "75–150 mld. Kč za příští dekádu"
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát podepírá Dukovany nízkoúročeným úvěrem na plné náklady stavby a čtyřicetiletou smlouvou o výkupu elektřiny; špatně nastavená cena může přenést podstatnou část rizika na stát a odběratele.",
+          "kolik": "smluvní cena 407 mld. Kč (bez inflace a financování); odhad plných nákladů 23–30 mld. eur"
+        },
+        {
+          "kdo": "lidé",
+          "co": "Domácnosti topící plynem zaplatí za plyn víc, jak se budou narovnávat daně a poplatky mezi elektřinou a plynem; trajektorii zákon ohlásí předem.",
+          "kolik": "více než 1,5 milionu domácností topících plynem"
+        },
+        {
+          "kdo": "lidé",
+          "co": "Od roku 2028 začnou platit evropské povolenky na vytápění a pohonné hmoty, které lidé zaplatí v cenách paliv; platí bez ohledu na postoj vlády.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Když cena povolenky překročí sociálně únosnou hranici, stát automaticky sníží spotřební daň z paliv a přijde o část příjmů.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát zřídí revolvingový fond výhodných renovačních půjček pro domácnosti podle německé KfW; splátky se vracejí a půjčují dál.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Na renovace „na klíč“ pro domácnosti, které na investici nedosáhnou, jdou evropské peníze ze Sociálního klimatického fondu.",
+          "kolik": "zhruba 50 mld. Kč"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Distributor, který zaviněně protahuje připojení, zaplatí kompenzaci ze svého, ne z tarifů.",
+          "kolik": null
+        },
+        {
+          "kdo": "investoři",
+          "co": "Provozovatelé větrných projektů dají obcím a dotčeným komunitám přímý výnos z projektu.",
+          "kolik": null
+        },
+        {
+          "kdo": "firmy",
+          "co": "Teplárny a dodavatelé tepla budou mít regulovaný zisk za celou cestu tepla; kdo opakovaně účtuje víc než srovnatelné tepelné čerpadlo, předloží ozdravný plán a odběratelé mohou odejít bez sankcí.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Dnešní účet za dovoz fosilních paliv je velký; domácí zdroje a úspory ho mají snižovat, o kolik, studie nevyčísluje.",
+          "kolik": "262 mld. Kč za rok 2025"
+        },
+        {
+          "co": "Energetický kupón vrátí lidem polovinu výnosů z povolenek, každému stejně, bez žádostí; kdo topí a jezdí úsporně, dostane víc, než zaplatil.",
+          "kolik": "zhruba 5 000 Kč ročně na průměrnou domácnost (při ceně povolenky kolem 60 eur)"
+        },
+        {
+          "co": "Dynamický tarif (cena elektřiny se mění podle trhu) ušetřil domácnostem v českém pilotu část účtu.",
+          "kolik": "kolem desetiny účtu"
+        },
+        {
+          "co": "Úspory se zárukou ve státních budovách (EPC) šetří už dnes bez dotací; potenciál je mnohem větší.",
+          "kolik": "přes 700 mil. Kč ročně dnes; potenciál až 20 mld. Kč ročně"
+        },
+        {
+          "co": "Soutěž o nejlevnější nízkoemisní teplo snížila v litevském příkladu ceny tepla za 5 let o třetinu.",
+          "kolik": "o třetinu za 5 let (Litva)"
+        },
+        {
+          "co": "Otevřená síť a předvídatelná pravidla přitáhnou soukromý kapitál, takže stát nebude muset transformaci financovat sám a sníží se tlak na veřejné rozpočty.",
+          "kolik": null
+        }
+      ],
+      "neutralni": [
+        "Úspory se zárukou (EPC) ve státních budovách se platí z uspořených účtů za energii, bez dotací.",
+        "Energeticky náročný průmysl: tři nástroje s jasným plátcem; studie píše, že „nejde o nové desítky miliard, ale o chytřejší nasazení peněz v objemu dnešních kompenzací“.",
+        "Revolvingový fond renovačních půjček je podle studie udržitelnější než závazek státu platit bankám úroky z renovačních úvěrů.",
+        "Odblokování zaplacené, ale nevyužité kapacity sítě je podle studie nejlevnější cesta: „nejlevnější megawatt je ten, který je už zaplacený“."
+      ],
+      "nevycisleno": [
+        "Dopad energetické transformace a reformy teplárenství není vyčíslen; ve shrnutí dopadů patří mezi nevyčíslená opatření, i když může jít o „potenciálně největší strukturální reformu od privatizace“.",
+        "Konečná cena Dukovan je nejistá: smluvní cena 407 mld. Kč nezahrnuje inflaci ani náklady financování a Evropská komise zkoumá podporu kvůli riziku přenosu na stát.",
+        "Stejnosměrný koridor a vstup do severomořské větrné farmy studie jen navrhuje prověřit studií proveditelnosti; náklady neuvádí.",
+        "Kolik stát přijde na snížení spotřební daně při vysoké ceně povolenky, studie nevyčísluje; výše kupónu 5 000 Kč platí jen při ceně povolenky kolem 60 eur."
+      ],
+      "zdroj": "Kapitola 3.2; souhrn dopadů č. 6, č. 15 a č. 16"
+    },
+    {
+      "slug": "inovace",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Stát vytvoří startupový fond podle izraelské Yozmy s vysokou účastí státu; je cílen jako ziskový, ale část startupů zkrachuje a peníze se mohou ztratit.",
+          "kolik": null
+        },
+        {
+          "kdo": "investoři",
+          "co": "Zbytek peněz do startupových fondů doplní soukromí investoři.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát dá firmám daňové prázdniny a daňové zvýhodnění investic, takže své peníze dostane až o několik let později.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát v prvních letech nevybere daň ze zisku startupů, aby mohly peníze investovat do růstu (vzor Estonsko).",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát vytvoří a financuje nezávislé instituce pro přenos výzkumu do praxe, instituty aplikovaného výzkumu podle německých Fraunhoferových a inkubátory v Praze, Ostravě, Plzni, Liberci a Olomouci.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Silnější inovační ekonomika, vyšší produktivita a víc kvalitních pracovních míst.",
+          "kolik": null
+        },
+        {
+          "co": "Domácí inovativní firmy mají časem obrátit odliv dividend: zahraniční korporace dnes posílají do mateřských zemí několik set miliard Kč ročně, opačným směrem jde jen jednotky miliard.",
+          "kolik": "několik set mld. Kč ročně odtéká v dividendách"
+        },
+        {
+          "co": "Každá koruna do výzkumu a vývoje se vrací několikanásobně (údaj z kapitoly 1.2).",
+          "kolik": "3–4 Kč na 1 Kč (konzervativně)"
+        },
+        {
+          "co": "Státní startupový fond získá podíly ve firmách a později je prodá, takže se peníze mohou vrátit.",
+          "kolik": null
+        }
+      ],
+      "neutralni": [
+        "Daňové prázdniny (daňové zvýhodnění investic) jsou pro stát podle studie „dlouhodobě rozpočtově neutrální“: stát své peníze dostane, jen o několik let později.",
+        "Státní startupový fond je cílen jako ziskový, protože získává podíly ve firmách a následně je prodává.",
+        "Fond má nahradit dnešní komplikované dotační programy, které navíc nemají jednotnou administraci (TAČR, OP TAK a další)."
+      ],
+      "nevycisleno": [
+        "Částky za jednotlivá opatření studie v této kapitole nevyčísluje.",
+        "Nevyčísluje, kolik veřejných peněz se ve startupech ztratí; píše jen, že krach je u startupů naprosto běžný.",
+        "Nevyčísluje, o kolik se sníží příjmy státu v prvních letech při nedanění zisku startupů; „rozpočtově neutrální“ píše jen o daňových prázdninách.",
+        "Výsledky celého ekosystému (zaměstnanecké podíly, přenos technologií, startupové fondy) se podle shrnutí dopadů projeví za 10–20 let a nejsou vyčísleny."
+      ],
+      "zdroj": "Kapitola 3.3; souhrn dopadů č. 2 a č. 17"
+    },
+    {
+      "slug": "regiony",
+      "zaplati": [
+        {
+          "kdo": "obce",
+          "co": "Při přerozdělení podílu obcí na státních daních (RUD) může některá obec dostat míň, protože část peněz poputuje obcím s větší ekonomickou aktivitou; solidární složka pro sociálně znevýhodněné obce zůstává.",
+          "kolik": "nejméně 20 % RUD, dnes přibližně 60 mld. Kč ročně"
+        },
+        {
+          "kdo": "firmy",
+          "co": "Obce dostanou odpovídající podíl na výnosech z těžby a velkých energetických projektů.",
+          "kolik": null
+        },
+        {
+          "kdo": "investoři",
+          "co": "U nové výstavby vznikne transparentní příspěvek na vyvolanou infrastrukturu; kdo přesně platí, kapitola neupřesňuje.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát bude finančně podporovat dobrovolné slučování nejmenších obcí a dá stabilní financování Společenstvím obcí.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "V hospodářsky a sociálně ohrožených územích stát umožní rychlejší odpisy nových produktivních investic, takže v prvních letech vybere méně daně.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Obce získají motivaci k nové výstavbě a investicím, protože se jim rozvoj začne vyplácet.",
+          "kolik": null
+        },
+        {
+          "co": "Lepší využití obecních úspor umožní větší projekty bez závislosti na dotačních výzvách; obce dnes drží na účtech velké peníze.",
+          "kolik": "300–400 mld. Kč na účtech obcí"
+        },
+        {
+          "co": "Půjčky a záruky mají nahradit část grantů; dnes tvoří jen malou část využití evropských prostředků.",
+          "kolik": "dnes kolem 3 % evropských prostředků"
+        },
+        {
+          "co": "Společná správa sníží náklady a zvýší odbornost samospráv; podle shrnutí dopadů (NERV) dnes roztříštěnost více než 6 200 obcí vede k neefektivně vynaloženým penězům.",
+          "kolik": "~10 mld. Kč ročně (údaj ze shrnutí dopadů)"
+        }
+      ],
+      "neutralni": [
+        "Reforma financování obcí „bude převážně fiskálně neutrální a změní především rozdělení peněz a pobídky systému“.",
+        "Dobrovolný pooling obecních peněz a úvěry přes Národní rozvojovou banku používají peníze, které obce už mají, a evropské financování; část grantů nahradí návratné nástroje.",
+        "Evropské a národní peníze se soustředí do investic s největším rozvojovým efektem místo roztříštění do drobných projektů."
+      ],
+      "nevycisleno": [
+        "Kdo na změně rozpočtového určení daní získá a kdo ztratí, kapitola nevyčísluje.",
+        "Nevyčísluje náklady podpory slučování obcí a stabilního financování Společenství obcí ani výnos těžebních a energetických podílů.",
+        "Dopad rychlejších odpisů v ohrožených územích není vyčíslen.",
+        "Shrnutí dopadů uvádí cíl 20 % příjmů obcí z místní ekonomiky do roku 2035 a sdílenou státní pokladnu u ČNB; kapitola o tom nepíše a mluví jen o 20 % rozpočtového určení daní a o roli Národní rozvojové banky."
+      ],
+      "zdroj": "Kapitola 4.1; souhrn dopadů č. 8 a č. 18"
+    },
+    {
+      "slug": "stat",
+      "zaplati": [
+        {
+          "kdo": "stát",
+          "co": "Stát dokončí asi 1 400 digitálních služeb, kde to dává smysl, a zřídí Jednotné inkasní místo pro finanční úřady, sociální zabezpečení a zdravotní pojišťovny.",
+          "kolik": "cca 1 400 služeb"
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát postupně nahradí staré informační systémy a omezí závislost na drahých dodavatelích, i když se to nestane ze dne na den.",
+          "kolik": null
+        },
+        {
+          "kdo": "stát",
+          "co": "Stát ukotví analytický útvar Hodnota za peníze v zákoně, dá mu víc pravomocí a posílí ho personálně; na Slovensku kontroluje investice od 40 mil. EUR.",
+          "kolik": null
+        }
+      ],
+      "prinese": [
+        {
+          "co": "Dnešní provoz zastaralých státních IT systémů stojí ročně velkou částku; studie chce závislost na dodavatelích omezit.",
+          "kolik": "8,5 mld. Kč ročně"
+        },
+        {
+          "co": "Příklad SZIF: softwarové nástroje stály za 4 roky víc, než by vyšlo v komerční sféře.",
+          "kolik": "2,1 mld. Kč oproti 100–120 mil. Kč (až 20× méně)"
+        },
+        {
+          "co": "Modernější, levnější a efektivnější stát, který občanům a firmám šetří čas, peníze a administrativu.",
+          "kolik": null
+        },
+        {
+          "co": "Důsledné hodnocení veřejných investic podle principu „hodnota za peníze“ má zlepšit rozhodování o penězích státu.",
+          "kolik": null
+        }
+      ],
+      "neutralni": [],
+      "nevycisleno": [
+        "Kapitola náklady dokončení 1 400 služeb, Jednotného inkasního místa, výměny systémů ani posílení útvaru Hodnota za peníze nevyčísluje.",
+        "Uvedených 8,5 mld. Kč ročně je dnešní náklad provozu starých systémů, ne vyčíslená úspora.",
+        "Dopad digitalizace je ve shrnutí dopadů mezi nevyčíslenými; přínos otevřených dat pro výzkum a startupy také není vyčíslen."
+      ],
+      "zdroj": "Kapitola 4.2; souhrn dopadů č. 9 a č. 19"
+    }
+  ]
+}

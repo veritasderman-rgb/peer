@@ -58,6 +58,8 @@ Každé video má namluvený komentář a hudební podkres, titulky zůstávají
   délku scén (řeč + dozvuk) a rozloží karty ve scéně podle vět komentáře. Téma bez zvuku v manifestu se vyrenderuje
   jako dřív (délka z délky textu).
 - Oprava textu = upravit `narration`, znovu namluvit daný odstavec, přepsat MP3, spustit manifest a render.
+- `node scripts/captions.mjs` vygeneruje titulky `public/video/<slug>.vtt` ze stejného časování jako render (věty
+  komentáře rozložené v délce řeči). Přehrávač je nabízí jako volitelnou stopu a pod videem je přepis komentáře.
 
 ## Jak přidat další téma
 

@@ -90,3 +90,22 @@ Komentář ve videích (`narration` ve `video/scripts/<slug>.ts`) je kratší ne
 - **oligarchie**: strop 100 tisíc eur zazní až v části „co to přinese“.
 - **bydleni** a **energie**: „2,7×“ se čte „skoro třikrát“.
 - Outro je všude stejné („Celou strategii najdeš na webu Česko má na víc.“), doména se nečte.
+
+## Stránka „Jak se to zaplatí“ (data/zaplaceni.json, napříč tématy)
+Souhrn financování je sestavený jen z textu studie; při skládání vyšly najevo rozpory, které by měli garanti rozhodnout:
+- **Studie nikde netvrdí, že většina opatření je rozpočtově neutrální.** Neutralitu uvádí jen u konkrétních opatření (4.1 RUD, 3.1 pobídky, 1 % zakázek a odpisy, 3.2 průmysl, EPC a revolvingový fond, 3.3 daňové prázdniny, 1.2 celoživotní učení krátkodobě). Položky „Studie neuvádí žádný náklad“ (bydlení, oligarchie, kapitál) jsou absence údaje, ne tvrzení neutrality.
+- **300 mld. Kč** je ve studii „do státního rozpočtu“, ne „do veřejných rozpočtů“; web se drží studie.
+- **bydleni**: redakční „co to stojí“ říká, že se náklady vrátí v mobilitě práce a nižších dávkách; kapitola to výslovně neříká (popisuje jen řetězec málo bytů → ceny → blokace mobility → dávky).
+- **vzdelanost**: „konkurenceschopné platy učitelů“ kapitola navrhuje jen u vysokoškolských učitelů; „úlevy a příspěvky se vyrovnají“ platí jen u celoživotního učení; dopad.json č. 1 slučuje oborovou soustavu a celoživotní učení (+20–40 mld.), kapitola dává 20–40 mld. jen celoživotnímu učení; dopad.json č. 2 (VaV, 3–4 Kč na 1 Kč) je označený slug „inovace“, ale text je v kapitole 1.2.
+- **prace**: vyšší příjmy rozpočtů z omezení DPP jsou jen v dopad.json č. 12, ne v kapitole.
+- **zeny**: kdo doplácí rozdíl u cenového stropu dětské skupiny, kapitola neříká (web to uvádí jako důsledek); dopad.json počítá se 100 000 novými místy (~10 mld.), kapitola s potřebou 30–40 tisíc míst.
+- **exekuce**: tři nesloučitelná čísla (kapitola 100 000 lidí a 3–5 mld.; tabulka cílů 200 000 lidí; dopad.json 25 mld.); „5–16,5 mld.“ je v dopad.json připsáno NERV a PAQ, v kapitole je NERV 5–12, PAQ 9–15 a 16,5 od exekutora Petra Kučery (teritorialita).
+- **zdravi**: „40–50 mld. Kč během příštích deseti let“ nejde poznat, zda celkem, nebo ročně; „840 mld. Kč (+0,7 %)“ kapitola vs. „kumulativně, +0,7 % ročně“ dopad.json.
+- **oligarchie**: redakce píše o „kapacitách“ ÚOHS, kapitola žádá jen pravomoci (rozdělení firem, pokuty, práh dominance).
+- **euro**: dopad.json č. 7 říká, že euro „přinese úsporu 1,24 mil. Kč“ na hypotéce; v kapitole je to srovnání ČR–SR u stejné banky (červen 2026), ne model přijetí.
+- **kapital**: kapitola neřeší kolísání hodnoty ani kdo platí správu státem provozovaných fondů (jen „ještě levnější obsluha“).
+- **energie**: kapacitní mechanismus „75 až 150 miliard“ bez uvedení plátce; web říká „odběratelé“ podmíněně.
+- **inovace**: za rozpočtově neutrální kapitola označuje jen daňové prázdniny, ne nedanění zisku startupů.
+- **regiony**: dopad.json č. 18 („20 % příjmů obcí z místní ekonomiky do 2035“, „sdílená pokladna u ČNB“) v kapitole není; kapitola má „nejméně 20 % RUD (~60 mld. Kč ročně)“ a dobrovolné sdružování přes NRB; „~10 mld. Kč“ (dopad.json č. 8) v kapitole není.
+- **kapital a prumysl** v dopad.json (vyčíslená ani nevyčíslená opatření) vůbec nejsou.
+- Odvození plátce, která nejsou ve studii výslovně: stát doplácí strop dětské skupiny; stát přichází o daň u vyššího paušálu pronajímatelů; část obcí může posunem RUD dostat méně; spotřebitelé platí ETS2 v cenách paliv.

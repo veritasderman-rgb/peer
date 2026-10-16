@@ -5,7 +5,23 @@ import styles from "./TopicVideo.module.css";
 
 /* Video k tématu: na výšku (telefon) se načte reel 9:16, jinak široké 16:9.
    Obě verze jsou ke stažení, aby se daly sdílet na sítích. */
-export function TopicVideo({ wide, reel, poster, titulek, popis }: { wide: string; reel: string; poster?: string; titulek: string; popis?: string }) {
+export function TopicVideo({
+  wide,
+  reel,
+  poster,
+  titulek,
+  popis,
+  titulky,
+  prepis,
+}: {
+  wide: string;
+  reel: string;
+  poster?: string;
+  titulek: string;
+  popis?: string;
+  titulky?: string;
+  prepis?: string[];
+}) {
   const [portrait, setPortrait] = useState(false);
   useEffect(() => {
     const mq = window.matchMedia("(orientation: portrait) and (max-width: 760px)");
@@ -29,6 +45,8 @@ export function TopicVideo({ wide, reel, poster, titulek, popis }: { wide: strin
         aria-label={titulek}
       >
         <source src={src} type="video/mp4" />
+        {/* titulky k mluvenému komentáři: text v obraze je kratší než hlas, tohle je přepis hlasu */}
+        {titulky && <track kind="subtitles" src={titulky} srcLang="cs" label="Česky (komentář)" />}
         Tvůj prohlížeč video nepřehraje. <a href={src}>Stáhni si ho.</a>
       </video>
       <figcaption className={styles.caption}>
@@ -37,7 +55,16 @@ export function TopicVideo({ wide, reel, poster, titulek, popis }: { wide: strin
         <span className={styles.links}>
           <a href={wide} download>Stáhnout široké (16:9)</a>
           <a href={reel} download>Stáhnout reel (9:16)</a>
+          {titulky && <a href={titulky} download>Titulky (VTT)</a>}
         </span>
+        {prepis && prepis.length > 0 && (
+          <details className={styles.prepis}>
+            <summary>Přepis komentáře</summary>
+            {prepis.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </details>
+        )}
       </figcaption>
     </figure>
   );

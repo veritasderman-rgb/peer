@@ -1,4 +1,6 @@
 import type { TopicConfig } from "@/lib/topics";
+import { scripts } from "@/video/scripts";
+import { citelne } from "@/lib/citelne";
 import { bydleni } from "./bydleni";
 import { vzdelanost } from "./vzdelanost";
 import { prace } from "./prace";
@@ -18,6 +20,9 @@ import { stat } from "./stat";
    ze scénáře video/scripts/<slug>.ts. Pokud téma nemá vlastní `video`, doplní se standardní cesty. */
 function withVideo(t: TopicConfig): TopicConfig {
   if (t.video) return t;
+  /* přepis = odstavce namluveného komentáře ze scénáře (stejný text, z něhož vznikl hlas i titulky) */
+  const n = scripts.find((s) => s.slug === t.slug)?.narration;
+  const prepis = n ? [n.hook, n.problem, n.proc, n.navrh, n.dopad, n.outro].map(citelne) : undefined;
   return {
     ...t,
     video: {
@@ -26,6 +31,8 @@ function withVideo(t: TopicConfig): TopicConfig {
       poster: `/video/${t.slug}-poster.jpg`,
       titulek: `${t.kratkyNazev} za minutu`,
       popis: "Namluvené, s hudbou a titulky. Široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts.",
+      titulky: n ? `/video/${t.slug}.vtt` : undefined,
+      prepis,
     },
   };
 }
