@@ -31,7 +31,7 @@ export function GET() {
     `- [Jak se to zaplatí](${abs("/zaplaceni")}): kdo zaplatí, co to přinese, co studie nevyčísluje.`,
     `- [Videa Bobr za minutu](${abs("/videa")}): minutová videa ke každému tématu, s přepisem.`,
     `- [Kolik ti to přinese](${abs("/kolik-ti-to-prinese")}): krátký kvíz, co ze strategie se týká tebe a kolik to může znamenat.`,
-    `- [Můj kraj](${abs("/moje-obec")}): mapa krajů s čísly ze studie.`,
+    `- [Můj kraj](${abs("/moje-obec")}): mapa krajů (exekuce, nezaměstnanost, mzdy, HDP); aktuální data veřejných zdrojů, ne ze studie, která čísla po krajích neuvádí.`,
     `- [Otázky a námitky](${abs("/otazky")}): nejčastější otázky a námitky, odpovědi jen ze studie, s přiznanými mezerami.`,
     `- [Pro sdílení](${abs("/pro-sdileni")}): hotové texty, obrázky a videa pro sociální sítě; strojově i jako ${abs("/pro-sdileni/balicek.json")}.`,
     `- [Pro média](${abs("/pro-media")}): shrnutí, 14 čísel, kontakty a loga; textová verze ${abs("/pro-media/souhrn.txt")}.`,

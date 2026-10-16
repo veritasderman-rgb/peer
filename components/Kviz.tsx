@@ -50,10 +50,9 @@ export function Kviz({ data, url, nazvy }: Props) {
       const r = kod ? dekoduj(kod) : null;
       if (!r) return;
       setOdp(r.odpovedi);
-      if (r.mzda !== null) {
-        setMzda(r.mzda);
-        setMzdaUpravena(true);
-      }
+      /* odkaz bez mzdy = výchozí mzda, aby výsledek odpovídal přesně tomu, co je v adrese */
+      setMzda(r.mzda ?? prumer);
+      setMzdaUpravena(r.mzda !== null);
       setZobrazit(true);
     };
     nacti();

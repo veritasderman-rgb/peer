@@ -4,7 +4,7 @@
    (video/bydleni-wide.mp4 → <blob>/video/bydleni-wide.mp4), takže na webu stačí nastavit
    NEXT_PUBLIC_MEDIA_URL na základ adresy úložiště.
 
-   node scripts/upload-media.mjs            # nahraje jen změněné (podle velikosti a názvu)
+   node scripts/upload-media.mjs            # nahraje jen změněné (jiná velikost, nebo novější než poslední nahrání)
    node scripts/upload-media.mjs --force    # nahraje vše znovu */
 import fs from "node:fs";
 import path from "node:path";
@@ -20,11 +20,13 @@ if (!process.env.BLOB_READ_WRITE_TOKEN) {
   process.exit(1);
 }
 
+/* Co už v úložišti je: velikost a čas nahrání. Soubor se přeskočí, jen když má stejnou velikost
+   a nebyl od posledního nahrání změněn (mtime); nový render se stejnou délkou by jinak zůstal starý. */
 const existing = new Map();
 let cursor;
 do {
   const page = await list({ cursor, limit: 1000 });
-  for (const b of page.blobs) existing.set(b.pathname, b.size);
+  for (const b of page.blobs) existing.set(b.pathname, { size: b.size, uploadedAt: new Date(b.uploadedAt).getTime() });
   cursor = page.hasMore ? page.cursor : undefined;
 } while (cursor);
 
@@ -38,8 +40,9 @@ for (const dir of DIRS) {
     const full = path.join(abs, file);
     if (!fs.statSync(full).isFile()) continue;
     const key = `${dir}/${file}`.replace(/\\/g, "/");
-    const size = fs.statSync(full).size;
-    if (!force && existing.get(key) === size) {
+    const { size, mtimeMs } = fs.statSync(full);
+    const old = existing.get(key);
+    if (!force && old && old.size === size && mtimeMs <= old.uploadedAt) {
       skipped++;
       continue;
     }
