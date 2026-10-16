@@ -115,7 +115,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
               ))}
             </ul>
           </div>
-          <div className={`card ${styles.cost}`}>
+          <div className={`card ${styles.cost}`} id="stoji">
             <h3>A co to stojí</h3>
             {t.stoji.odstavce.map((o, i) => <p key={i}>{o}</p>)}
             <BobrBubble mood="thinking" size={120}>{t.stoji.bobr}</BobrBubble>
