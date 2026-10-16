@@ -1,0 +1,154 @@
+{
+  "kapitola": "1.3",
+  "nazev": "Exekuce – systém, který trestá práci a ničí budoucnost dětí",
+  "garant": {
+    "jmeno": "Zuzana Freitas Lopesová",
+    "role": "odbornice na mobilizaci trhu práce a rovné šance"
+  },
+  "hook": {
+    "hodnota": 590000,
+    "jednotka": "lidí v systému exekucí",
+    "veta": "Česko drží 590 000 lidí v systému exekucí, ze kterého není úniku. Každý, kdo vydělá nad cca 31 500 Kč hrubého, přichází o každou další vydělanou korunu."
+  },
+  "grafy": {
+    "vyvojDat": {
+      "titulek": "Exekuce: data k 31. 12. 2025 a k 30. 6. 2026",
+      "zdroj": "Exekutorská komora ČR (Centrální evidence exekucí); https://www.institut-predluzeni.cz/data-a-studie/exekuce/",
+      "rok2025": "k 31. 12. 2025",
+      "rok2026": "k 30. 6. 2026",
+      "polozky": [
+        {"ukazatel": "Osob v exekuci", "rok2025": 566000, "rok2026": 590000, "jednotka": "osob"},
+        {"ukazatel": "Podíl osob v exekuci 15+", "rok2025": 6.5, "rok2026": 6.4, "jednotka": "%"},
+        {"ukazatel": "Exekučních řízení", "rok2025": 3100000, "rok2026": 3000000, "jednotka": "řízení"},
+        {"ukazatel": "Průměrný počet exekucí na osobu", "rok2025": 5.1, "rok2026": 5.1, "jednotka": "exekucí"},
+        {"ukazatel": "Celkově vymáhaná částka", "rok2025": 545, "rok2026": 542, "jednotka": "mld. Kč"},
+        {"ukazatel": "Průměrná částka na osobu", "rok2025": 914000, "rok2026": 919000, "jednotka": "Kč"},
+        {"ukazatel": "Osob se 3+ exekucemi", "rok2025": 375000, "rok2026": 368000, "jednotka": "osob"},
+        {"ukazatel": "Osob s 10+ exekucemi", "rok2025": 88000, "rok2026": 86000, "jednotka": "osob"},
+        {"ukazatel": "Mladých do 30 let", "rok2025": 60000, "rok2026": 59000, "jednotka": "osob"},
+        {"ukazatel": "Osob nad 65 let", "rok2025": 66000, "rok2026": 66000, "jednotka": "osob"}
+      ],
+      "poznamka": "Pozn. 1: data neobsahují daňové a právní exekuce vedené např. ČSSZ, FÚ, Celní správou, obcemi (cca statisíce řízení). Pozn. 2: data obsahují i exekuce osob, které procházejí oddlužením (cca 80 tisíc), protože ty se ukončují až po úspěšném dokončení oddlužení."
+    },
+    "kraje": {
+      "titulek": "Exekuce jsou v Česku silně regionální záležitost",
+      "zdroj": "Exekutorská komora ČR (data CC BY 4.0), ČSÚ; mapa: mapazadluzeni.cz, 2026-Q2",
+      "jednotka": "% osob v exekuci",
+      "prumerCR": 6.4,
+      "polozky": [
+        {"kraj": "Karlovarský", "poznamka": "nejvyšší podíl osob v exekuci v ČR, jeden z nejchudších krajů"},
+        {"kraj": "Ústecký", "poznamka": "nejvyšší podíl osob v exekuci v ČR, jeden z nejchudších krajů"},
+        {"kraj": "Liberecký", "poznamka": "nejvyšší podíl osob v exekuci v ČR, jeden z nejchudších krajů"}
+      ],
+      "poznamka": "Hodnoty za jednotlivé kraje jsou v podkladu pouze na mapě, v textu čísla nejsou."
+    },
+    "cileDo2030": {
+      "titulek": "Měřitelné cíle reformy exekucí do roku 2030",
+      "zdroj": "Pirátská expertní ekonomická rada, Hospodářská strategie PEER",
+      "polozky": [
+        {"ukazatel": "Počet lidí v exekuci", "vychodisko": 590000, "cil": 413000, "cilPopis": "≤ 413 000 (−30 %)"},
+        {"ukazatel": "Roční pokles vymáhané částky", "vychodisko": 5, "cil": 10, "jednotka": "mld. Kč", "cilPopis": "~10 mld. Kč (×2)"},
+        {"ukazatel": "Lidé vrácení na legální trh práce", "vychodisko": null, "cil": 200000, "cilPopis": "+200 000"}
+      ],
+      "poznamka": "V tabulce je výchozí stav označen jako 2025, ale hodnota 590 000 odpovídá údaji k 30. 6. 2026 v tabulce dat výše."
+    }
+  },
+  "fakta": [
+    {"id": "osob_v_exekuci_2026", "hodnota": 590000, "jednotka": "osob (k 30. 6. 2026)", "text": "Česko drží 590 000 lidí v systému exekucí, ze kterého není úniku.", "zdrojIndex": 10},
+    {"id": "osob_v_exekuci_2025", "hodnota": 566000, "jednotka": "osob (k 31. 12. 2025)", "text": "K 31. 12. 2025 bylo v exekuci 566 tisíc osob.", "zdrojIndex": 10},
+    {"id": "podil_15plus_2026", "hodnota": 6.4, "jednotka": "% osob 15+ (2026)", "text": "Podíl osob v exekuci mezi lidmi staršími 15 let činí k 30. 6. 2026 6,4 %.", "zdrojIndex": 10},
+    {"id": "podil_15plus_2025", "hodnota": 6.5, "jednotka": "% osob 15+ (2025)", "text": "Podíl osob v exekuci mezi lidmi staršími 15 let činil k 31. 12. 2025 6,5 %.", "zdrojIndex": 10},
+    {"id": "pokles_dluhu_procent", "hodnota": 1, "jednotka": "% ročně (pokles celkové dlužné částky)", "text": "Celková dlužná částka klesá ročně jen o 1 %, a to výhradně díky odpisu nevymahatelných pohledávek.", "zdrojIndex": 10},
+    {"id": "pokles_dluhu_mld", "hodnota": 5, "jednotka": "mld. Kč ročně", "text": "Roční pokles dlužné částky činí přibližně 5 miliard korun.", "zdrojIndex": 10},
+    {"id": "vymahana_castka_2025", "hodnota": 545, "jednotka": "mld. Kč (k 31. 12. 2025)", "text": "Celkově vymáhaná částka činila k 31. 12. 2025 545 mld. Kč.", "zdrojIndex": 10},
+    {"id": "vymahana_castka_2026", "hodnota": 542, "jednotka": "mld. Kč (k 30. 6. 2026)", "text": "Celkově vymáhaná částka činila k 30. 6. 2026 542 mld. Kč.", "zdrojIndex": 10},
+    {"id": "exekuci_na_osobu", "hodnota": 5.1, "jednotka": "exekučních řízení na osobu (2025 i 2026)", "text": "V průměru má osoba v exekuci 5,1 exekučního řízení.", "zdrojIndex": 10},
+    {"id": "exekucni_rizeni_2025", "hodnota": 3.1, "jednotka": "mil. exekučních řízení (2025)", "text": "V roce 2025 bylo vedeno 3,1 milionu exekučních řízení.", "zdrojIndex": 10},
+    {"id": "exekucni_rizeni_2026", "hodnota": 3.0, "jednotka": "mil. exekučních řízení (2026)", "text": "K 30. 6. 2026 bylo vedeno 3,0 milionu exekučních řízení.", "zdrojIndex": 10},
+    {"id": "prumerna_castka_na_osobu_2025", "hodnota": 914000, "jednotka": "Kč (průměrná částka na osobu, 2025)", "text": "Průměrná vymáhaná částka na osobu činila 914 tisíc Kč.", "zdrojIndex": 10},
+    {"id": "prumerna_castka_na_osobu_2026", "hodnota": 919000, "jednotka": "Kč (průměrná částka na osobu, 2026)", "text": "Průměrná vymáhaná částka na osobu činila 919 tisíc Kč.", "zdrojIndex": 10},
+    {"id": "osoby_3plus_exekucemi_2026", "hodnota": 368000, "jednotka": "osob se 3+ exekucemi (2026)", "text": "368 tisíc osob má tři a více exekucí.", "zdrojIndex": 10},
+    {"id": "osoby_10plus_exekucemi_2026", "hodnota": 86000, "jednotka": "osob s 10+ exekucemi (2026)", "text": "86 tisíc osob má deset a více exekucí.", "zdrojIndex": 10},
+    {"id": "mladi_do_30_v_exekuci_2026", "hodnota": 59000, "jednotka": "mladých do 30 let v exekuci (2026)", "text": "V exekuci je 59 tisíc mladých do 30 let.", "zdrojIndex": 10},
+    {"id": "nad_65_v_exekuci_2026", "hodnota": 66000, "jednotka": "osob nad 65 let v exekuci (2026)", "text": "V exekuci je 66 tisíc osob nad 65 let.", "zdrojIndex": 10},
+    {"id": "oddluzeni_exekuce", "hodnota": 80000, "jednotka": "exekucí osob v oddlužení (cca)", "text": "Data obsahují i exekuce osob procházejících oddlužením (cca 80 tisíc), které se ukončují až po jeho dokončení.", "zdrojIndex": 10},
+    {"id": "srazka_66", "hodnota": 66, "jednotka": "% srážka z příjmu (většina dlužníků)", "text": "Většina dlužníků čelí 66% srážce z příjmu.", "zdrojIndex": null},
+    {"id": "srazka_100_od_prijmu", "hodnota": 31500, "jednotka": "Kč hrubého (od této výše srážka 100 %)", "text": "Každý, kdo vydělá nad cca 31 500 Kč hrubého, přichází o každou další vydělanou korunu, srážka je 100 %.", "zdrojIndex": null},
+    {"id": "srazka_100_od_4_exekuci", "hodnota": 24609, "jednotka": "Kč (u jednotlivce se 4 a více exekucemi)", "text": "U jednotlivce se čtyř a více exekucí nastupuje 100% srážka už od 24 609 Kč.", "zdrojIndex": 12},
+    {"id": "admin_zatez_mesicne", "hodnota": "500–3 000", "jednotka": "Kč měsíčně na zaměstnance v exekuci", "text": "Administrativní zátěž zaměstnavatelů dosahuje 500 až 3 000 Kč měsíčně na jednoho zaměstnance v exekuci.", "zdrojIndex": 11},
+    {"id": "admin_zatez_rocne", "hodnota": "vyšší desítky tisíc", "jednotka": "Kč ročně na pracovníka (po započtení ztrát)", "text": "Po započtení ztráty produktivity, fluktuace a nemocnosti jde o vyšší desítky tisíc korun ročně na pracovníka.", "zdrojIndex": 11},
+    {"id": "dopad_nerv", "hodnota": "5–12", "jednotka": "mld. Kč ročně (NERV)", "text": "Návrhy NERV mluvily o snížení dopadů předlužení na veřejné rozpočty v rozsahu 5–12 mld. Kč ročně.", "zdrojIndex": 13},
+    {"id": "dopad_paq", "hodnota": "9–15", "jednotka": "mld. Kč ročně (PAQ Research, efektivnější oddlužení a dávky)", "text": "PAQ Research vyčísluje potenciální přínos efektivnějšího nastavení oddlužení a dávek na 9–15 mld. Kč ročně.", "zdrojIndex": null},
+    {"id": "dopad_teritorialita_kucera", "hodnota": 16.5, "jednotka": "mld. Kč ročně minimálně (teritorialita exekutorů)", "text": "Exekutor Petr Kučera uvádí, že zavedení teritoriality exekutorů by mohlo státu přinést minimálně 16,5 mld. Kč ročně.", "zdrojIndex": null},
+    {"id": "mezni_uzitek_z_prace", "hodnota": "záporný", "jednotka": "mezní užitek z práce u lidí v exekuci", "text": "NERV potvrzuje, že mezní užitek z práce je u lidí v exekuci záporný.", "zdrojIndex": 13},
+    {"id": "prediktor_nedokonceni_skoly", "hodnota": "nejsilnější", "jednotka": "prediktor nedokončení střední školy", "text": "Exekuce rodiče patří podle PAQ Research mezi nejsilnější prediktory nedokončení střední školy.", "zdrojIndex": 14},
+    {"id": "ztrata_na_cloveka_bez_vzdelani", "hodnota": "2–3", "jednotka": "mil. Kč ušlých daní a vyšších sociálních výdajů na člověka s nedokončeným vzděláním", "text": "Analýza PAQ Research a IDEA odhaduje ztrátu 2–3 miliony korun na ušlých daních a vyšších sociálních výdajích za každého člověka s nedokončeným vzděláním.", "zdrojIndex": 17},
+    {"id": "teritorialita_uspora_admin", "hodnota": 50, "jednotka": "% administrativních nákladů (podle zaměstnavatelů, více než)", "text": "Jeden dlužník = jeden exekutor by podle zaměstnavatelů snížil jejich administrativní náklady o více než polovinu.", "zdrojIndex": null},
+    {"id": "nezabavitelne_minimum_hranice", "hodnota": 12818, "jednotka": "Kč (hranice chudoby)", "text": "Návrh: samoživitelé po srážkách neklesnou pod hranici chudoby, která je 12 818 Kč. Dnes je nezabavitelné minimum cca 10 900–11 500 Kč.", "zdrojIndex": null},
+    {"id": "navrh_max_srazka", "hodnota": 50, "jednotka": "% maximální srážka (návrh)", "text": "Návrh: snížit maximální srážku z příjmu na 50 %, tedy z každé vydělané koruny zůstane dlužníkovi vždy alespoň polovina.", "zdrojIndex": null},
+    {"id": "cil_pocet_v_exekuci_2030", "hodnota": 413000, "jednotka": "osob (maximálně, cíl 2030, −30 %)", "text": "Cíl do roku 2030: počet lidí v exekuci nejvýše 413 000.", "zdrojIndex": null},
+    {"id": "cil_pokles_vymahane_2030", "hodnota": 10, "jednotka": "mld. Kč ročně (cíl 2030)", "text": "Cíl do roku 2030: roční pokles vymáhané částky na ~10 mld. Kč (×2).", "zdrojIndex": null},
+    {"id": "cil_navrat_na_trh_2030", "hodnota": 200000, "jednotka": "lidí vrácených na legální trh práce (cíl 2030)", "text": "Cíl do roku 2030: vrátit na legální trh práce +200 000 lidí.", "zdrojIndex": null},
+    {"id": "prinos_navratu_100k", "hodnota": "3–5", "jednotka": "mld. Kč ročně (návrat 100 000 lidí na legální trh)", "text": "Návrat 100 000 lidí na legální trh práce by státu přinesl odhadem 3–5 miliard Kč ročně na daních a odvodech.", "zdrojIndex": null}
+  ],
+  "priciny": [
+    {"poradi": 1, "typ": "řetězec", "pricina": "Dluh bez úniku", "popis": "590 000 lidí drží v exekuci a celková dlužná částka klesá jen o 1 % ročně, a to výhradně díky odpisu nevymahatelných pohledávek.", "zdrojIndex": 10},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Srážka 100 % z každé další koruny", "popis": "Nad cca 31 500 Kč hrubého přichází dlužník o každou další vydělanou korunu. U 4 a více exekucí platí 100% srážka už od 24 609 Kč.", "zdrojIndex": 12},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Mizí motivace k práci", "popis": "Přesčasy a kariérní růst nedávají smysl. Mezní užitek z práce je u lidí v exekuci záporný.", "zdrojIndex": 13},
+    {"poradi": 4, "typ": "řetězec", "pricina": "Odliv z legálního trhu do šedé ekonomiky", "popis": "Práce načerno se vyplatí víc než legální zaměstnání. Česko tak přichází o miliardy na daních a odvodech.", "zdrojIndex": null},
+    {"poradi": 5, "typ": "další", "pricina": "Ztracená generace", "popis": "Exekuce rodiče patří mezi nejsilnější prediktory nedokončení střední školy. Děti v exekučních rodinách trpí úzkostmi a sníženou motivací ke studiu.", "zdrojIndex": 14},
+    {"poradi": 6, "typ": "další", "pricina": "Mezigenerační přenos zadluženosti", "popis": "Zadluženost se přenáší mezigeneračně. Každé dítě, které kvůli dluhům v rodině vypadne ze vzdělávání, představuje budoucí zátěž pro veřejné rozpočty.", "zdrojIndex": 16},
+    {"poradi": 7, "typ": "další", "pricina": "Administrativní zátěž zaměstnavatelů", "popis": "Zaměstnavatelé vynakládají 500 až 3 000 Kč měsíčně na jednoho zaměstnance v exekuci.", "zdrojIndex": 11},
+    {"poradi": 8, "typ": "další", "pricina": "Regionální koncentrace", "popis": "Karlovarský, Ústecký a Liberecký kraj mají nejvyšší podíl osob v exekuci a zároveň jsou to tři nejchudší kraje v zemi.", "zdrojIndex": 10}
+  ],
+  "opatreni": [
+    {
+      "cislo": 1,
+      "nazev": "Zrušení 100% srážky a snížení maximální srážky na 50 %",
+      "popis": "Z každé vydělané koruny zůstane dlužníkovi vždy alespoň polovina. Druhá polovina jde na splácení. Německo, Slovensko i skandinávské země tento model uplatňují s prokazatelně lepšími výsledky.",
+      "klicoveCislo": "maximální srážka 50 %"
+    },
+    {
+      "cislo": 2,
+      "nazev": "Teritorialita exekutorů",
+      "popis": "Jeden dlužník = jeden exekutor je klíčové opatření, které podle zaměstnavatelů sníží jejich administrativní náklady o více než polovinu.",
+      "klicoveCislo": "jeden dlužník = jeden exekutor"
+    },
+    {
+      "cislo": 3,
+      "nazev": "Reforma nezabavitelného minima",
+      "popis": "Zabezpečí, aby samoživitelé po srážkách neklesali pod hranici chudoby (dnes: cca 10 900–11 500 Kč, pod hranicí chudoby 12 818 Kč).",
+      "klicoveCislo": "samoživitelé nad hranicí chudoby"
+    }
+  ],
+  "cile": [
+    {"cil": "Snížit počet lidí v exekuci o 30 %, nejvýše na 413 000", "hodnota": 413000, "jednotka": "osob (maximálně, 2030)"},
+    {"cil": "Zdvojnásobit roční pokles vymáhané částky na ~10 mld. Kč", "hodnota": 10, "jednotka": "mld. Kč ročně (2030)"},
+    {"cil": "Vrátit na legální trh práce +200 000 lidí", "hodnota": 200000, "jednotka": "lidí (2030)"}
+  ],
+  "prinese": {
+    "veta": "Návrat 100 000 lidí na legální trh práce by státu přinesl odhadem 3–5 miliard Kč ročně na daních a odvodech, které dnes unikají do šedé ekonomiky.",
+    "hodnota": "3–5",
+    "jednotka": "mld. Kč ročně",
+    "zdrojIndex": null
+  },
+  "zdroje": [
+    {"index": 1, "citace": "Eurostat: Minimum wages – bi-annual data, 2026. ec.europa.eu/eurostat; směnný kurz 24,24 CZK/EUR."},
+    {"index": 2, "citace": "Prokop, D. (PAQ Research): rozhovor iROZHLAS, 2024; Bodnár et al. (2018), Firms' Adjustment to Minimum Wages in CEE, IZA Journal of Labor Policy."},
+    {"index": 3, "citace": "Kreiner, C. T. & Svarer, M. (2022): Danish Flexicurity: Rights and Duties, Journal of Economic Perspectives, 36(4), 81–104. doi.org/10.1257/jep.36.4.81"},
+    {"index": 4, "citace": "MPSV: Analýza rekvalifikací: kde jsme a co dál?, prosinec 2024. Výpočet autora: 382 mil. Kč / 16 500 osob ≈ 23 152 Kč/os. Srovnání s OECD: OECD Employment Outlook 2023; TUAC Policy Brief, listopad 2025."},
+    {"index": 5, "citace": "European Commission: Education and Training Monitor 2025 – Czechia; Eurostat Adult Education Survey (AES) 2022."},
+    {"index": 6, "citace": "Index prosperity Česka; MŠMT, NPI ČR: analýzy bariér celoživotního vzdělávání, 2023–2024."},
+    {"index": 7, "citace": "World Economic Forum: Future of Jobs Report, 2023."},
+    {"index": 8, "citace": "Úřad práce ČR / Seznam Zprávy / MPSV: data o rekvalifikacích 2023–2026. Pokles v roce 2026 v důsledku ukončení financování z Národního plánu obnovy (NPO/ESF+). Bez čísla v podkladu, připojeno k č. 8: Prokop, D.: rozhovory iROZHLAS a Seznam Podcasty, 2024; OECD: Economic Surveys Czechia 2025 (URL v podkladu useknuto); Eurostat (2025): Childcare statistics – children under 3 in formal care. op.europa.eu; cíl EU (Barcelona 2.0): 45 % do roku 2030."},
+    {"index": 9, "citace": "Euronews (2026): Cost of pay gap in the EU – women earn €3,900 less than men a year. euronews.com"},
+    {"index": 10, "citace": "Institut předlužení – data a studie: exekuce; pokles vymáhané částky z 545 na 542 mld. Kč za pololetí 2025."},
+    {"index": 11, "citace": "Unie zaměstnavatelských svazů (2020), cit. dle Charita ČR; SP ČR – mzdová účetní ve firmě s ~1 000 zaměstnanci věnuje >25 % pracovního času správě exekucí."},
+    {"index": 12, "citace": "ExekuceInfo.cz – výpočet exekuce; Exekutorská komora ČR – statistiky."},
+    {"index": 13, "citace": "NERV: Návrhy na reformu exekučního systému; Josef Středula (ČMKOS) – dlužníci vytlačováni mimo legální trh práce."},
+    {"index": 14, "citace": "PAQ Research: studie dopadu exekucí na nízkopříjmové domácnosti a samoživitele."},
+    {"index": 15, "citace": "Psychologický ústav AV ČR: výzkum dopadů exekucí na děti v zadlužených rodinách."},
+    {"index": 16, "citace": "Karel Čada (sociolog): mezigenerační přenos chudoby, cit. dle Aktualne.cz."},
+    {"index": 17, "citace": "PAQ Research / IDEA: analýza fiskálních nákladů předčasného odchodu ze vzdělávání, cit. dle HN (2021)."}
+  ]
+}

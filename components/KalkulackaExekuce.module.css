@@ -1,0 +1,120 @@
+.root {
+  padding: 1.25rem 1rem 1rem;
+  min-width: 0;
+  overflow: hidden;
+}
+.title {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: var(--s3);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem 2rem;
+}
+@media (min-width: 720px) {
+  .fields { grid-template-columns: 1fr 1fr; }
+}
+.group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.legend {
+  padding: 0;
+  margin-bottom: 0.35rem;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s0);
+  line-height: 1.25;
+}
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s1);
+  border: 2px solid var(--line-strong);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.choiceOn {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+.radio {
+  accent-color: var(--sun);
+  margin: 0;
+}
+.choice:focus-within {
+  outline: 3px solid var(--sun);
+  outline-offset: 2px;
+}
+.result {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border-radius: var(--radius);
+}
+.lead {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem 1.25rem;
+  margin-top: 0.75rem;
+}
+.col { min-width: 0; }
+.colHead {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s-1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.big {
+  font-family: var(--f-display);
+  font-size: var(--s4);
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+.track {
+  height: 14px;
+  margin-top: 0.45rem;
+  border: 2px solid var(--sun-ink);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  background: var(--sun-ink);
+  transition: width 0.25s ease;
+}
+.note {
+  margin-top: 0.4rem;
+  font-size: var(--s-1);
+  line-height: 1.35;
+}
+.sentence {
+  margin-top: 1rem;
+  font-size: var(--s0);
+}
+.source { margin-top: 0.6rem; }

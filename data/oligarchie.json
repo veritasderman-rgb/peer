@@ -1,0 +1,89 @@
+{
+  "kapitola": "2.1",
+  "nazev": "Oslabení oligarchie a férové dotace",
+  "garant": {
+    "jmeno": "Milan Damborský",
+    "role": "akademik, garant kapitol o spravedlivém trhu, chytrých daních a udržitelných financích"
+  },
+  "hook": {
+    "hodnota": "20–30",
+    "jednotka": "mld. Kč ročně",
+    "veta": "Velmi neblahým jevem jsou vysoké dotace, jejichž roční objemy dosahují 20–30 mld. Kč, a jdou právě gigantům."
+  },
+  "grafy": {
+    "zemedelskyStrop": {
+      "titulek": "Zastropování dotací pro zemědělce",
+      "hodnota": 100000,
+      "jednotka": "EUR ročně na skutečného majitele (max.)",
+      "poznamka": "Návrh: dotace na plochu s vazbou na skutečného majitele, zjištěnou sledováním propojenosti",
+      "zdroj": "Hospodářská strategie PEER, návrh kapitoly 2.1"
+    },
+    "verejneZakazky": {
+      "titulek": "Veřejné zakázky: objem v ekonomice",
+      "hodnota": 14,
+      "jednotka": "% HDP",
+      "poznamka": "skoro 1 bilion Kč",
+      "zdroj": "Hospodářská strategie PEER, kapitola 2.1 (zdroj k doplnění)"
+    }
+  },
+  "fakta": [
+    {"id": "media_transparentnost_poradi", "hodnota": 3, "jednotka": "místo od konce v EU", "text": "Jsme třetí nejhorší v transparentnosti vlastnictví médií v EU (za Maďarskem a Polskem).", "zdrojIndex": null},
+    {"id": "verejne_zakazky_objem", "hodnota": 14, "jednotka": "% HDP", "text": "Veřejné zakázky představují skoro jeden bilion Kč, tj. 14 % HDP.", "zdrojIndex": null},
+    {"id": "dotace_gigantum_rocne", "hodnota": "20–30", "jednotka": "mld. Kč ročně", "text": "Vysoké dotace jdoucí gigantům dosahují ročních objemů 20–30 mld. Kč.", "zdrojIndex": 2},
+    {"id": "danska_fuze_prah", "hodnota": 50, "jednotka": "mil. DKK", "text": "Dánský úřad od reformy z roku 2024 posuzuje i poměrně malé fúze a akvizice (od 50 mil. DKK, tj. 200 mil. Kč obratu výše).", "zdrojIndex": 3},
+    {"id": "navrh_strop_zemedelske_dotace", "hodnota": 100000, "jednotka": "EUR ročně na skutečného majitele (max.)", "text": "Návrh: zastropování dotací na plochu v zemědělství na skutečného majitele ve výši max. 100 tis. EUR ročně.", "zdrojIndex": null},
+    {"id": "navrh_trzni_dominance", "hodnota": 40, "jednotka": "% (strop tržní dominance, pod)", "text": "Návrh: snížit strop pro tzv. tržní dominanci pod 40 %.", "zdrojIndex": null},
+    {"id": "emfa_platna", "hodnota": 2025, "jednotka": "rok platnosti nařízení EMFA", "text": "Evropské nařízení EMFA je od roku 2025 platné a Česko se jím musí řídit.", "zdrojIndex": null}
+  ],
+  "priciny": [
+    {"poradi": 1, "typ": "další", "pricina": "Koncentrace moci byznysové, mediální a politické", "popis": "Oligarchie znamená koncentraci moci byznysové, mediální a případně politické v jedněch rukou. Ovládání médií největšími skupinami jim dává enormní vydírací sílu vůči politickým stranám.", "zdrojIndex": null},
+    {"poradi": 2, "typ": "další", "pricina": "Nevymáhaný zákon o střetu zájmů a slabý ÚOHS", "popis": "Naplňování zákona o střetu zájmů není důsledně posuzováno a vymáháno; ÚOHS málo koná.", "zdrojIndex": null},
+    {"poradi": 3, "typ": "další", "pricina": "Nízká transparentnost vlastnictví médií", "popis": "Koncentrace mediální moci je v ČR velmi vysoká a redukuje pluralitu médií.", "zdrojIndex": 4},
+    {"poradi": 4, "typ": "další", "pricina": "Dotace směřující ke gigantům", "popis": "Dotace se nepromítají do vyšší inovativnosti a produktivity výrobců, ale přesouvají se do zisku těchto firem.", "zdrojIndex": 2},
+    {"poradi": 5, "typ": "další", "pricina": "Komplikované přezkumy veřejných zakázek", "popis": "Veřejné zakázky představují skoro jeden bilion Kč (14 % HDP), jejich přezkum je komplikovaný.", "zdrojIndex": null},
+    {"poradi": 6, "typ": "další", "pricina": "Dominantní hráči a tichý oligopol", "popis": "Dominantní hráči dosahují vyšších zisků než malí a střední firmy. V inflační krizi patřil růst cen potravin a energií, kde jsou oligarchické struktury silné, mezi hlavní příčiny inflace.", "zdrojIndex": 1}
+  ],
+  "opatreni": [
+    {
+      "cislo": 1,
+      "nazev": "Prosadit důsledný zákon o střetu zájmů",
+      "popis": "Zákon neumožňuje směšovat moc politickou s byznysovou silou a mediálním vlivem.",
+      "klicoveCislo": "oddělení politické, byznysové a mediální moci"
+    },
+    {
+      "cislo": 2,
+      "nazev": "Bránit dalšímu koncentrování mediální moci",
+      "popis": "K tomu již existují zákonné prostředky: evropské nařízení EMFA, které je od roku 2025 platné a jsme povinni se jím řídit. EMFA zavádí mimo jiné vysokou transparentnost vlastnictví médií a zveřejnění skutečných majitelů.",
+      "klicoveCislo": "EMFA platné od roku 2025"
+    },
+    {
+      "cislo": 3,
+      "nazev": "Hledat způsoby, jak omezit koncentraci moci byznysové a mediální",
+      "popis": "Současná evropská legislativa umožňuje soustředění obří byznysové (nemediální) moci a současně vlastnictví silných médií. Je potřeba hledat cesty, jak toto křížové vlastnictví omezit, zejména u byznysu ve státem regulované či silně dotačně podporované oblasti. Cestou může být lobbování na úrovni EU, protože tento problém nevzniká jen v ČR, byť u nás je velmi silný.",
+      "klicoveCislo": "křížové vlastnictví byznysu a médií"
+    },
+    {
+      "cislo": 4,
+      "nazev": "Posílit antimonopolní zákony a možnosti ÚOHS",
+      "popis": "Směrnice EU 2019/633 je již implementována do zákona o významné tržní síle, existuje tedy zákonný podklad pro aktivnější roli státu, který je potřeba začít aktivněji uplatňovat. Je ale potřeba jít dál, například postavit mimo zákon tzv. tacitní dohody o souběžném zvyšování cen významných hráčů (bez nutnosti prokázat výslovný kartel). ÚOHS musí mít právo nařídit divestituru (odprodej části podniku) v případě dosažení dominance a je nutné výrazně zvýšit pokuty za porušení.",
+      "klicoveCislo": "strop tržní dominance pod 40 %"
+    },
+    {
+      "cislo": 5,
+      "nazev": "Vyřadit největší hráče z plošných dotačních titulů, či jim je výrazně snížit",
+      "popis": "Firmy s vysokým tržním podílem by měly mít nulovou způsobilost pro tyto dotace. Struktura podpory má zvýhodňovat malé firmy a s růstem velikosti firmy postupně klesat. V zemědělství je potřeba zavést zastropování dotací na plochu na skutečného majitele (skrze sledování propojenosti) ve výši max. 100 tis. EUR ročně. Dotační těžiště nesmí spočívat v podpoře maximalizace produkce bez sledování jiných veřejných zájmů, tedy péče o zdroje národního kapitálu: ochrany půdy před erozí, zadržování vody v krajině, kvality vody a biologické rozmanitosti.",
+      "klicoveCislo": "zastropování zemědělských dotací na 100 tis. EUR ročně"
+    }
+  ],
+  "cile": [
+    {"cil": "Zastavit zneužívání neférové výhody velkých hráčů a nedovolit další zhoršování situace", "hodnota": "—", "jednotka": "kvalitativní cíl"},
+    {"cil": "Snížit strop pro tzv. tržní dominanci", "hodnota": 40, "jednotka": "% tržního podílu (pod)"}
+  ],
+  "prinese": "Když oslabíme oligarchické struktury, posílíme férovou hospodářskou soutěž, transparentnost vlastnictví médií i důsledné vymáhání pravidel, omezíme koncentraci ekonomické, mediální a politické moci v rukou několika málo aktérů. Zlepšení hospodářské soutěže, tedy konkurence, přinese nižší ceny, efektivnější veřejné zakázky, smysluplnější využívání dotací pro inovace a produktivitu a lepší prostředí pro malé a střední podniky i důvěru veřejnosti ve stát.",
+  "zdroje": [
+    {"index": 1, "citace": "Bajgar, M. a Srholec, M., 2023. Are Subsidies to Business R&D Effective? Regression Discontinuity Evidence from the TA ČR ALFA Programme. Praha: IDEA při CERGE-EI, Studie 7/2023."},
+    {"index": 2, "citace": "Srholec, M., 2024. Jaké inovativní firmy (ne)čerpají veřejnou podporu na inovace? Praha: IDEA při CERGE-EI, Studie 16/2024."},
+    {"index": 3, "citace": "Danish Competition and Consumer Authority (KFST), 2024. The Danish Competition Act (Consolidated Act No. 1150 of 03/11/2024). Copenhagen: KFST."},
+    {"index": 4, "citace": "Centre for Media Pluralism and Media Freedom (CMPF), 2024. Media Pluralism Monitor 2024. Fiesole: European University Institute."}
+  ]
+}

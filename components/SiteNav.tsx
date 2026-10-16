@@ -10,7 +10,8 @@ export function SiteNav() {
           <span className="display">Česko má na víc!</span>
         </Link>
         <nav aria-label="Hlavní navigace" className={styles.nav}>
-          <Link href="/bydleni">Bydlení</Link>
+          <Link href="/#temata">Témata</Link>
+          <Link href="/dopad">Velký obraz</Link>
           <Link href="/proc-bobr">Proč bobr</Link>
           <Link href="/jak-vznikl">Jak vznikl web</Link>
           <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">PEER</a>

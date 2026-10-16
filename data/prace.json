@@ -1,0 +1,109 @@
+{
+  "kapitola": "1.3",
+  "nazev": "Z montovny k ekonomice chytrých lidí",
+  "garant": {
+    "jmeno": "Zuzana Freitas Lopesová",
+    "role": "odbornice na mobilizaci trhu práce a rovné šance"
+  },
+  "hook": {
+    "hodnota": 43,
+    "jednotka": "% průměrné mzdy",
+    "veta": "Minimální mzda v Česku je 22 400 Kč, tedy jen 43 % průměrné mzdy. Je nižší než v Polsku, Chorvatsku nebo Litvě."
+  },
+  "grafy": {
+    "minimalniMzdy": {
+      "titulek": "Srovnání minimálních mezd v zemích střední a východní Evropy, 2026",
+      "zdroj": "Eurostat, 2026 (Minimum wages, bi-annual data); směnný kurz 24,24 CZK/EUR",
+      "jednotka": "Kč",
+      "polozky": [
+        {"zeme": "Německo", "hodnota": 56800},
+        {"zeme": "Slovinsko", "hodnota": 31000},
+        {"zeme": "Litva", "hodnota": 28000},
+        {"zeme": "Polsko", "hodnota": 27600},
+        {"zeme": "Chorvatsko", "hodnota": 25500},
+        {"zeme": "Česko", "hodnota": 22400, "poznamka": "43 % průměrné mzdy"},
+        {"zeme": "Slovensko", "hodnota": 21200},
+        {"zeme": "Maďarsko", "hodnota": 20300}
+      ]
+    }
+  },
+  "fakta": [
+    {"id": "nezamestnanost_pod_5", "hodnota": 5, "jednotka": "% (dlouhodobě pod touto hodnotou)", "text": "Nezaměstnanost je rekordně nízká, dlouhodobě pod 5 %, jedna z nejnižších v EU.", "zdrojIndex": null},
+    {"id": "prumerna_mzda_eu", "hodnota": "60–65", "jednotka": "% průměru EU", "text": "Průměrná mzda dosahuje jen 60–65 % průměru EU.", "zdrojIndex": null},
+    {"id": "minimalni_mzda_2026", "hodnota": 22400, "jednotka": "Kč", "text": "Minimální mzda v Česku v roce 2026 činí 22 400 Kč.", "zdrojIndex": 1},
+    {"id": "minimalni_mzda_podil", "hodnota": 43, "jednotka": "% průměrné mzdy", "text": "Minimální mzda tvoří jenom 43 % průměrné mzdy.", "zdrojIndex": 1},
+    {"id": "minimalni_mzda_polsko", "hodnota": 27600, "jednotka": "Kč (Polsko, 2026)", "text": "Minimální mzda v Česku je nižší než v Chorvatsku, Litvě nebo Polsku, kde činí 27 600 Kč.", "zdrojIndex": 1},
+    {"id": "narok_na_davky", "hodnota": 80, "jednotka": "% lidí na minimální mzdě", "text": "Až 80 % lidí na minimální mzdě má zároveň nárok na sociální dávky.", "zdrojIndex": 2},
+    {"id": "rekvalifikace_2023", "hodnota": 382, "jednotka": "mil. Kč (2023)", "text": "Na rekvalifikace šlo v roce 2023 jen 382 milionů Kč.", "zdrojIndex": 4},
+    {"id": "rekvalifikace_podil_hdp", "hodnota": 0.005, "jednotka": "% HDP (2023)", "text": "Výdaje na rekvalifikace v roce 2023 činily přibližně 0,005 % HDP.", "zdrojIndex": 4},
+    {"id": "oecd_prumer_hdp", "hodnota": 0.1, "jednotka": "% HDP (průměr OECD)", "text": "Průměr OECD v tomto srovnání činí 0,1 % HDP.", "zdrojIndex": 4},
+    {"id": "rekvalifikace_pokles_2026", "hodnota": 80, "jednotka": "% meziročně (1. pololetí 2026)", "text": "V první polovině roku 2026 se počet rekvalifikací meziročně propadl o 80 %.", "zdrojIndex": 8},
+    {"id": "dalsi_vzdelavani_cr_2022", "hodnota": 21.2, "jednotka": "% dospělých (2022)", "text": "V roce 2022 se dalšímu vzdělávání věnovalo jen 21,2 % dospělých.", "zdrojIndex": 5},
+    {"id": "dalsi_vzdelavani_eu_2022", "hodnota": 39.5, "jednotka": "% dospělých (průměr EU, 2022)", "text": "Průměr EU v dalším vzdělávání dospělých činí 39,5 %.", "zdrojIndex": 5},
+    {"id": "dalsi_vzdelavani_svedsko_2022", "hodnota": 73.9, "jednotka": "% dospělých (Švédsko, 2022)", "text": "Švédsko dosahuje 73,9 % dospělých v dalším vzdělávání.", "zdrojIndex": 5},
+    {"id": "wef_rekvalifikace_2030", "hodnota": 50, "jednotka": "% pracovníků do roku 2030", "text": "Světové ekonomické fórum odhaduje, že do roku 2030 bude muset projít rekvalifikací až 50 % pracovníků.", "zdrojIndex": 7},
+    {"id": "navrh_vypovedni_doba", "hodnota": 1, "jednotka": "měsíc (výpovědní doba v prvním roce)", "text": "Návrh: zkrátit výpovědní dobu na 1 měsíc v prvním roce pracovního vztahu.", "zdrojIndex": null},
+    {"id": "navrh_podpora_v_nezamestnanosti", "hodnota": 80, "jednotka": "% (podpora v prvních 2 měsících)", "text": "Návrh: zachovat 80% podporu v nezaměstnanosti v prvních 2 měsících.", "zdrojIndex": null},
+    {"id": "navrh_minimalni_mzda", "hodnota": 50, "jednotka": "% průměrné mzdy (návrh)", "text": "Návrh: zvýšit minimální mzdu na 50 % průměrné mzdy.", "zdrojIndex": null},
+    {"id": "cil_aps_oecd_2030", "hodnota": 2030, "jednotka": "rok (cíl: průměr OECD ve výdajích na aktivní politiku zaměstnanosti)", "text": "Cíl: dosáhnout průměru OECD ve výdajích na aktivní politiku zaměstnanosti do roku 2030.", "zdrojIndex": null}
+  ],
+  "priciny": [
+    {"poradi": 1, "typ": "řetězec", "pricina": "Strategie levné montovny", "popis": "Česko přilákalo investice nízkou cenou práce. Geopolitika přesouvá výrobu blíž domů a mzdy v okolních zemích rostou rychleji než v Česku.", "zdrojIndex": null},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Nízké mzdy dotované státem", "popis": "Minimální mzda tvoří 43 % průměrné mzdy a až 80 % lidí na minimální mzdě má nárok na sociální dávky. Stát tak fakticky dotuje nízké mzdy.", "zdrojIndex": 2},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Zamrzlý trh práce", "popis": "Přísná ochrana zaměstnání se kombinuje s velmi nízkou podporou při přechodu mezi zaměstnáními a nízkými výdaji na rekvalifikace (přibližně 0,005 % HDP v roce 2023).", "zdrojIndex": 4},
+    {"poradi": 4, "typ": "řetězec", "pricina": "Nižší pracovní mobilita a nižší mzdy", "popis": "Výsledkem je nižší pracovní mobilita a nižší mzdy.", "zdrojIndex": null},
+    {"poradi": 5, "typ": "další", "pricina": "Masové dohody o provedení práce", "popis": "DPP umožňují zaměstnavatelům obcházet pojistné odvody, vytvářejí motivaci rozkládat práci do pseudoflexibilních dohod a připravují studenty, seniory i ženy na částečných úvazcích o sociální pojistné nároky.", "zdrojIndex": null},
+    {"poradi": 6, "typ": "další", "pricina": "Nízké další vzdělávání dospělých", "popis": "V roce 2022 se dalšímu vzdělávání věnovalo jen 21,2 % dospělých, oproti průměru EU 39,5 %.", "zdrojIndex": 5},
+    {"poradi": 7, "typ": "další", "pricina": "Propad rekvalifikací v roce 2026", "popis": "V první polovině roku 2026 se počet rekvalifikací meziročně propadl o 80 %.", "zdrojIndex": 8}
+  ],
+  "opatreni": [
+    {
+      "cislo": 1,
+      "nazev": "Zavedeme českou variantu flexicurity",
+      "popis": "Zkrátíme výpovědní dobu na 1 měsíc v prvním roce pracovního vztahu + zachováme 80% podporu v nezaměstnanosti v prvních 2 měsících, od pátého měsíce podmíněnou aktivní účastí na rekvalifikaci.",
+      "klicoveCislo": "výpověď 1 měsíc; podpora 80 % v prvních 2 měsících"
+    },
+    {
+      "cislo": 2,
+      "nazev": "Zvýšíme minimální mzdu na 50 % průměrné mzdy",
+      "popis": "Je to v souladu s doporučením OECD a praxí sousedních zemí. Růst minimální mzdy tlačí firmy k automatizaci a vyšší produktivitě.",
+      "klicoveCislo": "50 % průměrné mzdy"
+    },
+    {
+      "cislo": 3,
+      "nazev": "Omezíme kumulaci dohod o provedení práce (DPP)",
+      "popis": "DPP je nástrojem vyhýbání se odvodům. Současně snížíme daňovou zátěž skutečných částečných úvazků. Více aktivních dohod ve formátu DPP umožníme kumulovat jen studentům.",
+      "klicoveCislo": "kumulace DPP jen pro studenty"
+    },
+    {
+      "cislo": 4,
+      "nazev": "Zvýšíme výdaje na aktivní politiku zaměstnanosti s důrazem na kvalitu",
+      "popis": "Chceme dosáhnout průměru OECD do roku 2030. Zavedeme individuální vzdělávací účty pro každého dospělého (inspirace: Francie, Finsko).",
+      "klicoveCislo": "průměr OECD do roku 2030"
+    }
+  ],
+  "cile": [
+    {"cil": "Zvýšit minimální mzdu na 50 % průměrné mzdy", "hodnota": 50, "jednotka": "% průměrné mzdy"},
+    {"cil": "Dosáhnout průměru OECD ve výdajích na aktivní politiku zaměstnanosti", "hodnota": 2030, "jednotka": "rok (do kdy)"}
+  ],
+  "prinese": null,
+  "zdroje": [
+    {"index": 1, "citace": "Eurostat: Minimum wages – bi-annual data, 2026. ec.europa.eu/eurostat; směnný kurz 24,24 CZK/EUR."},
+    {"index": 2, "citace": "Prokop, D. (PAQ Research): rozhovor iROZHLAS, 2024; Bodnár et al. (2018), Firms' Adjustment to Minimum Wages in CEE, IZA Journal of Labor Policy."},
+    {"index": 3, "citace": "Kreiner, C. T. & Svarer, M. (2022): Danish Flexicurity: Rights and Duties, Journal of Economic Perspectives, 36(4), 81–104. doi.org/10.1257/jep.36.4.81"},
+    {"index": 4, "citace": "MPSV: Analýza rekvalifikací: kde jsme a co dál?, prosinec 2024. Výpočet autora: 382 mil. Kč / 16 500 osob ≈ 23 152 Kč/os. Srovnání s OECD: OECD Employment Outlook 2023; TUAC Policy Brief, listopad 2025."},
+    {"index": 5, "citace": "European Commission: Education and Training Monitor 2025 – Czechia; Eurostat Adult Education Survey (AES) 2022."},
+    {"index": 6, "citace": "Index prosperity Česka; MŠMT, NPI ČR: analýzy bariér celoživotního vzdělávání, 2023–2024."},
+    {"index": 7, "citace": "World Economic Forum: Future of Jobs Report, 2023."},
+    {"index": 8, "citace": "Úřad práce ČR / Seznam Zprávy / MPSV: data o rekvalifikacích 2023–2026. Pokles v roce 2026 v důsledku ukončení financování z Národního plánu obnovy (NPO/ESF+). Bez čísla v podkladu, připojeno k č. 8: Prokop, D.: rozhovory iROZHLAS a Seznam Podcasty, 2024; OECD: Economic Surveys Czechia 2025 (URL v podkladu useknuto); Eurostat (2025): Childcare statistics – children under 3 in formal care. op.europa.eu; cíl EU (Barcelona 2.0): 45 % do roku 2030."},
+    {"index": 9, "citace": "Euronews (2026): Cost of pay gap in the EU – women earn €3,900 less than men a year. euronews.com"},
+    {"index": 10, "citace": "Institut předlužení – data a studie: exekuce; pokles vymáhané částky z 545 na 542 mld. Kč za pololetí 2025."},
+    {"index": 11, "citace": "Unie zaměstnavatelských svazů (2020), cit. dle Charita ČR; SP ČR – mzdová účetní ve firmě s ~1 000 zaměstnanci věnuje >25 % pracovního času správě exekucí."},
+    {"index": 12, "citace": "ExekuceInfo.cz – výpočet exekuce; Exekutorská komora ČR – statistiky."},
+    {"index": 13, "citace": "NERV: Návrhy na reformu exekučního systému; Josef Středula (ČMKOS) – dlužníci vytlačováni mimo legální trh práce."},
+    {"index": 14, "citace": "PAQ Research: studie dopadu exekucí na nízkopříjmové domácnosti a samoživitele."},
+    {"index": 15, "citace": "Psychologický ústav AV ČR: výzkum dopadů exekucí na děti v zadlužených rodinách."},
+    {"index": 16, "citace": "Karel Čada (sociolog): mezigenerační přenos chudoby, cit. dle Aktualne.cz."},
+    {"index": 17, "citace": "PAQ Research / IDEA: analýza fiskálních nákladů předčasného odchodu ze vzdělávání, cit. dle HN (2021)."}
+  ]
+}

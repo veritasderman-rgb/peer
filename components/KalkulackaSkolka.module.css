@@ -1,0 +1,64 @@
+.root {
+  padding: 1.25rem 1rem 1rem;
+  min-width: 0;
+  overflow: hidden;
+}
+.title {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: var(--s3);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem 2rem;
+}
+@media (min-width: 720px) {
+  .fields { grid-template-columns: 1fr 1fr; }
+}
+.result {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border-radius: var(--radius);
+}
+.lead {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+.resultLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.6rem;
+  margin-top: 0.2rem;
+}
+.big {
+  font-family: var(--f-display);
+  font-size: var(--s4);
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+.unit {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.sentence {
+  margin-top: 0.4rem;
+  font-size: var(--s0);
+}
+.sub {
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+  border-top: 2px solid var(--sun-ink);
+}
+.source { margin-top: 0.6rem; }

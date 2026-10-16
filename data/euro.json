@@ -1,0 +1,103 @@
+{
+  "kapitola": "2.2",
+  "nazev": "Přijetí eura",
+  "garant": {
+    "jmeno": "Tereza Nislerová",
+    "role": "ekonomka, oblasti expertízy evropská integrace a euro"
+  },
+  "hook": {
+    "hodnota": 1242657,
+    "jednotka": "Kč",
+    "veta": "Na hypotéce 4,7 mil. Kč na 30 let zaplatí Čech na úrocích o 1 242 657 Kč víc než Slovák, protože sazba je 4,94 % oproti 3,69 %."
+  },
+  "grafy": {
+    "exportDoEurozony": {
+      "titulek": "Kdo exportuje do eurozóny",
+      "podtitulek": "Export zboží mířící do eurozóny, podíl na celkovém exportu v %",
+      "polozky": [
+        {"zeme": "Česko", "hodnota": 61},
+        {"zeme": "Rakousko", "hodnota": 50},
+        {"zeme": "Řecko", "hodnota": 44},
+        {"zeme": "Slovensko", "hodnota": 43},
+        {"zeme": "Dánsko", "hodnota": 39}
+      ],
+      "zdroj": "Harvard Atlas of Economic Complexity"
+    },
+    "hypotekaSrovnani": {
+      "titulek": "Hypotéka 4,7 mil. Kč na 30 let: Česko vs. Slovensko",
+      "podtitulek": "Stejná banka (ČSOB), stejný produkt, tříletá fixace, červen 2026",
+      "polozky": [
+        {"zeme": "Česko", "sazba": 4.94, "splatka": 25059, "uroky": 4321079},
+        {"zeme": "Slovensko", "sazba": 3.69, "splatka": 21607, "uroky": 3078421}
+      ],
+      "rozdilUroku": 1242657,
+      "zdroj": "ČSOB / Este, nabídka červen–červenec 2026"
+    },
+    "prumernaSazba": {
+      "titulek": "Průměrná úroková sazba hypoték",
+      "polozky": [
+        {"zeme": "Eurozóna", "hodnota": 3.84},
+        {"zeme": "Česko", "hodnota": 4.79}
+      ],
+      "zdroj": "Deloitte Property Index 2025; ČBA Monitor (červen 2026); Hypoindex"
+    }
+  },
+  "fakta": [
+    {"id": "export_sluzby_zbozi_hdp", "hodnota": "70–75", "jednotka": "% HDP (export zboží a služeb)", "text": "Česko exportuje zboží a služby za 70–75 % HDP.", "zdrojIndex": null},
+    {"id": "export_eurozona_cr", "hodnota": 61, "jednotka": "% exportu zboží do eurozóny", "text": "Export zboží mířící do eurozóny tvoří 61 % celkového exportu Česka.", "zdrojIndex": 1},
+    {"id": "hypoteka_sazba_cr", "hodnota": 4.94, "jednotka": "% (tříletá fixace, ČSOB)", "text": "V červnu 2026 nabízela ČSOB hypotéku s tříletou fixací v Česku za 4,94 %.", "zdrojIndex": 2},
+    {"id": "hypoteka_sazba_sk", "hodnota": 3.69, "jednotka": "% (stejný produkt, Slovensko)", "text": "Na Slovensku nabízela stejná banka stejný produkt za 3,69 %.", "zdrojIndex": 2},
+    {"id": "hypoteka_splatka_cr", "hodnota": 25059, "jednotka": "Kč měsíčně (Česko, hypotéka 4,7 mil. Kč, 30 let)", "text": "Měsíční splátka v Česku činí 25 059 Kč oproti 21 607 Kč na Slovensku.", "zdrojIndex": 2},
+    {"id": "hypoteka_rozdil_uroky", "hodnota": 1242657, "jednotka": "Kč na úrocích (Česko vs. Slovensko)", "text": "Celkové úroky v Česku činí 4 321 079 Kč oproti 3 078 421 Kč na Slovensku, rozdíl je 1 242 657 Kč.", "zdrojIndex": 2},
+    {"id": "sazba_eurozona_vs_cr", "hodnota": 3.84, "jednotka": "% (průměr eurozóny; Česko 4,79 %)", "text": "Průměrná úroková sazba v eurozóně je 3,84 % oproti 4,79 % v Česku.", "zdrojIndex": 3},
+    {"id": "uspora_domacnost", "hodnota": 40000, "jednotka": "Kč ročně (přes)", "text": "Úspora pro průměrnou českou domácnost by tedy činila přes 40 000 Kč ročně.", "zdrojIndex": 3},
+    {"id": "transakcni_poplatek", "hodnota": "2–3", "jednotka": "% z objemu konverze", "text": "Při každé směně korun za eura platíme „malou daň“ ve výši 2–3 % z objemu konverze.", "zdrojIndex": null},
+    {"id": "dovolena_skryte_naklady", "hodnota": 1100, "jednotka": "Kč (cesta za 1 500 EUR)", "text": "Rodina, která utratí na dovolené 1 500 EUR, zaplatí zhruba 1 100 Kč skrytých nákladů jen na jedné cestě.", "zdrojIndex": null},
+    {"id": "destinace_eurozona", "hodnota": "5 z 5", "jednotka": "nejoblíbenějších dovolenkových destinací 2024", "text": "Všech 5 nejoblíbenějších českých dovolenkových destinací roku 2024 jsou země eurozóny.", "zdrojIndex": null},
+    {"id": "statni_dluh_2026", "hodnota": "téměř 4", "jednotka": "bil. Kč (konec roku 2026)", "text": "Český státní dluh dosáhne koncem roku 2026 téměř 4 bilionů korun.", "zdrojIndex": 4},
+    {"id": "prirazka_statni_dluh", "hodnota": "1–1,5", "jednotka": "procentního bodu dráže", "text": "Česká republika si půjčuje o 1 až 1,5 procentního bodu dráže než srovnatelné země eurozóny.", "zdrojIndex": 4},
+    {"id": "procento_navic_dluh", "hodnota": 40, "jednotka": "mld. Kč ročně na každé 1 % navíc", "text": "Každé jedno procento navíc znamená 40 miliard korun ročně jen na obsluze dluhu.", "zdrojIndex": 4},
+    {"id": "clenove_eurozony_nedavno", "hodnota": "2023, 2026", "jednotka": "vstup do eurozóny (Chorvatsko, Bulharsko)", "text": "Do eurozóny vstoupilo Chorvatsko (2023) a Bulharsko (2026).", "zdrojIndex": null},
+    {"id": "maastricht_deficit", "hodnota": 3, "jednotka": "% HDP (max. deficit)", "text": "Konvergenční podmínka: fiskální deficit pod 3 % HDP.", "zdrojIndex": null},
+    {"id": "maastricht_dluh", "hodnota": 60, "jednotka": "% HDP (max. dluh, nebo klesající)", "text": "Konvergenční podmínka: dluh pod 60 % HDP nebo klesající.", "zdrojIndex": null},
+    {"id": "erm2_min_delka", "hodnota": 2, "jednotka": "roky (min. pobyt v ERM 2)", "text": "Minimální délka pobytu v ERM 2 jsou 2 roky; euro lze přijmout nejdříve 2 roky po vstupu do ERM 2.", "zdrojIndex": null}
+  ],
+  "priciny": [
+    {"poradi": 1, "typ": "další", "pricina": "Vyšší úrokové sazby hypoték", "popis": "Hypoteční sazby jsou v Česku dlouhodobě výrazně vyšší než v eurozóně: průměr 4,79 % oproti 3,84 %.", "zdrojIndex": 3},
+    {"poradi": 2, "typ": "další", "pricina": "Transakční náklady směny měn", "popis": "Při každé směně korun za eura platíme „malou daň“ ve výši 2–3 % z objemu konverze.", "zdrojIndex": null},
+    {"poradi": 3, "typ": "další", "pricina": "Nedostupné kurzové zajištění pro malé firmy", "popis": "Malé a střední firmy nemají přístup k levným eurovým úvěrům ani ke strukturovaným nástrojům kurzového zajištění.", "zdrojIndex": null},
+    {"poradi": 4, "typ": "další", "pricina": "Přirážka na státním dluhu", "popis": "Česká republika si půjčuje o 1 až 1,5 procentního bodu dráže než srovnatelné země eurozóny.", "zdrojIndex": 4},
+    {"poradi": 5, "typ": "další", "pricina": "Náklady korunové nezávislosti", "popis": "Nejvíc za korunovou nezávislost doplácejí běžní občané a malé firmy, zatímco finanční sektor sčítá zisky za převody měn a zajištění kurzu.", "zdrojIndex": null}
+  ],
+  "opatreni": [
+    {
+      "cislo": 1,
+      "nazev": "Veřejná debata a politická shoda",
+      "popis": "Přijetí eura není rozhodnutí jedné vlády, protože vyžaduje širokou společenskou diskusi a mezistranický konsenzus. Argumenty PRO přitom sílí: do eurozóny vstoupilo Chorvatsko (2023) a Bulharsko (2026) a o vstup nyní usiluje i Maďarsko. Česko tak riskuje, že zůstane jako izolovaný ostrov koruny obklopený eurem, bez politického vlivu i bez ekonomických výhod, které sousedé využívají.",
+      "klicoveCislo": "široký mezistranický konsenzus"
+    },
+    {
+      "cislo": 2,
+      "nazev": "Splnit maastrichtská kritéria a vstoupit do ERM 2",
+      "popis": "Česká republika musí splnit konvergenční podmínky: fiskální disciplínu (deficit pod 3 % HDP, dluh pod 60 % HDP nebo klesající), nízkou inflaci a stabilní úrokové sazby. Minimální délka pobytu v ERM 2 jsou 2 roky.",
+      "klicoveCislo": "deficit pod 3 % HDP; dluh pod 60 % HDP; ERM 2 min. 2 roky"
+    },
+    {
+      "cislo": 3,
+      "nazev": "Přijmout euro",
+      "popis": "Nejdříve 2 roky po vstupu do ERM 2 Česká republika přijme euro jako zákonné platidlo. Čím déle otálíme, tím více platíme: na hypotékách, na obsluze státního dluhu i na kurzových nákladech, které každý rok zbytečně odčerpávají miliardy z kapes domácností a firem.",
+      "klicoveCislo": "nejdříve 2 roky po vstupu do ERM 2"
+    }
+  ],
+  "cile": [
+    {"cil": "Ušetřit domácnostem na úrocích hypotéky: rozdíl proti Slovensku při hypotéce 4,7 mil. Kč na 30 let", "hodnota": 1242657, "jednotka": "Kč na úrocích"},
+    {"cil": "Odstranit přirážku, kterou Česko platí za „malou měnu“ na státním dluhu", "hodnota": "1–1,5", "jednotka": "procentního bodu (přirážka)"}
+  ],
+  "prinese": "Přijetí eura odstraní zbytečné náklady pro domácnosti, firmy i stát a zajistí Čechům rovné podmínky se sousedy, kteří euro mají. Euro je i politický projekt. Znamená silnější hlas u stolu, kde se v Bruselu rozhoduje. Ale Piráti obhajují euro především proto, že se běžným lidem finančně vyplatí.",
+  "zdroje": [
+    {"index": 1, "citace": "Harvard Atlas of Economic Complexity. atlas.hks.harvard.edu."},
+    {"index": 2, "citace": "ČSOB / Este: nabídka hypoték v Česku a na Slovensku, červen–červenec 2026 (citováno z dokumentu autora)."},
+    {"index": 3, "citace": "Deloitte Property Index 2025; ČBA Monitor (červen 2026); Hypoindex: průměrná sazba eurozóny."},
+    {"index": 4, "citace": "Ministerstvo financí ČR: státní dluh a výhled dluhové služby 2026."}
+  ]
+}

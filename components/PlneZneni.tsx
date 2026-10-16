@@ -1,4 +1,4 @@
-import type { Blok } from "@/content/bydleni-plne-zneni";
+import type { Blok } from "@/lib/topics";
 import styles from "./PlneZneni.module.css";
 
 /* Plné znění kapitoly: odkazy [n] v textu se mění na odkazy na rejstřík zdrojů. */

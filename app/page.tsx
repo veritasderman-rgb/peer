@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Bobr } from "@/components/Bobr";
 import { BobrBubble } from "@/components/BobrBubble";
+import { getTopic } from "@/topics";
 import styles from "./page.module.css";
 
 const impacts = [
@@ -9,21 +10,24 @@ const impacts = [
   { value: "68 000 Kč", label: "ročně navíc na pracujícího" },
 ];
 
-const topics = [
-  { n: 1, title: "Bydlení tam, kde jsou příležitosti", hook: "15 ročních platů na byt", href: "/bydleni" },
-  { n: 2, title: "Vzdělanost", hook: "4 % dětí do 3 let ve školce" },
-  { n: 3, title: "Práce a mzdy", hook: "Minimální mzda 43 % průměru" },
-  { n: 4, title: "Ženy na trhu práce", hook: "Mzdový rozdíl 18,5 %" },
-  { n: 5, title: "Exekuce", hook: "590 000 lidí" },
-  { n: 6, title: "Zdraví a péče", hook: "700 mld. Kč ročně" },
-  { n: 7, title: "Oligarchie a férové dotace", hook: "20–30 mld. Kč dotací ročně" },
-  { n: 8, title: "Euro", hook: "1,24 mil. Kč na hypotéce" },
-  { n: 9, title: "Spící kapitál", hook: "4 000 mld. Kč na účtech" },
-  { n: 10, title: "Od montovny k vlastnímu produktu", hook: "340 mld. Kč dividend" },
-  { n: 11, title: "Energie", hook: "262 mld. Kč za dovoz paliv" },
-  { n: 12, title: "Inovace", hook: "131 startupů na milion obyvatel" },
-  { n: 13, title: "Regiony a stát", hook: "2 % příjmů obcí z místní ekonomiky" },
+const topicList = [
+  { n: 1, slug: "bydleni", title: "Bydlení tam, kde jsou příležitosti", hook: "15 ročních platů na byt" },
+  { n: 2, slug: "vzdelanost", title: "Vzdělanost", hook: "4 % dětí do 3 let ve školce" },
+  { n: 3, slug: "prace", title: "Práce a mzdy", hook: "Minimální mzda 43 % průměru" },
+  { n: 4, slug: "zeny", title: "Ženy na trhu práce", hook: "Mzdový rozdíl 18,5 %" },
+  { n: 5, slug: "exekuce", title: "Exekuce", hook: "590 000 lidí" },
+  { n: 6, slug: "zdravi", title: "Zdraví a péče", hook: "700 mld. Kč ročně" },
+  { n: 7, slug: "oligarchie", title: "Oligarchie a férové dotace", hook: "20–30 mld. Kč dotací ročně" },
+  { n: 8, slug: "euro", title: "Euro", hook: "1,24 mil. Kč na hypotéce" },
+  { n: 9, slug: "kapital", title: "Spící kapitál", hook: "4 000 mld. Kč na účtech" },
+  { n: 10, slug: "prumysl", title: "Od montovny k vlastnímu produktu", hook: "340 mld. Kč dividend" },
+  { n: 11, slug: "energie", title: "Energie", hook: "262 mld. Kč za dovoz paliv" },
+  { n: 12, slug: "inovace", title: "Inovace", hook: "131 startupů na milion obyvatel" },
+  { n: 13, slug: "regiony", title: "Úspěšné regiony", hook: "2 % příjmů obcí z místní ekonomiky" },
+  { n: 14, slug: "stat", title: "Stát jako lídr", hook: "18 % státních služeb digitálně" },
 ];
+/* Karta je aktivní, jakmile téma existuje v registru. */
+const topics = topicList.map((t) => ({ ...t, href: getTopic(t.slug) ? `/${t.slug}` : undefined }));
 
 const depths = [
   { time: "10 vteřin", text: "Jedna věta a jedno číslo. Hned víš, o co jde." },

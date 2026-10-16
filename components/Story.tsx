@@ -5,7 +5,8 @@ import { useInView } from "motion/react";
 import { Bobr } from "@/components/Bobr";
 import styles from "./Story.module.css";
 
-export type Mood = "neutral" | "surprised" | "thinking" | "happy" | "sleepy";
+import type { Mood } from "@/lib/topics";
+export type { Mood };
 export type StoryStep = { mood: Mood; pointing?: boolean; title?: string; text: React.ReactNode; bobr?: string };
 
 /* Scrollytelling: text kroky projíždějí kolem, bobr zůstává přilepený a mění náladu

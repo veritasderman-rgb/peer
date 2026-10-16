@@ -5,38 +5,40 @@
   height: auto;
 }
 
+/* Části bobra označuje BobrSvg atributem data-part. Klidový stav (transform, transform-origin)
+   nastavuje BobrSvg inline; CSS animace ho v kaskádě přebíjí. */
+
 /* Víčko: obdélník přes oko, zavírá se shora dolů. */
-.lid {
+.bobr [data-part="lid"] {
   transform-box: fill-box;
   transform-origin: 50% 0%;
-  transform: scaleY(0);
 }
 
 /* Dýchání: celé tělo se nadechuje od chodidel. */
-.breath {
+.bobr [data-part="breath"] {
   transform-box: fill-box;
   transform-origin: 50% 100%;
 }
 
 /* Ocas a ukazující packa: transform-origin je v souřadnicích viewBoxu (nastaveno inline). */
-.tail,
-.wave {
+.bobr [data-part="tail"],
+.bobr [data-part="wave"] {
   transform-box: view-box;
 }
 
-.animated .lid {
+.animated [data-part="lid"] {
   animation: bobr-blink 4.2s infinite;
 }
-.animated .breath {
+.animated [data-part="breath"] {
   animation: bobr-breath 3.6s ease-in-out infinite;
 }
-.animated .tail {
+.animated [data-part="tail"] {
   animation: bobr-tail 3.2s ease-in-out infinite alternate;
 }
-.animated .wave {
+.animated [data-part="wave"] {
   animation: bobr-wave 3s ease-in-out infinite;
 }
-.animated .zzz {
+.animated [data-part="zzz"] {
   animation: bobr-zzz 2.8s ease-in-out infinite;
 }
 
@@ -69,11 +71,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animated .lid,
-  .animated .breath,
-  .animated .tail,
-  .animated .wave,
-  .animated .zzz {
+  .animated [data-part="lid"],
+  .animated [data-part="breath"],
+  .animated [data-part="tail"],
+  .animated [data-part="wave"],
+  .animated [data-part="zzz"] {
     animation: none;
   }
 }
