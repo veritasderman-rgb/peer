@@ -32,6 +32,8 @@ je tak označuje; čísla v jejich příbězích jsou ze studie.
 - „Lancet až 10 : 1“ není mezi číslovanými zdroji kapitoly.
 - Graf klientů dlouhodobé péče nemá v PDF číselné popisky, na webu není.
 - Pátý cíl (zařízení max. 18 míst, 15 000 lidí ve velkých zařízeních) je přeformulovaný z textu.
+- Odborná zpětná vazba (16. 10. 2026), otázky pro garanta: (a) „nejvýše 18 míst“ u nových zařízení nemá ve studii zdroj; (b) odkud přijdou lidé na terénní a odlehčovací péči (studie přiznává 48 tis. vs. 12 tis. úvazků a chybějící sestry, ale nerozepisuje nábor ani cílový počet); (c) opatření 1 (úhrady za práci se životním stylem) neřeší kapacitu praktických lékařů: při 1 500 registrovaných pacientech na praxi hrozí, že odměna za prevenci bude v praxi sankcí. Na webu jsou tyto tři otázky v /otazky s poctivým „studie neřeší“.
+- Video zdraví po zpětné vazbě: méně čísel, pořadí hook → proč → problém (lidé vidí prvních 15 s). Hlas znovu namluven; nové věty: „skoro sedmina výkonu ekonomiky“ (14 % HDP), „Švéd o deset víc“ (61,2 vs. ~71), „dvakrát tolik lidí nad 80“ (více než zdvojnásobení za 15–20 let, ve videu „za jednu generaci“).
 
 ## 2.1 Oligarchie (Milan Damborský)
 - „Skoro 1 bilion Kč, 14 % HDP“ veřejných zakázek: studie neuvádí zdroj.
@@ -85,7 +87,7 @@ Komentář ve videích (`narration` ve `video/scripts/<slug>.ts`) je kratší ne
 - **prace**: v mluvě chybí letopočet 2030 a srovnání vzdělávání dospělých u minimální mzdy; sazby 0,005 % a 0,1 % HDP se čtou „pět tisícin procenta“ a „desetina“.
 - **stat**: chybí podíl 30 % hybridních služeb, vzor Slovenska a Dánska a „za čtyři roky“ u drahého systému.
 - **vzdelanost**: chybí srovnání školek s vyspělými zeměmi (24 %).
-- **zdravi**: v části „proč“ chybí srovnání nemocnic s EU; v návrhu zůstalo „evropský podíl rozpočtu“.
+- **zdravi**: po zpětné vazbě přeskládáno (proč před problémem) a zjednodušeno; v mluvě ani v obraze už není 62 % ztracených let ani 46,5 % vs. 36,4 % (zůstává na stránce tématu); „evropský podíl rozpočtu“ zůstalo.
 - **zeny**: strop dětské skupiny se čte „nejvýš 3 750 Kč“ bez „cca“; částka 7 466 Kč se nečte.
 - **oligarchie**: strop 100 tisíc eur zazní až v části „co to přinese“.
 - **bydleni** a **energie**: „2,7×“ se čte „skoro třikrát“.
@@ -116,3 +118,6 @@ Souhrn financování je sestavený jen z textu studie; při skládání vyšly n
 - **Václav Vislous**: Facebook se liší mezi jeho webem (`facebook.com/vislous`) a profilem na lide.pirati.cz (`facebook.com/vaclavvislous`); web používá odkaz z jeho vlastního webu.
 - **Libor Dušek**: odkaz označený na pirati.cz jako „Mastodon“ vede na Bluesky; web ho uvádí jako Bluesky.
 - **LinkedIn** má ověřený jen Václav Vislous; ostatní profily LinkedIn na svých stránkách neuvádějí.
+
+## Mrtvé odkazy (kontrola 16. 10. 2026)
+- **3.3/stat**: odkaz na souhrnnou zprávu NKÚ o digitalizaci veřejné správy 2026 (`nku.cz/.../souhrnna-zprava-digitalizaceverejne-spravy-2026.pdf`, data/stat.json a plné znění) vrací 404; nejspíš chybí pomlčka v názvu souboru nebo byl přesunut. Potřeba dohledat správnou adresu u NKÚ.

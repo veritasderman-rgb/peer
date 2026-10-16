@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Bobr } from "@/components/Bobr";
 import { BobrBubble } from "@/components/BobrBubble";
+import { TopicVideo } from "@/components/TopicVideo";
+import { uvodVideo } from "@/topics";
 import { getTopic } from "@/topics";
 import { Situace } from "@/components/Situace";
 import { buildSituaceView } from "@/lib/situace-view";
@@ -62,6 +64,15 @@ export default function Home() {
             Nejdřív bydlení. Na byt dnes potřebuješ 15 ročních platů. Ukážu ti proč a co s tím.
           </BobrBubble>
         </div>
+      </section>
+
+      <section className={`wrap ${styles.section}`} aria-labelledby="uvodni-video">
+        <p className="eyebrow">Za minutu</p>
+        <h2 id="uvodni-video">Celá strategie v jednom videu</h2>
+        <p className={`prose ${styles.depthIntro}`}>
+          Co je špatně, proč, co navrhujeme a co to přinese. Namluvené, s titulky. Každé ze 14 témat má pak vlastní minutu.
+        </p>
+        <TopicVideo {...uvodVideo} />
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="situace">

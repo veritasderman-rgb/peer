@@ -1,0 +1,66 @@
+.page { display: grid; }
+.section { padding-block: 3rem 0; display: grid; gap: 1.1rem; align-content: start; min-width: 0; scroll-margin-top: 4rem; }
+.last { padding-bottom: 4rem; }
+.hero { display: grid; gap: 0.9rem; padding-block: 2.5rem 0.5rem; min-width: 0; }
+.lede { font-size: var(--s1); max-width: 56ch; }
+.jump { font-family: var(--f-data); font-size: var(--s-1); line-height: 1.9; }
+.jump a { font-weight: 700; white-space: nowrap; }
+.podnadpis { margin-top: 0.8rem; }
+
+.strana { padding: 1.1rem 1.2rem; display: grid; gap: 0.8rem; max-width: 74ch; line-height: 1.55; overflow-wrap: anywhere; }
+
+.tableWrap { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.table { border-collapse: collapse; width: 100%; font-size: var(--s-1); }
+.table th, .table td { text-align: left; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table tbody tr:last-child td { border-bottom: 0; }
+.table th { font-family: var(--f-data); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.tema { font-weight: 700; }
+.cisloTema { color: var(--river); font-size: var(--s1); margin-right: 0.2rem; }
+.hodnota { font-weight: 700; color: var(--river); font-size: var(--s0); white-space: nowrap; }
+.jednotka { font-weight: 400; color: var(--ink); font-size: var(--s-1); white-space: normal; }
+
+.citace { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.citace li { padding: 1.1rem 1.2rem; display: grid; gap: 0.7rem; align-content: start; min-width: 0; }
+.citace blockquote { margin: 0; padding-left: 0.9rem; border-left: 4px solid var(--sun); font-size: var(--s0); line-height: 1.5; }
+.autor { font-size: var(--s-1); }
+
+.team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 0.75rem; }
+.team li { padding: 0.9rem 1rem; display: grid; gap: 0.2rem; min-width: 0; align-content: start; }
+.name { font-size: var(--s1); }
+.role { font-size: var(--s-1); }
+
+.dl { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.dlBox { padding: 1rem 1.1rem; display: grid; gap: 0.5rem; align-content: start; min-width: 0; font-size: var(--s-1); line-height: 1.5; }
+.dlBox ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
+.dlBox a { overflow-wrap: anywhere; }
+
+.loga { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.loga li { padding: 0.8rem 1rem; display: grid; gap: 0.25rem; min-width: 0; align-content: start; font-size: var(--s-1); line-height: 1.45; }
+.logoNazev { font-weight: 700; overflow-wrap: anywhere; }
+.logoPozn { overflow-wrap: anywhere; }
+.loga :global(.src), .loga .src { overflow-wrap: anywhere; }
+
+.kontakt { padding: 1.2rem 1.3rem; display: grid; gap: 0.4rem; background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.kontakt a { color: var(--sun-ink); font-weight: 700; overflow-wrap: anywhere; }
+.kontakt :global(.src) { color: var(--sun-ink); overflow-wrap: anywhere; }
+.kontaktRole { font-family: var(--f-data); font-size: var(--s-1); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
+.kontaktJmeno { font-size: var(--s3); }
+.kontaktSpoj { font-size: var(--s1); line-height: 1.6; }
+.dalsi { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.dalsi li { padding: 0.9rem 1rem; display: grid; gap: 0.25rem; min-width: 0; align-content: start; font-size: var(--s-1); line-height: 1.45; overflow-wrap: anywhere; }
+.ucty { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.nenalezeno { padding: 1rem 1.1rem; display: grid; gap: 0.5rem; font-size: var(--s-1); line-height: 1.5; }
+.nenalezeno ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; overflow-wrap: anywhere; }
+
+.citovat { padding: 1.2rem 1.3rem; display: grid; gap: 0.6rem; overflow-wrap: anywhere; }
+.citovatText { font-family: var(--f-display); text-transform: uppercase; font-size: var(--s2); line-height: 1.1; }
+
+/* telefon: řádky tabulky se skládají pod sebe do karet */
+@media (max-width: 720px) {
+  .table, .table tbody, .table tr, .table td { display: block; }
+  .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+  .table tr { padding: 0.8rem 0.9rem; border-bottom: 1px solid var(--line); display: grid; gap: 0.15rem; }
+  .table tbody tr:last-child { border-bottom: 0; }
+  .table td { padding: 0; border: 0; }
+  .hodnota { font-size: var(--s1); white-space: normal; }
+}

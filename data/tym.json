@@ -4,7 +4,9 @@
     {
       "jmeno": "Libor Dušek",
       "role": "ekonom a akademik, dostupné bydlení a moderní infrastruktura",
-      "temata": ["bydleni"],
+      "temata": [
+        "bydleni"
+      ],
       "web": "https://sites.google.com/view/libordusek/",
       "linkedin": null,
       "facebook": "https://www.facebook.com/libor.dusek.77",
@@ -16,7 +18,10 @@
     {
       "jmeno": "Jiří Hlavenka",
       "role": "podnikatel a investor, digitální stát, AI a efektivní instituce",
-      "temata": ["inovace", "stat"],
+      "temata": [
+        "inovace",
+        "stat"
+      ],
       "web": null,
       "linkedin": null,
       "facebook": "https://www.facebook.com/jiri.hlavenka",
@@ -28,7 +33,9 @@
     {
       "jmeno": "Tereza Nislerová",
       "role": "ekonomka, evropská integrace a euro",
-      "temata": ["euro"],
+      "temata": [
+        "euro"
+      ],
       "web": null,
       "linkedin": null,
       "facebook": null,
@@ -40,7 +47,11 @@
     {
       "jmeno": "Zuzana Freitas Lopesová",
       "role": "mobilizace trhu práce a rovné šance",
-      "temata": ["prace", "zeny", "exekuce"],
+      "temata": [
+        "prace",
+        "zeny",
+        "exekuce"
+      ],
       "web": null,
       "linkedin": null,
       "facebook": "https://www.facebook.com/zuzana.freitas",
@@ -52,7 +63,10 @@
     {
       "jmeno": "Jan Kříž",
       "role": "vzdělávání pro budoucnost a silné regiony",
-      "temata": ["vzdelanost", "regiony"],
+      "temata": [
+        "vzdelanost",
+        "regiony"
+      ],
       "web": "https://pyskor.cz",
       "linkedin": null,
       "facebook": "https://www.facebook.com/pyskor/",
@@ -64,7 +78,10 @@
     {
       "jmeno": "Václav Vislous",
       "role": "moderní průmysl a bezpečná energetika",
-      "temata": ["prumysl", "energie"],
+      "temata": [
+        "prumysl",
+        "energie"
+      ],
       "web": "https://vaclavvislous.cz",
       "linkedin": "https://www.linkedin.com/in/vislous/",
       "facebook": "https://facebook.com/vislous",
@@ -76,7 +93,10 @@
     {
       "jmeno": "Milan Damborský",
       "role": "spravedlivý trh, chytré daně a udržitelné finance",
-      "temata": ["kapital", "oligarchie"],
+      "temata": [
+        "kapital",
+        "oligarchie"
+      ],
       "web": null,
       "linkedin": null,
       "facebook": null,
@@ -88,14 +108,16 @@
     {
       "jmeno": "Josef Pavlovic",
       "role": "zdravý národ a udržitelné důchody",
-      "temata": ["zdravi"],
-      "web": null,
+      "temata": [
+        "zdravi"
+      ],
+      "web": "https://josefpavlovic.cz",
       "linkedin": null,
       "facebook": null,
       "x": null,
       "bluesky": null,
       "instagram": null,
-      "zdroj": ""
+      "zdroj": "https://josefpavlovic.cz (osobní web, potvrzeno majitelem webu 16. 10. 2026)"
     }
   ]
 }

@@ -1,0 +1,62 @@
+.page { display: grid; }
+.section { padding-block: 2.5rem 0; display: grid; gap: 1.25rem; align-content: start; }
+.last { padding-bottom: 4rem; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 0.5rem; }
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { font-size: var(--s1); max-width: 52ch; }
+.akce { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; }
+.odkaz { font-family: var(--f-data); font-weight: 700; }
+
+.pravidla { padding: 1.1rem 1.2rem 1.2rem; display: grid; gap: 0.8rem; min-width: 0; border-left: 6px solid var(--sun); }
+.pravidla h2 { font-size: var(--s2); }
+.pravidla ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.5rem; font-size: var(--s-1); line-height: 1.5; max-width: 70ch; }
+.pravidla b { font-family: var(--f-data); }
+
+.temata { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.tema { padding: 0; min-width: 0; }
+.detail { display: grid; min-width: 0; }
+.detail[open] { gap: 1rem; padding-bottom: 1.2rem; }
+.detail > summary { list-style: none; cursor: pointer; padding: 1rem 1.2rem; }
+.detail > summary::-webkit-details-marker { display: none; }
+.detail > summary:hover { background: var(--paper); }
+.detail > summary:focus-visible { outline: 3px solid var(--sun); outline-offset: -3px; }
+.temaHead { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 0.8rem; align-items: start; }
+.num { font-size: var(--s3); color: var(--river); line-height: 1; }
+.temaTitul { display: grid; gap: 0.2rem; min-width: 0; }
+.temaNazev { font-family: var(--f-display); text-transform: uppercase; font-size: var(--s2); line-height: 1.05; }
+.temaNazev::after { content: " +"; color: var(--river); }
+.detail[open] .temaNazev::after { content: " −"; }
+.podtitul { font-family: var(--f-data); font-size: var(--s-1); overflow-wrap: anywhere; }
+
+.obsah { display: grid; gap: 1rem; padding-inline: 1.2rem; min-width: 0; }
+.odkazy { display: flex; flex-wrap: wrap; gap: 0.5rem 0.6rem; }
+.odkazy :global(.btn) { font-size: var(--s-1); padding: 0.5rem 0.95rem; }
+.url { font-size: var(--s-1); overflow-wrap: anywhere; }
+
+.bloky { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.blok { display: grid; gap: 0.5rem; align-content: start; min-width: 0; border-top: 3px solid var(--river); padding-top: 0.5rem; }
+.blokHead { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.7rem; }
+.blokHead h4 { font-family: var(--f-data); font-size: var(--s0); text-transform: uppercase; letter-spacing: 0.06em; margin: 0; margin-right: auto; }
+.pocitadlo { font-size: var(--s-1); color: var(--muted); }
+.moc { color: var(--alert); font-weight: 700; }
+.kopie { font-size: var(--s-1); padding: 0.4rem 0.9rem; }
+.pole {
+  display: block; width: 100%; max-width: 100%; min-width: 0; resize: vertical;
+  font: inherit; font-size: 16px; line-height: 1.5; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--line-strong); border-radius: 6px; padding: 0.7rem 0.8rem;
+}
+.pole:focus-visible { outline: 3px solid var(--sun); outline-offset: 1px; }
+
+.tagy { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.4rem 0.8rem; align-items: center; border-top: 3px solid var(--sun); padding-top: 0.5rem; }
+.tagy h4 { grid-column: 1 / -1; font-family: var(--f-data); font-size: var(--s0); text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+.tagyText { margin: 0; font-size: var(--s-1); overflow-wrap: anywhere; }
+
+@media (max-width: 820px) {
+  .hero { grid-template-columns: 1fr; }
+  .bloky { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) {
+  .tagy { grid-template-columns: minmax(0, 1fr); }
+  .tagy .kopie { justify-self: start; }
+  .detail > summary, .obsah { padding-inline: 1rem; }
+}

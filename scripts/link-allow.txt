@@ -1,0 +1,5 @@
+# Povolené (ignorované) externí adresy pro scripts/check-links.mjs: jedna předpona URL na řádek.
+# Řádky začínající # a prázdné řádky se přeskakují. Příklad: https://example.org/stranka-co-blokuje-roboty
+# Facebook vrací robotům 400 i u platných profilů
+https://www.facebook.com/
+https://facebook.com/

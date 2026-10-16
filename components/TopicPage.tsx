@@ -12,6 +12,7 @@ import { Slovnik } from "@/components/Slovnik";
 import { TopicVideo } from "@/components/TopicVideo";
 import { Sdilet } from "@/components/Sdilet";
 import { Socialni } from "@/components/Socialni";
+import { NahlasitChybu } from "@/components/NahlasitChybu";
 import styles from "./TopicPage.module.css";
 
 const nf = new Intl.NumberFormat("cs-CZ");
@@ -161,6 +162,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
             )}
           </div>
         </div>
+        <NahlasitChybu kde={`${t.kratkyNazev} (/${t.slug})`} />
       </section>
 
       <section className={`wrap ${styles.section}`} id="plne-zneni" aria-labelledby="plne-h">

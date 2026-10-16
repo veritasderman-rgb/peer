@@ -37,7 +37,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteNav />
         <main id="obsah" tabIndex={-1}>{children}</main>
         <SiteFooter />
-        <Analytics />
+        {/* skript analytiky existuje jen na Vercelu; mimo něj (lokálně, CI) by vracel 404 */}
+        {process.env.VERCEL && <Analytics />}
       </body>
     </html>
   );

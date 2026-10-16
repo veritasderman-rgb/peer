@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { topics } from "@/topics";
+import { topics, uvodVideo } from "@/topics";
 import { BobrBubble } from "@/components/BobrBubble";
 import styles from "./page.module.css";
 
@@ -18,7 +18,7 @@ export default function VideaPage() {
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
-          <p className="eyebrow">Videa · {withVideo.length} témat</p>
+          <p className="eyebrow">Videa · úvod a {withVideo.length} témat</p>
           <h1>Bobr za minutu</h1>
           <p className={styles.lede}>
             Každé téma strategie v jedné minutě: číslo, problém, proč to tak je, co navrhujeme a co to přinese. Namluvené, s hudbou
@@ -33,6 +33,38 @@ export default function VideaPage() {
 
       <section className={`wrap ${styles.section}`}>
         <ol className={styles.list}>
+          <li className={`card ${styles.item}`} id="uvod">
+            <div className={styles.meta}>
+              <span className={`display ${styles.num}`} aria-hidden="true">★</span>
+              <div>
+                <h2 className={styles.title}>{uvodVideo.titulek}</h2>
+                <p className="muted">Úvod: celá strategie v jednom videu</p>
+                <p className={styles.links}>
+                  <a className="btn" href={uvodVideo.wide} download>Stáhnout široké (16:9)</a>
+                  <a className="btn secondary" href={uvodVideo.reel} download>Stáhnout reel (9:16)</a>
+                  <Link className={styles.topicLink} href="/dopad">Velký obraz</Link>
+                </p>
+              </div>
+            </div>
+            <div className={styles.players}>
+              <video className={styles.wide} controls playsInline preload="none" poster={uvodVideo.poster} aria-label={`${uvodVideo.titulek}, široká verze`}>
+                <source src={uvodVideo.wide} type="video/mp4" />
+                {uvodVideo.titulky && <track kind="subtitles" src={uvodVideo.titulky} srcLang="cs" label="Česky (komentář)" />}
+              </video>
+              <video className={styles.reel} controls playsInline preload="none" poster={uvodVideo.poster?.replace(/-poster\.jpg$/, "-poster-reel.jpg")} aria-label={`${uvodVideo.titulek}, reel`}>
+                <source src={uvodVideo.reel} type="video/mp4" />
+                {uvodVideo.titulky && <track kind="subtitles" src={uvodVideo.titulky} srcLang="cs" label="Česky (komentář)" />}
+              </video>
+            </div>
+            {uvodVideo.prepis && (
+              <details className={styles.prepis}>
+                <summary>Přepis komentáře</summary>
+                {uvodVideo.prepis.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </details>
+            )}
+          </li>
           {withVideo.map((t) => (
             <li key={t.slug} className={`card ${styles.item}`} id={t.slug}>
               <div className={styles.meta}>

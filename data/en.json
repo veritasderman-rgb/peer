@@ -1,0 +1,188 @@
+{
+  "hero": {
+    "eyebrow": "Economic Strategy 2026–2035 · PEER",
+    "h1": "Czechia can do better",
+    "lede": "Czechia is a top-tier manufacturing nation and has the 7th most complex economy in the world. However, its wealth is growing at only an average rate. The Pirate Expert Economic Council (PEER) has drawn up a plan to accelerate growth by 1 percentage point a year. This page summarises its main ideas for readers outside Czechia.",
+    "bobr": "One percentage point may not sound like much. But over ten years, that amounts to CZK 1,000 billion a year."
+  },
+  "numbers": [
+    {
+      "value": "+1 pp",
+      "label": "one percentage point faster economic growth each year"
+    },
+    {
+      "value": "CZK 1,000 billion",
+      "label": "higher annual economic output at the end of the decade"
+    },
+    {
+      "value": "CZK 68,000",
+      "label": "extra in wages per worker per year, on average"
+    }
+  ],
+  "topics": [
+    {
+      "slug": "bydleni",
+      "title": "Housing where the opportunities are",
+      "hook": "How many years’ salary does a flat cost?",
+      "number": "15.1",
+      "unit": "annual salaries",
+      "label": "Czechia, a new average flat, 2025",
+      "lede": "The highest in the whole of the European Union. The average is between 8 and 10. In Belgium, it is just under 5.",
+      "guarantor": "Libor Dušek",
+      "role": "economist and academic, lead expert on affordable housing and modern infrastructure"
+    },
+    {
+      "slug": "vzdelanost",
+      "title": "Education as the foundation of economic prosperity",
+      "hook": "Why isn’t it worth skimping on nursery schools?",
+      "number": "4%",
+      "unit": "of children under 3 years of age",
+      "label": "attends a crèche, nursery or playgroup",
+      "lede": "The OECD average is 24%. The EU’s target is 45% by 2030. Every koruna invested in early childhood care yields a return of 3–4 times that amount for the state.",
+      "guarantor": "Jan Kříž",
+      "role": "expert in education for the future and strong regions"
+    },
+    {
+      "slug": "prace",
+      "title": "From the assembly line to the economy of smart people",
+      "hook": "Why is cheap labour a trap here?",
+      "number": "CZK 22,400",
+      "unit": "minimum wage",
+      "label": "43% of the average wage, lower than in Poland, Lithuania and Croatia",
+      "lede": "The average wage is only 60–65% of the EU average. Yet up to 80% of people on the minimum wage are entitled to benefits, meaning that the state ends up subsidising these low wages. In 2023, only 0.005% of GDP was spent on retraining, whilst the OECD average is 0.1%.",
+      "guarantor": "Zuzana Freitas Lopesová",
+      "role": "expert on labour market mobilisation and equal opportunities"
+    },
+    {
+      "slug": "zeny",
+      "title": "Women in the labour market: the greatest untapped potential",
+      "hook": "Why has Poland overtaken us in terms of wages?",
+      "number": "18.5%",
+      "unit": "wage gap",
+      "label": "between men and women, the second highest in the EU",
+      "lede": "Polish and Lithuanian women earn more than Czech women. In the public sector, the pay gap stands at 17% – the highest in the EU. Every 1% reduction in the pay gap in the private sector adds CZK 4.9 billion to the budget each year.",
+      "guarantor": "Zuzana Freitas Lopesová",
+      "role": "expert on labour market mobilisation and equal opportunities"
+    },
+    {
+      "slug": "exekuce",
+      "title": "Debt enforcement: a system that punishes work and destroys children’s futures",
+      "hook": "Why isn’t it worth it for half a million people to work?",
+      "number": "590,000",
+      "unit": "people subject to debt enforcement proceedings",
+      "label": "as at 30 June 2026; 3 million cases, CZK 542 billion",
+      "lede": "Anyone earning more than approximately CZK 31,500 gross will lose every additional koruna. Debts are falling by just 1% a year, and only through the write-off of irrecoverable debts.",
+      "guarantor": "Zuzana Freitas Lopesová",
+      "role": "expert on labour market mobilisation and equal opportunities"
+    },
+    {
+      "slug": "zdravi",
+      "title": "Health and self-sufficiency",
+      "hook": "How much does it cost us to be ill?",
+      "number": "CZK 700 billion",
+      "unit": "annually",
+      "label": "economic loss due to poor health and premature deaths (~14% of GDP)",
+      "lede": "Men in Czechia can expect to live 61.2 years in good health. In Sweden, the figure is around 71. Yet 62% of the healthy years lost are among people of working age.",
+      "guarantor": "Josef Pavlovic",
+      "role": "economist and manager, former Deputy Minister of Health; responsible for the ‘Healthy Nation’ and ‘Sustainable Pensions’ sections"
+    },
+    {
+      "slug": "oligarchie",
+      "title": "Weakening the oligarchy and fair subsidies",
+      "hook": "Who receives the subsidies that we all pay for?",
+      "number": "CZK 20–30 billion",
+      "unit": "a year",
+      "label": "in substantial subsidies goes to the biggest players",
+      "lede": "Research by CERGE-EI shows that these subsidies do not lead to greater innovation or productivity, but rather to increased profits for these firms.",
+      "guarantor": "Milan Damborský",
+      "role": "academic; responsible for the chapters on a fair market, smart taxes and sustainable finance"
+    },
+    {
+      "slug": "euro",
+      "title": "Adoption of the euro",
+      "hook": "Why do Czechs pay CZK 1.2 million more than Slovaks for the same mortgage?",
+      "number": "CZK 1,242,657",
+      "unit": "",
+      "label": "in additional interest payments, a 30-year mortgage of CZK 4.7 million, Czechia compared with Slovakia",
+      "lede": "The same bank, the same product, a three-year fixed-rate period. A rate of 4.94% in Czechia compared with 3.69% in Slovakia.",
+      "guarantor": "Tereza Nislerová",
+      "role": "economist, specialising in European integration and the euro"
+    },
+    {
+      "slug": "kapital",
+      "title": "Czech capital lying dormant",
+      "hook": "What does your money get up to whilst you’re asleep?",
+      "number": "CZK 4,000 billion",
+      "unit": "",
+      "label": "the dormant savings of Czech savers",
+      "lede": "This money is not usually put to work and a significant proportion of it sits in non-interest-bearing current accounts.",
+      "guarantor": "Milan Damborský",
+      "role": "academic; responsible for the chapters on a fair market, smart taxes and sustainable finance"
+    },
+    {
+      "slug": "prumysl",
+      "title": "From an assembly plant to our own product",
+      "hook": "We produce like the elite. Why are we getting rich like the average person?",
+      "number": "CZK 340 billion",
+      "unit": "",
+      "label": "paid out abroad in dividends in 2025",
+      "lede": "Czechia is the 7th most complex economy in the world according to the Economic Complexity Index, but in terms of GDP per capita we rank around 40th. Profits made by foreign owners amounted to CZK 602 billion, or 7% of GDP.",
+      "guarantor": "Václav Vislous",
+      "role": "expert in modern industry and energy security"
+    },
+    {
+      "slug": "energie",
+      "title": "Energy for the future",
+      "hook": "Where do hundreds of billions go every year?",
+      "number": "CZK 262 billion",
+      "unit": "",
+      "label": "went abroad in 2025 to buy coal, oil and gas",
+      "lede": "In terms of purchasing power, Czech households pay the second-highest electricity prices in the EU. Every kilowatt-hour generated from domestic sources reduces that bill.",
+      "guarantor": "Václav Vislous",
+      "role": "expert in modern industry and energy security"
+    },
+    {
+      "slug": "inovace",
+      "title": "Innovation as the driving force behind a strong economy",
+      "hook": "Why are so few companies being set up here?",
+      "number": "131",
+      "unit": "start-ups per million inhabitants",
+      "label": "Czechia",
+      "lede": "Israel has 410. Austria has twice as many as we do. Even Hungary has overtaken us.",
+      "guarantor": "Jiří Hlavenka",
+      "role": "entrepreneur and investor, championing the areas of the digital state, AI and efficient institutions"
+    },
+    {
+      "slug": "regiony",
+      "title": "Successful regions and effective local government",
+      "hook": "How much of the local economy will remain within the municipality?",
+      "number": "2%",
+      "unit": "of municipal revenue",
+      "label": "Czechia: proportion of local authorities’ revenue derived from the local economy",
+      "lede": "Within the EU, only Greece is worse off. The EU average is between 20 and 25%.",
+      "guarantor": "Jan Kříž",
+      "role": "expert in education for the future and strong regions"
+    },
+    {
+      "slug": "stat",
+      "title": "The state as a leader",
+      "hook": "How many government services can you carry out online?",
+      "number": "18%",
+      "unit": "of public services are fully digital",
+      "label": "out of a total of nearly 9,000 services",
+      "lede": "Around 30% of services are hybrid, whilst more than half remain on paper. Software tools for the SZIF (State Agricultural Intervention Fund) cost up to 20 times more than they would have in the commercial sector.",
+      "guarantor": "Jiří Hlavenka",
+      "role": "entrepreneur and investor, championing the areas of the digital state, AI and efficient institutions"
+    }
+  ],
+  "about": [
+    "The Economic Strategy 2026–2035 was drawn up by the Pirate Expert Economic Council (PEER) in collaboration with the Institut π and other experts. The Council comprises economists, academics and businesspeople, each of whom is responsible for several areas of the strategy.",
+    "The strategy comprises fourteen chapters and has a single objective: to accelerate the growth of the Czech economy by 1 percentage point per year. According to the study, by the end of the decade this will mean an annual increase in economic output of CZK 1,000 billion, an additional CZK 300 billion per year in the state budget, and an average of CZK 68,000 per year in additional wages for every economically active person.",
+    "The study itself points out that GDP growth cannot be modelled with precision. These figures should be regarded as a target and a rough estimate, rather than as the sum of individual measures.",
+    "The strategy was written by people. This website was written, designed and programmed by an artificial intelligence (Claude), which was managed and supervised by a single person. The authors of the strategy, not the website, vouch for the accuracy of the figures. Every figure on the Czech website is accompanied by a source from the study."
+  ],
+  "site": [
+    "This is a brief summary in English. The entire website, the ‘Bobr za minutu’ videos, the calculators, the full text of all the chapters and the sources for every figure are in Czech."
+  ],
+  "generated": "DeepL, 2026-10-16"
+}

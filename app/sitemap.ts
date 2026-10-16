@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { topics } from "@/topics";
-import { abs } from "@/lib/site";
+import { abs, media } from "@/lib/site";
 
 /* Sitemapa: úvodka, přehledové stránky a všech 14 témat (s obrázky a videi, ať je indexují i vyhledávače videí). */
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/dopad", priority: 0.8 },
     { path: "/cesta", priority: 0.8 },
     { path: "/zaplaceni", priority: 0.8 },
+    { path: "/kolik-ti-to-prinese", priority: 0.8 },
+    { path: "/moje-obec", priority: 0.7 },
+    { path: "/otazky", priority: 0.7 },
+    { path: "/pro-sdileni", priority: 0.5 },
+    { path: "/pro-media", priority: 0.5 },
+    { path: "/en", priority: 0.6 },
     { path: "/proc-bobr", priority: 0.5 },
     { path: "/jak-vznikl", priority: 0.5 },
   ];
@@ -26,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? [
             {
               title: t.video.titulek,
-              thumbnail_loc: abs(t.video.poster ?? `/video/${t.slug}-poster.jpg`),
+              thumbnail_loc: abs(t.video.poster ?? media(`/video/${t.slug}-poster.jpg`)),
               description: t.popisMeta,
               content_loc: abs(t.video.wide),
             },

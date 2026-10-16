@@ -1,5 +1,5 @@
 import type { TopicConfig } from "./topics";
-import { SITE_NAME, SITE_URL, ORG, abs } from "./site";
+import { SITE_NAME, SITE_URL, ORG, abs, media } from "./site";
 import { scripts } from "@/video/scripts";
 import { FPS, buildTimeline } from "@/video/timeline";
 
@@ -68,7 +68,7 @@ export function topicJsonLd(t: TopicConfig) {
       "@id": `${url}#video`,
       name: t.video.titulek,
       description: t.video.popis ?? t.popisMeta,
-      thumbnailUrl: [abs(t.video.poster ?? `/video/${t.slug}-poster.jpg`)],
+      thumbnailUrl: [abs(t.video.poster ?? media(`/video/${t.slug}-poster.jpg`))],
       contentUrl: abs(t.video.wide),
       uploadDate: "2026-10-16",
       inLanguage: "cs",
