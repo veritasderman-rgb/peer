@@ -1,5 +1,6 @@
 import type { TopicConfig } from "@/lib/topics";
 import { scripts } from "@/video/scripts";
+import { citelne } from "@/lib/citelne";
 import { bydleni } from "./bydleni";
 import { vzdelanost } from "./vzdelanost";
 import { prace } from "./prace";
@@ -21,8 +22,6 @@ function withVideo(t: TopicConfig): TopicConfig {
   if (t.video) return t;
   /* přepis = odstavce namluveného komentáře ze scénáře (stejný text, z něhož vznikl hlas i titulky) */
   const n = scripts.find((s) => s.slug === t.slug)?.narration;
-  /* fonetické zápisy zkratek pro hlas („dépéhá“) se v přepisu vrací na běžný tvar */
-  const citelne = (s: string) => s.replace(/dépéhá/gi, "DPH");
   const prepis = n ? [n.hook, n.problem, n.proc, n.navrh, n.dopad, n.outro].map(citelne) : undefined;
   return {
     ...t,

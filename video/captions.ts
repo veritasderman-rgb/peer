@@ -1,4 +1,5 @@
 import type { VideoScript } from "../lib/topics";
+import { citelne } from "../lib/citelne";
 import manifest from "./audio-manifest.json";
 import { FPS, buildTimeline, type SceneId } from "./timeline";
 
@@ -25,8 +26,9 @@ export function buildCues(script: VideoScript): Cue[] {
     const text = script.narration?.[seg.id];
     const a = voice[seg.id];
     if (!seg.audio || !text || !a) continue;
+    /* titulky čte člověk, ne syntéza: fonetické zkratky zpět na běžný zápis */
+    const sent = sentences(citelne(text));
     const start = (seg.from + seg.audio.from) / FPS;
-    const sent = sentences(text);
     const total = sent.reduce((n, s) => n + s.length, 0);
     let t = start;
     for (const s of sent) {
