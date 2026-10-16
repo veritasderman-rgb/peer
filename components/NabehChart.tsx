@@ -2,7 +2,7 @@ import styles from "./NabehChart.module.css";
 
 /* Náběh ročního přínosu: roky 1–4 ze zdroje, roky 5–9 lineárně dopočítané k cíli v roce 10
    (označeno jako ilustrativní). Jedna škála pro všechny sloupce. */
-export function NabehChart({ body, cil }: { body: { rok: number; mld: number }[]; cil: number }) {
+export function NabehChart({ body, cil, startYear }: { body: { rok: number; mld: number }[]; cil: number; startYear?: number }) {
   const last = body[body.length - 1];
   const years = Array.from({ length: 10 }, (_, i) => i + 1);
   const value = (rok: number) => {
@@ -36,7 +36,7 @@ export function NabehChart({ body, cil }: { body: { rok: number; mld: number }[]
           return (
             <div key={y} className={styles.label}>
               <span className={`num ${styles.val} ${est ? styles.estText : ""}`}>{est ? "~" : ""}{v}</span>
-              <span className={styles.year}>rok {y}</span>
+              <span className={styles.year}>{startYear ? startYear + y - 1 : `rok ${y}`}</span>
             </div>
           );
         })}

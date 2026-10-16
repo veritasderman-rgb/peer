@@ -1,0 +1,53 @@
+.osa { list-style: none; margin: 0; padding: 0; display: grid; }
+.row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0 1.25rem; position: relative; padding-bottom: 1.75rem; }
+.row::before {
+  content: "";
+  position: absolute;
+  left: 6.5rem;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--line-strong);
+  transform: translateX(-2px);
+}
+.row:last-child::before { bottom: auto; height: 1.5rem; }
+.rok { position: relative; display: flex; justify-content: flex-end; align-items: flex-start; padding-right: 1.25rem; }
+.rok::after {
+  content: "";
+  position: absolute;
+  right: -0.5rem;
+  top: 0.35rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--sun);
+  border: 3px solid var(--ink);
+  box-sizing: border-box;
+}
+.tichy .rok::after { background: var(--surface); border-color: var(--line-strong); width: 0.75rem; height: 0.75rem; right: -0.375rem; top: 0.45rem; }
+.rokText { font-size: var(--s3); line-height: 1; color: var(--ink); }
+.tichy .rokText { font-size: var(--s1); color: var(--muted); padding-top: 0.2rem; }
+.obsah { min-width: 0; padding-left: 0.5rem; }
+.tichyText { font-size: var(--s-1); padding-top: 0.3rem; }
+.items { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.item { padding: 0.8rem 1rem; display: grid; gap: 0.35rem; border-left: 5px solid var(--line-strong); }
+.item.opatreni { border-left-color: var(--river); }
+.item.cil { border-left-color: var(--sun); }
+.item.dopad { border-left-color: var(--green); }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.7rem; font-family: var(--f-data); font-size: var(--s-1); }
+.tema { font-weight: 700; color: var(--river); }
+.temaCela { color: var(--ink); }
+.typ { color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.78em; font-weight: 700; }
+.odhad { color: var(--muted); font-style: italic; }
+.text { margin: 0; line-height: 1.45; }
+.zdroj { font-size: var(--s-1); color: var(--muted); }
+.zdroj summary { cursor: pointer; font-family: var(--f-data); font-weight: 700; }
+.zdroj p { margin: 0.3rem 0 0; }
+@media (max-width: 600px) {
+  .row { grid-template-columns: 1fr; gap: 0.4rem; padding-left: 1.5rem; }
+  .row::before { left: 0.5rem; }
+  .rok { justify-content: flex-start; padding-right: 0; }
+  .rok::after { right: auto; left: -1.5rem; top: 0.3rem; }
+  .tichy .rok::after { left: -1.375rem; }
+  .obsah { padding-left: 0; }
+}

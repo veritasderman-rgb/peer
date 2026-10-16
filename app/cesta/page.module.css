@@ -1,0 +1,16 @@
+.page { display: grid; }
+.section { padding-block: 3.5rem 0; display: grid; gap: 1.25rem; align-content: start; }
+.last { padding-bottom: 4rem; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 1rem; }
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { font-size: var(--s1); max-width: 46ch; }
+.legenda { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; font-family: var(--f-data); font-size: var(--s-1); font-weight: 700; }
+.leg { display: inline-flex; align-items: center; gap: 0.4rem; }
+.leg::before { content: ""; width: 0.9rem; height: 0.9rem; border-radius: 3px; background: var(--line-strong); }
+.legOpatreni::before { background: var(--river); }
+.legCil::before { background: var(--sun); }
+.legDopad::before { background: var(--green); }
+.twoCol { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 1.25rem; align-items: start; }
+.twoCol :global(.prose) { display: grid; gap: 0.9rem; }
+.note { padding: 1.1rem 1.2rem; display: grid; gap: 0.6rem; border-left: 4px solid var(--sun); font-size: var(--s-1); }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }

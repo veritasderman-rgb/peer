@@ -13,6 +13,7 @@ export function SiteNav() {
           <Link href="/#temata">Témata</Link>
           <Link href="/videa">Videa</Link>
           <Link href="/dopad">Velký obraz</Link>
+          <Link href="/cesta">Cesta do 2035</Link>
           <Link href="/proc-bobr">Proč bobr</Link>
           <Link href="/jak-vznikl">Jak vznikl web</Link>
           <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">PEER</a>
