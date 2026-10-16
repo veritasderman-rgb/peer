@@ -91,11 +91,20 @@ export function Eyebrow({ children, style }: { children: ReactNode; style?: CSSP
   );
 }
 
+/** Česká typografie pro zalamování: nezlomitelná mezera za jednopísmennými předložkami/spojkami
+    a mezi číslem a následujícím slovem („3 %“, „6 měsíců“, „4,7 mil.“). */
+export function tidy(t: string): string {
+  return t
+    .replace(/(^|[\s(])([vkszouaiVKSZOUAI]) /g, "$1$2\u00a0")
+    .replace(/(^|[\s(])([vkszouaiVKSZOUAI]) /g, "$1$2\u00a0")
+    .replace(/(\d) (?=\S)/g, "$1\u00a0");
+}
+
 export function Body({ children, size, weight = 400, style }: { children: ReactNode; size?: number; weight?: 400 | 700; style?: CSSProperties }) {
   const L = useLayout();
   return (
     <div style={{ fontFamily: F.body, fontSize: size ?? L.fs.base, fontWeight: weight, lineHeight: 1.22, color: C.ink, ...style }}>
-      {children}
+      {typeof children === "string" ? tidy(children) : children}
     </div>
   );
 }
@@ -142,7 +151,6 @@ export function NumberBlock({ text, size, maxWidth, countFrom, countFrames = 24,
         padding: "0.1em 0.14em 0.02em",
         background: C.sun,
         color: C.ink,
-        fontVariantNumeric: "tabular-nums",
         whiteSpace: "nowrap",
         ...style,
       }}

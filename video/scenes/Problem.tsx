@@ -8,17 +8,10 @@ export function Problem({ script, beats }: { script: VideoScript; beats: number[
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const n = script.problem.length;
-  let current = 0;
-  beats.forEach((b, i) => {
-    if (frame >= b - 4) current = i;
-  });
 
   return (
     <TextArea>
-      <Eyebrow>
-        Problém {current + 1}/{n}
-      </Eyebrow>
-      <div style={{ position: "relative", width: "100%", height: L.reel ? 700 : 560 }}>
+      <div style={{ position: "relative", width: "100%", height: L.text.h }}>
         {script.problem.map((p, i) => {
           const start = beats[i];
           const next = beats[i + 1];
@@ -41,6 +34,9 @@ export function Problem({ script, beats }: { script: VideoScript; beats: number[
                 transform: `translateX(${x}px)`,
               }}
             >
+              <Eyebrow>
+                Problém {i + 1}/{n}
+              </Eyebrow>
               {p.cislo ? <NumberBlock text={p.cislo} size={L.fs.num} countFrom={start + 2} countFrames={22} /> : null}
               <Body weight={700} style={{ maxWidth: L.reel ? L.text.w : 1000 }}>
                 {p.veta}

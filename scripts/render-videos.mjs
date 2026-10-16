@@ -78,7 +78,7 @@ async function main() {
   console.log("Bundluji video/index.ts …");
   const serveUrl = await bundle({ entryPoint: path.join(ROOT, "video", "index.ts"), webpackOverride, publicDir: path.join(ROOT, "public") });
   const browser = await openBrowser("chrome", { browserExecutable: BROWSER, chromeMode: CHROME_MODE });
-  const common = { serveUrl, browserExecutable: BROWSER, chromeMode: CHROME_MODE, puppeteerInstance: browser, logLevel: "warn" };
+  const common = { serveUrl, browserExecutable: BROWSER, chromeMode: CHROME_MODE, puppeteerInstance: browser, logLevel: "error" };
 
   try {
     for (const script of selected) {

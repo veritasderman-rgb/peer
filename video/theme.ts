@@ -44,9 +44,9 @@ export function getLayout(W: number, H: number): Layout {
       reel,
       W,
       H,
-      text: { x: 60, y: 250, w: W - 120, h: 1050 },
-      bobr: { cx: W / 2, bottom: H - 76, size: 470 },
-      fs: { base: 60, small: 56, eyebrow: 56, title: 96, cardTitle: 68, hookNum: 360, num: 230, unit: 120 },
+      text: { x: 60, y: 240, w: W - 120, h: 990 },
+      bobr: { cx: W / 2, bottom: H - 70, size: 540 },
+      fs: { base: 60, small: 56, eyebrow: 56, title: 96, cardTitle: 68, hookNum: 360, num: 260, unit: 120 },
       gap: 36,
       minBase: 56,
     };

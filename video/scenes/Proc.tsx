@@ -54,7 +54,7 @@ export function Proc({ script, beats }: { script: VideoScript; beats: number[] }
   const L = useLayout();
   const eb = useEnter(0);
   const badge = Math.round(L.fs.base * 1.45);
-  const arrowH = L.reel ? 58 : 44;
+  const arrowH = L.reel ? 64 : 52;
   return (
     <TextArea align="start">
       <Eyebrow style={rise(eb)}>Proč to tak je</Eyebrow>

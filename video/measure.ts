@@ -28,7 +28,7 @@ export function fitSize(text: string, family: string, weight: number, max: numbe
 
 /** Odhad počtu řádků při zalomení po slovech. */
 export function estimateLines(text: string, family: string, weight: number, size: number, boxWidth: number): number {
-  const words = text.split(/\s+/).filter(Boolean);
+  const words = text.split(/[ \t\n]+/).filter(Boolean); // nezlomitelné mezery drží slova u sebe
   const space = textWidth(" ", family, weight, size);
   let lines = 1;
   let cur = 0;

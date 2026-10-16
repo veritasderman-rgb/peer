@@ -2,7 +2,7 @@ import { interpolate, useCurrentFrame } from "remotion";
 import type { VideoScript } from "../../lib/topics";
 import { estimateLines } from "../measure";
 import { C, F, type Layout } from "../theme";
-import { Body, Eyebrow, TextArea, rise, useEnter, useLayout } from "../ui";
+import { Body, Eyebrow, TextArea, rise, tidy, useEnter, useLayout } from "../ui";
 
 /* 4) Návrh: tři nejsilnější opatření jako karty s názvem a větou. Bobr má radost, ukazuje a mává.
    Karty se skládají pod sebe; když by se dlouhé texty nevešly ani při minimálním písmu,
@@ -20,7 +20,7 @@ function cardHeight(L: Layout, z: Sizes, nazev: string, veta: string): number {
   const titleW = inner - z.sq - 24;
   const vetaW = L.reel ? inner : titleW;
   const tl = estimateLines(nazev, F.display, 400, z.title, titleW);
-  const vl = estimateLines(veta, F.body, 400, z.body, vetaW);
+  const vl = estimateLines(tidy(veta), F.body, 400, z.body, vetaW);
   const titleH = Math.max(L.reel ? z.sq : 0, tl * z.title * 0.98);
   return z.padY * 2 + titleH + (L.reel ? 14 : 8) + vl * z.body * 1.22;
 }
@@ -117,18 +117,11 @@ export function Navrh({ script, beats }: { script: VideoScript; beats: number[] 
     );
   }
 
-  /* po jedné kartě */
-  let current = 0;
-  beats.forEach((b, i) => {
-    if (frame >= b - 4) current = i;
-  });
+  /* po jedné kartě (nadpis sekce putuje s kartou, aby mezi nimi nebyla díra) */
   const zz = { ...big, title: Math.round(big.title * 1.15) };
   return (
     <TextArea align="start">
-      <Eyebrow style={rise(eb)}>
-        Co navrhujeme {current + 1}/{n}
-      </Eyebrow>
-      <div style={{ position: "relative", width: "100%", height: L.text.h - eyebrowH }}>
+      <div style={{ position: "relative", width: "100%", height: L.text.h }}>
         {script.navrh.map((c, i) => {
           const start = beats[i];
           const next = beats[i + 1];
@@ -136,8 +129,23 @@ export function Navrh({ script, beats }: { script: VideoScript; beats: number[] 
           const exit = next === undefined ? 0 : interpolate(frame, [next - 10, next + 2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
           if (enter <= 0 || exit >= 1) return null;
           return (
-            <div key={i} style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center" }}>
-              <Card index={i} nazev={c.nazev} veta={c.veta} z={zz} style={{ opacity: enter * (1 - exit), transform: `translateX(${(1 - enter) * 140 - exit * 140}px)` }} />
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                inset: 0,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                gap: L.gap,
+                opacity: enter * (1 - exit),
+                transform: `translateX(${(1 - enter) * 140 - exit * 140}px)`,
+              }}
+            >
+              <Eyebrow>
+                Co navrhujeme {i + 1}/{n}
+              </Eyebrow>
+              <Card index={i} nazev={c.nazev} veta={c.veta} z={zz} />
             </div>
           );
         })}
