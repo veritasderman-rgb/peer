@@ -1,0 +1,44 @@
+.root {
+  padding: 1.25rem 1rem 1rem;
+  min-width: 0;
+  overflow: hidden;
+}
+.title {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: var(--s3);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem 2rem;
+}
+@media (min-width: 720px) {
+  .fields { grid-template-columns: repeat(3, 1fr); }
+}
+.result {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border-radius: var(--radius);
+}
+.big {
+  font-family: var(--f-display);
+  font-size: var(--s4);
+  line-height: 1;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.calc {
+  margin-top: 0.4rem;
+  font-size: var(--s-1);
+}
+.calcSub { opacity: 0.85; }
+.sentence {
+  margin-top: 0.6rem;
+  font-weight: 700;
+}
+.source { margin-top: 0.6rem; }

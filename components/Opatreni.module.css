@@ -1,0 +1,42 @@
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1rem;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem 1.1rem;
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+  min-width: 0;
+  position: relative;
+}
+.num {
+  font-family: var(--f-display);
+  font-size: var(--s3);
+  line-height: 1;
+  color: var(--river);
+}
+.title { font-size: var(--s1); }
+.key {
+  display: inline-block;
+  justify-self: start;
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s-1);
+  background: var(--sun);
+  color: var(--sun-ink);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+.forYou { border-left: 4px solid var(--river); padding-left: 0.7rem; }
+.forYou .eyebrow { display: block; }
+.details { font-size: var(--s-1); color: var(--muted); }
+.details summary { cursor: pointer; font-family: var(--f-data); font-weight: 700; color: var(--river); }
+.details p { margin-top: 0.5rem; }

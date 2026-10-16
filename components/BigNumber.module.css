@@ -1,0 +1,45 @@
+.root {
+  position: relative;
+  min-width: 0;
+  container-type: inline-size;
+}
+.figure {
+  margin: 0;
+}
+.value {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 0.15em;
+  font-family: var(--f-display);
+  font-size: min(var(--s5), 26cqi);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  max-width: 100%;
+}
+.prefix,
+.unit {
+  font-size: 0.42em;
+  letter-spacing: 0.02em;
+  color: var(--river);
+}
+.label {
+  margin-top: 0.4rem;
+  font-family: var(--f-data);
+  font-size: var(--s0);
+  line-height: 1.3;
+  color: var(--muted);
+  max-width: 28ch;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

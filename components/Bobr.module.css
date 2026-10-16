@@ -1,0 +1,81 @@
+.bobr {
+  display: block;
+  overflow: visible;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Části bobra označuje BobrSvg atributem data-part. Klidový stav (transform, transform-origin)
+   nastavuje BobrSvg inline; CSS animace ho v kaskádě přebíjí. */
+
+/* Víčko: obdélník přes oko, zavírá se shora dolů. */
+.bobr [data-part="lid"] {
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+}
+
+/* Dýchání: celé tělo se nadechuje od chodidel. */
+.bobr [data-part="breath"] {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+/* Ocas a ukazující packa: transform-origin je v souřadnicích viewBoxu (nastaveno inline). */
+.bobr [data-part="tail"],
+.bobr [data-part="wave"] {
+  transform-box: view-box;
+}
+
+.animated [data-part="lid"] {
+  animation: bobr-blink 4.2s infinite;
+}
+.animated [data-part="breath"] {
+  animation: bobr-breath 3.6s ease-in-out infinite;
+}
+.animated [data-part="tail"] {
+  animation: bobr-tail 3.2s ease-in-out infinite alternate;
+}
+.animated [data-part="wave"] {
+  animation: bobr-wave 3s ease-in-out infinite;
+}
+.animated [data-part="zzz"] {
+  animation: bobr-zzz 2.8s ease-in-out infinite;
+}
+
+@keyframes bobr-blink {
+  0%, 91% { transform: scaleY(0); }
+  93.5% { transform: scaleY(1); }
+  96%, 100% { transform: scaleY(0); }
+}
+
+@keyframes bobr-breath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.015); }
+}
+
+@keyframes bobr-tail {
+  from { transform: rotate(-4deg); }
+  to { transform: rotate(4deg); }
+}
+
+@keyframes bobr-wave {
+  0%, 70%, 100% { transform: rotate(0deg); }
+  78% { transform: rotate(-9deg); }
+  86% { transform: rotate(5deg); }
+  93% { transform: rotate(-3deg); }
+}
+
+@keyframes bobr-zzz {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.45; transform: translateY(-3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated [data-part="lid"],
+  .animated [data-part="breath"],
+  .animated [data-part="tail"],
+  .animated [data-part="wave"],
+  .animated [data-part="zzz"] {
+    animation: none;
+  }
+}

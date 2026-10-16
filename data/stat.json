@@ -1,0 +1,139 @@
+{
+  "kapitola": "4.2",
+  "nazev": "Stát jako lídr",
+  "garant": {
+    "jmeno": "Jiří Hlavenka",
+    "role": "podnikatel a investor, zaštiťuje okruhy digitálního státu, AI a efektivních institucí"
+  },
+  "hook": {
+    "hodnota": 18,
+    "jednotka": "% státních služeb zdigitalizováno",
+    "veta": "Z téměř 9 000 služeb, které stát poskytuje, je zdigitalizováno pouhých 18 %, a softwarové nástroje pro SZIF stály až 20× více, než by stály v komerční sféře."
+  },
+  "grafy": {
+    "digitalizaceSluzeb": {
+      "titulek": "Digitalizace státních služeb",
+      "podtitulek": "Podíl z celkem téměř 9 000 služeb poskytovaných státem",
+      "zdroj": "NKÚ, 2026. Souhrnná zpráva: Digitalizace veřejné správy 2026",
+      "polozky": [
+        {"stav": "digitální", "hodnota": 18},
+        {"stav": "hybridní", "hodnota": 30, "poznamka": "asi 30 %"},
+        {"stav": "papírová", "hodnota": 52, "poznamka": "zdroj uvádí „více než polovina“; 52 % dopočteno jako 100 − 18 − 30"}
+      ]
+    },
+    "planSluzeb": {
+      "titulek": "Služby v plánu digitalizace",
+      "hodnota": 1400,
+      "jednotka": "služeb",
+      "poznamka": "cca 1 400 služeb, u kterých digitalizace dává smysl",
+      "zdroj": null
+    },
+    "informacniSystemy": {
+      "titulek": "Informační systémy státu",
+      "polozky": [
+        {"nazev": "Vytvořeno bez veřejné soutěže", "hodnota": 53, "jednotka": "%"}
+      ],
+      "zdroj": "Datlab Institut, 2022"
+    },
+    "nakladyIS": {
+      "titulek": "Roční náklady na provoz informačních systémů státu",
+      "hodnota": 8.5,
+      "jednotka": "mld. Kč ročně",
+      "zdroj": "Datlab Institut, 2022"
+    },
+    "szif": {
+      "titulek": "Softwarové nástroje na SZIF: státní vs. komerční cena",
+      "polozky": [
+        {"nazev": "SZIF, za 4 roky", "hodnota": 2100, "jednotka": "mil. Kč"},
+        {"nazev": "Odhad v komerční sféře", "od": 100, "do": 120, "jednotka": "mil. Kč"}
+      ],
+      "poznamka": "až 20× méně",
+      "zdroj": "NKÚ, 2026"
+    },
+    "poziceEU": {
+      "titulek": "Pozice ČR v EU (DESI)",
+      "polozky": [
+        {"oblast": "Digitalizace státu", "pozice": "13.–14. z 27"},
+        {"oblast": "Digitální dovednosti", "pozice": "5. místo"}
+      ],
+      "zdroj": "Evropská komise, 2025. DESI"
+    }
+  },
+  "fakta": [
+    {"id": "sluzby_statu", "hodnota": 9000, "jednotka": "služeb státu", "text": "Stát poskytuje téměř 9 000 služeb.", "zdrojIndex": 3},
+    {"id": "sluzby_digitalni", "hodnota": 18, "jednotka": "% služeb zdigitalizováno", "text": "Zdigitalizováno je pouhých 18 % služeb státu.", "zdrojIndex": 3},
+    {"id": "sluzby_hybridni", "hodnota": 30, "jednotka": "% služeb hybridních", "text": "Asi 30 % služeb je hybridních.", "zdrojIndex": 3},
+    {"id": "sluzby_papirove", "hodnota": "více než 50", "jednotka": "% služeb papírových", "text": "Více než polovina služeb je stále pouze papírových.", "zdrojIndex": 3},
+    {"id": "zakon_digitalni_sluzba", "hodnota": null, "jednotka": null, "text": "Česko má platný Zákon o právu na digitální službu, jeho naplňování ale pokulhává.", "zdrojIndex": null},
+    {"id": "sluzby_v_planu", "hodnota": 1400, "jednotka": "služeb v plánu digitalizace", "text": "Podstatné je včas dokončit cca 1 400 služeb, které jsou v plánu a kde digitalizace dává smysl.", "zdrojIndex": null},
+    {"id": "digitalizace_pozice_eu", "hodnota": "13–14. z 27", "jednotka": "místo v EU", "text": "Digitalizace českého státu je zhruba uprostřed EU (13.–14. místo z 27).", "zdrojIndex": 4},
+    {"id": "digitalni_dovednosti_pozice", "hodnota": 5, "jednotka": "místo v EU", "text": "V digitálních dovednostech je Česko na pátém místě.", "zdrojIndex": 4},
+    {"id": "is_bez_souteze", "hodnota": 53, "jednotka": "% IS státu bez veřejné soutěže", "text": "Studie Datlab uvádí, že 53 % informačních systémů státu bylo vytvořeno bez veřejné soutěže.", "zdrojIndex": 6},
+    {"id": "is_rocni_naklady", "hodnota": 8.5, "jednotka": "mld. Kč ročně", "text": "Roční náklady na provoz informačních systémů státu činí 8,5 mld. Kč.", "zdrojIndex": 6},
+    {"id": "szif_nastroje", "hodnota": 2100, "jednotka": "mil. Kč za 4 roky", "text": "Softwarové nástroje na SZIF stály 2,1 mld. Kč za 4 roky.", "zdrojIndex": 3},
+    {"id": "szif_komercni", "hodnota": "100–120", "jednotka": "mil. Kč", "text": "V komerční sféře by stejné nástroje vyšly na 100–120 mil. Kč, tedy až 20× méně.", "zdrojIndex": 3},
+    {"id": "vendor_lock_in", "hodnota": null, "jednotka": null, "text": "Vendor lock-in: neprolomitelná závislost na dodavateli, kterému se platí vysoké pravidelné poplatky za maintenance a updaty.", "zdrojIndex": 6},
+    {"id": "priklad_izrael", "hodnota": "příklad", "jednotka": "státní leadership", "text": "Izraelský startupový ekosystém vznikl a obrovsky vzrostl díky roli státu (kniha Start-up Nation, 2009).", "zdrojIndex": 1},
+    {"id": "priklad_tchaj_wan", "hodnota": "příklad", "jednotka": "státní leadership", "text": "Tchaj-wan vybudoval světově dominantní polovodičový průmysl díky státu, který do čipového ekosystému vložil obrovské prostředky.", "zdrojIndex": 2},
+    {"id": "priklad_upi", "hodnota": "UPI", "jednotka": "platební rozhraní indického státu", "text": "Platební rozhraní UPI vytvořené indickým státem pomohlo Indii vyšvihnout se na špičku v digitálních platbách.", "zdrojIndex": null}
+  ],
+  "priciny": [
+    {"poradi": 1, "typ": "řetězec", "pricina": "Stát digitalizuje jen zlomek služeb", "popis": "Z téměř 9 000 služeb je zdigitalizováno pouhých 18 %; asi 30 % je hybridních a více než polovina zůstává pouze papírových.", "zdrojIndex": 3},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Staré informační systémy", "popis": "Stát provozuje mnoho desítek informačních systémů, některé pocházejí z 90. let. Studie Datlab uvádí, že 53 % bylo vytvořeno bez veřejné soutěže.", "zdrojIndex": 6},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Vendor lock-in", "popis": "Závislost na dodavatelích, kterým je nutné platit vysoké pravidelné poplatky („maintenance“, update), a prakticky žádná možnost přechodu jinam.", "zdrojIndex": 6},
+    {"poradi": 4, "typ": "další", "pricina": "Vysoké náklady na IT", "popis": "Roční náklady činí 8,5 mld. Kč; softwarové nástroje na SZIF stály 2,1 mld. Kč za 4 roky, v komerční sféře by vyšly na 100–120 mil. Kč.", "zdrojIndex": 3},
+    {"poradi": 5, "typ": "další", "pricina": "Pomalá adopce technologií státem", "popis": "Stát má moderní technologie adoptovat podobnou rychlostí jako soukromé firmy; v digitalizaci je Česko zhruba uprostřed EU.", "zdrojIndex": null},
+    {"poradi": 6, "typ": "další", "pricina": "Uzavřená data", "popis": "Stát tají mnoho informací, které by mohly sloužit výzkumným organizacím, firmám a startupům; zdravotnické informace drží ÚZIS pod tvrdým zámkem.", "zdrojIndex": null}
+  ],
+  "opatreni": [
+    {
+      "cislo": 1,
+      "nazev": "Digitalizace státu",
+      "popis": "Samotná digitalizace státu. Není nutné digitalizovat všechny služby, protože některé jsou marginální a velmi málo využívané. Podstatné je včas dokončit cca 1 400 služeb, které jsou v plánu a kde digitalizace dává smysl. Jedním z nejdůležitějších úkolů je zřízení Jednotného inkasního místa, které zjednodušuje finanční agendu finančních úřadů, správu sociálního zabezpečení a zdravotní pojišťovny do jednoho bodu.",
+      "klicoveCislo": "cca 1 400 služeb v plánu; Jednotné inkasní místo"
+    },
+    {
+      "cislo": 2,
+      "nazev": "Digitalizovat již digitalizované",
+      "popis": "Digitalizovat již digitalizované, ale špatně. Český stát provozuje mnoho desítek informačních systémů, které jsou velmi staré, některé pocházejí i z 90. let. Jejich provoz je extrémně nákladný, stejně jako jakékoli úpravy, a prakticky je zde naprostý vendor lock-in, tedy neprolomitelná závislost na dodavateli, kterému je nutné platit vysoké pravidelné poplatky.",
+      "klicoveCislo": "53 % IS bez veřejné soutěže; omezit vendor lock-in"
+    },
+    {
+      "cislo": 3,
+      "nazev": "Otevřená data",
+      "popis": "Otevřená data k dispozici pro výzkum i startupy. Český stát stále tají mnoho informací, které by mohly sloužit výzkumným organizacím, firmám i startupům, například k „cvičení“ svých podnikatelských modelů. Jde o databáze České správy sociálního zabezpečení, Finanční správy, Ministerstva školství a zejména zdravotnické informace, které drží pod tvrdým zámkem Ústav zdravotnických informací a statistiky. Jde přitom o uvolnění dat anonymizovaných pro statistická a analytická vyhodnocení, nikoli o data identifikovatelných osob či dalších subjektů.",
+      "klicoveCislo": "anonymizovaná data, ne data identifikovatelných osob"
+    },
+    {
+      "cislo": 4,
+      "nazev": "Živé laboratoře",
+      "popis": "Living Labs jsou prověřenou metodou pro „živé“ testování, sice v omezeném prostoru, ale jinak v plně funkčním reálném světě, s účastí veřejné sféry, univerzit, firem i dalších aktérů. Living Labs se obvykle soustředí na konkrétní obor, jako je autonomní mobilita, vysokorychlostní technologie, kyberbezpečnost, e-health nebo využití AI.",
+      "klicoveCislo": "testování nových technologií v reálném prostředí"
+    },
+    {
+      "cislo": 5,
+      "nazev": "Analytický útvar Hodnota za peníze",
+      "popis": "Opět jde o ověřený koncept prakticky ze všech západoevropských zemí, můžeme si též vzít příklad ze sousedního Slovenska. Jeho podstatou je důsledná a přísná revize větších veřejných investic od určité hranice (na Slovensku od 40 mil. EUR) s ohledem na efektivitu vynaložených peněz; jeho cílem je posílit orientaci na výsledky u veřejných investic. Doporučujeme pro ČR toto ukotvit v zákoně, týmu zvýšit pravomoci a posílit jej personálně. Podobné útvary mají desítky dalších zemí EU; nejpropracovanější je Dánsko, které to provádí nepřetržitě více než 40 let, a dále Velká Británie nebo Nizozemsko. Stát by měl nadále rozvíjet a stabilizovat profesionální analytické útvary, které pomáhají ministerstvům formulovat a realizovat opatření opírající se o data.",
+      "klicoveCislo": "zákonné ukotvení; vzor Slovensko (revize od 40 mil. EUR)"
+    }
+  ],
+  "cile": [
+    {"cil": "Dokončit včas cca 1 400 služeb v plánu, u kterých digitalizace dává smysl", "hodnota": 1400, "jednotka": "služeb"},
+    {"cil": "Zjednodušit klíčové agendy přes jedno Jednotné inkasní místo", "hodnota": null, "jednotka": null},
+    {"cil": "Omezit závislost na drahých dodavatelích IT systémů", "hodnota": null, "jednotka": null},
+    {"cil": "Rozhodovat o veřejných investicích na základě dat a principu hodnota za peníze", "hodnota": null, "jednotka": null}
+  ],
+  "prinese": [
+    "Tyto návrhy povedou k modernějšímu, levnějšímu a efektivnějšímu státu, který občanům i firmám šetří čas, peníze a administrativu.",
+    "Dokončení smysluplné digitalizace, zjednodušení klíčových agend přes jednotné inkasní místo, omezení závislosti na drahých dodavatelích IT systémů, otevření anonymizovaných dat pro výzkum a inovace, testování nových technologií v živých laboratořích a důsledné hodnocení veřejných investic podle principu „hodnota za peníze“ posílí kvalitu veřejných služeb i důvěru ve stát.",
+    "Výsledkem bude stát, který lépe rozhoduje na základě dat, podporuje inovace a dokáže za veřejné peníze přinášet skutečné výsledky."
+  ],
+  "zdroje": [
+    {"index": 1, "citace": "SENOR, Dan a SINGER, Saul, 2009. Start-up Nation: The Story of Israel's Economic Miracle. New York: Twelve / Hachette Book Group. ISBN 978-0-446-54146-6. Dostupné také na: https://en.wikipedia.org/wiki/Start-up_Nation"},
+    {"index": 2, "citace": "LIN, Owen Hung-Wen, 2024. Chip Champion: How Taiwan Built the World's Semiconductor Powerhouse. Seattle: Amazon Digital Services. ASIN B0FX2B2L4K. Dostupné z: https://www.amazon.com/Chip-Champion-Owen-Hung-Wen-Lin-ebook/dp/B0FX2B2L4K"},
+    {"index": 3, "citace": "NEJVYŠŠÍ KONTROLNÍ ÚŘAD (NKÚ), 2026. Souhrnná zpráva: Digitalizace veřejné správy 2026 [online]. Praha: NKÚ ČR. Dostupné z: https://www.nku.cz/assets/publikace-a-dokumenty/ostatni-publikace/souhrnna-zprava-digitalizaceverejne-spravy-2026.pdf"},
+    {"index": 4, "citace": "EVROPSKÁ KOMISE, 2025. Digital Economy and Society Index (DESI): Methodologies and Country Analysis [online]. Brussels: European Commission. Dostupné z: https://digital-strategy.ec.europa.eu/en/policies/desi"},
+    {"index": 5, "citace": "NÁRODNÁ RADA SR, 2004. Zákon č. 523/2004 Z. z. o rozpočtových pravidlách verejnej správy a o zmene a doplnení niektorých zákonov [online]. Bratislava: Ministerstvo spravodlivosti SR / Slov-Lex. Dostupné z: /"},
+    {"index": 6, "citace": "DATLAB INSTITUT, 2022. Příručka pro zadavatele: Jak předcházet a řešit vendor lock-in ve veřejných zakázkách [online]. Praha: Datlab Institut. Dostupné z: https://datlabinstitut.cz/files/2022/10/p%C5%99%C3%ADru%C4%8Dka_vendor_lock.pdf"}
+  ]
+}

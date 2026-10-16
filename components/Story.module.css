@@ -1,0 +1,83 @@
+.story {
+  display: grid;
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.sticky {
+  position: sticky;
+  top: calc(56px + env(safe-area-inset-top, 0px) + 1rem);
+}
+.bobrBox {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+}
+.bubble {
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  padding: 0.7rem 0.9rem;
+  font-size: var(--s-1);
+  position: relative;
+  max-width: 28ch;
+  text-align: center;
+}
+.bubble::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  width: 16px;
+  height: 16px;
+  background: var(--surface);
+  border-left: 2px solid var(--ink);
+  border-top: 2px solid var(--ink);
+  transform: translateX(-50%) rotate(45deg);
+}
+.steps {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1rem 30vh;
+}
+.persona {
+  display: grid;
+  gap: 0.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.who { font-size: var(--s2); }
+.step {
+  padding: 1.6rem 1.4rem;
+  border-left: 4px solid var(--line);
+  min-height: 42vh;
+  display: grid;
+  align-content: center;
+  gap: 0.5rem;
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.55;
+}
+.step[data-active] {
+  border-left-color: var(--sun);
+  opacity: 1;
+}
+.stepTitle { font-family: var(--f-display); font-weight: 400; font-size: var(--s2); text-transform: uppercase; }
+.stepText { font-size: var(--s1); max-width: 40ch; }
+.stepText b { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; border-radius: 3px; }
+
+@media (max-width: 760px) {
+  .story { grid-template-columns: 1fr; gap: 0; }
+  .sticky {
+    top: calc(56px + env(safe-area-inset-top, 0px));
+    z-index: 5;
+    background: var(--paper);
+    padding-block: 0.4rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .bobrBox { grid-template-columns: auto minmax(0, 1fr); align-items: center; text-align: left; }
+  .bobrBox svg { width: 96px !important; height: auto !important; }
+  .bubble { max-width: none; text-align: left; }
+  .bubble::before { left: -10px; top: 50%; transform: translateY(-50%) rotate(-45deg); }
+  .step { min-height: 0; opacity: 1; padding: 1rem 1rem; }
+  .steps { padding-bottom: 1rem; }
+}

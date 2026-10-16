@@ -1,0 +1,318 @@
+{
+  "kapitola": "1.2",
+  "nazev": "Vzdělanost jako základ ekonomické prosperity",
+  "garant": {
+    "jmeno": "Jan Kříž",
+    "role": "expert na oblast vzdělávání pro budoucnost a silné regiony"
+  },
+  "hook": {
+    "hodnota": 4,
+    "jednotka": "% dětí do 3 let v brzké předškolní péči",
+    "veta": "Do brzké předškolní péče je zapojeno jen 4 % dětí do 3 let věku, zatímco průměr zemí OECD je 24 %."
+  },
+  "grafy": {
+    "ucastDeti": {
+      "titulek": "Česko má jeden z nejnižších podílů dětí do 3 let zapojených do vzdělávání a péče v raném dětství v OECD",
+      "podtitulek": "Míra účasti ve vzdělávání a péči v raném dětství (ECEC) a v primárním vzdělávání podle věku, v %, 2022",
+      "polozky": [
+        {"label": "Česko, do 3 let", "hodnota": 4},
+        {"label": "Průměr OECD, do 3 let", "hodnota": 24}
+      ],
+      "cil": 12,
+      "cilEU": 45,
+      "zdroj": "OECD (2024), Education at a Glance 2024: OECD Indicators, OECD Publishing, Paris",
+      "poznamka": "Hodnoty jsou jen ty, které uvádí text kapitoly. Hodnoty ostatních zemí v grafu nejsou v podkladu čitelné."
+    },
+    "neet": {
+      "titulek": "Rozdělení mladých lidí ve věku 18–24 let podle zapojení do vzdělávání a zaměstnání, v %",
+      "polozky": [
+        {"label": "Česko", "hodnota": null, "poznamka": "2. největší podíl NEET v OECD, hned po Turecku"}
+      ],
+      "zdroj": "OECD (2023)",
+      "poznamka": "Procentní hodnoty v podkladu nejsou čitelné. Text uvádí, že podíl je zhruba dvojnásobkem průměru EU."
+    },
+    "terciarniRodice": {
+      "titulek": "Podíl osob ve věku 25–64 let s terciárním vzděláním a podíl osob, jejichž alespoň jeden rodič dosáhl terciárního vzdělání, v %",
+      "polozky": [
+        {"label": "Česko", "hodnota": null, "poznamka": "Text: podíl je výrazně nižší než průměr OECD, a to u dospělých i u jejich rodičů"},
+        {"label": "Průměr OECD", "hodnota": null}
+      ],
+      "zdroj": "OECD (2024), Education at a Glance 2024: OECD Indicators",
+      "poznamka": "Hodnoty v podkladu nejsou čitelné. Text uvádí jen srovnání s průměrem OECD."
+    }
+  },
+  "fakta": [
+    {"id": "patnactileti_necti", "hodnota": "pětina", "jednotka": "patnáctiletých neumí funkčně číst", "text": "Pětina patnáctiletých neumí funkčně číst a tento podíl se v posledních letech nezmenšuje.", "zdrojIndex": 1},
+    {"id": "ucast_do_3_let_cr", "hodnota": 4, "jednotka": "% dětí do 3 let v brzké předškolní péči", "text": "Brzké předškolní péče se účastní 4 % dětí do 3 let věku.", "zdrojIndex": 2},
+    {"id": "ucast_do_3_let_oecd", "hodnota": 24, "jednotka": "% dětí do 3 let (průměr zemí OECD)", "text": "Průměr zemí OECD v zapojení dětí do 3 let do brzké předškolní péče je 24 %.", "zdrojIndex": 2},
+    {"id": "cil_narodni_ucast", "hodnota": 12, "jednotka": "% dětí do 3 let (národní cíl)", "text": "Národní cíl zapojení dětí do 3 let do předškolní péče je 12 %.", "zdrojIndex": 2},
+    {"id": "cil_eu_ucast", "hodnota": 45, "jednotka": "% dětí do 3 let (cíl EU)", "text": "EU cíl zapojení dětí do brzké předškolní péče je 45 %.", "zdrojIndex": 2},
+    {"id": "cil_eu_rok", "hodnota": 2030, "jednotka": "rok", "text": "EU cíl má být dosažen do roku 2030.", "zdrojIndex": 2},
+    {"id": "vynos_vcasna_pece", "hodnota": "3–4", "jednotka": "Kč za každou 1 Kč investovanou do včasné péče", "text": "Odhaduje se, že stát za každou korunu investovanou do programů včasné péče dostane zpět 3–4 Kč.", "zdrojIndex": 4},
+    {"id": "navrh_materska_ve_2_letech", "hodnota": 2, "jednotka": "let", "text": "Každá rodina by měla mít možnost volby, jestli dítě umístí do mateřské školy už ve 2 letech.", "zdrojIndex": null},
+    {"id": "navrh_pece_od_1_roku", "hodnota": 1, "jednotka": "rok věku", "text": "Rodina by měla mít dostupnou péči o děti už od 1 roku věku.", "zdrojIndex": null},
+    {"id": "navrh_pece_25_procent", "hodnota": 25, "jednotka": "% dětí do 3 let (alespoň)", "text": "Cílem je, aby alespoň 25 % dětí do 3 let využívalo předškolní péči.", "zdrojIndex": null},
+    {"id": "prinos_dodatecne_deti", "hodnota": 15, "jednotka": "% dětí do 3 let (dodatečně zapojených)", "text": "Zapojení dodatečných 15 % dětí do 3 let do předškolní péče může přinést nárůst ročního HDP.", "zdrojIndex": null},
+    {"id": "prinos_hdp_predskolni", "hodnota": "10–30", "jednotka": "mld. Kč (nárůst ročního HDP ČR)", "text": "Nárůst ročního HDP ČR může být mezi 10 a 30 mld. Kč.", "zdrojIndex": null},
+    {"id": "socioekonomicky_status_cr", "hodnota": 22, "jednotka": "% rozdílů ve výsledcích žáků", "text": "Socioekonomický status tvoří v ČR 22 % rozdílů ve výsledcích žáků.", "zdrojIndex": 5},
+    {"id": "socioekonomicky_status_oecd", "hodnota": 15, "jednotka": "% rozdílů ve výsledcích žáků (průměr OECD)", "text": "Průměr OECD, pokud jde o podíl socioekonomického statusu na rozdílech ve výsledcích žáků, je 15 %.", "zdrojIndex": 5},
+    {"id": "matematika_znevyhodneni", "hodnota": 48.5, "jednotka": "% dětí ze znevýhodněného prostředí", "text": "48,5 % dětí ze znevýhodněného prostředí nedosáhne základní dovednostní úrovně v matematice.", "zdrojIndex": 5},
+    {"id": "vynikajici_navzdory_zazemi", "hodnota": 7, "jednotka": "% žáků", "text": "Pouze 7 % žáků dosahuje výborných výsledků navzdory nepříznivému zázemí; jde o druhý nejnižší podíl v OECD.", "zdrojIndex": 5},
+    {"id": "cil_vliv_zazemi_pisa", "hodnota": 15, "jednotka": "% (cílová hodnota v PISA, pod)", "text": "Cílová hodnota vlivu socioekonomického zázemí v šetření PISA je pod 15 %.", "zdrojIndex": null},
+    {"id": "cil_predcasne_odchody", "hodnota": 5, "jednotka": "% (pod)", "text": "Podíl předčasných odchodů ze vzdělávání v sociálně zatížených regionech má klesnout pod 5 %.", "zdrojIndex": null},
+    {"id": "testovani_rocniky", "hodnota": "3., 5., 7. a 9.", "jednotka": "ročník ZŠ (pravidelné testování)", "text": "Pravidelné testování žáků se navrhuje v klíčových bodech vzdělávání na ZŠ, tedy v 3., 5., 7. a 9. ročníku.", "zdrojIndex": null},
+    {"id": "neet_poradi_cr", "hodnota": 2, "jednotka": "místo v OECD (podíl mladých 18–24 let, kteří nestudují ani nejsou zaměstnaní)", "text": "Česko má v OECD druhý největší podíl mladých lidí ve věku 18–24 let, kteří ani nestudují, ani nejsou zaměstnaní, hned po Turecku.", "zdrojIndex": 9},
+    {"id": "neet_vs_eu", "hodnota": 2, "jednotka": "× průměr EU (zhruba)", "text": "Podíl mladých lidí ve věku 18–24 let, kteří ani nestudují, ani nejsou zaměstnaní, je zhruba dvojnásobkem průměru EU.", "zdrojIndex": 9},
+    {"id": "obory_cr", "hodnota": 281, "jednotka": "oborů středního vzdělávání", "text": "Česko v současnosti nabízí až 281 oborů středního vzdělávání.", "zdrojIndex": 10},
+    {"id": "obory_svedsko", "hodnota": 18, "jednotka": "oborů (Švédsko)", "text": "Švédsku stačí pouze 18 oborů.", "zdrojIndex": 11},
+    {"id": "prijem_bez_maturity_podil", "hodnota": "více než třetinu", "jednotka": "zvýšení celoživotního příjmu oproti základnímu vzdělání", "text": "Střední vzdělání bez maturity zvyšuje průměrné celoživotní pracovní příjmy jednotlivce oproti základnímu vzdělání o více než třetinu.", "zdrojIndex": 12},
+    {"id": "prijem_bez_maturity_castka", "hodnota": 8, "jednotka": "mil. Kč (celoživotní příjem navíc)", "text": "Zvýšení celoživotních pracovních příjmů u středního vzdělání bez maturity činí 8 mil. Kč.", "zdrojIndex": 12},
+    {"id": "prijem_s_maturitou_podil", "hodnota": 60, "jednotka": "% (zvýšení příjmů oproti základnímu vzdělání, více než)", "text": "Úspěšné dokončení střední školy s maturitou znamená zvýšení příjmů o více než 60 % oproti získání pouze základního vzdělání.", "zdrojIndex": 12},
+    {"id": "prijem_s_maturitou_castka", "hodnota": 17, "jednotka": "mil. Kč (celoživotní příjem navíc)", "text": "Zvýšení příjmů se středním vzděláním s maturitou činí 17 mil. Kč.", "zdrojIndex": 12},
+    {"id": "nezamestnanost_vs_zakladni", "hodnota": 10, "jednotka": "× nižší míra nezaměstnanosti (VŠ oproti nejvýše základnímu vzdělání)", "text": "Lidé s vysokoškolským vzděláním mají dlouhodobě až 10krát nižší míru nezaměstnanosti než lidé s nejvýše základním vzděláním.", "zdrojIndex": 12},
+    {"id": "nezamestnanost_zakladni", "hodnota": 20, "jednotka": "% (přes 20 %, nejvýše základní vzdělání)", "text": "Lidé s nejvýše základním vzděláním mají míru nezaměstnanosti přes 20 %.", "zdrojIndex": 12},
+    {"id": "prinos_verejne_rozpocty", "hodnota": "2.3–2.8", "jednotka": "mil. Kč (víc do veřejných rozpočtů za život)", "text": "Žák, který dokončí alespoň SŠ, odvede za svůj život do veřejných rozpočtů v průměru o 2,3–2,8 mil. Kč víc než žák se základním vzděláním.", "zdrojIndex": 13},
+    {"id": "cil_pocet_oboru", "hodnota": 100, "jednotka": "oborů (pod)", "text": "Počet oborů středního vzdělání se má snížit pod 100.", "zdrojIndex": null},
+    {"id": "prinos_obory_hdp", "hodnota": "1–2", "jednotka": "% dnešního HDP (efekt balíku opatření)", "text": "Realistický efekt balíku opatření na oborovou soustavu je 1 až 2 % dnešního HDP.", "zdrojIndex": null},
+    {"id": "prinos_obory_horizont", "hodnota": 20, "jednotka": "let (horizont efektu)", "text": "Efekt balíku opatření na oborovou soustavu se má projevit v horizontu 20 let.", "zdrojIndex": null},
+    {"id": "prinos_reforma_nabeh", "hodnota": "15–20", "jednotka": "let (náběh výsledků reformy)", "text": "Náběh výsledků reformy bude trvat dlouho, po 15 až 20 letech lze čekat nárůst ročního HDP.", "zdrojIndex": null},
+    {"id": "prinos_reforma_hdp", "hodnota": "50–100", "jednotka": "mld. Kč (nárůst ročního HDP v dnešních cenách)", "text": "Nárůst ročního HDP o 50 až 100 mld. Kč v dnešních cenách, či vyšší.", "zdrojIndex": null},
+    {"id": "prinos_reforma_hdp_procento", "hodnota": 1, "jednotka": "% HDP (řádově)", "text": "Nárůst ročního HDP o 50 až 100 mld. Kč odpovídá řádově 1 % HDP.", "zdrojIndex": null},
+    {"id": "vs_magistr", "hodnota": 94.1, "jednotka": "% bakalářských absolventů pokračuje v magisterském studiu", "text": "V roce 2025/26 pokračovalo v magisterském studiu 94,1 % bakalářských absolventů.", "zdrojIndex": 17},
+    {"id": "privydelek_vysokoskolaci", "hodnota": 92, "jednotka": "% vysokoškoláků si alespoň částečně přivydělává", "text": "92 % českých vysokoškoláků si při studiu alespoň částečně přivydělává.", "zdrojIndex": 18},
+    {"id": "pracuje_cely_semestr", "hodnota": 70, "jednotka": "% vysokoškoláků pracuje v průběhu celého semestru", "text": "70 % českých vysokoškoláků pracuje v průběhu celého semestru.", "zdrojIndex": 18},
+    {"id": "eurostudent_zeme", "hodnota": 20, "jednotka": "zemí EU ve výzkumu Eurostudent (Česko nejvíce z nich)", "text": "Práce vysokoškoláků při studiu je nejvyšší z 20 zemí EU zapojených do výzkumu Eurostudent.", "zdrojIndex": 18},
+    {"id": "predcasne_ukonceni_bakalari", "hodnota": "přes třetinu", "jednotka": "bakalářských studentů (předčasné neúspěšné ukončení studia)", "text": "Předčasné neúspěšné ukončení studia výrazně přesahuje třetinu bakalářských studentů.", "zdrojIndex": 20},
+    {"id": "vydaje_vzdelavani_cr", "hodnota": 4.1, "jednotka": "% HDP (výdaje na vzdělávání, ČR)", "text": "Česko vydává na vzdělávání pouze 4,1 % HDP.", "zdrojIndex": 21},
+    {"id": "vydaje_vzdelavani_oecd", "hodnota": 4.7, "jednotka": "% HDP (průměr OECD)", "text": "Průměr OECD na vzdělávání představuje 4,7 % HDP.", "zdrojIndex": 22},
+    {"id": "vydaje_vyzkum_cr", "hodnota": 1.82, "jednotka": "% HDP (výdaje na vědu a výzkum, ČR)", "text": "Výdaje na vědu a výzkum v Česku dosahují 1,82 % HDP.", "zdrojIndex": 23},
+    {"id": "vydaje_vyzkum_eu", "hodnota": 2.24, "jednotka": "% HDP (průměr EU)", "text": "Průměr EU na vědu a výzkum je 2,24 % HDP.", "zdrojIndex": 23},
+    {"id": "vydaje_vyzkum_cil_eu", "hodnota": 3.0, "jednotka": "% HDP (cíl EU)", "text": "Cílem EU jsou výdaje na vědu a výzkum ve výši 3,0 % HDP.", "zdrojIndex": 23},
+    {"id": "vynos_vyzkum_konzervativni", "hodnota": "3–4", "jednotka": "Kč na každou 1 Kč investovanou do výzkumu a vývoje (konzervativní odhad)", "text": "Konzervativní odhady hovoří o tom, že každá koruna investovaná do výzkumu a vývoje se vrací v rozmezí 3–4 Kč.", "zdrojIndex": 24},
+    {"id": "vynos_vyzkum_optimisticky", "hodnota": 20, "jednotka": "Kč na každou 1 Kč (optimistický odhad, více než)", "text": "Optimističtější odhady mluví o více než 20 Kč na každou investovanou korunu do výzkumu a vývoje.", "zdrojIndex": 24},
+    {"id": "platy_pedagogu_zakon", "hodnota": 130, "jednotka": "% průměrné mzdy (alespoň, zákonný požadavek)", "text": "Finanční zdroje na platy pedagogů musí být podle zákona dostatečné na průměrný plat ve výši alespoň 130 % průměrné mzdy.", "zdrojIndex": 28},
+    {"id": "platy_pedagogu_skutecne", "hodnota": 108, "jednotka": "% průměrné mzdy (skutečně dosahovaný poměr)", "text": "V posledních letech skutečně dosahovaný poměr platů pedagogů klesl k 108 % průměrné mzdy.", "zdrojIndex": 28},
+    {"id": "vs_25_34_soucasne", "hodnota": 34, "jednotka": "% osob ve věku 25–34 let s vysokoškolským vzděláním (současný stav)", "text": "Podíl vysokoškolsky vzdělaných ve věku 25–34 let je ze současných 34 %.", "zdrojIndex": null},
+    {"id": "vs_25_34_cil", "hodnota": 45, "jednotka": "% osob ve věku 25–34 let (alespoň, cíl EU)", "text": "Cílem je zvýšit podíl vysokoškolsky vzdělaných ve věku 25–34 let na alespoň 45 %, a splnit tak cíl EU.", "zdrojIndex": null},
+    {"id": "bakalari_praxe_podil", "hodnota": 50, "jednotka": "% všech bakalářských absolventů (alespoň, praxí provázané obory)", "text": "Bakalářské obory provázané s praxí mají tvořit alespoň 50 % všech bakalářských absolventů.", "zdrojIndex": null},
+    {"id": "cil_top100_rok", "hodnota": 2035, "jednotka": "rok", "text": "Do roku 2035 chceme dostat a udržet alespoň jednu českou univerzitu v TOP 100 mezinárodních žebříčků.", "zdrojIndex": null},
+    {"id": "cil_top100", "hodnota": 100, "jednotka": "pozice (TOP 100 mezinárodních žebříčků)", "text": "Cílem je alespoň jedna česká univerzita v TOP 100 mezinárodních žebříčků.", "zdrojIndex": null},
+    {"id": "certifikat_cr", "hodnota": 51.8, "jednotka": "% neformálního vzdělávání vede k certifikátu (ČR)", "text": "Pouze 51,8 % neformálního vzdělávání v ČR vede k získání nějakého certifikátu.", "zdrojIndex": 26},
+    {"id": "certifikat_oecd", "hodnota": 62.7, "jednotka": "% (průměr OECD)", "text": "Průměr OECD, pokud jde o podíl neformálního vzdělávání vedoucího k certifikátu, je 62,7 %.", "zdrojIndex": 26},
+    {"id": "certifikat_nemecko", "hodnota": 77.1, "jednotka": "% (Německo)", "text": "Německo dosahuje 77,1 % neformálního vzdělávání vedoucího k certifikátu.", "zdrojIndex": 26},
+    {"id": "prinos_hdp_strednedoby", "hodnota": "20–40", "jednotka": "mld. Kč (vyšší HDP, střednědobě)", "text": "Ze střednědobého hlediska se očekává vyšší HDP v řádu 20 až 40 mld. Kč.", "zdrojIndex": null},
+    {"id": "prinos_tempo_dlouhodobe", "hodnota": "0.1–0.4", "jednotka": "% ročně (vyšší tempo růstu HDP, dlouhodobě)", "text": "Z dlouhodobého pohledu se očekává vyšší tempo růstu HDP o 0,1 až 0,4 % ročně.", "zdrojIndex": null},
+    {"id": "prinos_rust_reforma", "hodnota": 0.3, "jednotka": "% ročně (zvýšení růstu proti současnému stavu)", "text": "Realizace změn zvýší ekonomický růst proti současnému stavu o 0,3 % ročně.", "zdrojIndex": null},
+    {"id": "prinos_dekada", "hodnota": 3, "jednotka": "% (za sledovanou dekádu)", "text": "Zvýšení růstu o 0,3 % ročně znamená ve sledované dekádě zhruba 3 %.", "zdrojIndex": null}
+  ],
+  "priciny": [
+    {"poradi": 1, "typ": "řetězec", "pricina": "Znevýhodněné zázemí → nízké aspirace rodičů a škol → menší péče o žáky → horší výsledky", "popis": "Socioekonomický status tvoří 22 % rozdílů ve výsledcích žáků (průměr OECD 15 %). Kvůli nízkým aspiracím rodičů i škol se školy těmto dětem dostatečně nevěnují, mají horší výsledky a spirála pokračuje dál.", "zdrojIndex": 5},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Brzká selektivita → nedostatečná aspirace → časté změny oboru → pozdější vstup na trh práce", "popis": "Design přijímací zkoušky na SŠ a nedostatečné kapacity všeobecných oborů vedou k tomu, že část žáků končí vzdělávání předčasně nebo volí dráhu, jež nerozvíjí jejich potenciál. Žáci, kteří se nehlásí na maturitní obor, nezjistí, jak na tom jsou. Nevhodná volba úzkého oboru vede k častým změnám studia a pozdějšímu vstupu na pracovní trh.", "zdrojIndex": 7},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Brzká specializace → roztříštěná nabídka oborů → uplatnění absolventů mimo vystudovaný obor", "popis": "Česko nabízí až 281 oborů středního vzdělávání, zatímco Švédsku stačí 18. Nadměrná a zastaralá oborová roztříštěnost vede k tomu, že se značná část absolventů uplatňuje zcela mimo vystudovaný obor.", "zdrojIndex": 10},
+    {"poradi": 4, "typ": "řetězec", "pricina": "Chybějící finanční podpora studujících → přivydělávání při studiu → menší pozornost škole → předčasné neúspěšné ukončení studia", "popis": "Česko nemá funkční finanční podporu studujících na vysokých školách. 92 % vysokoškoláků si alespoň částečně přivydělává a 70 % pracuje v průběhu celého semestru, většinou v oboru nesouvisejícím se studiem. To odvádí pozornost od školy a snižuje pravděpodobnost dokončení.", "zdrojIndex": 18},
+    {"poradi": 5, "typ": "řetězec", "pricina": "Podfinancování → nízké platy pedagogů → obtížné zajištění kvalifikovaných učitelů", "popis": "Platy pedagogů klesly k 108 % průměrné mzdy, ačkoli zákon počítá s alespoň 130 %. Nedostatečné finanční ohodnocení přispívá k obtížnému zajištění kvalifikovaných vyučujících a systém jen pomalu zvyšuje svou kvalitu.", "zdrojIndex": 28},
+    {"poradi": 6, "typ": "řetězec", "pricina": "Chybějící měření přidané hodnoty škol → nevíme, kde jsou slabá místa systému → hůře se investuje do jejich nápravy", "popis": "Chybí měření přidané hodnoty škol, dlouhodobého rozvoje a měkkých dovedností žáků. Pokud by měření slabá místa odhalilo, bylo by možné lépe investovat do jejich nápravy.", "zdrojIndex": 14},
+    {"poradi": 7, "typ": "další", "pricina": "Velmi různá kvalita škol", "popis": "Velmi různá kvalita škol dále zvýrazňuje rozdíly ve vzdělávání.", "zdrojIndex": null},
+    {"poradi": 8, "typ": "další", "pricina": "Chybějící systémová podpora studentů na terciárním stupni", "popis": "Terciárnímu stupni chybí ucelená systémová podpora studentů, což vede k vysoké míře studijní neúspěšnosti i k nutnosti skloubit studium s rozsáhlým pracovním nasazením.", "zdrojIndex": null},
+    {"poradi": 9, "typ": "další", "pricina": "Nízké veřejné investice do vzdělávání, vědy a výzkumu", "popis": "Česko vydává na vzdělávání 4,1 % HDP oproti průměru OECD 4,7 % HDP. Výdaje na vědu a výzkum dosahují 1,82 % HDP oproti 2,24 % HDP průměru EU a cíli EU 3,0 %.", "zdrojIndex": 21},
+    {"poradi": 10, "typ": "další", "pricina": "Demografický tlak na učitelský sbor", "popis": "Velká skupina pedagogů je nyní v předdůchodovém věku a je třeba ji nahradit.", "zdrojIndex": 29},
+    {"poradi": 11, "typ": "další", "pricina": "Nízký podíl vysokoškolsky vzdělané populace", "popis": "Česko má v mezinárodním srovnání málo vysokoškolsky vzdělanou populaci, a to jak mezi občany v produktivním věku, tak mezi jejich rodiči.", "zdrojIndex": 15},
+    {"poradi": 12, "typ": "další", "pricina": "Nízká míra dalšího vzdělávání dospělých", "popis": "Česko má nízkou míru dalšího vzdělávání po prvním ukončení formálního vzdělávání. Pouze 51,8 % neformálního vzdělávání vede k získání certifikátu.", "zdrojIndex": 26}
+  ],
+  "opatreni": [
+    {
+      "cislo": 1,
+      "nazev": "Transformace předškolních zařízení pro mladší děti",
+      "popis": "Využijeme demografického poklesu a místo zavírání předškolních zařízení zajistíme jejich transformaci tak, aby vznikly dostatečné kapacity pro mladší děti. Každá rodina by měla mít možnost volby, jestli dítě umístí do mateřské školy už ve 2 letech a měla by mít dostupnou péči o děti už od 1 roku věku.",
+      "klicoveCislo": "mateřská škola už ve 2 letech; péče od 1 roku věku",
+      "sekce": "1.2.1 Brzké vzdělávání je ekonomicky výhodné"
+    },
+    {
+      "cislo": 2,
+      "nazev": "Podmínky pro alespoň 25 % dětí do 3 let v předškolní péči",
+      "popis": "Vytvoříme podmínky, aby alespoň 25 % dětí do 3 let využívalo předškolní péči.",
+      "klicoveCislo": "alespoň 25 % dětí do 3 let",
+      "sekce": "1.2.1 Brzké vzdělávání je ekonomicky výhodné"
+    },
+    {
+      "cislo": 3,
+      "nazev": "Jasné a měřitelné cíle",
+      "popis": "Stanovíme jasné a měřitelné cíle vzdělávacího systému a zajistíme jejich sledování a vyhodnocování.",
+      "klicoveCislo": "měřitelné cíle a jejich vyhodnocování",
+      "sekce": "Je nutné ukončit spirálu udržující rozdíly ve vzdělávání"
+    },
+    {
+      "cislo": 4,
+      "nazev": "Plnou dostupnost psychologů",
+      "popis": "Postupně zajistíme plnou dostupnost psychologů, speciálních a sociálních pedagogů ve školách tak, aby instituce poskytovaly ohroženým dětem kompenzační zázemí a pomáhaly prolomit generační vzorce neúspěchu.",
+      "klicoveCislo": "plná dostupnost psychologů, speciálních a sociálních pedagogů",
+      "sekce": "Je nutné ukončit spirálu udržující rozdíly ve vzdělávání"
+    },
+    {
+      "cislo": 5,
+      "nazev": "Podpoříme znevýhodněné oblasti indexovým financováním",
+      "popis": "Zajistíme dostatek financí na smysluplnou realizaci indexového financování – tedy na realizaci potřebných opatření na školách s vyšším podílem sociálně znevýhodněných žáků.",
+      "klicoveCislo": "indexové financování škol s vyšším podílem znevýhodněných žáků",
+      "sekce": "Je nutné ukončit spirálu udržující rozdíly ve vzdělávání"
+    },
+    {
+      "cislo": 6,
+      "nazev": "Snížíme vliv socioekonomického zázemí na výsledky žáků",
+      "popis": "Kombinací předchozích návrhů dosáhneme snížení vlivu socioekonomického zázemí na výsledky žáků (měřeno např. hodnotou této veličiny v šetření PISA s cílovou hodnotou pod 15 %) a srazíme podíl předčasných odchodů ze vzdělávání v sociálně zatížených regionech pod 5 %.",
+      "klicoveCislo": "PISA: vliv zázemí pod 15 %; předčasné odchody pod 5 %",
+      "sekce": "Je nutné ukončit spirálu udržující rozdíly ve vzdělávání"
+    },
+    {
+      "cislo": 7,
+      "nazev": "Pravidelné testování žáků",
+      "popis": "Zavedeme pravidelné testování žáků v klíčových bodech vzdělávání na ZŠ (3., 5., 7. a 9. ročník) a změníme systém přijímacích zkoušek na SŠ tak, aby se ho účastnili všichni žáci a probíhal před podáním přihlášek na SŠ.",
+      "klicoveCislo": "testování v 3., 5., 7. a 9. ročníku ZŠ",
+      "sekce": "Je nutné ukončit spirálu udržující rozdíly ve vzdělávání"
+    },
+    {
+      "cislo": 8,
+      "nazev": "Inovujeme oborovou soustavu",
+      "popis": "Nabídka a obsah vzdělávacích oborů musí odpovídat poptávce a aktuálním požadavkům zaměstnavatelů tak, aby byli absolventi schopni se adaptovat na profese, které vznikají a budou vznikat, a byli připraveni na svět budoucnosti – s umělou inteligencí a vyšší frekvencí změn v průběhu života.",
+      "klicoveCislo": "obory odpovídající poptávce zaměstnavatelů",
+      "sekce": "Struktura oborů škol musí být inovovaná a kvalitní"
+    },
+    {
+      "cislo": 9,
+      "nazev": "Sloučíme příbuzné obory na středních školách a snížíme jejich počet pod 100",
+      "popis": "",
+      "klicoveCislo": "méně než 100 oborů",
+      "sekce": "Struktura oborů škol musí být inovovaná a kvalitní"
+    },
+    {
+      "cislo": 10,
+      "nazev": "Zlepšíme prostupnost oborů a možnost změnit zaměření ještě v průběhu studia",
+      "popis": "",
+      "klicoveCislo": "prostupnost oborů a změna zaměření v průběhu studia",
+      "sekce": "Struktura oborů škol musí být inovovaná a kvalitní"
+    },
+    {
+      "cislo": 11,
+      "nazev": "Reformujeme učňovskou vzdělávací větev",
+      "popis": "Umožníme snadnou návaznost v dalším profesním vzdělávání (na VOŠ, nástavbách, profesních oborech VŠ, v mikrocertifikačních kurzech).",
+      "klicoveCislo": "návaznost na VOŠ, nástavby, profesní obory VŠ a mikrocertifikáty",
+      "sekce": "Struktura oborů škol musí být inovovaná a kvalitní"
+    },
+    {
+      "cislo": 12,
+      "nazev": "Zavedeme systematické měření přidané hodnoty škol",
+      "popis": "Základem bude dlouhodobé měření výsledků žáků a měření dosahovaných měkkých kompetencí a gramotností žáků.",
+      "klicoveCislo": "měření přidané hodnoty škol",
+      "sekce": "Struktura oborů škol musí být inovovaná a kvalitní"
+    },
+    {
+      "cislo": 13,
+      "nazev": "Zavedeme vratné granty (půjčky) pro studenty VŠ",
+      "popis": "Inspirujeme se švédským modelem s odloženým splácením navázaným na dosažení definované úrovně příjmů.",
+      "klicoveCislo": "vratné granty (půjčky) pro studenty VŠ",
+      "sekce": "Investice do vzdělávání a vědy se mnohonásobně vrací"
+    },
+    {
+      "cislo": 14,
+      "nazev": "Zvýšíme podíl vysokoškolsky vzdělaných obyvatel",
+      "popis": "A to ve věku 25–34 let ze současných 34 % na alespoň 45 %, a splníme tak cíl EU.",
+      "klicoveCislo": "alespoň 45 % (dnes 34 %) u osob ve věku 25–34 let",
+      "sekce": "Investice do vzdělávání a vědy se mnohonásobně vrací"
+    },
+    {
+      "cislo": 15,
+      "nazev": "Reforma vysokých škol a jejich financování",
+      "popis": "Reformou vysokých škol dáme vedení VŠ potřebné pravomoci a zároveň odpovědnost školy efektivně řídit, a jejich financování podpoříme jejich diverzifikaci a kvalitu jak v profesní, tak v akademické dimenzi jejich činnosti. Zajistíme dostatečné finance pro zvládnutí navýšení počtu studentů a konkurenceschopné mzdy vysokoškolských pedagogů.",
+      "klicoveCislo": "pravomoci vedení VŠ, diverzifikace financování, konkurenceschopné mzdy",
+      "sekce": "Investice do vzdělávání a vědy se mnohonásobně vrací"
+    },
+    {
+      "cislo": 16,
+      "nazev": "Rozvoj s praxí provázaných bakalářských oborů",
+      "popis": "V profesní větvi podpoříme rozvoj s praxí provázaných bakalářských oborů tak, aby tvořily alespoň 50 % všech bakalářských absolventů. Ve výzkumné větvi zaměříme prostředky na internacionalizaci, doktorské studium a špičkovou vědu.",
+      "klicoveCislo": "alespoň 50 % bakalářských absolventů",
+      "sekce": "Investice do vzdělávání a vědy se mnohonásobně vrací"
+    },
+    {
+      "cislo": 17,
+      "nazev": "Alespoň jednu českou univerzitu v TOP 100",
+      "popis": "Do roku 2035 chceme dostat a udržet alespoň jednu českou univerzitu v TOP 100 mezinárodních žebříčků.",
+      "klicoveCislo": "do roku 2035 v TOP 100",
+      "sekce": "Investice do vzdělávání a vědy se mnohonásobně vrací"
+    },
+    {
+      "cislo": 18,
+      "nazev": "Zvýšíme podíl dospělých zapojených do celoživotního vzdělávání",
+      "popis": "",
+      "klicoveCislo": "vyšší podíl dospělých v celoživotním vzdělávání",
+      "sekce": "Dlouhodobou konkurenceschopnost nelze udržet bez kvalitního systému celoživotního učení"
+    },
+    {
+      "cislo": 19,
+      "nazev": "Rozšíříme flexibilní mikrocertifikáty",
+      "popis": "Stanou se validním potvrzením získání dílčích kvalifikací, aby je uznávali zaměstnavatelé i vysoké školy.",
+      "klicoveCislo": "mikrocertifikáty uznávané zaměstnavateli i VŠ",
+      "sekce": "Dlouhodobou konkurenceschopnost nelze udržet bez kvalitního systému celoživotního učení"
+    },
+    {
+      "cislo": 20,
+      "nazev": "Zavedeme individuální vzdělávací účty",
+      "popis": "Na ně bude přispívat stát, zaměstnavatel i zaměstnanec.",
+      "klicoveCislo": "stát, zaměstnavatel i zaměstnanec přispívají na účet",
+      "sekce": "Dlouhodobou konkurenceschopnost nelze udržet bez kvalitního systému celoživotního učení"
+    },
+    {
+      "cislo": 21,
+      "nazev": "Daňově zvýhodníme investice zaměstnavatelů do vzdělávání zaměstnanců",
+      "popis": "",
+      "klicoveCislo": "daňové zvýhodnění investic zaměstnavatelů do vzdělávání",
+      "sekce": "Dlouhodobou konkurenceschopnost nelze udržet bez kvalitního systému celoživotního učení"
+    }
+  ],
+  "cile": [
+    {"cil": "Alespoň 25 % dětí do 3 let využívá předškolní péči", "hodnota": 25, "jednotka": "% dětí do 3 let (alespoň)"},
+    {"cil": "Vliv socioekonomického zázemí na výsledky žáků v šetření PISA snížit pod 15 %", "hodnota": 15, "jednotka": "% (pod)"},
+    {"cil": "Podíl předčasných odchodů ze vzdělávání v sociálně zatížených regionech snížit pod 5 %", "hodnota": 5, "jednotka": "% (pod)"},
+    {"cil": "Snížit počet oborů středního vzdělání pod 100", "hodnota": 100, "jednotka": "oborů (pod)"},
+    {"cil": "Zvýšit podíl vysokoškolsky vzdělaných ve věku 25–34 let ze současných 34 % na alespoň 45 %", "hodnota": 45, "jednotka": "% (alespoň)"},
+    {"cil": "Bakalářské obory provázané s praxí tvoří alespoň 50 % všech bakalářských absolventů", "hodnota": 50, "jednotka": "% bakalářských absolventů (alespoň)"},
+    {"cil": "Alespoň jedna česká univerzita v TOP 100 mezinárodních žebříčků, do roku 2035", "hodnota": 100, "jednotka": "pozice (TOP 100, do roku 2035)"}
+  ],
+  "prinese": [
+    "Zapojení dodatečných 15 % dětí do 3 let do předškolní péče může přinést nárůst ročního HDP ČR mezi 10 a 30 mld. Kč.",
+    "Kvalitnější pracovní sílu, lépe připravenou pro práci, schopnou se lépe učit nové věci, menší nezaměstnanost. Náběh výsledků reformy bude trvat dlouho, ale po 15 až 20 letech můžeme čekat nárůst ročního HDP o 50 až 100 mld. Kč v dnešních cenách (řádově 1 % HDP) či vyšší.",
+    "Pokud nezačneme aktivně řešit kvalitu vzdělávání a aktuální výzvy (např. vliv umělé inteligence jak na vzdělávání, tak na pracovní uplatnění), dá se očekávat, že dojde k poklesu zaměstnatelnosti našich občanů. Pokud dokážeme díky měření určit slabá místa systému, budeme moci lépe investovat do jejich nápravy. Omezení počtu oborů a zlepšení prostupnosti studia sníží mrtvé náklady. Celkově je realistický efekt balíku opatření na 1 až 2 % dnešního HDP v horizontu 20 let.",
+    "Vyšší míra dosahovaného vysokoškolského vzdělání v populaci přinese vyšší ekonomický výkon. Kvalitní univerzity kromě inovačního přínosu přispívají k udržení či přilákání vysoce výkonných „mozků“ do české ekonomiky (zabrání odlivu mozků do výkonnějších ekonomik).",
+    "V krátkodobém horizontu by měl být efekt fiskálně nulový – daňové úlevy a příspěvky by se měly zhruba vyrovnat úsporami na sociálních dávkách a mírně vyššími příjmy na daních. Ze střednědobého hlediska očekáváme vyšší HDP v řádu 20 až 40 mld. Kč díky kratší době nezaměstnanosti a lepší zaměstnatelnosti lidí a vyšší produktivitě práce. Z dlouhodobého pohledu očekáváme vyšší tempo růstu HDP o 0,1 až 0,4 % ročně. Přímý vliv vyšší vzdělanosti na ekonomickou prosperitu, na HDP a jeho růst je dobře prokázán v mnoha zemích. Realizace výše uvedených změn zvýší ekonomický růst proti současnému stavu o 0,3 % ročně, tedy ve sledované dekádě o 3 %."
+  ],
+  "zdroje": [
+    {"index": 1, "citace": "Česká školní inspekce, 2023. Národní zpráva PISA 2022: Matematická, čtenářská a přírodovědná gramotnost patnáctiletých žáků v České republice. Praha: ČŠI."},
+    {"index": 2, "citace": "OECD, 2025. OECD Economic Surveys: Czechia 2025. Paris: OECD Publishing."},
+    {"index": 3, "citace": "UNDP, 2014. The case for investing in early childhood. New York: United Nations Development Programme."},
+    {"index": 4, "citace": "PAQ Research a IDEA při CERGE-EI, 2020. Nerovnosti ve vzdělávání jako zdroj neefektivity. Praha: Nadace České spořitelny."},
+    {"index": 5, "citace": "OECD, 2023. PISA 2022 Results (Volume I & II): Czech Republic Country Note. Paris: OECD Publishing."},
+    {"index": 6, "citace": "OECD, 2018. A Broken Social Elevator? How to Promote Social Mobility. Paris: OECD Publishing."},
+    {"index": 7, "citace": "PAQ Research, 2024. Dvěma třetinám žactva stačí 25 z 231 nejžádanějších středoškolských oborů."},
+    {"index": 8, "citace": "PAQ Research, 2024. Přijímačky: šetření rodiče – nerovnosti. Praha: PAQ Research."},
+    {"index": 9, "citace": "OECD, 2023. Education at a Glance 2023: OECD Indicators. Paris: OECD Publishing."},
+    {"index": 10, "citace": "Národní pedagogický institut ČR, 2024. Konference Curriculum 2024: Revize RVP SOV. Praha: NPI ČR."},
+    {"index": 11, "citace": "Skolverket, 2025. Gymnasieprogrammen Gy25. Stockholm: Skolverket."},
+    {"index": 12, "citace": "Matoušek, Roman, 2019. Finanční dopady předčasných odchodů ze vzdělávání pro stát a jednotlivce. Praha: Agentura pro sociální začleňování (ASZ)."},
+    {"index": 13, "citace": "PAQ Research a IDEA při CERGE-EI, 2020. Nerovnosti ve vzdělávání jako zdroj neefektivity: kalkulace výnosů středoškolského vzdělání. Praha: Nadace České spořitelny."},
+    {"index": 14, "citace": "OECD, 2008. Measuring Improvements in Learning Outcomes: Best Practices to Assess the Value-Added of Schools. Paris: OECD Publishing."},
+    {"index": 15, "citace": "Ministerstvo školství, mládeže a tělovýchovy ČR (MŠMT), 2024. OECD: Podíl vysokoškolsky vzdělaných Čechů je stále nízký. Praha: MŠMT."},
+    {"index": 16, "citace": "OECD, 2024. Education at a Glance 2024: OECD Indicators. Paris: OECD Publishing."},
+    {"index": 17, "citace": "Eurydice, 2025. Programy druhého cyklu (magisterské studijní programy) v ČR. Brusel: European Commission / Eurydice."},
+    {"index": 18, "citace": "Eurostudent, 2021. EUROSTUDENT VII Synopsis of Indicators: Social and Economic Conditions of Student Life in Europe 2018–2021. Hannover: DZHW."},
+    {"index": 19, "citace": "IDEA při CERGE-EI, 2023. Finanční podpora vysokoškolských studentů v České republice: rekonstrukce systému nutná. Praha: IDEA při CERGE-EI."},
+    {"index": 20, "citace": "Evropská komise, 2024. Education and Training Monitor: Czechia Country Report. Lucemburk: Publications Office of the European Union."},
+    {"index": 21, "citace": "Český statistický úřad (ČSÚ), 2024. Výdaje na vzdělávání v ČR. Praha: ČSÚ."},
+    {"index": 22, "citace": "OECD, 2025. Education at a Glance 2025: OECD Indicators. Paris: OECD Publishing."},
+    {"index": 23, "citace": "Eurostat, 2024. R&D expenditure statistics. Lucemburk: Eurostat."},
+    {"index": 24, "citace": "Economic Record, 2022. Returns to Research and Development Investments: Empirical Meta-Analysis. Hoboken: John Wiley & Sons."},
+    {"index": 25, "citace": "Evropská komise, 2025. Investing in European Research and Innovation: Economic Returns and Spillover Effects. Brusel: European Commission, Press Corner, IP/25/1115."},
+    {"index": 26, "citace": "National Library of Medicine (NLM), 2012. Macroeconomic Returns to Public and Private R&D Investments. PubMed ID: 22259821."},
+    {"index": 27, "citace": "Hall, Bronwyn H., Mairesse, Jacques a Mohnen, Pierre, 2010. Chapter 24: Measuring the Returns to R&D. In: Hall, B. H. a Rosenberg, N. (eds.). Handbook of the Economics of Innovation. Amsterdam: North-Holland, roč. 2, s. 1033–1082."},
+    {"index": 28, "citace": "Münich, Daniel a Smolka, Vladimír, 2026. Platy učitelů v roce 2025 a výhled: pád na dno? Praha: IDEA při CERGE-EI."},
+    {"index": 29, "citace": "Ministerstvo školství, mládeže a tělovýchovy ČR (MŠMT), 2024. Mimořádné šetření MŠMT: Kde a jaké učitele školy potřebují. Praha: MŠMT."}
+  ]
+}
