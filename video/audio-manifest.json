@@ -1,0 +1,11 @@
+{
+  "topics": {
+    "bydleni": {
+      "hook": {
+        "file": "audio/bydleni/hook.mp3",
+        "duration": 8.986
+      }
+    }
+  },
+  "music": {}
+}
