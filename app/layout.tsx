@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { JsonLd } from "@/components/JsonLd";
 import { webJsonLd } from "@/lib/seo";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 /* metadataBase dělá z relativních cest absolutní URL (OG obrázky, canonical). Adresa viz lib/site.ts. */
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteNav />
         <main id="obsah" tabIndex={-1}>{children}</main>
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );
