@@ -20,9 +20,9 @@ export default function VideaPage() {
           <p className="eyebrow">Videa · {withVideo.length} témat</p>
           <h1>Bobr za minutu</h1>
           <p className={styles.lede}>
-            Každé téma strategie v jedné minutě: číslo, problém, proč to tak je, co navrhujeme a co to přinese. Bez zvuku, s titulky
-            v obraze, aby se dalo koukat i v tramvaji. Široká verze (16:9) je pro YouTube a web, reel (9:16) pro Instagram, TikTok
-            a Shorts. Obě si můžeš stáhnout a sdílet.
+            Každé téma strategie v jedné minutě: číslo, problém, proč to tak je, co navrhujeme a co to přinese. Namluvené, s hudbou
+            a s titulky v obraze, aby se dalo koukat i potichu v tramvaji. Široká verze (16:9) je pro YouTube a web, reel (9:16)
+            pro Instagram, TikTok a Shorts. Obě si můžeš stáhnout a sdílet.
           </p>
         </div>
         <BobrBubble mood="happy" pointing side="left">
@@ -64,7 +64,9 @@ export default function VideaPage() {
           <h3>Jak videa vznikají</h3>
           <p>
             Videa se generují z dat webu (Remotion). Scénář každého tématu je krátký textový soubor; z něj se vyrenderuje široká
-            verze i reel. Zvuk zatím nemají. Namluvení bobrem je další krok, až se schválí jeho hlas.
+            verze i reel. Komentář je namluvený syntetickým hlasem (ElevenLabs) podle scénáře, čísla se v něm čtou slovy; hudba je
+            také vygenerovaná. Délka každé scény se řídí délkou namluvené věty, takže oprava textu znamená nové namluvení a nový
+            render, ne nový střih.
           </p>
         </div>
       </section>

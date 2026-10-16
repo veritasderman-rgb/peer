@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "energie",
   titulek: "Kam každý rok odtečou stovky miliard?",
+  narration: {
+    hook: "Ročně odteče za uhlí, ropu a plyn dvě stě šedesát dva miliard korun. Mohly zůstat tady.",
+    problem: "Po přepočtu na kupní sílu máme druhou nejdražší elektřinu v Evropské unii. Solárů přibylo nula celá sedm gigawattu, potřeba je přes jeden. Přes dvacet gigawattů sítě blokují rezervace nestavěných projektů.",
+    proc: "Uhlí končí dřív než jeho náhrada, zdroje i síť váznou a elektřina je čtyřikrát dražší než plyn.",
+    navrh: "Ročně přes gigawatt slunce, dvě stě megawattů větru a dvě gigawatthodiny baterií. Nestavěné rezervace propadnou a uvolníme aspoň dva gigawatty. Od roku dva tisíce dvacet osm vrátíme polovinu výnosů z povolenek, pět tisíc korun na domácnost.",
+    dopad: "Cíl je elektřina jen skoro třikrát dražší než plyn, aby se čerpadlo vyplatilo.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "262 mld. Kč",
     jednotka: "za dovoz paliv ročně",

@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "kapital",
   titulek: "Kapitál za minutu",
+  narration: {
+    hook: "Čtyři tisíce miliard korun českých úspor si dává šlofíka, část dokonce na účtech bez úroků.",
+    problem: "Penzijní fondy mají malé výnosy a poplatky z nich spolknou většinu. Český střadatel vloží desetkrát víc peněz než slovenský, aby dostal stejný výnos. A peníze, které nepracují, chybí novým i stávajícím firmám.",
+    proc: "Kapitál se u nás přestal hromadit, spí na neúročených účtech a fondy berou vysoké poplatky za malé výnosy.",
+    navrh: "Zákonem dramaticky snížíme poplatky penzijních fondů, případně je převezme stát. Spících čtyři tisíce miliard probudíme osvětou, syndikáty drobných investorů a dohledem nad rizikovými dluhopisy. Mírnější pravidla pro krátkodobé hypotéky usnadní stěhování za prací.",
+    dopad: "Za dvacet pět let se úspory při třech procentech ročně zdvojnásobí.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "4 000",
     jednotka: "miliard Kč spí",

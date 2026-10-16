@@ -26,9 +26,20 @@ export type Opatreni = { cislo: number; nazev: string; popis: string; klicoveCis
 
 /* Scénář videa „Bobr za minutu“: stejný scénář se renderuje jako 16:9 i 9:16.
    Vše krátké: na obrazovce je vždy jedna věta, bobr a jedno číslo. */
+/* Mluvený komentář k videu: jeden odstavec na scénu, čísla slovy (kvůli hlasu), tykání, hravě. */
+export type Narration = {
+  hook: string;
+  problem: string;
+  proc: string;
+  navrh: string;
+  dopad: string;
+  outro: string;
+};
+
 export type VideoScript = {
   slug: string;
   titulek: string;
+  narration?: Narration;
   hook: { cislo: string; jednotka: string; veta: string };
   problem: { veta: string; cislo?: string }[];
   proc: string[];

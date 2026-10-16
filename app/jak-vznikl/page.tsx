@@ -27,6 +27,7 @@ const odhad = [
   { polozka: "Maskot: návrh, 5 nálad, varianta s klacíkem, animace", lidi: "ilustrátor a animátor, 5–8 dní", cena: "60–120 tis. Kč" },
   { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč" },
   { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč" },
+  { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč" },
   { polozka: "Řízení, korektury, nasazení", lidi: "projektový manažer", cena: "30–50 tis. Kč" },
 ];
 
@@ -117,8 +118,8 @@ export default function JakVzniklPage() {
             <tfoot>
               <tr>
                 <td>Pilotní stránka celkem</td>
-                <td className="muted">4–6 týdnů práce</td>
-                <td className={`num ${styles.total}`}>300–580 tis. Kč</td>
+                <td className="muted">5–7 týdnů práce</td>
+                <td className={`num ${styles.total}`}>360–690 tis. Kč</td>
               </tr>
               <tr>
                 <td>Celý web se 13 tématy a videi</td>
@@ -129,9 +130,10 @@ export default function JakVzniklPage() {
           </table>
         </div>
         <div className={`card ${styles.sunBox}`}>
-          <p className={`display ${styles.sunBig}`}>Pilot: 1 den a 1 člověk místo 6 týdnů a 4 lidí</p>
+          <p className={`display ${styles.sunBig}`}>Pilot: 1 den a 1 člověk místo 6 týdnů a 5 lidí</p>
           <p>
-            Stál zhruba cenu jednodenního předplatného AI a jeden pracovní den. Ušetřené peníze nejsou cíl. Cíl je, aby se
+            Stál zhruba cenu jednodenního předplatného AI a jeden pracovní den. Namluvení všech čtrnácti videí a hudba k nim
+            vyšly na kredity za pár stokorun. Ušetřené peníze nejsou cíl. Cíl je, aby se
             s nápady dalo pracovat rychle a levně. Strategie říká, že Česko musí přestat vydělávat levnou prací a začít
             vydělávat chytrou. Tenhle web je malý důkaz, že to jde.
           </p>

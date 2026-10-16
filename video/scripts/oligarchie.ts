@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "oligarchie",
   titulek: "Oligarchie za minutu",
+  narration: {
+    hook: "Gigantům míří ročně dvacet až třicet miliard korun dotací. Podle výzkumů z nich rostou zisky, inovace ne.",
+    problem: "V transparentnosti vlastnictví médií jsme třetí nejhorší v Evropské unii. Veřejné zakázky tvoří čtrnáct procent výkonu ekonomiky a jejich přezkum je složitý. Dominantní hráči mají vyšší zisky než malé a střední firmy.",
+    proc: "Moc se koncentruje, zákon o střetu zájmů se nevymáhá, dotace tečou do zisků velkých a ceny jdou společně nahoru.",
+    navrh: "Zákon o střetu zájmů oddělí politiku od byznysu a vlivu v médiích. Silnější antimonopolní úřad dostane vyšší pokuty, právo rozdělit firmy a strop dominance pod čtyřicet procent. Zemědělské dotace dostanou strop na skutečného majitele.",
+    dopad: "Dotace pro majitele nejvýš sto tisíc eur ročně a podpora jde rodinným farmám.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "20–30",
     jednotka: "mld. Kč ročně",

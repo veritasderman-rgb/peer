@@ -3,6 +3,14 @@ import type { VideoScript } from "@/lib/topics";
 export const script: VideoScript = {
   slug: "exekuce",
   titulek: "Proč se půl milionu lidí nevyplatí pracovat?",
+  narration: {
+    hook: "Pět set devadesát tisíc lidí je v exekuci. Nad třicet jedna tisíc pět set hrubého zmizí každá další koruna.",
+    problem: "Většině dlužníků zabaví šedesát šest procent, nad hranicí všechno. Zaměstnavatele stojí správa exekucí pět set až tři tisíce korun měsíčně. Dítě z exekuční rodiny častěji nedokončí školu a stát to stojí dva až tři miliony.",
+    proc: "Dluhy klesají o procento ročně, přesčasy nedávají smysl a stát přichází o daně.",
+    navrh: "Srážka nejvýš padesát procent, dlužníkovi zůstane aspoň půlka. Jeden dlužník, jeden exekutor, podle zaměstnavatelů ubude víc než polovina papírování. Samoživitelé neklesnou pod hranici chudoby, dvanáct tisíc osm set osmnáct korun.",
+    dopad: "Do roku dva tisíce třicet o třicet procent míň lidí v exekuci, nejvýš čtyři sta třináct tisíc.",
+    outro: "Celou strategii najdeš na webu Česko má na víc.",
+  },
   hook: {
     cislo: "590 000",
     jednotka: "lidí v exekuci",

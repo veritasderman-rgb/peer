@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
-import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
+import { AbsoluteFill, Html5Audio as Audio, Sequence, interpolate, staticFile, useVideoConfig } from "remotion";
 import type { VideoScript } from "../lib/topics";
 import { loadFonts, useFontsReady } from "./fonts";
 import { C, getLayout } from "./theme";
-import { buildTimeline, type SceneId } from "./timeline";
+import { FPS, MUSIC, buildTimeline, type SceneId } from "./timeline";
 import { BobrLayer, Header, LayoutContext, ProgressBar, SceneFade } from "./ui";
 import { Hook } from "./scenes/Hook";
 import { Problem } from "./scenes/Problem";
@@ -24,6 +24,12 @@ const SCENES: Record<SceneId, (p: { script: VideoScript; beats: number[] }) => R
   dopad: Dopad,
   outro: Outro,
 };
+
+/** Hlasitost hudebního podkresu pod řečí, náběh 1 s na začátku a doznění 2 s na konci videa. */
+const MUSIC_VOLUME = 0.12;
+const musicVolume = (total: number) => (f: number) =>
+  MUSIC_VOLUME *
+  interpolate(f, [0, FPS, total - 2 * FPS, total - 1], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
 /* Jedna komponenta pro obě kompozice: rozložení se řídí poměrem stran
    (široké: bobr vlevo ~35 %, text vpravo; reel: text nahoře, bobr dole). */
@@ -47,6 +53,23 @@ export function TopicVideo({ script }: TopicVideoProps) {
             </Sequence>
           );
         })}
+        {/* namluvený komentář: každá scéna svůj soubor (háček až po naběhnutí čísla) */}
+        {segments.map((seg) =>
+          seg.audio ? (
+            <Sequence key={`a-${seg.id}`} from={seg.from + seg.audio.from} durationInFrames={seg.duration - seg.audio.from} name={`hlas ${seg.id}`} layout="none">
+              <Audio src={staticFile(seg.audio.file)} />
+            </Sequence>
+          ) : null,
+        )}
+        {MUSIC ? (
+          <Audio
+            src={staticFile(MUSIC.file)}
+            volume={musicVolume(total)}
+            loop={MUSIC.duration * FPS < total}
+            loopVolumeCurveBehavior="extend"
+            name="hudba"
+          />
+        ) : null}
         <BobrLayer segments={segments} />
         <ProgressBar total={total} />
       </AbsoluteFill>

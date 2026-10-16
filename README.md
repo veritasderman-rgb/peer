@@ -44,8 +44,20 @@ npm run video:render -- --only euro,regiony
 ```
 
 Render potřebuje Chromium (`REMOTION_BROWSER`, výchozí `/opt/pw-browsers/chromium`); jedno téma trvá asi 6 minut.
-Videa jsou bez zvuku, s titulky v obraze. Pozor: Remotion je zdarma pro jednotlivce a malé firmy; pro stranu jako
-organizaci je potřeba ověřit licenci.
+Pozor: Remotion je zdarma pro jednotlivce a malé firmy; pro stranu jako organizaci je potřeba ověřit licenci.
+
+### Zvuk
+
+Každé video má namluvený komentář a hudební podkres, titulky zůstávají v obraze (přehrávání potichu).
+
+- Text komentáře je v poli `narration` scénáře (`video/scripts/<slug>.ts`): šest odstavců (hook, problem, proc, navrh,
+  dopad, outro), čísla slovy, tykání. Outro je ve všech tématech stejné.
+- Namluvení: ElevenLabs, hlas Katty (`7JbZPqJGWUfXXBim0T8U`), model `eleven_v3`, jedna generace na odstavec.
+  Soubory `public/audio/<slug>/<scena>.mp3`. Hudba: ElevenLabs Music, `public/audio/music/bed.mp3` (80 s, instrumentální).
+- `node scripts/audio-manifest.mjs` změří délky (ffprobe) do `video/audio-manifest.json`; Remotion podle něj nastaví
+  délku scén (řeč + dozvuk) a rozloží karty ve scéně podle vět komentáře. Téma bez zvuku v manifestu se vyrenderuje
+  jako dřív (délka z délky textu).
+- Oprava textu = upravit `narration`, znovu namluvit daný odstavec, přepsat MP3, spustit manifest a render.
 
 ## Jak přidat další téma
 

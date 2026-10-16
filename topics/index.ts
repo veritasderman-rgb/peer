@@ -25,7 +25,7 @@ function withVideo(t: TopicConfig): TopicConfig {
       reel: `/video/${t.slug}-reel.mp4`,
       poster: `/video/${t.slug}-poster.jpg`,
       titulek: `${t.kratkyNazev} za minutu`,
-      popis: "Bez zvuku, s titulky. Široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts.",
+      popis: "Namluvené, s hudbou a titulky. Široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts.",
     },
   };
 }
