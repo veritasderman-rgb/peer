@@ -1,0 +1,36 @@
+.page { display: grid; }
+.section { padding-block: 3.5rem 0; display: grid; gap: 1.25rem; align-content: start; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding-block: 3rem 1rem;
+}
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { font-size: var(--s1); max-width: 44ch; }
+.team {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 0.75rem;
+}
+.team li { padding: 0.9rem 1rem; display: grid; gap: 0.2rem; min-width: 0; }
+.name { font-size: var(--s1); }
+.role { font-size: var(--s-1); }
+.twoCol { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: center; }
+.twoCol :global(.prose) { display: grid; gap: 0.9rem; }
+.bobrCol { display: grid; justify-items: center; }
+.tableWrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: var(--s-1); }
+.table th, .table td { text-align: left; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table th { font-family: var(--f-data); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.table tfoot td { font-weight: 700; border-bottom: 0; border-top: 2px solid var(--ink); }
+.total { color: var(--river); font-size: var(--s0); }
+.sunBox { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); padding: 1.2rem 1.4rem; display: grid; gap: 0.6rem; }
+.sunBig { font-size: var(--s2); }
+@media (max-width: 760px) {
+  .hero, .twoCol { grid-template-columns: 1fr; }
+}

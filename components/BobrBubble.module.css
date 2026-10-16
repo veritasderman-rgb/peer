@@ -1,0 +1,83 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin: 0;
+}
+.right { flex-direction: row; }
+.left { flex-direction: row-reverse; }
+
+.bobr {
+  flex: 0 0 auto;
+  max-width: 45%;
+}
+
+.bubble {
+  position: relative;
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 34ch;
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 18px;
+  font-family: var(--f-body);
+  font-size: var(--s1);
+  font-weight: 500;
+  line-height: 1.35;
+  box-shadow: 4px 4px 0 var(--sun);
+}
+.bubble b,
+.bubble strong {
+  font-family: var(--f-data);
+  font-weight: 700;
+}
+
+/* Zobáček: natočený čtverec se dvěma okraji, míří k bobrovi. */
+.bubble::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  top: 50%;
+}
+.right .bubble::before {
+  left: -11px;
+  border-top: 0;
+  border-right: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+.left .bubble::before {
+  right: -11px;
+  border-bottom: 0;
+  border-left: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Mobil: bublina nad bobrem, zobáček dolů. */
+@media (max-width: 559.98px) {
+  .wrap,
+  .right,
+  .left {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.1rem;
+  }
+  .bobr { max-width: 70%; }
+  .bubble { max-width: 100%; }
+  .right .bubble::before,
+  .left .bubble::before {
+    top: auto;
+    bottom: -11px;
+    left: 50%;
+    right: auto;
+    border: 2px solid var(--ink);
+    border-top: 0;
+    border-left: 0;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}

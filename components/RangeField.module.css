@@ -1,0 +1,48 @@
+.field {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+}
+.label {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s0);
+  line-height: 1.25;
+  color: var(--ink);
+}
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.number {
+  width: 11ch;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.4rem 0.6rem;
+  font-size: var(--s1);
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line-strong);
+  border-radius: 8px;
+}
+.number:focus-visible {
+  border-color: var(--ink);
+}
+.unit {
+  font-family: var(--f-data);
+  color: var(--muted);
+}
+.range {
+  width: 100%;
+  margin: 0.4rem 0 0;
+  accent-color: var(--river);
+  cursor: pointer;
+}
+.bounds {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+}

@@ -1,0 +1,41 @@
+.root {
+  margin: 0;
+  padding: 1.1rem 1rem 1rem;
+  min-width: 0;
+  overflow: hidden;
+}
+.title {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s1);
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  color: var(--ink);
+}
+.svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.bar { fill: var(--river); }
+.barHi { fill: var(--sun); }
+.axis { stroke: var(--line-strong); stroke-width: 2; }
+.goalLine { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.goalText,
+.labelText,
+.valueText {
+  font-family: var(--f-data);
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.goalText { font-size: 13px; font-weight: 700; }
+.labelText { font-size: 15px; }
+.valueText { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.strong { font-weight: 700; }
+.inside { fill: var(--surface); stroke: var(--river); }
+.insideHi { fill: var(--sun-ink); stroke: var(--sun); }
+.note { font-size: 13px; font-weight: 400; fill: var(--muted); }
+.source { margin-top: 0.6rem; }
