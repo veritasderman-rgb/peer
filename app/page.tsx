@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Bobr } from "@/components/Bobr";
 import { BobrBubble } from "@/components/BobrBubble";
 import { getTopic } from "@/topics";
+import { Situace } from "@/components/Situace";
+import { buildSituaceView } from "@/lib/situace-view";
 import styles from "./page.module.css";
 
 const impacts = [
@@ -57,6 +59,16 @@ export default function Home() {
             Nejdřív bydlení. Na byt dnes potřebuješ 15 ročních platů. Ukážu ti proč a co s tím.
           </BobrBubble>
         </div>
+      </section>
+
+      <section className={`wrap ${styles.section}`} aria-labelledby="situace">
+        <p className="eyebrow">Nevíš, kde začít?</p>
+        <h2 id="situace">Vyber, co se tě týká</h2>
+        <p className={`prose ${styles.depthIntro}`}>
+          Strategie má čtrnáct kapitol. Tebe se ale netýkají všechny stejně. Řekni, v jaké jsi situaci, a bobr vybere,
+          co z ní pro tebe plyne.
+        </p>
+        <Situace data={buildSituaceView()} />
       </section>
 
       <section className={styles.band} aria-labelledby="prinos">
