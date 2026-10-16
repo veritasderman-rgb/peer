@@ -11,6 +11,7 @@ export function SiteNav() {
         </Link>
         <nav aria-label="Hlavní navigace" className={styles.nav}>
           <Link href="/#temata">Témata</Link>
+          <Link href="/videa">Videa</Link>
           <Link href="/dopad">Velký obraz</Link>
           <Link href="/proc-bobr">Proč bobr</Link>
           <Link href="/jak-vznikl">Jak vznikl web</Link>

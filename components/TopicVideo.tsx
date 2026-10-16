@@ -15,6 +15,8 @@ export function TopicVideo({ wide, reel, poster, titulek, popis }: { wide: strin
     return () => mq.removeEventListener("change", update);
   }, []);
   const src = portrait ? reel : wide;
+  /* reel má vlastní náhled na výšku: <slug>-poster-reel.jpg vedle <slug>-poster.jpg */
+  const posterSrc = portrait && poster ? poster.replace(/-poster\.jpg$/, "-poster-reel.jpg") : poster;
   return (
     <figure className={`card ${styles.root}`}>
       <video
@@ -23,7 +25,7 @@ export function TopicVideo({ wide, reel, poster, titulek, popis }: { wide: strin
         controls
         playsInline
         preload="metadata"
-        poster={poster}
+        poster={posterSrc}
         aria-label={titulek}
       >
         <source src={src} type="video/mp4" />

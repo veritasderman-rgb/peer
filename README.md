@@ -30,11 +30,28 @@ framework se rozpozná automaticky (Next.js), žádné proměnné prostředí ne
 | `content/bydleni-plne-zneni.ts` | plné znění kapitoly 1.1 po odstavcích, rejstřík zdrojů, slovník pojmů |
 | `koncept/` | původní klikací koncept (statické HTML) |
 
+## Videa „Bobr za minutu“
+
+Každé téma má široké video 16:9 (YouTube, web) a reel 9:16 (Instagram, TikTok, Shorts). Obě verze se renderují
+v [Remotionu](https://www.remotion.dev/) ze scénáře `video/scripts/<slug>.ts` (typ `VideoScript` v `lib/topics.ts`),
+takže oprava čísla znamená nový render, ne nový střih. Stránka tématu načte reel na telefonu na výšku, jinak širokou verzi;
+`/videa` nabízí obě ke stažení.
+
+```bash
+npm run video:studio                       # náhled kompozic v prohlížeči
+npm run video:render                       # vyrenderuje všechna témata do public/video/
+npm run video:render -- --only euro,regiony
+```
+
+Render potřebuje Chromium (`REMOTION_BROWSER`, výchozí `/opt/pw-browsers/chromium`); jedno téma trvá asi 6 minut.
+Videa jsou bez zvuku, s titulky v obraze. Pozor: Remotion je zdarma pro jednotlivce a malé firmy; pro stranu jako
+organizaci je potřeba ověřit licenci.
+
 ## Jak přidat další téma
 
 1. Vytěžit čísla kapitoly do `data/<tema>.json` (stejná struktura jako `bydleni.json`).
 2. Převést plné znění do `content/<tema>-plne-zneni.ts`.
 3. Založit `app/<tema>/page.tsx` podle `app/bydleni/page.tsx`: háček → příběh → proč → co navrhujeme → co to přinese a co to stojí → spočítej si → kdo za tím stojí → plné znění → slovník.
-4. Zapnout kartu tématu v `app/page.tsx`.
+4. Zaregistrovat téma v `topics/index.ts` (karta na úvodní stránce se zapne sama) a scénář videa v `video/scripts/index.ts`.
 
 Barvy a písma jsou podle [styleguide.pirati.cz](https://styleguide.pirati.cz/) (tokeny v `app/globals.css`).

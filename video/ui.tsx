@@ -30,15 +30,16 @@ export function rise(p: number, dist = 36): CSSProperties {
   return { opacity: Math.min(1, p * 1.4), transform: `translateY(${(1 - p) * dist}px)` };
 }
 
-/** Krátké prolnutí scény na začátku a na konci (sousední scény se o XFADE překrývají). */
+/** Krátký přechod mezi scénami: stará scéna v první půlce překryvu odjede doleva a zmizí,
+    nová v druhé půlce přijede zprava (sousední scény se o XFADE snímků překrývají). */
 export function SceneFade({ duration, first, last, children }: { duration: number; first?: boolean; last?: boolean; children: ReactNode }) {
   const frame = useCurrentFrame();
-  const fadeIn = first ? 1 : interpolate(frame, [0, XFADE], [0, 1], clampOpts);
-  const fadeOut = last ? 1 : interpolate(frame, [duration - XFADE, duration], [1, 0], clampOpts);
-  const slide = first ? 0 : interpolate(frame, [0, XFADE], [28, 0], { ...clampOpts, easing: Easing.out(Easing.cubic) });
-  const slideOut = last ? 0 : interpolate(frame, [duration - XFADE, duration], [0, -28], { ...clampOpts, easing: Easing.in(Easing.cubic) });
+  const half = XFADE / 2;
+  const inP = first ? 1 : interpolate(frame, [half, XFADE], [0, 1], { ...clampOpts, easing: Easing.out(Easing.cubic) });
+  const outP = last ? 0 : interpolate(frame, [duration - XFADE, duration - half], [0, 1], { ...clampOpts, easing: Easing.in(Easing.cubic) });
+  const x = (1 - inP) * 48 - outP * 48;
   return (
-    <AbsoluteFill style={{ opacity: Math.min(fadeIn, fadeOut), transform: `translateX(${slide + slideOut}px)` }}>
+    <AbsoluteFill style={{ opacity: Math.min(inP, 1 - outP), transform: `translateX(${x}px)` }}>
       {children}
     </AbsoluteFill>
   );

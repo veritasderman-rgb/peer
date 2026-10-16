@@ -35,7 +35,7 @@ export function buildTimeline(script: VideoScript): { segments: Segment[]; total
   // 2) problém: karty po ~5 s
   {
     const beats: number[] = [];
-    let t = s(0.3);
+    let t = s(0.2);
     for (const p of script.problem) {
       beats.push(t);
       t += s(clamp(read(p.veta, 3, 5) + 1.6, 4.6, 6.4));

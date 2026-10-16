@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* Render videí „Bobr za minutu“ pro všechna témata z video/scripts/index.ts.
-   Výstup: public/video/<slug>-wide.mp4 (1920×1080), <slug>-reel.mp4 (1080×1920), <slug>-poster.jpg.
+   Výstup: public/video/<slug>-wide.mp4 (1920×1080), <slug>-reel.mp4 (1080×1920), <slug>-poster.jpg, <slug>-poster-reel.jpg.
 
    npm run video:render                      všechna témata
    npm run video:render -- --only bydleni    jen vybraná (víc: --only bydleni,euro)
@@ -108,6 +108,7 @@ async function main() {
             imageFormat: "jpeg",
             jpegQuality: 92,
             muted: true,
+            colorSpace: "bt709",
             overwrite: true,
             concurrency,
             outputLocation,
@@ -130,12 +131,15 @@ async function main() {
 
       if (!flag("no-poster")) {
         /* poster: snímek z háčku, kdy už je vidět číslo, jednotka i věta */
-        const composition = await selectComposition({ ...common, id: "TopicWide", inputProps });
         const hook = buildTimeline(script).segments[0];
         const frame = Math.min(hook.duration - 16, hook.beats[2] + 45);
-        const output = path.join(OUT, `${script.slug}-poster.jpg`);
-        await renderStill({ ...common, composition, inputProps, frame, output, imageFormat: "jpeg", jpegQuality: 85, overwrite: true });
-        console.log(`  ${script.slug}-poster.jpg  (snímek ${frame})  ${mb(fs.statSync(output).size)}`);
+        /* dva postery: široký pro 16:9 a na výšku pro reel */
+        for (const [id, suffix] of [["TopicWide", "poster"], ["TopicReel", "poster-reel"]]) {
+          const composition = await selectComposition({ ...common, id, inputProps });
+          const output = path.join(OUT, `${script.slug}-${suffix}.jpg`);
+          await renderStill({ ...common, composition, inputProps, frame, output, imageFormat: "jpeg", jpegQuality: 85, overwrite: true });
+          console.log(`  ${script.slug}-${suffix}.jpg  (snímek ${frame})  ${mb(fs.statSync(output).size)}`);
+        }
       }
     }
   } finally {
