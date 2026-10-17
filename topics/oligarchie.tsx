@@ -23,6 +23,7 @@ const steps: StoryStep[] = [
     title: "Kam míří dotace",
     text: <>Vysoké dotace jdoucí gigantům dosahují <b>20–30 mld. Kč</b> ročně. Výzkumy CERGE-EI ukazují, že se nepromítají do inovací a produktivity. Přesouvají se do zisku firem.</>,
     bobr: "Peníze, které měly něco změnit, skončí v zisku?",
+    scena: { typ: "cislo", predpona: "20–", hodnota: 30, jednotka: "mld. Kč ročně", popis: "vysokých dotací míří k největším hráčům" }, // fakta: dotace_gigantum_rocne
   },
   {
     mood: "surprised",
@@ -35,6 +36,7 @@ const steps: StoryStep[] = [
     title: "Dánsko to zkusilo",
     text: <>Dánský úřad od reformy z roku 2024 posuzuje fúze už od <b>50 mil. DKK</b>, tedy asi <b>200 mil. Kč</b> obratu. Pokuty se počítají z obratu, ne fixní částkou.</>,
     bobr: "Menší země to dokázala. Co by to znamenalo u nás?",
+    scena: { typ: "cislo", predpona: "od", hodnota: 200, jednotka: "mil. Kč obratu", popis: "dánský úřad posuzuje fúze od 50 mil. DKK" }, // fakta: danska_fuze_prah
   },
   {
     mood: "happy",
@@ -42,6 +44,7 @@ const steps: StoryStep[] = [
     title: "Co se pro Zdeňka změní",
     text: <>Dotace na plochu se zastropují na <b>100 tis. EUR</b> ročně na skutečného majitele. Největší hráči budou mimo plošné dotace, nebo dostanou výrazně míň. Podpora se přesune k rodinným farmám.</>,
     bobr: "Pět opatření. Projdeme je jedno po druhém.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "bez stropu", popis: "dotace na plochu dnes" }, potom: { hodnota: "100 tis. EUR", popis: "strop ročně na skutečného majitele" } }, // fakta: navrh_strop_zemedelske_dotace
   },
 ];
 

@@ -1,0 +1,32 @@
+.root { display: grid; gap: 0.5rem; font-family: var(--f-data); font-size: var(--s-1); min-height: 2.4rem; }
+.radek { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.kdo { display: inline-flex; }
+.select {
+  font: inherit; color: var(--ink); background: var(--surface);
+  border: 2px solid var(--line-strong); border-radius: 999px;
+  padding: 0.3rem 0.8rem; min-height: 40px; max-width: 100%;
+}
+.select:focus-visible, .text:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.btn {
+  font: inherit; font-weight: 700; color: var(--ink); background: var(--surface);
+  border: 2px solid var(--line-strong); border-radius: 999px;
+  padding: 0.3rem 0.95rem; min-height: 40px; cursor: pointer;
+}
+.btn:hover { border-color: var(--ink); }
+.btn:disabled, .select:disabled, .text:disabled { opacity: 0.55; cursor: default; }
+.btn:focus-visible, .odkaz:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.ano { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.ano:hover { border-color: var(--ink); }
+.oprava { display: grid; gap: 0.5rem; justify-items: start; }
+.text {
+  width: 100%; box-sizing: border-box; font-family: var(--f-body); font-size: var(--s0);
+  color: var(--ink); background: var(--surface);
+  border: 2px solid var(--line-strong); border-radius: var(--radius); padding: 0.5rem 0.7rem; resize: vertical;
+}
+.dik { margin: 0; font-weight: 700; display: inline; }
+.drobne { font-weight: 400; color: var(--muted); }
+.odkaz {
+  justify-self: start; font: inherit; color: var(--river); background: none; border: 0; padding: 0;
+  text-decoration: underline; cursor: pointer; min-height: 32px;
+}
+.chyba { margin: 0; color: var(--alert); font-weight: 700; }

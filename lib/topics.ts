@@ -11,7 +11,24 @@ export type Blok =
 
 export type Mood = "neutral" | "surprised" | "thinking" | "happy" | "sleepy";
 
-export type StoryStep = { mood: Mood; pointing?: boolean; title?: string; text: ReactNode; /* co k tomu říká garant kapitoly (pole se jmenuje bobr z historických důvodů) */ bobr?: string };
+/* Vizuální scéna ke kroku příběhu: ukáže se v přilepeném panelu vedle garanta a animuje se, když krok
+   přijde do záběru (počítadlo, pruhy, „vaflový“ podíl, předtím/potom). Čísla musí být ze studie (data/*.json). */
+export type Scena =
+  | { typ: "cislo"; hodnota: number; desetinna?: number; predpona?: string; jednotka?: string; popis: string }
+  | { typ: "srovnani"; nadpis?: string; jednotka?: string; polozky: { nazev: string; hodnota: number; zvyrazni?: boolean }[]; popis?: string }
+  | { typ: "podil"; hodnota: number; z?: number; popis: string }
+  | { typ: "predtim-potom"; predtim: { hodnota: string; popis: string }; potom: { hodnota: string; popis: string } };
+
+export type StoryStep = {
+  mood: Mood;
+  pointing?: boolean;
+  title?: string;
+  text: ReactNode;
+  /* co k tomu říká garant kapitoly (pole se jmenuje bobr z historických důvodů) */
+  bobr?: string;
+  /* volitelná vizuální scéna ke kroku */
+  scena?: Scena;
+};
 
 export type BarItem = { label: string; value: number; note?: string; highlight?: boolean };
 

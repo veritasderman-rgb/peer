@@ -40,24 +40,28 @@ const steps: StoryStep[] = [
     title: "Rodiče bez maturity",
     text: <>Lukáš je chytrý kluk z Ústecka. Jeho rodiče nemají maturitu. A rodinné zázemí u nás rozhoduje víc než jinde: tvoří <b>22 %</b> rozdílů ve výsledcích žáků. Průměr OECD je <b>15 %</b>.</>,
     bobr: "Kde se narodíš, nemá rozhodovat o tom, co umíš.",
+    scena: { typ: "srovnani", jednotka: "%", popis: "Podíl zázemí na rozdílech ve výsledcích žáků", polozky: [{ nazev: "Česko", hodnota: 22, zvyrazni: true }, { nazev: "Průměr OECD", hodnota: 15 }] }, // fakta: socioekonomicky_status_cr, socioekonomicky_status_oecd
   },
   {
     mood: "thinking",
     title: "Jak to obvykle dopadá",
     text: <>Z dětí ze znevýhodněného prostředí nedosáhne základní úrovně v matematice <b>48,5 %</b>. Výborných výsledků navzdory zázemí dosáhne jen <b>7 %</b> žáků. To je druhý nejnižší podíl v OECD.</>,
     bobr: "Lukáš by musel být výjimka. To je špatně nastavený systém.",
+    scena: { typ: "cislo", hodnota: 48.5, desetinna: 1, jednotka: "%", popis: "znevýhodněných dětí neumí v matematice základy" }, // fakta: matematika_znevyhodneni
   },
   {
     mood: "surprised",
     title: "Moře oborů",
     text: <>Po deváté třídě si vybírá z až <b>281</b> oborů středních škol. Ve Švédsku jich mají <b>18</b>. Kdo vybere úzký obor špatně, mění studium a nastupuje do práce později.</>,
     bobr: "Dvě stě osmdesát jedna. A nikdo mu nedá mapu.",
+    scena: { typ: "srovnani", jednotka: "oborů", popis: "Počet oborů středních škol", polozky: [{ nazev: "Česko", hodnota: 281, zvyrazni: true }, { nazev: "Švédsko", hodnota: 18 }] }, // fakta: obory_cr, obory_svedsko
   },
   {
     mood: "neutral",
     title: "Kolik stojí maturita",
     text: <>Maturita zvedne Lukášovi celoživotní příjem o <b>17 mil. Kč</b> oproti základní škole. Dokončená střední škola přinese veřejným rozpočtům za život o <b>2,3–2,8 mil. Kč</b> víc. A vysokoškoláci mají až <b>10×</b> nižší nezaměstnanost než lidé jen se základním vzděláním.</>,
     bobr: "Vyplatí se to Lukášovi. A stejně tak státu.",
+    scena: { typ: "cislo", predpona: "+", hodnota: 17, jednotka: "mil. Kč", popis: "celoživotní příjem s maturitou oproti základní škole" }, // fakta: prijem_s_maturitou_castka
   },
   {
     mood: "happy",
@@ -65,6 +69,7 @@ const steps: StoryStep[] = [
     title: "Co se pro Lukáše změní",
     text: <>Péče o děti už od 1 roku, aby nezačínal handicapem. Škola s víc znevýhodněnými dětmi dostane víc peněz a psychologa. Žáci se v 3., 5., 7. a 9. třídě změří. Oborů bude méně než <b>100</b>. Cíl: vliv zázemí pod <b>15 %</b>.</>,
     bobr: "Jedenadvacet opatření v pěti oblastech. Projdu je s tebou.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "22 %", popis: "vliv zázemí na výsledky žáků dnes" }, potom: { hodnota: "pod 15 %", popis: "cíl strategie, průměr OECD" } }, // fakta: socioekonomicky_status_cr, cil_vliv_zazemi_pisa
   },
 ];
 

@@ -28,12 +28,23 @@ const steps: StoryStep[] = [
     title: "Slovensko to umí levněji",
     text: <>Aby Alena dosáhla stejného výnosu jako slovenská kolegyně, musí vkládat <b>10× víc</b> peněz. Tak to vyplývá ze studie IDEA při CERGE-EI z roku 2026.</>,
     bobr: "Desetkrát víc peněz pro stejný výnos. To je velký rozdíl.",
+    scena: { // fakta: penze_vklady_vs_sk
+      typ: "srovnani",
+      nadpis: "Kolik vložit pro stejný výnos",
+      jednotka: "×",
+      polozky: [
+        { nazev: "Slovensko", hodnota: 1 },
+        { nazev: "Česko", hodnota: 10, zvyrazni: true },
+      ],
+      popis: "český střadatel vkládá 10× víc než slovenský",
+    },
   },
   {
     mood: "neutral",
     title: "Spících 4 000 miliard",
     text: <>Alena není sama. U českých střadatelů spí <b>4 000 miliard</b> korun. Při pouhých <b>3 %</b> ročně se úspory zdvojnásobí za <b>25 let</b>. Z 300 000 Kč by bylo přes 600 000 Kč.</>,
     bobr: "Peníze, které leží, nepomáhají ani jí, ani novým firmám.",
+    scena: { typ: "cislo", hodnota: 4000, jednotka: "mld. Kč", popis: "spících úspor českých střadatelů" }, // fakta: spici_uspory
   },
   {
     mood: "happy",
@@ -41,6 +52,11 @@ const steps: StoryStep[] = [
     title: "Co se pro Alenu změní",
     text: <>Zákon sníží poplatky penzijních fondů, vzniknou syndikáty drobných investorů a bude silnější dohled nad rizikovými dluhopisy. Cíl: aby úspory zdvojnásobil už <b>3 %</b> ročně.</>,
     bobr: "Tři opatření. Ukážu ti je jedno po druhém.",
+    scena: { // fakta: spici_uspory, zdvojnasobeni_25_let (cile)
+      typ: "predtim-potom",
+      predtim: { hodnota: "4 000 mld. Kč", popis: "spících úspor, které nepracují" },
+      potom: { hodnota: "25 let", popis: "do zdvojnásobení úspor při 3 % ročně" },
+    },
   },
 ];
 

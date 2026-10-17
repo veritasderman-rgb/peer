@@ -1,0 +1,61 @@
+/* Hledací pole do hlavičky nebo patičky. Vše odvozené od currentColor, ať funguje na tmavém i světlém pozadí. */
+.form {
+  display: inline-flex;
+  align-items: stretch;
+  min-width: 0;
+  max-width: 100%;
+  border: 2px solid color-mix(in srgb, currentColor 55%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  color: inherit;
+  font-family: var(--f-data);
+}
+.form:focus-within { border-color: var(--focus); box-shadow: 0 0 0 2px var(--focus); }
+.label { display: flex; flex: 1 1 auto; min-width: 0; }
+.input {
+  flex: 1 1 auto;
+  width: 16rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.35rem 0.4rem 0.35rem 1rem;
+  font: inherit;
+  font-size: var(--s0);
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 999px 0 0 999px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.input::placeholder { color: currentColor; opacity: 0.7; }
+.input:focus { outline: none; }
+.submit {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 3px;
+  padding: 0 0.95rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--sun);
+  color: var(--sun-ink);
+  font: inherit;
+  font-weight: 700;
+  font-size: var(--s-1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.submit:focus-visible { outline: 3px solid currentColor; outline-offset: 1px; }
+.icon { width: 1.05rem; height: 1.05rem; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; }
+
+.kompaktni .input { width: 9.5rem; min-height: 36px; font-size: var(--s-1); padding-left: 0.85rem; }
+.kompaktni .submit { padding: 0; width: 30px; justify-content: center; margin: 2px; }
+.kompaktni .icon { width: 0.95rem; height: 0.95rem; }
+
+@media (max-width: 760px) {
+  .form { width: 100%; }
+  .input, .kompaktni .input { width: 100%; }
+  .kompaktni .input { min-height: 40px; }
+}

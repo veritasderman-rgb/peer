@@ -3,15 +3,15 @@
     "bydleni": {
       "hook": {
         "file": "audio/bydleni/hook.mp3",
-        "duration": 6.922
+        "duration": 7.314
       },
       "problem": {
         "file": "audio/bydleni/problem.mp3",
-        "duration": 12.591
+        "duration": 12.356
       },
       "proc": {
         "file": "audio/bydleni/proc.mp3",
-        "duration": 7.967
+        "duration": 9.091
       },
       "navrh": {
         "file": "audio/bydleni/navrh.mp3",
@@ -19,55 +19,55 @@
       },
       "dopad": {
         "file": "audio/bydleni/dopad.mp3",
-        "duration": 5.721
+        "duration": 7.001
       },
       "outro": {
         "file": "audio/bydleni/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "energie": {
       "hook": {
         "file": "audio/energie/hook.mp3",
-        "duration": 5.956
+        "duration": 7.393
       },
       "problem": {
         "file": "audio/energie/problem.mp3",
-        "duration": 14.524
+        "duration": 14.211
       },
       "proc": {
         "file": "audio/energie/proc.mp3",
-        "duration": 6.922
+        "duration": 7.393
       },
       "navrh": {
         "file": "audio/energie/navrh.mp3",
-        "duration": 16.274
+        "duration": 18.913
       },
       "dopad": {
         "file": "audio/energie/dopad.mp3",
-        "duration": 5.251
+        "duration": 4.833
       },
       "outro": {
         "file": "audio/energie/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "euro": {
       "hook": {
         "file": "audio/euro/hook.mp3",
-        "duration": 6.426
+        "duration": 5.068
       },
       "problem": {
         "file": "audio/euro/problem.mp3",
-        "duration": 14.524
+        "duration": 14.446
       },
       "proc": {
         "file": "audio/euro/proc.mp3",
-        "duration": 7.706
+        "duration": 7.471
       },
       "navrh": {
         "file": "audio/euro/navrh.mp3",
-        "duration": 13.244
+        "duration": 12.513
       },
       "dopad": {
         "file": "audio/euro/dopad.mp3",
@@ -75,7 +75,7 @@
       },
       "outro": {
         "file": "audio/euro/outro.mp3",
-        "duration": 3.082
+        "duration": 2.847
       }
     },
     "exekuce": {
@@ -85,145 +85,145 @@
       },
       "problem": {
         "file": "audio/exekuce/problem.mp3",
-        "duration": 15.151
+        "duration": 15.804
       },
       "proc": {
         "file": "audio/exekuce/proc.mp3",
-        "duration": 5.956
+        "duration": 5.329
       },
       "navrh": {
         "file": "audio/exekuce/navrh.mp3",
-        "duration": 16.274
+        "duration": 15.569
       },
       "dopad": {
         "file": "audio/exekuce/dopad.mp3",
-        "duration": 6.844
+        "duration": 7.001
       },
       "outro": {
         "file": "audio/exekuce/outro.mp3",
-        "duration": 3.082
+        "duration": 2.847
       }
     },
     "inovace": {
       "hook": {
         "file": "audio/inovace/hook.mp3",
-        "duration": 7.001
+        "duration": 7.314
       },
       "problem": {
         "file": "audio/inovace/problem.mp3",
-        "duration": 16.118
+        "duration": 16.588
       },
       "proc": {
         "file": "audio/inovace/proc.mp3",
-        "duration": 8.751
+        "duration": 8.438
       },
       "navrh": {
         "file": "audio/inovace/navrh.mp3",
-        "duration": 14.028
+        "duration": 15.386
       },
       "dopad": {
         "file": "audio/inovace/dopad.mp3",
-        "duration": 5.068
+        "duration": 5.564
       },
       "outro": {
         "file": "audio/inovace/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "kapital": {
       "hook": {
         "file": "audio/kapital/hook.mp3",
-        "duration": 6.269
+        "duration": 6.687
       },
       "problem": {
         "file": "audio/kapital/problem.mp3",
-        "duration": 15.151
+        "duration": 16.849
       },
       "proc": {
         "file": "audio/kapital/proc.mp3",
-        "duration": 7.393
+        "duration": 7.158
       },
       "navrh": {
         "file": "audio/kapital/navrh.mp3",
-        "duration": 18.678
+        "duration": 18.129
       },
       "dopad": {
         "file": "audio/kapital/dopad.mp3",
-        "duration": 4.441
+        "duration": 4.127
       },
       "outro": {
         "file": "audio/kapital/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "oligarchie": {
       "hook": {
         "file": "audio/oligarchie/hook.mp3",
-        "duration": 7.706
+        "duration": 7.393
       },
       "problem": {
         "file": "audio/oligarchie/problem.mp3",
-        "duration": 13.558
+        "duration": 14.916
       },
       "proc": {
         "file": "audio/oligarchie/proc.mp3",
-        "duration": 7.889
+        "duration": 7.549
       },
       "navrh": {
         "file": "audio/oligarchie/navrh.mp3",
-        "duration": 16.118
+        "duration": 17.162
       },
       "dopad": {
         "file": "audio/oligarchie/dopad.mp3",
-        "duration": 4.989
+        "duration": 5.486
       },
       "outro": {
         "file": "audio/oligarchie/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "prace": {
       "hook": {
         "file": "audio/prace/hook.mp3",
-        "duration": 8.359
+        "duration": 7.314
       },
       "problem": {
         "file": "audio/prace/problem.mp3",
-        "duration": 18.442
+        "duration": 16.509
       },
       "proc": {
         "file": "audio/prace/proc.mp3",
-        "duration": 5.878
+        "duration": 6.191
       },
       "navrh": {
         "file": "audio/prace/navrh.mp3",
-        "duration": 14.367
+        "duration": 13.401
       },
       "dopad": {
         "file": "audio/prace/dopad.mp3",
-        "duration": 4.911
+        "duration": 4.049
       },
       "outro": {
         "file": "audio/prace/outro.mp3",
-        "duration": 3.082
+        "duration": 2.847
       }
     },
     "prumysl": {
       "hook": {
         "file": "audio/prumysl/hook.mp3",
-        "duration": 8.124
+        "duration": 8.359
       },
       "problem": {
         "file": "audio/prumysl/problem.mp3",
-        "duration": 14.028
+        "duration": 16.353
       },
       "proc": {
         "file": "audio/prumysl/proc.mp3",
-        "duration": 7.001
+        "duration": 7.549
       },
       "navrh": {
         "file": "audio/prumysl/navrh.mp3",
-        "duration": 15.961
+        "duration": 16.849
       },
       "dopad": {
         "file": "audio/prumysl/dopad.mp3",
@@ -231,59 +231,59 @@
       },
       "outro": {
         "file": "audio/prumysl/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "regiony": {
       "hook": {
         "file": "audio/regiony/hook.mp3",
-        "duration": 5.721
+        "duration": 6.426
       },
       "problem": {
         "file": "audio/regiony/problem.mp3",
-        "duration": 13.636
+        "duration": 15.308
       },
       "proc": {
         "file": "audio/regiony/proc.mp3",
-        "duration": 6.766
+        "duration": 6.844
       },
       "navrh": {
         "file": "audio/regiony/navrh.mp3",
-        "duration": 15.647
+        "duration": 16.771
       },
       "dopad": {
         "file": "audio/regiony/dopad.mp3",
-        "duration": 5.642
+        "duration": 5.799
       },
       "outro": {
         "file": "audio/regiony/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "stat": {
       "hook": {
         "file": "audio/stat/hook.mp3",
-        "duration": 7.549
+        "duration": 7.001
       },
       "problem": {
         "file": "audio/stat/problem.mp3",
-        "duration": 16.849
+        "duration": 16.353
       },
       "proc": {
         "file": "audio/stat/proc.mp3",
-        "duration": 8.516
+        "duration": 11.546
       },
       "navrh": {
         "file": "audio/stat/navrh.mp3",
-        "duration": 14.759
+        "duration": 15.961
       },
       "dopad": {
         "file": "audio/stat/dopad.mp3",
-        "duration": 4.989
+        "duration": 5.146
       },
       "outro": {
         "file": "audio/stat/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "uvod": {
@@ -315,79 +315,79 @@
     "vzdelanost": {
       "hook": {
         "file": "audio/vzdelanost/hook.mp3",
-        "duration": 7.393
+        "duration": 7.628
       },
       "problem": {
         "file": "audio/vzdelanost/problem.mp3",
-        "duration": 15.569
+        "duration": 14.602
       },
       "proc": {
         "file": "audio/vzdelanost/proc.mp3",
-        "duration": 8.516
+        "duration": 9.561
       },
       "navrh": {
         "file": "audio/vzdelanost/navrh.mp3",
-        "duration": 12.121
+        "duration": 17.084
       },
       "dopad": {
         "file": "audio/vzdelanost/dopad.mp3",
-        "duration": 5.721
+        "duration": 6.426
       },
       "outro": {
         "file": "audio/vzdelanost/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "zdravi": {
       "hook": {
         "file": "audio/zdravi/hook.mp3",
-        "duration": 8.202
+        "duration": 8.359
       },
       "problem": {
         "file": "audio/zdravi/problem.mp3",
-        "duration": 12.826
+        "duration": 13.087
       },
       "proc": {
         "file": "audio/zdravi/proc.mp3",
-        "duration": 11.233
+        "duration": 12.199
       },
       "navrh": {
         "file": "audio/zdravi/navrh.mp3",
-        "duration": 14.838
+        "duration": 16.118
       },
       "dopad": {
         "file": "audio/zdravi/dopad.mp3",
-        "duration": 4.206
+        "duration": 5.407
       },
       "outro": {
         "file": "audio/zdravi/outro.mp3",
-        "duration": 3.082
+        "duration": 3.239
       }
     },
     "zeny": {
       "hook": {
         "file": "audio/zeny/hook.mp3",
-        "duration": 5.956
+        "duration": 6.113
       },
       "problem": {
         "file": "audio/zeny/problem.mp3",
-        "duration": 13.401
+        "duration": 12.278
       },
       "proc": {
         "file": "audio/zeny/proc.mp3",
-        "duration": 4.284
+        "duration": 3.553
       },
       "navrh": {
         "file": "audio/zeny/navrh.mp3",
-        "duration": 14.446
+        "duration": 13.871
       },
       "dopad": {
         "file": "audio/zeny/dopad.mp3",
-        "duration": 6.531
+        "duration": 7.811
       },
       "outro": {
         "file": "audio/zeny/outro.mp3",
-        "duration": 3.082
+        "duration": 2.847
       }
     }
   },

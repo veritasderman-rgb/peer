@@ -23,18 +23,21 @@ const steps: StoryStep[] = [
     title: "Cena mateřství",
     text: <>Žena, která si pořídí dítě, vydělává v následujících <b>20 letech</b> průměrně o <b>10 %</b> méně než bezdětná kolegyně. Největší ztrátu mají vysokoškolačky.</>,
     bobr: "Deset procent po dvacet let se pěkně sečte.",
+    scena: { typ: "cislo", predpona: "−", hodnota: 10, jednotka: "%", popis: "výdělek matky po dobu 20 let oproti bezdětné kolegyni" }, // fakta: ztrata_po_narozeni_deti
   },
   {
     mood: "surprised",
     title: "Školka, která není",
     text: <>Petřin syn nemá místo ve školce. Do brzké péče chodí jen <b>4 %</b> dětí do 3 let (kapitola o vzdělanosti) a Česku chybí <b>30–40 tisíc</b> míst.</>,
     bobr: "Bez místa ve školce se do práce naplno nevrátíš.",
+    scena: { typ: "podil", hodnota: 4, popis: "dětí do 3 let chodí do brzké péče, chybí 30–40 tisíc míst" }, // fakta: ucast_do_3_let_cr, potreba_mist_predskolni_pece
   },
   {
     mood: "neutral",
     title: "Když místo je, je drahé",
     text: <>Veřejně podporovaná dětská skupina může účtovat až třetinu minimální mzdy, dnes až <b>7 466 Kč</b> měsíčně. Pro mnoho rodin se taková služba nevyplatí.</>,
     bobr: "Drahá péče je pro spoustu rodin jako žádná.",
+    scena: { typ: "cislo", predpona: "až", hodnota: 7466, jednotka: "Kč měsíčně", popis: "strop platby za veřejně podporovanou dětskou skupinu" }, // fakta: max_platba_detska_skupina_dnes
   },
   {
     mood: "happy",
@@ -42,6 +45,7 @@ const steps: StoryStep[] = [
     title: "Co se pro Petru změní",
     text: <>Strop ceny klesne na cca <b>3 750 Kč</b> měsíčně a péče bude od jednoho roku věku. Každé místo ve školce vytvoří <b>0,54</b> pracovního místa a přinese rozpočtům více než <b>100 000 Kč</b> ročně.</>,
     bobr: "Školka se státu vyplatí. Čtyři opatření, pojď dál.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "7 466 Kč", popis: "strop měsíční platby za dětskou skupinu" }, potom: { hodnota: "3 750 Kč", popis: "strop podle návrhu" } }, // fakta: max_platba_detska_skupina_dnes, navrh_cenovy_strop
   },
 ];
 

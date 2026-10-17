@@ -1,0 +1,70 @@
+/* Hledání na /hledat. Barvy jen z tokenů v globals.css, takže sedí i v tmavém režimu. */
+.root { display: grid; gap: 1.1rem; min-width: 0; }
+
+.form { display: flex; gap: 0.6rem; min-width: 0; }
+.input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 56px;
+  padding: 0.7rem 1.1rem 0.7rem 3rem;
+  font: inherit;
+  font-size: var(--s1);
+  color: var(--ink);
+  background: var(--surface)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5 21 21'/%3E%3C/svg%3E")
+    no-repeat 1rem 50% / 1.3rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.input::placeholder { color: var(--muted); opacity: 1; }
+.input:focus { outline: none; box-shadow: 0 0 0 4px var(--focus); }
+.input::-webkit-search-cancel-button { cursor: pointer; }
+
+.status { min-height: 1.6em; font-family: var(--f-data); font-size: var(--s-1); color: var(--muted); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+
+.hint { display: grid; gap: 0.8rem; max-width: var(--prose); }
+.navrhy { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.navrh, .filtr {
+  display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px;
+  padding: 0.35rem 0.95rem; border-radius: 999px; border: 2px solid var(--line-strong);
+  background: var(--surface); color: var(--ink); cursor: pointer;
+  font-family: var(--f-data); font-weight: 700; font-size: var(--s-1);
+}
+.navrh:hover, .filtr:hover { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.filtr[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.filtrN { font-weight: 400; opacity: 0.75; }
+
+.prazdne { padding: 1.1rem 1.25rem; font-size: var(--s1); max-width: var(--prose); }
+
+.filtry { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.list > li { min-width: 0; }
+.vysledek {
+  display: grid; gap: 0.35rem; padding: 0.95rem 1.1rem; min-width: 0;
+  color: var(--ink); text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.vysledek:hover { border-color: var(--ink); }
+.vysledek:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-color: var(--ink); }
+.vysledek:hover .titulek, .vysledek:focus-visible .titulek { text-decoration: underline; text-underline-offset: 0.15em; }
+
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.7rem; font-family: var(--f-data); font-size: var(--s-1); color: var(--muted); }
+.typ {
+  display: inline-block; padding: 0.05rem 0.55rem; border-radius: 999px;
+  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.78rem;
+  background: var(--river-soft); color: var(--river);
+}
+.typ[data-typ="opatreni"] { background: var(--green-soft); color: var(--ink); }
+.typ[data-typ="otazka"] { background: var(--alert-soft); color: var(--ink); }
+.typ[data-typ="slovnik"], .typ[data-typ="plne-zneni"], .typ[data-typ="stranka"] { background: var(--paper); color: var(--muted); border: 1px solid var(--line); }
+
+.titulek { font-family: var(--f-data); font-weight: 700; font-size: var(--s1); line-height: 1.25; overflow-wrap: anywhere; }
+.uryvek { color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }
+.uryvek mark { color: var(--sun-ink); }
+
+@media (max-width: 760px) {
+  .input { font-size: var(--s0); min-height: 52px; }
+}

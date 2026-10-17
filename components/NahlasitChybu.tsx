@@ -1,3 +1,6 @@
+"use client";
+
+import { chybaNahlasena } from "@/lib/analytics";
 import { KONTAKT_EMAIL, REPO_URL } from "@/lib/site";
 import styles from "./NahlasitChybu.module.css";
 
@@ -18,7 +21,7 @@ export function NahlasitChybu({ kde, kompaktni = false }: { kde: string; kompakt
           <b>Našel jsi chybu?</b> Špatné číslo, mrtvý odkaz, nesrozumitelná věta. Napiš nám, opravíme to a zapíšeme změnu.
         </p>
       )}
-      <span className={styles.links}>
+      <span className={styles.links} onClick={(e) => { if ((e.target as HTMLElement).closest("a")) chybaNahlasena(kde); }}>
         {mailto && <a className={`btn secondary ${styles.btn}`} href={mailto}>Nahlásit e-mailem</a>}
         {issue && (
           <a className={`btn secondary ${styles.btn}`} href={issue} target="_blank" rel="noreferrer">

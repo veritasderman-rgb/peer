@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./SiteNav.module.css";
+import { HledaniBox } from "@/components/HledaniBox";
 
 const polozky = [
   { href: "/#temata", label: "Témata" },
+  { href: "/pribeh", label: "Příběh" },
   { href: "/videa", label: "Videa" },
   { href: "/dopad", label: "Velký obraz" },
   { href: "/cesta", label: "Cesta do 2035" },
@@ -31,6 +33,7 @@ export function SiteNav() {
           <span className={styles.flag} aria-hidden="true" />
           <span className="display">Česko má na víc!</span>
         </Link>
+        <HledaniBox kompaktni className={styles.hledaniDesktop} />
         <button
           type="button"
           className={styles.toggle}
@@ -53,6 +56,7 @@ export function SiteNav() {
           <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">
             PEER
           </a>
+          <HledaniBox className={styles.hledaniMobil} />
         </nav>
       </div>
     </header>

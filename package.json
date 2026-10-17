@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/build-search-index.mjs",
     "build": "next build",
     "start": "next start",
     "video:studio": "remotion studio video/index.ts",
@@ -11,7 +12,9 @@
     "test": "playwright test",
     "check:links": "node scripts/check-links.mjs --allow-list scripts/link-allow.txt",
     "media:upload": "node scripts/upload-media.mjs",
-    "garanti:export": "node scripts/export-garanti.mjs"
+    "garanti:export": "node scripts/export-garanti.mjs",
+    "argumentar:pdf": "node scripts/export-argumentar.mjs",
+    "search:index": "node scripts/build-search-index.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -21,6 +24,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
     "@playwright/test": "^1.64.1",
     "@remotion/bundler": "4.0.535",
     "@remotion/cli": "4.0.535",

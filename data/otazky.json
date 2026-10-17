@@ -26,6 +26,13 @@
               "href": "/zaplaceni",
               "text": "Jak se to zaplatí"
             }
+          ],
+          "kratce": "Studie celkový účet nepředkládá: sází na návratné nástroje a na růst o 1 p. b. ročně, který má dát přes 300 mld. Kč ročně do rozpočtu.",
+          "argument": [
+            "Odpověď: Studie neukazuje jeden celkový účet. Místo nových dotací staví na návratných nástrojích (záruky, úvěry, kapitálové vstupy), na využití toho, co leží ladem, a na přínosu z vyššího růstu. Kolik všechna opatření dohromady stojí, nikde nesčítá.",
+            "Čísla: Růst nejméně o 1 procentní bod ročně znamená na konci dekády HDP o 1 000 mld. Kč vyšší a přes 300 mld. Kč ročně navíc ve státním rozpočtu (dopad: souhrn). Příklady návratných věcí: jedno místo ve školce přináší veřejným rozpočtům více než 100 000 Kč ročně (zeny: prinos_mista_pro_verejne_rozpocty) a úsporné projekty EPC ve veřejných budovách už dnes šetří přes 700 mil. Kč ročně bez dotací, potenciál je až 20 mld. Kč ročně (energie: epc_uspory_rocne, uspory_verejne_budovy).",
+            "Námitka: „Žádný rozpočet, jen slibovaný růst.“ Odpověď: je to pravda. Z 19 klíčových opatření má vyčíslený dopad deset, devět ne, a odhady jsou v různých jednotkách (ročně, za dekádu, za 15–20 let), takže se nedají sečíst. Netvrď proto, že je většina opatření rozpočtově neutrální: studie to nikde neříká, neutralitu uvádí jen u konkrétních opatření (například financování obcí, investiční pobídky).",
+            "Kam odkázat: /zaplaceni (rozpis financování po tématech) a /dopad (Velký obraz, jak vznikl odhad růstu)."
           ]
         },
         {
@@ -47,6 +54,13 @@
               "href": "/zaplaceni",
               "text": "Jak se to zaplatí"
             }
+          ],
+          "kratce": "Vlastní výhled dluhu studie nemá; spoléhá na návratnost nástrojů a na růst, který má schodek dostat „takřka do nuly“.",
+          "argument": [
+            "Odpověď: Výhled dluhu ani schodku studie nepředkládá, takže přesné číslo z ní vzít nejde. Hlavní pojistkou je podle ní návratnost: dotace nahrazují návratné nástroje a okamžité odpisy jsou z velké části odklad daně, ne její ztráta.",
+            "Čísla: Přes 300 mld. Kč ročně navíc v rozpočtu na konci dekády je podle studie „takřka srovnání dnešního schodku do nuly“ (dopad: souhrn). U eura studie uvádí státní dluh koncem roku 2026 téměř 4 bil. Kč, přirážku 1 až 1,5 procentního bodu, kterou Česko platí oproti srovnatelným zemím eurozóny, a 40 mld. Kč ročně za každé procento navíc (euro: statni_dluh_2026, prirazka_statni_dluh, procento_navic_dluh).",
+            "Námitka: „Dotace nahradíte půjčkami a odpisy vás připraví o příjmy.“ Odpověď: studie sama přiznává, že část výpadku u odpisů je trvalý náklad a že státní startupový fond může část peněz ztratit. Odhad růstu je navíc odvozený, ne součet jednotlivých opatření. O tom, zda schodek stáhnout, nebo peníze investovat, by podle studie rozhodla vláda.",
+            "Kam odkázat: /zaplaceni, /dopad a /euro (dluh a přirážka za „malou měnu“)."
           ]
         },
         {
@@ -72,6 +86,13 @@
               "href": "/zaplaceni",
               "text": "Jak se to zaplatí"
             }
+          ],
+          "kratce": "Plošné zvýšení DPH ani daní z příjmů studie nenavrhuje; konkrétní změny některé daně zvyšují, jiné snižují nebo odkládají.",
+          "argument": [
+            "Odpověď: V textu kapitol studie nenavrhuje plošné zvýšení sazeb DPH ani daní z příjmů. Navrhuje ale několik konkrétních změn a neříkej proto „žádné nové daně“.",
+            "Čísla: Spotřební daň ze slazených nápojů a úprava daně z alkoholu mají vynést 10–15 mld. Kč ročně, z toho nejméně 40 % (4–6 mld. Kč) do Fondu prevence (zdravi: spotrebni_dan_vynos, fond_prevence_minimum). Pronajímatelé: paušál z 30 na 40 %, uznatelné náklady nejvýše 60 % příjmů z nájmu (bydleni: navrh_pausal_40, navrh_uznatelnost_nakladu). Povolenky na vytápění a dopravu od roku 2028 studie nenavrhuje, říká, že platí bez ohledu na postoj vlády, a polovinu výnosů chce vrátit lidem jako kupón (energie: povolenky_vytapeni_od, kupon_podil_vynosu).",
+            "Námitka: „Takže nové daně přece jsou.“ Odpověď: ano, vyšší daň z dlouhodobě prázdných nemovitostí, daň ze slazených nápojů, úprava u alkoholu, vyšší odvody u dohod o provedení práce. Jiné daně se naopak snižují nebo odkládají (paušál pronajímatelů, okamžité odpisy, daň ze zisku startupů v prvních letech). Přiznej, že výnos většiny daňových změn studie nevyčísluje a že doprovodnou reformu daně z příjmů fyzických osob jen zmiňuje.",
+            "Kam odkázat: /zaplaceni, u konkrétních daní /bydleni, /zdravi a /energie."
           ]
         },
         {
@@ -89,6 +110,13 @@
               "href": "/dopad",
               "text": "Velký obraz"
             }
+          ],
+          "kratce": "Bilion je odhad vyššího HDP na konci dekády při růstu o 1 p. b. ročně navíc, ne vyplacené peníze a ne záruka.",
+          "argument": [
+            "Odpověď: Bilion není částka, kterou by někdo dostal, ale vyšší výkon ekonomiky na konci dekády, pokud reformy zrychlí růst nejméně o 1 procentní bod ročně. Říkej „odhad studie“, nikdy „slib“.",
+            "Čísla: HDP o 1 000 mld. Kč ročně vyšší, z toho asi 440 mld. Kč navíc ve mzdách včetně odvodů zaměstnavatele (v průměru 68 000 Kč ročně na ekonomicky aktivního člověka) a přes 300 mld. Kč ročně ve státním rozpočtu (dopad: souhrn). Náběh podle peer.pirati.cz: 80, 161, 242 a 324 mld. Kč v prvních čtyřech letech; další roky web dopočítává a označuje (dopad: nabeh).",
+            "Námitka: „Je to vycucané z prstu.“ Odpověď: studie sama říká, že vývoj HDP modelovat nelze, a počítá rozdíl proti dnešku, kdy stát v těchto směrech dělá velmi málo. Slabé místo přiznej: součet dílčích odhadů studie neukazuje (deset z 19 opatření vyčísleno, různé jednotky) a věta „snadno odvoditelné“ stojí bez rozpisu. U části opatření se výsledky projeví až za 10–20 let, u vzdělávacích reforem za 15–20 let.",
+            "Kam odkázat: /dopad (Velký obraz, náběh po letech) a /zaplaceni."
           ]
         }
       ]
@@ -108,7 +136,14 @@
           "temata": [
             "bydleni"
           ],
-          "zdroj": "Kapitola 1.1 Bydlení, opatření 7 „Vyšší daň z nemovitostí z prázdných bytů, domů a pozemků“ a úvodní část o prázdných bytech"
+          "zdroj": "Kapitola 1.1 Bydlení, opatření 7 „Vyšší daň z nemovitostí z prázdných bytů, domů a pozemků“ a úvodní část o prázdných bytech",
+          "kratce": "Studie navrhuje vyšší daň z dlouhodobě prázdných nemovitostí, ne odebrání majetku; nucený prodej mezi opatřeními není.",
+          "argument": [
+            "Odpověď: Je to daň, ne vyvlastnění. Mezi opatřeními není nucený prodej ani převzetí bytu. Nemovitosti by se dělily do čtyř kategorií: nejnižší daň pro obývané majitelem nebo osobou blízkou, relativně nízká pro dlouhodobě pronajímané, vyšší pro dlouhodobě prázdné, zvláštní sazba pro ruské majetky.",
+            "Čísla: Asi 200 000 neobydlených bytů je v bytových domech, nejvíc v Praze (bydleni: neobydlene_v_bytovych_domech). Neobydlených bytů je celkem 860 000, ale 660 000 z nich jsou rodinné domy a chalupy, takže nemíchej dohromady „860 tisíc prázdných bytů“ (bydleni: neobydlene_celkem, neobydlene_ostatni). Výjimky pro rekonstrukci, dědické řízení a vážné zdravotní důvody studie počítá; obce si mohou výši přirážky u prázdných nemovitostí upravit.",
+            "Námitka: „Je to zásah do vlastnictví.“ Odpověď: daň z nemovitostí už dnes existuje a studie ji jen odstupňuje podle toho, zda v nemovitosti někdo bydlí. Nejostřejší bod je speciální sazba pro ruské rezidenty (68násobek běžné sazby, bydleni: navrh_sazba_rusko). Přiznej, že studie neuvádí výši sazby, ani po jak dlouhé době je nemovitost „dlouhodobě prázdná“, výnos nevyčísluje a právní posouzení přiměřenosti zásahu do vlastnictví v ní není.",
+            "Kam odkázat: /bydleni (opatření 7)."
+          ]
         },
         {
           "id": "stavet-statem",
@@ -121,7 +156,14 @@
           "temata": [
             "bydleni"
           ],
-          "zdroj": "Kapitola 1.1 Bydlení, Co navrhujeme (opatření 1, 2, 3, 4, 5) a Co nám to přinese"
+          "zdroj": "Kapitola 1.1 Bydlení, Co navrhujeme (opatření 1, 2, 3, 4, 5) a Co nám to přinese",
+          "kratce": "Veřejnou výstavbu studie počítá (obecní byty aspoň 7,2 %), hlavní brzdu ale vidí v povolování a v motivaci obcí.",
+          "argument": [
+            "Odpověď: Veřejnou výstavbu studie nevylučuje, počítá s ní: obnovuje dotační a úvěrové programy pro obce a nezisková družstva podle vídeňského vzoru. Hlavní brzdu ale vidí v pomalém povolování a v tom, že nová výstavba obci nic nepřináší, jen náklady na školy a infrastrukturu.",
+            "Čísla: Podíl obecních bytů aspoň 7,2 %, tedy dvojnásobek; Praha vlastní asi 5 %, ve Vídni mají obecní byty 25 % a nezisková družstva dalších 20 % (bydleni: cil_obecni_byty, praha_obecni_byty, viden_obecni_byty, viden_neziskova_druzstva). Cíl je 50 000 bytů ročně; v roce 2025 se dokončilo asi 33 600, potřeba je 40 000 a víc (bydleni: cil_vystavba_rocni, dokonceno_byty_2025, potreba_vystavby_rocni). Motivace obcí: podíl z DPH 3 000–8 000 Kč za m², tedy 210 000–560 000 Kč za byt o 70 m² (bydleni: navrh_rud_dph_rozmezi, navrh_rud_byt_70_m2). Zrušení povinných parkovacích míst sníží cenu bytu o 700 000–1 000 000 Kč (bydleni: navrh_uspora_parkovani).",
+            "Námitka: „Soukromník levné byty nepostaví, má stavět město.“ Odpověď: obecní i nezisková výstavba je součástí návrhu, motivace obcí ji doplňuje. Slabé místo: srovnání nákladů čistě státní výstavby a navrženého mixu studie nepředkládá a náklady podílu z DPH, dotací obcím a Garančního fondu nevyčísluje.",
+            "Kam odkázat: /bydleni."
+          ]
         }
       ]
     },
@@ -141,7 +183,14 @@
           "temata": [
             "exekuce"
           ],
-          "zdroj": "Kapitola 1.3, část o exekucích (Systém trestá snahu, Co navrhujeme, Měřitelné cíle, Co nám to přinese); souhrn dopadů č. 4"
+          "zdroj": "Kapitola 1.3, část o exekucích (Systém trestá snahu, Co navrhujeme, Měřitelné cíle, Co nám to přinese); souhrn dopadů č. 4",
+          "kratce": "Dluhy se neruší: dlužník splácí dál, jen se srážkou nejvýše 50 % příjmu místo dnešních 66 až 100 %.",
+          "argument": [
+            "Odpověď: Není to amnestie. Dluh zůstává, mění se srážka: nejvýše 50 % příjmu, takže z každé vydělané koruny zůstane dlužníkovi alespoň polovina. Důvodem je podle studie to, že dnešní systém trestá pracovitost.",
+            "Čísla: Dnes většina dlužníků čelí 66% srážce a nad cca 31 500 Kč hrubého je srážka 100 %, u čtyř a více exekucí už od 24 609 Kč (exekuce: srazka_66, srazka_100_od_prijmu, srazka_100_od_4_exekuci). V exekuci je 590 000 lidí (k 30. 6. 2026, k 31. 12. 2025 to bylo 566 000), cíl do roku 2030 je nejvýše 413 000 (exekuce: osob_v_exekuci_2026, osob_v_exekuci_2025, cil_pocet_v_exekuci_2030). Celková dlužná částka klesá jen o 1 % ročně, a to výhradně odpisem nevymahatelných pohledávek (exekuce: pokles_dluhu_procent).",
+            "Námitka: „Věřitelé přijdou o peníze.“ Odpověď: dnešní systém dluhy stejně nevymáhá. Přiznej ale, že věřitelé dostanou peníze pomaleji a z nízkých příjmů méně a studie nevyčísluje kolik. Nepleť přínos reformy: studie ho uvádí třemi způsoby, které nejdou spojit (návrat 100 000 lidí a 3–5 mld. Kč ročně; cíl 200 000 lidí; souhrn dopadů dalších 25 mld. Kč ročně). Zvol jedno číslo a řekni, odkud je (exekuce: prinos_navratu_100k, cil_navrat_na_trh_2030).",
+            "Kam odkázat: /exekuce. Kalkulačka tam počítá hranice z hrubé mzdy, kdežto skutečné srážky se počítají z čisté; je to u ní napsané."
+          ]
         },
         {
           "id": "minimalka",
@@ -154,7 +203,14 @@
           "temata": [
             "prace"
           ],
-          "zdroj": "Kapitola 1.3 Práce, úvod a opatření 2 „Zvýšíme minimální mzdu na 50 % průměrné mzdy“; opatření 4"
+          "zdroj": "Kapitola 1.3 Práce, úvod a opatření 2 „Zvýšíme minimální mzdu na 50 % průměrné mzdy“; opatření 4",
+          "kratce": "Dopad na malé firmy studie nevyčísluje; 50 % průměrné mzdy zdůvodňuje tím, že dnešních 22 400 Kč je 43 % průměru a až 80 % lidí na minimálce dostává dávky.",
+          "argument": [
+            "Odpověď: Na malé firmy studie přímo nemíří a jejich dopad nevyčísluje. Zvýšení na 50 % průměrné mzdy zdůvodňuje tím, že stát dnes fakticky dotuje nízké mzdy.",
+            "Čísla: Minimální mzda 22 400 Kč (2026) tvoří podle studie 43 % průměrné mzdy a je nižší než v Chorvatsku, Litvě nebo Polsku, kde činí 27 600 Kč (prace: minimalni_mzda_2026, minimalni_mzda_podil, minimalni_mzda_polsko). Až 80 % lidí na minimální mzdě má nárok na sociální dávky (prace: narok_na_davky). K tomu rekvalifikace: z 0,005 % HDP (382 mil. Kč v roce 2023) na průměr OECD 0,1 % HDP do roku 2030 (prace: rekvalifikace_podil_hdp, oecd_prumer_hdp).",
+            "Námitka: „Malé firmy to nezvládnou.“ Odpověď: studie bere vyšší mzdu jako tlak na produktivitu a automatizaci a doprovází ho rekvalifikacemi a individuálními vzdělávacími účty. Konkrétní odpověď na obavu malých firem ale nedává, neuvádí termín ani kroky k 50 % a nevyčísluje úsporu na dávkách. Pozor na číslo 43 %: při průměrné mzdě 49 215 Kč z roku 2025 vychází spíš 45,5 %. Říkej „43 % podle studie“ a rozdíl neskrývej.",
+            "Kam odkázat: /prace."
+          ]
         },
         {
           "id": "flexicurity",
@@ -167,7 +223,14 @@
           "temata": [
             "prace"
           ],
-          "zdroj": "Kapitola 1.3 Práce, opatření 1 a 4; souhrn dopadů č. 11"
+          "zdroj": "Kapitola 1.3 Práce, opatření 1 a 4; souhrn dopadů č. 11",
+          "kratce": "Zčásti ano, výpovědní doba v prvním roce je 1 měsíc, ale studie ji váže na 80% podporu a rekvalifikace podle dánského modelu.",
+          "argument": [
+            "Odpověď: Přiznej to: v prvním roce pracovního vztahu se výpovědní doba zkracuje na 1 měsíc, takže zaměstnanec má menší jistotu. Studie to váže na silnější záchrannou síť podle dánského modelu.",
+            "Čísla: Podpora v nezaměstnanosti zůstává 80 % v prvních dvou měsících, od pátého měsíce je podmíněna aktivní rekvalifikací (prace: navrh_vypovedni_doba, navrh_podpora_v_nezamestnanosti). Výdaje na rekvalifikace byly v roce 2023 jen 382 mil. Kč (0,005 % HDP), mají dojít na průměr OECD 0,1 % HDP do roku 2030; v první polovině roku 2026 se počet rekvalifikací meziročně propadl o 80 % (prace: rekvalifikace_2023, oecd_prumer_hdp, rekvalifikace_pokles_2026).",
+            "Námitka: „Je to jen snazší propouštění.“ Odpověď: pružnost pro zaměstnavatele je podle studie udržitelná jen se silnou záchrannou sítí. Slabá místa: text neříká, co platí ve třetím a čtvrtém měsíci, a dopad na mobilitu a produktivitu ani náklady vyšších výdajů na rekvalifikace nevyčísluje. Neslibuj číslo, které ve studii není.",
+            "Kam odkázat: /prace (opatření 1 a 4)."
+          ]
         }
       ]
     },
@@ -186,7 +249,14 @@
           "temata": [
             "euro"
           ],
-          "zdroj": "Kapitola 2.2 Euro, sekce Domácnosti, Stát a Co navrhujeme; souhrn dopadů č. 7"
+          "zdroj": "Kapitola 2.2 Euro, sekce Domácnosti, Stát a Co navrhujeme; souhrn dopadů č. 7",
+          "kratce": "Na ceny po přijetí eura studie neodpovídá; mluví o dnešních nákladech koruny: hypotéky, směna měn, přirážka na státním dluhu.",
+          "argument": [
+            "Odpověď: Studie o cenách zboží a služeb po přechodu na euro nic nemá a náklady samotného přechodu neuvádí. Nevymýšlej to. Argumentuje opačně: dnešní koruna něco stojí.",
+            "Čísla: V červnu 2026 nabízela ČSOB tříletou fixaci hypotéky v Česku za 4,94 %, na Slovensku za 3,69 %; u hypotéky 4,7 mil. Kč na 30 let je to o 1 242 657 Kč víc na úrocích (euro: hypoteka_sazba_cr, hypoteka_sazba_sk, hypoteka_rozdil_uroky). Při směně korun za eura platíme „malou daň“ 2–3 % z objemu, rodina s dovolenou za 1 500 EUR asi 1 100 Kč na jedné cestě (euro: transakcni_poplatek, dovolena_skryte_naklady). Každé procento přirážky na státním dluhu stojí 40 mld. Kč ročně (euro: procento_navic_dluh).",
+            "Námitka: „Euro zdraží všechno.“ Odpověď: na cenách studie mlčí, to je třeba říct. Opatrně s číslem „přes 40 000 Kč ročně“: platí pro hypotéku 4,7 mil. Kč a stojí na jedné nabídce jedné banky. Z průměrných sazeb ve stejné kapitole (4,79 % v Česku, 3,84 % v eurozóně) vychází méně, zhruba 31 500 Kč ročně podle přepočtu redakce; garantka to má ověřit (euro: sazba_eurozona_vs_cr, uspora_domacnost).",
+            "Kam odkázat: /euro (včetně kalkulačky)."
+          ]
         },
         {
           "id": "euro-suverenita",
@@ -199,7 +269,14 @@
           "temata": [
             "euro"
           ],
-          "zdroj": "Kapitola 2.2 Euro, sekce Měnová „nezávislost“ a Co navrhujeme (opatření 1)"
+          "zdroj": "Kapitola 2.2 Euro, sekce Měnová „nezávislost“ a Co navrhujeme (opatření 1)",
+          "kratce": "Vlastní měnovou politiku bychom ztratili; studie tvrdí, že nezávislost koruny je víc na papíře a platí ji hlavně domácnosti a malé firmy.",
+          "argument": [
+            "Odpověď: Ano, sazby ČNB a kurz koruny by Česko přijetím eura ztratilo. Studie argumentuje, že měnová „nezávislost“ je víc na papíře než v praxi: velké exportní firmy už v eurech obchodují a půjčují si, kdežto domácnostem a malým firmám rozhodnutí ČNB přímo určuje splátku hypotéky.",
+            "Čísla: Česko exportuje zboží a služby za 70–75 % HDP a 61 % exportu zboží míří do eurozóny (euro: export_sluzby_zbozi_hdp, export_eurozona_cr). Přirážka na státním dluhu je 1–1,5 procentního bodu (euro: prirazka_statni_dluh), směnná „malá daň“ 2–3 % z objemu (euro: transakcni_poplatek).",
+            "Námitka: „Euro je ztráta suverenity.“ Odpověď: podle studie je to i politický projekt, který znamená „silnější hlas u stolu, kde se v Bruselu rozhoduje“, a Česko riskuje roli izolovaného ostrova koruny. Piráti euro obhajují především proto, že se běžným lidem finančně vyplatí. Slabé místo přiznej: ztrátu vlastní měnové politiky studie nevyčísluje. Přijetí navíc není rozhodnutí jedné vlády, vyžaduje široký mezistranický konsenzus.",
+            "Kam odkázat: /euro."
+          ]
         },
         {
           "id": "euro-kdy",
@@ -212,7 +289,14 @@
           "temata": [
             "euro"
           ],
-          "zdroj": "Kapitola 2.2 Euro, Co navrhujeme (opatření 1–3)"
+          "zdroj": "Kapitola 2.2 Euro, Co navrhujeme (opatření 1–3)",
+          "kratce": "Datum studie neuvádí, jen pořadí kroků: debata a shoda, maastrichtská kritéria, ERM 2 aspoň 2 roky, potom euro.",
+          "argument": [
+            "Odpověď: Datum studie neuvádí, žádné nevymýšlej. Uvádí pořadí: široká veřejná debata a politická shoda, splnění maastrichtských kritérií a vstup do mechanismu ERM 2, potom přijetí eura.",
+            "Čísla: Schodek pod 3 % HDP, dluh pod 60 % HDP nebo klesající (euro: maastricht_deficit, maastricht_dluh). V ERM 2 je nutné být nejméně 2 roky a euro lze přijmout nejdříve 2 roky po vstupu do ERM 2 (euro: erm2_min_delka). Chorvatsko vstoupilo do eurozóny v roce 2023, Bulharsko v roce 2026 (euro: clenove_eurozony_nedavno).",
+            "Námitka: „Tak kdy? Slibujete euro do roku X?“ Odpověď: žádný slib. Studie říká jen, že čekání něco stojí („čím déle otálíme, tím více platíme“) na hypotékách, na obsluze dluhu i na kurzových nákladech. Neříká ale, kdy Česko podmínky splní, ani kolik stojí samotný přechod.",
+            "Kam odkázat: /euro."
+          ]
         }
       ]
     },
@@ -231,7 +315,14 @@
           "temata": [
             "energie"
           ],
-          "zdroj": "Kapitola 3.2 Energie, Cíle a Co navrhujeme (Technologicky neutrální kapacitní mechanismus; Jádro jako stabilizační prvek)"
+          "zdroj": "Kapitola 3.2 Energie, Cíle a Co navrhujeme (Technologicky neutrální kapacitní mechanismus; Jádro jako stabilizační prvek)",
+          "kratce": "Studie nevolí jedno: jádro je podle ní pojistka stability, ne recept na levnou elektřinu, a obnovitelné zdroje mají být nejlevnější nové zdroje.",
+          "argument": [
+            "Odpověď: Obojí, s plynem jako přechodnou nutností. Platí technologická neutralita: stát stanoví výsledek a technologie soutěží cenou a parametry.",
+            "Čísla: Ročně alespoň 1 GW fotovoltaiky, 200 MW větru a 2 GWh baterií; v roce 2025 přibylo asi 0,7 GW slunce a zhruba 13 MW větru (energie: fve_rocni_potreba, fve_loni, vitr_prirustek_loni). Dukovany: smluvní cena 407 mld. Kč bez inflace a financování, plné náklady se odhadují na 23–30 mld. eur; u Flamanville se náklady i doba výstavby více než ztrojnásobily (energie: dukovany_smluvni_cena, dukovany_plne_naklady, flamanville_nasobek). Po roce 2040 mají nové bloky krýt kolem poloviny spotřeby.",
+            "Námitka: „Jádro je jediná jistota“ nebo „obnovitelné nás zruinují“. Odpověď: studie dostavbu Dukovan podporuje, ale říká, že jádro je „pojistka stability, ne recept na levnou elektřinu“, a upozorňuje na riziko termínu a ceny. Slabé místo: platby kapacitního mechanismu vyjdou na 75–150 mld. Kč za příští dekádu a kdo je ponese, studie výslovně neuvádí (energie: kapacitni_mechanismus_platby).",
+            "Kam odkázat: /energie."
+          ]
         },
         {
           "id": "povolenky",
@@ -244,7 +335,14 @@
           "temata": [
             "energie"
           ],
-          "zdroj": "Kapitola 3.2 Energie, sekce Ceny jsou deformované, Vládní politika a Co navrhujeme (Trajektorie narovnání cen, Energetický kupón, Revolvingový fond)"
+          "zdroj": "Kapitola 3.2 Energie, sekce Ceny jsou deformované, Vládní politika a Co navrhujeme (Trajektorie narovnání cen, Energetický kupón, Revolvingový fond)",
+          "kratce": "Ano, od roku 2028 zdraží vytápění a pohonné hmoty, studie to říká otevřeně; proti dopadu staví kupón, pojistku ve spotřební dani a renovační fond.",
+          "argument": [
+            "Odpověď: Ano, a studie to říká otevřeně. Od roku 2028 se evropské povolenky rozšíří na vytápění a pohonné hmoty a lidé je zaplatí v cenách paliv. Platí podle studie bez ohledu na postoj vlády; deklarované neprovedení by Česko povinností nezbavilo, jen by odložilo přípravu na jejich sociálně únosné zvládnutí.",
+            "Čísla: Povolenky od roku 2028 (energie: povolenky_vytapeni_od); více než 1,5 mil. domácností topí plynem a může si plánovat výměnu kotle (energie: domacnosti_topici_plynem). Jednotka elektřiny stojí zhruba čtyřikrát víc než jednotka plynu, tepelné čerpadlo se vyplácí od poměru asi 2,7 ku 1 (energie: cena_elektrina_vs_plyn, tc_bod_zvratu). Ochrana: kupón vrací polovinu výnosů, při ceně povolenky kolem 60 eur zhruba 5 000 Kč ročně na domácnost (energie: kupon_podil_vynosu, kupon_cena_povolenky, kupon_castka_rocne), a asi 50 mld. Kč ze Sociálního klimatického fondu jde na renovace na klíč (energie: socialni_klimaticky_fond).",
+            "Námitka: „Zdražování, které kupón nevyrovná.“ Odpověď: studie netvrdí, že kupón vyrovná dopad každé domácnosti; dostane víc, než zaplatí, ten, kdo topí a jezdí úsporně. Platí pořadí: nejdřív peníze lidem, teprve potom narovnávání daní. Přiznej, že studie nevyčísluje, o kolik palivo a teplo zdraží, kolik stát přijde o spotřební daň, a neuvádí ani „sociálně únosnou“ hranici ceny povolenky.",
+            "Kam odkázat: /energie."
+          ]
         },
         {
           "id": "kupon",
@@ -257,7 +355,14 @@
           "temata": [
             "energie"
           ],
-          "zdroj": "Kapitola 3.2 Energie, Co navrhujeme (Energetický kupón), Cíle; souhrn dopadů č. 15"
+          "zdroj": "Kapitola 3.2 Energie, Co navrhujeme (Energetický kupón), Cíle; souhrn dopadů č. 15",
+          "kratce": "Kupón vrací polovinu výnosů z povolenek všem stejně, při ceně kolem 60 eur zhruba 5 000 Kč ročně na domácnost; start 2028.",
+          "argument": [
+            "Odpověď: Kupón vrací polovinu výnosů z povolenek na vytápění a dopravu přímo lidem, každému stejně, bez žádostí a úředníka. Spouští se spolu s povolenkami v roce 2028.",
+            "Čísla: Polovina výnosů, cena povolenky kolem 60 eur, zhruba 5 000 Kč ročně na průměrnou domácnost (energie: kupon_podil_vynosu, kupon_cena_povolenky, kupon_castka_rocne, povolenky_vytapeni_od). Při jiné ceně povolenky bude částka jiná.",
+            "Námitka: „Dřív to bylo 2 250 Kč, teď 5 000?“ Odpověď: číslo není sjednocené a jednotka je jiná. Dřívější plán Pirátů z roku 2025 počítal s 2 250 Kč na osobu (9 000 Kč na čtyřčlennou rodinu), strategie uvádí zhruba 5 000 Kč na domácnost. Web používá přepočet ze strategie a uvádí obě čísla, sjednocení má potvrdit garant. Říkej vždy jednotku a cenu povolenky. Kupón navíc nevyrovná dopad každé domácnosti, rozděluje jen polovinu výnosů.",
+            "Kam odkázat: /energie (kalkulačka kupónu)."
+          ]
         }
       ]
     },
@@ -276,7 +381,14 @@
           "temata": [
             "oligarchie"
           ],
-          "zdroj": "Kapitola 2.1 Oligarchie, úvod a Co navrhujeme (opatření 4 a 5); souhrn dopadů č. 10 a 13"
+          "zdroj": "Kapitola 2.1 Oligarchie, úvod a Co navrhujeme (opatření 4 a 5); souhrn dopadů č. 10 a 13",
+          "kratce": "Návrhy míří na největší hráče a střet zájmů, ne na podnikatele obecně; malé a střední firmy a rodinné farmy má studie naopak zvýhodnit.",
+          "argument": [
+            "Odpověď: Nejde o podnikatele obecně, ale o koncentraci byznysové, mediální a případně politické moci v jedněch rukou. Podpora se má změnit tak, aby zvýhodňovala malé firmy a s růstem firmy klesala.",
+            "Čísla: Firmy s vysokým tržním podílem by měly nulovou způsobilost pro plošné dotace; strop tržní dominance pod 40 %, posuzování fúzí od 200 mil. Kč obratu po dánském vzoru; strop zemědělských dotací 100 000 EUR ročně na skutečného majitele (oligarchie: navrh_trzni_dominance, danska_fuze_prah, navrh_strop_zemedelske_dotace). Dotace gigantům dosahují 20–30 mld. Kč ročně (oligarchie: dotace_gigantum_rocne). Česko je třetí nejhorší v EU v transparentnosti vlastnictví médií (oligarchie: media_transparentnost_poradi).",
+            "Námitka: „Je to namířené proti úspěšným firmám.“ Odpověď: pravidla stojí na tržním podílu a velikosti, ne na jménech. Studie sama říká, že největší hráči o plošné dotace přijdou a že boj proti oligarchické moci je „extrémně těžký a dlouhodobý“. Opatrně s čísly: 20–30 mld. Kč je dnešní objem dotací, ne úspora, a opírá se o jediný zdroj (CERGE-EI). Údaj o veřejných zakázkách („skoro bilion Kč, 14 % HDP“) nemá ve studii zdroj, raději ho nepoužívej. Náklady vymáhání pravidel studie nevyčísluje.",
+            "Kam odkázat: /oligarchie."
+          ]
         },
         {
           "id": "digitalizace",
@@ -289,7 +401,14 @@
           "temata": [
             "stat"
           ],
-          "zdroj": "Kapitola 4.2 Stát jako lídr, Co navrhujeme (Digitalizace státu, Digitalizovat již digitalizované, Otevřená data, Hodnota za peníze); souhrn dopadů č. 9 a 19"
+          "zdroj": "Kapitola 4.2 Stát jako lídr, Co navrhujeme (Digitalizace státu, Digitalizovat již digitalizované, Otevřená data, Hodnota za peníze); souhrn dopadů č. 9 a 19",
+          "kratce": "Studie uznává, že digitalizace jde pomalu (digitálně jen 18 % služeb); chce dokončit 1 400 plánovaných služeb a omezit závislost na dodavatelích.",
+          "argument": [
+            "Odpověď: Studie sama uznává, že to jde pomalu. Nechce digitalizovat vše, ale včas dokončit zhruba 1 400 plánovaných služeb, kde to dává smysl, zřídit Jednotné inkasní místo a omezit závislost na dodavatelích starých systémů.",
+            "Čísla: Z téměř 9 000 služeb státu je digitálních 18 %, hybridních 30 %, papírových více než polovina; Česko je zhruba uprostřed EU, na 13.–14. místě z 27 (stat: sluzby_digitalni, sluzby_hybridni, sluzby_papirove, digitalizace_pozice_eu). 53 % informačních systémů vzniklo bez veřejné soutěže a provoz stojí 8,5 mld. Kč ročně (stat: is_bez_souteze, is_rocni_naklady). Nástroje na SZIF stály 2,1 mld. Kč za 4 roky, v komerční sféře by vyšly na 100–120 mil. Kč (stat: szif_nastroje, szif_komercni).",
+            "Námitka: „To slibují dvacet let.“ Odpověď: konkrétní je zákonné ukotvení útvaru Hodnota za peníze (vzor Slovensko, revize od 40 mil. EUR) a omezení závislosti na dodavatelích. Slabá místa: studie neuvádí termín ani cenu, 8,5 mld. Kč je dnešní náklad provozu, ne úspora (garant to má ověřit), a proč dřívější sliby selhaly, rozebírá jen částečně. Odkaz na zprávu NKÚ je zatím nefunkční, cituj studii (kap. 4.2).",
+            "Kam odkázat: /stat."
+          ]
         }
       ]
     },
@@ -309,7 +428,14 @@
             "vzdelanost",
             "zeny"
           ],
-          "zdroj": "Kapitola 1.2 Vzdělanost, sekce 1.2.1 Brzké vzdělávání je ekonomicky výhodné (opatření 1 a 2); kapitola 1.3, část o ženách (Nedostatek péče o nejmenší, Co navrhujeme)"
+          "zdroj": "Kapitola 1.2 Vzdělanost, sekce 1.2.1 Brzké vzdělávání je ekonomicky výhodné (opatření 1 a 2); kapitola 1.3, část o ženách (Nedostatek péče o nejmenší, Co navrhujeme)",
+          "kratce": "Je to možnost, ne povinnost: rodina si může zvolit školku už ve 2 letech; dnes je v péči jen 4 % dětí do 3 let proti 24 % v OECD.",
+          "argument": [
+            "Odpověď: Studie navrhuje možnost volby, ne povinnost: „Každá rodina by měla mít možnost volby, jestli dítě umístí do mateřské školy už ve 2 letech.“ Povinná docházka ani zkrácení rodičovské mezi opatřeními není.",
+            "Čísla: Do brzké předškolní péče chodí 4 % dětí do 3 let, průměr OECD je 24 %, národní cíl 12 %, cíl EU 45 % do roku 2030; studie chce alespoň 25 % (vzdelanost: ucast_do_3_let_cr, ucast_do_3_let_oecd, cil_narodni_ucast, cil_eu_ucast, navrh_pece_25_procent). Stát dostane za korunu do včasné péče zpět 3–4 Kč (vzdelanost: vynos_vcasna_pece). Strop ceny 3 750 Kč měsíčně místo až 7 466 Kč (zeny: navrh_cenovy_strop, max_platba_detska_skupina_dnes).",
+            "Námitka: „Stát chce brát děti rodinám.“ Odpověď: citovaná věta o možnosti volby. Slabá místa: celkový účet (přestavba tříd, jesle, strop ceny) studie nevyčísluje, kdo doplatí rozdíl u ceny, kapitola neříká a počet nových míst není jednotný: kapitola mluví o potřebě 30–40 tisíc míst, souhrn dopadů počítá se 100 000 (zeny: potreba_mist_predskolni_pece).",
+            "Kam odkázat: /vzdelanost a /zeny."
+          ]
         },
         {
           "id": "luzka",
@@ -322,7 +448,14 @@
           "temata": [
             "zdravi"
           ],
-          "zdroj": "Kapitola 1.4 Zdraví a péče, opatření 3 „Přesun péče z lůžek“, 6 a 8; sekce Pomezí obou systémů"
+          "zdroj": "Kapitola 1.4 Zdraví a péče, opatření 3 „Přesun péče z lůžek“, 6 a 8; sekce Pomezí obou systémů",
+          "kratce": "Studie snižuje podíl nemocniční péče na výdajích z 46,5 % na 36,4 % do roku 2035, ne počet lůžek; podmínkou je souběžný rozvoj domácí péče.",
+          "argument": [
+            "Odpověď: Jde o podíl výdajů, ne o počet lůžek nebo nemocnic. Počty lůžek ani rušení konkrétních nemocnic studie neuvádí. Péče se má přesunout do jednodenní, ambulantní a domácí péče a telemedicíny.",
+            "Čísla: Podíl nemocniční péče má klesnout z 46,5 % rozpočtu na evropský průměr 36,4 %, tedy o 10 procentních bodů do roku 2035 (zdravi: nemocnice_podil_cr, nemocnice_podil_eu, cil_podil_nemocnic_2035). Terénní a odlehčovací služby mají v příštích deseti letech dostat přibližně o 40–50 mld. Kč víc; dnes je v terénu kolem 12 tisíc úvazků proti 48 tisícům v pobytových službách (zdravi: terenni_financovani_navyseni, personal_terenni, personal_pobytove).",
+            "Námitka: „Zavřou nám nemocnici.“ Odpověď: studie výslovně podmiňuje změnu tím, že kapacity na druhé straně (domácí a ošetřovatelská péče, terénní služby i lidé, kteří je zajistí) se rozvíjejí ve stejném čase, ne až po restrukturalizaci. Bez nich by se úspora jen přesunula do rodin a dotací. Slabá místa: studie neuvádí, zda 40–50 mld. Kč je součet za celé období, nebo roční částka, a kolik se přesunem z lůžek ušetří, nevyčísluje.",
+            "Kam odkázat: /zdravi (opatření 3)."
+          ]
         },
         {
           "id": "prakticti-lekari",
@@ -334,7 +467,14 @@
           "temata": [
             "zdravi"
           ],
-          "zdroj": "Kapitola 1.4 Zdraví, sekce 1. Zdravý životní styl a prevence (opatření 1), tabulka potenciálu zlepšení (McKinsey Health Institute)"
+          "zdroj": "Kapitola 1.4 Zdraví, sekce 1. Zdravý životní styl a prevence (opatření 1), tabulka potenciálu zlepšení (McKinsey Health Institute)",
+          "kratce": "Studie chce platit lékaře za skutečnou práci se zdravím pacienta; kapacitu praxí a riziko, že se odměna změní v sankci, ale neřeší.",
+          "argument": [
+            "Odpověď: Úhrady mají být navázané na krátké intervence a směrování k programům životního stylu (kouření, alkohol, nadváha, pohyb), ne na počet prohlídek. Na otázku o kapacitě praxí studie odpověď nemá, proto ji nevymýšlej.",
+            "Čísla: 72 % potenciálu zlepšení zdraví je řešitelných prevencí a životosprávou (zdravi: mck_potencial_prevence). Špatné zdraví stojí ekonomiku zhruba 14 % HDP, přibližně 700 mld. Kč ročně (zdravi: mck_ztrata_hdp). Návratnost investice do zdraví uvádí studie 1,7 Kč na 1 Kč podle MGI; údaj „až 10 : 1“ z Lancetu není mezi číslovanými zdroji kapitoly, tak ho raději nepoužívej (zdravi: navratnost_zdravi).",
+            "Námitka: „Praktik s 1 500 pacienty na prevenci čas nemá a odměna bude v praxi sankcí.“ Odpověď: je to oprávněná námitka a studie ji nevyvrací ani nepotvrzuje. Neřeší kapacitu praxí, počet registrovaných pacientů ani to, jak by úhrady vypadaly, aby lékař nepřišel o příjem, a nemá odhad, kolik lékařů nebo sester by prevence potřebovala. Řekni, že je to otevřená otázka pro autory.",
+            "Kam odkázat: /zdravi (opatření 1)."
+          ]
         },
         {
           "id": "lide-terenni-pece",
@@ -347,7 +487,14 @@
           "temata": [
             "zdravi"
           ],
-          "zdroj": "Kapitola 1.4 Zdraví, sekce o dlouhodobé péči (opatření 6 a 8, příčina „Nedostatek pracovníků“)"
+          "zdroj": "Kapitola 1.4 Zdraví, sekce o dlouhodobé péči (opatření 6 a 8, příčina „Nedostatek pracovníků“)",
+          "kratce": "Studie nedostatek lidí přiznává (v terénu 12 tisíc úvazků proti 48 tisícům v pobytových službách), ale nerozepisuje, odkud se vezmou.",
+          "argument": [
+            "Odpověď: Nedostatek lidí studie přiznává a navrhuje „posílení personálních kapacit“, zejména v terénní a ambulantní péči. Odkud ti lidé přijdou, ale nerozepisuje.",
+            "Čísla: Úvazky: 48 tisíc v pobytových službách, 12 tisíc v terénních, 4 tisíce v ambulantních (zdravi: personal_pobytove, personal_terenni, personal_ambulantni). Terénní kapacity pokrývají jen 5–10 % potřeb, ambulantní 15–20 % (zdravi: terenni_kapacity_pokryti). V Praze chybí až 3 000 sociálních pracovníků a pracovníků v sociálních službách (zdravi: praha_chybi_pracovniku). Peníze: o 40–50 mld. Kč víc během deseti let (zdravi: terenni_financovani_navyseni).",
+            "Námitka: „Na to nejsou lidé.“ Odpověď: přiznej, že je to mezera. Studie neuvádí, zda lidé přijdou přesunem z pobytových služeb, náborem, mzdami, vzděláváním nebo ze zahraničí, a neuvádí ani cílový počet úvazků. Tuto mezeru označila i odborná zpětná vazba k webu.",
+            "Kam odkázat: /zdravi (opatření 6 a 8)."
+          ]
         },
         {
           "id": "zarizeni-18-mist",
@@ -359,7 +506,14 @@
           "temata": [
             "zdravi"
           ],
-          "zdroj": "Kapitola 1.4 Zdraví, opatření 7 Pokračování v deinstitucionalizaci (bez číslovaného zdroje)"
+          "zdroj": "Kapitola 1.4 Zdraví, opatření 7 Pokračování v deinstitucionalizaci (bez číslovaného zdroje)",
+          "kratce": "Číslo 18 míst je tvrzení studie bez uvedeného zdroje; web ho přebírá a vede mezi místy k ověření garantem.",
+          "argument": [
+            "Odpověď: Je to tvrzení studie u deinstitucionalizace („nová zařízení by měla mít nejvýše 18 míst“). Zdroj k němu nepřipojuje a v rejstříku zdrojů kapitoly není. Nepředstavuj ho jako odborně doložené.",
+            "Čísla: Péče se má převádět z velkých zařízení, kde žije přibližně 15 tisíc lidí, do menších komunitních služeb (zdravi: nova_zarizeni_max_mist, deinstitucionalizace_osoby). Dlouhodobá péče v komunitě stojí v Česku 0,5 % HDP, jinde v Evropě 1,5–2,5 % HDP (zdravi: dlouhodoba_pece_komunita_cr, dlouhodoba_pece_komunita_eu).",
+            "Námitka: „Proč právě 18?“ Odpověď: nevíme, studie to neuvádí. Řekni, že je to návrh studie a garant kapitoly má původ čísla doplnit.",
+            "Kam odkázat: /zdravi (opatření 7)."
+          ]
         }
       ]
     },
@@ -381,6 +535,13 @@
               "href": "/jak-vznikl",
               "text": "Jak vznikl tento web"
             }
+          ],
+          "kratce": "Za strategií stojí PEER s osmi garanty témat; web převyprávěla AI a za čísla ručí autoři studie, ne web.",
+          "argument": [
+            "Odpověď: Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π a dalšími odborníky. Web ji převypráví pro laiky.",
+            "Garanti: Libor Dušek (bydlení), Jan Kříž (vzdělanost, regiony), Zuzana Freitas Lopesová (práce, ženy, exekuce), Josef Pavlovic (zdraví), Milan Damborský (oligarchie, kapitál), Tereza Nislerová (euro), Václav Vislous (průmysl, energie) a Jiří Hlavenka (inovace, stát).",
+            "Námitka: „Web psala umělá inteligence, kdo ručí za čísla?“ Odpověď: AI studii převyprávěla a za čísla neručí; proto má každé číslo pod sebou zdroj ze studie a plné znění kapitoly je o kliknutí dál. Za správnost strategie ručí její autoři. Netvrď, že čísla potvrdil každý garant, to zatím neplatí.",
+            "Kam odkázat: /jak-vznikl a /kdo-je-kdo."
           ]
         },
         {
@@ -397,6 +558,12 @@
               "href": "/kdo-je-kdo",
               "text": "Kdo je kdo"
             }
+          ],
+          "kratce": "Avatary garantů nakreslila AI podle veřejných fotek a každý z osmi garantů s tím souhlasil; pirátský klobouk je značka zadavatele.",
+          "argument": [
+            "Odpověď: Každou kapitolu vysvětluje avatar jejího garanta, aby bylo vidět, kdo za čísly ručí. Avatary nakreslila umělá inteligence podle veřejných fotek a profilů na lide.pirati.cz; souhlas všech osmi garantů byl udělen v říjnu 2026 a každý si může podobu nechat upravit.",
+            "Námitka: „Falešní lidé.“ Odpověď: jsou to ilustrace skutečných garantů s jejich souhlasem. Modelové postavy v příbězích (Petra, Martin, Jana a další) jsou naopak fiktivní a web je tak označuje; čísla v jejich příbězích jsou ze studie. Pirátský klobouk je značka Pirátů, kteří strategii zadali.",
+            "Kam odkázat: /kdo-je-kdo a /jak-vznikl."
           ]
         },
         {
@@ -417,6 +584,13 @@
               "href": "/kdo-je-kdo",
               "text": "Kdo je kdo"
             }
+          ],
+          "kratce": "Není to volební program: web převypráví studii PEER, kterou Piráti zadali, a ukazuje, kde se liší od dřívějších plánů Pirátů.",
+          "argument": [
+            "Odpověď: Ne. Je to studie Pirátské expertní ekonomické rady, kterou Piráti zadali a stojí za ní, ale web nepřidává vlastní sliby a drží se jejího textu a čísel. Říkej „strategie PEER“, ne „program Pirátů“.",
+            "Příklady: U eura studie píše, že Piráti euro obhajují především proto, že se běžným lidem finančně vyplatí. U energetického kupónu se strategie liší od dřívějšího plánu Pirátů z roku 2025 (2 250 Kč na osobu, 9 000 Kč na čtyřčlennou rodinu proti zhruba 5 000 Kč na domácnost; energie: kupon_castka_rocne) a web uvádí obě čísla.",
+            "Námitka: „Je to pirátská propaganda.“ Odpověď: kde se studie liší od dřívějších plánů nebo si odporuje, web to přiznává. Na otázku, co Piráti slíbí do voleb, ale tento web neodpovídá, tam odkaž na volební program.",
+            "Kam odkázat: /jak-vznikl a /kdo-je-kdo."
           ]
         },
         {
@@ -442,6 +616,13 @@
               "href": "/zaplaceni",
               "text": "Jak se to zaplatí"
             }
+          ],
+          "kratce": "Každé číslo má zdroj ze studie, ale potvrzení garanty web zatím tvrdit nemůže; kde si studie odporuje, je to u otázek přiznáno.",
+          "argument": [
+            "Odpověď: Každé číslo má pod sebou zdroj ze studie (kapitolu nebo sekci) a plné znění kapitoly je o kliknutí dál; celé PDF o 99 stranách je ke stažení. Tvrdit, že každé číslo potvrdil autor kapitoly, ale web zatím nemůže. Říkej „převzato ze studie, se zdrojem“, ne „ověřeno“.",
+            "Čísla, u kterých si dej pozor: mzdová mezera 18 % (text) proti 18,5 % (graf, tabulka; web používá 18,5 %) (zeny: mzdova_mezera_cr); minimální mzda 43 % průměru, přepočet 45,5 % (prace: minimalni_mzda_podil); exekuce 3–5 mld. Kč proti 25 mld. Kč ročně a 100 000 proti 200 000 lidí (exekuce: prinos_navratu_100k, cil_navrat_na_trh_2030); kupón 5 000 Kč na domácnost proti 2 250 Kč na osobu (energie: kupon_castka_rocne); úspora z eura přes 40 000 Kč proti přepočtu asi 31 500 Kč ročně (euro: uspora_domacnost).",
+            "Námitka: „Takže nevíte, jestli to platí.“ Odpověď: redakce vede seznam míst, která mají garanti potvrdit nebo opravit, a tato místa přiznává u jednotlivých otázek. V několika kapitolách jsou navíc čísla poznámek pod čarou posunutá a kapitola 3.3 nemá rejstřík zdrojů; web je přebírá tak, jak jsou.",
+            "Kam odkázat: /otazky, /jak-vznikl, /dopad a /zaplaceni."
           ]
         }
       ]

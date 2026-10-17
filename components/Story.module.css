@@ -6,13 +6,69 @@
 }
 .sticky {
   position: sticky;
-  top: calc(56px + env(safe-area-inset-top, 0px) + 1rem);
+  top: calc(var(--nav-h, calc(56px + env(safe-area-inset-top, 0px))) + 1rem);
+}
+.sticky {
+  display: grid;
+  gap: 0.9rem;
 }
 .bobrBox {
   display: grid;
   justify-items: center;
   gap: 0.8rem;
 }
+/* scéna aktivního kroku pod garantem; ztlumená, když patří k dřívějšímu kroku */
+.panelScena {
+  animation: story-scena-in 0.45s ease-out both;
+  transition: opacity 0.3s ease;
+}
+.panelScena[data-dim] { opacity: 0.5; }
+@keyframes story-scena-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+.panelScena[data-dim] { animation: none; }
+.inlineScena { display: none; }
+
+/* kolejnička s tečkami za kroky */
+.rail ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rail li { display: flex; align-items: center; }
+.rail li + li::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: var(--line);
+}
+.rail li[data-done] + li::before { background: var(--ink); }
+.dot {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--surface);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.rail li[data-done] .dot::before { background: var(--ink); }
+.dot[aria-current]::before { background: var(--sun); border-color: var(--ink); transform: scale(1.35); }
+.dot:hover::before { background: var(--sun); }
 .bubble {
   background: var(--surface);
   border: 2px solid var(--ink);
@@ -68,14 +124,20 @@
 @media (max-width: 760px) {
   .story { grid-template-columns: 1fr; gap: 0; }
   .sticky {
-    top: calc(56px + env(safe-area-inset-top, 0px));
+    top: var(--nav-h, calc(56px + env(safe-area-inset-top, 0px)));
     z-index: 5;
     background: var(--paper);
     padding-block: 0.4rem;
     border-bottom: 1px solid var(--line);
   }
   .bobrBox { grid-template-columns: auto minmax(0, 1fr); align-items: center; text-align: left; }
-  .bobrBox svg { width: 96px !important; height: auto !important; }
+  .sticky { gap: 0.25rem; }
+  .bobrBox > svg { width: 96px !important; height: auto !important; }
+  .panelScena { display: none; }
+  .inlineScena { display: block; margin-bottom: 0.3rem; }
+  .dot { width: 18px; height: 18px; }
+  .dot::before { width: 8px; height: 8px; }
+  .rail li + li::before { width: 10px; }
   .bubble { max-width: none; text-align: left; }
   .bubble::before { left: -10px; top: 50%; transform: translateY(-50%) rotate(-45deg); }
   .step { min-height: 0; opacity: 1; padding: 1rem 1rem; }

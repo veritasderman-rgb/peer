@@ -23,6 +23,15 @@ framework se rozpozná automaticky (Next.js), žádné proměnné prostředí ne
 Volitelné proměnné prostředí (`lib/site.ts`): `NEXT_PUBLIC_SITE_URL` (adresa webu), `NEXT_PUBLIC_KONTAKT_EMAIL` a
 `NEXT_PUBLIC_REPO_URL` (kam vede tlačítko „Našel jsi chybu?“), `NEXT_PUBLIC_MEDIA_URL` (videa mimo repo, viz níže).
 
+Pro sběr zpětné vazby (`/api/zpetna-vazba`, viz [Zpětná vazba a analytika](#zpětná-vazba-a-analytika)), obě jsou jen na serveru a nepovinné:
+
+| Proměnná | Co dělá |
+|---|---|
+| `FEEDBACK_WEBHOOK_URL` | zpětná vazba se pošle jako JSON (`POST`) na tuto adresu (Slack, Zapier, Make, vlastní endpoint); má přednost |
+| `GITHUB_FEEDBACK_TOKEN` | token s právem zapisovat issues; zpětná vazba se založí jako issue v repu z `NEXT_PUBLIC_REPO_URL` (štítky `zpetna-vazba` a typ) |
+
+Bez obou se zpětná vazba jen zapíše do logu serveru (`[zpetna-vazba]`); návštěvník vidí poděkování tak jako tak.
+
 ## Testy a kontrola odkazů
 
 ```bash
@@ -84,7 +93,10 @@ Každé video má namluvený komentář a hudební podkres, titulky zůstávají
 
 - Text komentáře je v poli `narration` scénáře (`video/scripts/<slug>.ts`): šest odstavců (hook, problem, proc, navrh,
   dopad, outro), čísla slovy, tykání. Outro je ve všech tématech stejné.
-- Namluvení: ElevenLabs, hlas Katty (`7JbZPqJGWUfXXBim0T8U`), model `eleven_v3`, jedna generace na odstavec.
+- Namluvení: ElevenLabs, model `eleven_v3`, jedna generace na odstavec. Hlas podle garanta kapitoly (`GARANTI[id].zena`):
+  mužský „Kuba“ (`Lr0h58bpmHY6zGpS4Hef`) pro kapitoly s garantem, ženský „Aneta“ (`kIlcjzuo6CyT7P5qkQYg`) pro kapitoly
+  s garantkou (euro, práce, ženy, exekuce). Úvodní video (mluví rada) zůstává v hlasu Katty (`7JbZPqJGWUfXXBim0T8U`).
+  Narace v `video/scripts/*.ts` jsou psané s čísly slovy a bez zkratek, aby je TTS nečetl špatně.
   Soubory `public/audio/<slug>/<scena>.mp3`. Hudba: ElevenLabs Music, `public/audio/music/bed.mp3` (80 s, instrumentální).
 - `node scripts/audio-manifest.mjs` změří délky (ffprobe) do `video/audio-manifest.json`; Remotion podle něj nastaví
   délku scén (řeč + dozvuk) a rozloží karty ve scéně podle vět komentáře. Téma bez zvuku v manifestu se vyrenderuje
@@ -131,3 +143,39 @@ Každé video má namluvený komentář a hudební podkres, titulky zůstávají
 4. Zaregistrovat téma v `topics/index.ts` (karta na úvodní stránce se zapne sama) a scénář videa v `video/scripts/index.ts`.
 
 Barvy a písma jsou podle [styleguide.pirati.cz](https://styleguide.pirati.cz/) (tokeny v `app/globals.css`).
+
+## Zpětná vazba a analytika
+
+**Zpětná vazba.** Na konci každého tématu je box „Co ti tu chybí?“ a u každé odpovědi na `/otazky` palec nahoru/dolů.
+Oba posílají `POST /api/zpetna-vazba` s JSON `{ typ, stranka, text?, hodnota?, id?, web? }`, kde `typ` je
+`chybi` | `hlas` | `overeni` | `chyba`. Pole `web` je past na boty (vyplněné = tváří se jako úspěch, nic se neukládá).
+Limity: `stranka` ≤ 200 znaků, `text` ≤ 2000, `hodnota` a `id` ≤ 200; nejvýš 20 požadavků z jedné IP za 10 minut (429).
+Kam se záznam uloží, určují proměnné výše (webhook → GitHub issue → log). Hlasy u odpovědí si prohlížeč pamatuje
+v `localStorage` (`hlas:<id>`), takže tlačítka se u téže otázky nenabízejí znovu.
+
+**Analytika.** Události posílá `lib/analytics.ts` přes `track` z `@vercel/analytics` (ve Vercelu Web Analytics, záložka Events;
+na serveru a při chybě nedělá nic). Neposílá se žádný osobní údaj ani text, který čtenář napsal.
+
+| Událost | Kdy | Data |
+|---|---|---|
+| `video_prehrano` | první přehrání videa na stránce | `slug`, `format` (`wide`/`reel`) |
+| `kalkulacka_pouzita` | první změna vstupu kalkulačky (nejvýš jednou za načtení) | `nazev` |
+| `kviz_dokoncen` | odeslání kvízu „Kolik ti strategie přinese?“ | `slug`, `skore`, `max` |
+| `chyba_nahlasena` | klik na „Nahlásit e-mailem“ / „Nahlásit na GitHubu“ | `stranka` |
+| `sdileno` | sdílení nebo kopírování odkazu | `kanal` (`nativni`, `facebook`, `x`, `linkedin`, `bluesky`, `kopie`), `stranka` |
+| `zpetna_vazba_odeslana` | odeslání boxu „Co ti tu chybí?“ nebo hlasu | `typ`, `stranka` |
+
+## Stránka /overeni (skrytá)
+
+Stránka pro garanty kapitol: body k ověření se berou z `docs/k-overeni.md` (každá odrážka pod nadpisem `## …`), u každého je
+formulář „Potvrzuji“ / „Opravit“, který posílá `POST /api/zpetna-vazba` s `typ: "overeni"`, `stranka: "/overeni"`,
+`id` bodu, `hodnota` `potvrzeno` | `opraveno` a `text` ve tvaru `<jméno>: <poznámka>`. Tlačítko „Potvrdit celou kapitolu“
+posílá jeden záznam s `id` sekce. Stránka má `noindex`, není v navigaci, sitemapě ani `llms.txt`.
+
+- **Přístup:** je-li nastavená proměnná `OVERENI_KLIC`, stránka se otevře jen na `/overeni?klic=<hodnota>`, jinak je 404.
+  Bez proměnné je stránka otevřená a ukazuje žluté varování.
+- **Id bodu** = id sekce (slug nadpisu, např. `1-1-bydleni`) + šestiznakový hash textu bodu (`1-1-bydleni-1yjmes`). Přeskládání
+  bodů stavy nerozbije; přepsání znění bodu dá nové id a bod se vrátí do stavu „čeká“. Id je u každého bodu vidět na stránce.
+- **Stavy** jsou v `data/overeni.json`: `{ "<id>": { "stav": "potvrzeno" | "opraveno" | "sporne", "kdo": "Jméno", "kdy": "RRRR-MM-DD", "poznamka"?: "…" } }`.
+  Editor je doplňuje ručně podle došlých záznamů zpětné vazby (id + hodnota + text) a nasadí web znovu; klíče začínající `_` se ignorují.
+- Prohlížeč garanta si v `localStorage` (`overeni:<id>`) pamatuje, že bod už odeslal, a jméno (`overeni:kdo`).

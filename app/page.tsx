@@ -56,7 +56,8 @@ export default function Home() {
             Tenhle web ho vysvětluje bez ekonomické hantýrky.
           </p>
           <div className={styles.actions}>
-            <Link className="btn" href="/bydleni">Začni bydlením</Link>
+            <Link className="btn" href="/pribeh">Přečti si příběh</Link>
+            <Link className="btn secondary" href="/bydleni">Začni bydlením</Link>
             <Link className="btn secondary" href="/kdo-je-kdo">Kdo je kdo</Link>
           </div>
         </div>

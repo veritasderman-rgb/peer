@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaKupon.module.css";
 
@@ -10,13 +11,14 @@ const PER_PERSON = 2_170; // Kč ročně na osobu při povolence 60 EUR (5 000 K
 const BASE_PRICE = 60; // EUR za povolenku
 
 export function KalkulackaKupon() {
+  const pouzita = useKalkulackaPouzita("kupon");
   const [people, setPeople] = useState(2);
   const [price, setPrice] = useState(60);
 
   const perYear = Math.round(PER_PERSON * people * (price / BASE_PRICE));
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-kupon-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-kupon-title" onChangeCapture={pouzita}>
       <h3 id="kalk-kupon-title" className={s.title}>
         Energetický kupón: kolik dostaneš zpátky?
       </h3>

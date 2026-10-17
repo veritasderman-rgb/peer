@@ -17,6 +17,7 @@ const steps: StoryStep[] = [
     title: "Svářeč na minimálce",
     text: <>Martin je svářeč z Ústecka. Pracuje na plný úvazek a bere minimální mzdu, <b>22 400 Kč</b>. To je jen <b>43 %</b> průměrné mzdy. Stejně jako až <b>80 %</b> lidí na minimálce má nárok na sociální dávky.</>,
     bobr: "Plný úvazek a pořád nárok na dávky. To je divné.",
+    scena: { typ: "podil", hodnota: 80, popis: "lidí na minimálce má nárok na sociální dávky" }, // fakta: narok_na_davky, minimalni_mzda_2026, minimalni_mzda_podil
   },
   {
     mood: "thinking",
@@ -29,12 +30,14 @@ const steps: StoryStep[] = [
     title: "Sousedé nás předběhli",
     text: <>Minimální mzda je v Polsku <b>27 600 Kč</b>, v Litvě <b>28 000 Kč</b> a v Chorvatsku <b>25 500 Kč</b>. U nás je <b>22 400 Kč</b>. Česko dlouho lákalo investory levnou prací a okolní země nás dohnaly.</>,
     bobr: "Levná práce byla výhoda. Dnes je to past.",
+    scena: { typ: "srovnani", jednotka: "Kč", popis: "Minimální mzda v roce 2026", polozky: [{ nazev: "Litva", hodnota: 28000 }, { nazev: "Polsko", hodnota: 27600 }, { nazev: "Chorvatsko", hodnota: 25500 }, { nazev: "Česko", hodnota: 22400, zvyrazni: true }] }, // fakta: minimalni_mzda_2026, minimalni_mzda_polsko; Litva a Chorvatsko z grafy.minimalniMzdy
   },
   {
     mood: "neutral",
     title: "Přeučit se nejde",
     text: <>Martin by se rád přeučil. Jenže na rekvalifikace šlo v roce 2023 jen <b>0,005 % HDP</b>, průměr OECD je <b>0,1 %</b>. V 1. pololetí 2026 se počet rekvalifikací propadl o <b>80 %</b>.</>,
     bobr: "Dveře ven jsou skoro zavřené.",
+    scena: { typ: "cislo", hodnota: 0.005, desetinna: 3, jednotka: "% HDP", popis: "šlo na rekvalifikace v roce 2023, průměr OECD je 0,1 %" }, // fakta: rekvalifikace_podil_hdp, oecd_prumer_hdp
   },
   {
     mood: "happy",
@@ -42,6 +45,7 @@ const steps: StoryStep[] = [
     title: "Co se pro Martina změní",
     text: <>Minimální mzda vzroste na <b>50 %</b> průměrné mzdy. Při ztrátě práce dostane 80% podporu v prvních <b>2 měsících</b> a osobní vzdělávací účet na kurzy.</>,
     bobr: "Čtyři opatření. Ukážu ti je jedno po druhém.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "43 %", popis: "minimální mzda z průměrné dnes" }, potom: { hodnota: "50 %", popis: "cíl: minimální mzda z průměrné" } }, // fakta: minimalni_mzda_podil, navrh_minimalni_mzda
   },
 ];
 

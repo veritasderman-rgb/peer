@@ -31,18 +31,31 @@ const steps: StoryStep[] = [
     title: "Komu patří hodnota",
     text: <>Firmy pod zahraniční kontrolou vytvářejí <b>60 %</b> přidané hodnoty našeho zpracovatelského průmyslu a <b>83 %</b> jeho vývozu. Návrh, značka, software a zákazník jsou jinde, a tam leží marže.</>,
     bobr: "Zahraniční investice nám po roce 1989 pomohly. Strop mezd ale zůstává.",
+    scena: { typ: "podil", hodnota: 60, popis: "přidané hodnoty průmyslu: firmy pod zahraniční kontrolou" }, // fakta: pridana_hodnota_zahranicni_kontrola
   },
   {
     mood: "surprised",
     title: "Kam jdou zisky",
     text: <>Zisky zahraničních vlastníků dosáhly v roce 2025 <b>602 mld. Kč</b>, tedy 7 % HDP. Téměř <b>340 mld. Kč</b> odešlo v dividendách. Přes 262 mld. Kč vlastníci reinvestovali.</>,
     bobr: "Vlastníci mají na zisk právo. Otázka je, kolik hodnoty zůstane tady.",
+    scena: { // fakta: zisky_zahranicnich_vlastniku_2025_kc, dividendy_odesle_2025, reinvestice_2025
+      typ: "srovnani",
+      nadpis: "Zisky zahraničních vlastníků v roce 2025",
+      jednotka: "mld. Kč",
+      polozky: [
+        { nazev: "Zisky celkem", hodnota: 602 },
+        { nazev: "Dividendy do zahraničí", hodnota: 340, zvyrazni: true },
+        { nazev: "Reinvestováno", hodnota: 262 },
+      ],
+      popis: "zisky odešly hlavně v dividendách",
+    },
   },
   {
     mood: "neutral",
     title: "Proč vlastní produkt nevzniká",
     text: <>Daňový odpočet na vývoj využilo v roce 2024 jen <b>721 firem</b>. Penzijní fondy drží <b>63 %</b> úspor v dluhopisech, ne v růstových firmách. A univerzity mají <b>86</b> spin-offů, zatímco samotná ETH Zurich pomohla loni založit <b>46</b> nových firem.</>,
     bobr: "Nápady jsou. Chybí zákazník, kapitál a rychlé smlouvy.",
+    scena: { typ: "cislo", hodnota: 721, jednotka: "firem", popis: "firem využilo odpočet na VaV, nejméně od roku 2010" }, // fakta: danovy_odpocet_firmy_2024
   },
   {
     mood: "happy",
@@ -50,6 +63,11 @@ const steps: StoryStep[] = [
     title: "Co se pro Lenku změní",
     text: <>Stát se stane prvním zákazníkem: až <b>1 %</b> zakázek, zhruba <b>8,4 mld. Kč</b> ročně na vývoj nových řešení. Investice do automatizace a softwaru půjdou odepsat hned v prvním roce. Podpora poteče k projektům s vyšší přidanou hodnotou. Cíl je <b>200</b> nových spin-offů do roku 2032.</>,
     bobr: "Jedenáct opatření ve čtyřech liniích. Ukážu ti je.",
+    scena: { // fakta: spin_offy_rocne, cil_spin_offy_2027_2032, cil_spin_offy_tempo
+      typ: "predtim-potom",
+      predtim: { hodnota: "~6 ročně", popis: "nových univerzitních spin-offů dnes" },
+      potom: { hodnota: "200", popis: "nových spin-offů v letech 2027 až 2032" },
+    },
   },
 ];
 

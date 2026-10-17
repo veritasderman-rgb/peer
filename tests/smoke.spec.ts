@@ -5,8 +5,8 @@ import { expect, test, type Page } from "@playwright/test";
    Přibyde-li téma nebo stránka, doplň je sem (a hlídá to i test sitemapy). */
 
 const STATIC = [
-  "/", "/videa", "/dopad", "/cesta", "/zaplaceni", "/kolik-ti-to-prinese", "/moje-obec", "/otazky",
-  "/pro-sdileni", "/pro-media", "/en", "/kdo-je-kdo", "/jak-vznikl",
+  "/", "/pribeh", "/videa", "/dopad", "/cesta", "/zaplaceni", "/kolik-ti-to-prinese", "/moje-obec", "/otazky",
+  "/pro-sdileni", "/pro-media", "/en", "/kdo-je-kdo", "/jak-vznikl", "/hledat", "/argumentar",
 ];
 const SLUGS = [
   "bydleni", "vzdelanost", "prace", "zeny", "exekuce", "zdravi", "oligarchie",
@@ -63,7 +63,7 @@ test.describe("technické soubory", () => {
     expect(await res.text()).toMatch(/sitemap\.xml/);
   });
 
-  test("/sitemap.xml obsahuje všech 27 stránek", async ({ request }) => {
+  test("/sitemap.xml obsahuje všech 30 stránek", async ({ request }) => {
     const res = await request.get("/sitemap.xml");
     expect(res.status()).toBe(200);
     const xml = await res.text();

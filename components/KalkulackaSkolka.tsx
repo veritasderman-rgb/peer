@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaSkolka.module.css";
 
@@ -19,6 +20,7 @@ function money(v: number) {
 }
 
 export function KalkulackaSkolka() {
+  const pouzita = useKalkulackaPouzita("skolka");
   const [places, setPlaces] = useState(100_000);
   const [fee, setFee] = useState(FEE_TODAY_MAX);
 
@@ -27,7 +29,7 @@ export function KalkulackaSkolka() {
   const saved = Math.max(0, fee - FEE_CAP);
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-skolka-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-skolka-title" onChangeCapture={pouzita}>
       <h3 id="kalk-skolka-title" className={s.title}>
         Co přinese jedno místo ve školce?
       </h3>

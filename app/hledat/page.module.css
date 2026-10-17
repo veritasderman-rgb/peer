@@ -1,0 +1,8 @@
+.page { display: block; }
+.hero { display: grid; gap: 1rem; padding-block: 3rem 1rem; }
+.lede { max-width: 52ch; font-size: var(--s1); }
+.results { padding-block: 0.5rem 4rem; }
+
+@media (max-width: 760px) {
+  .hero { padding-block: 2.25rem 0.75rem; }
+}

@@ -47,7 +47,7 @@
 .garant { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 1.2rem; padding: 1.2rem; align-items: start; }
 .garantInitials {
   width: 84px; height: 84px; border-radius: 50%;
-  background: var(--ink); color: var(--sun);
+  background: #000; color: var(--sun); /* pevně černá: --ink se v tmavém režimu mění na světlou a žlutý text by splynul */
   font-family: var(--f-display); font-size: 2rem; display: grid; place-items: center;
 }
 .garantName { font-size: var(--s2); }
@@ -72,4 +72,5 @@
 .crumbs li + li::before { content: "›"; margin-right: 0.3rem; }
 .crumbs a { color: var(--ink); }
 .sdilet { margin-top: 0.5rem; }
-.sdiletKonec { padding-block: 0 3rem; }
+.sdiletKonec { padding-block: 0 1.5rem; }
+.zpetnaVazba { padding-block: 0 3rem; }
