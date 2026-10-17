@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const staticke: { path: string; priority: number }[] = [
     { path: "/", priority: 1 },
+    { path: "/pribeh", priority: 0.9 },
     { path: "/videa", priority: 0.8 },
     { path: "/dopad", priority: 0.8 },
     { path: "/cesta", priority: 0.8 },
@@ -19,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/en", priority: 0.6 },
     { path: "/kdo-je-kdo", priority: 0.7 },
     { path: "/jak-vznikl", priority: 0.5 },
+    { path: "/hledat", priority: 0.4 },
+    { path: "/argumentar", priority: 0.6 },
   ];
   return [
     ...staticke.map((s) => ({ url: abs(s.path), lastModified, changeFrequency: "weekly" as const, priority: s.priority })),
