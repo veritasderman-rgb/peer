@@ -31,23 +31,23 @@
 }
 .nav {
   display: flex;
-  gap: 1.1rem;
+  gap: 0.8rem 0.95rem;
   flex-wrap: wrap;
   font-family: var(--f-data);
   font-weight: 700;
   font-size: var(--s-1);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 .nav a { color: inherit; text-decoration: none; padding-block: 0.2rem; border-bottom: 2px solid transparent; }
-.nav a:hover { color: var(--sun); }
+.nav a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
 .nav a[aria-current="page"] { border-bottom-color: var(--sun); }
 .header :focus-visible { outline-color: var(--paper); } /* hlavička je v --ink, tedy tmavá ve světlém a světlá v tmavém režimu */
 .nav a:focus-visible { outline: 3px solid var(--paper); outline-offset: 3px; }
 /* Hledání: na počítači vpravo v prvním řádku vedle značky, na telefonu uvnitř rozbaleného menu. */
-.hledaniDesktop { order: 1; margin-inline-start: auto; }
+.inner .hledaniDesktop { order: 1; margin-inline-start: auto; }
 .nav { order: 2; }
-.hledaniMobil { display: none; text-transform: none; letter-spacing: 0; font-weight: 500; }
+.nav .hledaniMobil { display: none; text-transform: none; letter-spacing: 0; font-weight: 500; }
 
 /* tlačítko Menu jen na telefonu */
 .toggle {
@@ -74,8 +74,8 @@
   .toggle { display: inline-flex; }
   .nav { display: none; flex-direction: column; gap: 0; width: 100%; padding-block: 0.4rem 0.6rem; border-top: 1px solid rgba(255, 255, 255, 0.2); }
   .navOpen { display: flex; }
-  .hledaniDesktop { display: none; }
-  .hledaniMobil { display: flex; width: 100%; margin-block: 0.6rem 0.2rem; }
+  .inner .hledaniDesktop { display: none; }
+  .nav .hledaniMobil { display: flex; width: 100%; margin-block: 0.6rem 0.2rem; }
   .nav a { padding: 0.65rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
   .nav a[aria-current="page"] { color: var(--sun); border-bottom-color: rgba(255, 255, 255, 0.12); }
 }

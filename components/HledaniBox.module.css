@@ -10,7 +10,7 @@
   color: inherit;
   font-family: var(--f-data);
 }
-.form:focus-within { border-color: var(--focus); box-shadow: 0 0 0 2px var(--focus); }
+.form:focus-within { border-color: var(--paper); box-shadow: 0 0 0 2px var(--paper); }
 .label { display: flex; flex: 1 1 auto; min-width: 0; }
 .input {
   flex: 1 1 auto;

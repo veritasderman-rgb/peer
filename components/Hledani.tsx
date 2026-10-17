@@ -150,6 +150,7 @@ export function Hledani({ temata }: { temata: Record<string, string> }) {
         action="/hledat"
         method="get"
         role="search"
+        aria-label="Hledání na stránce"
         className={styles.form}
         onSubmit={(e) => {
           /* Enter: výsledky už jsou vidět, tak jen skoč na první (na telefonu se tím schová klávesnice) */
@@ -173,7 +174,7 @@ export function Hledani({ temata }: { temata: Record<string, string> }) {
           enterKeyHint="search"
           autoFocus
           aria-describedby={statusId}
-          aria-controls="hledat-vysledky"
+          aria-controls={zobrazene.length ? "hledat-vysledky" : undefined}
         />
       </form>
 

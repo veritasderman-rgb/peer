@@ -6,7 +6,7 @@ import styles from "./HledaniBox.module.css";
    takže sedí na černé hlavičce i na světlé stránce. `kompaktni` = užší pole a tlačítko jen s lupou. */
 export function HledaniBox({ kompaktni = false, className }: { kompaktni?: boolean; className?: string }) {
   return (
-    <Form action="/hledat" role="search" className={`${styles.form} ${kompaktni ? styles.kompaktni : ""} ${className ?? ""}`}>
+    <Form action="/hledat" role="search" aria-label="Hledat na webu" className={`${styles.form} ${kompaktni ? styles.kompaktni : ""} ${className ?? ""}`}>
       <label className={styles.label}>
         <span className="sr-only">Hledat na webu</span>
         <input
