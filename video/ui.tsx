@@ -227,23 +227,23 @@ export function GarantLayer({ segments, kdo }: { segments: Segment[]; kdo: Mluvc
   const y = (1 - intro) * (size + 80);
   const { role: popis } = popisMluvciho(kdo);
   const jmeno = kdo === "rada" ? "PEER" : jmenoMluvciho(kdo);
-  const sirkaJmenovky = L.reel ? L.W - 120 : size * 3.2;
+  const sirkaJmenovky = L.reel ? L.W - 120 - size - 30 : Math.min(900, L.W - 200 - size - 30);
 
   return (
     <div
       style={{
         position: "absolute",
-        left: L.reel ? 60 : L.bobr.cx - size / 2,
+        left: L.bobr.cx - size / 2,
         top: L.bobr.bottom - size,
         display: "flex",
         alignItems: "center",
-        gap: Math.round(size * 0.18),
+        gap: Math.round(size * 0.2),
         transform: `translateY(${y}px)`,
         opacity: intro,
       }}
     >
       <GarantSvg kdo={kdo} size={size} fontDisplay={F.display} fontBody={F.body} style={{ display: "block", flex: "none" }} />
-      <div style={{ width: sirkaJmenovky, fontFamily: F.display, fontSize: Math.round(L.fs.small * 0.95), lineHeight: 1.1, color: C.ink, letterSpacing: "0.03em" }}>
+      <div style={{ width: sirkaJmenovky, fontFamily: F.display, fontSize: Math.round(L.fs.small * 0.9), lineHeight: 1.1, color: C.ink, letterSpacing: "0.03em", whiteSpace: "nowrap" }}>
         <div>{jmeno}</div>
         <div style={{ fontFamily: F.body, fontSize: Math.round(L.fs.small * 0.6), color: C.cyan, fontWeight: 700, letterSpacing: "0.02em", marginTop: 6 }}>{popis}</div>
       </div>
