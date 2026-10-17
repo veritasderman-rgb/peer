@@ -154,7 +154,7 @@ export default function JakVzniklPage() {
         <h2 id="usetreno">Kolik by to stálo postaru</h2>
         <p className="prose muted">
           Odhad, co by pilotní stránka o bydlení stála u běžné české agentury. Je to náš odhad podle obvyklých hodinových
-          sazeb, žádná nabídka jsme nepoptávali.
+          sazeb, žádnou nabídku jsme nepoptávali.
         </p>
         <ol className={styles.odhad}>
           {odhad.map((o) => (
