@@ -30,7 +30,7 @@ export default function Image() {
           <div style={{ fontSize: 40, fontWeight: 700, lineHeight: 1.15, maxWidth: 1000 }}>
             Bilion korun ročně navíc na konci dekády. 68 000 Kč na pracujícího.
           </div>
-          <div style={{ fontSize: 32, color: "#d9d9d9" }}>Hospodářská strategie 2026–2035 vysvětlená pro lidi. S bobrem.</div>
+          <div style={{ fontSize: 32, color: "#d9d9d9" }}>Hospodářská strategie 2026–2035 vysvětlená pro lidi. Vysvětlují ji sami autoři.</div>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 28, color: "#adadad" }}>
           <span>14 témat · videa · kalkulačky · plné znění</span>

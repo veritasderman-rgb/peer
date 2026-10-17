@@ -4,7 +4,7 @@ import z from "@/data/zaplaceni.json";
 import dopad from "@/data/dopad.json";
 import { getTopic } from "@/topics";
 import { BigNumber } from "@/components/BigNumber";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -115,9 +115,9 @@ export default function ZaplaceniPage() {
             ))}
           </div>
         </div>
-        <BobrBubble mood="thinking" side="left">
+        <GarantBubble kdo="rada" mood="thinking" side="left">
           První otázka, kterou dostanu: „A kdo to zaplatí?“ Tady je odpověď po tématech, i s tím, co studie nespočítala.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="bilance">

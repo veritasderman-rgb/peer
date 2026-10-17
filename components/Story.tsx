@@ -2,15 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "motion/react";
-import { Bobr } from "@/components/Bobr";
+import { Garant } from "@/components/Garant";
+import type { Mluvci } from "@/lib/garanti";
 import styles from "./Story.module.css";
 
 import type { Mood } from "@/lib/topics";
 export type { Mood };
 export type StoryStep = { mood: Mood; pointing?: boolean; title?: string; text: React.ReactNode; bobr?: string };
 
-/* Scrollytelling: text kroky projíždějí kolem, bobr zůstává přilepený a mění náladu
-   podle kroku, který je zrovna uprostřed obrazovky. Bublina u bobra nese jeho poznámku. */
+/* Scrollytelling: text kroky projíždějí kolem, garant kapitoly zůstává přilepený a mění náladu
+   podle kroku, který je zrovna uprostřed obrazovky. Bublina u garanta nese jeho poznámku
+   (pole kroku se z historických důvodů jmenuje bobr). */
 function Step({ step, index, onActive, children }: { step: StoryStep; index: number; onActive: (i: number) => void; children: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { margin: "-45% 0px -45% 0px" });
@@ -25,14 +27,14 @@ function Step({ step, index, onActive, children }: { step: StoryStep; index: num
   );
 }
 
-export function Story({ steps, persona }: { steps: StoryStep[]; persona: { who: string; ctx: string } }) {
+export function Story({ steps, persona, kdo }: { steps: StoryStep[]; persona: { who: string; ctx: string }; kdo: Mluvci }) {
   const [active, setActive] = useState(0);
   const step = steps[active] ?? steps[0];
   return (
     <div className={styles.story}>
       <div className={styles.sticky}>
         <div className={styles.bobrBox}>
-          <Bobr mood={step.mood} pointing={step.pointing} size={200} label={`Bobr: ${step.mood}`} />
+          <Garant kdo={kdo} mood={step.mood} pointing={step.pointing} size={200} />
           {step.bobr && (
             <p className={styles.bubble} aria-live="polite">{step.bobr}</p>
           )}

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Bobr } from "@/components/Bobr";
-import { BobrBubble } from "@/components/BobrBubble";
+import { Garant } from "@/components/Garant";
+import { GarantBubble } from "@/components/GarantBubble";
+import { garantTematu } from "@/lib/garanti";
 import { TopicVideo } from "@/components/TopicVideo";
 import { uvodVideo } from "@/topics";
 import { getTopic } from "@/topics";
@@ -38,7 +39,7 @@ const topics = topicList.map((t) => ({ ...t, href: getTopic(t.slug) ? `/${t.slug
 
 const depths = [
   { time: "10 vteřin", text: "Jedna věta a jedno číslo. Hned víš, o co jde." },
-  { time: "2 minuty", text: "Krátký výklad s bobrem, grafem a přepočtem na tvůj život." },
+  { time: "2 minuty", text: "Krátký výklad s garantem kapitoly, grafem a přepočtem na tvůj život." },
   { time: "20 minut", text: "Plné znění strategie se zdroji. Pro ty, kdo chtějí vidět každé číslo." },
 ];
 
@@ -56,13 +57,13 @@ export default function Home() {
           </p>
           <div className={styles.actions}>
             <Link className="btn" href="/bydleni">Začni bydlením</Link>
-            <Link className="btn secondary" href="/proc-bobr">Proč bobr?</Link>
+            <Link className="btn secondary" href="/kdo-je-kdo">Kdo je kdo</Link>
           </div>
         </div>
         <div className={styles.heroBobr}>
-          <BobrBubble mood="neutral" pointing>
-            Nejdřív bydlení. Na byt dnes potřebuješ 15 ročních platů. Ukážu ti proč a co s tím.
-          </BobrBubble>
+          <GarantBubble kdo="rada" mood="neutral" pointing>
+            Jsme PEER, osm lidí, kteří strategii napsali. Začni bydlením: na byt dnes potřebuješ 15 ročních platů.
+          </GarantBubble>
         </div>
       </section>
 
@@ -79,8 +80,8 @@ export default function Home() {
         <p className="eyebrow">Nevíš, kde začít?</p>
         <h2 id="situace">Vyber, co se tě týká</h2>
         <p className={`prose ${styles.depthIntro}`}>
-          Strategie má čtrnáct kapitol. Tebe se ale netýkají všechny stejně. Řekni, v jaké jsi situaci, a bobr vybere,
-          co z ní pro tebe plyne.
+          Strategie má čtrnáct kapitol. Tebe se ale netýkají všechny stejně. Řekni, v jaké jsi situaci, a vybereme
+          ti, co z ní pro tebe plyne.
         </p>
         <Situace data={buildSituaceView()} />
       </section>
@@ -114,7 +115,7 @@ export default function Home() {
                   <p className={`num ${styles.hook}`}>{t.hook}</p>
                   {t.href ? null : <p className={styles.soon}>připravujeme</p>}
                 </div>
-                {t.href ? <Bobr mood="happy" size={64} /> : null}
+                {t.href ? <Garant kdo={garantTematu(t.slug)} mood="happy" size={64} /> : null}
               </>
             );
             return (

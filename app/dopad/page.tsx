@@ -3,7 +3,7 @@ import Link from "next/link";
 import dopad from "@/data/dopad.json";
 import { getTopic } from "@/topics";
 import { BigNumber } from "@/components/BigNumber";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import { NabehChart } from "@/components/NabehChart";
 import styles from "./page.module.css";
 
@@ -33,9 +33,9 @@ export default function DopadPage() {
             plyne, a poctivě i to, jak se k tomu číslu došlo.
           </p>
         </div>
-        <BobrBubble mood="thinking" side="left">
+        <GarantBubble kdo="rada" mood="thinking" side="left">
           Jeden procentní bod zní jako nic. Za deset let je z toho bilion korun ročně.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="cisla">

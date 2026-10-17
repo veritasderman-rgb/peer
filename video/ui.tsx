@@ -1,6 +1,7 @@
 import { createContext, useContext, type CSSProperties, type ReactNode } from "react";
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { BobrSvg, type BobrMood } from "../components/BobrSvg";
+import { GarantSvg } from "../components/GarantSvg";
+import { jmenoMluvciho, type GarantMood, type Mluvci } from "../lib/garanti";
 import { fitSize, textWidth } from "./measure";
 import { C, F, type Layout } from "./theme";
 import { activeSegment, XFADE, type SceneId, type Segment } from "./timeline";
@@ -166,10 +167,10 @@ export function NumberBlock({ text, size, maxWidth, countFrom, countFrames = 24,
 export function Header({ titulek }: { titulek: string }) {
   const L = useLayout();
   const fs = L.fs.small;
-  const badge = <span style={{ background: C.sun, padding: "0.12em 0.3em 0.02em", whiteSpace: "nowrap" }}>Bobr za minutu</span>;
+  const badge = <span style={{ background: C.sun, padding: "0.12em 0.3em 0.02em", whiteSpace: "nowrap" }}>Strategie za minutu</span>;
   const base: CSSProperties = { position: "absolute", fontFamily: F.display, lineHeight: 1, letterSpacing: "0.04em", color: C.ink };
   if (!L.reel) {
-    const badgeW = textWidth("Bobr za minutu", F.display, 400, fs) + fs * 1.2;
+    const badgeW = textWidth("Strategie za minutu", F.display, 400, fs) + fs * 1.2;
     const tfs = fitSize(titulek, F.display, 400, fs, L.W - 160 - badgeW, 0, 32);
     return (
       <div style={{ ...base, top: 56, left: 80, fontSize: fs, whiteSpace: "nowrap" }}>
@@ -179,7 +180,7 @@ export function Header({ titulek }: { titulek: string }) {
     );
   }
   /* reel: na jeden řádek, když se vejde; jinak titulek pod štítkem */
-  const oneLine = fitSize(`Bobr za minutu   ${titulek}`, F.display, 400, fs, L.W - 120, 0.6) >= fs;
+  const oneLine = fitSize(`Strategie za minutu   ${titulek}`, F.display, 400, fs, L.W - 120, 0.6) >= fs;
   return (
     <div
       style={{
@@ -214,7 +215,7 @@ export function ProgressBar({ total }: { total: number }) {
   );
 }
 
-const MOODS: Record<SceneId, { mood: BobrMood; pointing?: boolean }> = {
+const MOODS: Record<SceneId, { mood: GarantMood; pointing?: boolean }> = {
   hook: { mood: "surprised" },
   problem: { mood: "thinking" },
   proc: { mood: "neutral" },
@@ -246,8 +247,9 @@ function waveBurst(frame: number, start: number): number {
   return 0.5 * (1 - Math.cos((2 * Math.PI * t) / 15));
 }
 
-/** Bobr jako trvalá vrstva: nálada se přepíná se scénou (s malým „hopnutím“), mrká, dýchá, hýbe ocasem. */
-export function BobrLayer({ segments }: { segments: Segment[] }) {
+/** Garant kapitoly (nebo celá rada) jako trvalá vrstva: nálada se přepíná se scénou (s malým „hopnutím“),
+    mrká, dýchá, ukazuje. Pod postavou je jmenovka. */
+export function GarantLayer({ segments, kdo }: { segments: Segment[]; kdo: Mluvci }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const L = useLayout();
@@ -263,7 +265,6 @@ export function BobrLayer({ segments }: { segments: Segment[] }) {
   const startle = seg.id === "hook" ? interpolate(frame, [14, 20, 30], [0, 1, 0], clampOpts) : 0;
 
   const breathe = 0.5 * (1 - Math.cos((2 * Math.PI * frame) / (3.6 * fps)));
-  const tailSwing = Math.sin((2 * Math.PI * frame) / (3.2 * fps));
   let wave = 0;
   if (seg.id === "navrh") {
     for (const b of seg.beats) wave = Math.max(wave, waveBurst(frame, seg.from + b + 6));
@@ -276,6 +277,8 @@ export function BobrLayer({ segments }: { segments: Segment[] }) {
   const h = (size * 260) / 240;
   const scale = (0.93 + 0.07 * hop) * (1 + 0.04 * startle);
   const y = (1 - intro) * (h + 120) - startle * 26;
+  const jmeno = jmenoMluvciho(kdo);
+  const popis = kdo === "rada" ? "Pirátská expertní ekonomická rada" : "garant kapitoly";
 
   return (
     <>
@@ -303,16 +306,35 @@ export function BobrLayer({ segments }: { segments: Segment[] }) {
           transformOrigin: "50% 100%",
         }}
       >
-        <BobrSvg
+        <GarantSvg
+          kdo={kdo}
           mood={mood}
           pointing={pointing}
           size={size}
           blink={blinkAt(frame)}
           breathe={breathe}
-          tailSwing={tailSwing}
           wave={wave}
           style={{ display: "block", overflow: "visible" }}
         />
+      </div>
+      {/* jmenovka: kdo mluví */}
+      <div
+        style={{
+          position: "absolute",
+          left: L.bobr.cx - size * 0.6,
+          width: size * 1.2,
+          top: L.bobr.bottom + 10,
+          textAlign: "center",
+          opacity: intro,
+          fontFamily: F.display,
+          fontSize: Math.round(L.fs.small * 0.9),
+          lineHeight: 1.15,
+          color: C.ink,
+          letterSpacing: "0.03em",
+        }}
+      >
+        <div>{kdo === "rada" ? "PEER" : jmeno}</div>
+        <div style={{ fontFamily: F.body, fontSize: Math.round(L.fs.small * 0.62), color: C.cyan, fontWeight: 700, letterSpacing: "0.02em", marginTop: 4 }}>{popis}</div>
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import type { VideoScript } from "../../lib/topics";
 import { C, F } from "../theme";
 import { Body, Eyebrow, TextArea, rise, useEnter, useLayout } from "../ui";
 
-/* 3) Proč: řetězec příčin, kroky a šipky mezi nimi naskakují postupně. Bobr vysvětluje. */
+/* 3) Proč: řetězec příčin, kroky a šipky mezi nimi naskakují postupně. Garant vysvětluje. */
 function Arrow({ start, height }: { start: number; height: number }) {
   const frame = useCurrentFrame();
   const p = interpolate(frame, [start - 12, start], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });

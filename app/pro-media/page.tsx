@@ -4,6 +4,7 @@ import dopad from "@/data/dopad.json";
 import media from "@/data/media.json";
 import { topics } from "@/topics";
 import { clenove } from "@/lib/tym";
+import { GARANT_IDS, jmenoMluvciho } from "@/lib/garanti";
 import { abs } from "@/lib/site";
 import { Socialni } from "@/components/Socialni";
 import styles from "./page.module.css";
@@ -188,19 +189,25 @@ export default function ProMediaPage() {
           </div>
 
           <div className={`card ${styles.dlBox}`}>
-            <h3>Bobr (maskot webu)</h3>
+            <h3>Avatary garantů</h3>
             <ul>
-              <li><a href="/bobr.svg" download>Bobr (SVG)</a></li>
-              <li><a href="/bobr-klacik.svg" download>Bobr s klacíkem (SVG)</a></li>
+              <li><a href="/garanti/rada.svg" download>{jmenoMluvciho("rada")} (SVG)</a></li>
+              <li><a href="/garanti/rada-ukazuje.svg" download>Rada s ukazovátkem (SVG)</a></li>
             </ul>
-            <p className="muted">Maskot nakreslila AI pro tento web; není to oficiální logo PEER ani Pirátů.</p>
+            <p className="muted">Avatary jednotlivých garantů (SVG):</p>
+            <ul>
+              {GARANT_IDS.map((id) => (
+                <li key={id}><a href={`/garanti/${id}.svg`} download>{jmenoMluvciho(id)}</a></li>
+              ))}
+            </ul>
+            <p className="muted">Avatary nakreslila AI podle veřejných fotek a každý garant s nimi souhlasil; nejsou to oficiální loga PEER ani Pirátů.</p>
           </div>
 
           <div className={`card ${styles.dlBox}`}>
             <h3>Videa</h3>
             <ul>
               <li>
-                <Link href="/videa">Bobr za minutu: {topics.length} videí, 16:9 i 9:16, s titulky</Link>
+                <Link href="/videa">Strategie za minutu: {topics.length} videí, 16:9 i 9:16, s titulky</Link>
               </li>
             </ul>
           </div>
@@ -222,7 +229,7 @@ export default function ProMediaPage() {
 
         <h3 className={styles.podnadpis}>Oficiální loga a značka Pirátů</h3>
         <ul className={styles.loga}>
-          {media.loga.map((l) => (
+          {media.loga.filter((l) => !l.url.startsWith("/garanti/")).map((l) => (
             <li key={l.url} className="card">
               <a href={l.url} target="_blank" rel="noreferrer" className={styles.logoNazev}>{l.nazev}</a>
               <span className={`muted ${styles.logoPozn}`}>{l.poznamka}</span>

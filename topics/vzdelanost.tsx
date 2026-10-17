@@ -77,7 +77,7 @@ export const vzdelanost: TopicConfig = {
   kratkyNazev: "Vzdělanost",
   kapitola: "1.2",
   pilir: "Lidský potenciál",
-  popisMeta: "Do jeslí a školek chodí jen 4 % dětí do 3 let, průměr OECD je 24 %. Co s tím navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou školky.",
+  popisMeta: "Do jeslí a školek chodí jen 4 % dětí do 3 let, průměr OECD je 24 %. Co s tím navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou školky.",
   hook: {
     h1: "Proč se nám nevyplácí šetřit na školkách?",
     value: data.hook.hodnota,

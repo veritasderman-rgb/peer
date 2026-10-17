@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Bobr } from "@/components/Bobr";
-import { BobrBubble } from "@/components/BobrBubble";
+import { Garant } from "@/components/Garant";
+import { GarantBubble } from "@/components/GarantBubble";
 import en from "@/data/en.json";
 import styles from "./page.module.css";
 
@@ -39,9 +39,9 @@ export default function EnglishPage() {
           </p>
         </div>
         <div className={styles.heroBobr}>
-          <BobrBubble mood="thinking" pointing>
+          <GarantBubble kdo="rada" mood="thinking" pointing>
             {en.hero.bobr}
-          </BobrBubble>
+          </GarantBubble>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function EnglishPage() {
           </p>
         </div>
         <div className={styles.madeBobr}>
-          <Bobr mood="happy" pointing size={180} />
+          <Garant kdo="rada" mood="happy" pointing size={180} />
         </div>
       </section>
 

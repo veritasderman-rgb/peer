@@ -15,7 +15,7 @@ import { script as regiony } from "./regiony";
 import { script as stat } from "./stat";
 import { script as uvod } from "./uvod";
 
-/* Registr scénářů „Bobr za minutu“. Nové téma: video/scripts/<slug>.ts + import sem.
+/* Registr scénářů „Strategie za minutu“. Nové téma: video/scripts/<slug>.ts + import sem.
    Render: npm run video:render -- --only <slug> */
 export const scripts: VideoScript[] = [
   uvod, bydleni, vzdelanost, prace, zeny, exekuce, zdravi, oligarchie, euro, kapital, prumysl, energie, inovace, regiony, stat,

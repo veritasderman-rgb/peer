@@ -61,7 +61,7 @@ export const euro: TopicConfig = {
   kratkyNazev: "Euro",
   kapitola: data.kapitola,
   pilir: "Trh a kapitál",
-  popisMeta: "Na hypotéce 4,7 mil. Kč na 30 let zaplatí Čech na úrocích o 1 242 657 Kč víc než Slovák. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "Na hypotéce 4,7 mil. Kč na 30 let zaplatí Čech na úrocích o 1 242 657 Kč víc než Slovák. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Proč Čech platí za stejnou hypotéku o 1,2 milionu víc než Slovák?",
     value: data.hook.hodnota,

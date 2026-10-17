@@ -20,7 +20,7 @@ export type Layout = {
   H: number;
   /** textová plocha */
   text: { x: number; y: number; w: number; h: number };
-  /** bobr: střed spodní hrany a šířka */
+  /** postava garanta: střed spodní hrany a šířka (klíč bobr zůstal kvůli historii) */
   bobr: { cx: number; bottom: number; size: number };
   fs: {
     base: number;

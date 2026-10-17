@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import data from "@/data/kraje.json";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import { MapaKraju, type Kraj, type Metrika } from "@/components/MapaKraju";
 import styles from "./page.module.css";
 
@@ -30,9 +30,9 @@ export default function MojeObecPage() {
             exekuce, nezaměstnanost, mzdy a HDP. Vyber svůj a porovnej ho s průměrem ČR.
           </p>
         </div>
-        <BobrBubble mood="thinking" side="left">
+        <GarantBubble kdo="rada" mood="thinking" side="left">
           Kolik lidí v tvém kraji čelí exekuci a kolik si vydělají? Klepni na dlaždici, ať to vidíš.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="mapa">

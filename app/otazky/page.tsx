@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import data from "@/data/otazky.json";
 import { getTopic } from "@/topics";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import { JsonLd } from "@/components/JsonLd";
 import styles from "./page.module.css";
 
@@ -63,9 +63,9 @@ export default function OtazkyPage() {
             </p>
           </div>
         </div>
-        <BobrBubble mood="thinking" side="left">
+        <GarantBubble kdo="rada" mood="thinking" side="left">
           Ptát se je v pořádku: odpovědi jsou jen z textu studie, i s tím, co studie neví.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <nav className={`wrap ${styles.chips}`} aria-label="Skupiny otázek">

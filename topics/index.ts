@@ -17,7 +17,7 @@ import { inovace } from "./inovace";
 import { regiony } from "./regiony";
 import { stat } from "./stat";
 
-/* Video „Bobr za minutu“ k tématu: soubory z public/video renderuje `npm run video:render`
+/* Video „Strategie za minutu“ k tématu: soubory z public/video renderuje `npm run video:render`
    ze scénáře video/scripts/<slug>.ts. Pokud téma nemá vlastní `video`, doplní se standardní cesty. */
 export type TopicVideoInfo = NonNullable<TopicConfig["video"]>;
 

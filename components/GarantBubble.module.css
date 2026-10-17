@@ -7,9 +7,29 @@
 .right { flex-direction: row; }
 .left { flex-direction: row-reverse; }
 
-.bobr {
+.garant {
   flex: 0 0 auto;
   max-width: 45%;
+}
+
+/* Jmenovka pod kresbou: jméno + šedá role. */
+.jmenovka {
+  margin-top: 0.35rem;
+  text-align: center;
+  line-height: 1.15;
+}
+.jmeno {
+  display: block;
+  font-family: var(--f-data);
+  font-size: var(--s-1);
+  font-weight: 700;
+  color: var(--ink);
+}
+.role {
+  display: block;
+  font-family: var(--f-body);
+  font-size: 0.75rem;
+  color: var(--muted);
 }
 
 .bubble {
@@ -35,7 +55,7 @@
   font-weight: 700;
 }
 
-/* Zobáček: natočený čtverec se dvěma okraji, míří k bobrovi. */
+/* Zobáček: natočený čtverec se dvěma okraji, míří ke garantovi. */
 .bubble::before {
   content: "";
   position: absolute;
@@ -58,7 +78,7 @@
   transform: translateY(-50%) rotate(45deg);
 }
 
-/* Mobil: bublina nad bobrem, zobáček dolů. */
+/* Mobil: bublina nad garantem, zobáček dolů. */
 @media (max-width: 559.98px) {
   .wrap,
   .right,
@@ -67,7 +87,7 @@
     align-items: center;
     gap: 1.1rem;
   }
-  .bobr { max-width: 70%; }
+  .garant { max-width: 70%; }
   .bubble { max-width: 100%; }
   .right .bubble::before,
   .left .bubble::before {

@@ -6,7 +6,7 @@ import { expect, test, type Page } from "@playwright/test";
 
 const STATIC = [
   "/", "/videa", "/dopad", "/cesta", "/zaplaceni", "/kolik-ti-to-prinese", "/moje-obec", "/otazky",
-  "/pro-sdileni", "/pro-media", "/en", "/proc-bobr", "/jak-vznikl",
+  "/pro-sdileni", "/pro-media", "/en", "/kdo-je-kdo", "/jak-vznikl",
 ];
 const SLUGS = [
   "bydleni", "vzdelanost", "prace", "zeny", "exekuce", "zdravi", "oligarchie",
@@ -109,10 +109,12 @@ test.describe("stránka tématu", () => {
 });
 
 test.describe("404 a interakce", () => {
-  test("/neexistuje vrací 404 s hláškou od bobra", async ({ page }) => {
+  test("/neexistuje vrací 404 s nadpisem a odkazy na úvod a témata", async ({ page }) => {
     const res = await page.goto("/neexistuje");
     expect(res?.status()).toBe(404);
-    await expect(page.getByText("Tahle stránka tu není")).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1, name: "Tahle stránka tu není" })).toBeVisible();
+    const odkaz = page.locator(['a[href="/"]', ...TOPICS.map((t) => `a[href="${t}"]`)].join(", ")).first();
+    await expect(odkaz).toBeVisible();
   });
 
   test("úvodka: „Mám malé děti“ ukáže aspoň jednu kartu", async ({ page }) => {

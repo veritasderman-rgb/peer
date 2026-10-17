@@ -13,7 +13,7 @@ import zaplaceni from "@/data/zaplaceni.json";
 import { getTopic } from "@/topics";
 import { abs } from "@/lib/site";
 import { sestavData } from "@/lib/kviz";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import { Kviz } from "@/components/Kviz";
 import styles from "./page.module.css";
 
@@ -45,9 +45,9 @@ export default function KolikTiToPrinesePage() {
             tě bude stát. Jen z čísel, která studie uvádí, a u každého řádku je zdroj.
           </p>
         </div>
-        <BobrBubble mood="thinking" side="left" size={150}>
+        <GarantBubble kdo="rada" mood="thinking" side="left" size={150}>
           Žádné sliby. Spočítám jen to, co studie opravdu říká, i s tím, co tě to bude stát.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-label="Otázky a výsledek">

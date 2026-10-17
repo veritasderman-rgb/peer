@@ -54,7 +54,7 @@ export const zeny: TopicConfig = {
   kratkyNazev: "Ženy",
   kapitola: "1.3",
   pilir: "Lidský potenciál",
-  popisMeta: "Mzdový rozdíl mezi muži a ženami je v Česku 18,5 %, druhý nejvyšší v EU. Proč nás v mzdách předběhlo Polsko a co navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou školky.",
+  popisMeta: "Mzdový rozdíl mezi muži a ženami je v Česku 18,5 %, druhý nejvyšší v EU. Proč nás v mzdách předběhlo Polsko a co navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou školky.",
   hook: {
     h1: "Proč nás v mzdách předběhlo Polsko?",
     value: 18.5,

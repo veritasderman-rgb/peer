@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import osa from "@/data/osa.json";
 import dopad from "@/data/dopad.json";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import { CasovaOsa, type Milnik } from "@/components/CasovaOsa";
 import { NabehChart } from "@/components/NabehChart";
 import styles from "./page.module.css";
@@ -36,9 +36,9 @@ export default function CestaPage() {
             <span className={`${styles.leg} ${styles.legDopad}`}>Dopad</span>
           </p>
         </div>
-        <BobrBubble mood="thinking" side="left">
+        <GarantBubble kdo="rada" mood="thinking" side="left">
           Deset let je dlouho, ale první věci se dají poznat už za dva roky. Koukej na rok 2028.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="nabeh">

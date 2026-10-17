@@ -1,6 +1,6 @@
 import type { VideoScript } from "../../lib/topics";
 
-/* Bobr za minutu: Bydlení (kapitola 1.1). Čísla z data/bydleni.json (Deloitte Property Index 2025,
+/* Strategie za minutu: Bydlení (kapitola 1.1). Čísla z data/bydleni.json (Deloitte Property Index 2025,
    ČSÚ, MM4), formulace redakční podle topics/bydleni.tsx. Na obrazovce vždy jedna věta + jedno číslo. */
 export const script: VideoScript = {
   slug: "bydleni",

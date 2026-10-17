@@ -66,7 +66,7 @@ export const energie: TopicConfig = {
   kratkyNazev: "Energie",
   kapitola: "3.2",
   pilir: "Moderní energetika a průmysl",
-  popisMeta: "Za dovoz uhlí, ropy a plynu odešlo v roce 2025 do zahraničí 262 miliard korun. Proč je elektřina drahá a co navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou kupónu.",
+  popisMeta: "Za dovoz uhlí, ropy a plynu odešlo v roce 2025 do zahraničí 262 miliard korun. Proč je elektřina drahá a co navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou kupónu.",
   hook: {
     h1: "Kam každý rok odtečou stovky miliard?",
     value: data.hook.hodnota,

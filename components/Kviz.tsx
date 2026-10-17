@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { BobrBubble } from "./BobrBubble";
+import { GarantBubble } from "./GarantBubble";
 import { RangeField } from "./RangeField";
 import { Sdilet } from "./Sdilet";
 import { OTAZKY, KOD_MZDA_MAX, KOD_MZDA_MIN, dekoduj, vyhodnot, zakoduj, type KvizData, type Vysledek } from "@/lib/kviz";
@@ -138,9 +138,9 @@ export function Kviz({ data, url, nazvy }: Props) {
           <p className={`muted ${s.souhrn}`}>{vysledek.souhrn}</p>
         </div>
 
-        <BobrBubble mood="happy" size={130} className={s.bobr}>
+        <GarantBubble kdo="rada" mood="happy" size={130} className={s.bobr}>
           {vysledek.bobr}
-        </BobrBubble>
+        </GarantBubble>
 
         <ol className={s.karty}>
           {vysledek.karty.map((k) => (

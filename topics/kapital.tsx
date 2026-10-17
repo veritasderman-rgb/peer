@@ -55,7 +55,7 @@ export const kapital: TopicConfig = {
   kratkyNazev: "Kapitál",
   kapitola: data.kapitola,
   pilir: "Trh a kapitál",
-  popisMeta: "Čeští střadatelé mají spících 4 000 miliard korun a na penzijku vkládají 10× víc než Slováci pro stejný výnos. Co s tím navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "Čeští střadatelé mají spících 4 000 miliard korun a na penzijku vkládají 10× víc než Slováci pro stejný výnos. Co s tím navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Co dělají tvoje peníze, když spí?",
     value: data.hook.hodnota,

@@ -69,7 +69,7 @@ export const regiony: TopicConfig = {
   kratkyNazev: "Úspěšné regiony",
   kapitola: "4.1",
   pilir: "Stát jako motor",
-  popisMeta: "Obce mají z místní ekonomiky jen 2 % příjmů, v EU je hůř jen v Řecku. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "Obce mají z místní ekonomiky jen 2 % příjmů, v EU je hůř jen v Řecku. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Kolik z místní ekonomiky zůstane obci?",
     value: 2,
