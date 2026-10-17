@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaPenze.module.css";
 
@@ -17,6 +18,7 @@ function futureValue(monthly: number, grossPct: number, feePct: number, years: n
 }
 
 export function KalkulackaPenze() {
+  const pouzita = useKalkulackaPouzita("penze");
   const [monthly, setMonthly] = useState(2_000);
   const [years, setYears] = useState(30);
   const [gross, setGross] = useState(5);
@@ -28,7 +30,7 @@ export function KalkulackaPenze() {
   const paidIn = monthly * years * 12;
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-penze-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-penze-title" onChangeCapture={pouzita}>
       <h3 id="kalk-penze-title" className={s.title}>
         Kolik ti sežerou poplatky penzijního fondu?
       </h3>

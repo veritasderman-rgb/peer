@@ -14,6 +14,7 @@ import { TopicVideo } from "@/components/TopicVideo";
 import { Sdilet } from "@/components/Sdilet";
 import { Socialni } from "@/components/Socialni";
 import { NahlasitChybu } from "@/components/NahlasitChybu";
+import { ZpetnaVazba } from "@/components/ZpetnaVazba";
 import styles from "./TopicPage.module.css";
 
 const nf = new Intl.NumberFormat("cs-CZ");
@@ -202,6 +203,9 @@ export function TopicPage({ t }: { t: TopicConfig }) {
       </section>
       <section className={`wrap ${styles.sdiletKonec}`}>
         <Sdilet titulek={t.hook.h1} text={`${nf.format(t.hook.value)} ${t.hook.unit}: ${t.hook.label}`} />
+      </section>
+      <section className={`wrap ${styles.zpetnaVazba}`}>
+        <ZpetnaVazba stranka={t.slug} />
       </section>
     </article>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaMzda.module.css";
 
@@ -11,6 +12,7 @@ const MIN_TODAY = 22_400;
 type Row = { name: string; v: number; kind: "today" | "plan" | "other" };
 
 export function KalkulackaMzda() {
+  const pouzita = useKalkulackaPouzita("mzda");
   const [avg, setAvg] = useState(49_215);
 
   const plan = Math.round(avg * 0.5);
@@ -26,7 +28,7 @@ export function KalkulackaMzda() {
   const max = Math.max(...rows.map((r) => r.v));
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-mzda-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-mzda-title" onChangeCapture={pouzita}>
       <h3 id="kalk-mzda-title" className={s.title}>
         Minimální mzda 50&nbsp;% průměru: kolik by to bylo?
       </h3>

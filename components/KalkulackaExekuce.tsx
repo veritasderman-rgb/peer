@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaExekuce.module.css";
 
@@ -14,6 +15,7 @@ type Count = "1-3" | "4+";
 const LIMIT: Record<Count, number> = { "1-3": 31_500, "4+": 24_609 };
 
 export function KalkulackaExekuce() {
+  const pouzita = useKalkulackaPouzita("exekuce");
   const [wage, setWage] = useState(35_000);
   const [count, setCount] = useState<Count>("1-3");
 
@@ -22,7 +24,7 @@ export function KalkulackaExekuce() {
   const today = over ? 0 : KEEP_TODAY;
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-exekuce-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-exekuce-title" onChangeCapture={pouzita}>
       <h3 id="kalk-exekuce-title" className={s.title}>
         Vyděláš o 1&nbsp;000&nbsp;Kč víc. Kolik ti zůstane?
       </h3>

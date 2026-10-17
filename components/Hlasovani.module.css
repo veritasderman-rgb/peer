@@ -1,0 +1,17 @@
+.root { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.8rem; min-height: 2.2rem; font-family: var(--f-data); font-size: var(--s-1); }
+.otazka { font-weight: 700; }
+.tlacitka { display: inline-flex; gap: 0.4rem; }
+.btn {
+  font: inherit;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+.btn:hover { border-color: var(--ink); }
+.btn:disabled { opacity: 0.55; cursor: default; }
+.btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.dik { margin: 0; font-weight: 700; }

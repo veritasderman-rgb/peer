@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaByt.module.css";
 
@@ -27,6 +28,7 @@ function years(n: number) {
 }
 
 export function KalkulackaByt() {
+  const pouzita = useKalkulackaPouzita("byt");
   const [price, setPrice] = useState(8_900_000);
   const [wage, setWage] = useState(49_215);
 
@@ -34,7 +36,7 @@ export function KalkulackaByt() {
   const saveYears = Math.round(ratio * 3);
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-byt-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-byt-title" onChangeCapture={pouzita}>
       <h3 id="kalk-byt-title" className={s.title}>
         Kolik ročních platů stojí byt?
       </h3>

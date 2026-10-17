@@ -4,6 +4,7 @@ import data from "@/data/otazky.json";
 import { getTopic } from "@/topics";
 import { GarantBubble } from "@/components/GarantBubble";
 import { JsonLd } from "@/components/JsonLd";
+import { Hlasovani } from "@/components/Hlasovani";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -133,6 +134,7 @@ export default function OtazkyPage() {
                     <p className="src">
                       <b>Zdroj:</b> {q.zdroj}
                     </p>
+                    <Hlasovani id={q.id} />
                   </div>
                 </details>
               </li>

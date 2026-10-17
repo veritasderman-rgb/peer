@@ -6,6 +6,7 @@ import { GarantBubble } from "./GarantBubble";
 import { RangeField } from "./RangeField";
 import { Sdilet } from "./Sdilet";
 import { OTAZKY, KOD_MZDA_MAX, KOD_MZDA_MIN, dekoduj, vyhodnot, zakoduj, type KvizData, type Vysledek } from "@/lib/kviz";
+import { kvizDokoncen } from "@/lib/analytics";
 import s from "./Kviz.module.css";
 
 /* Kvíz „Kolik ti strategie přinese?“: pět otázek + nepovinná mzda → karty s odhadem podle studie,
@@ -96,6 +97,7 @@ export function Kviz({ data, url, nazvy }: Props) {
     }
     /* adresu měnit hned v obsluze, ne v efektu: komponenty výsledku čtou adresu při připojení */
     window.history.replaceState(null, "", `#r=${zakoduj(odp as number[], mzda)}`);
+    kvizDokoncen("kviz", odp.length, OTAZKY.length);
     presun.current = true;
     setZobrazit(true);
   };

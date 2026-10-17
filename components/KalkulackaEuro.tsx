@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaEuro.module.css";
 
@@ -15,6 +16,7 @@ function payment(principal: number, ratePct: number, years: number) {
 }
 
 export function KalkulackaEuro() {
+  const pouzita = useKalkulackaPouzita("euro");
   const [loan, setLoan] = useState(4_700_000);
   const [years, setYears] = useState(30);
   const [rateCz, setRateCz] = useState(4.94);
@@ -26,7 +28,7 @@ export function KalkulackaEuro() {
   const total = monthly * years * 12;
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-euro-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-euro-title" onChangeCapture={pouzita}>
       <h3 id="kalk-euro-title" className={s.title}>
         Kolik bych platil za hypotéku s eurem?
       </h3>

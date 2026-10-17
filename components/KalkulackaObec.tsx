@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useKalkulackaPouzita } from "@/lib/analytics";
 import { RangeField } from "./RangeField";
 import s from "./KalkulackaObec.module.css";
 
@@ -8,6 +9,7 @@ const nf = new Intl.NumberFormat("cs-CZ");
 const nf1 = new Intl.NumberFormat("cs-CZ", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
 export function KalkulackaObec() {
+  const pouzita = useKalkulackaPouzita("obec");
   const [flats, setFlats] = useState(40);
   const [area, setArea] = useState(70);
   const [rate, setRate] = useState(5000);
@@ -17,7 +19,7 @@ export function KalkulackaObec() {
   const big = total >= 1_000_000 ? `${nf1.format(total / 1_000_000)} mil. Kč` : `${nf.format(total)} Kč`;
 
   return (
-    <section className={`card ${s.root}`} aria-labelledby="kalk-obec-title">
+    <section className={`card ${s.root}`} aria-labelledby="kalk-obec-title" onChangeCapture={pouzita}>
       <h3 id="kalk-obec-title" className={s.title}>
         Kolik by obec dostala za nové byty?
       </h3>

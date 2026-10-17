@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { videoPrehrano } from "@/lib/analytics";
 import styles from "./TopicVideo.module.css";
 
 /* Video k tématu: na výšku (telefon) se načte reel 9:16, jinak široké 16:9.
@@ -23,6 +24,7 @@ export function TopicVideo({
   prepis?: string[];
 }) {
   const [portrait, setPortrait] = useState(false);
+  const prehrano = useRef(false);
   useEffect(() => {
     const mq = window.matchMedia("(orientation: portrait) and (max-width: 760px)");
     const update = () => setPortrait(mq.matches);
@@ -43,6 +45,11 @@ export function TopicVideo({
         preload="metadata"
         poster={posterSrc}
         aria-label={titulek}
+        onPlay={() => {
+          if (prehrano.current) return;
+          prehrano.current = true;
+          videoPrehrano(wide.split("/").pop()?.replace(/-wide\.mp4$/, "") ?? titulek, portrait ? "reel" : "wide");
+        }}
       >
         <source src={src} type="video/mp4" />
         {/* titulky k mluvenému komentáři: text v obraze je kratší než hlas, tohle je přepis hlasu */}
