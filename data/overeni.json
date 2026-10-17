@@ -1,0 +1,3 @@
+{
+  "_komentar": "Stavy bodů ze stránky /overeni. Klíč = id bodu nebo celé kapitoly (id bodu je vidět malým písmem pod každým bodem na /overeni, id kapitoly je slug nadpisu; shodují se s polem id v záznamech typu overeni z /api/zpetna-vazba). Hodnota: { \"stav\": \"potvrzeno\" | \"opraveno\" | \"sporne\", \"kdo\": \"Jméno garanta\", \"kdy\": \"RRRR-MM-DD\", \"poznamka\": \"volitelně, např. přesné znění opravy\" }. Editor stavy doplňuje ručně podle došlé zpětné vazby (hodnota potvrzeno / opraveno) a po zapracování opravy do webu a studie ji přepíše na opraveno s poznámkou; kdyby dva garanti odpověděli různě, dá sporne. Klíče začínající podtržítkem se ignorují."
+}

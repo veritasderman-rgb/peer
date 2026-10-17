@@ -1,0 +1,56 @@
+.page { display: grid; padding-bottom: 4rem; }
+.hero { display: grid; gap: 0.9rem; padding-block: 3rem 1rem; }
+.lede { display: grid; gap: 0.7rem; max-width: 60ch; }
+.lede p { margin: 0; }
+.lede p:first-child { font-size: var(--s1); }
+
+.varovani {
+  margin: 0; max-width: 60ch; padding: 0.7rem 1rem; border-radius: var(--radius);
+  background: var(--sun); color: var(--sun-ink); font-family: var(--f-data); font-weight: 700;
+  border: 2px solid var(--sun-ink);
+}
+
+.chips { padding-block: 0.5rem 0; }
+.chipList { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px;
+  padding: 0.35rem 0.95rem; border-radius: 999px; border: 2px solid var(--line-strong);
+  background: var(--surface); color: var(--ink); text-decoration: none;
+  font-family: var(--f-data); font-weight: 700; font-size: var(--s-1);
+}
+.chip:hover { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.chipN { font-weight: 400; color: var(--muted); }
+.chip:hover .chipN { color: var(--sun-ink); }
+
+.sekce { display: grid; gap: 1rem; padding-block: 3rem 0; scroll-margin-top: 5rem; align-content: start; }
+.hlavicka { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1rem; }
+.hlavicka h2 { margin: 0; overflow-wrap: anywhere; }
+.garant { color: var(--muted); font-size: 0.7em; font-family: var(--f-data); text-transform: none; }
+.uvod { margin: 0; max-width: 70ch; line-height: 1.5; }
+
+.polozky { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.polozka { display: grid; gap: 0.8rem; padding: 1rem 1.1rem; min-width: 0; }
+.text { display: grid; gap: 0.5rem; min-width: 0; }
+.text p { margin: 0; line-height: 1.55; overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.8rem; }
+.id { font-size: 0.75rem; color: var(--muted); overflow-wrap: anywhere; }
+.poznamka { font-size: var(--s-1); color: var(--muted); border-left: 3px solid var(--line-strong); padding-left: 0.7rem; }
+.kod { font-family: var(--f-data); font-size: 0.92em; background: var(--paper); padding: 0.05em 0.35em; border-radius: 4px; overflow-wrap: anywhere; }
+a.kod { color: var(--river); text-decoration: underline; }
+.kod code { font: inherit; }
+.kapitola { padding-top: 0.25rem; }
+
+.stitek {
+  display: inline-block; font-family: var(--f-data); font-size: var(--s-1); font-weight: 700;
+  padding: 0.1rem 0.7rem; border-radius: 999px; border: 2px solid var(--line-strong);
+  background: var(--surface); color: var(--ink);
+}
+.ceka { color: var(--muted); font-weight: 400; }
+.potvrzeno { background: var(--green-soft); border-color: var(--green); }
+.opraveno { background: var(--river-soft); border-color: var(--river); }
+.sporne { background: var(--alert-soft); border-color: var(--alert); }
+
+@media (max-width: 760px) {
+  .hero { padding-block: 2rem 0.5rem; }
+  .sekce { padding-block: 2.25rem 0; }
+}
