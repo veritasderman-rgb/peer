@@ -81,6 +81,7 @@ je tak označuje; čísla v jejich příbězích jsou ze studie.
 
 ## Stránka /jak-vznikl
 - Odhad ceny webu „postaru“ (300–580 tis. Kč za pilot, 2–4 mil. Kč za celek) je redakční odhad podle běžných sazeb, žádná nabídka nebyla poptána. Stránka to uvádí.
+- Avatary garantů: nakresleny AI podle skupinového fota z představení PEER (peer.pirati.cz, 2. 9. 2026) a profilů na lide.pirati.cz; souhlas všech osmi udělen v říjnu 2026; podobu si každý může nechat upravit.
 
 ## Namluvený komentář videí (všechna témata)
 Komentář ve videích (`narration` ve `video/scripts/<slug>.ts`) je kratší než text na obrazovce, aby se vešel do minuty. Čísla čte slovy. Odchylky od obrazu k odsouhlasení:

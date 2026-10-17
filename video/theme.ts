@@ -20,7 +20,7 @@ export type Layout = {
   H: number;
   /** textová plocha */
   text: { x: number; y: number; w: number; h: number };
-  /** bobr: střed spodní hrany a šířka */
+  /** postava garanta: střed spodní hrany a šířka (klíč bobr zůstal kvůli historii) */
   bobr: { cx: number; bottom: number; size: number };
   fs: {
     base: number;
@@ -45,7 +45,7 @@ export function getLayout(W: number, H: number): Layout {
       W,
       H,
       text: { x: 60, y: 240, w: W - 120, h: 990 },
-      bobr: { cx: W / 2, bottom: H - 70, size: 540 },
+      bobr: { cx: W / 2, bottom: H - 160, size: 500 },
       fs: { base: 60, small: 56, eyebrow: 56, title: 96, cardTitle: 68, hookNum: 360, num: 260, unit: 120 },
       gap: 36,
       minBase: 56,

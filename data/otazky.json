@@ -384,18 +384,18 @@
           ]
         },
         {
-          "id": "proc-bobr",
-          "otazka": "Proč je maskotem webu bobr?",
+          "id": "avatary",
+          "otazka": "Kdo ve videích a na stránkách mluví?",
           "odpoved": [
-            "Tři důvody. Stavitel: strategie je hlavně o stavění (50 000 bytů ročně, čtvrti u zastávek, školky, sítě). Hospodář: bobr zadržuje vodu a šetří s ní a strategie chce využít, co leží ladem (200 000 prázdných bytů, 4 000 miliard na účtech, 20 GW zablokované kapacity sítě). A vrátil se: v Česku byl skoro vyhuben a dnes žije na většině řek, stejně jako Česko má na víc, než ukazuje.",
-            "Bobr se chová podle čtyř pravidel: ptá se za čtenáře, ukazuje a nekáže, přizná, co věc stojí, a je všude stejný. Nosí třírohý pirátský klobouk, značku Pirátů, kteří strategii zadali a stojí za ní; klobouk jde sundat, když vysvětluje jen čísla. Jméno zatím nemá, vybrat ho mají lidé v anketě."
+            "Každou kapitolu vysvětluje avatar jejího garanta, člena PEER, aby bylo vidět, kdo za čísly ručí. Osm garantů a jejich témata najdeš na stránce Kdo je kdo.",
+            "Avatary nakreslila umělá inteligence podle veřejných fotek a každý z osmi garantů s tím souhlasil. Pirátský klobouk na avataru je značka Pirátů, kteří strategii zadali."
           ],
           "temata": [],
-          "zdroj": "Stránka Proč bobr",
+          "zdroj": "Web, stránka Kdo je kdo",
           "odkazy": [
             {
-              "href": "/proc-bobr",
-              "text": "Proč bobr"
+              "href": "/kdo-je-kdo",
+              "text": "Kdo je kdo"
             }
           ]
         },
@@ -403,19 +403,19 @@
           "id": "pirati-program",
           "otazka": "Je to program Pirátů?",
           "odpoved": [
-            "Strategii zpracovala Pirátská expertní ekonomická rada a Piráti ji zadali a stojí za ní, proto má bobr pirátský klobouk. Web ale převypráví studii, ne volební program: drží se jejího textu a čísel a nepřidává vlastní sliby. Studie sama někde mluví jasně i o stanovisku, například u eura píše, že Piráti obhajují euro především proto, že se běžným lidem finančně vyplatí.",
+            "Strategii zpracovala Pirátská expertní ekonomická rada a Piráti ji zadali a stojí za ní, proto nosí avatary garantů pirátský klobouk. Web ale převypráví studii, ne volební program: drží se jejího textu a čísel a nepřidává vlastní sliby. Studie sama někde mluví jasně i o stanovisku, například u eura píše, že Piráti obhajují euro především proto, že se běžným lidem finančně vyplatí.",
             "Tam, kde se studie liší od dřívějších plánů Pirátů, web to ukazuje. Příkladem je energetický kupón: dřívější plán z roku 2025 počítal s 2 250 Kč na osobu, strategie uvádí zhruba 5 000 Kč na průměrnou domácnost a web uvádí obě čísla."
           ],
           "temata": [],
-          "zdroj": "Stránka Jak vznikl tento web; stránka Proč bobr; kapitola 2.2 Euro, Co nám to přinese; kapitola 3.2 Energie, Energetický kupón",
+          "zdroj": "Stránka Jak vznikl tento web; stránka Kdo je kdo; kapitola 2.2 Euro, Co nám to přinese; kapitola 3.2 Energie, Energetický kupón",
           "odkazy": [
             {
               "href": "/jak-vznikl",
               "text": "Jak vznikl tento web"
             },
             {
-              "href": "/proc-bobr",
-              "text": "Proč bobr"
+              "href": "/kdo-je-kdo",
+              "text": "Kdo je kdo"
             }
           ]
         },

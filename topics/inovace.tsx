@@ -57,7 +57,7 @@ export const inovace: TopicConfig = {
   kratkyNazev: "Inovace",
   kapitola: "3.3",
   pilir: "Moderní energetika a průmysl",
-  popisMeta: "V Česku je 131 startupů na milion obyvatel, v Izraeli 410. Proč u nás vzniká tak málo firem a co navrhuje Hospodářská strategie PEER. S bobrem, grafy a příběhem.",
+  popisMeta: "V Česku je 131 startupů na milion obyvatel, v Izraeli 410. Proč u nás vzniká tak málo firem a co navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a příběhem.",
   hook: {
     h1: "Proč u nás vzniká tak málo firem?",
     value: data.hook.hodnota,

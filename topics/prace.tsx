@@ -54,7 +54,7 @@ export const prace: TopicConfig = {
   kratkyNazev: "Práce",
   kapitola: "1.3",
   pilir: "Lidský potenciál",
-  popisMeta: "Minimální mzda 22 400 Kč je jen 43 % průměrné mzdy, méně než v Polsku, Litvě i Chorvatsku. Proč je levná práce past a co navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "Minimální mzda 22 400 Kč je jen 43 % průměrné mzdy, méně než v Polsku, Litvě i Chorvatsku. Proč je levná práce past a co navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Proč je u nás levná práce past?",
     value: 22400,

@@ -1,7 +1,7 @@
 import path from "node:path";
 import { Config } from "@remotion/cli/config";
 
-/* Remotion („Bobr za minutu“): kompozice jsou ve video/, výstupy renderuje scripts/render-videos.mjs
+/* Remotion („Strategie za minutu“): kompozice jsou ve video/, výstupy renderuje scripts/render-videos.mjs
    (ten nastavuje totéž přes programové API). */
 Config.setEntryPoint("video/index.ts");
 Config.setBrowserExecutable("/opt/pw-browsers/chromium");

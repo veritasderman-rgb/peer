@@ -244,6 +244,7 @@ export type Karta = {
 
 export type Stoji = StojiPolozka & { href: string; proc: string };
 
+/* bobr = věta, kterou ve výsledku říká rada (název pole zůstal z doby maskota) */
 export type Vysledek = { karty: Karta[]; stoji: Stoji[]; bobr: string; sdilet: Karta["sdilet"][]; souhrn: string };
 
 const nf = new Intl.NumberFormat("cs-CZ");
@@ -600,6 +601,7 @@ export function vyhodnot(odpovedi: Odpovedi, mzda: number, d: KvizData): Vyslede
   if (domacnost === 3) stoji.push(polozka(d, "vratneGranty", "Pokud tvoje děti půjdou na vysokou."));
 
   const top = osobni[0];
+  /* věta pro bublinu rady */
   const bobr = top
     ? `Podle čísel ze studie se tě nejvíc týká tohle: ${top.nadpis.charAt(0).toLowerCase()}${top.nadpis.slice(1)}. Je to odhad, ne slib.`
     : "Podle čísel ze studie se tě týká hlavně růst mezd v celé ekonomice. Je to odhad, ne slib.";

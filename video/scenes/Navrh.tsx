@@ -4,7 +4,7 @@ import { estimateLines } from "../measure";
 import { C, F, type Layout } from "../theme";
 import { Body, Eyebrow, TextArea, rise, tidy, useEnter, useLayout } from "../ui";
 
-/* 4) Návrh: tři nejsilnější opatření jako karty s názvem a větou. Bobr má radost, ukazuje a mává.
+/* 4) Návrh: tři nejsilnější opatření jako karty s názvem a větou. Garant má radost, ukazuje a mává.
    Karty se skládají pod sebe; když by se dlouhé texty nevešly ani při minimálním písmu,
    ukazují se po jedné. */
 

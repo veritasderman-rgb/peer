@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { topics, uvodVideo } from "@/topics";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Videa Bobr za minutu",
+  title: "Videa Strategie za minutu",
   description: "Každé téma strategie za minutu: široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts. Obojí ke stažení a sdílení.",
   alternates: { canonical: "/videa" },
 };
@@ -19,16 +19,16 @@ export default function VideaPage() {
       <section className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
           <p className="eyebrow">Videa · úvod a {withVideo.length} témat</p>
-          <h1>Bobr za minutu</h1>
+          <h1>Strategie za minutu</h1>
           <p className={styles.lede}>
             Každé téma strategie v jedné minutě: číslo, problém, proč to tak je, co navrhujeme a co to přinese. Namluvené, s hudbou
             a s titulky v obraze, aby se dalo koukat i potichu v tramvaji. Široká verze (16:9) je pro YouTube a web, reel (9:16)
             pro Instagram, TikTok a Shorts. Obě si můžeš stáhnout a sdílet.
           </p>
         </div>
-        <BobrBubble mood="happy" pointing side="left">
-          Každé video vzniklo ze stejných čísel jako stránka tématu. Když se číslo opraví, video se přegeneruje.
-        </BobrBubble>
+        <GarantBubble kdo="rada" mood="happy" pointing side="left">
+          Každé video vzniklo ze stejných čísel jako stránka tématu. Mluví v něm garant kapitoly.
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`}>

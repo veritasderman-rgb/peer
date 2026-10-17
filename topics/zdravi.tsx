@@ -68,7 +68,7 @@ export const zdravi: TopicConfig = {
   kratkyNazev: "Zdraví",
   kapitola: "1.4",
   pilir: "Lidský potenciál",
-  popisMeta: "Špatné zdraví a předčasná úmrtí stojí Česko zhruba 700 miliard korun ročně. Co s tím navrhuje Hospodářská strategie PEER: prevence, péče na správném místě a podpora pečujících. S bobrem a grafy.",
+  popisMeta: "Špatné zdraví a předčasná úmrtí stojí Česko zhruba 700 miliard korun ročně. Co s tím navrhuje Hospodářská strategie PEER: prevence, péče na správném místě a podpora pečujících. S garantem kapitoly a grafy.",
   hook: {
     h1: "Kolik nás stojí, že jsme nemocní?",
     value: 700,

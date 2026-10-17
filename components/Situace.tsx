@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BobrBubble } from "./BobrBubble";
+import { GarantBubble } from "./GarantBubble";
 import styles from "./Situace.module.css";
 
 /* Vstup „podle mě“: místo kapitol si člověk vybere životní situaci a dostane témata a řádky „pro tebe“,
@@ -41,9 +41,9 @@ export function Situace({ data }: { data: SituaceView[] }) {
 
       {cur ? (
         <div className={styles.result} aria-live="polite">
-          <BobrBubble mood="happy" pointing size={120} className={styles.bubble}>
+          <GarantBubble kdo="rada" mood="happy" pointing size={120} className={styles.bubble}>
             {cur.uvod}
-          </BobrBubble>
+          </GarantBubble>
           <ol className={styles.list}>
             {cur.temata.map((t) => (
               <li key={t.slug} className={`card ${styles.topic}`}>

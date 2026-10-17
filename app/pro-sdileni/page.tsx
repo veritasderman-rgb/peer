@@ -3,7 +3,7 @@ import Link from "next/link";
 import { topics } from "@/topics";
 import { abs } from "@/lib/site";
 import sdileni from "@/data/sdileni.json";
-import { BobrBubble } from "@/components/BobrBubble";
+import { GarantBubble } from "@/components/GarantBubble";
 import { KopirovatText } from "@/components/KopirovatText";
 import styles from "./page.module.css";
 
@@ -83,9 +83,9 @@ export default function ProSdileniPage() {
             </Link>
           </p>
         </div>
-        <BobrBubble mood="happy" pointing side="left">
+        <GarantBubble kdo="rada" mood="happy" pointing side="left">
           Texty jsou hotové k vložení. Stačí zkopírovat, přidat video a poslat dál. Čísla neměň, jsou ze studie.
-        </BobrBubble>
+        </GarantBubble>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="pravidla">

@@ -3,7 +3,7 @@
 export type Situace = {
   id: string; // url-safe, e.g. "rodic"
   label: string; // text čipu, nejvýš 3 slova
-  uvod: string; // jedna věta, kterou řekne bobr po výběru čipu (tykání, max 140 znaků)
+  uvod: string; // jedna věta, kterou řekne rada po výběru čipu (tykání, max 140 znaků)
   temata: { slug: string; opatreni: number[] }[]; // 1–3 čísla opatření v tématu, nejrelevantnější první
 };
 

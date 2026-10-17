@@ -2,7 +2,7 @@ import type { VideoScript } from "../../lib/topics";
 import { C, F } from "../theme";
 import { Body, TextArea, rise, useEnter, useLayout } from "../ui";
 
-/* 6) Outro: „Česko má na víc!“, adresa webu. Bobr mává na rozloučenou. */
+/* 6) Outro: „Česko má na víc!“, adresa webu. Garant mává na rozloučenou. */
 const DEFAULT_OUTRO = "Celá strategie a plné znění: manavic.pirati.cz";
 
 export function Outro({ script, beats }: { script: VideoScript; beats: number[] }) {

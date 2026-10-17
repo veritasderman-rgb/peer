@@ -62,7 +62,7 @@ export const stat: TopicConfig = {
   kratkyNazev: "Stát jako lídr",
   kapitola: "4.2",
   pilir: "Stát jako motor",
-  popisMeta: "Z téměř 9 000 služeb státu je digitálních jen 18 %. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S bobrem a grafy.",
+  popisMeta: "Z téměř 9 000 služeb státu je digitálních jen 18 %. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S garantem kapitoly a grafy.",
   hook: {
     h1: "Kolik státních služeb vyřídíš online?",
     value: 18,

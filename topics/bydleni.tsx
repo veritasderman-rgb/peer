@@ -60,7 +60,7 @@ export const bydleni: TopicConfig = {
   kratkyNazev: "Bydlení",
   kapitola: "1.1",
   pilir: "Lidský potenciál",
-  popisMeta: "Na byt potřebuješ 15 ročních platů, nejvíc v EU. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "Na byt potřebuješ 15 ročních platů, nejvíc v EU. Proč to tak je a co s tím navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Kolik ročních platů stojí byt?",
     value: 15.1,

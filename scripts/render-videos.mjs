@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Render videí „Bobr za minutu“ pro všechna témata z video/scripts/index.ts.
+/* Render videí „Strategie za minutu“ pro všechna témata z video/scripts/index.ts.
    Výstup: public/video/<slug>-wide.mp4 (1920×1080), <slug>-reel.mp4 (1080×1920), <slug>-poster.jpg, <slug>-poster-reel.jpg.
 
    npm run video:render                      všechna témata
@@ -33,11 +33,11 @@ const only = arg("only")?.split(",").map((s) => s.trim()).filter(Boolean);
 const baseCrf = Number(arg("crf") ?? 26);
 const concurrency = arg("concurrency") ? Number(arg("concurrency")) : null;
 const framesArg = arg("frames");
-const framesDir = path.resolve(arg("frames-dir") ?? path.join(os.tmpdir(), "bobr-frames"));
+const framesDir = path.resolve(arg("frames-dir") ?? path.join(os.tmpdir(), "strategie-frames"));
 
 /* ---------- scénáře (TypeScript → dočasný ESM přes esbuild) ---------- */
 async function loadScripts() {
-  const tmp = path.join(os.tmpdir(), `bobr-scripts-${process.pid}.mjs`);
+  const tmp = path.join(os.tmpdir(), `strategie-scripts-${process.pid}.mjs`);
   await build({
     stdin: {
       contents: `export { scripts } from "./video/scripts/index.ts"; export { buildTimeline } from "./video/timeline.ts";`,

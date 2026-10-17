@@ -1,6 +1,6 @@
 # Návrh webu „Česko má na víc!“: Hospodářská strategie PEER pro běžné lidi
 
-Vizuální koncept s ukázkami (maskot, persony, kalkulačky): [`koncept/index.html`](../koncept/index.html)
+Vizuální koncept s ukázkami (avatary garantů, persony, kalkulačky): [`koncept/index.html`](../koncept/index.html)
 
 ## 1. Proč studie v současné podobě nefunguje pro veřejnost
 
@@ -9,7 +9,7 @@ Dokument (99 stran, ≈30 000 slov, ≈240 zdrojů) je obsahově silný, ale pos
 | Bariéra | Dnes | Na webu |
 |---|---|---|
 | Struktura | 4 pilíře a 13 kapitol podle resortů | vstup přes životní situaci („Najdi se“) |
-| Jazyk | RUD, LVT, ERM2, HTA, EPC, DPP, ORP… | maskot pojmy „přeloží“ při najetí, slovník |
+| Jazyk | RUD, LVT, ERM2, HTA, EPC, DPP, ORP… | avatar garanta pojmy „přeloží“ při najetí, slovník |
 | Čísla | 840 mld., 0,7 % HDP | přepočet na domácnost, měsíc, splátku |
 | Forma | dlouhé odstavce A4 | jedna obrazovka = jedna myšlenka, mobil napřed |
 
@@ -18,7 +18,7 @@ Dokument (99 stran, ≈30 000 slov, ≈240 zdrojů) je obsahově silný, ale pos
 Každé téma má tři patra a nic se neztratí:
 
 1. **10 vteřin**: jedno číslo a obrázek („Byt = 15 ročních platů“). Funguje jako sdílecí karta.
-2. **2 minuty**: příběh persony, maskot, animovaný graf, 3–5 opatření s řádkem „co to znamená pro tebe“, video.
+2. **2 minuty**: příběh persony, avatar garanta, animovaný graf, 3–5 opatření s řádkem „co to znamená pro tebe“, video.
 3. **20 minut**: plné znění kapitoly, grafy, poznámky, odkazy do rejstříku zdrojů, PDF.
 
 Díky třetímu patru web obstojí před novináři a fact-checkery a splní požadavek „kompletní informace“.
@@ -31,15 +31,15 @@ Díky třetímu patru web obstojí před novináři a fact-checkery a splní po�
 - **Precedenty**: korupční kalkulačka na nakopnemeto.pirati.cz (2025) a „plán úspor pro 90 % rodin“ s modelovými domácnostmi (říjen 2025).
 - **Brand** podle styleguide.pirati.cz 2.22: černá, bílá, Pirati Yellow `#fec934` jako akcent (nikdy žlutý text na bílé), Bebas Neue na nadpisy, Roboto na text, Roboto Condensed na popisky.
 
-## 4. Maskot: bobr
+## 4. Avatary garantů
 
-Stavitel a dříč, umí hospodařit s vodou, do české přírody se vrátil a daří se mu. To je příběh strategie. Pirátský šátek odkazuje na značku a dá se sundat, pokud má web působit méně stranicky.
+Každou kapitolu vysvětluje avatar jejího garanta, člena PEER, aby bylo vidět, kdo za čísly ručí. Příběh strategie tak nesou lidé, kteří ji připravili. Pirátský klobouk je značka Pirátů, kteří strategii zadali; dá se sundat, pokud má web působit méně stranicky.
 
-Pravidla: ptá se za čtenáře („A proč ty byty prostě nepostavíme?“), ukazuje a nemoralizuje, je stejný na webu, ve videu, na sítích i na letáku. Jméno vybere anketa mezi příznivci.
+Pravidla: avatar ptá se za čtenáře („A proč ty byty prostě nepostavíme?“), ukazuje a nemoralizuje, je stejný na webu, ve videu, na sítích i na letáku. Podobu si každý garant může nechat upravit.
 
 Nálady: vysvětluje (ukazuje na graf), žasne (šokující číslo), přemýšlí (otázka), raduje se (řešení).
 
-Alternativy: papoušek (riziko „papouškuje“), kompas/lodní robot, ilustrovaná lidská průvodkyně.
+Dřív zvažované alternativy: papoušek (riziko „papouškuje“), kompas/lodní robot, ilustrovaná lidská průvodkyně.
 
 ## 5. Persony („Najdi se“), vždy označené jako modelové
 
@@ -77,17 +77,17 @@ Alternativy: papoušek (riziko „papouškuje“), kompas/lodní robot, ilustrov
 - `/dopad`: velký obraz +1 p. b. a metodika
 - `/slovnik`, `/strategie` (plný text s vyhledáváním a zdroji), `/videa`
 
-**Šablona tématu:** háček (jedno číslo) → příběh (persona + bobr) → proč to tak je (animované schéma příčin) → co navrhujeme (karty s „co to znamená pro tebe“) → co to přinese a co to stojí → spočítej si → kdo za tím stojí (garant) → plné znění a zdroje.
+**Šablona tématu:** háček (jedno číslo) → příběh (persona + avatar garanta) → proč to tak je (animované schéma příčin) → co navrhujeme (karty s „co to znamená pro tebe“) → co to přinese a co to stojí → spočítej si → kdo za tím stojí (garant) → plné znění a zdroje.
 
 ## 8. Videa
 
 | Formát | Délka | Kde | Dílů |
 |---|---|---|---|
-| Bobr za minutu | 60–90 s | web, YouTube, sítě (16:9 i 9:16) | 13 |
+| Strategie za minutu | 60–90 s | web, YouTube, sítě (16:9 i 9:16) | 13 |
 | Číslo dne | 10–20 s | Reels, TikTok, Shorts | 40+ |
 | Příběh persony | 2–3 min | web, YouTube | 6–8 |
 | Upoutávka | 90–120 s | úvod webu | 1 |
-| Bobr se ptá experta | 5–10 min | YouTube, podcast | 8 |
+| Garant se ptá experta | 5–10 min | YouTube, podcast | 8 |
 
 Vše s titulky natvrdo a s přepisem na webu.
 
@@ -96,7 +96,7 @@ Vše s titulky natvrdo a s přepisem na webu.
 - **Next.js** se statickým generováním, nasazení z tohoto repa, náhled pro každý PR.
 - **Obsah v MDX** po kapitolách; ekonomové editují v GitHubu.
 - **Jeden datový soubor** se všemi čísly a zdroji. Text, grafy, kalkulačky, sdílecí karty i videa čtou čísla odtud.
-- **Rive** pro interaktivního bobra (stavy, reakce na scroll), **GSAP ScrollTrigger / Motion** pro scrollytelling, **D3 / Observable Plot** pro grafy, mapy krajů z dat ČÚZK a Exekutorské komory (CC BY).
+- **Rive** pro interaktivní avatary (stavy, reakce na scroll), **GSAP ScrollTrigger / Motion** pro scrollytelling, **D3 / Observable Plot** pro grafy, mapy krajů z dat ČÚZK a Exekutorské komory (CC BY).
 - **Remotion** renderuje videa ze stejných React komponent a dat; změna čísla = nový render, ne nový střih. Hosting YouTube nebo Mux.
 - **@vercel/og** generuje sdílecí obrázek pro každé číslo a výsledek kalkulačky.
 - **Vercel Web Analytics / Plausible** bez cookies.
@@ -105,10 +105,10 @@ Vše s titulky natvrdo a s přepisem na webu.
 
 ## 10. Postup (orientačně, malý tým)
 
-1. **Příprava, 2 týdny**: sjednotit čísla (kap. 11), schválit maskota, napsat lidskou verzi pilotního tématu Bydlení, otestovat na 5 lidech mimo bublinu.
+1. **Příprava, 2 týdny**: sjednotit čísla (kap. 11), schválit avatary garantů, napsat lidskou verzi pilotního tématu Bydlení, otestovat na 5 lidech mimo bublinu.
 2. **MVP, 4 týdny**: úvod, Najdi se, 3 témata (Bydlení, Exekuce, Euro), 2 kalkulačky, slovník, plný text, sdílecí karty.
-3. **Plný obsah, 6–8 týdnů**: zbylých 10 témat, série „Bobr za minutu“, mapy, upoutávka.
-4. **Kampaň, průběžně**: Číslo dne, kvíz, anketa o jméno bobra, leták s QR kódy na kalkulačky. Koordinace s Kampaňovým týmem strany.
+3. **Plný obsah, 6–8 týdnů**: zbylých 10 témat, série „Strategie za minutu“, mapy, upoutávka.
+4. **Kampaň, průběžně**: Číslo dne, kvíz, leták s QR kódy na kalkulačky. Koordinace s Kampaňovým týmem strany.
 
 ## 11. Čísla, která je třeba sjednotit před spuštěním
 
@@ -123,8 +123,8 @@ Kalkulačky v konceptu reprodukují čísla studie: hypotéka 4,7 mil. Kč / 30 
 
 ## 12. Otevřené otázky pro tým
 
-1. Web Pirátů, nebo nezávislejší web PEER? Určuje značku, maskota i tón.
-2. Bobr, nebo jiný maskot? Kdo ho nakreslí?
+1. Web Pirátů, nebo nezávislejší web PEER? Určuje značku, avatary i tón.
+2. Avatary garantů, nebo jiný způsob? Kdo je nakreslí a kdo k tomu dá souhlas?
 3. Rozpočet na animaci (nejdražší položka).
 4. Kdo za každou kapitolu schvaluje „lidskou“ verzi textu (garant)?
 5. Doména a termín spuštění.

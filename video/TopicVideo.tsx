@@ -4,7 +4,8 @@ import type { VideoScript } from "../lib/topics";
 import { loadFonts, useFontsReady } from "./fonts";
 import { C, getLayout } from "./theme";
 import { FPS, MUSIC, buildTimeline, type SceneId } from "./timeline";
-import { BobrLayer, Header, LayoutContext, ProgressBar, SceneFade } from "./ui";
+import { GarantLayer, Header, LayoutContext, ProgressBar, SceneFade } from "./ui";
+import { garantTematu, type Mluvci } from "../lib/garanti";
 import { Hook } from "./scenes/Hook";
 import { Problem } from "./scenes/Problem";
 import { Proc } from "./scenes/Proc";
@@ -32,7 +33,11 @@ const musicVolume = (total: number) => (f: number) =>
   interpolate(f, [0, FPS, total - 2 * FPS, total - 1], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
 /* Jedna komponenta pro obě kompozice: rozložení se řídí poměrem stran
-   (široké: bobr vlevo ~35 %, text vpravo; reel: text nahoře, bobr dole). */
+   (široké: garant vlevo ~35 %, text vpravo; reel: text nahoře, garant dole).
+   Mluví garant kapitoly; úvodní video (uvod) uvádí celá rada. */
+function mluvci(slug: string): Mluvci {
+  return slug === "uvod" ? "rada" : garantTematu(slug);
+}
 export function TopicVideo({ script }: TopicVideoProps) {
   const { width, height } = useVideoConfig();
   const layout = getLayout(width, height);
@@ -70,7 +75,7 @@ export function TopicVideo({ script }: TopicVideoProps) {
             name="hudba"
           />
         ) : null}
-        <BobrLayer segments={segments} />
+        <GarantLayer segments={segments} kdo={mluvci(script.slug)} />
         <ProgressBar total={total} />
       </AbsoluteFill>
     </LayoutContext.Provider>

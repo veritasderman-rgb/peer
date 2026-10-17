@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Bobr } from "@/components/Bobr";
-import { BobrBubble } from "@/components/BobrBubble";
+import { Garant } from "@/components/Garant";
+import { GarantBubble } from "@/components/GarantBubble";
 import { Socialni } from "@/components/Socialni";
 import { NahlasitChybu } from "@/components/NahlasitChybu";
 import { clenove, tymPoznamka } from "@/lib/tym";
@@ -19,7 +19,7 @@ const kroky = [
   { n: "01", nazev: "Přečetla studii", text: "99 stran, 14 kapitol, přes 200 odkazů na zdroje." },
   { n: "02", nazev: "Vytěžila čísla", text: "Každé číslo se zdrojem do strojově čitelných dat. Z nich čte text, grafy i videa." },
   { n: "03", nazev: "Napsala lidskou verzi", text: "Tři hloubky čtení, modelové postavy, slovník, řádek „pro tebe“ u každého opatření." },
-  { n: "04", nazev: "Nakreslila bobra", text: "Pět nálad, klacík, pirátský klobouk. Čistý SVG, animace v CSS." },
+  { n: "04", nazev: "Nakreslila garanty", text: "Osm avatarů podle fotek, pět nálad, ukazovátko a pirátský klobouk. Každý z garantů s použitím souhlasil." },
   { n: "05", nazev: "Naprogramovala web", text: "Grafy, kalkulačky, scrollytelling, tmavý režim, mobil. A otestovala ho." },
   { n: "06", nazev: "Natočila a namluvila videa", text: "Scénář z dat, render, syntetický hlas, hudba, titulky. Široké i na výšku." },
 ];
@@ -27,7 +27,7 @@ const kroky = [
 /* Odhad ceny pilotní stránky u české agentury. Je to odhad bez zdroje, založený na běžných sazbách
    (grafik a animátor 800–1 500 Kč/h, vývojář 1 200–2 000 Kč/h). Rozpětí je schválně široké. */
 const odhad = [
-  { polozka: "Maskot: návrh, 5 nálad, varianta s klacíkem, animace", lidi: "ilustrátor a animátor, 5–8 dní", cena: "60–120 tis. Kč", max: 120 },
+  { polozka: "Avatary: 8 postav podle fotek, 5 nálad, animace", lidi: "ilustrátor a animátor, 5–8 dní", cena: "60–120 tis. Kč", max: 120 },
   { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč", max: 350 },
   { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč", max: 60 },
   { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč", max: 110 },
@@ -56,9 +56,9 @@ export default function JakVzniklPage() {
             a namluvila umělá inteligence. Jeden člověk ji zadal, řídil a kontroloval.
           </p>
         </div>
-        <BobrBubble mood="thinking" side="left">
-          Já jsem taky z AI. Nakreslila mě za pár hodin, včetně klobouku.
-        </BobrBubble>
+        <GarantBubble kdo="rada" mood="thinking" side="left">
+          I naše avatary jsou z AI. Nakreslila je podle fotek za pár hodin, včetně klobouků.
+        </GarantBubble>
       </section>
 
       {/* dva sloupce: lidé vs. AI, v číslech */}
@@ -81,7 +81,7 @@ export default function JakVzniklPage() {
               <li><b>{topics.length}</b> témat ve třech hloubkách</li>
               <li><b>{pocetVidei}</b> namluvených videí</li>
               <li><b>{pocetKalkulacek}</b> kalkulaček</li>
-              <li><b>1</b> bobr v pěti náladách</li>
+              <li><b>8</b> avatarů v pěti náladách</li>
             </ul>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function JakVzniklPage() {
           ))}
         </ol>
         <div className={styles.rucime}>
-          <Bobr mood="neutral" size={120} />
+          <Garant kdo="rada" mood="neutral" size={140} />
           <div className={`card ${styles.rucimeBox}`}>
             <h3>Co AI neumí: ručit za čísla</h3>
             <p>
@@ -199,7 +199,7 @@ export default function JakVzniklPage() {
       <section className={`wrap ${styles.section} ${styles.last}`}>
         <p className={styles.actions}>
           <Link className="btn" href="/bydleni">Podívej se na výsledek: Bydlení</Link>
-          <Link className="btn secondary" href="/proc-bobr">Proč bobr</Link>
+          <Link className="btn secondary" href="/kdo-je-kdo">Kdo je kdo</Link>
           <Link className="btn secondary" href="/videa">Videa</Link>
         </p>
       </section>

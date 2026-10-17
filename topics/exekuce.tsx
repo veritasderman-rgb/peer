@@ -55,7 +55,7 @@ export const exekuce: TopicConfig = {
   kratkyNazev: "Exekuce",
   kapitola: "1.3",
   pilir: "Lidský potenciál",
-  popisMeta: "V exekuci je 590 000 lidí a kdo vydělá nad cca 31 500 Kč hrubého, přijde o každou další korunu. Proč se práce nevyplatí a co navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "V exekuci je 590 000 lidí a kdo vydělá nad cca 31 500 Kč hrubého, přijde o každou další korunu. Proč se práce nevyplatí a co navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Proč se půl milionu lidí nevyplatí pracovat?",
     value: 590000,

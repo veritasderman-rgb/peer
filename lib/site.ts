@@ -7,7 +7,7 @@ const fromVercel = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${proces
 export const SITE_URL = fromEnv ?? fromVercel ?? "http://localhost:3000";
 export const SITE_NAME = "Česko má na víc!";
 export const SITE_DESCRIPTION =
-  "Hospodářská strategie 2026–2035 Pirátské expertní ekonomické rady (PEER) vysvětlená pro běžné lidi: 14 témat, bobr, videa, kalkulačky a plné znění se zdroji.";
+  "Hospodářská strategie 2026–2035 Pirátské expertní ekonomické rady (PEER) vysvětlená pro běžné lidi: 14 témat, videa s garanty, kalkulačky a plné znění se zdroji.";
 export const ORG = { name: "Pirátská expertní ekonomická rada (PEER)", url: "https://peer.pirati.cz/" };
 
 export const abs = (path: string) => new URL(path, SITE_URL).toString();

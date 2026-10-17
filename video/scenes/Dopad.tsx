@@ -2,7 +2,7 @@ import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 import type { VideoScript } from "../../lib/topics";
 import { Body, Eyebrow, NumberBlock, TextArea, rise, useEnter, useLayout } from "../ui";
 
-/* 5) Dopad: velké číslo + věta. Bobr má radost. */
+/* 5) Dopad: velké číslo + věta. Garant má radost. */
 export function Dopad({ script, beats }: { script: VideoScript; beats: number[] }) {
   const L = useLayout();
   const frame = useCurrentFrame();

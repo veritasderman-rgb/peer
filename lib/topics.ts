@@ -11,7 +11,7 @@ export type Blok =
 
 export type Mood = "neutral" | "surprised" | "thinking" | "happy" | "sleepy";
 
-export type StoryStep = { mood: Mood; pointing?: boolean; title?: string; text: ReactNode; bobr?: string };
+export type StoryStep = { mood: Mood; pointing?: boolean; title?: string; text: ReactNode; /* co k tomu říká garant kapitoly (pole se jmenuje bobr z historických důvodů) */ bobr?: string };
 
 export type BarItem = { label: string; value: number; note?: string; highlight?: boolean };
 
@@ -24,8 +24,8 @@ export type ChartSpec =
 
 export type Opatreni = { cislo: number; nazev: string; popis: string; klicoveCislo?: string | null; proTebe: string };
 
-/* Scénář videa „Bobr za minutu“: stejný scénář se renderuje jako 16:9 i 9:16.
-   Vše krátké: na obrazovce je vždy jedna věta, bobr a jedno číslo. */
+/* Scénář videa „Strategie za minutu“: stejný scénář se renderuje jako 16:9 i 9:16.
+   Vše krátké: na obrazovce je vždy jedna věta, garant kapitoly a jedno číslo. */
 /* Mluvený komentář k videu: jeden odstavec na scénu, čísla slovy (kvůli hlasu), tykání, hravě. */
 export type Narration = {
   hook: string;
@@ -66,7 +66,9 @@ export type TopicConfig = {
     label: string;
     lede: string;
     source: string;
+    /* věta, kterou v bublině říká garant kapitoly (název pole zůstal z doby maskota) */
     bobr: string;
+    /* nálada garanta u té věty */
     bobrMood?: Mood;
   };
   srovnani?: { nadpis: string; grafy: ChartSpec[]; poznamka?: string };
@@ -78,7 +80,7 @@ export type TopicConfig = {
   opatreniUvod: string;
   opatreni: Opatreni[];
   cile: { hodnota: number | string; jednotka: string; cil: string }[];
-  stoji: { odstavce: string[]; bobr: string };
+  stoji: { odstavce: string[]; /* poznámka garanta kapitoly (název pole zůstal z doby maskota) */ bobr: string };
   kalkulacky?: ComponentType[];
   garant: { jmeno: string; role: string; initials: string; citace?: string; citaceZdroj?: { text: string; url: string } };
   plneZneniNadpis: string;

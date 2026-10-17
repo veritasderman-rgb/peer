@@ -54,7 +54,7 @@ export const oligarchie: TopicConfig = {
   kratkyNazev: "Oligarchie",
   kapitola: data.kapitola,
   pilir: "Trh a kapitál",
-  popisMeta: "Dotace v objemu 20 až 30 mld. Kč ročně míří gigantům a podle výzkumů se nepromítají do inovací. Co navrhuje Hospodářská strategie PEER. S bobrem a grafy.",
+  popisMeta: "Dotace v objemu 20 až 30 mld. Kč ročně míří gigantům a podle výzkumů se nepromítají do inovací. Co navrhuje Hospodářská strategie PEER. S garantem kapitoly a grafy.",
   hook: {
     h1: "Komu jdou dotace, které platíme všichni?",
     value: 20,

@@ -1,0 +1,29 @@
+.page { display: block; }
+.section { padding-block: 3.5rem 0; display: grid; gap: 1.25rem; align-content: start; min-width: 0; }
+.last { padding-bottom: 4rem; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center; padding-block: 3rem 1rem; }
+.heroText { display: grid; gap: 0.9rem; min-width: 0; }
+.lede { font-size: var(--s1); max-width: 44ch; overflow-wrap: anywhere; }
+
+/* karty garantů */
+.team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1rem; }
+.clen { padding: 1.1rem 1.2rem 1.2rem; display: grid; gap: 0.8rem; align-content: start; min-width: 0; overflow-wrap: anywhere; }
+.head { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0.6rem 1rem; min-width: 0; }
+.avatar { flex: none; max-width: 100%; line-height: 0; }
+.who { flex: 1 1 130px; display: grid; gap: 0.35rem; min-width: 0; }
+.name { font-size: var(--s1); line-height: 1.05; margin: 0; }
+.role { font-size: var(--s-1); line-height: 1.4; margin: 0; }
+.bio { margin: 0; line-height: 1.55; }
+.temata { margin: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; font-family: var(--f-data); font-size: var(--s-1); font-weight: 700; }
+.temata a { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.6rem; text-decoration: none; color: var(--ink); }
+.temata a:hover { border-color: var(--ink); }
+.zdroj { margin: 0; line-height: 1.5; min-width: 0; overflow-wrap: anywhere; }
+
+/* text sekcí */
+.text { display: grid; gap: 0.9rem; min-width: 0; overflow-wrap: anywhere; }
+.text p { margin: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0 0; }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; }
+}

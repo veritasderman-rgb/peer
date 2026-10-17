@@ -62,7 +62,7 @@ export const prumysl: TopicConfig = {
   kratkyNazev: "Průmysl",
   kapitola: "3.1",
   pilir: "Moderní energetika a průmysl",
-  popisMeta: "Česko je 7. nejkomplexnější ekonomika světa, ale v životní úrovni jsme kolem 40. místa. Proč to tak je a co navrhuje Hospodářská strategie PEER. S bobrem, grafy a kalkulačkou.",
+  popisMeta: "Česko je 7. nejkomplexnější ekonomika světa, ale v životní úrovni jsme kolem 40. místa. Proč to tak je a co navrhuje Hospodářská strategie PEER. S garantem kapitoly, grafy a kalkulačkou.",
   hook: {
     h1: "Vyrábíme jako elita. Proč bohatneme jako průměr?",
     value: 340,

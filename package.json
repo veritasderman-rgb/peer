@@ -10,7 +10,8 @@
     "video:render": "node scripts/render-videos.mjs",
     "test": "playwright test",
     "check:links": "node scripts/check-links.mjs --allow-list scripts/link-allow.txt",
-    "media:upload": "node scripts/upload-media.mjs"
+    "media:upload": "node scripts/upload-media.mjs",
+    "garanti:export": "node scripts/export-garanti.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

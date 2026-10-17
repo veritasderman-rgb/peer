@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { TopicConfig } from "@/lib/topics";
-import { Bobr } from "@/components/Bobr";
-import { BobrBubble } from "@/components/BobrBubble";
+import { Garant } from "@/components/Garant";
+import { GarantBubble } from "@/components/GarantBubble";
+import { garantTematu } from "@/lib/garanti";
 import { BigNumber } from "@/components/BigNumber";
 import { Chart } from "@/components/Chart";
 import { Story } from "@/components/Story";
@@ -20,6 +21,8 @@ const nf = new Intl.NumberFormat("cs-CZ");
 /* Šablona tématu ve třech hloubkách: 10 vteřin (háček) → 2 minuty (příběh, proč, návrh, dopad,
    kalkulačky, garant) → 20 minut (plné znění se zdroji, slovník). */
 export function TopicPage({ t }: { t: TopicConfig }) {
+  /* Na stránce tématu mluví garant té kapitoly (podle data/tym.json). */
+  const kdo = garantTematu(t.slug);
   return (
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`} id="hook">
@@ -46,14 +49,14 @@ export function TopicPage({ t }: { t: TopicConfig }) {
           </div>
         </div>
         <div className={styles.heroBobr}>
-          <BobrBubble mood={t.hook.bobrMood ?? "surprised"} side="left">{t.hook.bobr}</BobrBubble>
+          <GarantBubble kdo={kdo} mood={t.hook.bobrMood ?? "surprised"} side="left">{t.hook.bobr}</GarantBubble>
         </div>
       </section>
 
       {t.video && (
         <section className={`wrap ${styles.section}`} id="video" aria-labelledby="video-h">
           <p className="eyebrow">1 minuta</p>
-          <h2 id="video-h">Bobr za minutu</h2>
+          <h2 id="video-h">Strategie za minutu</h2>
           <TopicVideo
             wide={t.video.wide}
             reel={t.video.reel}
@@ -79,7 +82,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
       <section className={`wrap ${styles.section}`} id="pribeh" aria-labelledby="pribeh-h">
         <p className="eyebrow">2 minuty</p>
         <h2 id="pribeh-h">{t.pribehNadpis}</h2>
-        <Story steps={t.steps} persona={t.persona} />
+        <Story steps={t.steps} persona={t.persona} kdo={kdo} />
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="proc">
@@ -131,7 +134,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
           <div className={`card ${styles.cost}`} id="stoji">
             <h3>A co to stojí</h3>
             {t.stoji.odstavce.map((o, i) => <p key={i}>{o}</p>)}
-            <BobrBubble mood="thinking" size={120}>{t.stoji.bobr}</BobrBubble>
+            <GarantBubble kdo={kdo} mood="thinking" size={120}>{t.stoji.bobr}</GarantBubble>
           </div>
         </div>
       </section>
@@ -189,11 +192,11 @@ export function TopicPage({ t }: { t: TopicConfig }) {
       </section>
 
       <section className={`wrap ${styles.section} ${styles.outro}`}>
-        <Bobr mood="sleepy" size={140} />
+        <Garant kdo={kdo} mood="sleepy" size={140} />
         <div>
           <p className="display" style={{ fontSize: "var(--s2)" }}>{t.dalsi ?? "Další témata"}</p>
           <p className="muted">
-            Vyber si další téma na <Link href="/#temata">úvodní stránce</Link>, nebo se podívej, <Link href="/proc-bobr">proč to vysvětluje zrovna bobr</Link>.
+            Vyber si další téma na <Link href="/#temata">úvodní stránce</Link>, nebo se podívej, <Link href="/kdo-je-kdo">kdo je kdo</Link> mezi autory strategie.
           </p>
         </div>
       </section>

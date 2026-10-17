@@ -1,7 +1,7 @@
 # Česko má na víc! · web k Hospodářské strategii PEER
 
 Web, který převypráví Hospodářskou strategii 2026–2035 Pirátské expertní ekonomické rady (PEER) pro běžné lidi:
-s maskotem (bobr v pirátském klobouku), modelovými postavami, grafy, kalkulačkami a plným zněním každé kapitoly se zdroji.
+s avatary garantů (pirátský klobouk je značka Pirátů), modelovými postavami, grafy, kalkulačkami a plným zněním každé kapitoly se zdroji.
 
 - Návrh a zdůvodnění: [`docs/navrh-webu.md`](docs/navrh-webu.md)
 - Původní studie: [`Piratska_Hospodarska_strategie.pdf`](Piratska_Hospodarska_strategie.pdf)
@@ -38,13 +38,14 @@ Totéž běží v GitHub Actions (`.github/workflows/ci.yml`): testy při každ�
 
 | Cesta | Co je v ní |
 |---|---|
-| `app/` | stránky (App Router): `/`, `/bydleni`, `/proc-bobr` |
-| `components/` | bobr (`Bobr`, `BobrBubble`), grafy (`BarChart`, `Donut`, `IndexChart`, `BigNumber`), kalkulačky, scrollytelling (`Story`), řetězec příčin (`Spirala`), opatření, plné znění, slovník |
+| `app/` | stránky (App Router): `/`, `/bydleni`, `/kdo-je-kdo` |
+| `components/` | avatary garantů (`Garant`, `GarantBubble`, `GarantSvg`), grafy (`BarChart`, `Donut`, `IndexChart`, `BigNumber`), kalkulačky, scrollytelling (`Story`), řetězec příčin (`Spirala`), opatření, plné znění, slovník |
+| `public/garanti/` | statické SVG avatarů garantů; generuje `scripts/export-garanti.mjs`, data v `lib/garanti.ts` |
 | `data/bydleni.json` | všechna čísla kapitoly 1.1 se zdroji; z něj čtou text, grafy i kalkulačky |
 | `content/bydleni-plne-zneni.ts` | plné znění kapitoly 1.1 po odstavcích, rejstřík zdrojů, slovník pojmů |
 | `koncept/` | původní klikací koncept (statické HTML) |
 
-## Videa „Bobr za minutu“
+## Videa „Strategie za minutu“
 
 Každé téma má široké video 16:9 (YouTube, web) a reel 9:16 (Instagram, TikTok, Shorts). Obě verze se renderují
 v [Remotionu](https://www.remotion.dev/) ze scénáře `video/scripts/<slug>.ts` (typ `VideoScript` v `lib/topics.ts`),

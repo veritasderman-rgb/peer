@@ -2,7 +2,7 @@ import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import type { VideoScript } from "../../lib/topics";
 import { Body, Eyebrow, NumberBlock, TextArea, useLayout } from "../ui";
 
-/* 2) Problém: karty po ~5 s, na každé jedno číslo a jedna věta. Bobr přemýšlí. */
+/* 2) Problém: karty po ~5 s, na každé jedno číslo a jedna věta. Garant přemýšlí. */
 export function Problem({ script, beats }: { script: VideoScript; beats: number[] }) {
   const L = useLayout();
   const frame = useCurrentFrame();

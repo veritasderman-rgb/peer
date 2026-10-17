@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/pro-sdileni", priority: 0.5 },
     { path: "/pro-media", priority: 0.5 },
     { path: "/en", priority: 0.6 },
-    { path: "/proc-bobr", priority: 0.5 },
+    { path: "/kdo-je-kdo", priority: 0.7 },
     { path: "/jak-vznikl", priority: 0.5 },
   ];
   return [
