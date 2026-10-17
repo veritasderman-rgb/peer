@@ -21,7 +21,7 @@
 .detail > summary { list-style: none; cursor: pointer; padding: 1rem 1.2rem; }
 .detail > summary::-webkit-details-marker { display: none; }
 .detail > summary:hover { background: var(--paper); }
-.detail > summary:focus-visible { outline: 3px solid var(--sun); outline-offset: -3px; }
+.detail > summary:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
 .temaTitul { display: grid; gap: 0.2rem; min-width: 0; }
 .temaNazev { font-family: var(--f-display); text-transform: uppercase; font-size: var(--s2); line-height: 1.05; }
 .temaNazev::after { content: " +"; color: var(--river); }

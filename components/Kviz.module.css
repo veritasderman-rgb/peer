@@ -24,7 +24,7 @@
   overflow-wrap: anywhere;
 }
 .chip:hover .face { border-color: var(--ink); }
-.radio:focus-visible + .face { outline: 3px solid var(--sun); outline-offset: 2px; border-color: var(--ink); }
+.radio:focus-visible + .face { outline: 3px solid var(--focus); outline-offset: 2px; border-color: var(--ink); }
 .radio:checked + .face { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
 .radio:checked + .face::before { content: "✓ "; }
 
@@ -39,7 +39,7 @@
 .hlava { display: grid; gap: 0.5rem; }
 .nadpis { font-size: var(--s3); scroll-margin-top: 5rem; }
 .nadpis:focus { outline: none; }
-.nadpis:focus-visible { outline: 3px solid var(--sun); outline-offset: 4px; }
+.nadpis:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 .souhrn { font-family: var(--f-data); font-size: var(--s-1); }
 .bobr { max-width: 100%; }
 
@@ -67,7 +67,7 @@
 .platno { display: block; width: 100%; max-width: 420px; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; border: 1px solid var(--line); background: var(--sun); }
 .sdiletPozn { margin: 0; }
 .textBtn { font: inherit; font-weight: 700; color: var(--river); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 0.15em; cursor: pointer; }
-.textBtn:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.textBtn:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
 @media (max-width: 420px) {
   .otazka { padding-inline: 0.85rem; }

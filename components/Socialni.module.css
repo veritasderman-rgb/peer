@@ -13,7 +13,7 @@
   padding: 0.2rem 0.6rem 0.2rem 0.4rem;
 }
 .link:hover { border-color: var(--ink); background: var(--paper); }
-.link:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.link:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .ikona { display: inline-grid; place-items: center; width: 1.2rem; height: 1.2rem; }
 .ikona svg { width: 100%; height: 100%; }
 .compact .link { padding: 0.25rem; border-radius: 50%; }

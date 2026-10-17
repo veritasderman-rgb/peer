@@ -14,7 +14,7 @@
   transition: background 0.15s, border-color 0.15s, transform 0.15s;
 }
 .chip:hover { border-color: var(--ink); }
-.chip:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+.chip:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .chipOn { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
 .hint { font-size: var(--s-1); }
 .result { display: grid; gap: 1rem; }
