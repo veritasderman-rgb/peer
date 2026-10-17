@@ -7,7 +7,7 @@ export const script: VideoScript = {
     hook: "Na milion obyvatel máme sto třicet jedna startupů. Izrael čtyři sta deset, Rakousko dvakrát tolik než my.",
     problem: "V indexu inovací jsme třicátí druzí ze sto třiceti devíti, jen průměrní inovátoři. Nápady máme, ale prodat je neumíme, v tržní sofistikovanosti jsme sedmdesátí třetí. V Evropské unii jsme devatenáctí z dvaceti sedmi.",
     proc: "Firmy hlavně dodávají cizím výrobcům za nízkou přidanou hodnotu, mladí se bojí neúspěchu a výzkum z univerzit se do praxe nedostane.",
-    navrh: "Založíme státní fond s privátními investory podle izraelské Yozmy. Lidi v týmu dostanou zaměstnanecké podíly a neúspěch se rychle smaže. A inkubátory vyrostou v Praze, Ostravě, Plzni, Liberci a Olomouci.",
+    navrh: "Založíme státní fond s privátními investory podle izraelského fondu Jozma. Lidi v týmu dostanou zaměstnanecké podíly a neúspěch se rychle smaže. A inkubátory vyrostou v Praze, Ostravě, Plzni, Liberci a Olomouci.",
     dopad: "Chceme z průměrného inovátora udělat silného a obrátit odliv dividend.",
     outro: "Celou strategii najdeš na webu Česko má na víc.",
   },

@@ -5,7 +5,7 @@ export const script: VideoScript = {
   titulek: "Proč se nám nevyplácí šetřit na školkách?",
   narration: {
     hook: "Jen čtyři procenta dětí do tří let chodí do školky. Koruna do včasné péče se vrátí třikrát až čtyřikrát.",
-    problem: "Pětina patnáctiletých neumí funkčně číst. Rodinné zázemí tvoří dvacet dva procent rozdílů mezi žáky, ve vyspělých zemích patnáct. Česko má dvě stě osmdesát jedna oborů středních škol, Švédsku osmnáct.",
+    problem: "Pětina patnáctiletých neumí funkčně číst. Rodinné zázemí tvoří dvacet dva procent rozdílů mezi žáky, ve vyspělých zemích patnáct. Česko má dvě stě osmdesát jedna oborů středních škol, Švédsko jen osmnáct.",
     proc: "Zázemí tahá výsledky dolů, oborů je moc, studenti pracují místo školy a platy učitelů klesly na sto osm procent průměru.",
     navrh: "Péče od jednoho roku, školka ve dvou a čtvrtina dětí do tří let v péči. Školy s těžkým startem dostanou víc peněz a psychology. Středních oborů bude pod sto a víc praxe.",
     dopad: "Po patnácti až dvaceti letech reformy naroste ekonomika o padesát až sto miliard ročně.",

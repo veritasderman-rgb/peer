@@ -8,7 +8,7 @@ export const script: VideoScript = {
     problem: "Česká hypotéka má sazbu čtyři celé devadesát čtyři procenta, slovenská u stejné banky tři celé šedesát devět. Směna koruny za euro ukousne dvě až tři procenta. Stát si půjčuje o bod až bod a půl dráž.",
     proc: "Koruna znamená dražší hypotéky, malou daň při směně a přirážku na dluhu státu skoro čtyř bilionů korun.",
     navrh: "Nejdřív veřejná debata a shoda napříč stranami. Pak deficit pod tři procenta, dluh pod šedesát procent výkonu ekonomiky a dva roky v předsíni eura. Potom euro přijmeme, protože čekání se platí.",
-    dopad: "Tolik by euro ušetřilo na hypotéce za čtyři celé sedm milionu na třicet let.",
+    dopad: "Tolik by euro ušetřilo na hypotéce čtyři miliony sedm set tisíc korun na třicet let.",
     outro: "Celou strategii najdeš na webu Česko má na víc.",
   },
   hook: {
