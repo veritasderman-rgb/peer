@@ -1,7 +1,7 @@
 import { createContext, useContext, type CSSProperties, type ReactNode } from "react";
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { GarantSvg } from "../components/GarantSvg";
-import { jmenoMluvciho, type GarantMood, type Mluvci } from "../lib/garanti";
+import { GarantSvg, popisMluvciho } from "../components/GarantSvg";
+import { jmenoMluvciho, type Mluvci } from "../lib/garanti";
 import { fitSize, textWidth } from "./measure";
 import { C, F, type Layout } from "./theme";
 import { activeSegment, XFADE, type SceneId, type Segment } from "./timeline";
@@ -215,127 +215,38 @@ export function ProgressBar({ total }: { total: number }) {
   );
 }
 
-const MOODS: Record<SceneId, { mood: GarantMood; pointing?: boolean }> = {
-  hook: { mood: "surprised" },
-  problem: { mood: "thinking" },
-  proc: { mood: "neutral" },
-  navrh: { mood: "happy", pointing: true },
-  dopad: { mood: "happy" },
-  outro: { mood: "happy", pointing: true },
-};
-
-/* Mrknutí: nepravidelné intervaly, každé trvá 6 snímků (0 → 1 → 0). */
-const BLINK_GAPS = [84, 118, 96, 140, 76, 128];
-function blinkAt(frame: number): number {
-  const cycle = BLINK_GAPS.reduce((a, b) => a + b, 0);
-  let t = (frame + 40) % cycle;
-  for (const g of BLINK_GAPS) {
-    if (t < g) {
-      const d = g - t; // snímků do konce intervalu
-      if (d <= 6) return 1 - Math.abs(d - 3) / 3;
-      return 0;
-    }
-    t -= g;
-  }
-  return 0;
-}
-
-/** Mávnutí: dvě rychlé vlnky během 30 snímků od `start`. */
-function waveBurst(frame: number, start: number): number {
-  const t = frame - start;
-  if (t < 0 || t > 30) return 0;
-  return 0.5 * (1 - Math.cos((2 * Math.PI * t) / 15));
-}
-
-/** Garant kapitoly (nebo celá rada) jako trvalá vrstva: nálada se přepíná se scénou (s malým „hopnutím“),
-    mrká, dýchá, ukazuje. Pod postavou je jmenovka. */
+/** Značka garanta kapitoly (nebo rady) jako trvalá vrstva dole: monogram, jméno a role.
+    Na začátku videa přijede zespodu, jinak stojí v klidu. */
 export function GarantLayer({ segments, kdo }: { segments: Segment[]; kdo: Mluvci }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const L = useLayout();
-  const seg = activeSegment(segments, frame);
-  const { mood, pointing } = MOODS[seg.id];
-  const switchAt = seg.from === 0 ? 0 : seg.from + XFADE / 2;
-
-  // vstup na začátku videa: vyskočí zespodu
-  const intro = spring({ frame, fps, config: { damping: 13, stiffness: 110 } });
-  // hop při změně nálady
-  const hop = seg.from === 0 ? 1 : spring({ frame: frame - switchAt, fps, config: { damping: 9, stiffness: 200 } });
-  // v háčku leknutí ve chvíli, kdy číslo dopadne
-  const startle = seg.id === "hook" ? interpolate(frame, [14, 20, 30], [0, 1, 0], clampOpts) : 0;
-
-  const breathe = 0.5 * (1 - Math.cos((2 * Math.PI * frame) / (3.6 * fps)));
-  let wave = 0;
-  if (seg.id === "navrh") {
-    for (const b of seg.beats) wave = Math.max(wave, waveBurst(frame, seg.from + b + 6));
-  } else if (seg.id === "outro") {
-    const t = frame - (seg.from + seg.beats[1]);
-    wave = t > 0 ? 0.5 * (1 - Math.cos((2 * Math.PI * t) / 16)) : 0;
-  }
-
+  void activeSegment(segments, frame);
+  const intro = spring({ frame, fps, config: { damping: 14, stiffness: 120 } });
   const size = L.bobr.size;
-  const h = (size * 260) / 240;
-  const scale = (0.93 + 0.07 * hop) * (1 + 0.04 * startle);
-  const y = (1 - intro) * (h + 120) - startle * 26;
-  const jmeno = jmenoMluvciho(kdo);
-  const popis = kdo === "rada" ? "Pirátská expertní ekonomická rada" : "garant kapitoly";
+  const y = (1 - intro) * (size + 80);
+  const { role: popis } = popisMluvciho(kdo);
+  const jmeno = kdo === "rada" ? "PEER" : jmenoMluvciho(kdo);
+  const sirkaJmenovky = L.reel ? L.W - 120 : size * 3.2;
 
   return (
-    <>
-      {/* stín pod nohama */}
-      <div
-        style={{
-          position: "absolute",
-          left: L.bobr.cx - size * 0.32,
-          top: L.bobr.bottom - h * 0.06,
-          width: size * 0.64,
-          height: size * 0.08,
-          borderRadius: "50%",
-          background: "rgba(0,0,0,0.08)",
-          opacity: intro,
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          left: L.bobr.cx - size / 2,
-          top: L.bobr.bottom - h,
-          width: size,
-          height: h,
-          transform: `translateY(${y}px) scale(${scale})`,
-          transformOrigin: "50% 100%",
-        }}
-      >
-        <GarantSvg
-          kdo={kdo}
-          mood={mood}
-          pointing={pointing}
-          size={size}
-          blink={blinkAt(frame)}
-          breathe={breathe}
-          wave={wave}
-          style={{ display: "block", overflow: "visible" }}
-        />
+    <div
+      style={{
+        position: "absolute",
+        left: L.reel ? 60 : L.bobr.cx - size / 2,
+        top: L.bobr.bottom - size,
+        display: "flex",
+        alignItems: "center",
+        gap: Math.round(size * 0.18),
+        transform: `translateY(${y}px)`,
+        opacity: intro,
+      }}
+    >
+      <GarantSvg kdo={kdo} size={size} fontDisplay={F.display} fontBody={F.body} style={{ display: "block", flex: "none" }} />
+      <div style={{ width: sirkaJmenovky, fontFamily: F.display, fontSize: Math.round(L.fs.small * 0.95), lineHeight: 1.1, color: C.ink, letterSpacing: "0.03em" }}>
+        <div>{jmeno}</div>
+        <div style={{ fontFamily: F.body, fontSize: Math.round(L.fs.small * 0.6), color: C.cyan, fontWeight: 700, letterSpacing: "0.02em", marginTop: 6 }}>{popis}</div>
       </div>
-      {/* jmenovka: kdo mluví */}
-      <div
-        style={{
-          position: "absolute",
-          left: L.bobr.cx - size * 0.6,
-          width: size * 1.2,
-          top: L.bobr.bottom + 10,
-          textAlign: "center",
-          opacity: intro,
-          fontFamily: F.display,
-          fontSize: Math.round(L.fs.small * 0.9),
-          lineHeight: 1.15,
-          color: C.ink,
-          letterSpacing: "0.03em",
-        }}
-      >
-        <div>{kdo === "rada" ? "PEER" : jmeno}</div>
-        <div style={{ fontFamily: F.body, fontSize: Math.round(L.fs.small * 0.62), color: C.cyan, fontWeight: 700, letterSpacing: "0.02em", marginTop: 4 }}>{popis}</div>
-      </div>
-    </>
+    </div>
   );
 }

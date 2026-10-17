@@ -43,6 +43,7 @@
 .kontakt { padding: 1.2rem 1.3rem; display: grid; gap: 0.4rem; background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
 .kontakt a { color: var(--sun-ink); font-weight: 700; overflow-wrap: anywhere; }
 .kontakt :global(.src) { color: var(--sun-ink); overflow-wrap: anywhere; }
+.kontakt :global(.src b) { color: var(--sun-ink); }
 .kontaktRole { font-family: var(--f-data); font-size: var(--s-1); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
 .kontaktJmeno { font-size: var(--s3); }
 .kontaktSpoj { font-size: var(--s1); line-height: 1.6; }

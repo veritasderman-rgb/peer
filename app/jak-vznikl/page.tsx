@@ -19,7 +19,7 @@ const kroky = [
   { n: "01", nazev: "Přečetla studii", text: "99 stran, 14 kapitol, přes 200 odkazů na zdroje." },
   { n: "02", nazev: "Vytěžila čísla", text: "Každé číslo se zdrojem do strojově čitelných dat. Z nich čte text, grafy i videa." },
   { n: "03", nazev: "Napsala lidskou verzi", text: "Tři hloubky čtení, modelové postavy, slovník, řádek „pro tebe“ u každého opatření." },
-  { n: "04", nazev: "Nakreslila garanty", text: "Osm avatarů podle fotek, pět nálad, ukazovátko a pirátský klobouk. Každý z garantů s použitím souhlasil." },
+  { n: "04", nazev: "Navrhla vizuální systém", text: "Čtrnáct piktogramů témat, značky garantů s monogramem, scény příběhu a grafy v jednom střídmém stylu." },
   { n: "05", nazev: "Naprogramovala web", text: "Grafy, kalkulačky, scrollytelling, tmavý režim, mobil. A otestovala ho." },
   { n: "06", nazev: "Natočila a namluvila videa", text: "Scénář z dat, render, syntetický hlas, hudba, titulky. Široké i na výšku." },
 ];
@@ -27,7 +27,7 @@ const kroky = [
 /* Odhad ceny pilotní stránky u české agentury. Je to odhad bez zdroje, založený na běžných sazbách
    (grafik a animátor 800–1 500 Kč/h, vývojář 1 200–2 000 Kč/h). Rozpětí je schválně široké. */
 const odhad = [
-  { polozka: "Avatary: 8 postav podle fotek, 5 nálad, animace", lidi: "ilustrátor a animátor, 5–8 dní", cena: "60–120 tis. Kč", max: 120 },
+  { polozka: "Vizuální systém: piktogramy témat, značky garantů, scény příběhu", lidi: "grafik, 3–5 dní", cena: "40–80 tis. Kč", max: 80 },
   { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč", max: 350 },
   { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč", max: 60 },
   { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč", max: 110 },
@@ -57,7 +57,7 @@ export default function JakVzniklPage() {
           </p>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
-          I naše avatary jsou z AI. Nakreslila je podle fotek za pár hodin, včetně klobouků.
+          I piktogramy a značky garantů navrhla AI. Kreslené postavy jsme zkusili a zavrhli: na vážné téma sedí střídmější jazyk.
         </GarantBubble>
       </section>
 
@@ -81,7 +81,7 @@ export default function JakVzniklPage() {
               <li><b>{topics.length}</b> témat ve třech hloubkách</li>
               <li><b>{pocetVidei}</b> namluvených videí</li>
               <li><b>{pocetKalkulacek}</b> kalkulaček</li>
-              <li><b>8</b> avatarů v pěti náladách</li>
+              <li><b>14</b> piktogramů témat</li>
             </ul>
           </div>
         </div>

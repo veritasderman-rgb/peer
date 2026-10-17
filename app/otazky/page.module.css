@@ -29,7 +29,7 @@
 .summary { list-style: none; cursor: pointer; padding: 0.95rem 1.1rem; display: block; }
 .summary::-webkit-details-marker { display: none; }
 .summary:hover { background: var(--paper); }
-.summary:focus-visible { outline: 3px solid var(--sun); outline-offset: -3px; }
+.summary:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
 .q { margin: 0; font-size: var(--s1); line-height: 1.25; overflow-wrap: anywhere; }
 .q::after { content: " +"; color: var(--river); font-family: var(--f-display); }
 .detail[open] .q::after { content: " −"; }

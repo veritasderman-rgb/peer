@@ -230,15 +230,21 @@ export function MapaKraju({ kraje, metriky }: Props) {
                   key={k.id}
                   className={`${styles.tile} ${styles[`step${s}`]} ${vybrany ? styles.tileOn : ""}`}
                   transform={`translate(${x} ${y})`}
-                  role="button"
-                  tabIndex={0}
-                  aria-pressed={vybrany}
-                  aria-label={`${k.nazev}: ${plna(metrika, v)}, ${poradi(metrika, k.id)}. z ${kraje.length} od nejlepšího`}
                   onClick={() => vyber(k.id)}
-                  onKeyDown={(e) => klavesa(e, k.id)}
                 >
-                  <rect className={styles.bg} width={TILE} height={TILE} rx={10} />
-                  <rect className={styles.ring} x={-2} y={-2} width={TILE + 4} height={TILE + 4} rx={12} />
+                  {/* Tlačítko nese jen plochy a jméno (aria-label); viditelný text je mimo něj a pro čtečky skrytý,
+                      aby se název tlačítka nepřetahoval s popiskem v dlaždici (WCAG 2.5.3, Label in Name). */}
+                  <g
+                    className={styles.hit}
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={vybrany}
+                    aria-label={`${k.nazev}: ${plna(metrika, v)}, ${poradi(metrika, k.id)}. z ${kraje.length} od nejlepšího`}
+                    onKeyDown={(e) => klavesa(e, k.id)}
+                  >
+                    <rect className={styles.bg} width={TILE} height={TILE} rx={10} />
+                    <rect className={styles.ring} x={-2} y={-2} width={TILE + 4} height={TILE + 4} rx={12} />
+                  </g>
                   {p.popisek.map((radek, i) => (
                     <text
                       key={radek}
@@ -246,11 +252,12 @@ export function MapaKraju({ kraje, metriky }: Props) {
                       x={TILE / 2}
                       y={(dvouradkovy ? 17 : 25) + i * 13.5}
                       textAnchor="middle"
+                      aria-hidden="true"
                     >
                       {radek}
                     </text>
                   ))}
-                  <text className={styles.value} x={TILE / 2} y={57} textAnchor="middle">
+                  <text className={styles.value} x={TILE / 2} y={57} textAnchor="middle" aria-hidden="true">
                     {kratka(metrika, v)}
                   </text>
                   {vybrany ? <circle className={styles.dot} cx={TILE - 9} cy={9} r={4.5} /> : null}

@@ -1,35 +1,39 @@
-"use client";
-
-import { GarantSvg, type GarantMood, type Mluvci } from "./GarantSvg";
+import { GarantSvg, popisMluvciho, type GarantMood, type Mluvci } from "./GarantSvg";
 import styles from "./Garant.module.css";
 
 export type { GarantMood, Mluvci };
 
 type GarantProps = {
   kdo: Mluvci;
+  /** bez účinku; zůstává kvůli volajícím */
   mood?: GarantMood;
+  /** průměr značky v px */
   size?: number;
+  /** bez účinku; zůstává kvůli volajícím */
   pointing?: boolean;
   className?: string;
+  /** přístupný popis značky; bez něj je dekorativní */
   label?: string;
+  /** bez účinku; zůstává kvůli volajícím */
   animate?: boolean;
+  /** vedle značky vypsat jméno a roli */
+  jmenovka?: boolean;
 };
 
-/* Webový garant: kreslení je v GarantSvg (sdílené s videem v Remotionu), tady se jen přidávají
-   CSS animace (mrkání, dýchání, mávání ukazovátkem, Zzz) přes třídy na kořenovém <svg>
-   a selektory [data-part] v Garant.module.css. */
-export function Garant({
-  kdo,
-  mood = "neutral",
-  size = 220,
-  pointing = false,
-  className,
-  label,
-  animate = true,
-}: GarantProps) {
-  const rootClass = [styles.garant, animate ? styles.animated : styles.still, className].filter(Boolean).join(" ");
-
-  return <GarantSvg kdo={kdo} mood={mood} size={size} pointing={pointing} label={label} className={rootClass} />;
+/* Webová značka garanta: monogram (GarantSvg), volitelně se jménem a rolí vedle. Nálada ani
+   animace se nekreslí; props zůstávají, aby starší volání dál fungovala. */
+export function Garant({ kdo, size = 56, className, label, jmenovka = false }: GarantProps) {
+  if (!jmenovka) return <GarantSvg kdo={kdo} size={size} label={label} className={[styles.znacka, className].filter(Boolean).join(" ")} />;
+  const p = popisMluvciho(kdo);
+  return (
+    <span className={[styles.sJmenem, className].filter(Boolean).join(" ")}>
+      <GarantSvg kdo={kdo} size={size} label={label} className={styles.znacka} />
+      <span className={styles.jmenovka}>
+        <span className={styles.jmeno}>{p.jmeno}</span>
+        <span className={styles.role}>{p.role}</span>
+      </span>
+    </span>
+  );
 }
 
 export default Garant;

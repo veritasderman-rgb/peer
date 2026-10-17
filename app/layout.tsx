@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Bebas_Neue, Roboto, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -19,18 +20,27 @@ export const metadata: Metadata = {
 };
 
 /* Písma podle styleguide.pirati.cz: Bebas Neue (nadpisy), Roboto (text), Roboto Condensed (popisky, čísla).
-   Načítají se z Google Fonts přes <link>; CSS proměnné --font-* definuje globals.css. */
+   next/font je při buildu stáhne a servíruje z vlastní domény (žádný požadavek na Google, žádné blokující CSS);
+   display: swap ukáže text hned v záložním písmu. latin-ext kvůli české diakritice. CSS proměnné --font-* se
+   odvozují od tříd na <html> a používá je globals.css. */
+const bebas = Bebas_Neue({ subsets: ["latin", "latin-ext"], weight: "400", display: "swap", variable: "--font-bebas" });
+const roboto = Roboto({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-roboto",
+});
+const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-roboto-condensed",
+});
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="cs">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Condensed:wght@400;700&display=swap"
-        />
-      </head>
+    <html lang="cs" className={`${bebas.variable} ${roboto.variable} ${robotoCondensed.variable}`}>
       <body>
         <JsonLd data={webJsonLd()} />
         <a className="skip" href="#obsah">Přeskočit na obsah</a>

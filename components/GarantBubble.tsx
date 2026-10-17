@@ -1,57 +1,40 @@
-"use client";
-
 import type { ReactNode } from "react";
-import { Garant, type GarantMood, type Mluvci } from "./Garant";
-import { GARANTI, jmenoMluvciho } from "@/lib/garanti";
+import { GarantSvg, popisMluvciho, type GarantMood, type Mluvci } from "./GarantSvg";
 import styles from "./GarantBubble.module.css";
 
 type GarantBubbleProps = {
   kdo: Mluvci;
+  /** bez účinku; zůstává kvůli volajícím */
   mood?: GarantMood;
+  /** bez účinku; zůstává kvůli volajícím */
   pointing?: boolean;
   children: ReactNode;
-  /** Na které straně od garanta je bublina. */
+  /** bez účinku; zůstává kvůli volajícím */
   side?: "left" | "right";
-  /** Velikost garanta v px (šířka). */
+  /** velikost značky v px */
   size?: number;
+  /** bez účinku; zůstává kvůli volajícím */
   animate?: boolean;
-  /** Jmenovka pod kresbou („Libor Dušek / garant kapitoly“, u rady „PEER / expertní rada“). */
+  /** vypsat jméno a roli v záhlaví (výchozí ano) */
   jmenovka?: boolean;
   className?: string;
 };
 
-function popisek(kdo: Mluvci): { jmeno: string; role: string } {
-  if (kdo === "rada") return { jmeno: "PEER", role: "expertní rada" };
-  const g = GARANTI[kdo];
-  return { jmeno: g.jmeno, role: g.zena ? "garantka kapitoly" : "garant kapitoly" };
-}
-
-export function GarantBubble({
-  kdo,
-  mood = "neutral",
-  pointing = false,
-  children,
-  side = "right",
-  size = 180,
-  animate = true,
-  jmenovka = true,
-  className,
-}: GarantBubbleProps) {
-  const p = popisek(kdo);
-  const label = kdo === "rada" ? `${jmenoMluvciho(kdo)} říká:` : `${p.jmeno}, ${p.role}, říká:`;
+/* Poznámka garanta: klidná karta se žlutou linkou vlevo, v záhlaví monogram, jméno a role,
+   pod tím citát. Nahrazuje kreslenou postavu s bublinou; API volajících zůstalo. */
+export function GarantBubble({ kdo, children, size = 44, jmenovka = true, className }: GarantBubbleProps) {
+  const p = popisMluvciho(kdo);
   return (
-    <figure
-      className={[styles.wrap, side === "left" ? styles.left : styles.right, className].filter(Boolean).join(" ")}
-    >
-      <div className={styles.garant} style={{ width: size }}>
-        <Garant kdo={kdo} mood={mood} pointing={pointing} size={size} animate={animate} label={label} />
+    <figure className={[styles.wrap, className].filter(Boolean).join(" ")}>
+      <figcaption className={styles.hlava}>
+        <GarantSvg kdo={kdo} size={Math.min(size, 56)} className={styles.znacka} />
         {jmenovka ? (
-          <div className={styles.jmenovka} aria-hidden="true">
+          <span className={styles.jmenovka}>
             <span className={styles.jmeno}>{p.jmeno}</span>
             <span className={styles.role}>{p.role}</span>
-          </div>
+          </span>
         ) : null}
-      </div>
+      </figcaption>
       <blockquote className={styles.bubble}>{children}</blockquote>
     </figure>
   );

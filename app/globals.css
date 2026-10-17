@@ -13,14 +13,13 @@
   --river-soft: #dcefee;
   --sun: #fec934;
   --sun-ink: #000000;
-  --alert: #d60d53;
+  --alert: #cc0b4d; /* tmavší odstín brand růžové: text min. 4,5:1 i na --alert-soft a --river-soft */
   --alert-soft: #fbe3ea;
-  --green: #4ca971;
+  --green: #4ca971; /* jen plochy a rámečky; jako barva textu se používá --green-ink */
+  --green-ink: #266b42;
   --green-soft: #d6e8b3;
+  --focus: var(--ink); /* barva prstence zaměření; v tmavém režimu žlutá */
 
-  --font-bebas: "Bebas Neue";
-  --font-roboto: "Roboto";
-  --font-roboto-condensed: "Roboto Condensed";
   --f-display: var(--font-bebas), "Roboto Condensed", Helvetica, Arial, sans-serif;
   --f-body: var(--font-roboto), Helvetica, Arial, sans-serif;
   --f-data: var(--font-roboto-condensed), var(--font-roboto), Helvetica, Arial, sans-serif;
@@ -53,7 +52,9 @@
     --alert: #f1ae7b;
     --alert-soft: #3a2418;
     --green: #76cc9f;
+    --green-ink: #76cc9f;
     --green-soft: #1f3a2c;
+    --focus: var(--sun);
     color-scheme: dark;
   }
 }
@@ -69,7 +70,9 @@
   --alert: #f1ae7b;
   --alert-soft: #3a2418;
   --green: #76cc9f;
+  --green-ink: #76cc9f;
   --green-soft: #1f3a2c;
+  --focus: var(--sun);
   color-scheme: dark;
 }
 
@@ -86,7 +89,8 @@ body {
 }
 img, svg { max-width: 100%; height: auto; }
 a { color: var(--river); text-underline-offset: 0.15em; }
-:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+/* prstenec zaměření: černý ve světlém režimu (žlutá na bílé má kontrast 1,5:1), žlutý v tmavém */
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 button { font: inherit; }
 
 h1, h2, h3, h4 { margin: 0; line-height: 1.05; text-wrap: balance; }

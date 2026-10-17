@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { animate, useInView } from "motion/react";
+import { animate, useInView, useReducedMotion } from "motion/react";
 import s from "./BigNumber.module.css";
 
 export type BigNumberProps = {
@@ -21,11 +21,11 @@ export type BigNumberProps = {
 export function BigNumber({ value, decimals = 0, unit, prefix, label, durationMs = 1600 }: BigNumberProps) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
+  const reduce = useReducedMotion();
   const [anim, setAnim] = useState<number | null>(null); // null = ukaž finální hodnotu
 
   useEffect(() => {
-    if (!inView) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!inView || reduce) return; // reduced motion: číslo se rovnou ukáže v konečné hodnotě
     const controls = animate(0, value, {
       duration: durationMs / 1000,
       ease: "easeOut",
@@ -33,7 +33,7 @@ export function BigNumber({ value, decimals = 0, unit, prefix, label, durationMs
       onComplete: () => setAnim(null),
     });
     return () => controls.stop();
-  }, [inView, value, durationMs]);
+  }, [inView, reduce, value, durationMs]);
 
   const fmt = new Intl.NumberFormat("cs-CZ", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
   const final = fmt.format(value);

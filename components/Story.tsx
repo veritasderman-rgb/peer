@@ -97,7 +97,7 @@ export function Story({ steps, persona, kdo }: { steps: StoryStep[]; persona: { 
     <div className={styles.story} data-scena={maScenu || undefined}>
       <div className={styles.sticky}>
         <div className={styles.bobrBox}>
-          <Garant kdo={kdo} mood={step.mood} pointing={step.pointing} size={maScenu ? 150 : 200} />
+          <Garant kdo={kdo} size={44} jmenovka />
           {step.bobr && (
             <p className={styles.bubble} aria-live="polite">{step.bobr}</p>
           )}
