@@ -189,18 +189,17 @@ export default function ProMediaPage() {
           </div>
 
           <div className={`card ${styles.dlBox}`}>
-            <h3>Avatary garantů</h3>
+            <h3>Značky garantů</h3>
             <ul>
               <li><a href="/garanti/rada.svg" download>{jmenoMluvciho("rada")} (SVG)</a></li>
-              <li><a href="/garanti/rada-ukazuje.svg" download>Rada s ukazovátkem (SVG)</a></li>
             </ul>
-            <p className="muted">Avatary jednotlivých garantů (SVG):</p>
+            <p className="muted">Značky jednotlivých garantů, monogram se jménem a rolí (SVG):</p>
             <ul>
               {GARANT_IDS.map((id) => (
                 <li key={id}><a href={`/garanti/${id}.svg`} download>{jmenoMluvciho(id)}</a></li>
               ))}
             </ul>
-            <p className="muted">Avatary nakreslila AI podle veřejných fotek a každý garant s nimi souhlasil; nejsou to oficiální loga PEER ani Pirátů.</p>
+            <p className="muted">Značky slouží jen k označení garanta u kapitol tohoto webu; nejsou to oficiální loga PEER ani Pirátů.</p>
           </div>
 
           <div className={`card ${styles.dlBox}`}>

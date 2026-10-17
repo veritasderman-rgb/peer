@@ -58,10 +58,10 @@
   color: var(--muted);
   text-align: center;
 }
-.avatarL { width: clamp(90px, 26vh, 230px); }
-.avatarM { width: clamp(64px, 13vh, 120px); }
-.avatarS { width: clamp(44px, 8vh, 72px); }
-.avatarL > svg, .avatarM > svg, .avatarS > svg { width: 100% !important; height: auto; display: block; }
+.avatarL { width: clamp(72px, 14vh, 120px); }
+.avatarM { display: flex; justify-content: center; }
+.avatarS { display: flex; }
+.avatarL > svg { width: 100% !important; height: auto; display: block; }
 
 /* tečky kapitol */
 .tecky { display: flex; justify-content: center; flex-wrap: wrap; padding-top: 0.4rem; }
@@ -266,7 +266,7 @@
 /* 9 závěr */
 .tym { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem 0.5rem; }
 .tymClen { display: grid; justify-items: center; gap: 0.25rem; min-width: 0; }
-.tymClen > svg { width: clamp(56px, 13vh, 110px) !important; height: auto; }
+.tymClen > svg { width: clamp(48px, 10vh, 80px) !important; height: auto; }
 .tymJmeno { font-family: var(--f-data); font-size: 0.78rem; line-height: 1.15; text-align: center; }
 
 /* ---------- textové kroky ---------- */
@@ -312,8 +312,7 @@
   .tecka { width: 18px; height: 18px; }
   .tecka::before { width: 8px; height: 8px; }
   .col { gap: 0.45rem; }
-  .avatarL { width: clamp(64px, 12vh, 120px); }
-  .avatarM { width: clamp(52px, 9vh, 90px); }
+  .avatarL { width: clamp(56px, 10vh, 88px); }
   .avatarS { width: clamp(36px, 6vh, 56px); }
   .vsKarta { padding: 0.7rem; }
   .vsCislo { font-size: clamp(2.6rem, 14vw, 4rem); }
@@ -345,11 +344,5 @@
   .krokOdkaz { display: block; }
 }
 
-/* skupinová kresba rady sedí ve viewBoxu nízko a přesahuje dolů: výřez hlav a ramen */
-.rada {
-  aspect-ratio: 240 / 165;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent);
-  mask-image: linear-gradient(to bottom, #000 82%, transparent);
-}
-.rada > svg { margin-top: -52%; }
+/* značka rady (PEER) nad scénou */
+.rada { display: flex; justify-content: center; }

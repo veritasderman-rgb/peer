@@ -1,71 +1,31 @@
-.garant {
+/* Značka garanta: monogram, volitelně se jménem a rolí vedle. Bez animací. */
+.znacka {
   display: block;
-  overflow: visible;
   max-width: 100%;
   height: auto;
+  flex: none;
 }
 
-/* Části garanta označuje GarantSvg atributem data-part. Klidový stav (transform, transform-origin)
-   nastavuje GarantSvg inline; CSS animace ho v kaskádě přebíjí. */
-
-/* Víčko: obdélník v barvě pleti přes oko, zavírá se shora dolů. */
-.garant [data-part="lid"] {
-  transform-box: fill-box;
-  transform-origin: 50% 0%;
+.sJmenem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
 }
 
-/* Dýchání: celá postava (u rady celá skupina) se nadechuje od spodku. */
-.garant [data-part="breath"] {
-  transform-box: fill-box;
-  transform-origin: 50% 100%;
+.jmenovka {
+  display: grid;
+  line-height: 1.2;
+  min-width: 0;
 }
-
-/* Ruka s ukazovátkem: transform-origin je v souřadnicích viewBoxu postavy (nastaveno inline). */
-.garant [data-part="wave"] {
-  transform-box: view-box;
+.jmeno {
+  font-family: var(--f-data);
+  font-weight: 700;
+  font-size: var(--s0);
+  color: var(--ink);
 }
-
-.animated [data-part="lid"] {
-  animation: garant-blink 4.2s infinite;
-}
-.animated [data-part="breath"] {
-  animation: garant-breath 3.6s ease-in-out infinite;
-}
-.animated [data-part="wave"] {
-  animation: garant-wave 3s ease-in-out infinite;
-}
-.animated [data-part="zzz"] {
-  animation: garant-zzz 2.8s ease-in-out infinite;
-}
-
-@keyframes garant-blink {
-  0%, 91% { transform: scaleY(0); }
-  93.5% { transform: scaleY(1); }
-  96%, 100% { transform: scaleY(0); }
-}
-
-@keyframes garant-breath {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.015); }
-}
-
-@keyframes garant-wave {
-  0%, 70%, 100% { transform: rotate(0deg); }
-  78% { transform: rotate(-9deg); }
-  86% { transform: rotate(5deg); }
-  93% { transform: rotate(-3deg); }
-}
-
-@keyframes garant-zzz {
-  0%, 100% { opacity: 1; transform: translateY(0); }
-  50% { opacity: 0.45; transform: translateY(-3px); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animated [data-part="lid"],
-  .animated [data-part="breath"],
-  .animated [data-part="wave"],
-  .animated [data-part="zzz"] {
-    animation: none;
-  }
+.role {
+  font-family: var(--f-body);
+  font-size: var(--s-1);
+  color: var(--muted);
 }

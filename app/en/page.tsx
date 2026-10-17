@@ -124,7 +124,7 @@ export default function EnglishPage() {
           </p>
         </div>
         <div className={styles.madeBobr}>
-          <Garant kdo="rada" mood="happy" pointing size={180} />
+          <Garant kdo="rada" size={120} />
         </div>
       </section>
 

@@ -13,6 +13,7 @@ import {
   type MotionValue,
 } from "motion/react";
 import { Garant } from "@/components/Garant";
+import { PiktogramOdznak, jePiktogram } from "@/components/Piktogram";
 import { Scena, cz, usePrubeh } from "@/components/Scena";
 import { useVyskaHlavicky } from "@/components/Story";
 import type { PribehData, PribehSceneId } from "@/data/pribeh";
@@ -36,7 +37,7 @@ function StageHook({ kc }: { kc: number }) {
   return (
     <div className={s.col}>
       <motion.div className={`${s.avatarL} ${s.rada}`} initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.15 }}>
-        <Garant kdo="rada" mood="surprised" size={240} label="Pirátská expertní ekonomická rada" />
+        <Garant kdo="rada" size={120} label="Pirátská expertní ekonomická rada" />
       </motion.div>
       <Scena scena={{ typ: "cislo", hodnota: kc, jednotka: "Kč", popis: "ročně navíc pro každého, kdo pracuje (v průměru, na konci dekády)" }} active />
     </div>
@@ -69,7 +70,7 @@ function PastKarta({ p, i, on }: { p: PribehData["past"][number]; i: number; on:
   return (
     <motion.div className={`card ${s.pastKarta}`} data-on={on || undefined} animate={{ opacity: on ? 1 : 0.28, y: on ? 0 : 8 }} transition={{ duration: 0.4 }}>
       <motion.div className={s.avatarS} animate={{ scale: on ? 1 : 0.5, opacity: on ? 1 : 0 }} transition={{ type: "spring", stiffness: 300, damping: 16, delay: on ? 0.1 : 0 }}>
-        <Garant kdo={p.garant} mood={on ? "surprised" : "neutral"} size={72} animate={on} />
+        {jePiktogram(p.slug) ? <PiktogramOdznak id={p.slug} size={56} varianta={on ? "zluty" : "svetly"} /> : <Garant kdo={p.garant} size={56} />}
       </motion.div>
       <div className={s.pastText}>
         <span className={s.pastCislo}>
@@ -145,7 +146,7 @@ function StageSmery({ smery, sub }: { smery: PribehData["smery"]; sub: number })
               </span>
               <span className={s.smerGaranti} aria-hidden="true">
                 {sm.garanti.map((g) => (
-                  <Garant key={g} kdo={g} mood={i === sub ? "happy" : "neutral"} size={44} animate={i === sub} />
+                  <Garant key={g} kdo={g} size={36} />
                 ))}
               </span>
             </div>
@@ -175,7 +176,7 @@ function StageKapital({ k, sub, p, reduce }: { k: PribehData["kapital"]; sub: nu
     <div className={s.col}>
       <div className={s.kapHlava}>
         <div className={s.avatarM}>
-          <Garant kdo={k.garant} mood={pocet > n / 2 ? "happy" : "sleepy"} size={110} />
+          <PiktogramOdznak id="kapital" size={88} varianta={pocet > n / 2 ? "zluty" : "svetly"} />
         </div>
         <Scena scena={{ typ: "cislo", hodnota: k.mld, jednotka: "mld. Kč", popis: "spí na účtech českých střadatelů" }} active />
       </div>
@@ -252,7 +253,7 @@ function StageTy({ kc }: { kc: number }) {
   return (
     <div className={s.col}>
       <motion.div className={`${s.avatarL} ${s.rada}`} initial={{ scale: 0.7, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring", stiffness: 240, damping: 18 }}>
-        <Garant kdo="rada" mood="happy" pointing size={240} label="Pirátská expertní ekonomická rada" />
+        <Garant kdo="rada" size={120} label="Pirátská expertní ekonomická rada" />
       </motion.div>
       <Scena scena={{ typ: "cislo", hodnota: kc, jednotka: "Kč", popis: "ročně navíc ve mzdě nebo platu, v průměru" }} active />
     </div>
@@ -266,7 +267,7 @@ function StageOutro({ garanti }: { garanti: PribehData["garanti"] }) {
       <ul className={s.tym}>
         {garanti.map((g, i) => (
           <motion.li key={g.id} className={s.tymClen} initial={{ opacity: 0, y: 20, scale: 0.8 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.1 + i * 0.08 }}>
-            <Garant kdo={g.id} mood="happy" size={96} label={g.jmeno} />
+            <Garant kdo={g.id} size={72} label={g.jmeno} />
             <span className={s.tymJmeno}>{g.jmeno}</span>
           </motion.li>
         ))}

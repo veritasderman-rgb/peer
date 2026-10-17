@@ -3,6 +3,7 @@ import type { TopicConfig } from "@/lib/topics";
 import { Garant } from "@/components/Garant";
 import { GarantBubble } from "@/components/GarantBubble";
 import { garantTematu } from "@/lib/garanti";
+import { PiktogramOdznak, jePiktogram } from "@/components/Piktogram";
 import { BigNumber } from "@/components/BigNumber";
 import { Chart } from "@/components/Chart";
 import { Story } from "@/components/Story";
@@ -35,6 +36,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
               <li aria-current="page">{t.kratkyNazev}</li>
             </ol>
           </nav>
+          {jePiktogram(t.slug) && <PiktogramOdznak id={t.slug} size={56} className={styles.heroIkona} />}
           <p className="eyebrow">Téma {t.cislo} · Pilíř {t.pilir} · 10 vteřin</p>
           <h1 className={styles.h1}>{t.hook.h1}</h1>
           <BigNumber value={t.hook.value} decimals={t.hook.decimals} unit={t.hook.unit} label={t.hook.label} />
@@ -152,7 +154,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
       <section className={`wrap ${styles.section}`} aria-labelledby="kdo">
         <h2 id="kdo">Kdo za tím stojí</h2>
         <div className={`card ${styles.garant}`}>
-          <div className={styles.garantInitials} aria-hidden="true">{t.garant.initials}</div>
+          <Garant kdo={kdo} size={72} />
           <div>
             <p className={`display ${styles.garantName}`}>{t.garant.jmeno}</p>
             <p className="muted">{t.garant.role}, člen Pirátské expertní ekonomické rady</p>
@@ -193,7 +195,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
       </section>
 
       <section className={`wrap ${styles.section} ${styles.outro}`}>
-        <Garant kdo={kdo} mood="sleepy" size={140} />
+        {jePiktogram(t.slug) ? <PiktogramOdznak id={t.slug} size={72} varianta="zluty" /> : <Garant kdo={kdo} size={72} />}
         <div>
           <p className="display" style={{ fontSize: "var(--s2)" }}>{t.dalsi ?? "Další témata"}</p>
           <p className="muted">

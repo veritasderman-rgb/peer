@@ -14,8 +14,8 @@
 }
 .bobrBox {
   display: grid;
-  justify-items: center;
-  gap: 0.8rem;
+  justify-items: start;
+  gap: 0.6rem;
 }
 /* scéna aktivního kroku pod garantem; ztlumená, když patří k dřívějšímu kroku */
 .panelScena {
@@ -69,27 +69,17 @@
 .rail li[data-done] .dot::before { background: var(--ink); }
 .dot[aria-current]::before { background: var(--sun); border-color: var(--ink); transform: scale(1.35); }
 .dot:hover::before { background: var(--sun); }
+/* poznámka garanta ke kroku: klidná karta se žlutou linkou vlevo */
 .bubble {
   background: var(--surface);
-  border: 2px solid var(--ink);
-  border-radius: 16px;
-  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sun);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
   font-size: var(--s-1);
-  position: relative;
-  max-width: 28ch;
-  text-align: center;
-}
-.bubble::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -12px;
-  width: 16px;
-  height: 16px;
-  background: var(--surface);
-  border-left: 2px solid var(--ink);
-  border-top: 2px solid var(--ink);
-  transform: translateX(-50%) rotate(45deg);
+  line-height: 1.4;
+  max-width: 30ch;
+  text-align: left;
 }
 .steps {
   display: grid;
@@ -132,14 +122,12 @@
   }
   .bobrBox { grid-template-columns: auto minmax(0, 1fr); align-items: center; text-align: left; }
   .sticky { gap: 0.25rem; }
-  .bobrBox > svg { width: 96px !important; height: auto !important; }
   .panelScena { display: none; }
   .inlineScena { display: block; margin-bottom: 0.3rem; }
   .dot { width: 18px; height: 18px; }
   .dot::before { width: 8px; height: 8px; }
   .rail li + li::before { width: 10px; }
-  .bubble { max-width: none; text-align: left; }
-  .bubble::before { left: -10px; top: 50%; transform: translateY(-50%) rotate(-45deg); }
+  .bubble { max-width: none; }
   .step { min-height: 0; opacity: 1; padding: 1rem 1rem; }
   .steps { padding-bottom: 1rem; }
 }

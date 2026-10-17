@@ -1,7 +1,7 @@
 # Česko má na víc! · web k Hospodářské strategii PEER
 
 Web, který převypráví Hospodářskou strategii 2026–2035 Pirátské expertní ekonomické rady (PEER) pro běžné lidi:
-s avatary garantů (pirátský klobouk je značka Pirátů), modelovými postavami, grafy, kalkulačkami a plným zněním každé kapitoly se zdroji.
+se značkami garantů (monogram, jméno, role), piktogramy témat, modelovými postavami, grafy, kalkulačkami a plným zněním každé kapitoly se zdroji.
 
 - Návrh a zdůvodnění: [`docs/navrh-webu.md`](docs/navrh-webu.md)
 - Původní studie: [`Piratska_Hospodarska_strategie.pdf`](Piratska_Hospodarska_strategie.pdf)
@@ -48,8 +48,8 @@ Totéž běží v GitHub Actions (`.github/workflows/ci.yml`): testy při každ�
 | Cesta | Co je v ní |
 |---|---|
 | `app/` | stránky (App Router): `/`, `/bydleni`, `/kdo-je-kdo` |
-| `components/` | avatary garantů (`Garant`, `GarantBubble`, `GarantSvg`), grafy (`BarChart`, `Donut`, `IndexChart`, `BigNumber`), kalkulačky, scrollytelling (`Story`), řetězec příčin (`Spirala`), opatření, plné znění, slovník |
-| `public/garanti/` | statické SVG avatarů garantů; generuje `scripts/export-garanti.mjs`, data v `lib/garanti.ts` |
+| `components/` | značky garantů a piktogramy témat (`Garant`, `GarantBubble`, `GarantSvg`, `Piktogram`), grafy (`BarChart`, `Donut`, `IndexChart`, `BigNumber`), kalkulačky, scrollytelling (`Story`), řetězec příčin (`Spirala`), opatření, plné znění, slovník |
+| `public/garanti/` | statické SVG značek garantů; generuje `scripts/export-garanti.mjs`, data v `lib/garanti.ts` |
 | `data/bydleni.json` | všechna čísla kapitoly 1.1 se zdroji; z něj čtou text, grafy i kalkulačky |
 | `content/bydleni-plne-zneni.ts` | plné znění kapitoly 1.1 po odstavcích, rejstřík zdrojů, slovník pojmů |
 | `koncept/` | původní klikací koncept (statické HTML) |

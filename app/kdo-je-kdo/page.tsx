@@ -71,8 +71,8 @@ export default function KdoJeKdoPage() {
           <p className="eyebrow">PEER</p>
           <h1>Kdo za strategií stojí</h1>
           <p className={styles.lede}>
-            PEER je osm ekonomů a odborníků. Každý z nich ručí za určité kapitoly strategie, a proto videa i stránky
-            tohoto webu vysvětlují jejich avatary.
+            PEER je osm ekonomů a odborníků. Každý z nich ručí za určité kapitoly strategie, a proto je každé video
+            i každá stránka tohoto webu podepsaná jménem garanta.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="happy" side="left">
@@ -91,7 +91,7 @@ export default function KdoJeKdoPage() {
                 <div className={styles.head}>
                   {id && (
                     <div className={styles.avatar}>
-                      <Garant kdo={id} mood="neutral" size={150} />
+                      <Garant kdo={id} size={72} />
                     </div>
                   )}
                   <div className={styles.who}>
@@ -119,15 +119,15 @@ export default function KdoJeKdoPage() {
         </ul>
       </section>
 
-      <section className={`wrap ${styles.section}`} aria-labelledby="avatary">
-        <h2 id="avatary">Proč avatary</h2>
+      <section className={`wrap ${styles.section}`} aria-labelledby="podpisy">
+        <h2 id="podpisy">Proč jsou kapitoly podepsané</h2>
         <div className={`prose ${styles.text}`}>
           <p>
-            Videa a stránky s jednotlivými tématy vysvětluje vždy garant příslušné kapitoly. Díky tomu je vidět, kdo za
-            čísly a návrhy ručí, a nemluví za ně anonymní maskot.
+            Videa a stránky s jednotlivými tématy uvádí vždy garant příslušné kapitoly: jménem, rolí a monogramem.
+            Díky tomu je vidět, kdo za čísly a návrhy ručí, a nemluví za ně anonymní maskot ani kreslená postava.
           </p>
           <p>
-            {tym.avataryPoznamka} Pirátský klobouk je značkový prvek Pirátů. Jak web vznikl, popisujeme na stránce{" "}
+            {tym.podpisyPoznamka} Jak web vznikl, popisujeme na stránce{" "}
             <Link href="/jak-vznikl">Jak vznikl tento web</Link>.
           </p>
         </div>

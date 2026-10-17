@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Garant } from "@/components/Garant";
 import { GarantBubble } from "@/components/GarantBubble";
-import { garantTematu } from "@/lib/garanti";
+import { PiktogramOdznak, jePiktogram } from "@/components/Piktogram";
 import { TopicVideo } from "@/components/TopicVideo";
 import { uvodVideo } from "@/topics";
 import { getTopic } from "@/topics";
@@ -116,7 +115,7 @@ export default function Home() {
                   <p className={`num ${styles.hook}`}>{t.hook}</p>
                   {t.href ? null : <p className={styles.soon}>připravujeme</p>}
                 </div>
-                {t.href ? <Garant kdo={garantTematu(t.slug)} mood="happy" size={64} /> : null}
+                {t.href && jePiktogram(t.slug) ? <PiktogramOdznak id={t.slug} size={52} /> : null}
               </>
             );
             return (

@@ -548,8 +548,8 @@
           "id": "avatary",
           "otazka": "Kdo ve videích a na stránkách mluví?",
           "odpoved": [
-            "Každou kapitolu vysvětluje avatar jejího garanta, člena PEER, aby bylo vidět, kdo za čísly ručí. Osm garantů a jejich témata najdeš na stránce Kdo je kdo.",
-            "Avatary nakreslila umělá inteligence podle veřejných fotek a každý z osmi garantů s tím souhlasil. Pirátský klobouk na avataru je značka Pirátů, kteří strategii zadali."
+            "Každou kapitolu uvádí její garant, člen PEER: videa i stránky jsou podepsané jeho jménem, rolí a monogramem, aby bylo vidět, kdo za čísly ručí. Osm garantů a jejich témata najdeš na stránce Kdo je kdo.",
+            "Web záměrně nepoužívá maskoty ani kreslené postavy; témata označují střídmé piktogramy. Každý z osmi garantů s uvedením svého jména souhlasil."
           ],
           "temata": [],
           "zdroj": "Web, stránka Kdo je kdo",
@@ -559,10 +559,11 @@
               "text": "Kdo je kdo"
             }
           ],
-          "kratce": "Avatary garantů nakreslila AI podle veřejných fotek a každý z osmi garantů s tím souhlasil; pirátský klobouk je značka zadavatele.",
+          "kratce": "Kapitoly podepisují jejich garanti jménem a monogramem; web nemá maskota ani kreslené postavy a každý z osmi garantů s uvedením jména souhlasil.",
           "argument": [
-            "Odpověď: Každou kapitolu vysvětluje avatar jejího garanta, aby bylo vidět, kdo za čísly ručí. Avatary nakreslila umělá inteligence podle veřejných fotek a profilů na lide.pirati.cz; souhlas všech osmi garantů byl udělen v říjnu 2026 a každý si může podobu nechat upravit.",
-            "Námitka: „Falešní lidé.“ Odpověď: jsou to ilustrace skutečných garantů s jejich souhlasem. Modelové postavy v příbězích (Petra, Martin, Jana a další) jsou naopak fiktivní a web je tak označuje; čísla v jejich příbězích jsou ze studie. Pirátský klobouk je značka Pirátů, kteří strategii zadali.",
+            "Odpověď: Každou kapitolu uvádí její garant, člen PEER, podepsaný jménem, rolí a monogramem, aby bylo vidět, kdo za čísly ručí. Témata označují jednotné piktogramy, bez maskotů a kreslených postav.",
+            "Čísla: osm garantů, čtrnáct kapitol; souhlas všech osmi s uvedením jména u kapitol byl udělen v říjnu 2026 (stránka Kdo je kdo).",
+            "Námitka: „Je to jen marketing.“ Odpověď: podpis garanta je naopak závazek. Modelové postavy v příbězích (Petra, Martin, Jana a další) jsou fiktivní a web je tak označuje; čísla v jejich příbězích jsou ze studie.",
             "Kam odkázat: /kdo-je-kdo a /jak-vznikl."
           ]
         },
@@ -570,7 +571,7 @@
           "id": "pirati-program",
           "otazka": "Je to program Pirátů?",
           "odpoved": [
-            "Strategii zpracovala Pirátská expertní ekonomická rada a Piráti ji zadali a stojí za ní, proto nosí avatary garantů pirátský klobouk. Web ale převypráví studii, ne volební program: drží se jejího textu a čísel a nepřidává vlastní sliby. Studie sama někde mluví jasně i o stanovisku, například u eura píše, že Piráti obhajují euro především proto, že se běžným lidem finančně vyplatí.",
+            "Strategii zpracovala Pirátská expertní ekonomická rada a Piráti ji zadali a stojí za ní. Web ale převypráví studii, ne volební program: drží se jejího textu a čísel a nepřidává vlastní sliby. Studie sama někde mluví jasně i o stanovisku, například u eura píše, že Piráti obhajují euro především proto, že se běžným lidem finančně vyplatí.",
             "Tam, kde se studie liší od dřívějších plánů Pirátů, web to ukazuje. Příkladem je energetický kupón: dřívější plán z roku 2025 počítal s 2 250 Kč na osobu, strategie uvádí zhruba 5 000 Kč na průměrnou domácnost a web uvádí obě čísla."
           ],
           "temata": [],

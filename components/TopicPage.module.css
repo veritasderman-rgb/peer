@@ -13,6 +13,7 @@
 .h1 { font-size: var(--s3); }
 .lede { font-size: var(--s1); max-width: 36ch; }
 .heroBobr { display: grid; justify-items: center; }
+.heroIkona { margin-bottom: 0.7rem; }
 .depthNav { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .depthNav a {
   font-family: var(--f-data);

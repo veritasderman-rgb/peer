@@ -20,7 +20,7 @@ export type Layout = {
   H: number;
   /** textová plocha */
   text: { x: number; y: number; w: number; h: number };
-  /** postava garanta: střed spodní hrany a šířka (klíč bobr zůstal kvůli historii) */
+  /** značka garanta: střed, spodní hrana a průměr monogramu (klíč bobr zůstal kvůli historii) */
   bobr: { cx: number; bottom: number; size: number };
   fs: {
     base: number;
@@ -45,7 +45,7 @@ export function getLayout(W: number, H: number): Layout {
       W,
       H,
       text: { x: 60, y: 240, w: W - 120, h: 990 },
-      bobr: { cx: W / 2, bottom: H - 160, size: 500 },
+      bobr: { cx: W / 2, bottom: H - 150, size: 170 },
       fs: { base: 60, small: 56, eyebrow: 56, title: 96, cardTitle: 68, hookNum: 360, num: 260, unit: 120 },
       gap: 36,
       minBase: 56,
@@ -57,7 +57,7 @@ export function getLayout(W: number, H: number): Layout {
     W,
     H,
     text: { x: zone + 20, y: 150, w: W - zone - 20 - 100, h: 850 },
-    bobr: { cx: zone / 2 + 30, bottom: H - 150, size: 520 },
+    bobr: { cx: zone / 2 + 30, bottom: H - 130, size: 190 },
     fs: { base: 48, small: 40, eyebrow: 48, title: 84, cardTitle: 60, hookNum: 340, num: 230, unit: 112 },
     gap: 28,
     minBase: 44,

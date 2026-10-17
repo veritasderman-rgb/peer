@@ -1,5 +1,5 @@
-// Vyexportuje statická SVG garantů (components/GarantSvg.tsx) do public/garanti/:
-//   <id>.svg (má radost), <id>-ukazuje.svg (neutrální, ukazuje), rada.svg, rada-ukazuje.svg
+// Vyexportuje statické SVG značek garantů (components/GarantSvg.tsx) do public/garanti/:
+//   <id>.svg (monogram se jménem a rolí), rada.svg (značka PEER)
 // Spuštění z kořene repozitáře: node scripts/export-garanti.mjs
 import { build } from "esbuild";
 import fs from "node:fs";
@@ -39,17 +39,15 @@ const { svg, GARANT_IDS } = createRequire(import.meta.url)(bundle);
 fs.mkdirSync(outDir, { recursive: true });
 
 const head = '<?xml version="1.0" encoding="UTF-8"?>\n';
+const FONT_DISPLAY = "'Bebas Neue', 'Roboto Condensed', Arial, sans-serif";
+const FONT_BODY = "'Roboto Condensed', Roboto, Arial, sans-serif";
 const soubory = [
-  ...GARANT_IDS.flatMap((id) => [
-    [`${id}.svg`, { kdo: id, mood: "happy" }],
-    [`${id}-ukazuje.svg`, { kdo: id, mood: "neutral", pointing: true }],
-  ]),
-  ["rada.svg", { kdo: "rada", mood: "happy" }],
-  ["rada-ukazuje.svg", { kdo: "rada", mood: "neutral", pointing: true }],
+  ...GARANT_IDS.map((id) => [`${id}.svg`, { kdo: id, jmeno: true }]),
+  ["rada.svg", { kdo: "rada", jmeno: true }],
 ];
 
 for (const [file, props] of soubory) {
-  let s = svg({ ...props, size: 600 });
+  let s = svg({ ...props, size: 600, fontDisplay: FONT_DISPLAY, fontBody: FONT_BODY });
   s = s.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"');
   fs.writeFileSync(path.join(outDir, file), head + s);
   console.log(`public/garanti/${file}`, s.length, "B");
