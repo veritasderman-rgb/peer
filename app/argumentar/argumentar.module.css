@@ -1,0 +1,99 @@
+.page { display: grid; padding-bottom: 4rem; }
+.page > :global(.wrap) { width: 100%; min-width: 0; }
+
+.hero { display: grid; gap: 0.9rem; padding-block: 3rem 1rem; }
+.lede { display: grid; gap: 0.9rem; max-width: 62ch; }
+.lede p { margin: 0; }
+.lede > p:first-child { font-size: var(--s1); }
+.rules { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.5rem; line-height: 1.5; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; padding-top: 0.5rem; }
+.actions :global(.btn) { min-height: 44px; }
+
+/* obsah: skupiny a pod nimi otázky */
+.toc { padding-block: 1.5rem 0; }
+.tocH { font-size: var(--s2); margin-bottom: 0.75rem; }
+.tocList { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 1.1rem 2rem; }
+.tocGroup { font-family: var(--f-data); font-weight: 700; font-size: var(--s1); color: var(--ink); text-decoration: none; }
+.tocGroup:hover { text-decoration: underline; }
+.tocQs { list-style: none; margin: 0.35rem 0 0; padding: 0; display: grid; gap: 0.2rem; font-size: var(--s-1); line-height: 1.35; }
+.tocQs a { overflow-wrap: anywhere; }
+
+.group { padding-block: 3rem 0; display: grid; gap: 1.1rem; align-content: start; }
+.groupH { scroll-margin-top: 5rem; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.q { padding: 1.1rem 1.25rem 1.25rem; display: grid; gap: 0.7rem; min-width: 0; scroll-margin-top: 5rem; }
+.qH { margin: 0; font-size: var(--s1); line-height: 1.25; overflow-wrap: anywhere; }
+.kratce { margin: 0; font-weight: 700; line-height: 1.45; padding: 0.55rem 0.8rem; border-left: 5px solid var(--sun); background: var(--paper); overflow-wrap: anywhere; }
+.body { display: grid; gap: 0.65rem; max-width: 74ch; }
+.para { margin: 0; line-height: 1.55; overflow-wrap: anywhere; }
+.label { font-family: var(--f-data); text-transform: uppercase; letter-spacing: 0.05em; font-size: var(--s-1); color: var(--river); }
+.ref { font-family: var(--f-data); font-size: 0.8em; color: var(--muted); overflow-wrap: anywhere; }
+.more { margin: 0; font-family: var(--f-data); font-size: var(--s-1); }
+.more b { text-transform: uppercase; letter-spacing: 0.06em; }
+.path { overflow-wrap: anywhere; }
+.foot { padding-top: 2.5rem; font-size: var(--s-1); }
+
+@media (max-width: 760px) {
+  .hero { padding-block: 2rem 0.5rem; }
+  .group { padding-block: 2.25rem 0; }
+  .q { padding: 0.95rem 1rem 1.1rem; }
+  .actions :global(.btn) { flex: 1 1 100%; justify-content: center; }
+}
+
+/* Tisk: černý text na bílé, bez navigace, patičky a tlačítek; každá skupina na nové stránce; odkazy s adresou */
+@media print {
+  :global(body):has(.page) { background: #fff; color: #000; font-size: 10.5pt; }
+  :global(body):has(.page) > :global(header),
+  :global(body):has(.page) > :global(footer),
+  :global(body):has(.page) > :global(.skip),
+  :global(body):has(.page) :global(main) ~ * { display: none !important; }
+
+  .page {
+    --paper: #fff;
+    --surface: #fff;
+    --ink: #000;
+    --muted: #222;
+    --river: #000;
+    --line: #999;
+    --line-strong: #666;
+    color: #000;
+    background: #fff;
+    padding-bottom: 0;
+  }
+  .page :global(.wrap) { max-width: none; padding-inline: 0; }
+
+  .hero { padding-block: 0 0.5rem; gap: 0.5rem; }
+  .hero h1 { font-size: 30pt; }
+  .lede > p:first-child { font-size: 12pt; }
+  .actions { display: none; }
+
+  .toc { padding-block: 1rem 0; }
+  .tocH { font-size: 18pt; }
+  .tocList { grid-template-columns: 1fr 1fr; gap: 0.8rem 1.5rem; }
+  .tocQs { font-size: 8.5pt; }
+  .toc a, .toc a:visited { color: #000; text-decoration: none; }
+
+  .group { break-before: page; padding-block: 0; gap: 0.8rem; }
+  .groupH { font-size: 24pt; line-height: 1.25; padding-top: 0.2em; break-after: avoid; }
+  .list { gap: 0.8rem; }
+  .q { break-inside: avoid; border: 1px solid #999; border-radius: 4px; padding: 0.6rem 0.8rem 0.7rem; gap: 0.45rem; background: #fff; }
+  .qH { font-size: 12.5pt; break-after: avoid; }
+  .kratce { background: #f1f1f1; border-left: 4px solid #000; padding: 0.3rem 0.6rem; font-size: 10.5pt; }
+  .body { max-width: none; gap: 0.4rem; }
+  .para { font-size: 9.5pt; line-height: 1.4; }
+  .label { color: #000; font-size: 8pt; }
+  .ref { color: #333; font-size: 7.5pt; }
+  .more { font-size: 8.5pt; }
+  .foot { padding-top: 1rem; font-size: 8pt; }
+
+  .page a, .page a:visited { color: #000; text-decoration: underline; }
+  :global(nextjs-portal) { display: none !important; }
+  .q a[href]:not(.path)::after, .lede a[href]::after, .foot a[href]::after {
+    content: " [" attr(href) "]";
+    font-family: var(--f-data);
+    font-size: 7pt;
+    color: #333;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+}
