@@ -25,18 +25,21 @@ const steps: StoryStep[] = [
     title: "Obci nic nepřiteče",
     text: <>Z místní ekonomiky má obec jen <b>~2 %</b> příjmů. Skoro <b>97–98 %</b> peněz obcí a krajů jde ze státního rozpočtu, bez vazby na to, co se v obci děje. Firma i noví lidé obec něco stojí, ale nic jí nepřinesou.</>,
     bobr: "Za rozvoj obec platí. Vydělat na něm nemůže.",
+    scena: { typ: "podil", hodnota: 2, popis: "příjmů obcí pochází z místní ekonomiky" }, // fakta: podil_prijmu_obci_cr, statni_rozpocet_zavislost
   },
   {
     mood: "surprised",
     title: "Peníze leží, projekty čekají",
     text: <>Přitom obce drží na účtech <b>300–400 mld. Kč</b>. Řada potřebných investic přesto nevznikne, nebo čeká na dotační výzvu. Evina obec patří mezi <b>4 700 obcí</b> s méně než tisícem obyvatel.</>,
     bobr: "Peníze jsou. Chybí důvod a lidé na přípravu projektů.",
+    scena: { typ: "cislo", hodnota: 300, predpona: "od", jednotka: "mld. Kč", popis: "leží na účtech obcí, odhad je 300–400 mld. Kč" }, // fakta: obecni_ucty (300–400 mld. Kč), obce_pod_tisic
   },
   {
     mood: "neutral",
     title: "Malý úřad, velký úkol",
     text: <>Česko má přes <b>6 200 obcí</b>. Malá obec nezaměstná specialistu na právo, veřejné zakázky ani územní plán. Eva tyhle agendy zvládá sama a na velký projekt jí nezbývá kapacita.</>,
     bobr: "Jeden člověk nemůže umět všechno.",
+    scena: { typ: "cislo", hodnota: 6200, predpona: "přes", jednotka: "obcí", popis: "obcí v Česku, z toho 4 700 pod tisíc obyvatel" }, // fakta: obce_pocet, obce_pod_tisic
   },
   {
     mood: "happy",
@@ -44,6 +47,11 @@ const steps: StoryStep[] = [
     title: "Co se pro Evu změní",
     text: <>Nejméně <b>20 %</b> rozpočtového určení daní, asi <b>60 mld. Kč</b> ročně, se naváže na ekonomickou aktivitu v území. Eva dostane z firmy i nových obyvatel podíl a za novou výstavbu příspěvek na infrastrukturu. Odborníky si může s okolními obcemi najmout společně.</>,
     bobr: "Šest opatření. Ukážu ti je jedno po druhém.",
+    scena: { // fakta: statni_rozpocet_zavislost; opatreni 1 (klicoveCislo)
+      typ: "predtim-potom",
+      predtim: { hodnota: "97–98 %", popis: "příjmů obcí a krajů ze státu, bez vazby na území" },
+      potom: { hodnota: "min. 20 %", popis: "z rozpočtového určení daní (60 mld. Kč) se naváže na obec" },
+    },
   },
 ];
 

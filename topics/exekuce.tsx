@@ -22,18 +22,21 @@ const steps: StoryStep[] = [
     title: "Srážka 66 %",
     text: <>Většina dlužníků čelí <b>66% srážce</b> z příjmu. Nad cca <b>31 500 Kč</b> hrubého je srážka 100 %. Martin má 4 exekuce, takže 100 % nastupuje už od <b>24 609 Kč</b>.</>,
     bobr: "Sto procent z každé další koruny. To je celá.",
+    scena: { typ: "podil", hodnota: 66, popis: "ze 100 Kč příjmu strhne exekutor většině dlužníků" }, // fakta: srazka_66, srazka_100_od_prijmu, srazka_100_od_4_exekuci
   },
   {
     mood: "surprised",
     title: "Přesčas nemá smysl",
     text: <>Šéf nabízí přesčasy. Kdyby Martin přešel <b>24 609 Kč</b>, každá další koruna by šla exekutorovi. NERV potvrzuje, že se lidem v exekuci další práce nevyplatí.</>,
     bobr: "Práce, která se nevyplatí, je past pro člověka i pro stát.",
+    scena: { typ: "cislo", hodnota: 24609, jednotka: "Kč", popis: "od této hrubé mzdy jde exekutorovi každá další koruna" }, // fakta: srazka_100_od_4_exekuci
   },
   {
     mood: "neutral",
     title: "Účet platí i ostatní",
     text: <>Zaměstnavatel platí za správu exekucí <b>500 až 3 000 Kč</b> měsíčně na zaměstnance. Exekuce rodiče patří k nejsilnějším předpovědím, že dítě nedokončí střední školu. Každý člověk bez dokončeného vzdělání stojí rozpočty <b>2–3 mil. Kč</b>.</>,
     bobr: "Dluh rodičů dopadá i na děti.",
+    scena: { typ: "cislo", predpona: "až", hodnota: 3000, jednotka: "Kč měsíčně", popis: "platí zaměstnavatel za správu exekucí na zaměstnance" }, // fakta: admin_zatez_mesicne
   },
   {
     mood: "happy",
@@ -41,6 +44,7 @@ const steps: StoryStep[] = [
     title: "Co se pro Martina změní",
     text: <>Maximální srážka klesne na <b>50 %</b>. Z 1 000 Kč navíc mu zůstane <b>500 Kč</b>, ne nula. Jeden dlužník bude mít jednoho exekutora.</>,
     bobr: "Tři opatření. Ukážu ti je jedno po druhém.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "100 %", popis: "srážka z každé další koruny nad hranici" }, potom: { hodnota: "50 %", popis: "nejvyšší srážka podle návrhu" } }, // fakta: srazka_100_od_prijmu, navrh_max_srazka
   },
 ];
 

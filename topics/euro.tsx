@@ -19,24 +19,37 @@ const steps: StoryStep[] = [
     title: "Hypotéka na 30 let",
     text: <>Novákovi mají hypotéku <b>4,7 mil. Kč</b> na 30 let. Při sazbě <b>4,94 %</b> splácejí <b>25 059 Kč</b> měsíčně. Mají dvě děti a každé léto jezdí do Chorvatska.</>,
     bobr: "To je velká částka každý měsíc. Za co vlastně platí?",
+    scena: { typ: "cislo", hodnota: 25059, jednotka: "Kč", popis: "měsíční splátka, hypotéka 4,7 mil. Kč na 30 let" }, // fakta: hypoteka_splatka_cr, hypoteka_sazba_cr
   },
   {
     mood: "thinking",
     title: "Stejná banka, jiná země",
     text: <>Stejná banka nabízela na Slovensku stejný produkt za <b>3,69 %</b>. Splátka by tam byla <b>21 607 Kč</b> měsíčně.</>,
     bobr: "Stejný produkt, stejná banka. Proč se cena liší?",
+    scena: { // fakta: hypoteka_sazba_cr, hypoteka_sazba_sk
+      typ: "srovnani",
+      nadpis: "Sazba hypotéky, stejná banka",
+      jednotka: "%",
+      polozky: [
+        { nazev: "Česko", hodnota: 4.94, zvyrazni: true },
+        { nazev: "Slovensko", hodnota: 3.69 },
+      ],
+      popis: "tříletá fixace, ČSOB, červen 2026",
+    },
   },
   {
     mood: "surprised",
     title: "Za 30 let",
     text: <>Novákovi zaplatí na úrocích <b>4 321 079 Kč</b>, Slováci <b>3 078 421 Kč</b>. Rozdíl je <b>1 242 657 Kč</b> za stejný dům.</>,
     bobr: "Víc než milion korun za totéž.",
+    scena: { typ: "cislo", hodnota: 1242657, jednotka: "Kč", popis: "rozdíl na úrocích za 30 let, Česko oproti Slovensku" }, // fakta: hypoteka_rozdil_uroky
   },
   {
     mood: "neutral",
     title: "A dovolená taky",
     text: <>Chorvatsko dnes platí eurem. Při každé směně korun za eura Novákovi platí „malou daň“ <b>2 až 3 %</b>. Na dovolené za <b>1 500 EUR</b> to dělá zhruba <b>1 100 Kč</b> skrytých nákladů.</>,
     bobr: "Všech 5 oblíbených českých destinací je v eurozóně. Poplatek platíš pořád dokola.",
+    scena: { typ: "cislo", hodnota: 1100, jednotka: "Kč", popis: "skrytých nákladů při směně na cestu za 1 500 EUR" }, // fakta: dovolena_skryte_naklady, transakcni_poplatek
   },
   {
     mood: "happy",
@@ -44,6 +57,11 @@ const steps: StoryStep[] = [
     title: "Co by se změnilo",
     text: <>Návrh má tři kroky: veřejná debata a shoda, splnění maastrichtských kritérií a pak euro, nejdříve <b>2 roky</b> po vstupu do ERM 2. Čím déle otálíme, tím víc platíme.</>,
     bobr: "Rychle to nebude. Ukážu ti kroky jeden po druhém.",
+    scena: { // fakta: hypoteka_sazba_cr, hypoteka_sazba_sk, hypoteka_rozdil_uroky (cile)
+      typ: "predtim-potom",
+      predtim: { hodnota: "4,94 %", popis: "sazba hypotéky v Česku dnes" },
+      potom: { hodnota: "3,69 %", popis: "úroveň Slovenska, kam návrh míří" },
+    },
   },
 ];
 

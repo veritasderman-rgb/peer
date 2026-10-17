@@ -24,24 +24,28 @@ const steps: StoryStep[] = [
     title: "Odešla z práce",
     text: <>Jana je účetní a je jí 52 let. Máma onemocněla demencí a péče se nedala zvládnout vedle práce, tak z ní odešla. Jana není sama. Neformálně pečuje <b>250–300 tisíc</b> lidí, podle některých odhadů až <b>milion</b>.</>,
     bobr: "Za jednou Janou stojí hodně dalších. Jen o nich nikdo nevede statistiku.",
+    scena: { typ: "cislo", predpona: "250–", hodnota: 300, jednotka: "tisíc lidí", popis: "neformálně pečuje, podle některých odhadů až milion" }, // fakta: neformalni_pecujici_pocet
   },
   {
     mood: "thinking",
     title: "Kdo to dělá",
     text: <>Dvě třetiny pečujících jsou ženy ve věku <b>35 až 64</b> let. Zkrácený úvazek by pomohl, jenže částečné úvazky tvoří jen asi <b>7 %</b>. Po skončení péče se na trh práce vrací těžko.</>,
     bobr: "Odejít je rychlé. Vrátit se je dlouhá cesta.",
+    scena: { typ: "podil", hodnota: 7, popis: "pracovních úvazků je částečných, pečujícím by pomohly" }, // fakta: castecne_uvazky_sucasne, neformalni_pecujici_zeny
   },
   {
     mood: "surprised",
     title: "Služba, která nepřijde",
     text: <>Pomoc, která by přišla domů, chybí. Terénní služby pokrývají jen <b>5–10 %</b> potřeb. V Praze podle odhadů chybí až <b>3 000</b> sociálních pracovníků a pracovníků v sociálních službách.</>,
     bobr: "Když služba nepřijde, zůstane péče na rodině.",
+    scena: { typ: "cislo", predpona: "5–", hodnota: 10, jednotka: "%", popis: "potřeb pokrývají terénní služby, doma pomoc chybí" }, // fakta: terenni_kapacity_pokryti, praha_chybi_pracovniku
   },
   {
     mood: "neutral",
     title: "Týká se to nás všech",
     text: <>V roce 2024 bylo denně v pracovní neschopnosti přes <b>182 tisíc</b> lidí. Celých <b>62 %</b> ztracených zdravých let dopadá na lidi v produktivním věku, ne na seniory. A <b>72 %</b> potenciálu zlepšení jde řešit prevencí a životosprávou.</>,
     bobr: "Zdraví není jen věc ordinace. Je to věc výplaty i rodinného rozpočtu.",
+    scena: { typ: "podil", hodnota: 62, popis: "ztracených zdravých let dopadá na lidi v produktivním věku" }, // fakta: mck_ztracene_roky_produktivni, prace_neschopnost_2024, mck_potencial_prevence
   },
   {
     mood: "happy",
@@ -49,6 +53,7 @@ const steps: StoryStep[] = [
     title: "Co by se pro Janu změnilo",
     text: <>Terénní a odlehčovací služby se mají během deseti let posílit o <b>40–50 mld. Kč</b>. Částečné úvazky mají do roku 2040 vzrůst na <b>15 %</b>. Jana by mohla pečovat a zároveň zůstat v práci.</>,
     bobr: "Jedenáct opatření ve čtyřech liniích. Projdeme je po jedné.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "7 %", popis: "částečné úvazky dnes" }, potom: { hodnota: "15 %", popis: "cíl do roku 2040" } }, // fakta: castecne_uvazky_sucasne, castecne_uvazky_cil_2040, terenni_financovani_navyseni
   },
 ];
 

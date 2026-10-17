@@ -23,18 +23,21 @@ const steps: StoryStep[] = [
     title: "Smlouva na rok",
     text: <>Petra je zdravotní sestra v Brně. Se synem bydlí v nájmu. Smlouvu má na jeden rok, stejně jako <b>70 % nájemníků</b> v Česku. Každý podzim neví, co bude v létě.</>,
     bobr: "Rok je krátká doba, když máš dítě ve školce.",
+    scena: { typ: "podil", hodnota: 70, popis: "nájemních smluv se uzavírá jen na 1 rok" }, // fakta: najemni_smlouvy_1_rok
   },
   {
     mood: "thinking",
     title: "45 let spoření",
     text: <>Na vlastní byt by potřebovala <b>15 ročních platů</b>. Kdyby odkládala třetinu každé výplaty, šetřila by <b>45 let</b>. Průměr v EU je 8 až 10 platů.</>,
     bobr: "To není chyba Petry. To je nejhorší poměr v celé EU.",
+    scena: { typ: "srovnani", jednotka: "ročních platů", popis: "Kolik ročních platů stojí nový byt", polozky: [{ nazev: "Česko", hodnota: 15.1, zvyrazni: true }, { nazev: "Polsko", hodnota: 11.8 }, { nazev: "Německo", hodnota: 10.2 }, { nazev: "Belgie", hodnota: 4.8 }] }, // fakta: rocni_platy_cr, graf_rocni_platy_cesko, graf_rocni_platy_polsko, graf_rocni_platy_nemecko, graf_rocni_platy_belgie
   },
   {
     mood: "surprised",
     title: "Prázdné byty, pomalé stavby",
     text: <>Přitom v Česku stojí <b>200 000 prázdných bytů</b> v bytových domech. A Praha staví <b>2,7× méně</b> bytů na obyvatele než Varšava.</>,
     bobr: "Byty jsou. Jen se nestaví a nepouštějí na trh.",
+    scena: { typ: "srovnani", jednotka: "bytů", popis: "Dokončené byty ročně na 1 000 obyvatel", polozky: [{ nazev: "Varšava", hodnota: 9.2 }, { nazev: "Praha", hodnota: 3.4, zvyrazni: true }] }, // fakta: praha_vs_varsava_vystavba, graf_intenzita_varsava, graf_intenzita_praha
   },
   {
     mood: "neutral",
@@ -48,6 +51,7 @@ const steps: StoryStep[] = [
     title: "Co se pro Petru změní",
     text: <>Obec dostane za každý byt peníze na infrastrukturu, povolení přijde do <b>6 měsíců</b> a byty porostou u zastávek. Cíl: byt pod <b>10 ročních platů</b> a nájem do <b>30 % mzdy</b>. Petře stát zaručí majiteli nájem, a ona dostane smlouvu <b>na dobu neurčitou</b>.</>,
     bobr: "Devět opatření. Ukážu ti je jedno po druhém.",
+    scena: { typ: "predtim-potom", predtim: { hodnota: "15 platů", popis: "cena nového bytu dnes" }, potom: { hodnota: "pod 10 platů", popis: "cíl strategie" } }, // fakta: rocni_platy_cr, cil_pomer_cena_mzda
   },
 ];
 

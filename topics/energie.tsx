@@ -29,24 +29,37 @@ const steps: StoryStep[] = [
     title: "Kotel a čerpadlo",
     text: <>Pan Karel je důchodce a bydlí v rodinném domě s plynovým kotlem. Je jednou z více než <b>1,5 milionu domácností</b>, které topí plynem. Chce si pořídit tepelné čerpadlo. Prodejce mu řekl, že se mu to „nevyplatí“.</>,
     bobr: "Čerpadlo je úsporné. Tak proč se nevyplatí?",
+    scena: { typ: "cislo", hodnota: 1500000, predpona: "více než", jednotka: "domácností", popis: "domácností topí plynem a může řešit výměnu kotle" }, // fakta: domacnosti_topici_plynem
   },
   {
     mood: "thinking",
     title: "Kde se to láme",
     text: <>Jednotka elektřiny stojí domácnost zhruba <b>čtyřikrát</b> víc než jednotka plynu. Čerpadlo se vyplácí od poměru asi <b>2,7 : 1</b>. Elektřina nese povolenky a plné náklady sítí, plyn na vytápění je osvobozen od spotřební daně.</>,
     bobr: "Poměr cen je nastavený proti elektřině.",
+    scena: { // fakta: cena_elektrina_vs_plyn, tc_bod_zvratu
+      typ: "srovnani",
+      nadpis: "Cena elektřiny oproti plynu",
+      jednotka: ": 1",
+      polozky: [
+        { nazev: "Dnes", hodnota: 4, zvyrazni: true },
+        { nazev: "Čerpadlo se vyplatí od", hodnota: 2.7 },
+      ],
+      popis: "jednotka elektřiny stojí zhruba 4× víc než plynu",
+    },
   },
   {
     mood: "surprised",
     title: "Továrna tu je, zákazníci ne",
     text: <>Česko patří k velkým výrobcům tepelných čerpadel a Panasonic rozšiřuje továrnu v Plzni. Domácí prodeje přitom za dva roky spadly <b>na polovinu</b>.</>,
     bobr: "Vyrábíme je pro Evropu. Doma je nikdo nechce.",
+    scena: { typ: "podil", hodnota: 50, popis: "domácích prodejů čerpadel zbylo za dva roky" }, // fakta: tc_prodeje_pokles
   },
   {
     mood: "neutral",
     title: "Elektřina je, síť je zamčená",
     text: <>Loni bylo na burze <b>322 hodin</b> se zápornou cenou elektřiny. Přes <b>20 GW</b> kapacity v sítích přitom drží rezervace projektů, které se roky nestaví. To je dvojnásobek toho, co chceme do roku 2030 postavit.</>,
     bobr: "Kapacita je zaplacená. Jen na ni někdo sedí.",
+    scena: { typ: "cislo", hodnota: 20, predpona: "přes", jednotka: "GW", popis: "kapacity sítí blokují rezervace nestavěných projektů" }, // fakta: sit_rezervace_gw, sit_rezervace_pomer_cile, zaporne_ceny_hodiny
   },
   {
     mood: "happy",
@@ -54,6 +67,11 @@ const steps: StoryStep[] = [
     title: "Co se pro pana Karla změní",
     text: <>Zákon ohlásí trajektorii cen na roky dopředu. Od roku 2028 dostane domácnost zpět polovinu výnosů z povolenek, zhruba <b>5 000 Kč ročně</b>. Dynamický tarif, přísně dobrovolný, ušetřil v pilotu kolem <b>desetiny</b> účtu. A teplárny dostanou k odpadnímu teplu cestu pro <b>800 tisíc domácností</b>.</>,
     bobr: "Šestnáct opatření ve čtyřech liniích. Pojď na ně.",
+    scena: { // fakta: cena_elektrina_vs_plyn, tc_bod_zvratu (cile)
+      typ: "predtim-potom",
+      predtim: { hodnota: "4 : 1", popis: "cena elektřiny vůči plynu dnes" },
+      potom: { hodnota: "pod 2,7 : 1", popis: "cíl: tepelné čerpadlo se vyplatí" },
+    },
   },
 ];
 

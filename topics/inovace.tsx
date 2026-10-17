@@ -26,12 +26,23 @@ const steps: StoryStep[] = [
     title: "Proč je firem málo",
     text: <>Česká výroba dělá hlavně na zakázku pro zahraniční firmy. Tlak na cenu roste. V tržní sofistikovanosti jsme na <b>73. místě</b> na světě. Víme a umíme, ale neumíme to prodat.</>,
     bobr: "Technologie umíme. Prodávat je nás nikdo neučil.",
+    scena: { typ: "cislo", hodnota: 73, popis: "místo na světě v tržní sofistikovanosti" }, // fakta: pozice_trzni_sofistikovanost
   },
   {
     mood: "surprised",
     title: "Startupů je málo",
     text: <>V Česku je <b>131 startupů</b> na milion obyvatel. Izrael jich má <b>410</b>, Rakousko dvakrát tolik a předběhlo nás i Maďarsko. Talent se rodí všude. Jen ho neumíme vyzdvihnout.</>,
     bobr: "Tomáš není výjimka. Takových je u nás spousta.",
+    scena: { // fakta: startupy_cr, startupy_izrael, startupy_rakousko
+      typ: "srovnani",
+      nadpis: "Startupy na milion obyvatel",
+      jednotka: "startupů",
+      polozky: [
+        { nazev: "Česko", hodnota: 131, zvyrazni: true },
+        { nazev: "Izrael", hodnota: 410 },
+      ],
+      popis: "Rakousko má dvojnásobek české hodnoty",
+    },
   },
   {
     mood: "neutral",
@@ -45,6 +56,11 @@ const steps: StoryStep[] = [
     title: "Co se pro Tomáše změní",
     text: <>Startupy podpoří fondy s vysokou účastí státu podle izraelské Yozmy z roku <b>1993</b>. Přijde plnohodnotný ESOP a programy druhé šance. Inkubátor jako Jihomoravský JIC vznikne v dalších městech.</>,
     bobr: "Sedm rolí státu. Ukážu ti je jednu po druhé.",
+    scena: { // fakta: startupy_cr, startupy_izrael, yozma_izrael
+      typ: "predtim-potom",
+      predtim: { hodnota: "131", popis: "startupů na milion obyvatel v Česku" },
+      potom: { hodnota: "410", popis: "úroveň Izraele, vzoru s fondem Yozma" },
+    },
   },
 ];
 

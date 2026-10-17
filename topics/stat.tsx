@@ -23,12 +23,23 @@ const steps: StoryStep[] = [
     title: "Většina služeb není online",
     text: <>Stát poskytuje téměř <b>9 000 služeb</b>. Digitálních je jen <b>18 %</b>, asi <b>30 %</b> je hybridních a víc než polovina zůstává jen na papíře. Zákon o právu na digitální službu platí, jeho naplňování pokulhává.</>,
     bobr: "Zákon je. Úřady za ním zatím pomalu běží.",
+    scena: { typ: "podil", hodnota: 18, popis: "z téměř 9 000 služeb státu je plně digitálních" }, // fakta: sluzby_digitalni, sluzby_statu
   },
   {
     mood: "surprised",
     title: "Proč to stojí tolik",
     text: <>Státní informační systémy jsou staré, některé z 90. let. Provoz stojí <b>8,5 mld. Kč ročně</b> a <b>53 %</b> systémů vzniklo bez veřejné soutěže. Nástroje pro SZIF stály <b>2,1 mld. Kč</b> za 4 roky. V komerční sféře by vyšly na <b>100–120 mil. Kč</b>.</>,
     bobr: "Až dvacetkrát dráž. A platíme to z daní.",
+    scena: { // fakta: szif_nastroje, szif_komercni, is_rocni_naklady, is_bez_souteze
+      typ: "srovnani",
+      nadpis: "Nástroje pro SZIF",
+      jednotka: "mil. Kč",
+      polozky: [
+        { nazev: "Stát, za 4 roky", hodnota: 2100, zvyrazni: true },
+        { nazev: "Komerčně, horní odhad", hodnota: 120 },
+      ],
+      popis: "v komerční sféře až 20× levněji",
+    },
   },
   {
     mood: "neutral",
@@ -42,6 +53,11 @@ const steps: StoryStep[] = [
     title: "Co se pro Honzu změní",
     text: <>Stát dokončí cca <b>1 400 služeb</b>, u kterých digitalizace dává smysl. Jednotné inkasní místo spojí finanční úřad, sociální zabezpečení a zdravotní pojišťovnu do <b>jednoho bodu</b>. Honza vyřídí měsíční agendu na jednom místě.</>,
     bobr: "Pět opatření. Ukážu ti je jedno po druhém.",
+    scena: { // fakta: opatreni 1 (Jednotné inkasní místo; klicoveCislo)
+      typ: "predtim-potom",
+      predtim: { hodnota: "3 úřady", popis: "finanční úřad, ČSSZ a pojišťovna zvlášť" },
+      potom: { hodnota: "1 bod", popis: "Jednotné inkasní místo pro měsíční agendu" },
+    },
   },
 ];
 
