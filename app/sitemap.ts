@@ -10,18 +10,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/pribeh", priority: 0.9 },
     { path: "/videa", priority: 0.8 },
     { path: "/dopad", priority: 0.8 },
-    { path: "/cesta", priority: 0.8 },
-    { path: "/zaplaceni", priority: 0.8 },
     { path: "/kolik-ti-to-prinese", priority: 0.8 },
     { path: "/moje-obec", priority: 0.7 },
     { path: "/otazky", priority: 0.7 },
-    { path: "/pro-sdileni", priority: 0.5 },
-    { path: "/pro-media", priority: 0.5 },
     { path: "/en", priority: 0.6 },
     { path: "/kdo-je-kdo", priority: 0.7 },
     { path: "/jak-vznikl", priority: 0.5 },
     { path: "/hledat", priority: 0.4 },
-    { path: "/argumentar", priority: 0.6 },
   ];
   return [
     ...staticke.map((s) => ({ url: abs(s.path), lastModified, changeFrequency: "weekly" as const, priority: s.priority })),

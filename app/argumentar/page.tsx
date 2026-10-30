@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description:
     "Jak odpovědět na nejčastější námitky proti hospodářské strategii PEER 2026–2035: jedna věta, čísla se zdrojem, nejsilnější protiargument a kam odkázat. K vytištění i ke stažení jako PDF.",
   alternates: { canonical: "/argumentar" },
+  /* podklad pro členy a novináře: odkaz je na /podklady, do vyhledávačů ne */
+  robots: { index: false, follow: true },
 };
 
 type Otazka = {

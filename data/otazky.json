@@ -23,7 +23,7 @@
           "zdroj": "Souhrnný dopad do HDP a státního rozpočtu (s. 88); úvod pilíře 3; kapitoly 4.1, 3.1, 3.2 a 1.3; souhrn financování v datech webu (data/zaplaceni.json: uvod, principy)",
           "odkazy": [
             {
-              "href": "/zaplaceni",
+              "href": "/dopad#zaplaceni",
               "text": "Jak se to zaplatí"
             }
           ],
@@ -51,7 +51,7 @@
           "zdroj": "Souhrnný dopad do HDP a státního rozpočtu (s. 88); kapitola 2.2 Euro, sekce Stát a Co navrhujeme; kapitoly 3.1 Průmysl a 3.3 Inovace",
           "odkazy": [
             {
-              "href": "/zaplaceni",
+              "href": "/dopad#zaplaceni",
               "text": "Jak se to zaplatí"
             }
           ],
@@ -83,7 +83,7 @@
           "zdroj": "Opatření v kapitolách 1.1 (opatření 6–8), 1.3, 1.4 (opatření 2 a 11), 3.1, 3.2 (Energetický kupón) a 3.3; souhrn financování (data/zaplaceni.json)",
           "odkazy": [
             {
-              "href": "/zaplaceni",
+              "href": "/dopad#zaplaceni",
               "text": "Jak se to zaplatí"
             }
           ],
@@ -614,7 +614,7 @@
               "text": "Velký obraz"
             },
             {
-              "href": "/zaplaceni",
+              "href": "/dopad#zaplaceni",
               "text": "Jak se to zaplatí"
             }
           ],

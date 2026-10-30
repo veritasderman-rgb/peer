@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description:
     "Hotové příspěvky pro Facebook, X, Instagram a LinkedIn ke všem 14 tématům strategie, s hashtagy a odkazy na reel, široké video a náhledový obrázek. Ke zkopírování a sdílení.",
   alternates: { canonical: "/pro-sdileni" },
+  /* podklad pro členy a novináře: odkaz je na /podklady, do vyhledávačů ne */
+  robots: { index: false, follow: true },
 };
 
 type Balicek = { facebook: string; x: string; instagram: string; linkedin: string; hashtagy: string[] };

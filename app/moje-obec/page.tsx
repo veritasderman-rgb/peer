@@ -96,7 +96,7 @@ export default function MojeObecPage() {
             </li>
           ))}
           <li>
-            <Link href="/cesta" className={`card ${styles.link}`}>
+            <Link href="/dopad#osa" className={`card ${styles.link}`}>
               <span className="display">Cesta do 2035</span>
               <span className="muted">Kdy se co má stát →</span>
             </Link>

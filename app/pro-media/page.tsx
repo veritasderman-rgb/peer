@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description:
     "Podklady pro novináře: strategie na jednu stranu, 14 čísel se zdroji, citace garantů, kontakt na tiskovou mluvčí, loga a obrázky ke stažení a jak citovat.",
   alternates: { canonical: "/pro-media" },
+  /* podklad pro členy a novináře: odkaz je na /podklady, do vyhledávačů ne */
+  robots: { index: false, follow: true },
 };
 
 const PDF = "https://majak.pirati.cz/documents/647/Piratska_Hospodarska_strategie.pdf";

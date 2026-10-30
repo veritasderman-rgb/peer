@@ -23,8 +23,6 @@ export function SiteFooter() {
           <ul className={styles.list}>
             <li><Link href="/pribeh">Příběh strategie</Link></li>
             <li><Link href="/dopad">Velký obraz</Link></li>
-            <li><Link href="/cesta">Cesta do 2035</Link></li>
-            <li><Link href="/zaplaceni">Jak se to zaplatí</Link></li>
             <li><Link href="/videa">Videa Strategie za minutu</Link></li>
             <li><Link href="/kolik-ti-to-prinese">Kolik ti to přinese</Link></li>
             <li><Link href="/moje-obec">Můj kraj v číslech</Link></li>
@@ -33,11 +31,9 @@ export function SiteFooter() {
           <h2 className={styles.h}>O webu</h2>
           <ul className={styles.list}>
             <li><Link href="/hledat">Hledat na webu</Link></li>
-            <li><Link href="/argumentar">Argumentář pro kandidáty</Link></li>
             <li><Link href="/kdo-je-kdo">Kdo je kdo</Link></li>
             <li><Link href="/jak-vznikl">Jak vznikl web a kdo napsal strategii</Link></li>
-            <li><Link href="/pro-sdileni">Pro sdílení: texty a obrázky</Link></li>
-            <li><Link href="/pro-media">Pro média</Link></li>
+            <li><Link href="/podklady">Podklady pro členy a novináře</Link></li>
             <li><Link href="/en" lang="en">In English</Link></li>
           </ul>
         </div>

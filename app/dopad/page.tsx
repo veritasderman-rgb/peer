@@ -5,11 +5,13 @@ import { getTopic } from "@/topics";
 import { BigNumber } from "@/components/BigNumber";
 import { GarantBubble } from "@/components/GarantBubble";
 import { NabehChart } from "@/components/NabehChart";
+import { CestaSekce } from "@/app/cesta/Cesta";
+import { ZaplaceniSekce } from "@/app/zaplaceni/Zaplaceni";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Velký obraz",
-  description: "Co strategie slibuje dohromady: o 1 procentní bod rychlejší růst, bilion korun ročně na konci dekády, 68 000 Kč ročně na pracujícího. A jak se k tomu došlo.",
+  description: "Co strategie slibuje dohromady: o 1 procentní bod rychlejší růst, bilion korun ročně na konci dekády, 68 000 Kč ročně na pracujícího. Jak se k tomu došlo, co se stane kdy a kdo to zaplatí.",
   alternates: { canonical: "/dopad" },
 };
 
@@ -30,7 +32,7 @@ export default function DopadPage() {
           <h1>Co to přinese dohromady</h1>
           <p className={styles.lede}>
             Strategie má jeden cíl: zrychlit růst české ekonomiky o {s.rustNavicPb} procentní bod ročně. Tady je, co z toho
-            plyne, a poctivě i to, jak se k tomu číslu došlo.
+            plyne, jak se k tomu číslu došlo, co se má stát kdy a kdo to zaplatí.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
@@ -113,6 +115,9 @@ export default function DopadPage() {
           ))}
         </ol>
       </section>
+
+      <CestaSekce />
+      <ZaplaceniSekce />
     </article>
   );
 }

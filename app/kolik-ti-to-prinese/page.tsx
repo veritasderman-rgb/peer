@@ -70,7 +70,7 @@ export default function KolikTiToPrinesePage() {
           </li>
           <li>
             Celkový účet strategie studie nesčítá. Co kdo zaplatí, najdeš po tématech na stránce{" "}
-            <Link href="/zaplaceni">Jak se to zaplatí</Link>.
+            <Link href="/dopad#zaplaceni">Jak se to zaplatí</Link>.
           </li>
         </ul>
       </section>

@@ -50,6 +50,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* cíl odkazu s # nemá zajet pod lepicí hlavičku */
+[id] { scroll-margin-top: 5rem; }
 body {
   margin: 0;
   background: var(--paper);

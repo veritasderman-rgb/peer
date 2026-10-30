@@ -183,7 +183,7 @@ export function Kviz({ data, url, nazvy }: Props) {
           </ul>
           <p className="src">
             <b>Zdroj:</b> data/zaplaceni.json, část „kdo zaplatí“. Celý přehled na stránce{" "}
-            <Link href="/zaplaceni">Jak se to zaplatí</Link>.
+            <Link href="/dopad#zaplaceni">Jak se to zaplatí</Link>.
           </p>
         </section>
 

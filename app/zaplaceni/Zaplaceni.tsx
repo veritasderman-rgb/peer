@@ -1,17 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import z from "@/data/zaplaceni.json";
-import dopad from "@/data/dopad.json";
 import { getTopic } from "@/topics";
-import { BigNumber } from "@/components/BigNumber";
-import { GarantBubble } from "@/components/GarantBubble";
 import styles from "./page.module.css";
-
-export const metadata: Metadata = {
-  title: "Jak se to zaplatí",
-  description: "Kdo za strategii zaplatí a co z ní bude: po tématech, kdo nese náklady, co se vrátí, co je rozpočtově neutrální a co studie sama nevyčísluje.",
-  alternates: { canonical: "/zaplaceni" },
-};
 
 type Tema = (typeof z.temata)[number];
 
@@ -99,52 +89,23 @@ function TemaKarta({ t }: { t: Tema }) {
   );
 }
 
-/* Souhrn financování napříč tématy: data/zaplaceni.json. Jedna stránka pro otázku, která přijde první. */
-export default function ZaplaceniPage() {
-  const s = z.souhrn;
-  const d = dopad.souhrn;
+/* Kdo zaplatí a co z toho bude (data/zaplaceni.json) jako sekce stránky Velký obraz (/dopad). Dřív samostatná
+   stránka /zaplaceni, ta teď přesměrovává sem (next.config.ts). Tři čísla na konci dekády jsou na /dopad výš. */
+export function ZaplaceniSekce() {
   return (
-    <article className={styles.page}>
-      <section className={`wrap ${styles.hero}`}>
-        <div className={styles.heroText}>
-          <p className="eyebrow">Peníze · napříč strategií</p>
-          <h1>Jak se to zaplatí</h1>
-          <div className={`prose ${styles.lede}`}>
-            {z.uvod.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
+    <>
+      <section className={`wrap ${styles.section}`} aria-labelledby="zaplaceni">
+        <h2 id="zaplaceni">Jak se to zaplatí</h2>
+        <div className={`prose ${styles.lede}`}>
+          {z.uvod.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
         </div>
-        <GarantBubble kdo="rada" mood="thinking" side="left">
-          První otázka, kterou dostanu: „A kdo to zaplatí?“ Tady je odpověď po tématech, i s tím, co studie nespočítala.
-        </GarantBubble>
-      </section>
-
-      <section className={`wrap ${styles.section}`} aria-labelledby="bilance">
-        <h2 id="bilance">Co na konci dekády</h2>
-        <div className={styles.three}>
-          <div className={`card ${styles.big}`}>
-            <BigNumber value={d.rozpocetNavicMld} prefix="+" unit="mld. Kč" label="ročně navíc do státního rozpočtu" />
-          </div>
-          <div className={`card ${styles.big}`}>
-            <BigNumber value={d.hdpNavicMldRocneKonecDekady} unit="mld. Kč" label="vyšší výkon ekonomiky každý rok" />
-          </div>
-          <div className={`card ${styles.big}`}>
-            <BigNumber value={d.naPracujicihoKc} unit="Kč" label="ročně navíc na pracujícího (v průměru)" />
-          </div>
-        </div>
-        <p className="prose muted">{s.vykonRocne}. {s.naPracujiciho}.</p>
-        <p className="src">
-          <b>Zdroj:</b> {s.zdroj.split(";")[0]}. Podrobně na stránce <Link href="/dopad">Velký obraz</Link>.
-        </p>
-      </section>
-
-      <section className={`wrap ${styles.section}`} aria-labelledby="principy">
-        <h2 id="principy">Z čeho se to platí</h2>
+        <h3>Z čeho se to platí</h3>
         <ol className={styles.principy}>
           {z.principy.map((p) => (
             <li key={p.nadpis} className={`card ${styles.princip}`}>
-              <h3>{p.nadpis}</h3>
+              <h4>{p.nadpis}</h4>
               <p>{p.text}</p>
               <p className="src">
                 <b>Zdroj:</b> {p.zdroj}
@@ -154,8 +115,8 @@ export default function ZaplaceniPage() {
         </ol>
       </section>
 
-      <section className={`wrap ${styles.section} ${styles.last}`} aria-labelledby="temata">
-        <h2 id="temata">Po tématech</h2>
+      <section className={`wrap ${styles.section} ${styles.last}`} aria-labelledby="zaplaceni-temata">
+        <h2 id="zaplaceni-temata">Kdo zaplatí, po tématech</h2>
         <p className="prose muted">
           U každého tématu čtyři sloupce: kdo zaplatí, co to přinese, co studie označuje za neutrální (nebo u čeho žádný
           náklad neuvádí) a co přiznaně nespočítala. Čísla jsou tak, jak je studie uvádí; nic jsme nedopočítávali. Tam, kde
@@ -167,6 +128,6 @@ export default function ZaplaceniPage() {
           ))}
         </ol>
       </section>
-    </article>
+    </>
   );
 }
