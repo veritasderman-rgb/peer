@@ -27,7 +27,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
   const kdo = garantTematu(t.slug);
   return (
     <article className={styles.page}>
-      <section className={`band-dark ${styles.heroBand}`} id="hook">
+      <section className={styles.heroBand} id="hook">
         <div className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
           <nav className={styles.crumbs} aria-label="Kde jsi">
