@@ -36,12 +36,6 @@ const topicList = [
 /* Karta je aktivní, jakmile téma existuje v registru. */
 const topics = topicList.map((t) => ({ ...t, href: getTopic(t.slug) ? `/${t.slug}` : undefined }));
 
-const depths = [
-  { time: "10 vteřin", text: "Jedna věta a jedno číslo. Hned víš, o co jde." },
-  { time: "2 minuty", text: "Krátký výklad s garantem kapitoly, grafem a přepočtem na tvůj život." },
-  { time: "20 minut", text: "Plné znění strategie se zdroji. Pro ty, kdo chtějí vidět každé číslo." },
-];
-
 export default function Home() {
   return (
     <>
@@ -52,7 +46,6 @@ export default function Home() {
           <p className={styles.lead}>
             Vyrábíme jako elita, jsme 7. nejsložitější ekonomika světa. Bohatneme ale jen průměrně.
             Pirátská expertní ekonomická rada napsala plán, jak zrychlit růst o 1 procentní bod ročně.
-            Tenhle web ho vysvětluje bez ekonomické hantýrky.
           </p>
           <div className={styles.actions}>
             <Link className="btn" href="/pribeh">Přečti si příběh</Link>
@@ -101,7 +94,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`wrap ${styles.section}`} aria-labelledby="temata">
+      <section className={`wrap ${styles.section} ${styles.last}`} aria-labelledby="temata">
         <h2 id="temata">Témata</h2>
         <ol className={styles.topics}>
           {topics.map((t) => {
@@ -131,20 +124,6 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className={`wrap ${styles.section} ${styles.last}`} aria-labelledby="hloubky">
-        <h2 id="hloubky">Tři hloubky</h2>
-        <p className={`prose ${styles.depthIntro}`}>
-          Každé téma si přečteš ve třech hloubkách. Zastavíš se, kdy chceš.
-        </p>
-        <ol className={styles.depths}>
-          {depths.map((d) => (
-            <li key={d.time} className={`card ${styles.depth}`}>
-              <span className={`display ${styles.depthTime}`}>{d.time}</span>
-              <p>{d.text}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
     </>
   );
 }

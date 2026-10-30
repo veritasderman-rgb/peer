@@ -75,13 +75,3 @@
 .disabled { opacity: 0.65; background: var(--paper); border-style: dashed; cursor: default; }
 
 .depthIntro { font-size: var(--s1); margin-bottom: 1.5rem; }
-.depths {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-}
-.depth { padding: 1.25rem; display: grid; gap: 0.5rem; align-content: start; }
-.depthTime { font-size: var(--s3); color: var(--river); }

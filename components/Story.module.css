@@ -109,7 +109,9 @@
 }
 .stepTitle { font-family: var(--f-display); font-weight: 400; font-size: var(--s2); text-transform: uppercase; }
 .stepText { font-size: var(--s1); max-width: 40ch; }
-.stepText b { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; border-radius: 0; }
+/* Žlutě jen první zvýraznění v odstavci, další jsou tučně; když je žluté všechno, nevyčnívá nic. */
+.stepText b { font-weight: 700; }
+.stepText b:first-of-type { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; }
 
 @media (max-width: 760px) {
   .story { grid-template-columns: 1fr; gap: 0; }

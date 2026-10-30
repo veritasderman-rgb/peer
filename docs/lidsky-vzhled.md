@@ -35,6 +35,17 @@ styleguide je ostřejší a plakátovější, takže stačí se ho držet a web 
    místo 15,1. Kdo si stránku vyfotí ve špatnou chvíli, sdílí špatné číslo; navíc je to typický efekt
    šablonových landing pages.
 
+## Hotovo ve druhém kroku
+
+7. **Kratší hlavní menu.** V řadě jen Témata · Příběh · Kolik ti to přinese · Můj kraj · Videa; Velký obraz,
+   Cesta do 2035, Jak se to zaplatí, Otázky a námitky, O webu, English a PEER jsou pod rozbalovacím „Více“
+   (zavře se klávesou Escape i kliknutím mimo). Na telefonu jsou v menu všechny odkazy pod sebou, v patičce
+   zůstávají taky všechny.
+8. **Pryč sekce „Tři hloubky“ a věta „Tenhle web ho vysvětluje bez ekonomické hantýrky.“** z úvodní stránky.
+9. **Žlutě jen první zvýraznění v odstavci**, další jsou tučně (příběhy v tématech a /pribeh). Text se neměnil,
+   rozhoduje to CSS (`b:first-of-type`).
+10. **Hlavička vždy černá**, i v tmavém režimu (pevné `#000` / `#fff` místo `--ink` / `--paper`).
+
 ## Návrh dalších kroků (potřebuje rozhodnutí lidí)
 
 ### Vzhled
@@ -42,15 +53,8 @@ styleguide je ostřejší a plakátovější, takže stačí se ho držet a web 
 - **Skutečné fotky garantů místo monogramů.** Kroužek s „LD“ je nejviditelnější znak, že za webem nejsou lidé.
   Fotka (i z telefonu, jednotný ořez a černobílý filtr) udělá víc než jakákoli jiná úprava. Potřeba souhlas
   garantů a fotky; komponenta `GarantSvg` se dá doplnit o `<img>` s monogramem jako zálohou.
-- **Méně položek v hlavní navigaci.** Dnes 13 položek v jednom řádku, jako vypsaná mapa webu. Návrh:
-  Témata · Příběh · Kolik ti to přinese · Můj kraj · Videa, zbytek („Velký obraz“, „Cesta do 2035“, „Jak se
-  to zaplatí“, „Otázky a námitky“, „O webu“, English) do patičky nebo rozbalovacího „Více“.
 - **Nadtitulky (`.eyebrow`) jen tam, kde nesou informaci.** Na webu jich je přes 30; nad většinou H2 jen opakují
   nadpis. Ponechat u stránek témat („Téma 1 · Pilíř…“), jinde zrušit.
-- **Žluté zvýraznění v textu šetřit.** V příběhu Petry je zvýrazněné skoro každé číslo, takže nic nevyčnívá.
-  Jedno, maximálně dvě zvýraznění na odstavec.
-- **Hlavička v tmavém režimu.** Hlavička používá `--ink`, takže v tmavém režimu zesvětlí do šedé. Pirátský
-  web má hlavičku vždy černou; stačí jí dát pevné `#000`.
 - **Méně identických mřížek tří karet.** Témata, „Tři hloubky“, příčiny i opatření jsou všechno stejná mřížka.
   U opatření by fungoval číslovaný seznam v jednom sloupci (jako „Program point list“ ve styleguide).
 - **Fotky místo prázdných ploch.** Styleguide počítá s fotkou v hero (organisms/hero). Jedna reálná fotka
@@ -58,10 +62,6 @@ styleguide je ostřejší a plakátovější, takže stačí se ho držet a web 
 
 ### Text
 
-- **Sekce „Tři hloubky“ zrušit nebo zkrátit na jednu větu.** Web tu popisuje sám sebe („10 vteřin / 2 minuty
-  / 20 minut“); člověk by to spíš ukázal, než vysvětloval.
-- **Méně „tenhle web“.** Úvodní odstavec končí „Tenhle web ho vysvětluje bez ekonomické hantýrky.“ Lepší je
-  rovnou začít vysvětlovat.
 - **Hlas garantů nechat napsat garanty.** Věty jako „Pojď, ukážu ti, proč to tak je“ jsou u všech stejně
   stavěné. Stačí každému garantovi poslat jeho 3–4 bubliny k přepsání vlastními slovy.
 - **Upozornění v patičce „Web postavila AI pod lidským vedením“ ponechat.** Je to poctivé a do budoucna
