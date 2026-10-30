@@ -3,13 +3,13 @@
 .kdo { display: inline-flex; }
 .select {
   font: inherit; color: var(--ink); background: var(--surface);
-  border: 2px solid var(--line-strong); border-radius: 0;
+  border: 2px solid var(--line-strong); border-radius: 999px;
   padding: 0.3rem 0.8rem; min-height: 40px; max-width: 100%;
 }
 .select:focus-visible, .text:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .btn {
   font: inherit; font-weight: 700; color: var(--ink); background: var(--surface);
-  border: 2px solid var(--line-strong); border-radius: 0;
+  border: 2px solid var(--line-strong); border-radius: 999px;
   padding: 0.3rem 0.95rem; min-height: 40px; cursor: pointer;
 }
 .btn:hover { border-color: var(--ink); }

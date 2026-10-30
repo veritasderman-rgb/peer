@@ -39,24 +39,28 @@ const topics = topicList.map((t) => ({ ...t, href: getTopic(t.slug) ? `/${t.slug
 export default function Home() {
   return (
     <>
-      <section className={`wrap ${styles.hero}`}>
-        <div className={styles.heroText}>
-          <p className="flag">Hospodářská strategie 2026–2035</p>
-          <h1>Česko má na víc!</h1>
-          <p className={styles.lead}>
-            Vyrábíme jako elita, jsme 7. nejsložitější ekonomika světa. Bohatneme ale jen průměrně.
-            Pirátská expertní ekonomická rada napsala plán, jak zrychlit růst o 1 procentní bod ročně.
-          </p>
-          <div className={styles.actions}>
-            <Link className="btn" href="/pribeh">Přečti si příběh</Link>
-            <Link className="btn secondary" href="/bydleni">Začni bydlením</Link>
-            <Link className="btn secondary" href="/kdo-je-kdo">Kdo je kdo</Link>
+      <section className={`band-dark ${styles.hero}`}>
+        <div className="wrap">
+          <p className={styles.kicker}>Hospodářská strategie 2026–2035 · PEER</p>
+          <h1 className={`gradient ${styles.heroTitle}`}>Česko má na víc!</h1>
+          <div className={styles.heroRow}>
+            <div className={styles.heroText}>
+              <p className={styles.lead}>
+                Vyrábíme jako elita, jsme 7. nejsložitější ekonomika světa. Bohatneme ale jen průměrně.
+                Pirátská expertní ekonomická rada napsala plán, jak zrychlit růst o 1 procentní bod ročně.
+              </p>
+              <div className={styles.actions}>
+                <Link className="btn sun" href="/pribeh">Přečti si příběh</Link>
+                <Link className="btn secondary" href="/bydleni">Začni bydlením</Link>
+                <Link className="btn secondary" href="/kdo-je-kdo">Kdo je kdo</Link>
+              </div>
+            </div>
+            <div className={styles.heroBobr}>
+              <GarantBubble kdo="rada" mood="neutral" pointing>
+                Jsme PEER, osm lidí, kteří strategii napsali. Začni bydlením: na byt dnes potřebuješ 15 ročních platů.
+              </GarantBubble>
+            </div>
           </div>
-        </div>
-        <div className={styles.heroBobr}>
-          <GarantBubble kdo="rada" mood="neutral" pointing>
-            Jsme PEER, osm lidí, kteří strategii napsali. Začni bydlením: na byt dnes potřebuješ 15 ročních platů.
-          </GarantBubble>
         </div>
       </section>
 
@@ -77,13 +81,13 @@ export default function Home() {
         <Situace data={buildSituaceView()} />
       </section>
 
-      <section className={styles.band} aria-labelledby="prinos">
+      <section className={`band-dark ${styles.band}`} aria-labelledby="prinos">
         <div className="wrap">
           <h2 id="prinos" className={styles.bandTitle}>Co to přinese</h2>
           <ul className={styles.impacts}>
             {impacts.map((i) => (
               <li key={i.value} className={styles.impact}>
-                <span className={`display ${styles.impactValue}`}>{i.value}</span>
+                <span className={`display gradient ${styles.impactValue}`}>{i.value}</span>
                 <span className={styles.impactLabel}>{i.label}</span>
               </li>
             ))}

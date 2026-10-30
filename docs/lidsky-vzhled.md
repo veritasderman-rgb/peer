@@ -46,6 +46,23 @@ styleguide je ostřejší a plakátovější, takže stačí se ho držet a web 
    rozhoduje to CSS (`b:first-of-type`).
 10. **Hlavička vždy černá**, i v tmavém režimu (pevné `#000` / `#fff` místo `--ink` / `--paper`).
 
+## Třetí krok: vzhled podle peer.pirati.cz
+
+Web PEER (peer.pirati.cz, stejný styleguide, změřeno v prohlížeči) je přímý „sourozenec“ tohohle webu,
+takže se mu vzhled přiblížil:
+
+- **Černé pásy přes celou šířku** (úvod webu, úvod každého tématu, „Co to přinese“, patička) a mezi nimi bílý
+  papír. Uvnitř pásu se tokeny přepnou na tmavou sadu (`.band-dark`), komponenty nepotřebují vlastní pravidla.
+- **Obří titulek s přechodem fialová → žlutá** (`#cf7bcc` → `#fdc801`, `.gradient`) jako „Pirátská expertní
+  ekonomická rada“ na peer.pirati.cz; stejný přechod mají čísla v „Co to přinese“ a název webu v hlavičce.
+- **Fialová z loga PEER jako akcent** místo tyrkysové: odkazy, nadtitulky, sloupce grafů (fialová + žlutá jako
+  obálka strategie). Na bílé tmavší `#783777`, v tmavém režimu `#d68fd3`; obě drží kontrast 4,5:1 i na
+  ztlumených kartách (axe).
+- **Tlačítka jako na PEER:** pilulky, Roboto Condensed tučně, verzálky; stejně tak výběrové „chipy“.
+  Karty a grafy zůstávají hranaté.
+- **Typografie:** text 18/28 px (PEER), nadpisy sekcí Bebas 48 px, úvodní text v Roboto Condensed.
+- **Plochy bez stínů:** karty jsou šedé `#f0f0f0` na bílé, jako rozbalovací bloky na peer.pirati.cz.
+
 ## Návrh dalších kroků (potřebuje rozhodnutí lidí)
 
 ### Vzhled

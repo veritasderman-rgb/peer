@@ -6,7 +6,7 @@ import styles from "./SiteFooter.module.css";
 /* Patička = mapa webu: témata, přehledy, o webu, zdroje. Modelové postavy a autorství v jedné větě. */
 export function SiteFooter() {
   return (
-    <footer className={styles.footer}>
+    <footer className={`band-dark ${styles.footer}`}>
       <div className={`wrap ${styles.grid}`}>
         <div className={styles.col}>
           <h2 className={styles.h}>Témata</h2>

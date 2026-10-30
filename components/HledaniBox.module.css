@@ -5,7 +5,7 @@
   min-width: 0;
   max-width: 100%;
   border: 2px solid color-mix(in srgb, currentColor 55%, transparent);
-  border-radius: 0;
+  border-radius: 999px;
   background: color-mix(in srgb, currentColor 7%, transparent);
   color: inherit;
   font-family: var(--f-data);
@@ -23,7 +23,7 @@
   color: inherit;
   background: transparent;
   border: 0;
-  border-radius: 0;
+  border-radius: 999px 0 0 999px;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -37,7 +37,7 @@
   margin: 3px;
   padding: 0 0.95rem;
   border: 0;
-  border-radius: 0;
+  border-radius: 999px;
   background: var(--sun);
   color: var(--sun-ink);
   font: inherit;

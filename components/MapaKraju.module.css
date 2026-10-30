@@ -31,7 +31,7 @@
   font-weight: 700;
   font-size: var(--s-1);
   padding: 0.5rem 0.95rem;
-  border-radius: 0;
+  border-radius: 999px;
   border: 1px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink);
@@ -70,7 +70,7 @@
   font-size: 0.78rem;
   letter-spacing: 0.02em;
   padding: 0.15rem 0.55rem;
-  border-radius: 0;
+  border-radius: 999px;
   border: 1px solid var(--line-strong);
 }
 .stitekStudie { background: var(--green-soft); color: var(--ink); border-color: var(--green); }
