@@ -11,8 +11,8 @@
 .bigLabel { font-family: var(--f-data); font-size: var(--s-1); }
 .principy { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); counter-reset: p; }
 .princip { padding: 1rem 1.1rem; display: grid; gap: 0.5rem; align-content: start; }
-.princip h3 { font-size: var(--s1); }
-.princip h3::before { counter-increment: p; content: counter(p) " "; color: var(--river); font-family: var(--f-display); margin-right: 0.3rem; }
+.princip h4 { font-size: var(--s1); margin: 0; }
+.princip h4::before { counter-increment: p; content: counter(p) " "; color: var(--river); font-family: var(--f-display); margin-right: 0.3rem; }
 .princip p { margin: 0; font-size: var(--s-1); line-height: 1.5; }
 .temata { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
 .tema { padding: 0; }

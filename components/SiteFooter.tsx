@@ -23,21 +23,17 @@ export function SiteFooter() {
           <ul className={styles.list}>
             <li><Link href="/pribeh">Příběh strategie</Link></li>
             <li><Link href="/dopad">Velký obraz</Link></li>
-            <li><Link href="/cesta">Cesta do 2035</Link></li>
-            <li><Link href="/zaplaceni">Jak se to zaplatí</Link></li>
             <li><Link href="/videa">Videa Strategie za minutu</Link></li>
             <li><Link href="/kolik-ti-to-prinese">Kolik ti to přinese</Link></li>
-            <li><Link href="/moje-obec">Můj kraj v číslech</Link></li>
-            <li><Link href="/otazky">Otázky a námitky</Link></li>
+            <li><Link href="/moje-obec">Můj kraj v číslech</Link></li>
+            <li><Link href="/otazky">Otázky a námitky</Link></li>
           </ul>
-          <h2 className={styles.h}>O webu</h2>
+          <h2 className={styles.h}>O webu</h2>
           <ul className={styles.list}>
             <li><Link href="/hledat">Hledat na webu</Link></li>
-            <li><Link href="/argumentar">Argumentář pro kandidáty</Link></li>
             <li><Link href="/kdo-je-kdo">Kdo je kdo</Link></li>
-            <li><Link href="/jak-vznikl">Jak vznikl web a kdo napsal strategii</Link></li>
-            <li><Link href="/pro-sdileni">Pro sdílení: texty a obrázky</Link></li>
-            <li><Link href="/pro-media">Pro média</Link></li>
+            <li><Link href="/jak-vznikl">Jak vznikl web a kdo napsal strategii</Link></li>
+            <li><Link href="/podklady">Podklady pro členy a novináře</Link></li>
             <li><Link href="/en" lang="en">In English</Link></li>
           </ul>
         </div>
@@ -49,9 +45,8 @@ export function SiteFooter() {
             <li><a href="https://www.pirati.cz/" target="_blank" rel="noreferrer">Česká pirátská strana</a></li>
           </ul>
           <p className={styles.note}>
-            Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π
-            a dalšími odborníky. Web ji převypráví pro běžné lidi; každé číslo má pod sebou zdroj. Modelové postavy jsou
-            ilustrační. Web postavila AI pod lidským vedením.
+            Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π
+            a dalšími odborníky. Web ji převypráví pro běžné lidi; každé číslo má pod sebou zdroj. Web postavila AI pod lidským vedením.
           </p>
           <p className={styles.note}>Našel jsi chybu? Napiš nám, opravíme ji.</p>
           <NahlasitChybu kde="Patička webu" kompaktni />

@@ -35,7 +35,7 @@ export function KalkulackaObec() {
           {nf.format(total)}&nbsp;Kč = {nf.format(flats)}&nbsp;bytů × {nf.format(area)}&nbsp;m² × {nf.format(rate)}&nbsp;Kč/m²
           <span className={s.calcSub}> (celkem {nf.format(totalArea)}&nbsp;m² užitné plochy)</span>
         </p>
-        <p className={s.sentence}>Peníze jsou účelově vázané na školy, dopravu a sítě.</p>
+        <p className={s.sentence}>Peníze jsou účelově vázané na školy, dopravu a sítě.</p>
       </div>
 
       <p className={`src ${s.source}`}>Zdroj: návrh RUD ze strategie, 3&nbsp;000–8&nbsp;000&nbsp;Kč za m² užitné plochy.</p>

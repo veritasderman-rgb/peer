@@ -30,7 +30,7 @@ export function KalkulackaEuro() {
   return (
     <section className={`card ${s.root}`} aria-labelledby="kalk-euro-title" onChangeCapture={pouzita}>
       <h3 id="kalk-euro-title" className={s.title}>
-        Kolik bych platil za hypotéku s eurem?
+        Kolik bych platil za hypotéku s eurem?
       </h3>
       <div className={s.fields}>
         <RangeField
@@ -55,7 +55,7 @@ export function KalkulackaEuro() {
         />
         <RangeField
           id="kalk-euro-sazba-cr"
-          label="Sazba v Česku"
+          label="Sazba v Česku"
           unit="% p. a."
           value={rateCz}
           min={3}
@@ -66,7 +66,7 @@ export function KalkulackaEuro() {
         />
         <RangeField
           id="kalk-euro-sazba-eu"
-          label="Sazba v eurozóně (SK)"
+          label="Sazba v eurozóně (SK)"
           unit="% p. a."
           value={rateEu}
           min={2}
@@ -103,13 +103,13 @@ export function KalkulackaEuro() {
             </p>
           </>
         ) : (
-          <p className={s.sentence}>Při těchto sazbách by euro na úrocích nic neušetřilo. Zkus sazbu v eurozóně snížit.</p>
+          <p className={s.sentence}>Při těchto sazbách by euro na úrocích nic neušetřilo. Zkus sazbu v eurozóně snížit.</p>
         )}
       </div>
 
       <p className={`src ${s.source}`}>
-        Splátky počítané jako anuita. Výchozí sazby: nabídka ČSOB s 3letou fixací v Česku a na Slovensku, červen 2026
-        (studie, s.&nbsp;50). Slovenská splátka je přepočtená na koruny, bez poplatků a pojištění.
+        Splátky počítané jako anuita. Výchozí sazby: nabídka ČSOB s 3letou fixací v Česku a na Slovensku, červen 2026
+        (studie, s.&nbsp;50). Slovenská splátka je přepočtená na koruny, bez poplatků a pojištění.
       </p>
     </section>
   );

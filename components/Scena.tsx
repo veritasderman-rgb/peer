@@ -104,8 +104,8 @@ function Podil({ scena, active }: { scena: Extract<ScenaSpec, { typ: "podil" }>;
   const p = usePrubeh(active, Math.min(2, 0.6 + plne * 0.015));
   const nyni = Math.round(plne * p);
   const d = desetin(scena.hodnota);
-  const final = z === 100 ? `${cz(scena.hodnota, d)} %` : `${cz(scena.hodnota, d)} z ${cz(z)}`;
-  const shown = z === 100 ? `${cz(scena.hodnota * p, d)} %` : `${cz(scena.hodnota * p, d)} z ${cz(z)}`;
+  const final = z === 100 ? `${cz(scena.hodnota, d)} %` : `${cz(scena.hodnota, d)} z ${cz(z)}`;
+  const shown = z === 100 ? `${cz(scena.hodnota * p, d)} %` : `${cz(scena.hodnota * p, d)} z ${cz(z)}`;
   const cols = Math.min(10, z);
   return (
     <>

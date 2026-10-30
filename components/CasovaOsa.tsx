@@ -63,7 +63,7 @@ export function CasovaOsa({ milniky, celkovyDopad, od = 2026, do_ = 2035 }: { mi
                           <span className={`${styles.tema} ${styles.temaCela}`}>Celá strategie</span>
                         )}
                         <span className={styles.typ}>{TYP[m.typ]}</span>
-                        {!m.explicitni && <span className={styles.odhad} title="Rok je odvozený z lhůty ve studii, ne výslovně uvedený">odvozený rok</span>}
+                        {!m.explicitni && <span className={styles.odhad} title="Rok je odvozený z lhůty ve studii, ne výslovně uvedený">odvozený rok</span>}
                       </div>
                       <p className={styles.text}>{m.text}</p>
                       <details className={styles.zdroj}>

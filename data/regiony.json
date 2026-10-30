@@ -1,32 +1,32 @@
 {
   "kapitola": "4.1",
-  "nazev": "Úspěšné regiony a efektivní samospráva",
+  "nazev": "Úspěšné regiony a efektivní samospráva",
   "garant": {
     "jmeno": "Jan Kříž",
-    "role": "expert na oblast vzdělávání pro budoucnost a silné regiony"
+    "role": "expert na oblast vzdělávání pro budoucnost a silné regiony"
   },
   "hook": {
     "hodnota": 2,
-    "jednotka": "% příjmů obcí z místní ekonomiky",
-    "veta": "Podíl příjmů obcí z místní ekonomické aktivity činí pouhá ~2 %, druhý nejhorší výsledek v celé EU (hůře je na tom jen Řecko)."
+    "jednotka": "% příjmů obcí z místní ekonomiky",
+    "veta": "Podíl příjmů obcí z místní ekonomické aktivity činí pouhá ~2 %, druhý nejhorší výsledek v celé EU (hůře je na tom jen Řecko)."
   },
   "grafy": {
     "podilPrijmuZMistniEkonomiky": {
-      "titulek": "Podíl příjmů obcí z místní ekonomiky",
-      "podtitulek": "Srovnání ČR se sousedními a referenčními zeměmi EU",
+      "titulek": "Podíl příjmů obcí z místní ekonomiky",
+      "podtitulek": "Srovnání ČR se sousedními a referenčními zeměmi EU",
       "zdroj": "Druhá ekonomická transformace (2024); Hrot24 (červen 2024)",
       "polozky": [
-        {"zeme": "Dánsko, Švédsko, Finsko, Pobaltí", "od": 45, "do": 60, "label": "45–60 %"},
-        {"zeme": "Německo, Polsko", "od": 30, "do": null, "label": "přes 30 %"},
-        {"zeme": "Průměr EU", "od": 20, "do": 25, "label": "~20–25 %"},
-        {"zeme": "Česko", "od": 2, "do": 2, "label": "~2 %", "poznamka": "Druhý nejhorší výsledek v EU (hůře jen Řecko)"}
+        {"zeme": "Dánsko, Švédsko, Finsko, Pobaltí", "od": 45, "do": 60, "label": "45–60 %"},
+        {"zeme": "Německo, Polsko", "od": 30, "do": null, "label": "přes 30 %"},
+        {"zeme": "Průměr EU", "od": 20, "do": 25, "label": "~20–25 %"},
+        {"zeme": "Česko", "od": 2, "do": 2, "label": "~2 %", "poznamka": "Druhý nejhorší výsledek v EU (hůře jen Řecko)"}
       ]
     },
     "obce": {
-      "titulek": "Obce v Česku",
+      "titulek": "Obce v Česku",
       "polozky": [
         {"kategorie": "Obce celkem", "hodnota": 6200},
-        {"kategorie": "z toho méně než 1 000 obyvatel", "hodnota": 4700, "poznamka": "přibližně"}
+        {"kategorie": "z toho méně než 1 000 obyvatel", "hodnota": 4700, "poznamka": "přibližně"}
       ],
       "zdroj": null
     },
@@ -38,88 +38,88 @@
       "zdroj": null
     },
     "navratneNastroje": {
-      "titulek": "Návratné nástroje v evropských fondech",
+      "titulek": "Návratné nástroje v evropských fondech",
       "polozky": [
-        {"nazev": "Návratné nástroje (půjčky a záruky)", "hodnota": 3, "jednotka": "% využití evropských prostředků"}
+        {"nazev": "Návratné nástroje (půjčky a záruky)", "hodnota": 3, "jednotka": "% využití evropských prostředků"}
       ],
       "zdroj": null
     }
   },
   "fakta": [
-    {"id": "podil_prijmu_obci_cr", "hodnota": 2, "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Podíl příjmů obcí z místní ekonomické aktivity činí pouhá ~2 %, druhý nejhorší výsledek v celé EU (hůře je na tom jen Řecko).", "zdrojIndex": 2},
-    {"id": "podil_prijmu_obci_skandinavie_pobalti", "hodnota": "45–60", "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Dánsko, Švédsko, Finsko a Pobaltí: podíl příjmů obcí z místní ekonomiky 45–60 %.", "zdrojIndex": 2},
-    {"id": "podil_prijmu_obci_nemecko_polsko", "hodnota": "přes 30", "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Německo a Polsko: podíl příjmů obcí z místní ekonomiky přes 30 %.", "zdrojIndex": 2},
-    {"id": "podil_prijmu_obci_eu", "hodnota": "~20–25", "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Průměr EU: podíl příjmů obcí z místní ekonomiky ~20–25 %.", "zdrojIndex": 2},
-    {"id": "statni_rozpocet_zavislost", "hodnota": "97–98", "jednotka": "% příjmů obcí a krajů ze státního rozpočtu", "text": "Téměř 97–98 % příjmů obcí a krajů pochází ze státního rozpočtu bez jakékoli vazby na to, co se v obci děje.", "zdrojIndex": null},
-    {"id": "obce_pocet", "hodnota": 6200, "jednotka": "obcí", "text": "Česko má přes 6 200 obcí.", "zdrojIndex": null},
-    {"id": "obce_pod_tisic", "hodnota": 4700, "jednotka": "obcí", "text": "Z toho přibližně 4 700 obcí má méně než tisíc obyvatel.", "zdrojIndex": null},
+    {"id": "podil_prijmu_obci_cr", "hodnota": 2, "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Podíl příjmů obcí z místní ekonomické aktivity činí pouhá ~2 %, druhý nejhorší výsledek v celé EU (hůře je na tom jen Řecko).", "zdrojIndex": 2},
+    {"id": "podil_prijmu_obci_skandinavie_pobalti", "hodnota": "45–60", "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Dánsko, Švédsko, Finsko a Pobaltí: podíl příjmů obcí z místní ekonomiky 45–60 %.", "zdrojIndex": 2},
+    {"id": "podil_prijmu_obci_nemecko_polsko", "hodnota": "přes 30", "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Německo a Polsko: podíl příjmů obcí z místní ekonomiky přes 30 %.", "zdrojIndex": 2},
+    {"id": "podil_prijmu_obci_eu", "hodnota": "~20–25", "jednotka": "% příjmů obcí z místní ekonomiky", "text": "Průměr EU: podíl příjmů obcí z místní ekonomiky ~20–25 %.", "zdrojIndex": 2},
+    {"id": "statni_rozpocet_zavislost", "hodnota": "97–98", "jednotka": "% příjmů obcí a krajů ze státního rozpočtu", "text": "Téměř 97–98 % příjmů obcí a krajů pochází ze státního rozpočtu bez jakékoli vazby na to, co se v obci děje.", "zdrojIndex": null},
+    {"id": "obce_pocet", "hodnota": 6200, "jednotka": "obcí", "text": "Česko má přes 6 200 obcí.", "zdrojIndex": null},
+    {"id": "obce_pod_tisic", "hodnota": 4700, "jednotka": "obcí", "text": "Z toho přibližně 4 700 obcí má méně než tisíc obyvatel.", "zdrojIndex": null},
     {"id": "obecni_ucty", "hodnota": "300–400", "jednotka": "mld. Kč na účtech obcí", "text": "České obce drží na účtech přibližně 300–400 miliard korun.", "zdrojIndex": null},
-    {"id": "navratne_nastroje_podil", "hodnota": 3, "jednotka": "% využití evropských prostředků", "text": "Návratné finanční nástroje (půjčky a záruky) dnes představují pouze kolem 3 % využití evropských prostředků.", "zdrojIndex": null},
-    {"id": "polsko_rovnomerny_rust", "hodnota": null, "jednotka": null, "text": "V sousedním Polsku je růst rozložen mezi regiony výrazně rovnoměrněji než v Česku.", "zdrojIndex": 1},
-    {"id": "praha_jihomoravsky_motory", "hodnota": null, "jednotka": null, "text": "Praha a Jihomoravský kraj patří k hlavním motorům pokroku; Ústecký a Karlovarský kraj dlouhodobě zaostávají.", "zdrojIndex": null}
+    {"id": "navratne_nastroje_podil", "hodnota": 3, "jednotka": "% využití evropských prostředků", "text": "Návratné finanční nástroje (půjčky a záruky) dnes představují pouze kolem 3 % využití evropských prostředků.", "zdrojIndex": null},
+    {"id": "polsko_rovnomerny_rust", "hodnota": null, "jednotka": null, "text": "V sousedním Polsku je růst rozložen mezi regiony výrazně rovnoměrněji než v Česku.", "zdrojIndex": 1},
+    {"id": "praha_jihomoravsky_motory", "hodnota": null, "jednotka": null, "text": "Praha a Jihomoravský kraj patří k hlavním motorům pokroku; Ústecký a Karlovarský kraj dlouhodobě zaostávají.", "zdrojIndex": null}
   ],
   "priciny": [
-    {"poradi": 1, "typ": "řetězec", "pricina": "Obce nejsou finančně motivovány k rozvoji", "popis": "Téměř 97–98 % příjmů obcí a krajů pochází ze státního rozpočtu bez vazby na místní ekonomiku; podíl příjmů z místní ekonomické aktivity je ~2 %.", "zdrojIndex": 2},
-    {"poradi": 2, "typ": "řetězec", "pricina": "Investice nevznikají nebo závisí na dotacích", "popis": "Obce drží na účtech přibližně 300–400 mld. Kč, přesto řada potřebných investic nevzniká nebo závisí na dotačních výzvách.", "zdrojIndex": null},
-    {"poradi": 3, "typ": "řetězec", "pricina": "Roztříštěná samospráva a malá kapacita obcí", "popis": "Česká samospráva je mimořádně roztříštěná; malé obce často postrádají kapacitu připravovat větší investice. Z více než 6 200 obcí má přibližně 4 700 méně než tisíc obyvatel.", "zdrojIndex": null},
-    {"poradi": 4, "typ": "řetězec", "pricina": "Regionální zaostávání", "popis": "Zaostávání znamená nevyužitý lidský kapitál, nižší produktivitu a podnikatelskou aktivitu a odchod mladých lidí.", "zdrojIndex": null},
-    {"poradi": 5, "typ": "další", "pricina": "Rozdíly neodpovídají hranicím krajů", "popis": "Vzdělávací neúspěšnost, exekuce, dostupnost služeb nebo dopravní izolace se výrazně liší i mezi sousedními mikroregiony.", "zdrojIndex": null},
-    {"poradi": 6, "typ": "další", "pricina": "Tlak na bydlení a infrastrukturu v centrech", "popis": "Regionální zaostávání zároveň zvyšuje tlak na bydlení a infrastrukturu v nejrychleji rostoucích centrech.", "zdrojIndex": null}
+    {"poradi": 1, "typ": "řetězec", "pricina": "Obce nejsou finančně motivovány k rozvoji", "popis": "Téměř 97–98 % příjmů obcí a krajů pochází ze státního rozpočtu bez vazby na místní ekonomiku; podíl příjmů z místní ekonomické aktivity je ~2 %.", "zdrojIndex": 2},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Investice nevznikají nebo závisí na dotacích", "popis": "Obce drží na účtech přibližně 300–400 mld. Kč, přesto řada potřebných investic nevzniká nebo závisí na dotačních výzvách.", "zdrojIndex": null},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Roztříštěná samospráva a malá kapacita obcí", "popis": "Česká samospráva je mimořádně roztříštěná; malé obce často postrádají kapacitu připravovat větší investice. Z více než 6 200 obcí má přibližně 4 700 méně než tisíc obyvatel.", "zdrojIndex": null},
+    {"poradi": 4, "typ": "řetězec", "pricina": "Regionální zaostávání", "popis": "Zaostávání znamená nevyužitý lidský kapitál, nižší produktivitu a podnikatelskou aktivitu a odchod mladých lidí.", "zdrojIndex": null},
+    {"poradi": 5, "typ": "další", "pricina": "Rozdíly neodpovídají hranicím krajů", "popis": "Vzdělávací neúspěšnost, exekuce, dostupnost služeb nebo dopravní izolace se výrazně liší i mezi sousedními mikroregiony.", "zdrojIndex": null},
+    {"poradi": 6, "typ": "další", "pricina": "Tlak na bydlení a infrastrukturu v centrech", "popis": "Regionální zaostávání zároveň zvyšuje tlak na bydlení a infrastrukturu v nejrychleji rostoucích centrech.", "zdrojIndex": null}
   ],
   "opatreni": [
     {
       "cislo": 1,
       "nazev": "Změníme financování obcí: rozvoj se musí vyplatit",
-      "popis": "Současné rozpočtové určení daní jen slabě propojuje příjmy obce s ekonomickou aktivitou na jejím území. Nejméně 20 % obecního rozpočtového určení daní, v dnešním objemu přibližně 60 mld. Kč ročně, navážeme na ekonomickou aktivitu v území, například na výběr daně z příjmů fyzických osob a sociálního pojistného. Část motivační složky budeme počítat na úrovni obcí s rozšířenou působností. Relativně posílíme financování měst mezi 5 a 40 tisíci obyvatel. Obce musí mít podíl na výnosech z těžby a velkých energetických projektů. U nové výstavby vytvoříme transparentní mechanismus příspěvku na vyvolanou infrastrukturu. Reforma bude převážně fiskálně neutrální.",
-      "klicoveCislo": "nejméně 20 % RUD (cca 60 mld. Kč ročně)"
+      "popis": "Současné rozpočtové určení daní jen slabě propojuje příjmy obce s ekonomickou aktivitou na jejím území. Nejméně 20 % obecního rozpočtového určení daní, v dnešním objemu přibližně 60 mld. Kč ročně, navážeme na ekonomickou aktivitu v území, například na výběr daně z příjmů fyzických osob a sociálního pojistného. Část motivační složky budeme počítat na úrovni obcí s rozšířenou působností. Relativně posílíme financování měst mezi 5 a 40 tisíci obyvatel. Obce musí mít podíl na výnosech z těžby a velkých energetických projektů. U nové výstavby vytvoříme transparentní mechanismus příspěvku na vyvolanou infrastrukturu. Reforma bude převážně fiskálně neutrální.",
+      "klicoveCislo": "nejméně 20 % RUD (cca 60 mld. Kč ročně)"
     },
     {
       "cislo": 2,
-      "nazev": "Posílíme společnou správu a podpoříme konsolidaci nejmenších obcí",
-      "popis": "Česko má přes 6 200 obcí, z toho přibližně 4 700 méně než tisíc obyvatel. Malá obec nemůže efektivně zaměstnávat specialisty na právo, veřejné zakázky, energetiku, územní plánování nebo přípravu investic. Posílíme Společenství obcí a další formy spolupráce na úrovni mikroregionů se stabilním financováním. Ty budou společně zajišťovat odborné agendy, projektovou přípravu a investice. Stát nebude nové povinnosti automaticky přenášet na každou obec, pokud je lze efektivněji vykonávat společně. Finančně podpoříme dobrovolné slučování především nejmenších obcí. Dlouhodobým cílem je přiblížit jejich minimální efektivní velikost zhruba tisíci obyvatel. Konsolidace nesmí znamenat zánik místní identity.",
-      "klicoveCislo": "minimální efektivní velikost obce zhruba 1 000 obyvatel"
+      "nazev": "Posílíme společnou správu a podpoříme konsolidaci nejmenších obcí",
+      "popis": "Česko má přes 6 200 obcí, z toho přibližně 4 700 méně než tisíc obyvatel. Malá obec nemůže efektivně zaměstnávat specialisty na právo, veřejné zakázky, energetiku, územní plánování nebo přípravu investic. Posílíme Společenství obcí a další formy spolupráce na úrovni mikroregionů se stabilním financováním. Ty budou společně zajišťovat odborné agendy, projektovou přípravu a investice. Stát nebude nové povinnosti automaticky přenášet na každou obec, pokud je lze efektivněji vykonávat společně. Finančně podpoříme dobrovolné slučování především nejmenších obcí. Dlouhodobým cílem je přiblížit jejich minimální efektivní velikost zhruba tisíci obyvatel. Konsolidace nesmí znamenat zánik místní identity.",
+      "klicoveCislo": "minimální efektivní velikost obce zhruba 1 000 obyvatel"
     },
     {
       "cislo": 3,
-      "nazev": "Rozhýbeme obecní úspory a vytvoříme společné investiční financování",
-      "popis": "Obce drží stovky miliard korun rezerv, současně ale řada z nich dlouho spoří na jednotlivé investice nebo není schopna využít výhodné financování Evropské investiční banky a dalších institucí. Problémem není jen nedostatek peněz, ale jejich roztříštěnost a nedostatečná projektová kapacita. Umožníme proto dobrovolný pooling volných prostředků samospráv pro levnější dlouhodobé financování obecních investic. Posílíme roli Národní rozvojové banky jako hlavního prostředníka mezi Evropskou investiční bankou, kapitálovým trhem a samosprávami. Národní rozvojová banka bude agregovat kapitál a nabízet standardizované úvěrové a záruční produkty dostupné i menším obcím. Podpoříme také vznik dobrovolného komunálního investičního mechanismu po vzoru zahraničních systémů společného financování municipalit. Postupně tak nahradíme část grantového financování návratnými nástroji.",
+      "nazev": "Rozhýbeme obecní úspory a vytvoříme společné investiční financování",
+      "popis": "Obce drží stovky miliard korun rezerv, současně ale řada z nich dlouho spoří na jednotlivé investice nebo není schopna využít výhodné financování Evropské investiční banky a dalších institucí. Problémem není jen nedostatek peněz, ale jejich roztříštěnost a nedostatečná projektová kapacita. Umožníme proto dobrovolný pooling volných prostředků samospráv pro levnější dlouhodobé financování obecních investic. Posílíme roli Národní rozvojové banky jako hlavního prostředníka mezi Evropskou investiční bankou, kapitálovým trhem a samosprávami. Národní rozvojová banka bude agregovat kapitál a nabízet standardizované úvěrové a záruční produkty dostupné i menším obcím. Podpoříme také vznik dobrovolného komunálního investičního mechanismu po vzoru zahraničních systémů společného financování municipalit. Postupně tak nahradíme část grantového financování návratnými nástroji.",
       "klicoveCislo": "dobrovolný pooling obecních peněz přes Národní rozvojovou banku"
     },
     {
       "cislo": 4,
-      "nazev": "Soustředíme veřejné peníze do investic s největším rozvojovým efektem",
-      "popis": "Evropské a národní prostředky jsou dnes příliš roztříštěné mezi množství programů a drobných projektů. Veřejné prostředky proto více soustředíme do strategických investic, které zvyšují dlouhodobý potenciál regionu: dopravní dostupnosti, vzdělávání, bydlení, energetiky, brownfieldů a infrastruktury pro podnikání. Nebudeme jimi dlouhodobě nahrazovat běžné obecní rozpočty ani financovat drobné projekty bez významnějšího rozvojového efektu. Slabším regionům zároveň poskytneme společnou projektovou podporu na úrovni obcí s rozšířenou působností, krajů a Národní rozvojové banky. Současně zvýšíme využívání návratných finančních nástrojů – půjček a záruk, které dnes představují pouze kolem 3 % využití evropských prostředků.",
-      "klicoveCislo": "návratné nástroje místo grantů: dnes kolem 3 % využití EU prostředků"
+      "nazev": "Soustředíme veřejné peníze do investic s největším rozvojovým efektem",
+      "popis": "Evropské a národní prostředky jsou dnes příliš roztříštěné mezi množství programů a drobných projektů. Veřejné prostředky proto více soustředíme do strategických investic, které zvyšují dlouhodobý potenciál regionu: dopravní dostupnosti, vzdělávání, bydlení, energetiky, brownfieldů a infrastruktury pro podnikání. Nebudeme jimi dlouhodobě nahrazovat běžné obecní rozpočty ani financovat drobné projekty bez významnějšího rozvojového efektu. Slabším regionům zároveň poskytneme společnou projektovou podporu na úrovni obcí s rozšířenou působností, krajů a Národní rozvojové banky. Současně zvýšíme využívání návratných finančních nástrojů – půjček a záruk, které dnes představují pouze kolem 3 % využití evropských prostředků.",
+      "klicoveCislo": "návratné nástroje místo grantů: dnes kolem 3 % využití EU prostředků"
     },
     {
       "cislo": 5,
       "nazev": "Přivedeme více soukromých investic mimo nejsilnější centra",
-      "popis": "Regionální konvergenci nelze založit na veřejných dotacích. Jejím konečným výsledkem musí být vyšší produktivita, nové firmy a kvalitní pracovní místa. V hospodářsky a sociálně ohrožených územích proto umožníme rychlejší odpisy nových produktivních investic. Podpora bude mířit na skutečně novou ekonomickou aktivitu, nikoli na dlouhodobé subvencování provozu. Při plánování infrastruktury posílíme spojení s Prahou a Brnem, ale i další regionální centra a jejich vzájemné propojení.",
-      "klicoveCislo": "rychlejší odpisy nových produktivních investic v ohrožených územích"
+      "popis": "Regionální konvergenci nelze založit na veřejných dotacích. Jejím konečným výsledkem musí být vyšší produktivita, nové firmy a kvalitní pracovní místa. V hospodářsky a sociálně ohrožených územích proto umožníme rychlejší odpisy nových produktivních investic. Podpora bude mířit na skutečně novou ekonomickou aktivitu, nikoli na dlouhodobé subvencování provozu. Při plánování infrastruktury posílíme spojení s Prahou a Brnem, ale i další regionální centra a jejich vzájemné propojení.",
+      "klicoveCislo": "rychlejší odpisy nových produktivních investic v ohrožených územích"
     },
     {
       "cislo": 6,
       "nazev": "Budeme hodnotit regionální dopady velkých reforem",
-      "popis": "Regionální politika nemůže být samostatnou agendou jednoho ministerstva. Rozdíly mezi územími významně ovlivňuje nastavení školství, daní, sociálního systému, dopravy, bydlení i energetiky. Zavedeme proto jednotný soubor ukazatelů na úrovni krajů a obcí s rozšířenou působností a budeme pravidelně zveřejňovat územní rozložení hlavních veřejných investic. U zásadních reforem bude součástí hodnocení i jejich vliv na regionální konvergenci, pokud možno až na mikroregionální úrovni. Úspěšnost regionální politiky nebudeme měřit množstvím rozdělených dotací, ale výsledky.",
-      "klicoveCislo": "výsledky místo množství dotací; ukazatele na úrovni krajů a ORP"
+      "popis": "Regionální politika nemůže být samostatnou agendou jednoho ministerstva. Rozdíly mezi územími významně ovlivňuje nastavení školství, daní, sociálního systému, dopravy, bydlení i energetiky. Zavedeme proto jednotný soubor ukazatelů na úrovni krajů a obcí s rozšířenou působností a budeme pravidelně zveřejňovat územní rozložení hlavních veřejných investic. U zásadních reforem bude součástí hodnocení i jejich vliv na regionální konvergenci, pokud možno až na mikroregionální úrovni. Úspěšnost regionální politiky nebudeme měřit množstvím rozdělených dotací, ale výsledky.",
+      "klicoveCislo": "výsledky místo množství dotací; ukazatele na úrovni krajů a ORP"
     }
   ],
   "cile": [
     {"cil": "Obnovit ekonomický růst dnes zaostávajících regionů", "hodnota": null, "jednotka": null},
-    {"cil": "Postavit regionální politiku více na úrovni obcí s rozšířenou působností a funkčních mikroregionů", "hodnota": null, "jednotka": null},
+    {"cil": "Postavit regionální politiku více na úrovni obcí s rozšířenou působností a funkčních mikroregionů", "hodnota": null, "jednotka": null},
     {"cil": "Změnit financování obcí tak, aby se jim ekonomický rozvoj vyplácel", "hodnota": null, "jednotka": null},
-    {"cil": "Zvýšit odbornou a investiční kapacitu samospráv a snížit jejich administrativní fragmentaci", "hodnota": null, "jednotka": null},
-    {"cil": "Lépe využívat obecní úspory a návratné finanční nástroje", "hodnota": null, "jednotka": null},
-    {"cil": "Posílit regionální centra a jejich vzájemné propojení", "hodnota": null, "jednotka": null}
+    {"cil": "Zvýšit odbornou a investiční kapacitu samospráv a snížit jejich administrativní fragmentaci", "hodnota": null, "jednotka": null},
+    {"cil": "Lépe využívat obecní úspory a návratné finanční nástroje", "hodnota": null, "jednotka": null},
+    {"cil": "Posílit regionální centra a jejich vzájemné propojení", "hodnota": null, "jednotka": null}
   ],
   "prinese": [
-    "Silnější regionální centra a profesionálnější samosprávy rozšíří počet míst, kde mohou vznikat produktivní firmy a kvalitní pracovní místa. Obce získají větší motivaci k nové výstavbě a investicím, společná správa sníží náklady a zvýší jejich odbornou kapacitu a lepší využití obecních úspor umožní realizovat větší projekty bez závislosti na jednotlivých dotačních výzvách.",
-    "Cílem regionální politiky není konzervovat každé pracovní místo ani zajistit všem částem země stejnou ekonomickou strukturu. Jejím cílem je odstranit překážky, které dnes brání lidem, obcím a firmám využívat svůj potenciál, a rozšířit prosperitu mimo několik nejsilnějších center."
+    "Silnější regionální centra a profesionálnější samosprávy rozšíří počet míst, kde mohou vznikat produktivní firmy a kvalitní pracovní místa. Obce získají větší motivaci k nové výstavbě a investicím, společná správa sníží náklady a zvýší jejich odbornou kapacitu a lepší využití obecních úspor umožní realizovat větší projekty bez závislosti na jednotlivých dotačních výzvách.",
+    "Cílem regionální politiky není konzervovat každé pracovní místo ani zajistit všem částem země stejnou ekonomickou strukturu. Jejím cílem je odstranit překážky, které dnes brání lidem, obcím a firmám využívat svůj potenciál, a rozšířit prosperitu mimo několik nejsilnějších center."
   ],
   "zdroje": [
     {"index": 1, "citace": "PROKOP, Daniel (2025). Rozvoj chudších regionů může nastartovat prosperitu Česka. NERV přináší 50 opatření, jak na to. PAQ Research [online]. 31. července 2025. Dostupné z: PAQ Research."},
-    {"index": 2, "citace": "DRUHÁ EKONOMICKÁ TRANSFORMACE (2024). Příjmy českých obcí z místního podnikání jsou jedny z nejnižších v EU. Druhá ekonomická transformace [online]. Dostupné z: 2et.cz."},
-    {"index": 3, "citace": "HROT24 (2024). Příjmy českých obcí z podnikání jsou jedny z nejnižších v EU. Za vytváření pracovních míst jsme trestáni, stěžují si starostové. Hrot24 [online]. 20. června 2024. Dostupné z: Hrot24.cz."},
+    {"index": 2, "citace": "DRUHÁ EKONOMICKÁ TRANSFORMACE (2024). Příjmy českých obcí z místního podnikání jsou jedny z nejnižších v EU. Druhá ekonomická transformace [online]. Dostupné z: 2et.cz."},
+    {"index": 3, "citace": "HROT24 (2024). Příjmy českých obcí z podnikání jsou jedny z nejnižších v EU. Za vytváření pracovních míst jsme trestáni, stěžují si starostové. Hrot24 [online]. 20. června 2024. Dostupné z: Hrot24.cz."},
     {"index": 4, "citace": "EUROSTAT (2026). Gross domestic product (GDP) at current market prices by NUTS 3 regions [datový soubor]. Kód datasetu: nama_10r_3gdp, jednotka: PPS_HAB_EU27_2020. Dostupné z: https://doi.org/10.2908/NAMA_10R_3GDP"},
     {"index": 5, "citace": "MINISTERSTVO FINANCÍ ČESKÉ REPUBLIKY (2024). Monitor Státní pokladny [online databáze; data za rok 2024]. Praha: Ministerstvo financí ČR. Dostupné z: Monitor Státní pokladny."}
   ]

@@ -5,15 +5,18 @@ import { expect, test, type Page } from "@playwright/test";
    Přibyde-li téma nebo stránka, doplň je sem (a hlídá to i test sitemapy). */
 
 const STATIC = [
-  "/", "/pribeh", "/videa", "/dopad", "/cesta", "/zaplaceni", "/kolik-ti-to-prinese", "/moje-obec", "/otazky",
-  "/pro-sdileni", "/pro-media", "/en", "/kdo-je-kdo", "/jak-vznikl", "/hledat", "/argumentar",
+  "/", "/pribeh", "/videa", "/dopad", "/kolik-ti-to-prinese", "/moje-obec", "/otazky",
+  "/en", "/kdo-je-kdo", "/jak-vznikl", "/hledat",
 ];
+/* podklady pro členy a novináře: fungují, ale nejsou v sitemapě ani ve vyhledávačích (noindex) */
+const INTERNI = ["/podklady", "/argumentar", "/pro-media", "/pro-sdileni"];
 const SLUGS = [
   "bydleni", "vzdelanost", "prace", "zeny", "exekuce", "zdravi", "oligarchie",
   "euro", "kapital", "prumysl", "energie", "inovace", "regiony", "stat",
 ];
 const TOPICS = SLUGS.map((s) => `/${s}`);
-const PAGES = [...STATIC, ...TOPICS];
+const VEREJNE = [...STATIC, ...TOPICS];
+const PAGES = [...VEREJNE, ...INTERNI];
 
 /* Známé nezávadné hlášky (varování Nextu o preloadu, které se objevuje i v dev režimu). */
 const IGNORED = [/preload/i];
@@ -63,12 +66,21 @@ test.describe("technické soubory", () => {
     expect(await res.text()).toMatch(/sitemap\.xml/);
   });
 
-  test("/sitemap.xml obsahuje všech 30 stránek", async ({ request }) => {
+  test("/sitemap.xml obsahuje všechny veřejné stránky a žádné interní", async ({ request }) => {
     const res = await request.get("/sitemap.xml");
     expect(res.status()).toBe(200);
     const xml = await res.text();
     const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
-    for (const path of PAGES) expect(locs, `chybí ${path}`).toContain(path);
+    for (const path of VEREJNE) expect(locs, `chybí ${path}`).toContain(path);
+    for (const path of INTERNI) expect(locs, `nemá tam být ${path}`).not.toContain(path);
+  });
+
+  test("zrušené stránky /cesta a /zaplaceni přesměrují na sekce Velkého obrazu", async ({ request }) => {
+    for (const [z, kam] of [["/cesta", "/dopad#osa"], ["/zaplaceni", "/dopad#zaplaceni"]]) {
+      const res = await request.get(z, { maxRedirects: 0 });
+      expect(res.status(), z).toBe(308);
+      expect(res.headers()["location"], z).toBe(kam);
+    }
   });
 
   test("/llms.txt se vrací jako text", async ({ request }) => {

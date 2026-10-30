@@ -178,7 +178,7 @@ export function sestavData(z: Zdroje): KvizData {
 
   const najdi = (slug: string, uryvek: string): StojiPolozka | undefined => {
     const tema = z.zaplaceni.temata.find((x) => x.slug === slug);
-    const i = tema ? tema.zaplati.findIndex((p) => p.co.includes(uryvek)) : -1;
+    const i = tema ? tema.zaplati.findIndex((p) => p.co.replace(/\u00a0/g, " ").includes(uryvek)) /* data mají nezlomitelné mezery (scripts/nbsp.mjs) */ : -1;
     if (!tema || i < 0) {
       console.warn(`kviz: v data/zaplaceni.json (${slug}) chybí položka „${uryvek}“`);
       return undefined;

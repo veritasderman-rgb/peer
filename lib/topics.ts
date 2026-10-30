@@ -89,7 +89,6 @@ export type TopicConfig = {
     bobrMood?: Mood;
   };
   srovnani?: { nadpis: string; grafy: ChartSpec[]; poznamka?: string };
-  persona: { who: string; ctx: string };
   pribehNadpis: string;
   steps: StoryStep[];
   proc: { uvod: string; retezec: { nazev: string; popis: string }[]; loop?: { nazev: string; popis: string }; dalsi: { nazev: string; popis: string }[] };

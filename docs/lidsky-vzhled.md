@@ -69,6 +69,21 @@ Web je vždy světlý. Tmavá varianta (podle nastavení systému) je zrušená 
 vypíná i automatické ztmavování v Chrome. Zmínky o tmavém režimu výš popisují stav před touto změnou.
 Doplňky prohlížeče typu Dark Reader si stránku ztmaví dál po svém; to web neovlivní.
 
+## Proti dojmu „AI slop“
+
+Po zpětné vazbě, že web působí jako „AI slop“:
+
+- **Nezlomitelné mezery** (`scripts/nbsp.mjs`, běží v `prebuild`, ručně `npm run typo`): za jednopísmennými
+  předložkami a spojkami, mezi číslem a jednotkou, v tisícových řádech a za zkratkami před číslem. Mění jen texty
+  (řetězce, JSX text, hodnoty v `data/*.json`), ne kód ani SVG. Hledání a kvíz berou nezlomitelnou mezeru jako
+  obyčejnou.
+- **Příběhy bez vymyšlených postav:** Petra, Martin, Jana a další jsou pryč. Příběhy témat vyprávějí věcně
+  a ve 2. osobě, čísla a zdroje zůstaly. Ve scénářích videí postavy nebyly.
+- **Skutečná fotka rady** z peer.pirati.cz na úvodní stránce a na /kdo-je-kdo.
+- **Užší web:** Cesta do 2035 a Jak se to zaplatí jsou sekce stránky Velký obraz (`/dopad#osa`,
+  `/dopad#zaplaceni`), staré adresy přesměrovávají. Argumentář, Pro média a Pro sdílení jsou pod stránkou
+  /podklady (odkaz jen v patičce), mimo sitemapu, hledání i vyhledávače (`noindex`).
+
 ## Návrh dalších kroků (potřebuje rozhodnutí lidí)
 
 ### Vzhled
@@ -78,7 +93,7 @@ Doplňky prohlížeče typu Dark Reader si stránku ztmaví dál po svém; to we
   garantů a fotky; komponenta `GarantSvg` se dá doplnit o `<img>` s monogramem jako zálohou.
 - **Nadtitulky (`.eyebrow`) jen tam, kde nesou informaci.** Na webu jich je přes 30; nad většinou H2 jen opakují
   nadpis. Ponechat u stránek témat („Téma 1 · Pilíř…“), jinde zrušit.
-- **Méně identických mřížek tří karet.** Témata, „Tři hloubky“, příčiny i opatření jsou všechno stejná mřížka.
+- **Méně identických mřížek tří karet.** Témata, příčiny i opatření jsou všechno stejná mřížka.
   U opatření by fungoval číslovaný seznam v jednom sloupci (jako „Program point list“ ve styleguide).
 - **Fotky místo prázdných ploch.** Styleguide počítá s fotkou v hero (organisms/hero). Jedna reálná fotka
   na téma (sídliště, školka, fabrika) z vlastního nebo volně licencovaného zdroje, ne generovaná.

@@ -45,7 +45,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
           <p className="src"><b>Zdroj:</b> {t.hook.source}</p>
           <nav className={styles.depthNav} aria-label="Hloubka čtení">
             {t.video && <a href="#video">1 minuta: video</a>}
-            <a href="#pribeh">2 minuty: příběh a návrh</a>
+            <a href="#pribeh">2 minuty: příběh a návrh</a>
             <a href="#plne-zneni">20 minut: plné znění</a>
           </nav>
           <div className={styles.sdilet}>
@@ -87,7 +87,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
       <section className={`wrap ${styles.section}`} id="pribeh" aria-labelledby="pribeh-h">
         <p className="eyebrow">2 minuty</p>
         <h2 id="pribeh-h">{t.pribehNadpis}</h2>
-        <Story steps={t.steps} persona={t.persona} kdo={kdo} />
+        <Story steps={t.steps} kdo={kdo} />
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="proc">
@@ -137,7 +137,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
             </ul>
           </div>
           <div className={`card ${styles.cost}`} id="stoji">
-            <h3>A co to stojí</h3>
+            <h3>A co to stojí</h3>
             {t.stoji.odstavce.map((o, i) => <p key={i}>{o}</p>)}
             <GarantBubble kdo={kdo} mood="thinking" size={120}>{t.stoji.bobr}</GarantBubble>
           </div>
@@ -177,7 +177,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
         <p className="eyebrow">20 minut</p>
         <h2 id="plne-h">{t.plneZneniNadpis}</h2>
         <p className="prose muted">
-          Celý text tak, jak ho napsala Pirátská expertní ekonomická rada, s odkazy do rejstříku zdrojů. Grafy jsou výše na stránce.
+          Celý text tak, jak ho napsala Pirátská expertní ekonomická rada, s odkazy do rejstříku zdrojů. Grafy jsou výše na stránce.
         </p>
         <details className={styles.fullText}>
           <summary>Rozbalit plné znění (asi 20 minut čtení)</summary>
@@ -192,7 +192,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
 
       <section className={`wrap ${styles.section}`} id="slovnik" aria-labelledby="slovnik-h">
         <h2 id="slovnik-h">Slovník</h2>
-        <p className="prose muted">Pojmy z kapitoly vysvětlené jednou větou.</p>
+        <p className="prose muted">Pojmy z kapitoly vysvětlené jednou větou.</p>
         <Slovnik polozky={t.slovnik} />
       </section>
 

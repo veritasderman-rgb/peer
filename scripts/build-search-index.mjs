@@ -240,16 +240,11 @@ const STRANKY = [
   { url: "/pribeh", titulek: "Příběh", popis: "Celá strategie jako jeden příběh." },
   { url: "/videa", titulek: "Videa Strategie za minutu" },
   { url: "/dopad", titulek: "Velký obraz" },
-  { url: "/cesta", titulek: "Cesta do 2035" },
-  { url: "/zaplaceni", titulek: "Jak se to zaplatí" },
   { url: "/kolik-ti-to-prinese", titulek: "Kolik ti strategie přinese?", text: "Kvíz a kalkulačka." },
   { url: "/moje-obec", titulek: "Jak je na tom můj kraj", text: "Mapa krajů." },
   { url: "/otazky", titulek: "Časté otázky a námitky" },
-  { url: "/pro-sdileni", titulek: "Balíček pro sítě" },
-  { url: "/pro-media", titulek: "Pro média" },
   { url: "/kdo-je-kdo", titulek: "Kdo je kdo: garanti strategie", text: "Autoři strategie." },
   { url: "/jak-vznikl", titulek: "Jak vznikl tento web" },
-  { url: "/argumentar", titulek: "Argumentář pro kandidáty" },
   { url: "/en", titulek: "Czechia can do better – PEER Economic Strategy 2026–2035" },
 ];
 for (const s of STRANKY) {

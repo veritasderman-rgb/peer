@@ -5,11 +5,13 @@ import { getTopic } from "@/topics";
 import { BigNumber } from "@/components/BigNumber";
 import { GarantBubble } from "@/components/GarantBubble";
 import { NabehChart } from "@/components/NabehChart";
+import { CestaSekce } from "@/app/cesta/Cesta";
+import { ZaplaceniSekce } from "@/app/zaplaceni/Zaplaceni";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Velký obraz",
-  description: "Co strategie slibuje dohromady: o 1 procentní bod rychlejší růst, bilion korun ročně na konci dekády, 68 000 Kč ročně na pracujícího. A jak se k tomu došlo.",
+  description: "Co strategie slibuje dohromady: o 1 procentní bod rychlejší růst, bilion korun ročně na konci dekády, 68 000 Kč ročně na pracujícího. Jak se k tomu došlo, co se stane kdy a kdo to zaplatí.",
   alternates: { canonical: "/dopad" },
 };
 
@@ -29,12 +31,12 @@ export default function DopadPage() {
           <p className="eyebrow">Velký obraz · závěr strategie</p>
           <h1>Co to přinese dohromady</h1>
           <p className={styles.lede}>
-            Strategie má jeden cíl: zrychlit růst české ekonomiky o {s.rustNavicPb} procentní bod ročně. Tady je, co z toho
-            plyne, a poctivě i to, jak se k tomu číslu došlo.
+            Strategie má jeden cíl: zrychlit růst české ekonomiky o {s.rustNavicPb} procentní bod ročně. Tady je, co z toho
+            plyne, jak se k tomu číslu došlo, co se má stát kdy a kdo to zaplatí.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
-          Jeden procentní bod zní jako nic. Za deset let je z toho bilion korun ročně.
+          Jeden procentní bod zní jako nic. Za deset let je z toho bilion korun ročně.
         </GarantBubble>
       </section>
 
@@ -48,25 +50,25 @@ export default function DopadPage() {
             <BigNumber value={s.rozpocetNavicMld} prefix="+" unit="mld. Kč" label="do státního rozpočtu každý rok" />
           </div>
           <div className={`card ${styles.big}`}>
-            <BigNumber value={s.naPracujicihoKc} unit="Kč" label="ročně navíc na každého pracujícího (v průměru)" />
+            <BigNumber value={s.naPracujicihoKc} unit="Kč" label="ročně navíc na každého pracujícího (v průměru)" />
           </div>
         </div>
         <p className="src">
-          <b>Zdroj:</b> Hospodářská strategie PEER, Souhrnný dopad do HDP a státního rozpočtu (s. 88). Mzdy tvoří {s.podilMezdNaHdp} % HDP; z bilionu navíc je to {nf.format(s.mzdyNavicMld)} mld. Kč v superhrubé hodnotě.
+          <b>Zdroj:</b> Hospodářská strategie PEER, Souhrnný dopad do HDP a státního rozpočtu (s. 88). Mzdy tvoří {s.podilMezdNaHdp} % HDP; z bilionu navíc je to {nf.format(s.mzdyNavicMld)} mld. Kč v superhrubé hodnotě.
         </p>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="nabeh">
         <h2 id="nabeh">Jak přínos narůstá rok po roce</h2>
         <p className="prose muted">
-          Rychlejší růst se sčítá. První rok přinese navíc 80 miliard, druhý 161, třetí 242, čtvrtý 324 a tak dál, až na bilion ročně na konci dekády.
+          Rychlejší růst se sčítá. První rok přinese navíc 80 miliard, druhý 161, třetí 242, čtvrtý 324 a tak dál, až na bilion ročně na konci dekády.
         </p>
         <NabehChart body={dopad.nabeh} cil={s.hdpNavicMldRocneKonecDekady} />
-        <p className="src"><b>Zdroj:</b> {dopad.nabehZdroj}, sekce „Co to přinese?“; konec dekády podle studie s. 88. Mezilehlé roky 5–9 nejsou ve zdrojích vyčíslené, graf je mezi rokem 4 a 10 ilustrativní.</p>
+        <p className="src"><b>Zdroj:</b> {dopad.nabehZdroj}, sekce „Co to přinese?“; konec dekády podle studie s. 88. Mezilehlé roky 5–9 nejsou ve zdrojích vyčíslené, graf je mezi rokem 4 a 10 ilustrativní.</p>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="jak">
-        <h2 id="jak">Jak se k tomu došlo</h2>
+        <h2 id="jak">Jak se k tomu došlo</h2>
         <div className={styles.twoCol}>
           <div className="prose">
             {s.text.map((p, i) => <p key={i}>{p}</p>)}
@@ -74,16 +76,16 @@ export default function DopadPage() {
           <div className={`card ${styles.note}`}>
             <h3>Poctivá poznámka</h3>
             <p>
-              Studie říká, že z dílčích odhadů je zvýšení růstu o 1 procentní bod „snadno odvoditelné“, ale samotný součet
-              neukazuje. Dílčí přínosy níže jsou v různých jednotkách (ročně, kumulativně, za dekádu) a část opatření vyčíslená není.
-              Berte proto bilion jako cíl a řádovou představu, ne jako účetní součet.
+              Studie říká, že z dílčích odhadů je zvýšení růstu o 1 procentní bod „snadno odvoditelné“, ale samotný součet
+              neukazuje. Dílčí přínosy níže jsou v různých jednotkách (ročně, kumulativně, za dekádu) a část opatření vyčíslená není.
+              Berte proto bilion jako cíl a řádovou představu, ne jako účetní součet.
             </p>
           </div>
         </div>
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="vycislena">
-        <h2 id="vycislena">Opatření s vyčísleným dopadem</h2>
+        <h2 id="vycislena">Opatření s vyčísleným dopadem</h2>
         <ol className={styles.list}>
           {dopad.vycislena.map((v) => (
             <li key={v.cislo} className={`card ${styles.item}`}>
@@ -99,7 +101,7 @@ export default function DopadPage() {
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="nevycislena">
-        <h2 id="nevycislena">Opatření s velkým, ale nevyčísleným dopadem</h2>
+        <h2 id="nevycislena">Opatření s velkým, ale nevyčísleným dopadem</h2>
         <ol className={styles.list} start={11}>
           {dopad.nevycislena.map((v) => (
             <li key={v.cislo} className={`card ${styles.item}`}>
@@ -113,6 +115,9 @@ export default function DopadPage() {
           ))}
         </ol>
       </section>
+
+      <CestaSekce />
+      <ZaplaceniSekce />
     </article>
   );
 }

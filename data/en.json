@@ -2,8 +2,8 @@
   "hero": {
     "eyebrow": "Economic Strategy 2026–2035 · PEER",
     "h1": "Czechia can do better",
-    "lede": "Czechia is a top-tier manufacturing nation and has the 7th most complex economy in the world. However, its wealth is growing at only an average rate. The Pirate Expert Economic Council (PEER) has drawn up a plan to accelerate growth by 1 percentage point a year. This page summarises its main ideas for readers outside Czechia.",
-    "bobr": "We, the authors of the strategy, know that one percentage point may not sound like much. But over ten years, it amounts to CZK 1,000 billion a year."
+    "lede": "Czechia is a top-tier manufacturing nation and has the 7th most complex economy in the world. However, its wealth is growing at only an average rate. The Pirate Expert Economic Council (PEER) has drawn up a plan to accelerate growth by 1 percentage point a year. This page summarises its main ideas for readers outside Czechia.",
+    "bobr": "We, the authors of the strategy, know that one percentage point may not sound like much. But over ten years, it amounts to CZK 1,000 billion a year."
   },
   "numbers": [
     {
@@ -23,10 +23,10 @@
     {
       "slug": "bydleni",
       "title": "Housing where the opportunities are",
-      "hook": "How many years’ salary does a flat cost?",
+      "hook": "How many years’ salary does a flat cost?",
       "number": "15.1",
       "unit": "annual salaries",
-      "label": "Czechia, a new average flat, 2025",
+      "label": "Czechia, a new average flat, 2025",
       "lede": "The highest in the whole of the European Union. The average is between 8 and 10. In Belgium, it is just under 5.",
       "guarantor": "Libor Dušek",
       "role": "economist and academic, lead expert on affordable housing and modern infrastructure"
@@ -37,15 +37,15 @@
       "hook": "Why isn’t it worth skimping on nursery schools?",
       "number": "4%",
       "unit": "of children under 3 years of age",
-      "label": "attends a crèche, nursery or playgroup",
-      "lede": "The OECD average is 24%. The EU’s target is 45% by 2030. Every koruna invested in early childhood care yields a return of 3–4 times that amount for the state.",
+      "label": "attends a crèche, nursery or playgroup",
+      "lede": "The OECD average is 24%. The EU’s target is 45% by 2030. Every koruna invested in early childhood care yields a return of 3–4 times that amount for the state.",
       "guarantor": "Jan Kříž",
       "role": "expert in education for the future and strong regions"
     },
     {
       "slug": "prace",
       "title": "From the assembly line to the economy of smart people",
-      "hook": "Why is cheap labour a trap here?",
+      "hook": "Why is cheap labour a trap here?",
       "number": "CZK 22,400",
       "unit": "minimum wage",
       "label": "43% of the average wage, lower than in Poland, Lithuania and Croatia",
@@ -66,12 +66,12 @@
     },
     {
       "slug": "exekuce",
-      "title": "Debt enforcement: a system that punishes work and destroys children’s futures",
-      "hook": "Why isn’t it worth it for half a million people to work?",
+      "title": "Debt enforcement: a system that punishes work and destroys children’s futures",
+      "hook": "Why isn’t it worth it for half a million people to work?",
       "number": "590,000",
       "unit": "people subject to debt enforcement proceedings",
       "label": "as at 30 June 2026; 3 million cases, CZK 542 billion",
-      "lede": "Anyone earning more than approximately CZK 31,500 gross will lose every additional koruna. Debts are falling by just 1% a year, and only through the write-off of irrecoverable debts.",
+      "lede": "Anyone earning more than approximately CZK 31,500 gross will lose every additional koruna. Debts are falling by just 1% a year, and only through the write-off of irrecoverable debts.",
       "guarantor": "Zuzana Freitas Lopesová",
       "role": "expert on labour market mobilisation and equal opportunities"
     },
@@ -91,11 +91,11 @@
       "title": "Weakening the oligarchy and fair subsidies",
       "hook": "Who receives the subsidies that we all pay for?",
       "number": "CZK 20–30 billion",
-      "unit": "a year",
+      "unit": "a year",
       "label": "in substantial subsidies goes to the biggest players",
       "lede": "Research by CERGE-EI shows that these subsidies do not lead to greater innovation or productivity, but rather to increased profits for these firms.",
       "guarantor": "Milan Damborský",
-      "role": "academic; responsible for the chapters on a fair market, smart taxes and sustainable finance"
+      "role": "academic; responsible for the chapters on a fair market, smart taxes and sustainable finance"
     },
     {
       "slug": "euro",
@@ -103,8 +103,8 @@
       "hook": "Why do Czechs pay CZK 1.2 million more than Slovaks for the same mortgage?",
       "number": "CZK 1,242,657",
       "unit": "",
-      "label": "in additional interest payments, a 30-year mortgage of CZK 4.7 million, Czechia compared with Slovakia",
-      "lede": "The same bank, the same product, a three-year fixed-rate period. A rate of 4.94% in Czechia compared with 3.69% in Slovakia.",
+      "label": "in additional interest payments, a 30-year mortgage of CZK 4.7 million, Czechia compared with Slovakia",
+      "lede": "The same bank, the same product, a three-year fixed-rate period. A rate of 4.94% in Czechia compared with 3.69% in Slovakia.",
       "guarantor": "Tereza Nislerová",
       "role": "economist, specialising in European integration and the euro"
     },
@@ -115,9 +115,9 @@
       "number": "CZK 4,000 billion",
       "unit": "",
       "label": "the dormant savings of Czech savers",
-      "lede": "This money is not usually put to work and a significant proportion of it sits in non-interest-bearing current accounts.",
+      "lede": "This money is not usually put to work and a significant proportion of it sits in non-interest-bearing current accounts.",
       "guarantor": "Milan Damborský",
-      "role": "academic; responsible for the chapters on a fair market, smart taxes and sustainable finance"
+      "role": "academic; responsible for the chapters on a fair market, smart taxes and sustainable finance"
     },
     {
       "slug": "prumysl",
@@ -143,7 +143,7 @@
     },
     {
       "slug": "inovace",
-      "title": "Innovation as the driving force behind a strong economy",
+      "title": "Innovation as the driving force behind a strong economy",
       "hook": "Why are so few companies being set up here?",
       "number": "131",
       "unit": "start-ups per million inhabitants",
@@ -165,11 +165,11 @@
     },
     {
       "slug": "stat",
-      "title": "The state as a leader",
+      "title": "The state as a leader",
       "hook": "How many government services can you carry out online?",
       "number": "18%",
       "unit": "of public services are fully digital",
-      "label": "out of a total of nearly 9,000 services",
+      "label": "out of a total of nearly 9,000 services",
       "lede": "Around 30% of services are hybrid, whilst more than half remain on paper. Software tools for the SZIF (State Agricultural Intervention Fund) cost up to 20 times more than they would have in the commercial sector.",
       "guarantor": "Jiří Hlavenka",
       "role": "entrepreneur and investor, championing the areas of the digital state, AI and efficient institutions"
@@ -177,12 +177,12 @@
   ],
   "about": [
     "The Economic Strategy 2026–2035 was drawn up by the Pirate Expert Economic Council (PEER) in collaboration with the Institut π and other experts. The Council comprises economists, academics and businesspeople, each of whom is responsible for several areas of the strategy.",
-    "The strategy comprises fourteen chapters and has a single objective: to accelerate the growth of the Czech economy by 1 percentage point per year. According to the study, by the end of the decade this will mean an annual increase in economic output of CZK 1,000 billion, an additional CZK 300 billion per year in the state budget, and an average of CZK 68,000 per year in additional wages for every economically active person.",
-    "The study itself points out that GDP growth cannot be modelled with precision. These figures should be regarded as a target and a rough estimate, rather than as the sum of individual measures.",
-    "The strategy was written by people. This website was written, designed and programmed by an artificial intelligence (Claude), which was managed and supervised by a single person. The authors of the strategy, not the website, vouch for the accuracy of the figures. Every figure on the Czech website is accompanied by a source from the study."
+    "The strategy comprises fourteen chapters and has a single objective: to accelerate the growth of the Czech economy by 1 percentage point per year. According to the study, by the end of the decade this will mean an annual increase in economic output of CZK 1,000 billion, an additional CZK 300 billion per year in the state budget, and an average of CZK 68,000 per year in additional wages for every economically active person.",
+    "The study itself points out that GDP growth cannot be modelled with precision. These figures should be regarded as a target and a rough estimate, rather than as the sum of individual measures.",
+    "The strategy was written by people. This website was written, designed and programmed by an artificial intelligence (Claude), which was managed and supervised by a single person. The authors of the strategy, not the website, vouch for the accuracy of the figures. Every figure on the Czech website is accompanied by a source from the study."
   ],
   "site": [
-    "This is a brief summary in English. The entire website, the ‘Strategy in a minute’ videos, the calculators, the full text of all the chapters and the sources for every figure are in Czech."
+    "This is a brief summary in English. The entire website, the ‘Strategy in a minute’ videos, the calculators, the full text of all the chapters and the sources for every figure are in Czech."
   ],
   "generated": "DeepL, 2026-10-16"
 }

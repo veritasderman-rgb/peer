@@ -36,12 +36,13 @@ const CISLICE = /\p{N}/u;
 
 /* Jeden znak (code point) → malé písmeno bez diakritiky. */
 function slozZnak(ch: string): string {
+  if (ch === "\u00a0") return " "; // nezlomitelná mezera z typografie (scripts/nbsp.mjs) je pro hledání obyčejná
   return ch.normalize("NFD").replace(/\p{M}+/gu, "").toLowerCase();
 }
 
 /* Malá písmena bez diakritiky: „Hypotéka“ → „hypoteka“. */
 export function normalizuj(s: string): string {
-  return s.normalize("NFD").replace(/\p{M}+/gu, "").toLowerCase();
+  return s.replace(/\u00a0/g, " ").normalize("NFD").replace(/\p{M}+/gu, "").toLowerCase();
 }
 
 /* Normalizace s mapou pozic: mapa[i] = index v původním textu, odkud pochází i-tý znak normalizovaného textu.

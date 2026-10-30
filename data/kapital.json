@@ -3,16 +3,16 @@
   "nazev": "Český kapitál ležící, spící",
   "garant": {
     "jmeno": "Milan Damborský",
-    "role": "akademik, garant kapitol o spravedlivém trhu, chytrých daních a udržitelných financích"
+    "role": "akademik, garant kapitol o spravedlivém trhu, chytrých daních a udržitelných financích"
   },
   "hook": {
     "hodnota": 4000,
     "jednotka": "miliard Kč",
-    "veta": "Čeští střadatelé mají spících 4 000 miliard korun. Tyto peníze obvykle nepracují a v nemalé části leží na neúročených běžných účtech."
+    "veta": "Čeští střadatelé mají spících 4 000 miliard korun. Tyto peníze obvykle nepracují a v nemalé části leží na neúročených běžných účtech."
   },
   "grafy": {
     "zdvojnasobeni": {
-      "titulek": "Jak rostou úspory při 3 % ročně",
+      "titulek": "Jak rostou úspory při 3 % ročně",
       "podtitulek": "Násobek počáteční částky při složeném úročení",
       "polozky": [
         {"roky": 0, "nasobek": 1.00},
@@ -22,45 +22,45 @@
         {"roky": 20, "nasobek": 1.81},
         {"roky": 25, "nasobek": 2.09}
       ],
-      "zdroj": "Vlastní výpočet (1,03^roky), k tvrzení kapitoly 2.3"
+      "zdroj": "Vlastní výpočet (1,03^roky), k tvrzení kapitoly 2.3"
     }
   },
   "fakta": [
     {"id": "penze_vklady_vs_sk", "hodnota": 10, "jednotka": "× víc peněz pro stejný výnos jako slovenský kolega", "text": "Český střadatel musí vkládat 10× víc peněz, aby dosáhl stejného výnosu jako jeho slovenský kolega.", "zdrojIndex": 1},
-    {"id": "spici_uspory", "hodnota": 4000, "jednotka": "mld. Kč (spící úspory)", "text": "U českých střadatelů spí 4000 miliard korun. Tyto peníze obvykle nepracují a v nemalé části leží na neúročených běžných účtech.", "zdrojIndex": null},
-    {"id": "zdvojnasobeni_25_let", "hodnota": 25, "jednotka": "let (zdvojnásobení úspor při 3 % ročně)", "text": "Již při pouhém tříprocentním ročním zhodnocení dojde ke zdvojnásobení úspor za 25 let.", "zdrojIndex": null}
+    {"id": "spici_uspory", "hodnota": 4000, "jednotka": "mld. Kč (spící úspory)", "text": "U českých střadatelů spí 4000 miliard korun. Tyto peníze obvykle nepracují a v nemalé části leží na neúročených běžných účtech.", "zdrojIndex": null},
+    {"id": "zdvojnasobeni_25_let", "hodnota": 25, "jednotka": "let (zdvojnásobení úspor při 3 % ročně)", "text": "Již při pouhém tříprocentním ročním zhodnocení dojde ke zdvojnásobení úspor za 25 let.", "zdrojIndex": null}
   ],
   "priciny": [
-    {"poradi": 1, "typ": "další", "pricina": "Malé výnosy a vysoké poplatky penzijních fondů", "popis": "Dnešní výnosy jsou malé, dané požadavkem na bezrizikovost, a větší část z nich spolknou poplatky.", "zdrojIndex": 1},
-    {"poradi": 2, "typ": "další", "pricina": "Přetržená akumulace kapitálu", "popis": "Nejsme zemí s velkou akumulací kapitálu. Staletí shromažďování kapitálu bez přestávky bylo u nás bohužel přetrženo.", "zdrojIndex": null},
-    {"poradi": 3, "typ": "další", "pricina": "Nevhodná alokace kapitálu", "popis": "Kapitál, který by umožnil rozvoj nových firem a růst těch stávajících, je ve velké míře alokován nevhodně: nepracuje, spí.", "zdrojIndex": null},
-    {"poradi": 4, "typ": "další", "pricina": "Úspory na neúročených účtech", "popis": "Spící úspory v nemalé části leží dokonce na neúročených běžných účtech.", "zdrojIndex": null}
+    {"poradi": 1, "typ": "další", "pricina": "Malé výnosy a vysoké poplatky penzijních fondů", "popis": "Dnešní výnosy jsou malé, dané požadavkem na bezrizikovost, a větší část z nich spolknou poplatky.", "zdrojIndex": 1},
+    {"poradi": 2, "typ": "další", "pricina": "Přetržená akumulace kapitálu", "popis": "Nejsme zemí s velkou akumulací kapitálu. Staletí shromažďování kapitálu bez přestávky bylo u nás bohužel přetrženo.", "zdrojIndex": null},
+    {"poradi": 3, "typ": "další", "pricina": "Nevhodná alokace kapitálu", "popis": "Kapitál, který by umožnil rozvoj nových firem a růst těch stávajících, je ve velké míře alokován nevhodně: nepracuje, spí.", "zdrojIndex": null},
+    {"poradi": 4, "typ": "další", "pricina": "Úspory na neúročených účtech", "popis": "Spící úspory v nemalé části leží dokonce na neúročených běžných účtech.", "zdrojIndex": null}
   ],
   "opatreni": [
     {
       "cislo": 1,
       "nazev": "Kompletní transformace penzijních fondů",
-      "popis": "Zvolme skandinávský přístup: zákonem dané dramatické snížení poplatků, případně i fondy provozované státem s ještě levnější obsluhou. Umožněme větší diverzifikaci fondů a tedy i penzijních portfolií.",
+      "popis": "Zvolme skandinávský přístup: zákonem dané dramatické snížení poplatků, případně i fondy provozované státem s ještě levnější obsluhou. Umožněme větší diverzifikaci fondů a tedy i penzijních portfolií.",
       "klicoveCislo": "10× víc vložených peněz pro stejný výnos jako slovenský kolega"
     },
     {
       "cislo": 2,
-      "nazev": "Využít spících 4000 miliard u českých střadatelů",
-      "popis": "Spořit si je jistě záslužné, ale tyto peníze obvykle nepracují. Zde je nutná zejména osvěta, legislativní podpora vzniku syndikátů drobných investorů (podle vzoru Velké Británie), ale i silnější dohled nad velmi rizikovými firemními dluhopisy.",
-      "klicoveCislo": "4000 mld. Kč spících úspor"
+      "nazev": "Využít spících 4000 miliard u českých střadatelů",
+      "popis": "Spořit si je jistě záslužné, ale tyto peníze obvykle nepracují. Zde je nutná zejména osvěta, legislativní podpora vzniku syndikátů drobných investorů (podle vzoru Velké Británie), ale i silnější dohled nad velmi rizikovými firemními dluhopisy.",
+      "klicoveCislo": "4000 mld. Kč spících úspor"
     },
     {
       "cislo": 3,
       "nazev": "Zmírnit regulaci krátkodobých hypoték pro snazší pracovní mobilitu",
-      "popis": "Jde o rychlé prodeje a koupě domu či bytu při stěhování za prací.",
-      "klicoveCislo": "rychlé prodeje a koupě při stěhování za prací"
+      "popis": "Jde o rychlé prodeje a koupě domu či bytu při stěhování za prací.",
+      "klicoveCislo": "rychlé prodeje a koupě při stěhování za prací"
     }
   ],
   "cile": [
     {"cil": "Zdvojnásobit úspory při pouhém tříprocentním ročním zhodnocení", "hodnota": 25, "jednotka": "let (zdvojnásobení)"}
   ],
-  "prinese": "Kapitál, který pracuje, umožní rozvoj nových firem i růst stávajících. Již při pouhém tříprocentním ročním zhodnocení dojde ke zdvojnásobení úspor za 25 let.",
+  "prinese": "Kapitál, který pracuje, umožní rozvoj nových firem i růst stávajících. Již při pouhém tříprocentním ročním zhodnocení dojde ke zdvojnásobení úspor za 25 let.",
   "zdroje": [
-    {"index": 1, "citace": "Nádvorník, L. a Pertold, F., 2026. Klienti penzijních fondů v pasti nízkých výnosů a vysokých poplatků. Studie 1/2026. Praha: IDEA při CERGE-EI, Ekonomický ústav AV ČR, v. v. i. ISBN 978-80-7344-737-3."}
+    {"index": 1, "citace": "Nádvorník, L. a Pertold, F., 2026. Klienti penzijních fondů v pasti nízkých výnosů a vysokých poplatků. Studie 1/2026. Praha: IDEA při CERGE-EI, Ekonomický ústav AV ČR, v. v. i. ISBN 978-80-7344-737-3."}
   ]
 }

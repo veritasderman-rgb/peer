@@ -26,7 +26,7 @@ export function KalkulackaExekuce() {
   return (
     <section className={`card ${s.root}`} aria-labelledby="kalk-exekuce-title" onChangeCapture={pouzita}>
       <h3 id="kalk-exekuce-title" className={s.title}>
-        Vyděláš o 1&nbsp;000&nbsp;Kč víc. Kolik ti zůstane?
+        Vyděláš o 1&nbsp;000&nbsp;Kč víc. Kolik ti zůstane?
       </h3>
       <div className={s.fields}>
         <RangeField
@@ -45,7 +45,7 @@ export function KalkulackaExekuce() {
             {(
               [
                 ["1-3", "1–3"],
-                ["4+", "4 a víc"],
+                ["4+", "4 a víc"],
               ] as const
             ).map(([v, text]) => (
               <label key={v} className={`${s.choice} ${count === v ? s.choiceOn : ""}`} htmlFor={`kalk-exekuce-pocet-${v}`}>
@@ -66,39 +66,39 @@ export function KalkulackaExekuce() {
       </div>
 
       <div className={`sun ${s.result}`} aria-live="polite" aria-atomic="true">
-        <p className={s.lead}>Z dalších 1&nbsp;000&nbsp;Kč hrubého ti zůstane</p>
+        <p className={s.lead}>Z dalších 1&nbsp;000&nbsp;Kč hrubého ti zůstane</p>
         <div className={s.cols}>
           <div className={s.col}>
             <p className={s.colHead}>Dnes</p>
             <p className={`${s.big} num`}>{nf.format(today)}&nbsp;Kč</p>
-            <div className={s.track} role="img" aria-label={`Dnes zůstane ${today} z ${EXTRA} Kč`}>
+            <div className={s.track} role="img" aria-label={`Dnes zůstane ${today} z ${EXTRA} Kč`}>
               <div className={s.fill} style={{ width: `${(today / EXTRA) * 100}%` }} />
             </div>
             <p className={s.note}>
               {over
-                ? `Jsi nad hranicí ${nf.format(limit)} Kč, srážka je 100 %.`
-                : `Pod hranicí ${nf.format(limit)} Kč se strhává 66 %.`}
+                ? `Jsi nad hranicí ${nf.format(limit)} Kč, srážka je 100 %.`
+                : `Pod hranicí ${nf.format(limit)} Kč se strhává 66 %.`}
             </p>
           </div>
           <div className={s.col}>
             <p className={s.colHead}>Podle návrhu</p>
             <p className={`${s.big} num`}>{nf.format(KEEP_PLAN)}&nbsp;Kč</p>
-            <div className={s.track} role="img" aria-label={`Podle návrhu zůstane ${KEEP_PLAN} z ${EXTRA} Kč`}>
+            <div className={s.track} role="img" aria-label={`Podle návrhu zůstane ${KEEP_PLAN} z ${EXTRA} Kč`}>
               <div className={s.fill} style={{ width: `${(KEEP_PLAN / EXTRA) * 100}%` }} />
             </div>
-            <p className={s.note}>Strop srážky 50 %, vždy.</p>
+            <p className={s.note}>Strop srážky 50 %, vždy.</p>
           </div>
         </div>
       </div>
 
       <p className={s.sentence}>
-        590&nbsp;000 lidí v exekuci; zavedení 50% stropu používá Německo, Slovensko i Skandinávie.
+        590&nbsp;000 lidí v exekuci; zavedení 50% stropu používá Německo, Slovensko i Skandinávie.
       </p>
 
       <p className={`src ${s.source}`}>
-        Studie, s.&nbsp;32; ExekuceInfo.cz, Exekutorská komora ČR. Zjednodušený model: srážka dnes 66 % příjmu a nad
-        hranicí cca 31&nbsp;500 Kč hrubého (1–3 exekuce), resp. 24&nbsp;609 Kč (4 a víc) 100 %. Srážky se ve skutečnosti
-        počítají z čisté mzdy, hrubou jsme pro jednoduchost brali jako ekvivalent.
+        Studie, s.&nbsp;32; ExekuceInfo.cz, Exekutorská komora ČR. Zjednodušený model: srážka dnes 66 % příjmu a nad
+        hranicí cca 31&nbsp;500 Kč hrubého (1–3 exekuce), resp. 24&nbsp;609 Kč (4 a víc) 100 %. Srážky se ve skutečnosti
+        počítají z čisté mzdy, hrubou jsme pro jednoduchost brali jako ekvivalent.
       </p>
     </section>
   );

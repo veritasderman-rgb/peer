@@ -86,13 +86,6 @@
   gap: 1rem;
   padding-block: 1rem 30vh;
 }
-.persona {
-  display: grid;
-  gap: 0.1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--line);
-}
-.who { font-size: var(--s2); }
 .step {
   padding: 1.6rem 1.4rem;
   border-left: 4px solid var(--line);

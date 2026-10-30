@@ -22,7 +22,7 @@ const CESTA = "/kolik-ti-to-prinese";
 export const metadata: Metadata = {
   title: "Kolik ti strategie přinese?",
   description:
-    "Pět rychlých otázek o tvé situaci a poctivý odhad podle Hospodářské strategie PEER: co by ti mohla přinést, co tě bude stát a odkud každé číslo je. Se sdílecím obrázkem.",
+    "Pět rychlých otázek o tvé situaci a poctivý odhad podle Hospodářské strategie PEER: co by ti mohla přinést, co tě bude stát a odkud každé číslo je. Se sdílecím obrázkem.",
   alternates: { canonical: CESTA },
 };
 
@@ -41,16 +41,16 @@ export default function KolikTiToPrinesePage() {
           <p className="eyebrow">Kvíz · odhad podle studie</p>
           <h1>Kolik ti strategie přinese?</h1>
           <p className={`prose ${styles.lede}`}>
-            Pět rychlých otázek o tom, jak žiješ. Pak ti ukážeme, co by ti Hospodářská strategie PEER mohla přinést a co
-            tě bude stát. Jen z čísel, která studie uvádí, a u každého řádku je zdroj.
+            Pět rychlých otázek o tom, jak žiješ. Pak ti ukážeme, co by ti Hospodářská strategie PEER mohla přinést a co
+            tě bude stát. Jen z čísel, která studie uvádí, a u každého řádku je zdroj.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left" size={150}>
-          Žádné sliby. Spočítám jen to, co studie opravdu říká, i s tím, co tě to bude stát.
+          Žádné sliby. Spočítám jen to, co studie opravdu říká, i s tím, co tě to bude stát.
         </GarantBubble>
       </section>
 
-      <section className={`wrap ${styles.section}`} aria-label="Otázky a výsledek">
+      <section className={`wrap ${styles.section}`} aria-label="Otázky a výsledek">
         <Kviz data={data} url={abs(CESTA)} nazvy={nazvy} />
       </section>
 
@@ -60,8 +60,8 @@ export default function KolikTiToPrinesePage() {
         </h2>
         <ul className={`prose ${styles.pravidla}`}>
           <li>
-            Každé číslo je ze studie (soubory v <code>data/</code>) nebo z něj spočítané stejně jako v kalkulačkách
-            jednotlivých témat. U každé karty vidíš kapitolu i přesné pole v datech.
+            Každé číslo je ze studie (soubory v <code>data/</code>) nebo z něj spočítané stejně jako v kalkulačkách
+            jednotlivých témat. U každé karty vidíš kapitolu i přesné pole v datech.
           </li>
           <li>Kde studie dává rozpětí, ukazujeme rozpětí. Kde částku neuvádí, píšeme to.</li>
           <li>
@@ -70,7 +70,7 @@ export default function KolikTiToPrinesePage() {
           </li>
           <li>
             Celkový účet strategie studie nesčítá. Co kdo zaplatí, najdeš po tématech na stránce{" "}
-            <Link href="/zaplaceni">Jak se to zaplatí</Link>.
+            <Link href="/dopad#zaplaceni">Jak se to zaplatí</Link>.
           </li>
         </ul>
       </section>

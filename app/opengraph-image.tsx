@@ -28,7 +28,7 @@ export default function Image() {
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           <div style={{ fontSize: 150, fontWeight: 800, lineHeight: 1, color: "#fec934" }}>+1 bod růstu</div>
           <div style={{ fontSize: 40, fontWeight: 700, lineHeight: 1.15, maxWidth: 1000 }}>
-            Bilion korun ročně navíc na konci dekády. 68 000 Kč na pracujícího.
+            Bilion korun ročně navíc na konci dekády. 68 000 Kč na pracujícího.
           </div>
           <div style={{ fontSize: 32, color: "#d9d9d9" }}>Hospodářská strategie 2026–2035 vysvětlená pro lidi. Vysvětlují ji sami autoři.</div>
         </div>

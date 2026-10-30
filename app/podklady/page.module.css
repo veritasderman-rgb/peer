@@ -1,0 +1,6 @@
+.page { display: grid; gap: 1.25rem; padding-block: 3rem 4rem; }
+.lede { font-size: var(--s1); max-width: var(--prose); }
+.seznam { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
+.karta { display: grid; gap: 0.4rem; padding: 1.25rem; color: var(--ink); text-decoration: none; height: 100%; }
+.karta:hover { box-shadow: var(--shadow), inset 0 -5px 0 var(--sun); }
+.nazev { font-size: var(--s2); }

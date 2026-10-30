@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Garant } from "@/components/Garant";
 import { GarantBubble } from "@/components/GarantBubble";
 import { JsonLd } from "@/components/JsonLd";
+import { TymFoto } from "@/components/TymFoto";
 import { Socialni } from "@/components/Socialni";
 import tym from "@/data/tym.json";
 import { garantPodleJmena } from "@/lib/garanti";
@@ -14,7 +15,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Kdo je kdo: garanti strategie",
   description:
-    "Osm ekonomů a odborníků PEER, kteří ručí za kapitoly hospodářské strategie 2026–2035: krátké medailonky, jejich témata, ověřené odkazy a zdroje.",
+    "Osm ekonomů a odborníků PEER, kteří ručí za kapitoly hospodářské strategie 2026–2035: krátké medailonky, jejich témata, ověřené odkazy a zdroje.",
   alternates: { canonical: "/kdo-je-kdo" },
 };
 
@@ -71,13 +72,17 @@ export default function KdoJeKdoPage() {
           <p className="eyebrow">PEER</p>
           <h1>Kdo za strategií stojí</h1>
           <p className={styles.lede}>
-            PEER je osm ekonomů a odborníků. Každý z nich ručí za určité kapitoly strategie, a proto je každé video
-            i každá stránka tohoto webu podepsaná jménem garanta.
+            PEER je osm ekonomů a odborníků. Každý z nich ručí za určité kapitoly strategie, a proto je každé video
+            i každá stránka tohoto webu podepsaná jménem garanta.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="happy" side="left">
-          Za každou kapitolou stojí jeden z nás, takže vždycky vidíš, kdo za čísly ručí.
+          Za každou kapitolou stojí jeden z nás, takže vždycky vidíš, kdo za čísly ručí.
         </GarantBubble>
+      </section>
+
+      <section className={`wrap ${styles.section}`} aria-label="Fotka rady">
+        <TymFoto priority />
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="garanti">
@@ -123,8 +128,8 @@ export default function KdoJeKdoPage() {
         <h2 id="podpisy">Proč jsou kapitoly podepsané</h2>
         <div className={`prose ${styles.text}`}>
           <p>
-            Videa a stránky s jednotlivými tématy uvádí vždy garant příslušné kapitoly: jménem, rolí a monogramem.
-            Díky tomu je vidět, kdo za čísly a návrhy ručí, a nemluví za ně anonymní maskot ani kreslená postava.
+            Videa a stránky s jednotlivými tématy uvádí vždy garant příslušné kapitoly: jménem, rolí a monogramem.
+            Díky tomu je vidět, kdo za čísly a návrhy ručí, a nemluví za ně anonymní maskot ani kreslená postava.
           </p>
           <p>
             {tym.podpisyPoznamka} Jak web vznikl, popisujeme na stránce{" "}
@@ -137,9 +142,9 @@ export default function KdoJeKdoPage() {
         <h2 id="rada">Rada</h2>
         <div className={`prose ${styles.text}`}>
           <p>
-            Pirátská expertní ekonomická rada (PEER) je tým ekonomů, podnikatelů a dalších odborníků, který zpracoval
-            Hospodářskou strategii 2026–2035. Víc o radě je na{" "}
-            <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">peer.pirati.cz</a> a celou strategii
+            Pirátská expertní ekonomická rada (PEER) je tým ekonomů, podnikatelů a dalších odborníků, který zpracoval
+            Hospodářskou strategii 2026–2035. Víc o radě je na{" "}
+            <a href="https://peer.pirati.cz/" target="_blank" rel="noreferrer">peer.pirati.cz</a> a celou strategii
             najdeš v{" "}
             <a href="https://majak.pirati.cz/documents/647/Piratska_Hospodarska_strategie.pdf" target="_blank" rel="noreferrer">
               PDF na webu Pirátů

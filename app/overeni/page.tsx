@@ -80,12 +80,10 @@ export default async function OvereniPage({
         )}
         <div className={`prose ${styles.lede}`}>
           <p>
-            Web převypráví studii pro laiky. U {pocet} bodů v {sekce.length} sekcích si nejsme jistí, jestli jsme čísla a
-            formulace převzali správně. U každého bodu prosím buď potvrď, že je v pořádku, nebo napiš opravu.
+            Web převypráví studii pro laiky. U {pocet} bodů v {sekce.length} sekcích si nejsme jistí, jestli jsme čísla a formulace převzali správně. U každého bodu prosím buď potvrď, že je v pořádku, nebo napiš opravu.
           </p>
           <p className="muted">
-            Vyber své jméno, klikni na „Potvrzuji“, nebo na „Opravit“ a napiš, jak to má být. Odpověď se uloží a
-            editor ji zapracuje. Celou kapitolu najednou potvrdíš tlačítkem pod jejím nadpisem.
+            Vyber své jméno, klikni na „Potvrzuji“, nebo na „Opravit“ a napiš, jak to má být. Odpověď se uloží a editor ji zapracuje. Celou kapitolu najednou potvrdíš tlačítkem pod jejím nadpisem.
           </p>
         </div>
         <nav aria-label="Sekce" className={styles.chips}>
