@@ -22,7 +22,7 @@
   --green: #4ca971; /* jen plochy a rámečky; jako barva textu se používá --green-ink */
   --green-ink: #266b42;
   --green-soft: #d6e8b3;
-  --focus: var(--ink); /* barva prstence zaměření; v tmavém režimu žlutá */
+  --focus: var(--ink); /* barva prstence zaměření; v černém pásu žlutá */
 
   --f-display: var(--font-bebas), "Roboto Condensed", Helvetica, Arial, sans-serif;
   --f-body: var(--font-roboto), Helvetica, Arial, sans-serif;
@@ -43,44 +43,9 @@
   --radius: 0;
   /* karty jsou bílé na bílém, odliší je jen tenký obrys (box-shadow, ať nemění rozměry); bez stínů jako PEER */
   --shadow: 0 0 0 1px var(--line);
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #1f1f1f;
-    --surface: #262626;
-    --ink: #f3f3f3;
-    --muted: #adadad;
-    --line: #343434;
-    --line-strong: #4c4c4c;
-    --river: #d68fd3;
-    --river-soft: #3a2438;
-    --alert: #f1ae7b;
-    --alert-soft: #3a2418;
-    --green: #76cc9f;
-    --green-ink: #76cc9f;
-    --green-soft: #1f3a2c;
-    --focus: var(--sun);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #1f1f1f;
-  --surface: #262626;
-  --ink: #f3f3f3;
-  --muted: #adadad;
-  --line: #343434;
-  --line-strong: #4c4c4c;
-  --river: #d68fd3;
-  --river-soft: #3a2438;
-  --alert: #f1ae7b;
-  --alert-soft: #3a2418;
-  --green: #76cc9f;
-  --green-ink: #76cc9f;
-  --green-soft: #1f3a2c;
-  --focus: var(--sun);
-  color-scheme: dark;
+  /* Web je vždy světlý, i když má návštěvník v systému tmavý vzhled (tmavou variantu jsme zrušili).
+     „only light“ navíc vypne automatické ztmavování stránek v Chrome (Auto Dark Theme). */
+  color-scheme: only light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -96,7 +61,7 @@ body {
 }
 img, svg { max-width: 100%; height: auto; }
 a { color: var(--river); text-underline-offset: 0.15em; }
-/* prstenec zaměření: černý ve světlém režimu (žlutá na bílé má kontrast 1,5:1), žlutý v tmavém */
+/* prstenec zaměření: černý na bílé (žlutá na bílé má kontrast 1,5:1), žlutý v černém pásu */
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 button { font: inherit; }
 
