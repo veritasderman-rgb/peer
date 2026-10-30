@@ -48,6 +48,7 @@
   line-height: 1.45;
   color: var(--ink);
 }
+.bubble p + p { margin-top: 0.6em; }
 .bubble b,
 .bubble strong {
   font-family: var(--f-data);

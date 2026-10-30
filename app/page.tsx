@@ -57,7 +57,19 @@ export default function Home() {
             </div>
             <div className={styles.heroBobr}>
               <GarantBubble kdo="rada" mood="neutral" pointing>
-                Jsme PEER, osm lidí, kteří strategii napsali. Začni bydlením: na byt dnes potřebuješ 15 ročních platů.
+                <p><b>Jsme PEER. Pirátská Expertní Ekonomická Rada</b></p>
+                <p>
+                  Tým ekonomů, podnikatelů a dalších odborníků, kteří spojují zkušenosti z byznysu, veřejné správy
+                  i akademické sféry.
+                </p>
+                <p>
+                  Sdílíme znalosti, propojujeme různé pohledy na ekonomiku a společně hledáme řešení, která obstojí
+                  nejen na papíře, ale hlavně v reálném světě.
+                </p>
+                <p>
+                  Naším cílem je převést teoretickou ekonomickou expertizu v konkrétní kroky, které Česku pomohou
+                  znovu růst a lidem přinesou vyšší životní úroveň.
+                </p>
               </GarantBubble>
             </div>
           </div>
