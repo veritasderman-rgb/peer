@@ -184,7 +184,7 @@ export function Hledani({ temata }: { temata: Record<string, string> }) {
 
       {!dotaz && !chyba && (
         <div className={styles.hint}>
-          <p>Napiš, co tě zajímá. Hledá se v tématech, opatřeních, slovníku, otázkách i plném znění strategie, diakritiku psát nemusíš.</p>
+          <p>Napiš, co tě zajímá. Hledá se v tématech, opatřeních, slovníku, otázkách i plném znění strategie, diakritiku psát nemusíš.</p>
           <p className={styles.navrhy}>
             <span className="muted">Zkus třeba:</span>
             {NAVRHY.map((n) => (

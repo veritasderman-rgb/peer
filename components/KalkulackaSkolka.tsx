@@ -82,8 +82,8 @@ export function KalkulackaSkolka() {
 
       <p className={`src ${s.source}`}>
         IDEA CERGE-EI 2024; studie, s.&nbsp;28–29. Jedno dodatečné místo = 0,54 pracovního místa (nejčastěji návrat
-        matky do práce) a přínos více než 100&nbsp;000&nbsp;Kč ročně: daň z příjmu a odvody 58–81&nbsp;tis., daň z příjmu
-        firem asi 54&nbsp;tis., DPH 12–15&nbsp;tis. Kč. Počítáme s 100&nbsp;000&nbsp;Kč na místo. Platba rodičů do
+        matky do práce) a přínos více než 100&nbsp;000&nbsp;Kč ročně: daň z příjmu a odvody 58–81&nbsp;tis., daň z příjmu
+        firem asi 54&nbsp;tis., DPH 12–15&nbsp;tis. Kč. Počítáme s 100&nbsp;000&nbsp;Kč na místo. Platba rodičů do
         7&nbsp;466&nbsp;Kč je třetina minimální mzdy, navrhovaný strop 3&nbsp;750&nbsp;Kč šestina.
       </p>
     </section>

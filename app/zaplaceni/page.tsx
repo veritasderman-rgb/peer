@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Jak se to zaplatí",
-  description: "Kdo za strategii zaplatí a co z ní bude: po tématech, kdo nese náklady, co se vrátí, co je rozpočtově neutrální a co studie sama nevyčísluje.",
+  description: "Kdo za strategii zaplatí a co z ní bude: po tématech, kdo nese náklady, co se vrátí, co je rozpočtově neutrální a co studie sama nevyčísluje.",
   alternates: { canonical: "/zaplaceni" },
 };
 
@@ -69,7 +69,7 @@ function TemaKarta({ t }: { t: Tema }) {
               ))}
             </ul>
           ) : (
-            <p className="muted">Studie u tohoto tématu žádné náklady neuvádí.</p>
+            <p className="muted">Studie u tohoto tématu žádné náklady neuvádí.</p>
           )}
         </div>
         <div className={styles.blok}>
@@ -87,11 +87,11 @@ function TemaKarta({ t }: { t: Tema }) {
             <p className="muted">Přínos studie nevyčísluje.</p>
           )}
         </div>
-        <Blok nadpis="Neutrální nebo bez uvedeného nákladu" items={t.neutralni} prazdne="Nic z toho studie neoznačuje za neutrální." />
+        <Blok nadpis="Neutrální nebo bez uvedeného nákladu" items={t.neutralni} prazdne="Nic z toho studie neoznačuje za neutrální." />
         <Blok nadpis="Studie nevyčísluje" items={t.nevycisleno} prazdne="Vše podstatné má číslo." />
       </div>
       <p className={styles.odkaz}>
-        <Link href={`/${t.slug}`}>{topic.kratkyNazev}: celé téma</Link> · <Link href={`/${t.slug}#stoji`}>A co to stojí</Link> ·{" "}
+        <Link href={`/${t.slug}`}>{topic.kratkyNazev}: celé téma</Link> · <Link href={`/${t.slug}#stoji`}>A co to stojí</Link> ·{" "}
         <span className="muted">kapitola {t.zdroj}</span>
       </p>
       </details>
@@ -116,7 +116,7 @@ export default function ZaplaceniPage() {
           </div>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
-          První otázka, kterou dostanu: „A kdo to zaplatí?“ Tady je odpověď po tématech, i s tím, co studie nespočítala.
+          První otázka, kterou dostanu: „A kdo to zaplatí?“ Tady je odpověď po tématech, i s tím, co studie nespočítala.
         </GarantBubble>
       </section>
 
@@ -130,7 +130,7 @@ export default function ZaplaceniPage() {
             <BigNumber value={d.hdpNavicMldRocneKonecDekady} unit="mld. Kč" label="vyšší výkon ekonomiky každý rok" />
           </div>
           <div className={`card ${styles.big}`}>
-            <BigNumber value={d.naPracujicihoKc} unit="Kč" label="ročně navíc na pracujícího (v průměru)" />
+            <BigNumber value={d.naPracujicihoKc} unit="Kč" label="ročně navíc na pracujícího (v průměru)" />
           </div>
         </div>
         <p className="prose muted">{s.vykonRocne}. {s.naPracujiciho}.</p>
@@ -140,7 +140,7 @@ export default function ZaplaceniPage() {
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="principy">
-        <h2 id="principy">Z čeho se to platí</h2>
+        <h2 id="principy">Z čeho se to platí</h2>
         <ol className={styles.principy}>
           {z.principy.map((p) => (
             <li key={p.nadpis} className={`card ${styles.princip}`}>
@@ -157,8 +157,8 @@ export default function ZaplaceniPage() {
       <section className={`wrap ${styles.section} ${styles.last}`} aria-labelledby="temata">
         <h2 id="temata">Po tématech</h2>
         <p className="prose muted">
-          U každého tématu čtyři sloupce: kdo zaplatí, co to přinese, co studie označuje za neutrální (nebo u čeho žádný
-          náklad neuvádí) a co přiznaně nespočítala. Čísla jsou tak, jak je studie uvádí; nic jsme nedopočítávali. Tam, kde
+          U každého tématu čtyři sloupce: kdo zaplatí, co to přinese, co studie označuje za neutrální (nebo u čeho žádný
+          náklad neuvádí) a co přiznaně nespočítala. Čísla jsou tak, jak je studie uvádí; nic jsme nedopočítávali. Tam, kde
           plátce ze studie jen logicky plyne, je to řečeno podmíněně.
         </p>
         <ol className={styles.temata}>

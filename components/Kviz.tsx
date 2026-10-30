@@ -163,10 +163,10 @@ export function Kviz({ data, url, nazvy }: Props) {
 
         <section className={`card ${s.stoji}`} aria-labelledby="kviz-stoji">
           <h3 id="kviz-stoji" className={s.stojiNadpis}>
-            A co to stojí
+            A co to stojí
           </h3>
           <p className={s.stojiUvod}>
-            Co se pro tebe změní k horšímu nebo co zaplatíš, podle tvých odpovědí. Studie celkový účet nesčítá; částky
+            Co se pro tebe změní k horšímu nebo co zaplatíš, podle tvých odpovědí. Studie celkový účet nesčítá; částky
             jsou tak, jak je uvádí (často za celou zemi, ne za domácnost).
           </p>
           <ul className={s.stojiSeznam}>
@@ -176,7 +176,7 @@ export function Kviz({ data, url, nazvy }: Props) {
                 {p.kolik && <span className={`num ${s.kolik}`}>{p.kolik}</span>}
                 <span className={`src ${s.stojiZdroj}`}>
                   {" "}
-                  <Link href={p.href}>{nazvy[p.slug] ?? p.slug}: a co to stojí</Link> · Data: {p.pole}
+                  <Link href={p.href}>{nazvy[p.slug] ?? p.slug}: a co to stojí</Link> · Data: {p.pole}
                 </span>
               </li>
             ))}
@@ -266,7 +266,7 @@ export function Kviz({ data, url, nazvy }: Props) {
         />
         <p className={`src ${s.mzdaPozn}`}>
           Výchozí je průměrná mzda 2025, {new Intl.NumberFormat("cs-CZ").format(prumer)}&nbsp;Kč (data/zeny.json). Mzdu
-          používáme jen u minimální mzdy, exekucí a ceny bytu. Nikam se neposílá, zůstává v tvém prohlížeči.
+          používáme jen u minimální mzdy, exekucí a ceny bytu. Nikam se neposílá, zůstává v tvém prohlížeči.
         </p>
       </fieldset>
 

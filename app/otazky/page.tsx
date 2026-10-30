@@ -8,9 +8,9 @@ import { Hlasovani } from "@/components/Hlasovani";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Časté otázky a námitky",
+  title: "Časté otázky a námitky",
   description:
-    "Kde na to vezmete? Nezadluží to stát? Je daň z prázdných bytů vyvlastnění? Nejčastější námitky proti hospodářské strategii PEER a odpovědi výhradně ze studie, s číslem, zdrojem a poctivým přiznáním, kde si studie odporuje nebo odpověď nemá.",
+    "Kde na to vezmete? Nezadluží to stát? Je daň z prázdných bytů vyvlastnění? Nejčastější námitky proti hospodářské strategii PEER a odpovědi výhradně ze studie, s číslem, zdrojem a poctivým přiznáním, kde si studie odporuje nebo odpověď nemá.",
   alternates: { canonical: "/otazky" },
 };
 
@@ -32,7 +32,7 @@ const pocet = skupiny.reduce((n, s) => n + s.otazky.length, 0);
 const faq = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  name: "Časté otázky a námitky k hospodářské strategii PEER 2026–2035",
+  name: "Časté otázky a námitky k hospodářské strategii PEER 2026–2035",
   inLanguage: "cs",
   mainEntity: skupiny.flatMap((s) =>
     s.otazky.map((q) => ({
@@ -52,20 +52,20 @@ export default function OtazkyPage() {
       <section className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
           <p className="eyebrow">Argumenty · námitky</p>
-          <h1>Časté otázky a námitky</h1>
+          <h1>Časté otázky a námitky</h1>
           <div className={`prose ${styles.lede}`}>
             <p>
-              {pocet} nejčastějších otázek a námitek, které lidé proti strategii vznášejí, a odpovědi, které dává samotná
+              {pocet} nejčastějších otázek a námitek, které lidé proti strategii vznášejí, a odpovědi, které dává samotná
               studie. Nic nad její rámec.
             </p>
             <p className="muted">
-              U každé odpovědi je téma a zdroj. Kde si studie odporuje, něco nevyčísluje nebo na námitku odpověď nemá, je to
-              u otázky řečeno.
+              U každé odpovědi je téma a zdroj. Kde si studie odporuje, něco nevyčísluje nebo na námitku odpověď nemá, je to
+              u otázky řečeno.
             </p>
           </div>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
-          Ptát se je v pořádku: odpovědi jsou jen z textu studie, i s tím, co studie neví.
+          Ptát se je v pořádku: odpovědi jsou jen z textu studie, i s tím, co studie neví.
         </GarantBubble>
       </section>
 

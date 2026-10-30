@@ -1,21 +1,21 @@
 {
   "kapitola": "1.4",
-  "nazev": "Zdraví a soběstačnost přinesou silnější ekonomiku",
+  "nazev": "Zdraví a soběstačnost přinesou silnější ekonomiku",
   "garant": {
     "jmeno": "Josef Pavlovic",
-    "role": "ekonom a manažer, bývalý náměstek ministra zdravotnictví, garant sekcí zdravý národ a udržitelné důchody"
+    "role": "ekonom a manažer, bývalý náměstek ministra zdravotnictví, garant sekcí zdravý národ a udržitelné důchody"
   },
   "hook": {
     "hodnota": 14,
-    "jednotka": "% HDP ročně (zhruba 700 mld. Kč)",
-    "veta": "Špatné zdraví a předčasná úmrtí stojí Česko ročně zhruba 14 % HDP, tedy přibližně 700 miliard korun."
+    "jednotka": "% HDP ročně (zhruba 700 mld. Kč)",
+    "veta": "Špatné zdraví a předčasná úmrtí stojí Česko ročně zhruba 14 % HDP, tedy přibližně 700 miliard korun."
   },
   "grafy": {
     "mezinarodniSrovnaniZdravi": {
       "titulek": "Mezinárodní srovnání: zdraví",
       "typ": "tabulka",
       "jednotka": "roky",
-      "sloupce": ["Česko", "Průměr EU", "Nejlepší v EU (Švédsko)"],
+      "sloupce": ["Česko", "Průměr EU", "Nejlepší v EU (Švédsko)"],
       "radky": [
         {"ukazatel": "Naděje dožití — muži", "hodnoty": [76.9, 78.7, null]},
         {"ukazatel": "Naděje dožití — ženy", "hodnoty": [82.8, 84.0, null]},
@@ -23,54 +23,54 @@
         {"ukazatel": "Délka života ve zdraví (HLY) — ženy", "hodnoty": [62.4, 64.2, 72.7]}
       ],
       "zdroj": "Eurostat, OECD/State of Health in the EU (2023–2025), ÚZIS.",
-      "poznamka": "Hodnoty Švédska u HLY jsou v podkladu orientační (~). Graf HLY v podkladu uvádí roky 2020–2022 a upozorňuje, že srovnání je metodicky citlivé (subjektivní šetření EU-SILC)."
+      "poznamka": "Hodnoty Švédska u HLY jsou v podkladu orientační (~). Graf HLY v podkladu uvádí roky 2020–2022 a upozorňuje, že srovnání je metodicky citlivé (subjektivní šetření EU-SILC)."
     },
     "strukturaFinancovani": {
       "titulek": "Mezinárodní srovnání: struktura financování",
       "typ": "tabulka",
       "sloupce": ["Česko", "Průměr EU"],
       "radky": [
-        {"ukazatel": "Podíl veřejných zdrojů na financování", "hodnoty": ["~85 %", "~81 %"]},
-        {"ukazatel": "Podíl soukromých zdrojů", "hodnoty": ["15 %", "18,7 %"]},
-        {"ukazatel": "Dobrovolné komerční připojištění", "hodnoty": ["0,7 %", "4,4 %"]},
-        {"ukazatel": "Podíl nemocniční péče na rozpočtu", "hodnoty": ["46,5 %", "36,4 %"]}
+        {"ukazatel": "Podíl veřejných zdrojů na financování", "hodnoty": ["~85 %", "~81 %"]},
+        {"ukazatel": "Podíl soukromých zdrojů", "hodnoty": ["15 %", "18,7 %"]},
+        {"ukazatel": "Dobrovolné komerční připojištění", "hodnoty": ["0,7 %", "4,4 %"]},
+        {"ukazatel": "Podíl nemocniční péče na rozpočtu", "hodnoty": ["46,5 %", "36,4 %"]}
       ],
       "zdroj": "NERV 2024 (dle Eurostatu)."
     },
     "coJeVSazce": {
-      "titulek": "Co je v sázce: McKinsey Global Institute",
+      "titulek": "Co je v sázce: McKinsey Global Institute",
       "polozky": [
-        {"ukazatel": "Roční ztráta ekonomiky kvůli špatnému zdraví a předčasným úmrtím", "hodnota": "~14 % HDP / ~700 mld Kč"},
-        {"ukazatel": "Podíl ztracených zdravých let, který dopadá na produktivní věk", "hodnota": "62 %"},
-        {"ukazatel": "Podíl potenciálu zlepšení řešitelný prevencí a životosprávou", "hodnota": "72 %"},
-        {"ukazatel": "Potenciál dodatečného HDP do roku 2040", "hodnota": "~840 mld Kč / +0,7 %"},
-        {"ukazatel": "Návratnost investice do zdraví", "hodnota": "1,7 Kč na 1 Kč (MGI); až 10 : 1 (Lancet)"}
+        {"ukazatel": "Roční ztráta ekonomiky kvůli špatnému zdraví a předčasným úmrtím", "hodnota": "~14 % HDP / ~700 mld Kč"},
+        {"ukazatel": "Podíl ztracených zdravých let, který dopadá na produktivní věk", "hodnota": "62 %"},
+        {"ukazatel": "Podíl potenciálu zlepšení řešitelný prevencí a životosprávou", "hodnota": "72 %"},
+        {"ukazatel": "Potenciál dodatečného HDP do roku 2040", "hodnota": "~840 mld Kč / +0,7 %"},
+        {"ukazatel": "Návratnost investice do zdraví", "hodnota": "1,7 Kč na 1 Kč (MGI); až 10 : 1 (Lancet)"}
       ],
-      "zdroj": "McKinsey Global Institute — „Zdraví a ekonomický růst“; Lancet.",
-      "poznamka": "Údaj o návratnosti 10 : 1 uvádí podklad s odkazem na Lancet; Lancet není mezi číslovanými zdroji kapitoly."
+      "zdroj": "McKinsey Global Institute — „Zdraví a ekonomický růst“; Lancet.",
+      "poznamka": "Údaj o návratnosti 10 : 1 uvádí podklad s odkazem na Lancet; Lancet není mezi číslovanými zdroji kapitoly."
     },
     "kdeSeZtraciZdraveRoky": {
-      "titulek": "Kde se v Česku ztrácejí zdravé roky života",
+      "titulek": "Kde se v Česku ztrácejí zdravé roky života",
       "jednotka": "% ztracených zdravých let",
       "polozky": [
         {"skupina": "Produktivní věk", "hodnota": 62},
         {"skupina": "Ostatní věkové skupiny", "hodnota": 38}
       ],
       "zdroj": "McKinsey Global Institute (data – 2017).",
-      "poznamka": "Většina ztráty není ve stáří: 62 % ztracených let dopadá na lidi v produktivním věku."
+      "poznamka": "Většina ztráty není ve stáří: 62 % ztracených let dopadá na lidi v produktivním věku."
     },
     "rozdeleniRUDPobytoveTerenni": {
-      "titulek": "Rozdělení financí z rozpočtového určení daní do pobytových a terénních služeb",
+      "titulek": "Rozdělení financí z rozpočtového určení daní do pobytových a terénních služeb",
       "jednotka": "%",
       "polozky": [
         {"uroven": "Státní rozpočet (kraji přerozdělovaný)", "pobytove": 67, "terenni": 33},
         {"uroven": "Krajské rozpočty", "pobytove": 77, "terenni": 23},
         {"uroven": "Obecní rozpočty", "pobytove": 51, "terenni": 49}
       ],
-      "zdroj": "Klusáček, Jan: Král je nahý. Sociální služby v Česku. Prezentace z diskusního setkání, Praha, 24. 6. 2026."
+      "zdroj": "Klusáček, Jan: Král je nahý. Sociální služby v Česku. Prezentace z diskusního setkání, Praha, 24. 6. 2026."
     },
     "financovaniSluzebZnevyhodneni": {
-      "titulek": "Finanční podpora sociálních služeb, které využívají lidé se zdravotním znevýhodněním v Česku",
+      "titulek": "Finanční podpora sociálních služeb, které využívají lidé se zdravotním znevýhodněním v Česku",
       "jednotka": "mld. Kč",
       "polozky": [
         {"typ": "Terénní služby", "castka": 2.61, "podil": 19},
@@ -78,22 +78,22 @@
         {"typ": "Ambulantní služby", "castka": 2.54, "podil": 19}
       ],
       "zdroj": null,
-      "poznamka": "Zdroj grafu není v podkladu uveden; před publikací ověřit."
+      "poznamka": "Zdroj grafu není v podkladu uveden; před publikací ověřit."
     },
     "klientiDlouhodobePece": {
       "titulek": "Počty klientů sociálních služeb dlouhodobé péče (65+ let)",
-      "podtitulek": "Nárůst počtu klientů v populaci 65+ let",
+      "podtitulek": "Nárůst počtu klientů v populaci 65+ let",
       "kategorie": ["Existující 2024", "Dodatečné 2035", "Dodatečné 2040", "Dodatečné 2050", "Celkem"],
       "hodnoty": null,
       "zdroj": "Výkazy 2024, predikce ČSÚ, vlastní zpracování.",
-      "poznamka": "Sloupce grafu nemají číselné popisky a hodnoty nejsou v textu, proto je zde neuvádíme. Doplnit z výkazů 2024 a predikce ČSÚ."
+      "poznamka": "Sloupce grafu nemají číselné popisky a hodnoty nejsou v textu, proto je zde neuvádíme. Doplnit z výkazů 2024 a predikce ČSÚ."
     },
     "komunitniPeceNaklady": {
-      "titulek": "Náklady dlouhodobé péče v komunitě",
+      "titulek": "Náklady dlouhodobé péče v komunitě",
       "jednotka": "% HDP",
       "polozky": [
         {"zeme": "Česko", "hodnota": "0,5"},
-        {"zeme": "Jinde v Evropě", "hodnota": "1,5–2,5"}
+        {"zeme": "Jinde v Evropě", "hodnota": "1,5–2,5"}
       ],
       "zdroj": null
     },
@@ -104,203 +104,203 @@
         {"ukazatel": "Naděje dožití při narození — muži", "jednotka": "roky", "hodnota2012": 75.0, "hodnota2025": 77.5},
         {"ukazatel": "Naděje dožití při narození — ženy", "jednotka": "roky", "hodnota2012": 80.9, "hodnota2025": 83.2}
       ],
-      "zdroj": "ČSÚ, MPSV (pramen tabulky v PDF).",
-      "poznamka": "Úplná tabulka základních demografických a socio-ekonomických ukazatelů 2012–2025 (počet obyvatel podle věku, zemřelí, přirozený přírůstek, migrační saldo, HDP, nezaměstnanost, ekonomicky aktivní) není do textu přenesena. Je v PDF publikace na straně 36. Zde jsou jen tři klíčové řady."
+      "zdroj": "ČSÚ, MPSV (pramen tabulky v PDF).",
+      "poznamka": "Úplná tabulka základních demografických a socio-ekonomických ukazatelů 2012–2025 (počet obyvatel podle věku, zemřelí, přirozený přírůstek, migrační saldo, HDP, nezaměstnanost, ekonomicky aktivní) není do textu přenesena. Je v PDF publikace na straně 36. Zde jsou jen tři klíčové řady."
     }
   },
   "fakta": [
-    {"id": "zdrav_verejne_pojisteni", "hodnota": 70, "jednotka": "% zdrojů systému (přes)", "text": "Veřejné zdravotní pojištění dlouhodobě pokrývá přes 70 % zdrojů českého zdravotnictví.", "zdrojIndex": null},
-    {"id": "zdrav_prijmy_odvody", "hodnota": "více než 2/3", "jednotka": "příjmů zdravotního pojištění", "text": "Příjmy zdravotního pojištění tvoří z více než dvou třetin odvody ekonomicky aktivních obyvatel.", "zdrojIndex": null},
+    {"id": "zdrav_verejne_pojisteni", "hodnota": 70, "jednotka": "% zdrojů systému (přes)", "text": "Veřejné zdravotní pojištění dlouhodobě pokrývá přes 70 % zdrojů českého zdravotnictví.", "zdrojIndex": null},
+    {"id": "zdrav_prijmy_odvody", "hodnota": "více než 2/3", "jednotka": "příjmů zdravotního pojištění", "text": "Příjmy zdravotního pojištění tvoří z více než dvou třetin odvody ekonomicky aktivních obyvatel.", "zdrojIndex": null},
     {"id": "zdrav_financovani_prubezne", "hodnota": "průběžné", "jednotka": "způsob financování", "text": "Financování zdravotnictví je průběžné; systém nevytváří významné rezervy.", "zdrojIndex": null},
-    {"id": "zdrav_naklady_2025", "hodnota": 560, "jednotka": "mld. Kč", "text": "Plánované náklady veřejného zdravotního pojištění pro rok 2025 přesáhly 560 mld. Kč.", "zdrojIndex": null},
-    {"id": "zdrav_schodek_2025", "hodnota": 15, "jednotka": "mld. Kč", "text": "Systém jako celek měl pro rok 2025 skončit se schodkem kolem 15 mld. Kč.", "zdrojIndex": null},
-    {"id": "zdrav_ztraty_pojistoven", "hodnota": "každá pojišťovna", "jednotka": "v letech 2022–2024", "text": "Mezi lety 2022–2024 vykázala alespoň v jednom roce ztrátu každá zdravotní pojišťovna na trhu.", "zdrojIndex": null},
-    {"id": "stareni_80plus_zdvojnasobeni", "hodnota": 2, "jednotka": "× (více než zdvojnásobí)", "text": "Počet seniorů ve věku 80+ se v následujících zhruba 15–20 letech více než zdvojnásobí.", "zdrojIndex": null},
-    {"id": "statni_pojistenci_narust", "hodnota": 10, "jednotka": "% (přibližně)", "text": "Počet státních pojištěnců vzroste přibližně o 10 %.", "zdrojIndex": null},
-    {"id": "nrr_deficit_od_2023", "hodnota": 2023, "jednotka": "rok", "text": "Národní rozpočtová rada opakovaně upozorňuje, že se systém od roku 2023 propadá do deficitu, i přes zavedenou automatickou valorizaci plateb za státní pojištěnce.", "zdrojIndex": 2},
-    {"id": "nato_5_procent", "hodnota": 5, "jednotka": "% HDP (závazek NATO směřuje k)", "text": "Tlak obranných výdajů přichází navíc k již existujícímu deficitu zdravotního pojištění; závazek NATO směřuje k 5 % HDP.", "zdrojIndex": null},
-    {"id": "idea_vydaje_rostou_rychleji", "hodnota": "rychleji než HDP", "jednotka": "růst výdajů na zdravotnictví", "text": "Modely IDEA při CERGE–EI i IES FSV UK počítají s tím, že výdaje na zdravotnictví dlouhodobě rostou rychleji než HDP.", "zdrojIndex": 3},
-    {"id": "zamestnavatel_pojistne_spicka", "hodnota": "mezi nejvyššími ve vyspělém světě", "jednotka": "pojistné placené zaměstnavatelem", "text": "Složka pojistného placeného zaměstnavateli patří mezi nejvyšší ve vyspělém světě; v celkovém zdanění práce u nižších příjmů je Česko spolu s Estonskem na špici žebříčku OECD.", "zdrojIndex": null},
-    {"id": "paq_odvody_nizkopric", "hodnota": "nízkopříjmoví pracující", "jednotka": "nejvíce zasaženi vyššími odvody", "text": "Vyšší zdravotní odvody by ohrozily konkurenceschopnost a dopadly nejvíce na nízkopříjmové pracující; potvrzují to analýzy PAQ Research o degresivním nastavení odvodů bez daňových slev.", "zdrojIndex": 9},
-    {"id": "nemocnice_podil_cr", "hodnota": 46.5, "jednotka": "% rozpočtu (Česko)", "text": "Nemocniční péče tvoří 46,5 % rozpočtu zdravotnictví v Česku oproti 36,4 % v EU27.", "zdrojIndex": 1},
-    {"id": "nemocnice_podil_eu", "hodnota": 36.4, "jednotka": "% rozpočtu (průměr EU27)", "text": "Průměr EU27 u nemocniční péče činí 36,4 % rozpočtu.", "zdrojIndex": 1},
-    {"id": "kontakty_s_lekarem", "hodnota": "neúměrně vysoký počet", "jednotka": "kontaktů pacienta s lékařem", "text": "Česko má neúměrně vysoký počet kontaktů pacienta s lékařem a síť nemocnic není optimálně řízena.", "zdrojIndex": null},
-    {"id": "verejne_zdroje_podil", "hodnota": "~85", "jednotka": "% (průměr EU ~81 %)", "text": "Podíl veřejných zdrojů na financování zdravotnictví je v Česku přibližně 85 %, v EU přibližně 81 %.", "zdrojIndex": 1},
-    {"id": "soukrome_zdroje_podil", "hodnota": 15, "jednotka": "% (průměr EU 18,7 %)", "text": "Podíl soukromých zdrojů na financování zdravotnictví je v Česku 15 %, průměr EU 18,7 %.", "zdrojIndex": 1},
-    {"id": "dobrovolne_pripojisteni", "hodnota": 0.7, "jednotka": "% (průměr EU 4,4 %)", "text": "Dobrovolné komerční připojištění tvoří v Česku 0,7 % financování, průměr EU 4,4 %.", "zdrojIndex": 1},
-    {"id": "hly_muzi_cr", "hodnota": 61.2, "jednotka": "roky (HLY, muži)", "text": "Délka života ve zdraví u mužů v Česku je 61,2 let, průměr EU 63,5 let.", "zdrojIndex": 6},
-    {"id": "hly_zeny_cr", "hodnota": 62.4, "jednotka": "roky (HLY, ženy)", "text": "Délka života ve zdraví u žen v Česku je 62,4 let, průměr EU 64,2 let.", "zdrojIndex": 6},
-    {"id": "hly_svedsko", "hodnota": "~71,0 / ~72,7", "jednotka": "roky (HLY, muži / ženy, Švédsko)", "text": "Nejlepší v EU je Švédsko s délkou života ve zdraví přibližně 71,0 let u mužů a 72,7 let u žen; hodnoty jsou orientační.", "zdrojIndex": 6},
-    {"id": "nadeje_doziti_muzi_cr", "hodnota": 76.9, "jednotka": "roky (průměr EU 78,7)", "text": "Naděje dožití při narození činí v Česku 76,9 let u mužů (průměr EU 78,7 let).", "zdrojIndex": 6},
-    {"id": "nadeje_doziti_zeny_cr", "hodnota": 82.8, "jednotka": "roky (průměr EU 84,0)", "text": "Naděje dožití při narození činí v Česku 82,8 let u žen (průměr EU 84,0 let).", "zdrojIndex": 6},
-    {"id": "mck_ztrata_hdp", "hodnota": 14, "jednotka": "% HDP (~700 mld. Kč ročně)", "text": "Roční ztráta ekonomiky kvůli špatnému zdraví a předčasným úmrtím činí v Česku zhruba 14 % HDP, tedy přibližně 700 mld. Kč.", "zdrojIndex": 7},
-    {"id": "mck_ztracene_roky_produktivni", "hodnota": 62, "jednotka": "% ztracených zdravých let", "text": "62 % ztracených zdravých let dopadá na lidi v produktivním věku.", "zdrojIndex": 7},
-    {"id": "mck_potencial_prevence", "hodnota": 72, "jednotka": "% potenciálu zlepšení", "text": "72 % potenciálu zlepšení je řešitelných prevencí a životosprávou.", "zdrojIndex": 7},
-    {"id": "mck_potencial_hdp_2040", "hodnota": 840, "jednotka": "mld. Kč (+0,7 % HDP do roku 2040)", "text": "Potenciál dodatečného HDP do roku 2040 je přibližně 840 mld. Kč, tj. +0,7 %.", "zdrojIndex": 7},
-    {"id": "navratnost_zdravi", "hodnota": 1.7, "jednotka": "Kč na 1 Kč (MGI); až 10 : 1 (Lancet)", "text": "Návratnost investice do zdraví je 1,7 Kč na 1 Kč podle MGI, podle Lancetu až 10 : 1.", "zdrojIndex": 7},
-    {"id": "prace_neschopnost_2024", "hodnota": 182000, "jednotka": "osob denně v pracovní neschopnosti (2024)", "text": "V roce 2024 bylo denně v pracovní neschopnosti přes 182 tisíc lidí.", "zdrojIndex": 5},
+    {"id": "zdrav_naklady_2025", "hodnota": 560, "jednotka": "mld. Kč", "text": "Plánované náklady veřejného zdravotního pojištění pro rok 2025 přesáhly 560 mld. Kč.", "zdrojIndex": null},
+    {"id": "zdrav_schodek_2025", "hodnota": 15, "jednotka": "mld. Kč", "text": "Systém jako celek měl pro rok 2025 skončit se schodkem kolem 15 mld. Kč.", "zdrojIndex": null},
+    {"id": "zdrav_ztraty_pojistoven", "hodnota": "každá pojišťovna", "jednotka": "v letech 2022–2024", "text": "Mezi lety 2022–2024 vykázala alespoň v jednom roce ztrátu každá zdravotní pojišťovna na trhu.", "zdrojIndex": null},
+    {"id": "stareni_80plus_zdvojnasobeni", "hodnota": 2, "jednotka": "× (více než zdvojnásobí)", "text": "Počet seniorů ve věku 80+ se v následujících zhruba 15–20 letech více než zdvojnásobí.", "zdrojIndex": null},
+    {"id": "statni_pojistenci_narust", "hodnota": 10, "jednotka": "% (přibližně)", "text": "Počet státních pojištěnců vzroste přibližně o 10 %.", "zdrojIndex": null},
+    {"id": "nrr_deficit_od_2023", "hodnota": 2023, "jednotka": "rok", "text": "Národní rozpočtová rada opakovaně upozorňuje, že se systém od roku 2023 propadá do deficitu, i přes zavedenou automatickou valorizaci plateb za státní pojištěnce.", "zdrojIndex": 2},
+    {"id": "nato_5_procent", "hodnota": 5, "jednotka": "% HDP (závazek NATO směřuje k)", "text": "Tlak obranných výdajů přichází navíc k již existujícímu deficitu zdravotního pojištění; závazek NATO směřuje k 5 % HDP.", "zdrojIndex": null},
+    {"id": "idea_vydaje_rostou_rychleji", "hodnota": "rychleji než HDP", "jednotka": "růst výdajů na zdravotnictví", "text": "Modely IDEA při CERGE–EI i IES FSV UK počítají s tím, že výdaje na zdravotnictví dlouhodobě rostou rychleji než HDP.", "zdrojIndex": 3},
+    {"id": "zamestnavatel_pojistne_spicka", "hodnota": "mezi nejvyššími ve vyspělém světě", "jednotka": "pojistné placené zaměstnavatelem", "text": "Složka pojistného placeného zaměstnavateli patří mezi nejvyšší ve vyspělém světě; v celkovém zdanění práce u nižších příjmů je Česko spolu s Estonskem na špici žebříčku OECD.", "zdrojIndex": null},
+    {"id": "paq_odvody_nizkopric", "hodnota": "nízkopříjmoví pracující", "jednotka": "nejvíce zasaženi vyššími odvody", "text": "Vyšší zdravotní odvody by ohrozily konkurenceschopnost a dopadly nejvíce na nízkopříjmové pracující; potvrzují to analýzy PAQ Research o degresivním nastavení odvodů bez daňových slev.", "zdrojIndex": 9},
+    {"id": "nemocnice_podil_cr", "hodnota": 46.5, "jednotka": "% rozpočtu (Česko)", "text": "Nemocniční péče tvoří 46,5 % rozpočtu zdravotnictví v Česku oproti 36,4 % v EU27.", "zdrojIndex": 1},
+    {"id": "nemocnice_podil_eu", "hodnota": 36.4, "jednotka": "% rozpočtu (průměr EU27)", "text": "Průměr EU27 u nemocniční péče činí 36,4 % rozpočtu.", "zdrojIndex": 1},
+    {"id": "kontakty_s_lekarem", "hodnota": "neúměrně vysoký počet", "jednotka": "kontaktů pacienta s lékařem", "text": "Česko má neúměrně vysoký počet kontaktů pacienta s lékařem a síť nemocnic není optimálně řízena.", "zdrojIndex": null},
+    {"id": "verejne_zdroje_podil", "hodnota": "~85", "jednotka": "% (průměr EU ~81 %)", "text": "Podíl veřejných zdrojů na financování zdravotnictví je v Česku přibližně 85 %, v EU přibližně 81 %.", "zdrojIndex": 1},
+    {"id": "soukrome_zdroje_podil", "hodnota": 15, "jednotka": "% (průměr EU 18,7 %)", "text": "Podíl soukromých zdrojů na financování zdravotnictví je v Česku 15 %, průměr EU 18,7 %.", "zdrojIndex": 1},
+    {"id": "dobrovolne_pripojisteni", "hodnota": 0.7, "jednotka": "% (průměr EU 4,4 %)", "text": "Dobrovolné komerční připojištění tvoří v Česku 0,7 % financování, průměr EU 4,4 %.", "zdrojIndex": 1},
+    {"id": "hly_muzi_cr", "hodnota": 61.2, "jednotka": "roky (HLY, muži)", "text": "Délka života ve zdraví u mužů v Česku je 61,2 let, průměr EU 63,5 let.", "zdrojIndex": 6},
+    {"id": "hly_zeny_cr", "hodnota": 62.4, "jednotka": "roky (HLY, ženy)", "text": "Délka života ve zdraví u žen v Česku je 62,4 let, průměr EU 64,2 let.", "zdrojIndex": 6},
+    {"id": "hly_svedsko", "hodnota": "~71,0 / ~72,7", "jednotka": "roky (HLY, muži / ženy, Švédsko)", "text": "Nejlepší v EU je Švédsko s délkou života ve zdraví přibližně 71,0 let u mužů a 72,7 let u žen; hodnoty jsou orientační.", "zdrojIndex": 6},
+    {"id": "nadeje_doziti_muzi_cr", "hodnota": 76.9, "jednotka": "roky (průměr EU 78,7)", "text": "Naděje dožití při narození činí v Česku 76,9 let u mužů (průměr EU 78,7 let).", "zdrojIndex": 6},
+    {"id": "nadeje_doziti_zeny_cr", "hodnota": 82.8, "jednotka": "roky (průměr EU 84,0)", "text": "Naděje dožití při narození činí v Česku 82,8 let u žen (průměr EU 84,0 let).", "zdrojIndex": 6},
+    {"id": "mck_ztrata_hdp", "hodnota": 14, "jednotka": "% HDP (~700 mld. Kč ročně)", "text": "Roční ztráta ekonomiky kvůli špatnému zdraví a předčasným úmrtím činí v Česku zhruba 14 % HDP, tedy přibližně 700 mld. Kč.", "zdrojIndex": 7},
+    {"id": "mck_ztracene_roky_produktivni", "hodnota": 62, "jednotka": "% ztracených zdravých let", "text": "62 % ztracených zdravých let dopadá na lidi v produktivním věku.", "zdrojIndex": 7},
+    {"id": "mck_potencial_prevence", "hodnota": 72, "jednotka": "% potenciálu zlepšení", "text": "72 % potenciálu zlepšení je řešitelných prevencí a životosprávou.", "zdrojIndex": 7},
+    {"id": "mck_potencial_hdp_2040", "hodnota": 840, "jednotka": "mld. Kč (+0,7 % HDP do roku 2040)", "text": "Potenciál dodatečného HDP do roku 2040 je přibližně 840 mld. Kč, tj. +0,7 %.", "zdrojIndex": 7},
+    {"id": "navratnost_zdravi", "hodnota": 1.7, "jednotka": "Kč na 1 Kč (MGI); až 10 : 1 (Lancet)", "text": "Návratnost investice do zdraví je 1,7 Kč na 1 Kč podle MGI, podle Lancetu až 10 : 1.", "zdrojIndex": 7},
+    {"id": "prace_neschopnost_2024", "hodnota": 182000, "jednotka": "osob denně v pracovní neschopnosti (2024)", "text": "V roce 2024 bylo denně v pracovní neschopnosti přes 182 tisíc lidí.", "zdrojIndex": 5},
     {"id": "neschopenky_pololeti", "hodnota": 1300000, "jednotka": "neschopenek (první pololetí, průměr 32,5 dne)", "text": "Jen za první pololetí bylo vystaveno zhruba 1,3 milionu neschopenek, průměrně na 32,5 dne.", "zdrojIndex": 5},
-    {"id": "spotrebni_dan_vynos", "hodnota": "10–15", "jednotka": "mld. Kč ročně (očekávaný výnos)", "text": "Očekávaný výnos ze spotřební daně ze slazených nápojů a úpravy daně u alkoholu je 10–15 mld. Kč ročně i po zohlednění poklesu spotřeby.", "zdrojIndex": null},
-    {"id": "fond_prevence_minimum", "hodnota": 40, "jednotka": "% výnosu (4–6 mld. Kč) do Fondu prevence", "text": "Minimálně 40 % výnosu (4–6 mld. Kč) se účelově váže do Fondu prevence zdravotních pojišťoven.", "zdrojIndex": null},
-    {"id": "socialni_sluzby_dotace_2026", "hodnota": 57.6, "jednotka": "mld. Kč (dotace MPSV, plán 2026)", "text": "Dotace MPSV na sociální služby jsou plánovány pro rok 2026 ve výši přibližně 57,6 mld. Kč.", "zdrojIndex": 16},
-    {"id": "prispevek_na_peci_2025", "hodnota": 46.5, "jednotka": "mld. Kč (rok 2025)", "text": "Příspěvek na péči, který náleží přímo člověku závislému na pomoci, činil v roce 2025 asi 46,5 mld. Kč.", "zdrojIndex": null},
-    {"id": "kraje_vydaje_socialni", "hodnota": 6.1, "jednotka": "mld. Kč", "text": "Kraje na sociální služby vynaložily přibližně 6,1 mld. Kč.", "zdrojIndex": null},
-    {"id": "obce_vydaje_socialni", "hodnota": 3.85, "jednotka": "mld. Kč", "text": "Obce vynaložily na sociální služby výdaje kolem 3,85 mld. Kč.", "zdrojIndex": null},
-    {"id": "rud_pobytove_stat", "hodnota": 67, "jednotka": "% pobytové (terénní 33 %)", "text": "Ze státního rozpočtu přerozdělovaného krajům jde 67 % na pobytové a 33 % na terénní a ambulantní služby.", "zdrojIndex": null},
-    {"id": "rud_pobytove_kraje", "hodnota": 77, "jednotka": "% pobytové (terénní 23 %)", "text": "Z krajských rozpočtů jde 77 % na pobytové a 23 % na terénní a ambulantní služby.", "zdrojIndex": null},
-    {"id": "rud_pobytove_obce", "hodnota": 51, "jednotka": "% pobytové (terénní 49 %)", "text": "Z obecních rozpočtů jde 51 % na pobytové a 49 % na terénní a ambulantní služby.", "zdrojIndex": null},
-    {"id": "praha_chybi_pracovniku", "hodnota": 3000, "jednotka": "sociálních pracovníků a pracovníků v sociálních službách (Praha, odhad)", "text": "V Praze podle dostupných odhadů chybí až 3 000 sociálních pracovníků a pracovníků v sociálních službách.", "zdrojIndex": null},
-    {"id": "neformalni_pecujici_pocet", "hodnota": "250–300 tisíc", "jednotka": "neformálních pečujících (podle některých odhadů až milion)", "text": "V ČR se odhaduje 250–300 tisíc neformálních pečujících; podle některých odhadů jich může být až jeden milion.", "zdrojIndex": null},
+    {"id": "spotrebni_dan_vynos", "hodnota": "10–15", "jednotka": "mld. Kč ročně (očekávaný výnos)", "text": "Očekávaný výnos ze spotřební daně ze slazených nápojů a úpravy daně u alkoholu je 10–15 mld. Kč ročně i po zohlednění poklesu spotřeby.", "zdrojIndex": null},
+    {"id": "fond_prevence_minimum", "hodnota": 40, "jednotka": "% výnosu (4–6 mld. Kč) do Fondu prevence", "text": "Minimálně 40 % výnosu (4–6 mld. Kč) se účelově váže do Fondu prevence zdravotních pojišťoven.", "zdrojIndex": null},
+    {"id": "socialni_sluzby_dotace_2026", "hodnota": 57.6, "jednotka": "mld. Kč (dotace MPSV, plán 2026)", "text": "Dotace MPSV na sociální služby jsou plánovány pro rok 2026 ve výši přibližně 57,6 mld. Kč.", "zdrojIndex": 16},
+    {"id": "prispevek_na_peci_2025", "hodnota": 46.5, "jednotka": "mld. Kč (rok 2025)", "text": "Příspěvek na péči, který náleží přímo člověku závislému na pomoci, činil v roce 2025 asi 46,5 mld. Kč.", "zdrojIndex": null},
+    {"id": "kraje_vydaje_socialni", "hodnota": 6.1, "jednotka": "mld. Kč", "text": "Kraje na sociální služby vynaložily přibližně 6,1 mld. Kč.", "zdrojIndex": null},
+    {"id": "obce_vydaje_socialni", "hodnota": 3.85, "jednotka": "mld. Kč", "text": "Obce vynaložily na sociální služby výdaje kolem 3,85 mld. Kč.", "zdrojIndex": null},
+    {"id": "rud_pobytove_stat", "hodnota": 67, "jednotka": "% pobytové (terénní 33 %)", "text": "Ze státního rozpočtu přerozdělovaného krajům jde 67 % na pobytové a 33 % na terénní a ambulantní služby.", "zdrojIndex": null},
+    {"id": "rud_pobytove_kraje", "hodnota": 77, "jednotka": "% pobytové (terénní 23 %)", "text": "Z krajských rozpočtů jde 77 % na pobytové a 23 % na terénní a ambulantní služby.", "zdrojIndex": null},
+    {"id": "rud_pobytove_obce", "hodnota": 51, "jednotka": "% pobytové (terénní 49 %)", "text": "Z obecních rozpočtů jde 51 % na pobytové a 49 % na terénní a ambulantní služby.", "zdrojIndex": null},
+    {"id": "praha_chybi_pracovniku", "hodnota": 3000, "jednotka": "sociálních pracovníků a pracovníků v sociálních službách (Praha, odhad)", "text": "V Praze podle dostupných odhadů chybí až 3 000 sociálních pracovníků a pracovníků v sociálních službách.", "zdrojIndex": null},
+    {"id": "neformalni_pecujici_pocet", "hodnota": "250–300 tisíc", "jednotka": "neformálních pečujících (podle některých odhadů až milion)", "text": "V ČR se odhaduje 250–300 tisíc neformálních pečujících; podle některých odhadů jich může být až jeden milion.", "zdrojIndex": null},
     {"id": "neformalni_pecujici_zeny", "hodnota": "~2/3", "jednotka": "neformálních pečujících jsou ženy ve věku 35–64 let", "text": "Přibližně dvě třetiny neformálně pečujících tvoří ženy ve věku 35–64 let.", "zdrojIndex": null},
-    {"id": "castecne_uvazky_sucasne", "hodnota": 7, "jednotka": "% (současný podíl částečných úvazků)", "text": "Podíl částečných úvazků je dnes přibližně 7 %.", "zdrojIndex": null},
-    {"id": "castecne_uvazky_cil_2040", "hodnota": 15, "jednotka": "% do roku 2040", "text": "Cílem je podpořit růst částečných úvazků z přibližně 7 % na 15 % do roku 2040.", "zdrojIndex": null},
-    {"id": "terenni_financovani_navyseni", "hodnota": "40–50", "jednotka": "mld. Kč (v příštích deseti letech)", "text": "V příštích deseti letech bude podle odborných odhadů nutné postupně zvýšit financování terénních a odlehčovacích služeb přibližně o 40–50 mld. Kč.", "zdrojIndex": null},
+    {"id": "castecne_uvazky_sucasne", "hodnota": 7, "jednotka": "% (současný podíl částečných úvazků)", "text": "Podíl částečných úvazků je dnes přibližně 7 %.", "zdrojIndex": null},
+    {"id": "castecne_uvazky_cil_2040", "hodnota": 15, "jednotka": "% do roku 2040", "text": "Cílem je podpořit růst částečných úvazků z přibližně 7 % na 15 % do roku 2040.", "zdrojIndex": null},
+    {"id": "terenni_financovani_navyseni", "hodnota": "40–50", "jednotka": "mld. Kč (v příštích deseti letech)", "text": "V příštích deseti letech bude podle odborných odhadů nutné postupně zvýšit financování terénních a odlehčovacích služeb přibližně o 40–50 mld. Kč.", "zdrojIndex": null},
     {"id": "deinstitucionalizace_osoby", "hodnota": 15000, "jednotka": "osob ve velkých zařízeních", "text": "Velká zařízení pro osoby se zdravotním postižením dnes obývá přibližně 15 tisíc lidí; péče se má převádět do menších komunitních služeb.", "zdrojIndex": null},
     {"id": "nova_zarizeni_max_mist", "hodnota": 18, "jednotka": "míst (nejvýše)", "text": "Nová zařízení pro osoby se zdravotním postižením by měla mít nejvýše 18 míst.", "zdrojIndex": null},
-    {"id": "terenni_kapacity_pokryti", "hodnota": "5–10", "jednotka": "% potřeb (terénní kapacity); ambulantní 15–20 %", "text": "Současné terénní kapacity pokrývají jen 5–10 % potřeb, ambulantní 15–20 %.", "zdrojIndex": null},
-    {"id": "personal_pobytove", "hodnota": 48000, "jednotka": "úvazků v pobytových službách", "text": "V pobytových službách je přibližně 48 tisíc úvazků.", "zdrojIndex": null},
-    {"id": "personal_terenni", "hodnota": 12000, "jednotka": "úvazků v terénních službách", "text": "V terénních službách je kolem 12 tisíc úvazků.", "zdrojIndex": null},
-    {"id": "personal_ambulantni", "hodnota": 4000, "jednotka": "úvazků v ambulantních službách", "text": "V ambulantních službách je přibližně 4 tisíce úvazků.", "zdrojIndex": null},
-    {"id": "financovani_terenni_sluzby", "hodnota": 2.61, "jednotka": "mld. Kč (19 %)", "text": "Terénní služby, které využívají lidé se zdravotním znevýhodněním, dostávají 2,61 mld. Kč, tj. 19 %.", "zdrojIndex": null},
-    {"id": "financovani_pobytove_sluzby", "hodnota": 8.45, "jednotka": "mld. Kč (62 %)", "text": "Pobytové služby pro lidi se zdravotním znevýhodněním dostávají 8,45 mld. Kč, tj. 62 %.", "zdrojIndex": null},
-    {"id": "financovani_ambulantni_sluzby", "hodnota": 2.54, "jednotka": "mld. Kč (19 %)", "text": "Ambulantní služby pro lidi se zdravotním znevýhodněním dostávají 2,54 mld. Kč, tj. 19 %.", "zdrojIndex": null},
-    {"id": "dlouhodoba_pece_komunita_cr", "hodnota": 0.5, "jednotka": "% HDP (Česko)", "text": "Náklady dlouhodobé péče v komunitě jsou v Česku 0,5 % HDP, jinde v Evropě 1,5–2,5 % HDP.", "zdrojIndex": null},
-    {"id": "dlouhodoba_pece_komunita_eu", "hodnota": "1,5–2,5", "jednotka": "% HDP (jinde v Evropě)", "text": "V ostatních evropských zemích jsou náklady dlouhodobé péče v komunitě 1,5–2,5 % HDP.", "zdrojIndex": null},
-    {"id": "rud_podil_zdravotne_pece_osoby", "hodnota": 3, "jednotka": "% krajského a obecního RUD (cíl pro osoby se zdravotním postižením)", "text": "U osob se zdravotním postižením má být zachována významná role státního rozpočtu a RUD s cílem dosáhnout přibližně 3 % krajského a obecního RUD.", "zdrojIndex": null},
-    {"id": "demo_zivo_narozeni_2012", "hodnota": 108576, "jednotka": "živě narozených osob (2012)", "text": "V roce 2012 se v Česku živě narodilo 108 576 osob.", "zdrojIndex": null},
-    {"id": "demo_zivo_narozeni_2025", "hodnota": 77636, "jednotka": "živě narozených osob (2025)", "text": "V roce 2025 se v Česku živě narodilo 77 636 osob.", "zdrojIndex": null},
-    {"id": "demo_nadeje_muzi_2012", "hodnota": 75.0, "jednotka": "roky (2012)", "text": "Naděje dožití při narození u mužů byla v roce 2012 75,0 let.", "zdrojIndex": null},
-    {"id": "demo_nadeje_muzi_2025", "hodnota": 77.5, "jednotka": "roky (2025)", "text": "Naděje dožití při narození u mužů byla v roce 2025 77,5 let.", "zdrojIndex": null},
-    {"id": "demo_nadeje_zeny_2012", "hodnota": 80.9, "jednotka": "roky (2012)", "text": "Naděje dožití při narození u žen byla v roce 2012 80,9 let.", "zdrojIndex": null},
-    {"id": "demo_nadeje_zeny_2025", "hodnota": 83.2, "jednotka": "roky (2025)", "text": "Naděje dožití při narození u žen byla v roce 2025 83,2 let.", "zdrojIndex": null},
-    {"id": "cil_zdrave_dozivani", "hodnota": 5, "jednotka": "let (prodloužení dožití ve zdraví během jedné generace)", "text": "Ústředním cílem je prodloužit dobu dožití ve zdraví o 5 let během jedné generace.", "zdrojIndex": null},
-    {"id": "cil_podil_nemocnic_2035", "hodnota": -10, "jednotka": "procentních bodů do roku 2035 (46,5 % → 36,4 %)", "text": "Podíl nemocniční péče na rozpočtu se má snížit z 46,5 % na evropský průměr 36,4 % (−10 p. b.) do roku 2035.", "zdrojIndex": null},
-    {"id": "pilot_rocniky_do_40","hodnota": 40, "jednotka": "let (věk, pro ročníky do 40 let)", "text": "Odměňování za aktivní péči o vlastní zdraví se zavede pilotně a povinně jen pro ročníky do 40 let, doprovozené reformou DPFO.", "zdrojIndex": null}
+    {"id": "terenni_kapacity_pokryti", "hodnota": "5–10", "jednotka": "% potřeb (terénní kapacity); ambulantní 15–20 %", "text": "Současné terénní kapacity pokrývají jen 5–10 % potřeb, ambulantní 15–20 %.", "zdrojIndex": null},
+    {"id": "personal_pobytove", "hodnota": 48000, "jednotka": "úvazků v pobytových službách", "text": "V pobytových službách je přibližně 48 tisíc úvazků.", "zdrojIndex": null},
+    {"id": "personal_terenni", "hodnota": 12000, "jednotka": "úvazků v terénních službách", "text": "V terénních službách je kolem 12 tisíc úvazků.", "zdrojIndex": null},
+    {"id": "personal_ambulantni", "hodnota": 4000, "jednotka": "úvazků v ambulantních službách", "text": "V ambulantních službách je přibližně 4 tisíce úvazků.", "zdrojIndex": null},
+    {"id": "financovani_terenni_sluzby", "hodnota": 2.61, "jednotka": "mld. Kč (19 %)", "text": "Terénní služby, které využívají lidé se zdravotním znevýhodněním, dostávají 2,61 mld. Kč, tj. 19 %.", "zdrojIndex": null},
+    {"id": "financovani_pobytove_sluzby", "hodnota": 8.45, "jednotka": "mld. Kč (62 %)", "text": "Pobytové služby pro lidi se zdravotním znevýhodněním dostávají 8,45 mld. Kč, tj. 62 %.", "zdrojIndex": null},
+    {"id": "financovani_ambulantni_sluzby", "hodnota": 2.54, "jednotka": "mld. Kč (19 %)", "text": "Ambulantní služby pro lidi se zdravotním znevýhodněním dostávají 2,54 mld. Kč, tj. 19 %.", "zdrojIndex": null},
+    {"id": "dlouhodoba_pece_komunita_cr", "hodnota": 0.5, "jednotka": "% HDP (Česko)", "text": "Náklady dlouhodobé péče v komunitě jsou v Česku 0,5 % HDP, jinde v Evropě 1,5–2,5 % HDP.", "zdrojIndex": null},
+    {"id": "dlouhodoba_pece_komunita_eu", "hodnota": "1,5–2,5", "jednotka": "% HDP (jinde v Evropě)", "text": "V ostatních evropských zemích jsou náklady dlouhodobé péče v komunitě 1,5–2,5 % HDP.", "zdrojIndex": null},
+    {"id": "rud_podil_zdravotne_pece_osoby", "hodnota": 3, "jednotka": "% krajského a obecního RUD (cíl pro osoby se zdravotním postižením)", "text": "U osob se zdravotním postižením má být zachována významná role státního rozpočtu a RUD s cílem dosáhnout přibližně 3 % krajského a obecního RUD.", "zdrojIndex": null},
+    {"id": "demo_zivo_narozeni_2012", "hodnota": 108576, "jednotka": "živě narozených osob (2012)", "text": "V roce 2012 se v Česku živě narodilo 108 576 osob.", "zdrojIndex": null},
+    {"id": "demo_zivo_narozeni_2025", "hodnota": 77636, "jednotka": "živě narozených osob (2025)", "text": "V roce 2025 se v Česku živě narodilo 77 636 osob.", "zdrojIndex": null},
+    {"id": "demo_nadeje_muzi_2012", "hodnota": 75.0, "jednotka": "roky (2012)", "text": "Naděje dožití při narození u mužů byla v roce 2012 75,0 let.", "zdrojIndex": null},
+    {"id": "demo_nadeje_muzi_2025", "hodnota": 77.5, "jednotka": "roky (2025)", "text": "Naděje dožití při narození u mužů byla v roce 2025 77,5 let.", "zdrojIndex": null},
+    {"id": "demo_nadeje_zeny_2012", "hodnota": 80.9, "jednotka": "roky (2012)", "text": "Naděje dožití při narození u žen byla v roce 2012 80,9 let.", "zdrojIndex": null},
+    {"id": "demo_nadeje_zeny_2025", "hodnota": 83.2, "jednotka": "roky (2025)", "text": "Naděje dožití při narození u žen byla v roce 2025 83,2 let.", "zdrojIndex": null},
+    {"id": "cil_zdrave_dozivani", "hodnota": 5, "jednotka": "let (prodloužení dožití ve zdraví během jedné generace)", "text": "Ústředním cílem je prodloužit dobu dožití ve zdraví o 5 let během jedné generace.", "zdrojIndex": null},
+    {"id": "cil_podil_nemocnic_2035", "hodnota": -10, "jednotka": "procentních bodů do roku 2035 (46,5 % → 36,4 %)", "text": "Podíl nemocniční péče na rozpočtu se má snížit z 46,5 % na evropský průměr 36,4 % (−10 p. b.) do roku 2035.", "zdrojIndex": null},
+    {"id": "pilot_rocniky_do_40","hodnota": 40, "jednotka": "let (věk, pro ročníky do 40 let)", "text": "Odměňování za aktivní péči o vlastní zdraví se zavede pilotně a povinně jen pro ročníky do 40 let, doprovozené reformou DPFO.", "zdrojIndex": null}
   ],
   "priciny": [
-    {"poradi": 1, "typ": "řetězec", "pricina": "Stárnutí populace", "popis": "Počet lidí ve věku 80+ se v následujících zhruba 15–20 letech více než zdvojnásobí, zatímco počet lidí v produktivním věku klesá.", "zdrojIndex": null},
-    {"poradi": 2, "typ": "řetězec", "pricina": "Výdaje rostou s věkem, příjmy stojí na pracujících", "popis": "Příjmy zdravotního pojištění tvoří z více než dvou třetin odvody ekonomicky aktivních, výdaje ale rostou s věkem populace. Nůžky se rozevírají automaticky.", "zdrojIndex": 2},
-    {"poradi": 3, "typ": "řetězec", "pricina": "Deficit zdravotního pojištění", "popis": "Systém se od roku 2023 propadá do deficitu i přes automatickou valorizaci plateb za státní pojištěnce, ještě před tlakem obranných výdajů.", "zdrojIndex": 2},
-    {"poradi": 4, "typ": "další", "pricina": "Mechanismus financování přes odvody je vyčerpaný", "popis": "Odvody placené zaměstnavatelem patří mezi nejvyšší ve vyspělém světě. Vyšší odvody by ohrozily konkurenceschopnost a dopadly nejvíce na nízkopříjmové pracující.", "zdrojIndex": 9},
-    {"poradi": 5, "typ": "další", "pricina": "Nezdravá populace", "popis": "Vysoká míra kouření, nadváhy a konzumace alkoholu a jedna z nejnižších měr proočkovanosti seniorů. Délka života ve zdraví dlouhodobě stagnuje a je to fiskální problém.", "zdrojIndex": null},
-    {"poradi": 6, "typ": "další", "pricina": "Drahá nemocniční péče", "popis": "Nemocniční péče tvoří 46,5 % rozpočtu oproti 36,4 % v EU27, síť není optimálně řízena a je neúměrně vysoký počet kontaktů pacienta s lékařem.", "zdrojIndex": 1},
-    {"poradi": 7, "typ": "další", "pricina": "Roztříštěné financování sociálních služeb", "popis": "Služby se financují z dotací MPSV, příspěvku na péči, rozpočtů krajů a obcí, úhrad uživatelů, zdravotního pojištění a EU fondů. Nejsou součástí pojistného systému a většina výdajů není mandatorní.", "zdrojIndex": null},
-    {"poradi": 8, "typ": "další", "pricina": "Pečující opouštějí zaměstnání", "popis": "Nedostatek terénních a odlehčovacích služeb nutí lidi v produktivním věku odejít ze zaměstnání. Po skončení péče se obtížně vracejí na trh práce.", "zdrojIndex": null},
-    {"poradi": 9, "typ": "další", "pricina": "Oddělenost zdravotní a sociální péče", "popis": "Systémy fungují podle odlišných pravidel a financování. Oddělenost se projeví v prodloužených hospitalizacích, čekání na místo v pobytové službě a v rodinách, které péči zajišťují samy.", "zdrojIndex": null},
-    {"poradi": 10, "typ": "další", "pricina": "Nedostatek pracovníků", "popis": "Chybí zejména pracovníci v terénní a ambulantní péči; v Praze podle odhadů až 3 000 sociálních pracovníků. Chybí také zdravotní sestry, klíčové pro propojení obou systémů.", "zdrojIndex": null}
+    {"poradi": 1, "typ": "řetězec", "pricina": "Stárnutí populace", "popis": "Počet lidí ve věku 80+ se v následujících zhruba 15–20 letech více než zdvojnásobí, zatímco počet lidí v produktivním věku klesá.", "zdrojIndex": null},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Výdaje rostou s věkem, příjmy stojí na pracujících", "popis": "Příjmy zdravotního pojištění tvoří z více než dvou třetin odvody ekonomicky aktivních, výdaje ale rostou s věkem populace. Nůžky se rozevírají automaticky.", "zdrojIndex": 2},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Deficit zdravotního pojištění", "popis": "Systém se od roku 2023 propadá do deficitu i přes automatickou valorizaci plateb za státní pojištěnce, ještě před tlakem obranných výdajů.", "zdrojIndex": 2},
+    {"poradi": 4, "typ": "další", "pricina": "Mechanismus financování přes odvody je vyčerpaný", "popis": "Odvody placené zaměstnavatelem patří mezi nejvyšší ve vyspělém světě. Vyšší odvody by ohrozily konkurenceschopnost a dopadly nejvíce na nízkopříjmové pracující.", "zdrojIndex": 9},
+    {"poradi": 5, "typ": "další", "pricina": "Nezdravá populace", "popis": "Vysoká míra kouření, nadváhy a konzumace alkoholu a jedna z nejnižších měr proočkovanosti seniorů. Délka života ve zdraví dlouhodobě stagnuje a je to fiskální problém.", "zdrojIndex": null},
+    {"poradi": 6, "typ": "další", "pricina": "Drahá nemocniční péče", "popis": "Nemocniční péče tvoří 46,5 % rozpočtu oproti 36,4 % v EU27, síť není optimálně řízena a je neúměrně vysoký počet kontaktů pacienta s lékařem.", "zdrojIndex": 1},
+    {"poradi": 7, "typ": "další", "pricina": "Roztříštěné financování sociálních služeb", "popis": "Služby se financují z dotací MPSV, příspěvku na péči, rozpočtů krajů a obcí, úhrad uživatelů, zdravotního pojištění a EU fondů. Nejsou součástí pojistného systému a většina výdajů není mandatorní.", "zdrojIndex": null},
+    {"poradi": 8, "typ": "další", "pricina": "Pečující opouštějí zaměstnání", "popis": "Nedostatek terénních a odlehčovacích služeb nutí lidi v produktivním věku odejít ze zaměstnání. Po skončení péče se obtížně vracejí na trh práce.", "zdrojIndex": null},
+    {"poradi": 9, "typ": "další", "pricina": "Oddělenost zdravotní a sociální péče", "popis": "Systémy fungují podle odlišných pravidel a financování. Oddělenost se projeví v prodloužených hospitalizacích, čekání na místo v pobytové službě a v rodinách, které péči zajišťují samy.", "zdrojIndex": null},
+    {"poradi": 10, "typ": "další", "pricina": "Nedostatek pracovníků", "popis": "Chybí zejména pracovníci v terénní a ambulantní péči; v Praze podle odhadů až 3 000 sociálních pracovníků. Chybí také zdravotní sestry, klíčové pro propojení obou systémů.", "zdrojIndex": null}
   ],
   "opatreni": [
     {
       "cislo": 1,
       "nazev": "Úhrady lékařům navázané na práci se životním stylem",
-      "popis": "Úhrady lékařům navážeme nejen na účast pacientů na prevenci, ale především na krátké intervence a nasměrování k programům životního stylu: zachycení a řešení kouření, rizikové konzumace alkoholu, nadváhy a nedostatku pohybu. Odměňujeme skutečnou práci se zdravím pacienta, ne jen počet vykonaných prohlídek. Evidence: doporučení NERV (krátké intervence lékařů, kapitace navázaná na prevenci).",
-      "klicoveCislo": "úhrady navázané na krátké intervence a programy životního stylu",
-      "sekce": "1. Zdravý životní styl a prevence sníží budoucí potřebu péče"
+      "popis": "Úhrady lékařům navážeme nejen na účast pacientů na prevenci, ale především na krátké intervence a nasměrování k programům životního stylu: zachycení a řešení kouření, rizikové konzumace alkoholu, nadváhy a nedostatku pohybu. Odměňujeme skutečnou práci se zdravím pacienta, ne jen počet vykonaných prohlídek. Evidence: doporučení NERV (krátké intervence lékařů, kapitace navázaná na prevenci).",
+      "klicoveCislo": "úhrady navázané na krátké intervence a programy životního stylu",
+      "sekce": "1. Zdravý životní styl a prevence sníží budoucí potřebu péče"
     },
     {
       "cislo": 2,
-      "nazev": "Spotřební daň ze slazených nápojů a úprava daně z alkoholu s výnosem do prevence",
-      "popis": "Zavedeme spotřební daň ze slazených nápojů, zrušíme výjimku u tichého vína a upravíme spotřební daň u alkoholu obecně. Očekávaný výnos je 10–15 mld. Kč ročně i po zohlednění poklesu spotřeby; minimálně 40 % výnosu (4–6 mld. Kč) se účelově váže do Fondu prevence zdravotních pojišťoven. Evidence: NERV 2021/2024; mezinárodní zkušenost s cukernou daní (mapy IEZ).",
-      "klicoveCislo": "10–15 mld. Kč ročně; min. 40 % výnosu do Fondu prevence",
-      "sekce": "1. Zdravý životní styl a prevence sníží budoucí potřebu péče"
+      "nazev": "Spotřební daň ze slazených nápojů a úprava daně z alkoholu s výnosem do prevence",
+      "popis": "Zavedeme spotřební daň ze slazených nápojů, zrušíme výjimku u tichého vína a upravíme spotřební daň u alkoholu obecně. Očekávaný výnos je 10–15 mld. Kč ročně i po zohlednění poklesu spotřeby; minimálně 40 % výnosu (4–6 mld. Kč) se účelově váže do Fondu prevence zdravotních pojišťoven. Evidence: NERV 2021/2024; mezinárodní zkušenost s cukernou daní (mapy IEZ).",
+      "klicoveCislo": "10–15 mld. Kč ročně; min. 40 % výnosu do Fondu prevence",
+      "sekce": "1. Zdravý životní styl a prevence sníží budoucí potřebu péče"
     },
     {
       "cislo": 3,
-      "nazev": "Přesun péče z lůžek do jednodenní, ambulantní a domácí péče",
-      "popis": "Podíl nemocniční péče na rozpočtu snížíme z 46,5 % k evropskému průměru 36,4 % (−10 p. b.) do roku 2035 přesunem do jednodenní, ambulantní, domácí péče a telemedicíny; nemocnice restrukturalizujeme do regionálních sítí. Podmínkou je kapacita na druhé straně: domácí a ošetřovatelská péče, terénní a odlehčovací služby a lidé, kteří je zajistí. Rozvoj těchto kapacit plánujeme ve stejném čase jako restrukturalizaci lůžkové sítě, ne až po ní.",
-      "klicoveCislo": "46,5 % → 36,4 % podílu nemocniční péče do roku 2035",
+      "nazev": "Přesun péče z lůžek do jednodenní, ambulantní a domácí péče",
+      "popis": "Podíl nemocniční péče na rozpočtu snížíme z 46,5 % k evropskému průměru 36,4 % (−10 p. b.) do roku 2035 přesunem do jednodenní, ambulantní, domácí péče a telemedicíny; nemocnice restrukturalizujeme do regionálních sítí. Podmínkou je kapacita na druhé straně: domácí a ošetřovatelská péče, terénní a odlehčovací služby a lidé, kteří je zajistí. Rozvoj těchto kapacit plánujeme ve stejném čase jako restrukturalizaci lůžkové sítě, ne až po ní.",
+      "klicoveCislo": "46,5 % → 36,4 % podílu nemocniční péče do roku 2035",
       "sekce": "2. Efektivita: správná péče na správném místě"
     },
     {
       "cislo": 4,
       "nazev": "Rozšíření hodnocení nákladové efektivity (HTA) na všechny hrazené intervence",
-      "popis": "Hodnocení nákladové efektivity rozšíříme ze samotných léků na všechny hrazené intervence a začneme počítat i úspory v sociálním systému (umožní to probíhající propojení dat MZ–MPSV). Posuzovat budeme dopad na veřejné rozpočty jako celek. Opatření, které zdraží sociální služby a ušetří na hospitalizacích, i opatření s opačným efektem musí projít stejnou optikou.",
+      "popis": "Hodnocení nákladové efektivity rozšíříme ze samotných léků na všechny hrazené intervence a začneme počítat i úspory v sociálním systému (umožní to probíhající propojení dat MZ–MPSV). Posuzovat budeme dopad na veřejné rozpočty jako celek. Opatření, které zdraží sociální služby a ušetří na hospitalizacích, i opatření s opačným efektem musí projít stejnou optikou.",
       "klicoveCislo": "posuzování dopadu na veřejné rozpočty jako celek",
       "sekce": "2. Efektivita: správná péče na správném místě"
     },
     {
       "cislo": 5,
       "nazev": "Posílení postavení neformálních pečujících",
-      "popis": "Rozšíříme terénní, asistenční a odlehčovací služby, aby pečující mohli péči kombinovat se zaměstnáním, odpočinkem a vlastním životem. V návaznosti na politiku pracovního trhu podpoříme růst částečných úvazků ze současných přibližně 7 % na 15 % do roku 2040.",
-      "klicoveCislo": "částečné úvazky 7 % → 15 % do roku 2040",
-      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
+      "popis": "Rozšíříme terénní, asistenční a odlehčovací služby, aby pečující mohli péči kombinovat se zaměstnáním, odpočinkem a vlastním životem. V návaznosti na politiku pracovního trhu podpoříme růst částečných úvazků ze současných přibližně 7 % na 15 % do roku 2040.",
+      "klicoveCislo": "částečné úvazky 7 % → 15 % do roku 2040",
+      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
     },
     {
       "cislo": 6,
-      "nazev": "Výrazné rozšíření terénních a odlehčovacích služeb",
-      "popis": "V příštích deseti letech bude podle odborných odhadů nutné postupně zvýšit jejich financování přibližně o 40–50 mld. Kč. Dostupnější služby podpoří zaměstnanost pečujících a omezí tlak na pobytovou péči.",
-      "klicoveCislo": "+40–50 mld. Kč v příštích deseti letech",
-      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
+      "nazev": "Výrazné rozšíření terénních a odlehčovacích služeb",
+      "popis": "V příštích deseti letech bude podle odborných odhadů nutné postupně zvýšit jejich financování přibližně o 40–50 mld. Kč. Dostupnější služby podpoří zaměstnanost pečujících a omezí tlak na pobytovou péči.",
+      "klicoveCislo": "+40–50 mld. Kč v příštích deseti letech",
+      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
     },
     {
       "cislo": 7,
-      "nazev": "Pokračování v deinstitucionalizaci",
-      "popis": "Převádět budeme péči o osoby se zdravotním postižením z velkých zařízení, v nichž žije přibližně 15 tisíc lidí, do menších komunitních služeb. Nová zařízení by měla mít nejvýše 18 míst. Současné terénní kapacity pokrývají jen 5–10 % a ambulantní 15–20 % potřeb.",
+      "nazev": "Pokračování v deinstitucionalizaci",
+      "popis": "Převádět budeme péči o osoby se zdravotním postižením z velkých zařízení, v nichž žije přibližně 15 tisíc lidí, do menších komunitních služeb. Nová zařízení by měla mít nejvýše 18 míst. Současné terénní kapacity pokrývají jen 5–10 % a ambulantní 15–20 % potřeb.",
       "klicoveCislo": "nová zařízení nejvýše 18 míst; 15 tisíc lidí ve velkých zařízeních",
-      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
+      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
     },
     {
       "cislo": 8,
       "nazev": "Posílení personálních kapacit",
-      "popis": "Rozvoj služeb podpoříme odpovídajícím růstem počtu pracovníků, zejména v terénní a ambulantní péči. Proti přibližně 48 tisícům úvazků v pobytových službách je v terénních službách kolem 12 tisíc a v ambulantních přibližně 4 tisíce úvazků. Část těchto profesí stojí na pomezí obou systémů, zejména zdravotní sestry v domácí a ošetřovatelské péči.",
-      "klicoveCislo": "48 tisíc úvazků (pobytové) vs. 12 tisíc (terénní) a 4 tisíce (ambulantní)",
-      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
+      "popis": "Rozvoj služeb podpoříme odpovídajícím růstem počtu pracovníků, zejména v terénní a ambulantní péči. Proti přibližně 48 tisícům úvazků v pobytových službách je v terénních službách kolem 12 tisíc a v ambulantních přibližně 4 tisíce úvazků. Část těchto profesí stojí na pomezí obou systémů, zejména zdravotní sestry v domácí a ošetřovatelské péči.",
+      "klicoveCislo": "48 tisíc úvazků (pobytové) vs. 12 tisíc (terénní) a 4 tisíce (ambulantní)",
+      "sekce": "3. Soběstačnost, dlouhodobá péče a podpora pečujících"
     },
     {
       "cislo": 9,
-      "nazev": "Zpřehlednění a sjednocení systému",
-      "popis": "Jasně vymezíme odpovědnost státu, krajů a obcí a sjednotíme pravidla plánování a financování podle skutečných potřeb regionů. Dostupnost základních služeb nesmí záviset na místních prioritách.",
-      "klicoveCislo": "jasně vymezená odpovědnost státu, krajů a obcí",
-      "sekce": "4. Zdroje a odpovědnost za financování"
+      "nazev": "Zpřehlednění a sjednocení systému",
+      "popis": "Jasně vymezíme odpovědnost státu, krajů a obcí a sjednotíme pravidla plánování a financování podle skutečných potřeb regionů. Dostupnost základních služeb nesmí záviset na místních prioritách.",
+      "klicoveCislo": "jasně vymezená odpovědnost státu, krajů a obcí",
+      "sekce": "4. Zdroje a odpovědnost za financování"
     },
     {
       "cislo": 10,
-      "nazev": "Rozlišení financování péče o seniory a osoby se zdravotním postižením",
-      "popis": "Připravíme odpovídající modely financování obou typů péče. U seniorů prověříme vyšší spoluúčast, pojištění dlouhodobé péče a majetkové testování; u osob se zdravotním postižením zachováme významnou roli státního rozpočtu a RUD s cílem dosáhnout přibližně 3 % krajského a obecního RUD a garantovat dostupnost služeb bez ohledu na bydliště.",
-      "klicoveCislo": "přibližně 3 % krajského a obecního RUD pro osoby se zdravotním postižením",
-      "sekce": "4. Zdroje a odpovědnost za financování"
+      "nazev": "Rozlišení financování péče o seniory a osoby se zdravotním postižením",
+      "popis": "Připravíme odpovídající modely financování obou typů péče. U seniorů prověříme vyšší spoluúčast, pojištění dlouhodobé péče a majetkové testování; u osob se zdravotním postižením zachováme významnou roli státního rozpočtu a RUD s cílem dosáhnout přibližně 3 % krajského a obecního RUD a garantovat dostupnost služeb bez ohledu na bydliště.",
+      "klicoveCislo": "přibližně 3 % krajského a obecního RUD pro osoby se zdravotním postižením",
+      "sekce": "4. Zdroje a odpovědnost za financování"
     },
     {
       "cislo": 11,
-      "nazev": "Zvýhodnění těch, kdo aktivně pečují o své zdraví",
-      "popis": "Inspirujeme se nejlépe hodnocenými evropskými systémy (Nizozemsko) a umožníme, aby zdravotní pojišťovna navázala část pojistného na aktivní a doložitelnou péči pojištěnce o vlastní zdraví, tedy aby lidem, kteří o sebe pečují, mohla nabídnout nižší platbu. Odměňujeme širší koš zdraví prospěšného chování (pravidelný pohyb, nekouření, střídmost v alkoholu, práce s hmotností a spánkem, účast v ověřených programech), nikoli aktuální zdravotní stav. Zavedeme pilotně a povinně jen pro ročníky do 40 let, doprovozené reformou DPFO.",
+      "nazev": "Zvýhodnění těch, kdo aktivně pečují o své zdraví",
+      "popis": "Inspirujeme se nejlépe hodnocenými evropskými systémy (Nizozemsko) a umožníme, aby zdravotní pojišťovna navázala část pojistného na aktivní a doložitelnou péči pojištěnce o vlastní zdraví, tedy aby lidem, kteří o sebe pečují, mohla nabídnout nižší platbu. Odměňujeme širší koš zdraví prospěšného chování (pravidelný pohyb, nekouření, střídmost v alkoholu, práce s hmotností a spánkem, účast v ověřených programech), nikoli aktuální zdravotní stav. Zavedeme pilotně a povinně jen pro ročníky do 40 let, doprovozené reformou DPFO.",
       "klicoveCislo": "pilotně pro ročníky do 40 let, doprovozeno reformou DPFO",
-      "sekce": "4. Zdroje a odpovědnost za financování"
+      "sekce": "4. Zdroje a odpovědnost za financování"
     }
   ],
   "cile": [
-    {"cil": "Prodloužit dobu dožití ve zdraví o 5 let během jedné generace a tím stabilizovat veřejné finance", "hodnota": 5, "jednotka": "let (během jedné generace)"},
-    {"cil": "Snížit podíl nemocniční péče na rozpočtu z 46,5 % na evropský průměr 36,4 % do roku 2035", "hodnota": 36.4, "jednotka": "% rozpočtu (do 2035)"},
-    {"cil": "Zvýšit podíl částečných úvazků pečujících ze současných přibližně 7 % na 15 % do roku 2040", "hodnota": 15, "jednotka": "% (do 2040)"},
-    {"cil": "Zvýšit financování terénních a odlehčovacích služeb přibližně o 40–50 mld. Kč během příštích deseti let", "hodnota": "40–50", "jednotka": "mld. Kč (za deset let)"},
-    {"cil": "Převést péči o osoby se zdravotním postižením z velkých zařízení (přibližně 15 tisíc lidí) do menších komunitních služeb", "hodnota": 15000, "jednotka": "osob ve velkých zařízeních"}
+    {"cil": "Prodloužit dobu dožití ve zdraví o 5 let během jedné generace a tím stabilizovat veřejné finance", "hodnota": 5, "jednotka": "let (během jedné generace)"},
+    {"cil": "Snížit podíl nemocniční péče na rozpočtu z 46,5 % na evropský průměr 36,4 % do roku 2035", "hodnota": 36.4, "jednotka": "% rozpočtu (do 2035)"},
+    {"cil": "Zvýšit podíl částečných úvazků pečujících ze současných přibližně 7 % na 15 % do roku 2040", "hodnota": 15, "jednotka": "% (do 2040)"},
+    {"cil": "Zvýšit financování terénních a odlehčovacích služeb přibližně o 40–50 mld. Kč během příštích deseti let", "hodnota": "40–50", "jednotka": "mld. Kč (za deset let)"},
+    {"cil": "Převést péči o osoby se zdravotním postižením z velkých zařízení (přibližně 15 tisíc lidí) do menších komunitních služeb", "hodnota": 15000, "jednotka": "osob ve velkých zařízeních"}
   ],
   "prinese": [
-    "Nižší nemocnost a delší produktivní život. V roce 2024 bylo denně v pracovní neschopnosti přes 182 tisíc lidí; jen za první pololetí bylo vystaveno zhruba 1,3 milionu neschopenek (průměr 32,5 dne). Každý ušetřený den je výkon navíc.",
-    "Zachovaná pracovní kapacita pečujících. Dostupné terénní, asistenční a odlehčovací služby umožní pečovat a přitom nepřerušit profesní dráhu; domácnosti tak méně často přijdou o celý příjem.",
-    "Udržitelné veřejné finance bez skokového zvyšování odvodů z práce.",
-    "Spravedlivější přístup ke zdraví. Dnes jsou zdravotní rizika silně sociálně podmíněná; u dětí z chudších rodin začíná nerovnost u obezity a končí u deprese (PAQ Research, SYRI, studie HBSC).",
-    "Zdravější a soběstačnější populace je předpokladem silnější ekonomiky. Prevence a účinnější péče prodlouží dobu aktivního života, sníží pracovní neschopnost a podpoří produktivitu. Dostupné domácí, terénní a odlehčovací služby umožní pečujícím zůstat na trhu práce a omezí propad rodin do příjmové nejistoty."
+    "Nižší nemocnost a delší produktivní život. V roce 2024 bylo denně v pracovní neschopnosti přes 182 tisíc lidí; jen za první pololetí bylo vystaveno zhruba 1,3 milionu neschopenek (průměr 32,5 dne). Každý ušetřený den je výkon navíc.",
+    "Zachovaná pracovní kapacita pečujících. Dostupné terénní, asistenční a odlehčovací služby umožní pečovat a přitom nepřerušit profesní dráhu; domácnosti tak méně často přijdou o celý příjem.",
+    "Udržitelné veřejné finance bez skokového zvyšování odvodů z práce.",
+    "Spravedlivější přístup ke zdraví. Dnes jsou zdravotní rizika silně sociálně podmíněná; u dětí z chudších rodin začíná nerovnost u obezity a končí u deprese (PAQ Research, SYRI, studie HBSC).",
+    "Zdravější a soběstačnější populace je předpokladem silnější ekonomiky. Prevence a účinnější péče prodlouží dobu aktivního života, sníží pracovní neschopnost a podpoří produktivitu. Dostupné domácí, terénní a odlehčovací služby umožní pečujícím zůstat na trhu práce a omezí propad rodin do příjmové nejistoty."
   ],
   "zdroje": [
     {"index": 1, "citace": "NERV, 2024. Udržitelnost financování zdravotnictví: pracovní podklad tematické skupiny Zdravotnictví. Praha: Úřad vlády ČR. Web: vlada.gov.cz."},
-    {"index": 2, "citace": "Národní rozpočtová rada, 2024, 2025. Zpráva o dlouhodobé udržitelnosti veřejných financí; informační studie Délka života ve zdraví. Web: rozpoctovarada.cz."},
-    {"index": 3, "citace": "Bryndová, L. a Šlegerová, L., IDEA při CERGE-EI. Model příjmů a výdajů veřejného zdravotního pojištění; studie k udržitelnosti veřejných financí. Web: idea.cerge-ei.cz."},
-    {"index": 4, "citace": "Ministerstvo zdravotnictví a ÚZIS, 2025. Strategické analýzy potřeb rezortu zdravotnictví (Koncepce 2025). Web: mzd.gov.cz, nzip.cz/koncepce2025."},
-    {"index": 5, "citace": "ÚZIS a ČSÚ, 2024. Pracovní neschopnost pro nemoc a úraz v ČR; Střední délka života ve zdraví (Senioři v datech). Web: csu.gov.cz."},
-    {"index": 6, "citace": "OECD a Evropská komise, 2023, 2025. State of Health in the EU: Zdravotní profil Česko. Web: health.ec.europa.eu, oecd.org."},
-    {"index": 7, "citace": "McKinsey Global Institute. Prioritizing Health / Zdraví a ekonomický růst (ČR). Web: mckinsey.com."},
-    {"index": 8, "citace": "Institut / Iniciativa pro efektivní zdravotnictví (J. Hlávka). Studie o účasti na prevenci; grafy a mapy měsíce. Web: efektivnizdravotnictvi.cz, hepii.econ.muni.cz."},
+    {"index": 2, "citace": "Národní rozpočtová rada, 2024, 2025. Zpráva o dlouhodobé udržitelnosti veřejných financí; informační studie Délka života ve zdraví. Web: rozpoctovarada.cz."},
+    {"index": 3, "citace": "Bryndová, L. a Šlegerová, L., IDEA při CERGE-EI. Model příjmů a výdajů veřejného zdravotního pojištění; studie k udržitelnosti veřejných financí. Web: idea.cerge-ei.cz."},
+    {"index": 4, "citace": "Ministerstvo zdravotnictví a ÚZIS, 2025. Strategické analýzy potřeb rezortu zdravotnictví (Koncepce 2025). Web: mzd.gov.cz, nzip.cz/koncepce2025."},
+    {"index": 5, "citace": "ÚZIS a ČSÚ, 2024. Pracovní neschopnost pro nemoc a úraz v ČR; Střední délka života ve zdraví (Senioři v datech). Web: csu.gov.cz."},
+    {"index": 6, "citace": "OECD a Evropská komise, 2023, 2025. State of Health in the EU: Zdravotní profil Česko. Web: health.ec.europa.eu, oecd.org."},
+    {"index": 7, "citace": "McKinsey Global Institute. Prioritizing Health / Zdraví a ekonomický růst (ČR). Web: mckinsey.com."},
+    {"index": 8, "citace": "Institut / Iniciativa pro efektivní zdravotnictví (J. Hlávka). Studie o účasti na prevenci; grafy a mapy měsíce. Web: efektivnizdravotnictvi.cz, hepii.econ.muni.cz."},
     {"index": 9, "citace": "PAQ Research. Chytřejší daňení zaměstnanců; socioekonomické nerovnosti ve zdraví; studie HBSC. Web: paqresearch.cz."},
-    {"index": 10, "citace": "Advance Healthcare Management Institute. Prevence: praktický návod na zlepšení zdravotního stavu a podporu ekonomického růstu. Web: advanceinstitute.cz."},
-    {"index": 11, "citace": "KLUSÁČEK, Jan, 2026. Analýza základních dat o kapacitách a financování sociálních služeb pro osoby se zdravotním znevýhodněním (a seniory) v Česku. Praha: JDI, z. s. Dostupné z: https://jdicz.eu/infodata-data-analyzy-infopapery/."},
-    {"index": 12, "citace": "Röschová, M., Duarte, J., Špalek, J., 2026. Životní podmínky osob s vysokou potřebou péče. Výzkumná zpráva. Praha: PAQ Research. Dostupné z: https://www.paqresearch.cz/post/pece-o-lidi-s-postizenim/."},
-    {"index": 13, "citace": "MPSV, 2026. Analýza vývoje příjmů a výdajů domácností ČR v roce 2025. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/analyza-vyvoje-prijmu-a-vydaju-domacnosti-cr-v-roce-2025."},
-    {"index": 14, "citace": "MPSV, 2026. Informace o vyplacených dávkách v rezortu MPSV ČR v prosinci 2025. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/informace-o-vyplacenych-davkach."},
-    {"index": 15, "citace": "MPSV. Statistická ročenka z oblasti práce a sociálních věcí 2025. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/statisticka-rocenka-z-oblasti-prace-a-socialnich-veci-2025."},
-    {"index": 16, "citace": "MPSV, 2025. Financování sociálních služeb v roce 2026: 57,6 mld. Kč. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/pro-rok-2026-mpsv-navysi-financovani-socialnich-sluzeb-o-1-972-mld."},
+    {"index": 10, "citace": "Advance Healthcare Management Institute. Prevence: praktický návod na zlepšení zdravotního stavu a podporu ekonomického růstu. Web: advanceinstitute.cz."},
+    {"index": 11, "citace": "KLUSÁČEK, Jan, 2026. Analýza základních dat o kapacitách a financování sociálních služeb pro osoby se zdravotním znevýhodněním (a seniory) v Česku. Praha: JDI, z. s. Dostupné z: https://jdicz.eu/infodata-data-analyzy-infopapery/."},
+    {"index": 12, "citace": "Röschová, M., Duarte, J., Špalek, J., 2026. Životní podmínky osob s vysokou potřebou péče. Výzkumná zpráva. Praha: PAQ Research. Dostupné z: https://www.paqresearch.cz/post/pece-o-lidi-s-postizenim/."},
+    {"index": 13, "citace": "MPSV, 2026. Analýza vývoje příjmů a výdajů domácností ČR v roce 2025. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/analyza-vyvoje-prijmu-a-vydaju-domacnosti-cr-v-roce-2025."},
+    {"index": 14, "citace": "MPSV, 2026. Informace o vyplacených dávkách v rezortu MPSV ČR v prosinci 2025. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/informace-o-vyplacenych-davkach."},
+    {"index": 15, "citace": "MPSV. Statistická ročenka z oblasti práce a sociálních věcí 2025. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/statisticka-rocenka-z-oblasti-prace-a-socialnich-veci-2025."},
+    {"index": 16, "citace": "MPSV, 2025. Financování sociálních služeb v roce 2026: 57,6 mld. Kč. Praha: MPSV. Dostupné z: https://mpsv.gov.cz/pro-rok-2026-mpsv-navysi-financovani-socialnich-sluzeb-o-1-972-mld."},
     {"index": 17, "citace": "MPSV, 2025. Bilance působení na MPSV (2021–2025). Prezentace. Praha: MPSV, září 2025. Dostupné z: https://mpsv.gov.cz/pro-rok-2026-mpsv-navysi-financovani-socialnich-sluzeb-o-1-972-mld."},
     {"index": 18, "citace": "MPO, 2026. Hospodářská strategie. Česko: Země pro budoucnost 2.0. Praha: MPO. ISBN 978-80-906942-9-3. Dostupné z: https://vlada.gov.cz/cz/ppov/nerv_2020/pracovni_skupiny/pracovni-skupiny-nerv-182439/."},
-    {"index": 19, "citace": "NERV. Návrhy NERV k vyššímu dlouhodobě udržitelnému ekonomickému růstu. 37 opatření. Pracovní materiál pracovní skupiny. Praha: Úřad vlády ČR. Web: vlada.gov.cz."}
+    {"index": 19, "citace": "NERV. Návrhy NERV k vyššímu dlouhodobě udržitelnému ekonomickému růstu. 37 opatření. Pracovní materiál pracovní skupiny. Praha: Úřad vlády ČR. Web: vlada.gov.cz."}
   ]
 }

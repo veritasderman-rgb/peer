@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Jak je na tom můj kraj",
   description:
-    "Podíl lidí v exekuci, nezaměstnanost, mzdy a HDP po krajích na jednoduché mapě. Vyber svůj kraj, porovnej ho s průměrem ČR a uvidíš, co s tím chce udělat strategie.",
+    "Podíl lidí v exekuci, nezaměstnanost, mzdy a HDP po krajích na jednoduché mapě. Vyber svůj kraj, porovnej ho s průměrem ČR a uvidíš, co s tím chce udělat strategie.",
   alternates: { canonical: "/moje-obec" },
 };
 
@@ -26,12 +26,12 @@ export default function MojeObecPage() {
           <p className="eyebrow">Po krajích</p>
           <h1>Jak je na tom můj kraj</h1>
           <p className={styles.lede}>
-            Strategie mluví o celé zemi, ale bydlí se v konkrétním kraji. Tady jsou čísla pro každý ze čtrnácti krajů:
-            exekuce, nezaměstnanost, mzdy a HDP. Vyber svůj a porovnej ho s průměrem ČR.
+            Strategie mluví o celé zemi, ale bydlí se v konkrétním kraji. Tady jsou čísla pro každý ze čtrnácti krajů:
+            exekuce, nezaměstnanost, mzdy a HDP. Vyber svůj a porovnej ho s průměrem ČR.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
-          Kolik lidí v tvém kraji čelí exekuci a kolik si vydělají? Klepni na dlaždici, ať to vidíš.
+          Kolik lidí v tvém kraji čelí exekuci a kolik si vydělají? Klepni na dlaždici, ať to vidíš.
         </GarantBubble>
       </section>
 
@@ -49,14 +49,13 @@ export default function MojeObecPage() {
         <div className={styles.twoCol}>
           <div className="prose">
             <p>
-              Studie má po krajích jen málo: u exekucí ukazuje mapu bez čísel (jen průměr ČR 6,4 %, s. 31) a u HDP graf bez
-              hodnot (s. 77). Textem jmenuje jen Karlovarský, Ústecký a Liberecký kraj jako kraje s nejvíc lidmi v exekuci a
-              Ústecký a Karlovarský kraj jako ty, které ekonomicky zaostávají. Praha a Jihomoravský kraj podle ní patří
-              k hlavním motorům růstu.
+              Studie má po krajích jen málo: u exekucí ukazuje mapu bez čísel (jen průměr ČR 6,4 %, s. 31) a u HDP graf bez
+              hodnot (s. 77). Textem jmenuje jen Karlovarský, Ústecký a Liberecký kraj jako kraje s nejvíc lidmi v exekuci a Ústecký a Karlovarský kraj jako ty, které ekonomicky zaostávají. Praha a Jihomoravský kraj podle ní patří
+              k hlavním motorům růstu.
             </p>
             <p>
-              Proto jsou všechna čísla na této stránce <b>aktuální data zdroje, ne ze studie</b>. Vzali jsme je z veřejných zdrojů
-              (u exekucí a HDP stejných, jaké cituje studie) a u každé metriky je uvedené, odkud a k jakému datu. Jsou to
+              Proto jsou všechna čísla na této stránce <b>aktuální data zdroje, ne ze studie</b>. Vzali jsme je z veřejných zdrojů
+              (u exekucí a HDP stejných, jaké cituje studie) a u každé metriky je uvedené, odkud a k jakému datu. Jsou to
               data za všech čtrnáct krajů, nic není dopočítané ani odhadnuté.
             </p>
           </div>
@@ -83,16 +82,16 @@ export default function MojeObecPage() {
       </section>
 
       <section className={`wrap ${styles.section} ${styles.last}`} aria-labelledby="temata">
-        <h2 id="temata">Co s tím strategie dělá</h2>
+        <h2 id="temata">Co s tím strategie dělá</h2>
         <p className="prose">
-          Čísla nejsou verdikt, jen výchozí bod. Každé téma, ke kterému se tu čísla vážou, má vlastní stránku s opatřeními a cíli.
+          Čísla nejsou verdikt, jen výchozí bod. Každé téma, ke kterému se tu čísla vážou, má vlastní stránku s opatřeními a cíli.
         </p>
         <ul className={styles.links}>
           {temata.map(([slug, nazev]) => (
             <li key={slug}>
               <Link href={`/${slug}`} className={`card ${styles.link}`}>
                 <span className="display">{nazev}</span>
-                <span className="muted">Opatření, cíle a čísla ze studie →</span>
+                <span className="muted">Opatření, cíle a čísla ze studie →</span>
               </Link>
             </li>
           ))}

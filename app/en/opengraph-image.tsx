@@ -28,7 +28,7 @@ export default function Image() {
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           <div style={{ fontSize: 150, fontWeight: 800, lineHeight: 1, color: "#fec934" }}>+1 pp growth</div>
           <div style={{ fontSize: 40, fontWeight: 700, lineHeight: 1.15, maxWidth: 1000 }}>
-            CZK 1,000 billion more output a year by 2035. CZK 68,000 more per worker.
+            CZK 1,000 billion more output a year by 2035. CZK 68,000 more per worker.
           </div>
           <div style={{ fontSize: 32, color: "#d9d9d9" }}>PEER Economic Strategy 2026–2035, summarised in English.</div>
         </div>

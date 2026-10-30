@@ -19,7 +19,7 @@ export function Spirala({ kroky, loop }: { kroky: { nazev: string; popis: string
         </li>
       ))}
       {loop && (
-        <li className={`${styles.node} ${styles.loop}`} style={{ transitionDelay: `${kroky.length * 220}ms` }} aria-label="a kruh se uzavírá">
+        <li className={`${styles.node} ${styles.loop}`} style={{ transitionDelay: `${kroky.length * 220}ms` }} aria-label="a kruh se uzavírá">
           <span className={styles.name}>{loop.nazev}</span>
           <span className={styles.desc}>{loop.popis}</span>
         </li>

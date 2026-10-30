@@ -1,5 +1,5 @@
 {
-  "poznamka": "Roky jsou převzaty z textu studie tam, kde je uveden (explicitni: true, včetně „do konce dekády“ = 2035 a „do roku 2035/2040“). U lhůt bez počátečního roku („do dvou let“, „v příštích deseti letech“) se počítá od roku 2026 jako prvního roku (rok = 2025 + počet let; explicitni: false). Věcem bez jakékoli časové vazby (např. bydlení, euro, stát) se rok nepřiřazuje.",
+  "poznamka": "Roky jsou převzaty z textu studie tam, kde je uveden (explicitni: true, včetně „do konce dekády“ = 2035 a „do roku 2035/2040“). U lhůt bez počátečního roku („do dvou let“, „v příštích deseti letech“) se počítá od roku 2026 jako prvního roku (rok = 2025 + počet let; explicitni: false). Věcem bez jakékoli časové vazby (např. bydlení, euro, stát) se rok nepřiřazuje.",
   "milniky": [
     {
       "rok": 2027,
@@ -7,55 +7,55 @@
       "text": "Investiční pobídky se místo počtu míst vážou na přidanou hodnotu; novela zákona do dvou let",
       "typ": "opatreni",
       "explicitni": false,
-      "zdroj": "kap. 3.1, opatření 8 (Investiční pobídky podle přidané hodnoty na zaměstnance): „novelou zákona o investičních pobídkách do dvou let“"
+      "zdroj": "kap. 3.1, opatření 8 (Investiční pobídky podle přidané hodnoty na zaměstnance): „novelou zákona o investičních pobídkách do dvou let“"
     },
     {
       "rok": 2028,
       "slug": "energie",
-      "text": "Povolenky se rozšíří na vytápění a pohonné hmoty; polovina výnosů jde lidem, zhruba 5 000 Kč na domácnost ročně",
+      "text": "Povolenky se rozšíří na vytápění a pohonné hmoty; polovina výnosů jde lidem, zhruba 5 000 Kč na domácnost ročně",
       "typ": "opatreni",
       "explicitni": true,
-      "zdroj": "kap. 3.2, opatření 7 (Energetický kupón) a cíl 3: „Od roku 2028 se emisní povolenky rozšíří…“"
+      "zdroj": "kap. 3.2, opatření 7 (Energetický kupón) a cíl 3: „Od roku 2028 se emisní povolenky rozšíří…“"
     },
     {
       "rok": 2029,
       "slug": "energie",
-      "text": "Začíná okno 2029–2031, kdy lze přezbrojit staré solární parky na stejné ploše a doplnit baterie",
+      "text": "Začíná okno 2029–2031, kdy lze přezbrojit staré solární parky na stejné ploše a doplnit baterie",
       "typ": "opatreni",
       "explicitni": true,
-      "zdroj": "kap. 3.2, opatření 3 (Fotovoltaika: tempo přes 1 GW ročně a přezbrojení): „okno let 2029 až 2031“"
+      "zdroj": "kap. 3.2, opatření 3 (Fotovoltaika: tempo přes 1 GW ročně a přezbrojení): „okno let 2029 až 2031“"
     },
     {
       "rok": 2030,
       "slug": "energie",
-      "text": "Cíl 10,1 GW fotovoltaiky; k tomu je třeba stavět přes 1 GW solárů ročně (loni 0,7 GW)",
+      "text": "Cíl 10,1 GW fotovoltaiky; k tomu je třeba stavět přes 1 GW solárů ročně (loni 0,7 GW)",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 3.2, opatření 3 a fakta fve_cil_2030 („Cíl 10,1 GW fotovoltaiky do roku 2030“, cíl národního plánu NKEP)"
+      "zdroj": "kap. 3.2, opatření 3 a fakta fve_cil_2030 („Cíl 10,1 GW fotovoltaiky do roku 2030“, cíl národního plánu NKEP)"
     },
     {
       "rok": 2030,
       "slug": "exekuce",
-      "text": "V exekuci je o 30 % lidí méně: nejvýše 413 000 místo dnešních 590 000",
+      "text": "V exekuci je o 30 % lidí méně: nejvýše 413 000 místo dnešních 590 000",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.3, cíl 1 (Snížit počet lidí v exekuci o 30 %); data/exekuce.json fakta cil_pocet_v_exekuci_2030"
+      "zdroj": "kap. 1.3, cíl 1 (Snížit počet lidí v exekuci o 30 %); data/exekuce.json fakta cil_pocet_v_exekuci_2030"
     },
     {
       "rok": 2030,
       "slug": "exekuce",
-      "text": "Vymáhaná dlužná částka klesá dvakrát rychleji: zhruba o 10 mld. Kč ročně místo dnešních 5",
+      "text": "Vymáhaná dlužná částka klesá dvakrát rychleji: zhruba o 10 mld. Kč ročně místo dnešních 5",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.3, cíl 2 (Zdvojnásobit roční pokles vymáhané částky); data/exekuce.json fakta cil_pokles_vymahane_2030"
+      "zdroj": "kap. 1.3, cíl 2 (Zdvojnásobit roční pokles vymáhané částky); data/exekuce.json fakta cil_pokles_vymahane_2030"
     },
     {
       "rok": 2030,
       "slug": "exekuce",
-      "text": "Na legální trh práce se vrátí dalších 200 000 lidí z exekucí",
+      "text": "Na legální trh práce se vrátí dalších 200 000 lidí z exekucí",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.3, cíl 3 (Vrátit na legální trh práce +200 000 lidí); data/exekuce.json fakta cil_navrat_na_trh_2030"
+      "zdroj": "kap. 1.3, cíl 3 (Vrátit na legální trh práce +200 000 lidí); data/exekuce.json fakta cil_navrat_na_trh_2030"
     },
     {
       "rok": 2030,
@@ -63,23 +63,23 @@
       "text": "Výdaje na aktivní politiku zaměstnanosti (např. rekvalifikace) dosáhnou průměru zemí OECD",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.3, opatření 4 (Zvýšíme výdaje na aktivní politiku zaměstnanosti) a cíl 2: „do roku 2030“"
+      "zdroj": "kap. 1.3, opatření 4 (Zvýšíme výdaje na aktivní politiku zaměstnanosti) a cíl 2: „do roku 2030“"
     },
     {
       "rok": 2030,
       "slug": "prumysl",
-      "text": "Výdaje Česka na výzkum a vývoj přesáhnou 2,1 % HDP (dnes 1,82 %)",
+      "text": "Výdaje Česka na výzkum a vývoj přesáhnou 2,1 % HDP (dnes 1,82 %)",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 3.1, cíl 1; data/prumysl.json grafy.vydajeNaVaV.cilNad2030 (graf „2030: nad 2,1 %“)"
+      "zdroj": "kap. 3.1, cíl 1; data/prumysl.json grafy.vydajeNaVaV.cilNad2030 (graf „2030: nad 2,1 %“)"
     },
     {
       "rok": 2032,
       "slug": "prumysl",
-      "text": "Mezi lety 2027 a 2032 vznikne 200 univerzitních firem, přes pětinásobek dnešního tempa",
+      "text": "Mezi lety 2027 a 2032 vznikne 200 univerzitních firem, přes pětinásobek dnešního tempa",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 3.1, opatření 11 a cíl 3 (200 nových spin-offů, 2027–2032); data/prumysl.json fakta (cíl 200 spin-offů)"
+      "zdroj": "kap. 3.1, opatření 11 a cíl 3 (200 nových spin-offů, 2027–2032); data/prumysl.json fakta (cíl 200 spin-offů)"
     },
     {
       "rok": 2035,
@@ -87,23 +87,23 @@
       "text": "Výsledky inovačního ekosystému (ESOP, startupový fond) se projeví za 10 až 20 let",
       "typ": "dopad",
       "explicitni": false,
-      "zdroj": "kap. 3.3; část Dopady, č. 17 (data/dopad.json nevycislena[6]): „v horizontu 10–20 let“; dolní mez 10 let od roku 2026"
+      "zdroj": "kap. 3.3; část Dopady, č. 17 (data/dopad.json nevycislena[6]): „v horizontu 10–20 let“; dolní mez 10 let od roku 2026"
     },
     {
       "rok": 2035,
       "slug": "prumysl",
-      "text": "Výdaje na výzkum a vývoj dosáhnou 2,5 % HDP, evropský průměr je dnes 2,24 %",
+      "text": "Výdaje na výzkum a vývoj dosáhnou 2,5 % HDP, evropský průměr je dnes 2,24 %",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 3.1, cíl 1 („časem 2,5 % HDP“); data/prumysl.json grafy.vydajeNaVaV.cil2035 (graf udává rok 2035)"
+      "zdroj": "kap. 3.1, cíl 1 („časem 2,5 % HDP“); data/prumysl.json grafy.vydajeNaVaV.cil2035 (graf udává rok 2035)"
     },
     {
       "rok": 2035,
       "slug": "regiony",
-      "text": "Obce získají 20 % příjmů z místní ekonomiky místo dnešních 2 %",
+      "text": "Obce získají 20 % příjmů z místní ekonomiky místo dnešních 2 %",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 4.1; část Dopady, č. 18 (data/dopad.json nevycislena[7]): „Cíl: 20 % příjmů obcí z místní ekonomiky do roku 2035“"
+      "zdroj": "kap. 4.1; část Dopady, č. 18 (data/dopad.json nevycislena[7]): „Cíl: 20 % příjmů obcí z místní ekonomiky do roku 2035“"
     },
     {
       "rok": 2035,
@@ -111,39 +111,39 @@
       "text": "Alespoň jedna česká univerzita patří do TOP 100 mezinárodních žebříčků",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.2, opatření 17 (Alespoň jednu českou univerzitu v TOP 100) a cíl 7: „do roku 2035“"
+      "zdroj": "kap. 1.2, opatření 17 (Alespoň jednu českou univerzitu v TOP 100) a cíl 7: „do roku 2035“"
     },
     {
       "rok": 2035,
       "slug": "vzdelanost",
-      "text": "Vzdělávací reformy zvedají růst HDP o 0,3 % ročně, za celou dekádu o 3 %",
+      "text": "Vzdělávací reformy zvedají růst HDP o 0,3 % ročně, za celou dekádu o 3 %",
       "typ": "dopad",
       "explicitni": true,
-      "zdroj": "kap. 1.2, Co to přinese? („ve sledované dekádě o 3 %“); data/dopad.json vycislena[0]"
+      "zdroj": "kap. 1.2, Co to přinese? („ve sledované dekádě o 3 %“); data/dopad.json vycislena[0]"
     },
     {
       "rok": 2035,
       "slug": "zdravi",
-      "text": "Podíl nemocniční péče na rozpočtu klesne z 46,5 % na 36,4 %, tedy na evropský průměr",
+      "text": "Podíl nemocniční péče na rozpočtu klesne z 46,5 % na 36,4 %, tedy na evropský průměr",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.4, opatření 3 (Přesun péče z lůžek do jednodenní, ambulantní a domácí péče) a cíl 2: „do roku 2035“"
+      "zdroj": "kap. 1.4, opatření 3 (Přesun péče z lůžek do jednodenní, ambulantní a domácí péče) a cíl 2: „do roku 2035“"
     },
     {
       "rok": 2035,
       "slug": "zdravi",
-      "text": "Financování terénních a odlehčovacích služeb vzroste postupně o 40–50 mld. Kč",
+      "text": "Financování terénních a odlehčovacích služeb vzroste postupně o 40–50 mld. Kč",
       "typ": "cil",
       "explicitni": false,
-      "zdroj": "kap. 1.4, opatření 6 (Výrazné rozšíření terénních a odlehčovacích služeb) a cíl 4: „v příštích deseti letech“"
+      "zdroj": "kap. 1.4, opatření 6 (Výrazné rozšíření terénních a odlehčovacích služeb) a cíl 4: „v příštích deseti letech“"
     },
     {
       "rok": 2035,
       "slug": "zeny",
-      "text": "Rozdíl mezi platy mužů a žen ve veřejném sektoru se sníží na polovinu",
+      "text": "Rozdíl mezi platy mužů a žen ve veřejném sektoru se sníží na polovinu",
       "typ": "opatreni",
       "explicitni": true,
-      "zdroj": "kap. 1.3, opatření 3 (Snížíme platový rozdíl mezi muži a ženami uvnitř veřejného sektoru): „do roku 2035“"
+      "zdroj": "kap. 1.3, opatření 3 (Snížíme platový rozdíl mezi muži a ženami uvnitř veřejného sektoru): „do roku 2035“"
     },
     {
       "rok": 2040,
@@ -151,60 +151,60 @@
       "text": "Po roce 2040 nové jaderné bloky kryjí kolem poloviny spotřeby elektřiny",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 3.2, opatření 4 (Jádro jako stabilizační prvek) a cíl 6: „Po roce 2040 provozovat nové jaderné bloky…“"
+      "zdroj": "kap. 3.2, opatření 4 (Jádro jako stabilizační prvek) a cíl 6: „Po roce 2040 provozovat nové jaderné bloky…“"
     },
     {
       "rok": 2040,
       "slug": "zdravi",
-      "text": "Podíl částečných úvazků mezi pečujícími vzroste ze 7 % na 15 %",
+      "text": "Podíl částečných úvazků mezi pečujícími vzroste ze 7 % na 15 %",
       "typ": "cil",
       "explicitni": true,
-      "zdroj": "kap. 1.4, opatření 5 (Posílení postavení neformálních pečujících) a cíl 3: „do roku 2040“"
+      "zdroj": "kap. 1.4, opatření 5 (Posílení postavení neformálních pečujících) a cíl 3: „do roku 2040“"
     },
     {
       "rok": 2040,
       "slug": "zdravi",
-      "text": "Zdravější lidé přidají do roku 2040 zhruba 840 mld. Kč HDP (+0,7 %)",
+      "text": "Zdravější lidé přidají do roku 2040 zhruba 840 mld. Kč HDP (+0,7 %)",
       "typ": "dopad",
       "explicitni": true,
-      "zdroj": "kap. 1.4, tabulka Cíle („Potenciál dodatečného HDP do roku 2040“); data/zdravi.json fakta[27]; data/dopad.json vycislena[4]"
+      "zdroj": "kap. 1.4, tabulka Cíle („Potenciál dodatečného HDP do roku 2040“); data/zdravi.json fakta[27]; data/dopad.json vycislena[4]"
     }
   ],
   "celkovyDopad": [
     {
       "rok": 2026,
-      "text": "Rychlejší růst přinese ekonomice v prvním roce zhruba 80 mld. Kč navíc",
+      "text": "Rychlejší růst přinese ekonomice v prvním roce zhruba 80 mld. Kč navíc",
       "typ": "dopad",
       "explicitni": false,
-      "zdroj": "data/dopad.json nabeh, rok 1 (80 mld.); zdroj peer.pirati.cz, rok 1 = 2026 je odvozeno"
+      "zdroj": "data/dopad.json nabeh, rok 1 (80 mld.); zdroj peer.pirati.cz, rok 1 = 2026 je odvozeno"
     },
     {
       "rok": 2027,
-      "text": "Ve druhém roce je přínos zhruba 161 mld. Kč navíc",
+      "text": "Ve druhém roce je přínos zhruba 161 mld. Kč navíc",
       "typ": "dopad",
       "explicitni": false,
-      "zdroj": "data/dopad.json nabeh, rok 2 (161 mld.); rok 2 = 2027 je odvozeno"
+      "zdroj": "data/dopad.json nabeh, rok 2 (161 mld.); rok 2 = 2027 je odvozeno"
     },
     {
       "rok": 2028,
-      "text": "Ve třetím roce je přínos zhruba 242 mld. Kč navíc",
+      "text": "Ve třetím roce je přínos zhruba 242 mld. Kč navíc",
       "typ": "dopad",
       "explicitni": false,
-      "zdroj": "data/dopad.json nabeh, rok 3 (242 mld.); rok 3 = 2028 je odvozeno"
+      "zdroj": "data/dopad.json nabeh, rok 3 (242 mld.); rok 3 = 2028 je odvozeno"
     },
     {
       "rok": 2029,
-      "text": "Ve čtvrtém roce je přínos zhruba 324 mld. Kč navíc",
+      "text": "Ve čtvrtém roce je přínos zhruba 324 mld. Kč navíc",
       "typ": "dopad",
       "explicitni": false,
-      "zdroj": "data/dopad.json nabeh, rok 4 (324 mld.); rok 4 = 2029 je odvozeno"
+      "zdroj": "data/dopad.json nabeh, rok 4 (324 mld.); rok 4 = 2029 je odvozeno"
     },
     {
       "rok": 2035,
-      "text": "Na konci dekády je HDP o 1 000 mld. Kč ročně vyšší a státní rozpočet má přes 300 mld. Kč ročně navíc",
+      "text": "Na konci dekády je HDP o 1 000 mld. Kč ročně vyšší a státní rozpočet má přes 300 mld. Kč ročně navíc",
       "typ": "dopad",
       "explicitni": true,
-      "zdroj": "data/dopad.json souhrn (hdpNavicMldRocneKonecDekady 1000, rozpocetNavicMld 300); studie, souhrnný dopad (s. 88)"
+      "zdroj": "data/dopad.json souhrn (hdpNavicMldRocneKonecDekady 1000, rozpocetNavicMld 300); studie, souhrnný dopad (s. 88)"
     }
   ]
 }

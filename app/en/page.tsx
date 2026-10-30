@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 
 const PDF_URL = "https://majak.pirati.cz/documents/647/Piratska_Hospodarska_strategie.pdf";
 const DESCRIPTION =
-  "Czechia makes things like an elite but grows only like an average economy. The Pirate Expert Economic Council (PEER) has a plan for one percentage point more growth a year: CZK 1,000 billion more output a year by 2035. An English summary of the 14 topics.";
+  "Czechia makes things like an elite but grows only like an average economy. The Pirate Expert Economic Council (PEER) has a plan for one percentage point more growth a year: CZK 1,000 billion more output a year by 2035. An English summary of the 14 topics.";
 
 export const metadata: Metadata = {
   title: { absolute: "Czechia can do better – PEER Economic Strategy 2026–2035" },
@@ -57,7 +57,7 @@ export default function EnglishPage() {
             ))}
           </ul>
           <p className={`src ${styles.bandSrc}`}>
-            Source: PEER Economic Strategy 2026–2035, summary of impact (p. 88). The study itself calls these a target and an
+            Source: PEER Economic Strategy 2026–2035, summary of impact (p. 88). The study itself calls these a target and an
             order-of-magnitude estimate, not an accounting sum.
           </p>
         </div>

@@ -10,28 +10,28 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Jak vznikl tento web",
-  description: "Strategii napsal tým ekonomů PEER. Web k ní postavila, napsala a nakreslila umělá inteligence. Kolik to ušetřilo a proč to děláme takhle.",
+  description: "Strategii napsal tým ekonomů PEER. Web k ní postavila, napsala a nakreslila umělá inteligence. Kolik to ušetřilo a proč to děláme takhle.",
   alternates: { canonical: "/jak-vznikl" },
 };
 
 /* Co AI udělala, v pořadí, jak to šlo. Čísla jsou skutečná (počty stránek, videí, kalkulaček z registru). */
 const kroky = [
   { n: "01", nazev: "Přečetla studii", text: "99 stran, 14 kapitol, přes 200 odkazů na zdroje." },
-  { n: "02", nazev: "Vytěžila čísla", text: "Každé číslo se zdrojem do strojově čitelných dat. Z nich čte text, grafy i videa." },
-  { n: "03", nazev: "Napsala lidskou verzi", text: "Tři hloubky čtení, modelové postavy, slovník, řádek „pro tebe“ u každého opatření." },
-  { n: "04", nazev: "Navrhla vizuální systém", text: "Čtrnáct piktogramů témat, značky garantů s monogramem, scény příběhu a grafy v jednom střídmém stylu." },
-  { n: "05", nazev: "Naprogramovala web", text: "Grafy, kalkulačky, scrollytelling, tmavý režim, mobil. A otestovala ho." },
-  { n: "06", nazev: "Natočila a namluvila videa", text: "Scénář z dat, render, syntetický hlas, hudba, titulky. Široké i na výšku." },
+  { n: "02", nazev: "Vytěžila čísla", text: "Každé číslo se zdrojem do strojově čitelných dat. Z nich čte text, grafy i videa." },
+  { n: "03", nazev: "Napsala lidskou verzi", text: "Tři hloubky čtení, modelové postavy, slovník, řádek „pro tebe“ u každého opatření." },
+  { n: "04", nazev: "Navrhla vizuální systém", text: "Čtrnáct piktogramů témat, značky garantů s monogramem, scény příběhu a grafy v jednom střídmém stylu." },
+  { n: "05", nazev: "Naprogramovala web", text: "Grafy, kalkulačky, scrollytelling, tmavý režim, mobil. A otestovala ho." },
+  { n: "06", nazev: "Natočila a namluvila videa", text: "Scénář z dat, render, syntetický hlas, hudba, titulky. Široké i na výšku." },
 ];
 
 /* Odhad ceny pilotní stránky u české agentury. Je to odhad bez zdroje, založený na běžných sazbách
    (grafik a animátor 800–1 500 Kč/h, vývojář 1 200–2 000 Kč/h). Rozpětí je schválně široké. */
 const odhad = [
-  { polozka: "Vizuální systém: piktogramy témat, značky garantů, scény příběhu", lidi: "grafik, 3–5 dní", cena: "40–80 tis. Kč", max: 80 },
-  { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč", max: 350 },
-  { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč", max: 60 },
-  { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč", max: 110 },
-  { polozka: "Řízení, korektury, nasazení", lidi: "projektový manažer", cena: "30–50 tis. Kč", max: 50 },
+  { polozka: "Vizuální systém: piktogramy témat, značky garantů, scény příběhu", lidi: "grafik, 3–5 dní", cena: "40–80 tis. Kč", max: 80 },
+  { polozka: "Web: návrh, kódování, grafy, 2 kalkulačky, scrollytelling, tmavý režim, mobil", lidi: "designér a vývojář, 15–25 dní", cena: "180–350 tis. Kč", max: 350 },
+  { polozka: "Texty: převyprávění kapitoly, persona, slovník, popisky", lidi: "copywriter, 3–5 dní", cena: "30–60 tis. Kč", max: 60 },
+  { polozka: "Video za minutu: scénář, motion design, dvě verze (16:9 a 9:16), namluvení, hudba", lidi: "motion designér 3–5 dní, dabér a studio, zvukař", cena: "60–110 tis. Kč", max: 110 },
+  { polozka: "Řízení, korektury, nasazení", lidi: "projektový manažer", cena: "30–50 tis. Kč", max: 50 },
 ];
 
 const initials = (jmeno: string) =>
@@ -49,20 +49,20 @@ export default function JakVzniklPage() {
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
-          <p className="eyebrow">O webu</p>
+          <p className="eyebrow">O webu</p>
           <h1>Strategii napsali lidé. Web postavila AI.</h1>
           <p className={styles.lede}>
-            Na studii pracoval celý tým ekonomů a odborníků. Tenhle web k ní napsala, nakreslila, naprogramovala
-            a namluvila umělá inteligence. Jeden člověk ji zadal, řídil a kontroloval.
+            Na studii pracoval celý tým ekonomů a odborníků. Tenhle web k ní napsala, nakreslila, naprogramovala
+            a namluvila umělá inteligence. Jeden člověk ji zadal, řídil a kontroloval.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="thinking" side="left">
-          I piktogramy a značky garantů navrhla AI. Kreslené postavy jsme zkusili a zavrhli: na vážné téma sedí střídmější jazyk.
+          I piktogramy a značky garantů navrhla AI. Kreslené postavy jsme zkusili a zavrhli: na vážné téma sedí střídmější jazyk.
         </GarantBubble>
       </section>
 
       {/* dva sloupce: lidé vs. AI, v číslech */}
-      <section className={`wrap ${styles.section}`} aria-label="Lidé a AI v číslech">
+      <section className={`wrap ${styles.section}`} aria-label="Lidé a AI v číslech">
         <div className={styles.duo}>
           <div className={`card ${styles.duoCard}`}>
             <p className="eyebrow">Studie · lidé</p>
@@ -90,8 +90,8 @@ export default function JakVzniklPage() {
       <section className={`wrap ${styles.section}`} aria-labelledby="tym">
         <h2 id="tym">Kdo napsal strategii</h2>
         <p className="prose muted">
-          Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π
-          a dalšími odborníky. Členové rady a jejich témata:
+          Hospodářskou strategii 2026–2035 zpracovala Pirátská expertní ekonomická rada (PEER) ve spolupráci s Institutem π
+          a dalšími odborníky. Členové rady a jejich témata:
         </p>
         <ul className={styles.team}>
           {clenove.map((c) => {
@@ -123,9 +123,9 @@ export default function JakVzniklPage() {
       <section className={`wrap ${styles.section}`} aria-labelledby="ai">
         <h2 id="ai">Co udělala AI</h2>
         <p className="prose muted">
-          Web zadal a řídil <a href="https://josefpavlovic.cz" target="_blank" rel="noreferrer">Josef Pavlovic</a>, člen PEER.
-          Různé části dělaly různě silné modely: jednodušší vytěžování dat ty levnější, kreslení a skládání stránek ty
-          nejsilnější. Přesně tak, jak strategie píše o práci obecně: nejlepší nástroj na každou práci, ne nejdražší na všechno.
+          Web zadal a řídil <a href="https://josefpavlovic.cz" target="_blank" rel="noreferrer">Josef Pavlovic</a>, člen PEER.
+          Různé části dělaly různě silné modely: jednodušší vytěžování dat ty levnější, kreslení a skládání stránek ty
+          nejsilnější. Přesně tak, jak strategie píše o práci obecně: nejlepší nástroj na každou práci, ne nejdražší na všechno.
         </p>
         <ol className={styles.kroky}>
           {kroky.map((k) => (
@@ -141,9 +141,9 @@ export default function JakVzniklPage() {
           <div className={`card ${styles.rucimeBox}`}>
             <h3>Co AI neumí: ručit za čísla</h3>
             <p>
-              Každé číslo na webu má pod sebou zdroj ze studie a plné znění kapitoly je o jedno kliknutí dál. Za správnost
+              Každé číslo na webu má pod sebou zdroj ze studie a plné znění kapitoly je o jedno kliknutí dál. Za správnost
               strategie ručí její autoři, ne web. Kde si studie odporuje nebo kde jsme museli něco dopočítat, je to napsané
-              a garanti to kontrolují.
+              a garanti to kontrolují.
             </p>
             <NahlasitChybu kde="Jak vznikl web" kompaktni />
           </div>
@@ -153,7 +153,7 @@ export default function JakVzniklPage() {
       <section className={`wrap ${styles.section}`} aria-labelledby="usetreno">
         <h2 id="usetreno">Kolik by to stálo postaru</h2>
         <p className="prose muted">
-          Odhad, co by pilotní stránka o bydlení stála u běžné české agentury. Je to náš odhad podle obvyklých hodinových
+          Odhad, co by pilotní stránka o bydlení stála u běžné české agentury. Je to náš odhad podle obvyklých hodinových
           sazeb, žádnou nabídku jsme nepoptávali.
         </p>
         <ol className={styles.odhad}>
@@ -173,25 +173,25 @@ export default function JakVzniklPage() {
         <div className={styles.souhrn}>
           <div className={`card ${styles.souhrnCard}`}>
             <span className="eyebrow">Pilotní stránka</span>
-            <span className={`display ${styles.souhrnBig}`}>360–690 tis. Kč</span>
+            <span className={`display ${styles.souhrnBig}`}>360–690 tis. Kč</span>
             <span className="muted">5–7 týdnů práce pěti lidí</span>
           </div>
           <div className={`card ${styles.souhrnCard}`}>
-            <span className="eyebrow">Celý web se 14 tématy a videi</span>
-            <span className={`display ${styles.souhrnBig}`}>2–4 mil. Kč</span>
+            <span className="eyebrow">Celý web se 14 tématy a videi</span>
+            <span className={`display ${styles.souhrnBig}`}>2–4 mil. Kč</span>
             <span className="muted">půl roku práce týmu</span>
           </div>
           <div className={`card ${styles.souhrnCard} ${styles.souhrnAi}`}>
             <span className="eyebrow">Tenhle web</span>
             <span className={`display ${styles.souhrnBig}`}>předplatné AI</span>
-            <span>a pár dní jednoho člověka; hlas a hudba za kredity za pár stokorun</span>
+            <span>a pár dní jednoho člověka; hlas a hudba za kredity za pár stokorun</span>
           </div>
         </div>
         <div className={`card ${styles.sunBox}`}>
           <p className={`display ${styles.sunBig}`}>Ušetřené peníze nejsou cíl. Cíl je pracovat chytře.</p>
           <p>
-            Strategie říká, že Česko musí přestat vydělávat levnou prací a začít vydělávat chytrou. Tenhle web je malý
-            důkaz, že to jde: s nápady se dá pracovat rychle, levně a poctivě, s každým číslem na dosah zdroje.
+            Strategie říká, že Česko musí přestat vydělávat levnou prací a začít vydělávat chytrou. Tenhle web je malý
+            důkaz, že to jde: s nápady se dá pracovat rychle, levně a poctivě, s každým číslem na dosah zdroje.
           </p>
         </div>
       </section>

@@ -18,8 +18,8 @@ const dalsi = [
   { href: "/dopad", label: "Velký obraz" },
   { href: "/cesta", label: "Cesta do 2035" },
   { href: "/zaplaceni", label: "Jak se to zaplatí" },
-  { href: "/otazky", label: "Otázky a námitky" },
-  { href: "/jak-vznikl", label: "O webu" },
+  { href: "/otazky", label: "Otázky a námitky" },
+  { href: "/jak-vznikl", label: "O webu" },
   { href: "/en", label: "English" },
 ];
 

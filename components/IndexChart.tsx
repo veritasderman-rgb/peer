@@ -20,7 +20,7 @@ const DEFAULT_SERIES: IndexSeries[] = [
   { label: "Čisté příjmy domácností", short: "příjmy", end: 182, color: "sun" },
 ];
 const DEFAULT_SOURCE =
-  "Index 2014 = 100. Přesné jsou jen hodnoty v roce 2014 a 2025; průběh mezi nimi je ilustrativní (lineární interpolace). Zdroj: ČSÚ.";
+  "Index 2014 = 100. Přesné jsou jen hodnoty v roce 2014 a 2025; průběh mezi nimi je ilustrativní (lineární interpolace). Zdroj: ČSÚ.";
 
 const W = 380;
 const H = 290;

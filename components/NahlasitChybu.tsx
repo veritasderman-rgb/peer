@@ -8,7 +8,7 @@ import styles from "./NahlasitChybu.module.css";
    Bez backendu; stačí, aby odpověď dorazila lidem, kteří web spravují. */
 export function NahlasitChybu({ kde, kompaktni = false }: { kde: string; kompaktni?: boolean }) {
   const predmet = `Chyba na webu Česko má na víc: ${kde}`;
-  const telo = `Kde: ${kde}\nCo je špatně:\n\nSprávně má být (a zdroj):\n`;
+  const telo = `Kde: ${kde}\nCo je špatně:\n\nSprávně má být (a zdroj):\n`;
   const mailto = KONTAKT_EMAIL
     ? `mailto:${KONTAKT_EMAIL}?subject=${encodeURIComponent(predmet)}&body=${encodeURIComponent(telo)}`
     : null;
@@ -18,7 +18,7 @@ export function NahlasitChybu({ kde, kompaktni = false }: { kde: string; kompakt
     <div className={`${styles.root} ${kompaktni ? styles.kompaktni : ""}`}>
       {!kompaktni && (
         <p className={styles.text}>
-          <b>Našel jsi chybu?</b> Špatné číslo, mrtvý odkaz, nesrozumitelná věta. Napiš nám, opravíme to a zapíšeme změnu.
+          <b>Našel jsi chybu?</b> Špatné číslo, mrtvý odkaz, nesrozumitelná věta. Napiš nám, opravíme to a zapíšeme změnu.
         </p>
       )}
       <span className={styles.links} onClick={(e) => { if ((e.target as HTMLElement).closest("a")) chybaNahlasena(kde); }}>

@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Videa Strategie za minutu",
-  description: "Každé téma strategie za minutu: široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts. Obojí ke stažení a sdílení.",
+  description: "Každé téma strategie za minutu: široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts. Obojí ke stažení a sdílení.",
   alternates: { canonical: "/videa" },
 };
 
@@ -21,13 +21,13 @@ export default function VideaPage() {
           <p className="eyebrow">Videa · úvod a {withVideo.length} témat</p>
           <h1>Strategie za minutu</h1>
           <p className={styles.lede}>
-            Každé téma strategie v jedné minutě: číslo, problém, proč to tak je, co navrhujeme a co to přinese. Namluvené, s hudbou
-            a s titulky v obraze, aby se dalo koukat i potichu v tramvaji. Široká verze (16:9) je pro YouTube a web, reel (9:16)
-            pro Instagram, TikTok a Shorts. Obě si můžeš stáhnout a sdílet.
+            Každé téma strategie v jedné minutě: číslo, problém, proč to tak je, co navrhujeme a co to přinese. Namluvené, s hudbou
+            a s titulky v obraze, aby se dalo koukat i potichu v tramvaji. Široká verze (16:9) je pro YouTube a web, reel (9:16)
+            pro Instagram, TikTok a Shorts. Obě si můžeš stáhnout a sdílet.
           </p>
         </div>
         <GarantBubble kdo="rada" mood="happy" pointing side="left">
-          Každé video vzniklo ze stejných čísel jako stránka tématu. Mluví v něm garant kapitoly.
+          Každé video vzniklo ze stejných čísel jako stránka tématu. Mluví v něm garant kapitoly.
         </GarantBubble>
       </section>
 
@@ -38,7 +38,7 @@ export default function VideaPage() {
               <span className={`display ${styles.num}`} aria-hidden="true">★</span>
               <div>
                 <h2 className={styles.title}>{uvodVideo.titulek}</h2>
-                <p className="muted">Úvod: celá strategie v jednom videu</p>
+                <p className="muted">Úvod: celá strategie v jednom videu</p>
                 <p className={styles.links}>
                   <a className="btn" href={uvodVideo.wide} download>Stáhnout široké (16:9)</a>
                   <a className="btn secondary" href={uvodVideo.reel} download>Stáhnout reel (9:16)</a>
@@ -106,9 +106,9 @@ export default function VideaPage() {
         <div className={`card ${styles.note}`}>
           <h3>Jak videa vznikají</h3>
           <p>
-            Videa se generují z dat webu (Remotion). Scénář každého tématu je krátký textový soubor; z něj se vyrenderuje široká
-            verze i reel. Komentář je namluvený syntetickým hlasem (ElevenLabs) podle scénáře, čísla se v něm čtou slovy; hudba je
-            také vygenerovaná. Délka každé scény se řídí délkou namluvené věty, takže oprava textu znamená nové namluvení a nový
+            Videa se generují z dat webu (Remotion). Scénář každého tématu je krátký textový soubor; z něj se vyrenderuje široká
+            verze i reel. Komentář je namluvený syntetickým hlasem (ElevenLabs) podle scénáře, čísla se v něm čtou slovy; hudba je
+            také vygenerovaná. Délka každé scény se řídí délkou namluvené věty, takže oprava textu znamená nové namluvení a nový
             render, ne nový střih.
           </p>
         </div>

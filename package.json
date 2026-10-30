@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-search-index.mjs",
+    "prebuild": "node scripts/nbsp.mjs && node scripts/build-search-index.mjs",
+    "typo": "node scripts/nbsp.mjs",
     "build": "next build",
     "start": "next start",
     "video:studio": "remotion studio video/index.ts",

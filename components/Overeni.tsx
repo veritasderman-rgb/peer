@@ -85,7 +85,7 @@ export function Overeni({
     }
     const txt = poznamka.trim();
     if (hodnota === "opraveno" && !txt) {
-      setChyba("Napiš, co a jak opravit.");
+      setChyba("Napiš, co a jak opravit.");
       return;
     }
     setChyba("");
@@ -195,7 +195,7 @@ export function Overeni({
             maxLength={1800}
             value={poznamka}
             onChange={(e) => setPoznamka(e.target.value)}
-            placeholder="Co je špatně a jak to má být (s číslem a zdrojem, pokud to jde)"
+            placeholder="Co je špatně a jak to má být (s číslem a zdrojem, pokud to jde)"
             aria-label="Oprava"
             disabled={zaneprazdneno}
           />

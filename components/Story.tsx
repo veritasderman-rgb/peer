@@ -70,7 +70,7 @@ function Step({
   );
 }
 
-export function Story({ steps, persona, kdo }: { steps: StoryStep[]; persona: { who: string; ctx: string }; kdo: Mluvci }) {
+export function Story({ steps, kdo }: { steps: StoryStep[]; kdo: Mluvci }) {
   const [active, setActive] = useState(0);
   useVyskaHlavicky();
   const els = useRef<(HTMLDivElement | null)[]>([]);
@@ -116,7 +116,7 @@ export function Story({ steps, persona, kdo }: { steps: StoryStep[]; persona: { 
                     type="button"
                     className={styles.dot}
                     aria-current={i === active ? "step" : undefined}
-                    aria-label={`Krok ${i + 1} z ${steps.length}${s.title ? `: ${s.title}` : ""}`}
+                    aria-label={`Krok ${i + 1} z ${steps.length}${s.title ? `: ${s.title}` : ""}`}
                     onClick={() => jdi(i)}
                   />
                 </li>
@@ -126,11 +126,6 @@ export function Story({ steps, persona, kdo }: { steps: StoryStep[]; persona: { 
         )}
       </div>
       <div className={styles.steps}>
-        <div className={styles.persona}>
-          <span className="eyebrow">Modelová postava</span>
-          <span className={`display ${styles.who}`}>{persona.who}</span>
-          <span className="muted">{persona.ctx}</span>
-        </div>
         {steps.map((s, i) => (
           <Step key={i} step={s} index={i} onActive={setActive} register={register}>
             {s.text}

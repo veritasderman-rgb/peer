@@ -33,7 +33,7 @@ function videoFor(slug: string, titulek: string): TopicVideoInfo {
     reel: media(`/video/${slug}-reel.mp4`),
     poster: media(`/video/${slug}-poster.jpg`),
     titulek,
-    popis: "Namluvené, s hudbou a titulky. Široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts.",
+    popis: "Namluvené, s hudbou a titulky. Široká verze pro YouTube a web, reel pro Instagram, TikTok a Shorts.",
     titulky: n ? `/video/${slug}.vtt` : undefined,
     prepis,
   };

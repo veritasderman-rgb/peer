@@ -71,7 +71,7 @@ export function KalkulackaMzda() {
       </div>
 
       <figure className={s.chart}>
-        <figcaption className={s.cap}>Minimální mzda v zemích okolo, Kč měsíčně</figcaption>
+        <figcaption className={s.cap}>Minimální mzda v zemích okolo, Kč měsíčně</figcaption>
         <ul className={s.rows}>
           {rows.map((r) => (
             <li key={r.name} className={s.row}>

@@ -1,10 +1,10 @@
 {
-  "poznamka": "Odkazy převzaty jen z oficiálních profilů na lide.pirati.cz / pirati.cz nebo z osobních webů samotných lidí (ověřeno načtením stránek 16. 10. 2026); u koho nebyl profil spolehlivě ověřen, je hodnota null.",
-  "podpisyPoznamka": "Značky garantů jsou střídmé monogramy (iniciály v kruhu) a piktogramy témat; web nepoužívá kreslené postavy. Každý z osmi členů rady s uvedením svého jména u kapitol souhlasil (říjen 2026).",
+  "poznamka": "Odkazy převzaty jen z oficiálních profilů na lide.pirati.cz / pirati.cz nebo z osobních webů samotných lidí (ověřeno načtením stránek 16. 10. 2026); u koho nebyl profil spolehlivě ověřen, je hodnota null.",
+  "podpisyPoznamka": "Značky garantů jsou střídmé monogramy (iniciály v kruhu) a piktogramy témat; web nepoužívá kreslené postavy. Každý z osmi členů rady s uvedením svého jména u kapitol souhlasil (říjen 2026).",
   "lide": [
     {
       "jmeno": "Libor Dušek",
-      "role": "ekonom a akademik, dostupné bydlení a moderní infrastruktura",
+      "role": "ekonom a akademik, dostupné bydlení a moderní infrastruktura",
       "temata": [
         "bydleni"
       ],
@@ -15,12 +15,12 @@
       "bluesky": "https://bsky.app/profile/libordusekeu.bsky.social",
       "instagram": null,
       "zdroj": "https://www.pirati.cz/lide/libor-dusek/ (web, Facebook, X, Bluesky); https://lide.pirati.cz/profil/2473-libor-dusek/ (potvrzení všech čtyř odkazů); web navíc potvrzen načtením https://sites.google.com/view/libordusek/ (doc. Libor Dušek, PF UK)",
-      "medailonek": "Ekonom a docent na katedře ekonomie a empirických právních studií Právnické fakulty Univerzity Karlovy. Odborně se věnuje ekonomické analýze práva, ekonomii kriminality, daňové politice a regulaci bydlení a měst. V PEER ručí za dostupné bydlení a moderní infrastrukturu, tedy mimo jiné za návrh zvýšit výstavbu na 50 000 bytů ročně.",
-      "medailonekZdroj": "https://lide.pirati.cz/osoba/2138/ (člen Pirátů od 21. 2. 2025, vedoucí meziresortního týmu Bydlení, člen PEER); https://www.pirati.cz/lide/libor-dusek/ (docent na katedře ekonomie a empirických právních studií PF UK, odborná specializace); https://sites.google.com/view/libordusek/ (osobní web: zaměření včetně regulace bydlení a měst, doktorát na University of Chicago); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (garant bydlení a infrastruktury, návrh 50 000 bytů ročně); https://peer.pirati.cz/ (role v PEER)"
+      "medailonek": "Ekonom a docent na katedře ekonomie a empirických právních studií Právnické fakulty Univerzity Karlovy. Odborně se věnuje ekonomické analýze práva, ekonomii kriminality, daňové politice a regulaci bydlení a měst. V PEER ručí za dostupné bydlení a moderní infrastrukturu, tedy mimo jiné za návrh zvýšit výstavbu na 50 000 bytů ročně.",
+      "medailonekZdroj": "https://lide.pirati.cz/osoba/2138/ (člen Pirátů od 21. 2. 2025, vedoucí meziresortního týmu Bydlení, člen PEER); https://www.pirati.cz/lide/libor-dusek/ (docent na katedře ekonomie a empirických právních studií PF UK, odborná specializace); https://sites.google.com/view/libordusek/ (osobní web: zaměření včetně regulace bydlení a měst, doktorát na University of Chicago); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (garant bydlení a infrastruktury, návrh 50 000 bytů ročně); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Jiří Hlavenka",
-      "role": "podnikatel a investor, digitální stát, AI a efektivní instituce",
+      "role": "podnikatel a investor, digitální stát, AI a efektivní instituce",
       "temata": [
         "inovace",
         "stat"
@@ -32,12 +32,12 @@
       "bluesky": null,
       "instagram": null,
       "zdroj": "https://lide.pirati.cz/profil/3008-jiri-hlavenka/ (Facebook, X)",
-      "medailonek": "Podnikatel a investor, který od roku 1990 působí v médiích a na internetu. V letech 1990 až 2003 zakládal a vedl vydavatelství Computer Press, založil také e-shop Vltava.cz a dnes investuje do startupových a technologických firem. V PEER zaštiťuje digitální stát, umělou inteligenci a efektivní instituce.",
-      "medailonekZdroj": "https://www.pirati.cz/lide/jiri-hlavenka/ (podnikatel od roku 1990, zakladatel a ředitel Computer Press 1990–2003, zakladatel Vltava.cz, investor do startupů); https://lide.pirati.cz/osoba/1606/ (člen Pirátů od 7. 10. 2020, zastupitel Jihomoravského kraje 2016–2024); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (digitální stát, AI a efektivní instituce); https://peer.pirati.cz/ (role v PEER)"
+      "medailonek": "Podnikatel a investor, který od roku 1990 působí v médiích a na internetu. V letech 1990 až 2003 zakládal a vedl vydavatelství Computer Press, založil také e-shop Vltava.cz a dnes investuje do startupových a technologických firem. V PEER zaštiťuje digitální stát, umělou inteligenci a efektivní instituce.",
+      "medailonekZdroj": "https://www.pirati.cz/lide/jiri-hlavenka/ (podnikatel od roku 1990, zakladatel a ředitel Computer Press 1990–2003, zakladatel Vltava.cz, investor do startupů); https://lide.pirati.cz/osoba/1606/ (člen Pirátů od 7. 10. 2020, zastupitel Jihomoravského kraje 2016–2024); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (digitální stát, AI a efektivní instituce); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Tereza Nislerová",
-      "role": "ekonomka, evropská integrace a euro",
+      "role": "ekonomka, evropská integrace a euro",
       "temata": [
         "euro"
       ],
@@ -48,12 +48,12 @@
       "bluesky": null,
       "instagram": null,
       "zdroj": "",
-      "medailonek": "Ekonomka a manažerka s mezinárodními zkušenostmi. V Praze 4 je zastupitelkou, členkou finančního výboru a předsedkyní místního sdružení Pirátů. V PEER ručí za evropskou integraci a euro a při představení strategie vysvětlovala například omezení dotací pro největší firmy a snížení mzdové mezery mezi ženami a muži.",
-      "medailonekZdroj": "https://lide.pirati.cz/osoba/3078/ (ekonomka a manažerka s mezinárodními zkušenostmi, zastupitelka a členka finančního výboru, předsedkyně MS Praha 4); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (evropská integrace a euro, její vyjádření k dotacím a mzdové mezeře); https://peer.pirati.cz/ (role v PEER)"
+      "medailonek": "Ekonomka a manažerka s mezinárodními zkušenostmi. V Praze 4 je zastupitelkou, členkou finančního výboru a předsedkyní místního sdružení Pirátů. V PEER ručí za evropskou integraci a euro a při představení strategie vysvětlovala například omezení dotací pro největší firmy a snížení mzdové mezery mezi ženami a muži.",
+      "medailonekZdroj": "https://lide.pirati.cz/osoba/3078/ (ekonomka a manažerka s mezinárodními zkušenostmi, zastupitelka a členka finančního výboru, předsedkyně MS Praha 4); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (evropská integrace a euro, její vyjádření k dotacím a mzdové mezeře); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Zuzana Freitas Lopesová",
-      "role": "mobilizace trhu práce a rovné šance",
+      "role": "mobilizace trhu práce a rovné šance",
       "temata": [
         "prace",
         "zeny",
@@ -66,12 +66,12 @@
       "bluesky": null,
       "instagram": "https://www.instagram.com/zuzanafreitas/",
       "zdroj": "https://lide.pirati.cz/profil/2893-zuzana-freitas-lopesova/ (Facebook, X, Instagram)",
-      "medailonek": "Vede resortní tým Práce a sociální věci České pirátské strany a je členkou jejího Republikového výboru. Pirátkou je od roku 2019 a v Praze působí v místním sdružení Praha 10. V PEER je odbornicí na mobilizaci trhu práce a rovné šance a ručí za kapitoly o práci a o ženách na trhu práce.",
-      "medailonekZdroj": "https://lide.pirati.cz/osoba/1482/ (členka Pirátů od 8. 8. 2019, vedoucí RT Práce a sociální věci, členka Republikového výboru a MS Praha 10); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (odbornice na mobilizaci trhu práce a rovné šance); https://peer.pirati.cz/ (role v PEER)"
+      "medailonek": "Vede resortní tým Práce a sociální věci České pirátské strany a je členkou jejího Republikového výboru. Pirátkou je od roku 2019 a v Praze působí v místním sdružení Praha 10. V PEER je odbornicí na mobilizaci trhu práce a rovné šance a ručí za kapitoly o práci a o ženách na trhu práce.",
+      "medailonekZdroj": "https://lide.pirati.cz/osoba/1482/ (členka Pirátů od 8. 8. 2019, vedoucí RT Práce a sociální věci, členka Republikového výboru a MS Praha 10); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (odbornice na mobilizaci trhu práce a rovné šance); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Jan Kříž",
-      "role": "vzdělávání pro budoucnost a silné regiony",
+      "role": "vzdělávání pro budoucnost a silné regiony",
       "temata": [
         "vzdelanost",
         "regiony"
@@ -82,13 +82,13 @@
       "x": null,
       "bluesky": null,
       "instagram": null,
-      "zdroj": "https://lide.pirati.cz/profil/4009-jan-kriz/ (web, Facebook); web navíc načten: https://pyskor.cz (osobní blog Jana Kříže o školství)",
-      "medailonek": "Vede resortní tým Školství České pirátské strany a je zástupcem vedoucího pracovní skupiny pro terciární vzdělávání, vědu, výzkum a inovace. Zajímá se hlavně o vysoké školy a jejich financování a píše o nich na blogu pyskor.cz. V PEER ručí za vzdělávání pro budoucnost a silné regiony.",
-      "medailonekZdroj": "https://lide.pirati.cz/osoba/5161/ (člen Pirátů od 18. 6. 2024, vedoucí RT Školství, zástupce vedoucího pracovní skupiny Terciární vzdělávání, věda, výzkum a inovace); https://pyskor.cz (osobní blog o školství a financování vysokých škol); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (vzdělávání pro budoucnost a silné regiony); https://peer.pirati.cz/ (role v PEER)"
+      "zdroj": "https://lide.pirati.cz/profil/4009-jan-kriz/ (web, Facebook); web navíc načten: https://pyskor.cz (osobní blog Jana Kříže o školství)",
+      "medailonek": "Vede resortní tým Školství České pirátské strany a je zástupcem vedoucího pracovní skupiny pro terciární vzdělávání, vědu, výzkum a inovace. Zajímá se hlavně o vysoké školy a jejich financování a píše o nich na blogu pyskor.cz. V PEER ručí za vzdělávání pro budoucnost a silné regiony.",
+      "medailonekZdroj": "https://lide.pirati.cz/osoba/5161/ (člen Pirátů od 18. 6. 2024, vedoucí RT Školství, zástupce vedoucího pracovní skupiny Terciární vzdělávání, věda, výzkum a inovace); https://pyskor.cz (osobní blog o školství a financování vysokých škol); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (vzdělávání pro budoucnost a silné regiony); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Václav Vislous",
-      "role": "moderní průmysl a bezpečná energetika",
+      "role": "moderní průmysl a bezpečná energetika",
       "temata": [
         "prumysl",
         "energie"
@@ -99,13 +99,13 @@
       "x": "https://x.com/vaclavvislous",
       "bluesky": null,
       "instagram": null,
-      "zdroj": "https://vaclavvislous.cz (web, LinkedIn, Facebook, X – vlastní web); https://lide.pirati.cz/profil/2099-vaclav-vislous/ (web, Facebook, X); LinkedIn navíc potvrzen výsledkem hledání https://cz.linkedin.com/in/vislous (uvádí jej jako hlavního autora kapitol o průmyslu a energetice PEER)",
-      "medailonek": "Ekonom a manažer s mezinárodními zkušenostmi ze státního, poradenského i soukromého sektoru, absolvent ekonomie na Univerzitě Karlově a pařížské HEC. Vede resortní tým Průmysl a obchod České pirátské strany a od roku 2018 je zastupitelem městské části Praha 9. V PEER ručí za moderní průmysl a bezpečnou energetiku.",
-      "medailonekZdroj": "https://lide.pirati.cz/osoba/1215/ (ekonom a manažer, zkušenosti z energetiky, udržitelnosti a dopravy, vedoucí RT Průmysl a obchod); https://vaclavvislous.cz (životopis: ekonomie na UK a HEC Paris, zastupitel MČ Praha 9 od 10/2018); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (moderní průmysl a bezpečná energetika); https://peer.pirati.cz/ (role v PEER)"
+      "zdroj": "https://vaclavvislous.cz (web, LinkedIn, Facebook, X – vlastní web); https://lide.pirati.cz/profil/2099-vaclav-vislous/ (web, Facebook, X); LinkedIn navíc potvrzen výsledkem hledání https://cz.linkedin.com/in/vislous (uvádí jej jako hlavního autora kapitol o průmyslu a energetice PEER)",
+      "medailonek": "Ekonom a manažer s mezinárodními zkušenostmi ze státního, poradenského i soukromého sektoru, absolvent ekonomie na Univerzitě Karlově a pařížské HEC. Vede resortní tým Průmysl a obchod České pirátské strany a od roku 2018 je zastupitelem městské části Praha 9. V PEER ručí za moderní průmysl a bezpečnou energetiku.",
+      "medailonekZdroj": "https://lide.pirati.cz/osoba/1215/ (ekonom a manažer, zkušenosti z energetiky, udržitelnosti a dopravy, vedoucí RT Průmysl a obchod); https://vaclavvislous.cz (životopis: ekonomie na UK a HEC Paris, zastupitel MČ Praha 9 od 10/2018); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (moderní průmysl a bezpečná energetika); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Milan Damborský",
-      "role": "spravedlivý trh, chytré daně a udržitelné finance",
+      "role": "spravedlivý trh, chytré daně a udržitelné finance",
       "temata": [
         "kapital",
         "oligarchie"
@@ -117,12 +117,12 @@
       "bluesky": null,
       "instagram": null,
       "zdroj": "",
-      "medailonek": "Docent na Ústavu ekonomie Fakulty managementu a ekonomiky Univerzity Tomáše Bati ve Zlíně. V PEER je akademikem a ručí za kapitoly o spravedlivém trhu, chytrých daních a udržitelných financích.",
-      "medailonekZdroj": "https://fame.utb.cz/contacts/ing-milan-damborsky-ph-d-3/ (docent, doc. Ing. Milan Damborský, Ph.D., Ústav ekonomie, Fakulta managementu a ekonomiky UTB; anglicky https://fame.utb.cz/en/contacts/ing-milan-damborsky-ph-d-4/); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (akademik a garant spravedlivého trhu, chytrých daní a udržitelných financí); https://peer.pirati.cz/ (role v PEER)"
+      "medailonek": "Docent na Ústavu ekonomie Fakulty managementu a ekonomiky Univerzity Tomáše Bati ve Zlíně. V PEER je akademikem a ručí za kapitoly o spravedlivém trhu, chytrých daních a udržitelných financích.",
+      "medailonekZdroj": "https://fame.utb.cz/contacts/ing-milan-damborsky-ph-d-3/ (docent, doc. Ing. Milan Damborský, Ph.D., Ústav ekonomie, Fakulta managementu a ekonomiky UTB; anglicky https://fame.utb.cz/en/contacts/ing-milan-damborsky-ph-d-4/); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (akademik a garant spravedlivého trhu, chytrých daní a udržitelných financí); https://peer.pirati.cz/ (role v PEER)"
     },
     {
       "jmeno": "Josef Pavlovic",
-      "role": "zdravý národ a udržitelné důchody",
+      "role": "zdravý národ a udržitelné důchody",
       "temata": [
         "zdravi"
       ],
@@ -133,8 +133,8 @@
       "bluesky": null,
       "instagram": null,
       "zdroj": "https://josefpavlovic.cz (osobní web, potvrzeno majitelem webu 16. 10. 2026)",
-      "medailonek": "Vede resortní tým Zdravotnictví České pirátské strany a v letech 2022 až 2024 byl náměstkem ministra zdravotnictví. Na svém webu popisuje také datové projekty ke zdravotnictví, například SkoreZdravotnictvi.cz. V PEER odpovídá za sekce o zdravém národu a udržitelných důchodech.",
-      "medailonekZdroj": "https://lide.pirati.cz/osoba/684/ (člen Pirátů od 23. 1. 2017, vedoucí RT Zdravotnictví, bývalý náměstek ministra zdravotnictví); https://josefpavlovic.cz (osobní web: náměstek ministra zdravotnictví 2022–2024, projekt SkoreZdravotnictvi.cz); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (zdravý národ a udržitelné důchody); https://peer.pirati.cz/ (role v PEER)"
+      "medailonek": "Vede resortní tým Zdravotnictví České pirátské strany a v letech 2022 až 2024 byl náměstkem ministra zdravotnictví. Na svém webu popisuje také datové projekty ke zdravotnictví, například SkoreZdravotnictvi.cz. V PEER odpovídá za sekce o zdravém národu a udržitelných důchodech.",
+      "medailonekZdroj": "https://lide.pirati.cz/osoba/684/ (člen Pirátů od 23. 1. 2017, vedoucí RT Zdravotnictví, bývalý náměstek ministra zdravotnictví); https://josefpavlovic.cz (osobní web: náměstek ministra zdravotnictví 2022–2024, projekt SkoreZdravotnictvi.cz); https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ (zdravý národ a udržitelné důchody); https://peer.pirati.cz/ (role v PEER)"
     }
   ]
 }

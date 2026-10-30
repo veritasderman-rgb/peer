@@ -10,7 +10,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Balíček pro sítě",
   description:
-    "Hotové příspěvky pro Facebook, X, Instagram a LinkedIn ke všem 14 tématům strategie, s hashtagy a odkazy na reel, široké video a náhledový obrázek. Ke zkopírování a sdílení.",
+    "Hotové příspěvky pro Facebook, X, Instagram a LinkedIn ke všem 14 tématům strategie, s hashtagy a odkazy na reel, široké video a náhledový obrázek. Ke zkopírování a sdílení.",
   alternates: { canonical: "/pro-sdileni" },
 };
 
@@ -26,16 +26,16 @@ const radky = (text: string) => Math.min(14, Math.max(4, Math.ceil(text.length /
 
 const PRAVIDLA = [
   <>
-    <b>Cituj zdroj.</b> Každý příspěvek vede na stránku tématu, kde jsou zdroje a plné znění studie. Odkaz z textu neodstraňuj.
+    <b>Cituj zdroj.</b> Každý příspěvek vede na stránku tématu, kde jsou zdroje a plné znění studie. Odkaz z textu neodstraňuj.
   </>,
   <>
-    <b>Neměň čísla.</b> Text si klidně přeformuluj do vlastního stylu, ale čísla, jednotky a roky nech přesně tak, jak jsou.
+    <b>Neměň čísla.</b> Text si klidně přeformuluj do vlastního stylu, ale čísla, jednotky a roky nech přesně tak, jak jsou.
   </>,
   <>
-    <b>Připoj video nebo obrázek.</b> Reel (9:16) je pro Instagram, TikTok a Shorts, široké video (16:9) pro Facebook, YouTube a LinkedIn. Náhled se hodí k odkazu.
+    <b>Připoj video nebo obrázek.</b> Reel (9:16) je pro Instagram, TikTok a Shorts, široké video (16:9) pro Facebook, YouTube a LinkedIn. Náhled se hodí k odkazu.
   </>,
   <>
-    <b>Označ oficiální účty strany.</b> Ať se příspěvek dostane i k týmu. Konkrétní jména účtů tu neuvádíme; použij oficiální účty strany.
+    <b>Označ oficiální účty strany.</b> Ať se příspěvek dostane i k týmu. Konkrétní jména účtů tu neuvádíme; použij oficiální účty strany.
   </>,
   <>
     <b>Piš, že je to návrh.</b> Strategie PEER je návrh, ne hotový zákon. Používej „navrhuje“, „chce“, ne „zavede“.
@@ -68,11 +68,11 @@ export default function ProSdileniPage() {
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
-          <p className="eyebrow">Pro tým a dobrovolníky</p>
+          <p className="eyebrow">Pro tým a dobrovolníky</p>
           <h1>Balíček pro sítě</h1>
           <p className={styles.lede}>
-            Ke každému z {topics.length} témat tu najdeš hotové příspěvky pro Facebook, X, Instagram a LinkedIn, hashtagy a odkazy na
-            video i náhledový obrázek. Rozbal téma, zkopíruj text, přilož video a odešli.
+            Ke každému z {topics.length} témat tu najdeš hotové příspěvky pro Facebook, X, Instagram a LinkedIn, hashtagy a odkazy na
+            video i náhledový obrázek. Rozbal téma, zkopíruj text, přilož video a odešli.
           </p>
           <p className={styles.akce}>
             <a className="btn sun" href="/pro-sdileni/balicek.json" download="balicek.json">
@@ -84,7 +84,7 @@ export default function ProSdileniPage() {
           </p>
         </div>
         <GarantBubble kdo="rada" mood="happy" pointing side="left">
-          Texty jsou hotové k vložení. Stačí zkopírovat, přidat video a poslat dál. Čísla neměň, jsou ze studie.
+          Texty jsou hotové k vložení. Stačí zkopírovat, přidat video a poslat dál. Čísla neměň, jsou ze studie.
         </GarantBubble>
       </section>
 
@@ -150,7 +150,7 @@ export default function ProSdileniPage() {
                       )}
                     </p>
                     <p className={`muted ${styles.url}`}>
-                      Odkaz v textech: <span className="num">{url}</span>
+                      Odkaz v textech: <span className="num">{url}</span>
                     </p>
 
                     <div className={styles.bloky}>

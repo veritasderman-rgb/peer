@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Hledat",
   description:
-    "Hledej v celé hospodářské strategii PEER: 14 témat, opatření, slovník pojmů, časté otázky a plné znění kapitol. Stačí napsat slovo, třeba hypotéka nebo exekuce.",
+    "Hledej v celé hospodářské strategii PEER: 14 témat, opatření, slovník pojmů, časté otázky a plné znění kapitol. Stačí napsat slovo, třeba hypotéka nebo exekuce.",
   alternates: { canonical: "/hledat" },
 };
 
@@ -20,7 +20,7 @@ export default function HledatPage() {
       <section className={`wrap ${styles.hero}`}>
         <p className="eyebrow">Hledání na webu</p>
         <h1>Hledat</h1>
-        <p className={`muted ${styles.lede}`}>Témata, opatření, slovník, otázky i plné znění strategie na jednom místě.</p>
+        <p className={`muted ${styles.lede}`}>Témata, opatření, slovník, otázky i plné znění strategie na jednom místě.</p>
       </section>
       <section className={`wrap ${styles.results}`} aria-label="Hledání">
         <Suspense fallback={<HledaniFallback />}>

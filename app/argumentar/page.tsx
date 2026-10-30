@@ -7,9 +7,9 @@ import { PrintButton } from "./PrintButton";
 import styles from "./argumentar.module.css";
 
 export const metadata: Metadata = {
-  title: "Argumentář pro kandidáty a mluvčí",
+  title: "Argumentář pro kandidáty a mluvčí",
   description:
-    "Jak odpovědět na nejčastější námitky proti hospodářské strategii PEER 2026–2035: jedna věta, čísla se zdrojem, nejsilnější protiargument a kam odkázat. K vytištění i ke stažení jako PDF.",
+    "Jak odpovědět na nejčastější námitky proti hospodářské strategii PEER 2026–2035: jedna věta, čísla se zdrojem, nejsilnější protiargument a kam odkázat. K vytištění i ke stažení jako PDF.",
   alternates: { canonical: "/argumentar" },
 };
 
@@ -84,13 +84,13 @@ export default function ArgumentarPage() {
   return (
     <article className={styles.page}>
       <section className={`wrap ${styles.hero}`}>
-        <p className="eyebrow">Pro kandidáty a mluvčí</p>
+        <p className="eyebrow">Pro kandidáty a mluvčí</p>
         <h1>Argumentář</h1>
         <div className={`prose ${styles.lede}`}>
           <p>
-            Tahák pro všechny, kdo na ulici, v debatě nebo na sítích odpovídají na námitky proti hospodářské strategii PEER
-            2026–2035. {pocet} nejčastějších otázek, u každé jedna věta k řečení, čísla se zdrojem, nejsilnější protiargument
-            a odkaz, kam lidi poslat.
+            Tahák pro všechny, kdo na ulici, v debatě nebo na sítích odpovídají na námitky proti hospodářské strategii PEER
+            2026–2035. {pocet} nejčastějších otázek, u každé jedna věta k řečení, čísla se zdrojem, nejsilnější protiargument
+            a odkaz, kam lidi poslat.
           </p>
           <ol className={styles.rules}>
             <li>
@@ -98,17 +98,17 @@ export default function ArgumentarPage() {
               nebo posluchač ptá dál.
             </li>
             <li>
-              <b>Číslo vždy se zdrojem.</b> V závorce je téma a označení údaje v datech webu; na stránce tématu najdeš
-              k číslu zdroj ze studie. Nepoužívej čísla, která tu nejsou.
+              <b>Číslo vždy se zdrojem.</b> V závorce je téma a označení údaje v datech webu; na stránce tématu najdeš
+              k číslu zdroj ze studie. Nepoužívej čísla, která tu nejsou.
             </li>
             <li>
-              <b>Slabá místa přiznej.</b> Studie některé věci nevyčísluje nebo si odporuje. U každé otázky je řečeno kde
+              <b>Slabá místa přiznej.</b> Studie některé věci nevyčísluje nebo si odporuje. U každé otázky je řečeno kde
               (web uvádí jedno číslo, studie jiné). Upřímné „to studie neříká“ je lepší než vymyšlené číslo.
             </li>
           </ol>
           <p className="muted">
             Čísla jsou převzatá ze studie, ne autory kapitol potvrzená. Veřejná verze bez tahů pro mluvčí je na{" "}
-            <Link href="/otazky">stránce Otázky a námitky</Link>.
+            <Link href="/otazky">stránce Otázky a námitky</Link>.
           </p>
         </div>
         <div className={styles.actions}>

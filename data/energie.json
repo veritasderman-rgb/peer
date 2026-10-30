@@ -3,12 +3,12 @@
   "nazev": "Energie pro budoucnost",
   "garant": {
     "jmeno": "Václav Vislous",
-    "role": "odborník na moderní průmysl a bezpečnou energetiku"
+    "role": "odborník na moderní průmysl a bezpečnou energetiku"
   },
   "hook": {
     "hodnota": 262,
     "jednotka": "mld. Kč za dovoz fosilních paliv (2025)",
-    "veta": "Za dovoz fosilních paliv odešlo v roce 2025 do zahraničí zhruba 262 miliard korun, a přitom české domácnosti platí v přepočtu na kupní sílu druhou nejdražší elektřinu v Evropské unii."
+    "veta": "Za dovoz fosilních paliv odešlo v roce 2025 do zahraničí zhruba 262 miliard korun, a přitom české domácnosti platí v přepočtu na kupní sílu druhou nejdražší elektřinu v Evropské unii."
   },
   "grafy": {
     "spotrebaElektriny": {
@@ -19,10 +19,10 @@
         {"rok": 2025, "hodnota": 59, "jednotka": "TWh (zhruba)"},
         {"rok": 2040, "hodnota": "82–92", "jednotka": "TWh"}
       ],
-      "poznamka": "Graf v PDF rozpadlý; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Graf v PDF rozpadlý; hodnoty převzaty z textu kapitoly."
     },
     "solarniTempo": {
-      "titulek": "Solární tempo: loni jsme zpomalili na 60 % spotřeby",
+      "titulek": "Solární tempo: loni jsme zpomalili na 60 % spotřeby",
       "polozky": [
         {"rok": 2023, "hodnota": 0.97, "jednotka": "GW přírůstek"},
         {"rok": 2024, "hodnota": 1.04, "jednotka": "GW přírůstek"},
@@ -30,8 +30,8 @@
       ],
       "cil": {"hodnota": 1, "jednotka": "GW ročně (přes)"},
       "madarsko": {"obdobi": "za pět let", "podilZacatek": 4, "podilNyni": 25, "jednotka": "% výroby elektřiny ze slunce (zhruba)"},
-      "zdroj": "Solární asociace / pv – magazine (přírůstky ČR), Ember a MAVIR (Maďarsko), NKEP (cíl 10,1 GW do 2030)",
-      "poznamka": "Roky u sloupců odvozeny z popisku ø 2023–25 a z textu (loňský přírůstek 0,7 GW). Graf v PDF rozpadlý."
+      "zdroj": "Solární asociace / pv – magazine (přírůstky ČR), Ember a MAVIR (Maďarsko), NKEP (cíl 10,1 GW do 2030)",
+      "poznamka": "Roky u sloupců odvozeny z popisku ø 2023–25 a z textu (loňský přírůstek 0,7 GW). Graf v PDF rozpadlý."
     },
     "vitr": {
       "titulek": "Vítr: největší nevyužitá rezerva",
@@ -42,17 +42,17 @@
         {"ukazatel": "Rakousko: podíl větru na spotřebě elektřiny", "hodnota": 13, "jednotka": "%"}
       ],
       "zdroj": "Komora OZE, 2026 (zdroj 14); ÚFA AV ČR, 2020 (zdroj 15); BMWET, 2025 (zdroj 17)",
-      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
     },
     "sit": {
       "titulek": "Síť: kapacita je, ale blokovaná",
       "polozky": [
-        {"ukazatel": "kapacita v sítích, kterou drží rezervace projektů, které se nestaví (přes)", "hodnota": 20, "jednotka": "GW", "zdrojIndex": 20},
-        {"ukazatel": "žádosti o připojení baterií u jednoho distributora", "hodnota": 170, "jednotka": "GW", "zdrojIndex": 21},
+        {"ukazatel": "kapacita v sítích, kterou drží rezervace projektů, které se nestaví (přes)", "hodnota": 20, "jednotka": "GW", "zdrojIndex": 20},
+        {"ukazatel": "žádosti o připojení baterií u jednoho distributora", "hodnota": 170, "jednotka": "GW", "zdrojIndex": 21},
         {"ukazatel": "nevyužívaný příkon na vysokém napětí", "hodnota": 3.3, "jednotka": "GW", "zdrojIndex": 22},
         {"ukazatel": "hodiny se zápornou cenou elektřiny (loni)", "hodnota": 322, "jednotka": "hodin", "zdrojIndex": 23}
       ],
-      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
     },
     "ceny": {
       "titulek": "Elektřina vs. plyn: deformovaný poměr cen",
@@ -60,24 +60,24 @@
         {"ukazatel": "cena jednotky elektřiny vs. plynu pro domácnost (zhruba)", "hodnota": 4, "jednotka": ": 1", "highlight": true},
         {"ukazatel": "bod zvratu tepelného čerpadla", "hodnota": 2.7, "jednotka": ": 1", "zdrojIndex": 26}
       ],
-      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
     },
     "teplarny": {
-      "titulek": "Teplárenství: uhlí a dálkové teplo",
+      "titulek": "Teplárenství: uhlí a dálkové teplo",
       "polozky": [
         {"ukazatel": "podíl uhlí na dodávkách tepláren (2025)", "hodnota": 47.6, "jednotka": "%", "zdrojIndex": 29},
         {"ukazatel": "domácností ohřívaných dálkovým teplem", "hodnota": "třetina", "jednotka": "", "zdrojIndex": 29}
       ],
-      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
     },
     "energetickyKupon": {
       "titulek": "Energetický kupón",
       "polozky": [
-        {"ukazatel": "podíl výnosů z povolenek vrácený přímo lidem", "hodnota": 50, "jednotka": "%", "zdrojIndex": 52},
+        {"ukazatel": "podíl výnosů z povolenek vrácený přímo lidem", "hodnota": 50, "jednotka": "%", "zdrojIndex": 52},
         {"ukazatel": "cena povolenky, ze které se počítá", "hodnota": 60, "jednotka": "eur (kolem)", "zdrojIndex": 52},
         {"ukazatel": "orientačně na průměrnou domácnost ročně", "hodnota": 5000, "jednotka": "Kč", "zdrojIndex": 52}
       ],
-      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
     },
     "komunitniEnergetika": {
       "titulek": "Komunitní energetika: Rakousko vs. Česko",
@@ -86,266 +86,266 @@
         {"zeme": "Česko", "hodnota": 200, "poznamka": "zhruba dvě stě společenství", "highlight": true}
       ],
       "zdroj": "Energiegemeinschaften.gv.at, 2025; EDC, 2026 (zdroj 63; uvádí 218 českých společenství)",
-      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
+      "poznamka": "Bez grafu v podkladu; hodnoty převzaty z textu kapitoly."
     }
   },
   "fakta": [
     {"id": "spotreba_elektriny_dnes", "hodnota": 59, "jednotka": "TWh (zhruba, dnes)", "text": "Spotřeba elektřiny dnes činí zhruba 59 TWh.", "zdrojIndex": 2},
-    {"id": "spotreba_elektriny_2040", "hodnota": "82–92", "jednotka": "TWh (2040)", "text": "Očekává se růst spotřeby elektřiny na 82–92 TWh v roce 2040.", "zdrojIndex": 2},
+    {"id": "spotreba_elektriny_2040", "hodnota": "82–92", "jednotka": "TWh (2040)", "text": "Očekává se růst spotřeby elektřiny na 82–92 TWh v roce 2040.", "zdrojIndex": 2},
     {"id": "uhli_podil_vyroby", "hodnota": "třetina", "jednotka": "výroby elektřiny ČR", "text": "Uhelné elektrárny dnes vyrábějí třetinu naší elektřiny.", "zdrojIndex": 1},
-    {"id": "jaderne_bloky_prvni_elektrina", "hodnota": "polovina 30. let", "jednotka": "rok (nejdříve)", "text": "Nové jaderné bloky mají dodat první elektřinu nejdříve v polovině třicátých let.", "zdrojIndex": null},
-    {"id": "strategie_horizont", "hodnota": 15, "jednotka": "let", "text": "Českou energetiku čeká v příštích patnácti letech souběh tří velkých změn.", "zdrojIndex": null},
-    {"id": "souber_velkych_zmen", "hodnota": 3, "jednotka": "velké změny (souběh v příštích patnácti letech)", "text": "V příštích patnácti letech čeká energetiku souběh tří velkých změn.", "zdrojIndex": null},
+    {"id": "jaderne_bloky_prvni_elektrina", "hodnota": "polovina 30. let", "jednotka": "rok (nejdříve)", "text": "Nové jaderné bloky mají dodat první elektřinu nejdříve v polovině třicátých let.", "zdrojIndex": null},
+    {"id": "strategie_horizont", "hodnota": 15, "jednotka": "let", "text": "Českou energetiku čeká v příštích patnácti letech souběh tří velkých změn.", "zdrojIndex": null},
+    {"id": "souber_velkych_zmen", "hodnota": 3, "jednotka": "velké změny (souběh v příštích patnácti letech)", "text": "V příštích patnácti letech čeká energetiku souběh tří velkých změn.", "zdrojIndex": null},
     {"id": "strategie_pilire", "hodnota": 4, "jednotka": "pilíře strategie", "text": "Naše strategie by měla stát na čtyřech pilířích.", "zdrojIndex": null},
-    {"id": "druha_nejdrazsi_elektrina_eu", "hodnota": 2, "jednotka": "místo v EU (nejdražší elektřina pro domácnosti, v přepočtu na kupní sílu)", "text": "České domácnosti platily v přepočtu na kupní sílu druhou nejdražší elektřinu v Evropské unii.", "zdrojIndex": 3},
-    {"id": "dovoz_fosilnich_paliv_2025", "hodnota": 262, "jednotka": "mld. Kč (2025)", "text": "Za dovoz fosilních paliv odešlo v roce 2025 do zahraničí zhruba 262 miliard korun.", "zdrojIndex": 4},
-    {"id": "odpadni_teplo_domacnosti", "hodnota": "stovky tisíc", "jednotka": "domácností (teplo, které vypouštíme)", "text": "Teplo, kterým by šlo vytopit stovky tisíc domácností, vypouštíme do řek a vzduchu.", "zdrojIndex": 5},
+    {"id": "druha_nejdrazsi_elektrina_eu", "hodnota": 2, "jednotka": "místo v EU (nejdražší elektřina pro domácnosti, v přepočtu na kupní sílu)", "text": "České domácnosti platily v přepočtu na kupní sílu druhou nejdražší elektřinu v Evropské unii.", "zdrojIndex": 3},
+    {"id": "dovoz_fosilnich_paliv_2025", "hodnota": 262, "jednotka": "mld. Kč (2025)", "text": "Za dovoz fosilních paliv odešlo v roce 2025 do zahraničí zhruba 262 miliard korun.", "zdrojIndex": 4},
+    {"id": "odpadni_teplo_domacnosti", "hodnota": "stovky tisíc", "jednotka": "domácností (teplo, které vypouštíme)", "text": "Teplo, kterým by šlo vytopit stovky tisíc domácností, vypouštíme do řek a vzduchu.", "zdrojIndex": 5},
     {"id": "uhli_odlozeni_do", "hodnota": "jaro 2027", "jednotka": "minimálně (odložení uhelných zdrojů Sev.en)", "text": "Po zdražení plynu skupina Sev.en uhelné zdroje odložila minimálně do jara 2027.", "zdrojIndex": 7},
     {"id": "chvaletice_bloky", "hodnota": 2, "jednotka": "bloky Chvaletic (dočasně nezbytné pro stabilitu sítě)", "text": "Provozovatel přenosové soustavy označil dva bloky Chvaletic za dočasně nezbytné pro stabilitu sítě.", "zdrojIndex": 8},
-    {"id": "melnik_posun", "hodnota": 2029, "jednotka": "rok prvního nového paroplynového bloku v Mělníku (dříve 2026)", "text": "Uvedení prvního nového paroplynového bloku v Mělníku se posunulo z roku 2026 na rok 2029.", "zdrojIndex": 9},
+    {"id": "melnik_posun", "hodnota": 2029, "jednotka": "rok prvního nového paroplynového bloku v Mělníku (dříve 2026)", "text": "Uvedení prvního nového paroplynového bloku v Mělníku se posunulo z roku 2026 na rok 2029.", "zdrojIndex": 9},
     {"id": "turbiny_vyprodane", "hodnota": "konec dekády", "jednotka": "výrobci turbín jsou vyprodaní", "text": "Výrobci turbín jsou vyprodaní do konce dekády.", "zdrojIndex": 10},
     {"id": "fve_cil_2030", "hodnota": 10.1, "jednotka": "GW fotovoltaiky do roku 2030", "text": "Cíl 10,1 GW fotovoltaiky do roku 2030.", "zdrojIndex": 11},
-    {"id": "fve_rocni_potreba", "hodnota": 1, "jednotka": "GW ročně (potřeba, přes)", "text": "K cíli potřebujeme stavět přes 1 GW solárů ročně.", "zdrojIndex": 11},
+    {"id": "fve_rocni_potreba", "hodnota": 1, "jednotka": "GW ročně (potřeba, přes)", "text": "K cíli potřebujeme stavět přes 1 GW solárů ročně.", "zdrojIndex": 11},
     {"id": "fve_loni", "hodnota": 0.7, "jednotka": "GW (loni, 2025)", "text": "Loni se postavilo 0,7 GW solárů.", "zdrojIndex": 12},
-    {"id": "fve_prirustek_2023", "hodnota": 0.97, "jednotka": "GW přírůstek (2023, odvozeno z grafu)", "text": "Solární přírůstek ČR v grafu: 0,97 GW.", "zdrojIndex": 12},
-    {"id": "fve_prirustek_2024", "hodnota": 1.04, "jednotka": "GW přírůstek (2024, odvozeno z grafu)", "text": "Solární přírůstek ČR v grafu: 1,04 GW.", "zdrojIndex": 12},
-    {"id": "madarsko_slunce_vychozi", "hodnota": 4, "jednotka": "% výroby elektřiny ze slunce (výchozí stav)", "text": "Maďarsko zvýšilo podíl slunce na výrobě elektřiny ze 4 %.", "zdrojIndex": 13},
-    {"id": "madarsko_slunce_nyni", "hodnota": 25, "jednotka": "% výroby elektřiny ze slunce (zhruba, za pět let)", "text": "Za pět let zvýšilo Maďarsko podíl slunce na zhruba 25 %.", "zdrojIndex": 13},
-    {"id": "vitr_podil_vyroby", "hodnota": 1, "jednotka": "% výroby elektřiny (necelé)", "text": "Z větru dnes vyrábíme necelé procento elektřiny.", "zdrojIndex": 14},
+    {"id": "fve_prirustek_2023", "hodnota": 0.97, "jednotka": "GW přírůstek (2023, odvozeno z grafu)", "text": "Solární přírůstek ČR v grafu: 0,97 GW.", "zdrojIndex": 12},
+    {"id": "fve_prirustek_2024", "hodnota": 1.04, "jednotka": "GW přírůstek (2024, odvozeno z grafu)", "text": "Solární přírůstek ČR v grafu: 1,04 GW.", "zdrojIndex": 12},
+    {"id": "madarsko_slunce_vychozi", "hodnota": 4, "jednotka": "% výroby elektřiny ze slunce (výchozí stav)", "text": "Maďarsko zvýšilo podíl slunce na výrobě elektřiny ze 4 %.", "zdrojIndex": 13},
+    {"id": "madarsko_slunce_nyni", "hodnota": 25, "jednotka": "% výroby elektřiny ze slunce (zhruba, za pět let)", "text": "Za pět let zvýšilo Maďarsko podíl slunce na zhruba 25 %.", "zdrojIndex": 13},
+    {"id": "vitr_podil_vyroby", "hodnota": 1, "jednotka": "% výroby elektřiny (necelé)", "text": "Z větru dnes vyrábíme necelé procento elektřiny.", "zdrojIndex": 14},
     {"id": "vitr_prirustek_loni", "hodnota": 13, "jednotka": "MW nového výkonu (loni)", "text": "Loni přibylo jen zhruba 13 MW nového výkonu větru.", "zdrojIndex": 14},
-    {"id": "vitr_potencial_2040", "hodnota": "6–19", "jednotka": "TWh ročně (do roku 2040)", "text": "Vítr v Česku může do roku 2040 vyrábět 6 až 19 TWh ročně.", "zdrojIndex": 15},
+    {"id": "vitr_potencial_2040", "hodnota": "6–19", "jednotka": "TWh ročně (do roku 2040)", "text": "Vítr v Česku může do roku 2040 vyrábět 6 až 19 TWh ročně.", "zdrojIndex": 15},
     {"id": "vitr_potencial_podil", "hodnota": "desetina až třetina", "jednotka": "dnešní spotřeby elektřiny", "text": "Potenciál větru odpovídá zhruba desetině až třetině dnešní spotřeby.", "zdrojIndex": 15},
-    {"id": "vitr_lokality_pred_20_lety", "hodnota": 20, "jednotka": "let (lokality, které tehdy nedávaly ekonomický smysl)", "text": "Moderní turbíny s vysokými stožáry zpřístupnily lokality, které před dvaceti lety nedávaly ekonomicky smysl.", "zdrojIndex": null},
-    {"id": "vitr_zimni_pololeti", "hodnota": 57, "jednotka": "% výroby větru připadá na zimní pololetí", "text": "Většina výroby větru připadá na zimní pololetí (zdroj uvádí 57 %).", "zdrojIndex": 37},
-    {"id": "akcelerace_povoleni_cil", "hodnota": 1, "jednotka": "rok (cíl zkrácení povolování v akceleračních zónách)", "text": "Návrh akceleračních zón měl povolování zkrátit na rok.", "zdrojIndex": 19},
-    {"id": "rakousko_vitr_podil", "hodnota": 13, "jednotka": "% spotřeby elektřiny kryje Rakousko z větru", "text": "Rakousko z větru už kryje 13 % spotřeby elektřiny.", "zdrojIndex": 17},
-    {"id": "rakousko_vitr_rust_2030", "hodnota": "více než 2×", "jednotka": "růst větrné výroby do roku 2030 (Rakousko)", "text": "Plán rozvoje sítí počítá do roku 2030 s růstem větrné výroby na více než dvojnásobek.", "zdrojIndex": 18},
-    {"id": "sit_rezervace_gw", "hodnota": 20, "jednotka": "GW kapacity v sítích drží rezervace (přes)", "text": "Přes 20 GW kapacity v sítích drží rezervace projektů, které se roky nestaví.", "zdrojIndex": 20},
+    {"id": "vitr_lokality_pred_20_lety", "hodnota": 20, "jednotka": "let (lokality, které tehdy nedávaly ekonomický smysl)", "text": "Moderní turbíny s vysokými stožáry zpřístupnily lokality, které před dvaceti lety nedávaly ekonomicky smysl.", "zdrojIndex": null},
+    {"id": "vitr_zimni_pololeti", "hodnota": 57, "jednotka": "% výroby větru připadá na zimní pololetí", "text": "Většina výroby větru připadá na zimní pololetí (zdroj uvádí 57 %).", "zdrojIndex": 37},
+    {"id": "akcelerace_povoleni_cil", "hodnota": 1, "jednotka": "rok (cíl zkrácení povolování v akceleračních zónách)", "text": "Návrh akceleračních zón měl povolování zkrátit na rok.", "zdrojIndex": 19},
+    {"id": "rakousko_vitr_podil", "hodnota": 13, "jednotka": "% spotřeby elektřiny kryje Rakousko z větru", "text": "Rakousko z větru už kryje 13 % spotřeby elektřiny.", "zdrojIndex": 17},
+    {"id": "rakousko_vitr_rust_2030", "hodnota": "více než 2×", "jednotka": "růst větrné výroby do roku 2030 (Rakousko)", "text": "Plán rozvoje sítí počítá do roku 2030 s růstem větrné výroby na více než dvojnásobek.", "zdrojIndex": 18},
+    {"id": "sit_rezervace_gw", "hodnota": 20, "jednotka": "GW kapacity v sítích drží rezervace (přes)", "text": "Přes 20 GW kapacity v sítích drží rezervace projektů, které se roky nestaví.", "zdrojIndex": 20},
     {"id": "sit_rezervace_pomer_cile", "hodnota": 2, "jednotka": "× více než kolik chceme do roku 2030 postavit", "text": "Rezervace představují dvojnásobek toho, co chceme do roku 2030 postavit.", "zdrojIndex": 20},
-    {"id": "baterie_zadosti_gw", "hodnota": 170, "jednotka": "GW (žádosti o připojení baterií u jednoho distributora)", "text": "Jen u jednoho distributora se sešly žádosti o připojení baterií o výkonu 170 GW.", "zdrojIndex": 21},
-    {"id": "baterie_nasobek_zateze", "hodnota": 15, "jednotka": "× maximální zatížení soustavy (zhruba)", "text": "Žádosti o připojení baterií odpovídají zhruba patnáctinásobku maximálního zatížení soustavy.", "zdrojIndex": 21},
+    {"id": "baterie_zadosti_gw", "hodnota": 170, "jednotka": "GW (žádosti o připojení baterií u jednoho distributora)", "text": "Jen u jednoho distributora se sešly žádosti o připojení baterií o výkonu 170 GW.", "zdrojIndex": 21},
+    {"id": "baterie_nasobek_zateze", "hodnota": 15, "jednotka": "× maximální zatížení soustavy (zhruba)", "text": "Žádosti o připojení baterií odpovídají zhruba patnáctinásobku maximálního zatížení soustavy.", "zdrojIndex": 21},
     {"id": "prikon_nevyuzity_gw", "hodnota": 3.3, "jednotka": "GW nevyužívaného příkonu (vysoké napětí)", "text": "Odběratelé na vysokém napětí blokují zhruba 3,3 GW nevyužívaného příkonu.", "zdrojIndex": 22},
     {"id": "zaporne_ceny_hodiny", "hodnota": 322, "jednotka": "hodin se zápornou cenou elektřiny (loni)", "text": "Loni bylo na burze 322 hodin se zápornou cenou elektřiny.", "zdrojIndex": 23},
-    {"id": "plyn_povolenky_od", "hodnota": 2028, "jednotka": "rok, od kterého domácnosti zaplatí povolenky za plyn na vytápění", "text": "Plyn na vytápění je od spotřební daně osvobozen a povolenky za něj domácnosti zaplatí až od roku 2028.", "zdrojIndex": 25},
+    {"id": "plyn_povolenky_od", "hodnota": 2028, "jednotka": "rok, od kterého domácnosti zaplatí povolenky za plyn na vytápění", "text": "Plyn na vytápění je od spotřební daně osvobozen a povolenky za něj domácnosti zaplatí až od roku 2028.", "zdrojIndex": 25},
     {"id": "cena_elektrina_vs_plyn", "hodnota": 4, "jednotka": "× (jednotka elektřiny vs. jednotka plynu, zhruba)", "text": "Jednotka elektřiny stojí domácnost zhruba čtyřikrát víc než jednotka plynu.", "zdrojIndex": null},
     {"id": "tc_bod_zvratu", "hodnota": 2.7, "jednotka": "ku 1 (poměr cen elektřina : plyn, od kterého se vyplácí tepelné čerpadlo)", "text": "Tepelné čerpadlo se vyplácí od poměru asi 2,7 ku 1.", "zdrojIndex": 26},
     {"id": "tc_prodeje_pokles", "hodnota": 50, "jednotka": "% (domácí prodeje tepelných čerpadel za dva roky klesly na polovinu)", "text": "Domácí prodeje tepelných čerpadel za dva roky spadly na polovinu.", "zdrojIndex": 28},
     {"id": "dalkove_teplo_domacnosti", "hodnota": "třetina", "jednotka": "domácností ohřívaných dálkovým teplem", "text": "Dálkové teplo ohřívá třetinu domácností.", "zdrojIndex": 29},
-    {"id": "teplarny_uhli_podil", "hodnota": 47.6, "jednotka": "% dodávek tepláren z uhlí (2025)", "text": "Téměř polovina dodávek tepláren stále pochází z uhlí (47,6 % v roce 2025).", "zdrojIndex": 29},
-    {"id": "eu_teplo_od", "hodnota": 2028, "jednotka": "rok, od kterého evropská pravidla vyžadují rostoucí podíl obnovitelného a odpadního tepla", "text": "Evropská pravidla od roku 2028 vyžadují rostoucí podíl obnovitelného a odpadního tepla.", "zdrojIndex": 30},
-    {"id": "teplo_rozdil_mesta", "hodnota": 50, "jednotka": "% (ceny tepla se mezi městy liší až o polovinu)", "text": "Ceny tepla se mezi městy liší i o polovinu, aniž zákazník vidí proč.", "zdrojIndex": 31},
-    {"id": "plyn_zabetonovan_ucty", "hodnota": 20, "jednotka": "let (cena plynu se soustavám zabetonuje do účtů)", "text": "Přechod z uhlí na dovážený plyn se soustavám zabetonuje do účtů na dvacet let.", "zdrojIndex": 32},
-    {"id": "kapacitni_mechanismus_platby", "hodnota": "75–150", "jednotka": "mld. Kč (platby kapacitního mechanismu v příští dekádě)", "text": "Platby kapacitního mechanismu vyjdou v příští dekádě na 75 až 150 miliard korun.", "zdrojIndex": 36},
+    {"id": "teplarny_uhli_podil", "hodnota": 47.6, "jednotka": "% dodávek tepláren z uhlí (2025)", "text": "Téměř polovina dodávek tepláren stále pochází z uhlí (47,6 % v roce 2025).", "zdrojIndex": 29},
+    {"id": "eu_teplo_od", "hodnota": 2028, "jednotka": "rok, od kterého evropská pravidla vyžadují rostoucí podíl obnovitelného a odpadního tepla", "text": "Evropská pravidla od roku 2028 vyžadují rostoucí podíl obnovitelného a odpadního tepla.", "zdrojIndex": 30},
+    {"id": "teplo_rozdil_mesta", "hodnota": 50, "jednotka": "% (ceny tepla se mezi městy liší až o polovinu)", "text": "Ceny tepla se mezi městy liší i o polovinu, aniž zákazník vidí proč.", "zdrojIndex": 31},
+    {"id": "plyn_zabetonovan_ucty", "hodnota": 20, "jednotka": "let (cena plynu se soustavám zabetonuje do účtů)", "text": "Přechod z uhlí na dovážený plyn se soustavám zabetonuje do účtů na dvacet let.", "zdrojIndex": 32},
+    {"id": "kapacitni_mechanismus_platby", "hodnota": "75–150", "jednotka": "mld. Kč (platby kapacitního mechanismu v příští dekádě)", "text": "Platby kapacitního mechanismu vyjdou v příští dekádě na 75 až 150 miliard korun.", "zdrojIndex": 36},
     {"id": "fve_okno_repowering", "hodnota": "2029–2031", "jednotka": "okno pro přezbrojení starých solárních parků", "text": "Okno let 2029 až 2031, kdy končí podpora starých solárních parků.", "zdrojIndex": 38},
-    {"id": "dukovany_smluvni_cena", "hodnota": 407, "jednotka": "mld. Kč (smluvní cena, bez inflace a financování)", "text": "Smluvní cena 407 miliard korun nezahrnuje inflaci ani náklady financování.", "zdrojIndex": 40},
+    {"id": "dukovany_smluvni_cena", "hodnota": 407, "jednotka": "mld. Kč (smluvní cena, bez inflace a financování)", "text": "Smluvní cena 407 miliard korun nezahrnuje inflaci ani náklady financování.", "zdrojIndex": 40},
     {"id": "dukovany_plne_naklady", "hodnota": "23–30", "jednotka": "mld. EUR (odhad plných nákladů výstavby)", "text": "Plné náklady výstavby se odhadují aktuálně na 23 až 30 miliard eur.", "zdrojIndex": 41},
-    {"id": "dukovany_smlouva_delka", "hodnota": 40, "jednotka": "let (smlouva o výkupu elektřiny za realizační cenu)", "text": "Čtyřicetiletá smlouva o výkupu elektřiny za realizační cenu.", "zdrojIndex": 41},
-    {"id": "flamanville_nasobek", "hodnota": 3, "jednotka": "× (náklady i doba výstavby Flamanville, více než)", "text": "U francouzského Flamanville se náklady i doba výstavby více než ztrojnásobily.", "zdrojIndex": 43},
+    {"id": "dukovany_smlouva_delka", "hodnota": 40, "jednotka": "let (smlouva o výkupu elektřiny za realizační cenu)", "text": "Čtyřicetiletá smlouva o výkupu elektřiny za realizační cenu.", "zdrojIndex": 41},
+    {"id": "flamanville_nasobek", "hodnota": 3, "jednotka": "× (náklady i doba výstavby Flamanville, více než)", "text": "U francouzského Flamanville se náklady i doba výstavby více než ztrojnásobily.", "zdrojIndex": 43},
     {"id": "vogtle_rozpocet", "hodnota": 2, "jednotka": "× rozpočtu (americký Vogtle, přes)", "text": "Americký Vogtle stál přes dvojnásobek rozpočtu.", "zdrojIndex": 43},
-    {"id": "eia_limit_vykonu", "hodnota": 3250, "jednotka": "MWe (limit souběžného výkonu staré a nové elektrárny)", "text": "Stanovisko EIA omezuje souběžný výkon staré a nové elektrárny v lokalitě na 3 250 MWe.", "zdrojIndex": 44},
-    {"id": "prechodova_kapacita_obchod", "hodnota": 70, "jednotka": "% přeshraniční kapacity má sloužit obchodu (požadavek)", "text": "Evropské pravidlo, že 70 % přeshraniční kapacity má sloužit obchodu.", "zdrojIndex": 48},
+    {"id": "eia_limit_vykonu", "hodnota": 3250, "jednotka": "MWe (limit souběžného výkonu staré a nové elektrárny)", "text": "Stanovisko EIA omezuje souběžný výkon staré a nové elektrárny v lokalitě na 3 250 MWe.", "zdrojIndex": 44},
+    {"id": "prechodova_kapacita_obchod", "hodnota": 70, "jednotka": "% přeshraniční kapacity má sloužit obchodu (požadavek)", "text": "Evropské pravidlo, že 70 % přeshraniční kapacity má sloužit obchodu.", "zdrojIndex": 48},
     {"id": "domacnosti_topici_plynem", "hodnota": 1500000, "jednotka": "domácností topících plynem (více než)", "text": "Více než 1,5 milionu domácností topících plynem si může naplánovat výměnu kotle.", "zdrojIndex": 50},
-    {"id": "povolenky_vytapeni_od", "hodnota": 2028, "jednotka": "rok rozšíření emisních povolenek na vytápění a pohonné hmoty", "text": "Od roku 2028 se emisní povolenky rozšíří na vytápění a pohonné hmoty.", "zdrojIndex": 51},
-    {"id": "kupon_podil_vynosu", "hodnota": 50, "jednotka": "% výnosů z povolenek vrácených přímo lidem", "text": "Energetický kupón: polovinu výnosů vrátíme přímo lidem.", "zdrojIndex": 52},
+    {"id": "povolenky_vytapeni_od", "hodnota": 2028, "jednotka": "rok rozšíření emisních povolenek na vytápění a pohonné hmoty", "text": "Od roku 2028 se emisní povolenky rozšíří na vytápění a pohonné hmoty.", "zdrojIndex": 51},
+    {"id": "kupon_podil_vynosu", "hodnota": 50, "jednotka": "% výnosů z povolenek vrácených přímo lidem", "text": "Energetický kupón: polovinu výnosů vrátíme přímo lidem.", "zdrojIndex": 52},
     {"id": "kupon_cena_povolenky", "hodnota": 60, "jednotka": "eur (cena povolenky, kolem)", "text": "Při ceně povolenky kolem 60 eur.", "zdrojIndex": 52},
-    {"id": "kupon_castka_rocne", "hodnota": 5000, "jednotka": "Kč ročně na průměrnou domácnost (zhruba)", "text": "Jde zhruba o 5 000 korun ročně na průměrnou domácnost.", "zdrojIndex": 52},
-    {"id": "nizozemi_pripojeni_gw", "hodnota": 9, "jednotka": "GW kapacity zpřístupněné připojením s omezitelným výkonem (Nizozemsko)", "text": "Připojení s omezitelným výkonem, kterým Nizozemsko zpřístupnilo 9 GW kapacity.", "zdrojIndex": 58},
-    {"id": "dynamicky_tarif_usetreno", "hodnota": 10, "jednotka": "% účtu (v českém pilotu ušetřily domácnosti kolem desetiny)", "text": "V českém pilotu takto domácnosti ušetřily kolem desetiny účtu.", "zdrojIndex": 60},
-    {"id": "obousmerne_nabijeni_od", "hodnota": 2027, "jednotka": "rok (evropský standard u nových dobíjecích stanic)", "text": "Obousměrné nabíjení bude od roku 2027 u nových dobíjecích stanic evropským standardem.", "zdrojIndex": 61},
+    {"id": "kupon_castka_rocne", "hodnota": 5000, "jednotka": "Kč ročně na průměrnou domácnost (zhruba)", "text": "Jde zhruba o 5 000 korun ročně na průměrnou domácnost.", "zdrojIndex": 52},
+    {"id": "nizozemi_pripojeni_gw", "hodnota": 9, "jednotka": "GW kapacity zpřístupněné připojením s omezitelným výkonem (Nizozemsko)", "text": "Připojení s omezitelným výkonem, kterým Nizozemsko zpřístupnilo 9 GW kapacity.", "zdrojIndex": 58},
+    {"id": "dynamicky_tarif_usetreno", "hodnota": 10, "jednotka": "% účtu (v českém pilotu ušetřily domácnosti kolem desetiny)", "text": "V českém pilotu takto domácnosti ušetřily kolem desetiny účtu.", "zdrojIndex": 60},
+    {"id": "obousmerne_nabijeni_od", "hodnota": 2027, "jednotka": "rok (evropský standard u nových dobíjecích stanic)", "text": "Obousměrné nabíjení bude od roku 2027 u nových dobíjecích stanic evropským standardem.", "zdrojIndex": 61},
     {"id": "komunita_rakousko", "hodnota": 4000, "jednotka": "energetických společenství (Rakousko, téměř čtyři tisíce)", "text": "Rakousko má téměř čtyři tisíce energetických společenství.", "zdrojIndex": 63},
     {"id": "komunita_cesko", "hodnota": 200, "jednotka": "energetických společenství (ČR, zhruba dvě stě)", "text": "Česko má zhruba dvě stě energetických společenství.", "zdrojIndex": 63},
     {"id": "verejne_budovy_trida_d", "hodnota": 75, "jednotka": "% veřejných budov má energetickou třídu D nebo horší (více než tři čtvrtiny)", "text": "Více než tři čtvrtiny veřejných budov mají energetickou třídu D nebo horší.", "zdrojIndex": 64},
     {"id": "uspory_verejne_budovy", "hodnota": 20, "jednotka": "mld. Kč ročně (potenciál úspor, až)", "text": "Potenciál úspor se odhaduje až na 20 miliard korun ročně.", "zdrojIndex": 64},
     {"id": "epc_uspory_rocne", "hodnota": 700, "jednotka": "mil. Kč ročně (EPC projekty bez dotací, přes)", "text": "Takové projekty už dnes šetří přes 700 milionů ročně bez dotací.", "zdrojIndex": 65},
     {"id": "socialni_klimaticky_fond", "hodnota": 50, "jednotka": "mld. Kč (renovace na klíč ze Sociálního klimatického fondu, zhruba)", "text": "Pro domácnosti nasměrujeme na renovace na klíč zhruba 50 miliard korun ze Sociálního klimatického fondu.", "zdrojIndex": 68},
-    {"id": "litva_pokles_ceny_tepla", "hodnota": "třetina", "jednotka": "pokles cen tepla (litevské aukce)", "text": "Litevské aukce snížily ceny tepla za 5 let o třetinu.", "zdrojIndex": 71},
+    {"id": "litva_pokles_ceny_tepla", "hodnota": "třetina", "jednotka": "pokles cen tepla (litevské aukce)", "text": "Litevské aukce snížily ceny tepla za 5 let o třetinu.", "zdrojIndex": 71},
     {"id": "litva_obdobi", "hodnota": 5, "jednotka": "let (za které litevské aukce snížily ceny tepla)", "text": "Litevské aukce snížily ceny tepla za 5 let.", "zdrojIndex": 71},
-    {"id": "odpadni_teplo_800", "hodnota": 800000, "jednotka": "domácností (odpadní teplo, které by vytopilo zhruba)", "text": "Česko vypouští ekonomicky využitelné odpadní teplo v objemu, který by vytopil zhruba 800 tisíc domácností.", "zdrojIndex": 75},
+    {"id": "odpadni_teplo_800", "hodnota": 800000, "jednotka": "domácností (odpadní teplo, které by vytopilo zhruba)", "text": "Česko vypouští ekonomicky využitelné odpadní teplo v objemu, který by vytopil zhruba 800 tisíc domácností.", "zdrojIndex": 75},
     {"id": "opatreni_linie", "hodnota": 4, "jednotka": "linie opatření", "text": "Opatření řadíme do čtyř linií.", "zdrojIndex": null}
   ],
   "priciny": [
-    {"poradi": 1, "typ": "řetězec", "pricina": "Uhlí končí dřív, než je připravena náhrada", "popis": "Uhelné elektrárny končí podle trhu, ne podle vládních harmonogramů. Jejich náhrada ale nabírá skluz: první nový paroplynový blok v Mělníku se posunul z roku 2026 na rok 2029 a výrobci turbín jsou vyprodaní do konce dekády. Každý rok skluzu znamená další platby uhelným elektrárnám v nařízeném provozu, které zaplatí spotřebitelé.", "zdrojIndex": 6},
-    {"poradi": 2, "typ": "další", "pricina": "Pomalé povolování OZE", "popis": "Domácí nízkoemisní zdroje stavíme hluboko pod potenciálem i pod vlastními cíli. Rozdíl dělá povolování, územní pravidla a přístup k síti, ne počasí. Návrh akceleračních zón byl při posuzování výrazně omezen.", "zdrojIndex": 19},
-    {"poradi": 3, "typ": "další", "pricina": "Papírové rezervace sítě", "popis": "Přes 20 GW kapacity v sítích, dvojnásobek toho, co chceme do roku 2030 postavit, drží rezervace projektů, které se roky nestaví. Zastaralé řízení blokuje další připojení.", "zdrojIndex": 20},
-    {"poradi": 4, "typ": "další", "pricina": "Deformované ceny elektřiny a plynu", "popis": "Elektřina nese náklady povolenek a plné náklady sítí, plyn na vytápění je od spotřební daně osvobozen. Jednotka elektřiny tak stojí domácnost zhruba čtyřikrát víc než jednotka plynu, zatímco tepelné čerpadlo se vyplácí od poměru asi 2,7 ku 1.", "zdrojIndex": 25},
-    {"poradi": 5, "typ": "další", "pricina": "Teplárenství bez plánu", "popis": "Dálkové teplo ohřívá třetinu domácností a téměř polovina dodávek tepláren stále pochází z uhlí. Samostatná teplárenská strategie neexistuje; transformace se platí jako přechod z uhlí na dovážený plyn, jehož cena se zabetonuje do účtů na dvacet let.", "zdrojIndex": 29}
+    {"poradi": 1, "typ": "řetězec", "pricina": "Uhlí končí dřív, než je připravena náhrada", "popis": "Uhelné elektrárny končí podle trhu, ne podle vládních harmonogramů. Jejich náhrada ale nabírá skluz: první nový paroplynový blok v Mělníku se posunul z roku 2026 na rok 2029 a výrobci turbín jsou vyprodaní do konce dekády. Každý rok skluzu znamená další platby uhelným elektrárnám v nařízeném provozu, které zaplatí spotřebitelé.", "zdrojIndex": 6},
+    {"poradi": 2, "typ": "další", "pricina": "Pomalé povolování OZE", "popis": "Domácí nízkoemisní zdroje stavíme hluboko pod potenciálem i pod vlastními cíli. Rozdíl dělá povolování, územní pravidla a přístup k síti, ne počasí. Návrh akceleračních zón byl při posuzování výrazně omezen.", "zdrojIndex": 19},
+    {"poradi": 3, "typ": "další", "pricina": "Papírové rezervace sítě", "popis": "Přes 20 GW kapacity v sítích, dvojnásobek toho, co chceme do roku 2030 postavit, drží rezervace projektů, které se roky nestaví. Zastaralé řízení blokuje další připojení.", "zdrojIndex": 20},
+    {"poradi": 4, "typ": "další", "pricina": "Deformované ceny elektřiny a plynu", "popis": "Elektřina nese náklady povolenek a plné náklady sítí, plyn na vytápění je od spotřební daně osvobozen. Jednotka elektřiny tak stojí domácnost zhruba čtyřikrát víc než jednotka plynu, zatímco tepelné čerpadlo se vyplácí od poměru asi 2,7 ku 1.", "zdrojIndex": 25},
+    {"poradi": 5, "typ": "další", "pricina": "Teplárenství bez plánu", "popis": "Dálkové teplo ohřívá třetinu domácností a téměř polovina dodávek tepláren stále pochází z uhlí. Samostatná teplárenská strategie neexistuje; transformace se platí jako přechod z uhlí na dovážený plyn, jehož cena se zabetonuje do účtů na dvacet let.", "zdrojIndex": 29}
   ],
   "opatreni": [
     {
       "cislo": 1,
       "nazev": "Technologicky neutrální kapacitní mechanismus",
-      "popis": "Období mezi útlumem uhlí a náběhem nových jaderných bloků musí odpracovat obnovitelné zdroje s akumulací, doplněné plynem jako přechodným a záložním zdrojem. Zavedeme technologicky neutrální kapacitní mechanismus: aukce na pohotovost otevřené bateriím, přečerpávacím elektrárnám, agregované flexibilitě i teplárnám za stejných podmínek jako plynovým elektrárnám. Evropská komise mechanismus Česku schválila a platby vyjdou v příští dekádě na 75 až 150 miliard korun. Právě proto musí aukce vybírat nejlevnější řešení, ne předem určenou technologii.",
-      "klicoveCislo": "platby 75–150 mld. Kč v příští dekádě",
-      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
+      "popis": "Období mezi útlumem uhlí a náběhem nových jaderných bloků musí odpracovat obnovitelné zdroje s akumulací, doplněné plynem jako přechodným a záložním zdrojem. Zavedeme technologicky neutrální kapacitní mechanismus: aukce na pohotovost otevřené bateriím, přečerpávacím elektrárnám, agregované flexibilitě i teplárnám za stejných podmínek jako plynovým elektrárnám. Evropská komise mechanismus Česku schválila a platby vyjdou v příští dekádě na 75 až 150 miliard korun. Právě proto musí aukce vybírat nejlevnější řešení, ne předem určenou technologii.",
+      "klicoveCislo": "platby 75–150 mld. Kč v příští dekádě",
+      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
     },
     {
       "cislo": 2,
-      "nazev": "Model přímého výnosu z větru",
-      "popis": "U větru změníme přístup. Místo zón, které výstavbu fakticky brzdí, zavedeme model, v němž obce a dotčené komunity získají z projektů přímý výnos a projekty s jejich podporou projdou výrazně rychlejším povolováním. Uvolníme vhodné části vojenských újezdů a prověříme bezletové zóny, které výstavbu historicky blokovaly. Domácí větrná výroba je cenná i proto, že její profil doplňuje fotovoltaiku: většina výroby připadá na zimní pololetí, kdy slunce dodává nejméně.",
-      "klicoveCislo": "přímý výnos pro obce a dotčené komunity",
-      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
+      "nazev": "Model přímého výnosu z větru",
+      "popis": "U větru změníme přístup. Místo zón, které výstavbu fakticky brzdí, zavedeme model, v němž obce a dotčené komunity získají z projektů přímý výnos a projekty s jejich podporou projdou výrazně rychlejším povolováním. Uvolníme vhodné části vojenských újezdů a prověříme bezletové zóny, které výstavbu historicky blokovaly. Domácí větrná výroba je cenná i proto, že její profil doplňuje fotovoltaiku: většina výroby připadá na zimní pololetí, kdy slunce dodává nejméně.",
+      "klicoveCislo": "přímý výnos pro obce a dotčené komunity",
+      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
     },
     {
       "cislo": 3,
-      "nazev": "Fotovoltaika: tempo přes 1 GW ročně a přezbrojení",
-      "popis": "U fotovoltaiky podpoříme tempo přes 1 GW ročně a využijeme okno let 2029 až 2031, kdy končí podpora starých solárních parků a jejich přezbrojení může na stejné ploše výrazně zvýšit výrobu i doplnit baterie. Současně v souladu s varováním NÚKIB zajistíme, aby software střídačů neumožňoval vzdálené vypnutí ze třetích zemí.",
+      "nazev": "Fotovoltaika: tempo přes 1 GW ročně a přezbrojení",
+      "popis": "U fotovoltaiky podpoříme tempo přes 1 GW ročně a využijeme okno let 2029 až 2031, kdy končí podpora starých solárních parků a jejich přezbrojení může na stejné ploše výrazně zvýšit výrobu i doplnit baterie. Současně v souladu s varováním NÚKIB zajistíme, aby software střídačů neumožňoval vzdálené vypnutí ze třetích zemí.",
       "klicoveCislo": "přes 1 GW ročně; okno 2029–2031",
-      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
+      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
     },
     {
       "cislo": 4,
       "nazev": "Jádro jako stabilizační prvek",
-      "popis": "S jádrem počítáme jako s významným stabilním zdrojem po roce 2040 a dostavbu Dukovan podporujeme. Strategie ale nesmí plánovat, jako by termín a cena nových bloků byly jisté. Smluvní cena 407 miliard korun nezahrnuje inflaci ani náklady financování. Stát projekt podpírá nízkoúročeným úvěrem na plné náklady výstavby, odhadované aktuálně na 23 až 30 miliard eur, a čtyřicetiletou smlouvou o výkupu elektřiny za realizační cenu, tedy oboustranným rozdílovým kontraktem. Špatně nastavená realizační cena může přenést podstatnou část investičního rizika na stát a odběratele. Evropská komise k podpoře obou bloků zahájila šetření mimo jiné právě kvůli riziku nadměrného přenosu rizik na stát. Obezřetnost velí i zkušenost: u francouzského Flamanville se náklady i doba výstavby více než ztrojnásobily, americký Vogtle stál přes dvojnásobek rozpočtu. A roste význam dosud opomíjeného parametru, vody. Stanovisko EIA omezuje souběžný výkon staré a nové elektrárny v lokalitě na 3 250 MWe a vodní bilanci, prokázanou pro souběh s jedním novým blokem, ukládá před stavebním povolením aktualizovat podle vývoje klimatu. Vodní bilance a technologie chlazení tak mohou při častějším suchu ovlivnit náklady i provozní parametry projektu a musí být součástí hodnocení jeho ekonomiky. Jádro je pojistka stability, ne recept na levnou elektřinu. Energetická politika musí mít funkční řešení i pro období před spuštěním nových bloků.",
-      "klicoveCislo": "407 mld. Kč smluvní cena (bez inflace a financování)",
-      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
+      "popis": "S jádrem počítáme jako s významným stabilním zdrojem po roce 2040 a dostavbu Dukovan podporujeme. Strategie ale nesmí plánovat, jako by termín a cena nových bloků byly jisté. Smluvní cena 407 miliard korun nezahrnuje inflaci ani náklady financování. Stát projekt podpírá nízkoúročeným úvěrem na plné náklady výstavby, odhadované aktuálně na 23 až 30 miliard eur, a čtyřicetiletou smlouvou o výkupu elektřiny za realizační cenu, tedy oboustranným rozdílovým kontraktem. Špatně nastavená realizační cena může přenést podstatnou část investičního rizika na stát a odběratele. Evropská komise k podpoře obou bloků zahájila šetření mimo jiné právě kvůli riziku nadměrného přenosu rizik na stát. Obezřetnost velí i zkušenost: u francouzského Flamanville se náklady i doba výstavby více než ztrojnásobily, americký Vogtle stál přes dvojnásobek rozpočtu. A roste význam dosud opomíjeného parametru, vody. Stanovisko EIA omezuje souběžný výkon staré a nové elektrárny v lokalitě na 3 250 MWe a vodní bilanci, prokázanou pro souběh s jedním novým blokem, ukládá před stavebním povolením aktualizovat podle vývoje klimatu. Vodní bilance a technologie chlazení tak mohou při častějším suchu ovlivnit náklady i provozní parametry projektu a musí být součástí hodnocení jeho ekonomiky. Jádro je pojistka stability, ne recept na levnou elektřinu. Energetická politika musí mít funkční řešení i pro období před spuštěním nových bloků.",
+      "klicoveCislo": "407 mld. Kč smluvní cena (bez inflace a financování)",
+      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
     },
     {
       "cislo": 5,
-      "nazev": "Stejnosměrný koridor a malé modulární reaktory",
-      "popis": "Rozvoj německých severojižních stejnosměrných koridorů, které přivádějí severomořskou větrnou elektřinu do Bavorska, může pro Česko vytvořit novou infrastrukturní příležitost. Nejnákladnější část této infrastruktury vzniká bez ohledu na české rozhodnutí. Prověříme proto studií proveditelnosti smysl protažení této stejnosměrné sítě do české soustavy: investiční náklady, dopad na přeshraniční kapacitu a české ceny, sezónní přínos, bezpečnost dodávek i alternativní využití stejného kapitálu. Jako možnost k ekonomickému prověření bereme také kapitálový vstup českého subjektu do severomořské farmy, jak to dělají například mnichovské městské podniky. Souběžně budeme vymáhat evropské pravidlo, že 70 % přeshraniční kapacity má sloužit obchodu. U malých modulárních reaktorů držíme přes podíl ČEZ v Rolls-Royce SMR opci na slibnou technologii.",
-      "klicoveCislo": "70 % přeshraniční kapacity pro obchod",
-      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
+      "nazev": "Stejnosměrný koridor a malé modulární reaktory",
+      "popis": "Rozvoj německých severojižních stejnosměrných koridorů, které přivádějí severomořskou větrnou elektřinu do Bavorska, může pro Česko vytvořit novou infrastrukturní příležitost. Nejnákladnější část této infrastruktury vzniká bez ohledu na české rozhodnutí. Prověříme proto studií proveditelnosti smysl protažení této stejnosměrné sítě do české soustavy: investiční náklady, dopad na přeshraniční kapacitu a české ceny, sezónní přínos, bezpečnost dodávek i alternativní využití stejného kapitálu. Jako možnost k ekonomickému prověření bereme také kapitálový vstup českého subjektu do severomořské farmy, jak to dělají například mnichovské městské podniky. Souběžně budeme vymáhat evropské pravidlo, že 70 % přeshraniční kapacity má sloužit obchodu. U malých modulárních reaktorů držíme přes podíl ČEZ v Rolls-Royce SMR opci na slibnou technologii.",
+      "klicoveCislo": "70 % přeshraniční kapacity pro obchod",
+      "sekce": "Domácí zdroje a bezpečný přechod od uhlí"
     },
     {
       "cislo": 6,
-      "nazev": "Trajektorie narovnání cen elektřiny a plynu",
-      "popis": "Narovnáme cenové podmínky mezi elektřinou a plynem bez cenových šoků. Po nizozemském vzoru zákonem ohlásíme trajektorii daní a poplatků na roky dopředu, aby si více než 1,5 milionu domácností topících plynem mohlo naplánovat výměnu kotle, až doslouží. Platí pořadí: nejdřív peníze lidem, teprve potom narovnávání daní.",
+      "nazev": "Trajektorie narovnání cen elektřiny a plynu",
+      "popis": "Narovnáme cenové podmínky mezi elektřinou a plynem bez cenových šoků. Po nizozemském vzoru zákonem ohlásíme trajektorii daní a poplatků na roky dopředu, aby si více než 1,5 milionu domácností topících plynem mohlo naplánovat výměnu kotle, až doslouží. Platí pořadí: nejdřív peníze lidem, teprve potom narovnávání daní.",
       "klicoveCislo": "více než 1,5 milionu domácností topících plynem",
-      "sekce": "Férové ceny pro domácnosti a průmysl"
+      "sekce": "Férové ceny pro domácnosti a průmysl"
     },
     {
       "cislo": 7,
       "nazev": "Energetický kupón",
-      "popis": "Od roku 2028 se emisní povolenky rozšíří na vytápění a pohonné hmoty. Zavedeme proto energetický kupón: polovinu výnosů vrátíme přímo lidem, každému stejně, bez žádostí a úředníka, na výplatní pásce, v důchodu nebo v dávkách. Při ceně povolenky kolem 60 eur jde zhruba o 5 000 korun ročně na průměrnou domácnost. Kdo topí a jezdí úsporně, dostane víc, než zaplatil. Překročí-li cena povolenky sociálně únosnou hranici, automaticky snížíme spotřební daň z paliv. To je věcná odpověď na systém, který začne platit bez ohledu na postoj vlády. Samotné odmítání žádnou domácnost neochrání.",
-      "klicoveCislo": "polovina výnosů; zhruba 5 000 Kč ročně na domácnost",
-      "sekce": "Férové ceny pro domácnosti a průmysl"
+      "popis": "Od roku 2028 se emisní povolenky rozšíří na vytápění a pohonné hmoty. Zavedeme proto energetický kupón: polovinu výnosů vrátíme přímo lidem, každému stejně, bez žádostí a úředníka, na výplatní pásce, v důchodu nebo v dávkách. Při ceně povolenky kolem 60 eur jde zhruba o 5 000 korun ročně na průměrnou domácnost. Kdo topí a jezdí úsporně, dostane víc, než zaplatil. Překročí-li cena povolenky sociálně únosnou hranici, automaticky snížíme spotřební daň z paliv. To je věcná odpověď na systém, který začne platit bez ohledu na postoj vlády. Samotné odmítání žádnou domácnost neochrání.",
+      "klicoveCislo": "polovina výnosů; zhruba 5 000 Kč ročně na domácnost",
+      "sekce": "Férové ceny pro domácnosti a průmysl"
     },
     {
       "cislo": 8,
       "nazev": "Tři nástroje pro energeticky náročný průmysl",
-      "popis": "Energeticky náročný průmysl udržíme třemi nástroji s jasným plátcem: dlouhodobými přímými kontrakty na elektřinu ze stávajících jaderných elektráren po francouzském vzoru, aukcemi hrazenými z výnosů průmyslových povolenek, které platí za skutečně snížené emise, a úlevou na síťových poplatcích výměnou za pomoc soustavě ve špičkách po britském vzoru. Nejde o nové desítky miliard, ale o chytřejší nasazení peněz v objemu dnešních kompenzací.",
-      "klicoveCislo": "chytřejší nasazení peněz v objemu dnešních kompenzací",
-      "sekce": "Férové ceny pro domácnosti a průmysl"
+      "popis": "Energeticky náročný průmysl udržíme třemi nástroji s jasným plátcem: dlouhodobými přímými kontrakty na elektřinu ze stávajících jaderných elektráren po francouzském vzoru, aukcemi hrazenými z výnosů průmyslových povolenek, které platí za skutečně snížené emise, a úlevou na síťových poplatcích výměnou za pomoc soustavě ve špičkách po britském vzoru. Nejde o nové desítky miliard, ale o chytřejší nasazení peněz v objemu dnešních kompenzací.",
+      "klicoveCislo": "chytřejší nasazení peněz v objemu dnešních kompenzací",
+      "sekce": "Férové ceny pro domácnosti a průmysl"
     },
     {
       "cislo": 9,
       "nazev": "Odblokování rezervací kapacity sítě",
-      "popis": "Nejlevnější megawatt je ten, který je už zaplacený. Kdo drží rezervaci kapacity, bude proto průběžně dokládat milníky v povolování a financování, převody projektů se budou evidovat a propadlá kapacita se vrátí do průhledné fronty. Stejný balík doporučuje Evropská komise. Obdobně uvolníme nevyužívaný rezervovaný příkon.",
+      "popis": "Nejlevnější megawatt je ten, který je už zaplacený. Kdo drží rezervaci kapacity, bude proto průběžně dokládat milníky v povolování a financování, převody projektů se budou evidovat a propadlá kapacita se vrátí do průhledné fronty. Stejný balík doporučuje Evropská komise. Obdobně uvolníme nevyužívaný rezervovaný příkon.",
       "klicoveCislo": "propadlá kapacita se vrátí do průhledné fronty",
-      "sekce": "Odblokovaná, digitální a flexibilní síť"
+      "sekce": "Odblokovaná, digitální a flexibilní síť"
     },
     {
       "cislo": 10,
-      "nazev": "Připojení s omezitelným výkonem a lhůta pro distributora",
-      "popis": "Zavedeme rychlejší dobrovolnou cestu: připojení s omezitelným výkonem, kterým Nizozemsko zpřístupnilo 9 GW kapacity. Distributor dostane vymahatelnou lhůtu na rozhodnutí a při zaviněném průtahu zaplatí kompenzaci ze svého, ne z tarifů.",
-      "klicoveCislo": "9 GW kapacity zpřístupněné v Nizozemsku",
-      "sekce": "Odblokovaná, digitální a flexibilní síť"
+      "nazev": "Připojení s omezitelným výkonem a lhůta pro distributora",
+      "popis": "Zavedeme rychlejší dobrovolnou cestu: připojení s omezitelným výkonem, kterým Nizozemsko zpřístupnilo 9 GW kapacity. Distributor dostane vymahatelnou lhůtu na rozhodnutí a při zaviněném průtahu zaplatí kompenzaci ze svého, ne z tarifů.",
+      "klicoveCislo": "9 GW kapacity zpřístupněné v Nizozemsku",
+      "sekce": "Odblokovaná, digitální a flexibilní síť"
     },
     {
       "cislo": 11,
-      "nazev": "Data o spotřebě patří zákazníkovi a dynamický tarif",
-      "popis": "Data o spotřebě patří zákazníkovi. Zavedeme povinné strojové rozhraní datového centra EDC pro všechny, ne jen pro velké hráče. Právo na dynamický tarif proměníme v reálnou a přísně dobrovolnou nabídku. V českém pilotu takto domácnosti ušetřily kolem desetiny účtu. Zrychlíme osazování průběhových elektroměrů a podpoříme obousměrné nabíjení, které bude od roku 2027 u nových dobíjecích stanic pro elektromobily evropským standardem, a v pilotu u regulátora prověříme platby za skutečnou, nikoli papírovou špičku odběru.",
-      "klicoveCislo": "kolem desetiny účtu v českém pilotu",
-      "sekce": "Odblokovaná, digitální a flexibilní síť"
+      "nazev": "Data o spotřebě patří zákazníkovi a dynamický tarif",
+      "popis": "Data o spotřebě patří zákazníkovi. Zavedeme povinné strojové rozhraní datového centra EDC pro všechny, ne jen pro velké hráče. Právo na dynamický tarif proměníme v reálnou a přísně dobrovolnou nabídku. V českém pilotu takto domácnosti ušetřily kolem desetiny účtu. Zrychlíme osazování průběhových elektroměrů a podpoříme obousměrné nabíjení, které bude od roku 2027 u nových dobíjecích stanic pro elektromobily evropským standardem, a v pilotu u regulátora prověříme platby za skutečnou, nikoli papírovou špičku odběru.",
+      "klicoveCislo": "kolem desetiny účtu v českém pilotu",
+      "sekce": "Odblokovaná, digitální a flexibilní síť"
     },
     {
       "cislo": 12,
       "nazev": "Komunitní energetika rakouským modelem",
-      "popis": "Podpoříme komunitní energetiku rakouským modelem: kdo sdílí elektřinu lokálně, platí za síť méně, protože ji méně zatěžuje. Rakousko má se slevou z distribučního poplatku téměř čtyři tisíce energetických společenství, Česko zhruba dvě stě.",
-      "klicoveCislo": "téměř 4 000 společenství (AT) vs. zhruba 200 (ČR)",
-      "sekce": "Odblokovaná, digitální a flexibilní síť"
+      "popis": "Podpoříme komunitní energetiku rakouským modelem: kdo sdílí elektřinu lokálně, platí za síť méně, protože ji méně zatěžuje. Rakousko má se slevou z distribučního poplatku téměř čtyři tisíce energetických společenství, Česko zhruba dvě stě.",
+      "klicoveCislo": "téměř 4 000 společenství (AT) vs. zhruba 200 (ČR)",
+      "sekce": "Odblokovaná, digitální a flexibilní síť"
     },
     {
       "cislo": 13,
       "nazev": "Úspory se zárukou (EPC) ve státních budovách",
-      "popis": "Úspory si na sebe vydělají samy a stát musí začít u sebe: více než tři čtvrtiny veřejných budov mají energetickou třídu D nebo horší a potenciál úspor se odhaduje až na 20 miliard korun ročně. Uložíme státním institucím povinnost prověřit u každé velké budovy úspory se zárukou (EPC), u nichž dodavatel smluvně ručí za výsledek a platí se z uspořených účtů. Takové projekty už dnes šetří přes 700 milionů ročně bez dotací.",
+      "popis": "Úspory si na sebe vydělají samy a stát musí začít u sebe: více než tři čtvrtiny veřejných budov mají energetickou třídu D nebo horší a potenciál úspor se odhaduje až na 20 miliard korun ročně. Uložíme státním institucím povinnost prověřit u každé velké budovy úspory se zárukou (EPC), u nichž dodavatel smluvně ručí za výsledek a platí se z uspořených účtů. Takové projekty už dnes šetří přes 700 milionů ročně bez dotací.",
       "klicoveCislo": "až 20 miliard Kč ročně",
-      "sekce": "Úspory a moderní teplárenství"
+      "sekce": "Úspory a moderní teplárenství"
     },
     {
       "cislo": 14,
       "nazev": "Revolvingový fond renovačních půjček",
-      "popis": "Pro domácnosti zřídíme revolvingový fond výhodných renovačních půjček po vzoru německé KfW, v němž se splátky vracejí a půjčují dál. Je to udržitelnější konstrukce než závazek státu platit bankám úroky z renovačních úvěrů, jehož výši v dnešním nastavení nikdo nehlídá. Pro domácnosti, které na investici nedosáhnou, nasměrujeme na renovace na klíč zhruba 50 miliard korun ze Sociálního klimatického fondu.",
+      "popis": "Pro domácnosti zřídíme revolvingový fond výhodných renovačních půjček po vzoru německé KfW, v němž se splátky vracejí a půjčují dál. Je to udržitelnější konstrukce než závazek státu platit bankám úroky z renovačních úvěrů, jehož výši v dnešním nastavení nikdo nehlídá. Pro domácnosti, které na investici nedosáhnou, nasměrujeme na renovace na klíč zhruba 50 miliard korun ze Sociálního klimatického fondu.",
       "klicoveCislo": "zhruba 50 miliard Kč ze Sociálního klimatického fondu",
-      "sekce": "Úspory a moderní teplárenství"
+      "sekce": "Úspory a moderní teplárenství"
     },
     {
       "cislo": 15,
-      "nazev": "Plánování tepla a férová cena tepla",
-      "popis": "Teplo uděláme společnou odpovědností státu a měst: po německém vzoru zavedeme závazné plánování tepla a chladu obcemi. Zavedeme veřejné srovnání cen tepla po vzoru Rakouska, povinnost soustav nasadit nejlevnější dostupné nízkoemisní teplo, kde obdobné litevské aukce snížily ceny tepla za 5 let o třetinu, a regulaci zisku za celou cestu tepla k zákazníkovi, ne po jednotlivých článcích řetězce. Kdo opakovaně účtuje víc, než by zákazníka stálo srovnatelné tepelné čerpadlo, předloží ozdravný plán a jeho odběratelé získají právo odejít bez sankcí. Levnější nízkoemisní zdroj dostane právo připojit se k soustavě a žádná veřejná podpora nesmí být podmíněna ochranou před konkurencí.",
-      "klicoveCislo": "ceny tepla o třetinu nižší za 5 let (litevské aukce)",
-      "sekce": "Úspory a moderní teplárenství"
+      "nazev": "Plánování tepla a férová cena tepla",
+      "popis": "Teplo uděláme společnou odpovědností státu a měst: po německém vzoru zavedeme závazné plánování tepla a chladu obcemi. Zavedeme veřejné srovnání cen tepla po vzoru Rakouska, povinnost soustav nasadit nejlevnější dostupné nízkoemisní teplo, kde obdobné litevské aukce snížily ceny tepla za 5 let o třetinu, a regulaci zisku za celou cestu tepla k zákazníkovi, ne po jednotlivých článcích řetězce. Kdo opakovaně účtuje víc, než by zákazníka stálo srovnatelné tepelné čerpadlo, předloží ozdravný plán a jeho odběratelé získají právo odejít bez sankcí. Levnější nízkoemisní zdroj dostane právo připojit se k soustavě a žádná veřejná podpora nesmí být podmíněna ochranou před konkurencí.",
+      "klicoveCislo": "ceny tepla o třetinu nižší za 5 let (litevské aukce)",
+      "sekce": "Úspory a moderní teplárenství"
     },
     {
       "cislo": 16,
-      "nazev": "Odpadní a obnovitelné teplo",
-      "popis": "Uhlí v soustavách nahradíme především teplem, které dnes vyhazujeme. Česko vypouští ekonomicky využitelné odpadní teplo v objemu, který by vytopil zhruba 800 tisíc domácností. Otevřeme technologicky neutrální cestu pilotům odpadního a obnovitelného tepla i soustavám chladu, po kterém s teplejšími léty poroste poptávka, a z ověřených řešení uděláme exportní referenci českého průmyslu.",
+      "nazev": "Odpadní a obnovitelné teplo",
+      "popis": "Uhlí v soustavách nahradíme především teplem, které dnes vyhazujeme. Česko vypouští ekonomicky využitelné odpadní teplo v objemu, který by vytopil zhruba 800 tisíc domácností. Otevřeme technologicky neutrální cestu pilotům odpadního a obnovitelného tepla i soustavám chladu, po kterém s teplejšími léty poroste poptávka, a z ověřených řešení uděláme exportní referenci českého průmyslu.",
       "klicoveCislo": "zhruba 800 tisíc domácností",
-      "sekce": "Úspory a moderní teplárenství"
+      "sekce": "Úspory a moderní teplárenství"
     }
   ],
   "cile": [
-    {"cil": "Dosáhnout tempa výstavby alespoň 1 GW fotovoltaiky, 200 MW větru a 2 GWh bateriových úložišť ročně", "hodnota": 1, "jednotka": "GW fotovoltaiky ročně (alespoň)"},
+    {"cil": "Dosáhnout tempa výstavby alespoň 1 GW fotovoltaiky, 200 MW větru a 2 GWh bateriových úložišť ročně", "hodnota": 1, "jednotka": "GW fotovoltaiky ročně (alespoň)"},
     {"cil": "Uvolňovat blokovanou kapacitu sítě tempem alespoň 2 GW ročně", "hodnota": 2, "jednotka": "GW kapacity sítě ročně (alespoň)"},
-    {"cil": "S startem povolenek v roce 2028 spustit energetický kupón, který vrátí polovinu výnosů přímo lidem", "hodnota": 2028, "jednotka": "rok startu (polovina výnosů vrácena)"},
-    {"cil": "Zákonem ohlásit trajektorii narovnání cen elektřiny a plynu", "hodnota": "zákon", "jednotka": "ohlášená trajektorie cen elektřiny a plynu"},
-    {"cil": "Dostat poměr cen elektřiny a plynu pod bod zvratu tepelného čerpadla a cenu elektřiny v přepočtu na kupní sílu nejvýše na evropský průměr", "hodnota": 2.7, "jednotka": "ku 1 (poměr cen elektřina : plyn, pod)"},
+    {"cil": "S startem povolenek v roce 2028 spustit energetický kupón, který vrátí polovinu výnosů přímo lidem", "hodnota": 2028, "jednotka": "rok startu (polovina výnosů vrácena)"},
+    {"cil": "Zákonem ohlásit trajektorii narovnání cen elektřiny a plynu", "hodnota": "zákon", "jednotka": "ohlášená trajektorie cen elektřiny a plynu"},
+    {"cil": "Dostat poměr cen elektřiny a plynu pod bod zvratu tepelného čerpadla a cenu elektřiny v přepočtu na kupní sílu nejvýše na evropský průměr", "hodnota": 2.7, "jednotka": "ku 1 (poměr cen elektřina : plyn, pod)"},
     {"cil": "Po roce 2040 provozovat nové jaderné bloky jako stabilní páteř nízkoemisní výroby schopnou krýt kolem poloviny tehdejší spotřeby", "hodnota": 2040, "jednotka": "rok (od něj jaderné bloky, kolem poloviny spotřeby)"}
   ],
   "prinese": [
-    "Dostupnější a stabilnější energie je podmínkou konkurenceschopnosti celé ekonomiky.",
-    "Rychlejší výstavba domácích zdrojů a úspory sníží dovozní závislost a odtok stovek miliard korun za paliva, otevřená síť a předvídatelná pravidla přitáhnou soukromý kapitál tam, kde dnes investice čekají ve frontě, a stát nebude muset transformaci financovat sám.",
-    "Férové ceny vrátí smysl elektrifikaci, na které stojí domácí výrobci tepelných čerpadel i navazující průmysl.",
-    "Výsledkem je menší tlak na veřejné rozpočty, vyšší investiční atraktivita Česka a průmysl odolnější vůči palivovým šokům, s novými technologickými příležitostmi od akumulace přes flexibilitu sítí po využití odpadního tepla."
+    "Dostupnější a stabilnější energie je podmínkou konkurenceschopnosti celé ekonomiky.",
+    "Rychlejší výstavba domácích zdrojů a úspory sníží dovozní závislost a odtok stovek miliard korun za paliva, otevřená síť a předvídatelná pravidla přitáhnou soukromý kapitál tam, kde dnes investice čekají ve frontě, a stát nebude muset transformaci financovat sám.",
+    "Férové ceny vrátí smysl elektrifikaci, na které stojí domácí výrobci tepelných čerpadel i navazující průmysl.",
+    "Výsledkem je menší tlak na veřejné rozpočty, vyšší investiční atraktivita Česka a průmysl odolnější vůči palivovým šokům, s novými technologickými příležitostmi od akumulace přes flexibilitu sítí po využití odpadního tepla."
   ],
   "zdroje": [
-    {"index": 1, "citace": "ERÚ. 2026, červen. Roční zpráva o provozu elektrizační soustavy ČR za rok 2025. [online]."},
+    {"index": 1, "citace": "ERÚ. 2026, červen. Roční zpráva o provozu elektrizační soustavy ČR za rok 2025. [online]."},
     {"index": 2, "citace": "ČEPS. 2024. Hodnocení zdrojové přiměřenosti elektrizační soustavy ČR do roku 2040, MAF CZ 2023. [online]."},
     {"index": 3, "citace": "EUROSTAT. 2026, květen. Electricity prices for household consumers, 2. pololetí 2025. [online]."},
-    {"index": 4, "citace": "ČSÚ. 2025. Zahraniční obchod se zbožím podle CZ-CPA, 1. čtvrtletí 2025, 2. čtvrtletí, 3. čtvrtletí a 4. čtvrtletí, součet."},
-    {"index": 5, "citace": "MŽP. 2025. Akční plán rozvoje využití nízkopotenciálního obnovitelného a odpadního tepla. [online]."},
+    {"index": 4, "citace": "ČSÚ. 2025. Zahraniční obchod se zbožím podle CZ-CPA, 1. čtvrtletí 2025, 2. čtvrtletí, 3. čtvrtletí a 4. čtvrtletí, součet."},
+    {"index": 5, "citace": "MŽP. 2025. Akční plán rozvoje využití nízkopotenciálního obnovitelného a odpadního tepla. [online]."},
     {"index": 6, "citace": "ČT24. 2025, listopad. Tykačova skupina Sev.en ukončí provoz tří uhelných elektráren. [online]."},
-    {"index": 7, "citace": "ECHO24. 2026, duben. Svět se vrací k uhlí, Tykačovy elektrárny pojedou minimálně do března 2027. [online]."},
+    {"index": 7, "citace": "ECHO24. 2026, duben. Svět se vrací k uhlí, Tykačovy elektrárny pojedou minimálně do března 2027. [online]."},
     {"index": 8, "citace": "IROZHLAS. 2026, leden. ČEPS doporučil zachovat provoz elektrárny Chvaletice. [online]."},
     {"index": 9, "citace": "EKONOMICKÝ DENÍK. 2025, květen. Ekonomický deník. [online]."},
     {"index": 10, "citace": "GE VERNOVA. 2025, prosinec. Přepis výsledkové prezentace, order backlog. [online]."},
-    {"index": 11, "citace": "MPO. 2024, prosinec. Vnitrostátní plán ČR v oblasti energetiky a klimatu. [online]."},
+    {"index": 11, "citace": "MPO. 2024, prosinec. Vnitrostátní plán ČR v oblasti energetiky a klimatu. [online]."},
     {"index": 12, "citace": "SOLÁRNÍ ASOCIACE, CIT. DLE PV MAGAZINE. 2026, leden. Czechia deploys 696 MW of solar in 2025. [online]."},
     {"index": 13, "citace": "EMBER. 2025, září. Turning to the sun, Solar rise in Central Europe. [online]."},
-    {"index": 14, "citace": "KOMORA OZE, CIT. DLE OENERGETICE. 2026, únor. Loni bylo v ČR zprovozněno pět nových větrných elektráren. [online]."},
-    {"index": 15, "citace": "ÚFA AV ČR, D. HANSLIAN. 2020. Aktualizace potenciálu větrné energie v České republice z perspektivy roku 2020. [online]."},
-    {"index": 16, "citace": "KOMORA OZE. 2020. V roce 2040 může být třetina elektřiny z větru. [online]."},
-    {"index": 17, "citace": "BMWET. 2025. Windenergie in den Bundesländern, 13 % spotřeby v roce 2024. [online]."},
+    {"index": 14, "citace": "KOMORA OZE, CIT. DLE OENERGETICE. 2026, únor. Loni bylo v ČR zprovozněno pět nových větrných elektráren. [online]."},
+    {"index": 15, "citace": "ÚFA AV ČR, D. HANSLIAN. 2020. Aktualizace potenciálu větrné energie v České republice z perspektivy roku 2020. [online]."},
+    {"index": 16, "citace": "KOMORA OZE. 2020. V roce 2040 může být třetina elektřiny z větru. [online]."},
+    {"index": 17, "citace": "BMWET. 2025. Windenergie in den Bundesländern, 13 % spotřeby v roce 2024. [online]."},
     {"index": 18, "citace": "BMWET. 2024. Integrierter österreichischer Netzinfrastrukturplan, cíl 21 TWh větru do roku 2030. [online]."},
     {"index": 19, "citace": "EKONEWS, CIT. DLE OENERGETICE. 2026, červenec. Retardační, nikoli akcelerační zóny. [online]."},
     {"index": 20, "citace": "EGÚ BRNO PRO HNUTÍ DUHA. 2025, duben. Možnosti zlepšení integrace OZE do elektrizační soustavy. [online]."},
-    {"index": 21, "citace": "ČEZ DISTRIBUCE. 2026, leden. Výsledky roku 2025, žádosti o připojení baterií 170 GW. [online]."},
-    {"index": 22, "citace": "ERÚ. 2025. Inovace tarifní struktury na hladinách VN a VVN. [online]."},
-    {"index": 23, "citace": "O ENERGETICE. 2026, leden. Rok 2025 ve znamení záporných cen elektřiny. [online]."},
+    {"index": 21, "citace": "ČEZ DISTRIBUCE. 2026, leden. Výsledky roku 2025, žádosti o připojení baterií 170 GW. [online]."},
+    {"index": 22, "citace": "ERÚ. 2025. Inovace tarifní struktury na hladinách VN a VVN. [online]."},
+    {"index": 23, "citace": "O ENERGETICE. 2026, leden. Rok 2025 ve znamení záporných cen elektřiny. [online]."},
     {"index": 24, "citace": "ERÚ. 2025. Návrh změn Řádu EDC. [online]."},
-    {"index": 25, "citace": "E-SBÍRKA. 2007. Zákon č. 261/2007 Sb. [online]."},
+    {"index": 25, "citace": "E-SBÍRKA. 2007. Zákon č. 261/2007 Sb. [online]."},
     {"index": 26, "citace": "TZB-INFO. 2025. Porovnání nákladů na vytápění podle druhu paliva. [online]."},
-    {"index": 27, "citace": "PANASONIC. 2025. Rozšíření závodu v Plzni na 1,4 mil. tepelných čerpadel ročně. [online]."},
-    {"index": 28, "citace": "AVTČ. 2026, květen. Prodeje tepelných čerpadel v ČR. [online]."},
-    {"index": 29, "citace": "TEPLÁRENSKÉ SDRUŽENÍ ČR, CIT. DLE TZB-INFO. 2026, květen. Podíl uhlí na dodávkách tepláren 47,6 % v roce 2025. [online]."},
-    {"index": 30, "citace": "EUR-LEX. 2023. Směrnice (EU) 2023/1791 o energetické účinnosti, čl. 26. [online]."},
-    {"index": 31, "citace": "ERÚ. 2026. Předběžné ceny tepelné energie v ČR k 1. 1. 2026. [online]."},
-    {"index": 32, "citace": "CDE. 2024, říjen. Případová studie Mělník, podpora paroplynu z Modernizačního fondu. [online]."},
+    {"index": 27, "citace": "PANASONIC. 2025. Rozšíření závodu v Plzni na 1,4 mil. tepelných čerpadel ročně. [online]."},
+    {"index": 28, "citace": "AVTČ. 2026, květen. Prodeje tepelných čerpadel v ČR. [online]."},
+    {"index": 29, "citace": "TEPLÁRENSKÉ SDRUŽENÍ ČR, CIT. DLE TZB-INFO. 2026, květen. Podíl uhlí na dodávkách tepláren 47,6 % v roce 2025. [online]."},
+    {"index": 30, "citace": "EUR-LEX. 2023. Směrnice (EU) 2023/1791 o energetické účinnosti, čl. 26. [online]."},
+    {"index": 31, "citace": "ERÚ. 2026. Předběžné ceny tepelné energie v ČR k 1. 1. 2026. [online]."},
+    {"index": 32, "citace": "CDE. 2024, říjen. Případová studie Mělník, podpora paroplynu z Modernizačního fondu. [online]."},
     {"index": 33, "citace": "SPOLKOVÁ REPUBLIKA NĚMECKO. 2024. Wärmeplanungsgesetz. [online]."},
-    {"index": 34, "citace": "VLÁDA ČR. 2026, leden. Programové prohlášení vlády. [online]. ČEZ. 2026, duben. Informační povinnost, valná hromada 1. 6. 2026 k optimalizaci vlastnické struktury skupiny. [online]."},
+    {"index": 34, "citace": "VLÁDA ČR. 2026, leden. Programové prohlášení vlády. [online]. ČEZ. 2026, duben. Informační povinnost, valná hromada 1. 6. 2026 k optimalizaci vlastnické struktury skupiny. [online]."},
     {"index": 35, "citace": "VLÁDA ČR. 2026, leden. Programové prohlášení vlády, kapitola Emisní povolenky. [online]."},
     {"index": 36, "citace": "EVROPSKÁ KOMISE, CIT. DLE OENERGETICE. 2026, červenec. Schválení českého kapacitního mechanismu. [online]."},
-    {"index": 37, "citace": "ERÚ. 2026, červen. Roční zpráva o provozu elektrizační soustavy ČR za rok 2025, měsíční výroba VTE, zimní pololetí 57 %. [online]."},
-    {"index": 38, "citace": "SOLÁRNÍ ASOCIACE, CIT. DLE FORBES. 2025. Repowering solárních parků z let 2009 a 2010. [online]."},
+    {"index": 37, "citace": "ERÚ. 2026, červen. Roční zpráva o provozu elektrizační soustavy ČR za rok 2025, měsíční výroba VTE, zimní pololetí 57 %. [online]."},
+    {"index": 38, "citace": "SOLÁRNÍ ASOCIACE, CIT. DLE FORBES. 2025. Repowering solárních parků z let 2009 a 2010. [online]."},
     {"index": 39, "citace": "NÚKIB. 2025, srpen. Analýza hrozby, střídače fotovoltaických elektráren. [online]."},
     {"index": 40, "citace": "ČT24. 2025. Dukovany budou stát mnohem víc než 407 miliard, říkají experti. [online]."},
-    {"index": 41, "citace": "EVROPSKÁ KOMISE. 2025, prosinec. In-depth investigation into Czech support for Dukovany II. [online]. ČESKO. 2021. Zákon č. 367/2021 Sb., o opatřeních k přechodu ČR k nízkouhlíkové energetice. [online]."},
+    {"index": 41, "citace": "EVROPSKÁ KOMISE. 2025, prosinec. In-depth investigation into Czech support for Dukovany II. [online]. ČESKO. 2021. Zákon č. 367/2021 Sb., o opatřeních k přechodu ČR k nízkouhlíkové energetice. [online]."},
     {"index": 42, "citace": "EVROPSKÁ KOMISE. 2025, prosinec. In-depth investigation into Czech support for Dukovany II. [online]."},
     {"index": 43, "citace": "COUR DES COMPTES. 2020. La filière EPR. [online]. U.S. EIA. 2024. Plant Vogtle Unit 4 begins commercial operation. [online]."},
-    {"index": 44, "citace": "MŽP. 2019, srpen. Závazné stanovisko EIA k záměru Nový jaderný zdroj v lokalitě Dukovany, podmínky č. 6, 17 a 19. [online]."},
-    {"index": 45, "citace": "POVODÍ MORAVY. 2025. Vodní bilance v povodí Dyje. [online]."},
-    {"index": 46, "citace": "50HERTZ. 2025. SuedOstLink, dvě vedení po 2 GW, stavba v celé délce. [online]."},
-    {"index": 47, "citace": "STADTWERKE MÜNCHEN. 2024. Annual Report, podíl 49 % ve farmě Sandbank. [online]."},
+    {"index": 44, "citace": "MŽP. 2019, srpen. Závazné stanovisko EIA k záměru Nový jaderný zdroj v lokalitě Dukovany, podmínky č. 6, 17 a 19. [online]."},
+    {"index": 45, "citace": "POVODÍ MORAVY. 2025. Vodní bilance v povodí Dyje. [online]."},
+    {"index": 46, "citace": "50HERTZ. 2025. SuedOstLink, dvě vedení po 2 GW, stavba v celé délce. [online]."},
+    {"index": 47, "citace": "STADTWERKE MÜNCHEN. 2024. Annual Report, podíl 49 % ve farmě Sandbank. [online]."},
     {"index": 48, "citace": "ACER. 2025. Market Monitoring Report, cross-zonal capacities. [online]."},
     {"index": 49, "citace": "ROLLS-ROYCE SMR. 2024. Czech contract to deliver small modular reactor programme. [online]."},
     {"index": 50, "citace": "MINISTERSTVO FINANCÍ NIZOZEMSKA. 2022. Belastingplan 2023, trajektorie energetických daní 2023 až 2030. [online]."},
@@ -357,22 +357,22 @@
     {"index": 56, "citace": "MPO, CIT. DLE SP ČR. 2026. Kompenzace nepřímých nákladů EU ETS za rok 2025. [online]."},
     {"index": 57, "citace": "EVROPSKÁ KOMISE. 2025. Guidance on efficient and timely grid connections. [online]."},
     {"index": 58, "citace": "NETBEHEER NEDERLAND. 2025. Tijdsduurgebonden contracten, 9,1 GW kapacity mimo špičku. [online]."},
-    {"index": 59, "citace": "EVROPSKÁ UNIE. 2024. Směrnice (EU) 2024/1711, čl. 31, a nařízení (EU) 2023/1162, právo na strojově čitelná data. [online]."},
-    {"index": 60, "citace": "ČEZ PRODEJ. 2025. Pilot dynamického tarifu s řízením spotřeby. [online]."},
+    {"index": 59, "citace": "EVROPSKÁ UNIE. 2024. Směrnice (EU) 2024/1711, čl. 31, a nařízení (EU) 2023/1162, právo na strojově čitelná data. [online]."},
+    {"index": 60, "citace": "ČEZ PRODEJ. 2025. Pilot dynamického tarifu s řízením spotřeby. [online]."},
     {"index": 61, "citace": "EUR-LEX. 2025. Delegované nařízení (EU) 2025/656. [online]."},
-    {"index": 62, "citace": "NVE-RME. 2022. Kapasitetsledd, platby za skutečnou špičku v Norsku. [online]."},
+    {"index": 62, "citace": "NVE-RME. 2022. Kapasitetsledd, platby za skutečnou špičku v Norsku. [online]."},
     {"index": 63, "citace": "ENERGIEGEMEINSCHAFTEN.GV.AT. 2025, červen. Energiegemeinschaften.gv.at. [online]. EDC. 2026, červenec. 218 českých společenství. [online]."},
     {"index": 64, "citace": "MŽP, NÁRODNÍ PROGRAM ŽIVOTNÍ PROSTŘEDÍ. 2024. Energetické úspory veřejných budov. [online]."},
-    {"index": 65, "citace": "APES. 2025, březen. Rok 2024, 297 EPC projektů, roční úspory 706 mil. Kč. [online]."},
+    {"index": 65, "citace": "APES. 2025, březen. Rok 2024, 297 EPC projektů, roční úspory 706 mil. Kč. [online]."},
     {"index": 66, "citace": "KFW. b. r. Marshallplan und ERP, historie revolvingového modelu. [online]."},
     {"index": 67, "citace": "SFŽP. 2025. Nová zelená úsporám, úvěrová podpora přes banky. [online]."},
     {"index": 68, "citace": "MŽP. 2025. Sociální klimatický plán ČR. [online]."},
-    {"index": 69, "citace": "SPOLKOVÁ REPUBLIKA NĚMECKO. 2024. Wärmeplanungsgesetz, lhůty 2026 a 2028. [online]."},
+    {"index": 69, "citace": "SPOLKOVÁ REPUBLIKA NĚMECKO. 2024. Wärmeplanungsgesetz, lhůty 2026 a 2028. [online]."},
     {"index": 70, "citace": "E-CONTROL. b. r. waermepreise.at, zákonný veřejný ceník tepla. [online]."},
-    {"index": 71, "citace": "VERT. 2018. Aukce tepla nezávislých výrobců v Litvě. [online]. Průběžně aktualizováno."},
-    {"index": 72, "citace": "ERÚ. 2025. Uplatnění přiměřeného zisku v teplárenství. [online]."},
-    {"index": 73, "citace": "DANISH ENERGY AGENCY. 2025. Forbrugerprisloft, benchmark s nápravným plánem. [online]."},
-    {"index": 74, "citace": "EUR-LEX. 2023. Směrnice (EU) 2023/2413 (RED III), čl. 24, přístup k soustavám zásobování teplem. [online]."},
-    {"index": 75, "citace": "MŽP. 2025. Akční plán rozvoje využití nízkopotenciálního obnovitelného a odpadního tepla. [online]."}
+    {"index": 71, "citace": "VERT. 2018. Aukce tepla nezávislých výrobců v Litvě. [online]. Průběžně aktualizováno."},
+    {"index": 72, "citace": "ERÚ. 2025. Uplatnění přiměřeného zisku v teplárenství. [online]."},
+    {"index": 73, "citace": "DANISH ENERGY AGENCY. 2025. Forbrugerprisloft, benchmark s nápravným plánem. [online]."},
+    {"index": 74, "citace": "EUR-LEX. 2023. Směrnice (EU) 2023/2413 (RED III), čl. 24, přístup k soustavám zásobování teplem. [online]."},
+    {"index": 75, "citace": "MŽP. 2025. Akční plán rozvoje využití nízkopotenciálního obnovitelného a odpadního tepla. [online]."}
   ]
 }

@@ -112,8 +112,8 @@ export function KalkulackaPenze() {
 
       <p className={`src ${s.source}`}>
         IDEA CERGE-EI 2026 (studie, kap.&nbsp;2.3): reálný výnos penzijních produktů za posledních 20 let byl
-        −1,3&nbsp;% ročně. Úroveň poplatků 1,0&nbsp;% dnes a 0,3&nbsp;% při „skandinávském“ modelu je ilustrační. Výpočet
-        s měsíčním skládáním, nominálně, bez státního příspěvku a inflace.
+        −1,3&nbsp;% ročně. Úroveň poplatků 1,0&nbsp;% dnes a 0,3&nbsp;% při „skandinávském“ modelu je ilustrační. Výpočet
+        s měsíčním skládáním, nominálně, bez státního příspěvku a inflace.
       </p>
     </section>
   );

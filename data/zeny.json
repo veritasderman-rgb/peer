@@ -3,129 +3,129 @@
   "nazev": "Ženy na trhu práce – největší nevyužitý potenciál",
   "garant": {
     "jmeno": "Zuzana Freitas Lopesová",
-    "role": "odbornice na mobilizaci trhu práce a rovné šance"
+    "role": "odbornice na mobilizaci trhu práce a rovné šance"
   },
   "hook": {
     "hodnota": 18.5,
-    "jednotka": "% mzdová mezera mezi muži a ženami",
-    "veta": "Mzdová mezera mezi muži a ženami dosahuje v Česku 18,5 %, druhé nejvyšší číslo v EU."
+    "jednotka": "% mzdová mezera mezi muži a ženami",
+    "veta": "Mzdová mezera mezi muži a ženami dosahuje v Česku 18,5 %, druhé nejvyšší číslo v EU."
   },
   "grafy": {
     "mzdovaMezeraEU": {
-      "titulek": "Rozdíl mezi mzdami žen a mužů v zemích EU – srovnání",
+      "titulek": "Rozdíl mezi mzdami žen a mužů v zemích EU – srovnání",
       "zdroj": "Euronews, 2026: Cost of pay gap in the EU (https://www.euronews.com/business/2026/07/23/cost-of-pay-gap-in-the-eu-women-earn-3900-less-than-men-a-year)",
       "jednotka": "%",
       "polozky": [
-        {"zeme": "Estonsko", "hodnota": 18.8, "poznamka": "nejvyšší v EU"},
-        {"zeme": "Česko", "hodnota": 18.5, "poznamka": "druhé nejvyšší v EU", "highlight": true},
+        {"zeme": "Estonsko", "hodnota": 18.8, "poznamka": "nejvyšší v EU"},
+        {"zeme": "Česko", "hodnota": 18.5, "poznamka": "druhé nejvyšší v EU", "highlight": true},
         {"zeme": "Slovensko", "hodnota": 15.7},
         {"zeme": "EU", "hodnota": 11.1, "poznamka": "průměr EU"},
         {"zeme": "Litva", "hodnota": 10.0},
         {"zeme": "Polsko", "hodnota": 4.0},
         {"zeme": "Rumunsko", "hodnota": 3.7},
-        {"zeme": "Lucembursko", "hodnota": -0.8, "poznamka": "nejnižší v EU, ženy berou více"}
+        {"zeme": "Lucembursko", "hodnota": -0.8, "poznamka": "nejnižší v EU, ženy berou více"}
       ]
     },
     "verejnyVsSoukromy": {
-      "titulek": "Rozdíl mezi výdělky žen a mužů v soukromém a veřejném sektoru (v %)",
+      "titulek": "Rozdíl mezi výdělky žen a mužů v soukromém a veřejném sektoru (v %)",
       "zdroj": "Evropská komise, 2026 (Eurostat, Gender pay gap statistics)",
       "polozky": [
-        {"zeme": "Česko", "verejny": 17.4, "soukromy": 19.6, "poznamka": "největší rozdíl ve veřejném sektoru v EU"},
-        {"zeme": "Polsko", "verejny": -1.2, "soukromy": 11.9, "poznamka": "v textu: ženy ve veřejném sektoru berou o 1 % více než muži"}
+        {"zeme": "Česko", "verejny": 17.4, "soukromy": 19.6, "poznamka": "největší rozdíl ve veřejném sektoru v EU"},
+        {"zeme": "Polsko", "verejny": -1.2, "soukromy": 11.9, "poznamka": "v textu: ženy ve veřejném sektoru berou o 1 % více než muži"}
       ],
-      "poznamka": "Údaj za EU v podkladu v grafu chybí; graf obsahuje 24 zemí."
+      "poznamka": "Údaj za EU v podkladu v grafu chybí; graf obsahuje 24 zemí."
     },
     "tabulkaVlivMzdoveMezery": {
       "titulek": "Vliv mzdové mezery: Litva, Česko, Polsko, Rumunsko",
-      "zdroj": "Průměrná mzda 2025 a rozdíl platů 2024 podle podkladu PEER; přepočet podle Eurostatu (*)",
+      "zdroj": "Průměrná mzda 2025 a rozdíl platů 2024 podle podkladu PEER; přepočet podle Eurostatu (*)",
       "polozky": [
         {"zeme": "Litva", "prumernaMzda2025": 55677, "rozdilPlatuZenAMuzu2024": 10, "prumernaMzdaZeny": 52893},
         {"zeme": "Česko", "prumernaMzda2025": 49215, "rozdilPlatuZenAMuzu2024": 18.5, "prumernaMzdaZeny": 44663},
         {"zeme": "Polsko", "prumernaMzda2025": 51815, "rozdilPlatuZenAMuzu2024": 4, "prumernaMzdaZeny": 50779},
         {"zeme": "Rumunsko", "prumernaMzda2025": 45171, "rozdilPlatuZenAMuzu2024": 3.7, "prumernaMzdaZeny": 44335}
       ],
-      "poznamka": "Sloupec průměrné mzdy žen je v podkladu označen jako přepočet; z ostatních sloupců ho nelze ověřit dopočtem."
+      "poznamka": "Sloupec průměrné mzdy žen je v podkladu označen jako přepočet; z ostatních sloupců ho nelze ověřit dopočtem."
     },
     "skolka": {
-      "titulek": "Shrnutí výnosů a nákladů veřejných rozpočtů z dodatečného dítěte ve školce (ročně)",
+      "titulek": "Shrnutí výnosů a nákladů veřejných rozpočtů z dodatečného dítěte ve školce (ročně)",
       "zdroj": "IDEA CERGE-EI (2024), Analýza školek (studie 07/2024)",
-      "sloupce": ["modelová situace", "reprezentativní vzorek a simulace modelem TaxBen"],
+      "sloupce": ["modelová situace", "reprezentativní vzorek a simulace modelem TaxBen"],
       "polozky": [
-        {"polozka": "Výdaje na jedno místo ve školce za rok", "modelovaSituace": 95032, "reprezentativniVzorek": 95032, "poznamka": "v podkladu uvedeno jednou hodnotou pro oba sloupce"},
-        {"polozka": "Příjmy z daní a odvodů za rok", "modelovaSituace": 137106, "reprezentativniVzorek": 121243},
+        {"polozka": "Výdaje na jedno místo ve školce za rok", "modelovaSituace": 95032, "reprezentativniVzorek": 95032, "poznamka": "v podkladu uvedeno jednou hodnotou pro oba sloupce"},
+        {"polozka": "Příjmy z daní a odvodů za rok", "modelovaSituace": 137106, "reprezentativniVzorek": 121243},
         {"polozka": "Příjmy ve formě uspořených sociálních výdajů za rok", "modelovaSituace": 22230, "reprezentativniVzorek": 20390},
-        {"polozka": "Čisté dopady dodatečně umístěného dítěte ve školce za rok", "modelovaSituace": 64304, "reprezentativniVzorek": 46604, "poznamka": "z řádků výše vychází 46 601 Kč u reprezentativního vzorku (rozdíl 3 Kč)"}
+        {"polozka": "Čisté dopady dodatečně umístěného dítěte ve školce za rok", "modelovaSituace": 64304, "reprezentativniVzorek": 46604, "poznamka": "z řádků výše vychází 46 601 Kč u reprezentativního vzorku (rozdíl 3 Kč)"}
       ]
     },
     "prinosNaMisto": {
       "titulek": "Roční přínos jednoho místa ve školce pro veřejné rozpočty",
       "zdroj": "IDEA CERGE-EI (2024), Analýza školek",
       "polozky": [
-        {"zdrojPrijmu": "Daň z příjmu FO + odvody (matka)", "hodnota": "58 000–81 000", "jednotka": "Kč ročně"},
-        {"zdrojPrijmu": "Daň z příjmu PO (zisk zaměstnavatele)*", "hodnota": "54 000", "jednotka": "Kč ročně"},
-        {"zdrojPrijmu": "DPH a spotřební daně", "hodnota": "12 000–15 000", "jednotka": "Kč ročně"},
-        {"zdrojPrijmu": "Celkem do veřejných rozpočtů", "hodnota": "více než 100 000", "jednotka": "Kč ročně"}
+        {"zdrojPrijmu": "Daň z příjmu FO + odvody (matka)", "hodnota": "58 000–81 000", "jednotka": "Kč ročně"},
+        {"zdrojPrijmu": "Daň z příjmu PO (zisk zaměstnavatele)*", "hodnota": "54 000", "jednotka": "Kč ročně"},
+        {"zdrojPrijmu": "DPH a spotřební daně", "hodnota": "12 000–15 000", "jednotka": "Kč ročně"},
+        {"zdrojPrijmu": "Celkem do veřejných rozpočtů", "hodnota": "více než 100 000", "jednotka": "Kč ročně"}
       ],
-      "souhrnProMista": {"pocetMist": 100000, "prinos": "~10 mld. Kč", "poznamka": "100 000 míst v dětských skupinách"},
-      "poznamka": "* Stát ročně vybere na dani z příjmů právnických osob 300 mld. Kč. Pro výpočet použito 54 % této hodnoty, aby odhad příjmů odpovídal předpokladům výzkumníků Akademie věd."
+      "souhrnProMista": {"pocetMist": 100000, "prinos": "~10 mld. Kč", "poznamka": "100 000 míst v dětských skupinách"},
+      "poznamka": "* Stát ročně vybere na dani z příjmů právnických osob 300 mld. Kč. Pro výpočet použito 54 % této hodnoty, aby odhad příjmů odpovídal předpokladům výzkumníků Akademie věd."
     }
   },
   "fakta": [
-    {"id": "mzdova_mezera_cr", "hodnota": 18.5, "jednotka": "% (rozdíl mezi muži a ženami)", "text": "Mzdová mezera mezi muži a ženami dosahuje v Česku 18,5 % (v textu zaokrouhleně 18 %).", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_druha_v_eu", "hodnota": 2, "jednotka": "místo v EU (od nejvyššího)", "text": "Mzdová mezera v Česku je druhá nejvyšší v EU.", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_estonsko", "hodnota": 18.8, "jednotka": "% (Estonsko, nejvyšší v EU)", "text": "Nejvyšší mzdovou mezeru v EU ukazuje graf u Estonska: 18,8 %.", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_eu_prumer", "hodnota": 11.1, "jednotka": "% (průměr EU)", "text": "Mzdová mezera v EU činí podle grafu 11,1 %.", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_lucembursko", "hodnota": -0.8, "jednotka": "% (Lucembursko, nejnižší v EU)", "text": "Lucembursko má záporný rozdíl −0,8 %, tedy nejnižší hodnotu v EU.", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_polsko", "hodnota": 4, "jednotka": "% (Polsko)", "text": "Mzdová mezera v Polsku činí 4 %.", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_litva", "hodnota": 10, "jednotka": "% (Litva)", "text": "Mzdová mezera v Litvě činí 10 %.", "zdrojIndex": 9},
-    {"id": "mzdova_mezera_rumunsko", "hodnota": 3.7, "jednotka": "% (Rumunsko)", "text": "Mzdová mezera v Rumunsku činí 3,7 %.", "zdrojIndex": 9},
-    {"id": "prumerna_mzda_litva_2025", "hodnota": 55677, "jednotka": "Kč (průměrná mzda 2025)", "text": "Průměrná mzda v Litvě v roce 2025 činila 55 677 Kč.", "zdrojIndex": null},
-    {"id": "prumerna_mzda_polsko_2025", "hodnota": 51815, "jednotka": "Kč (průměrná mzda 2025)", "text": "Průměrná mzda v Polsku v roce 2025 činila 51 815 Kč.", "zdrojIndex": null},
-    {"id": "prumerna_mzda_cr_2025", "hodnota": 49215, "jednotka": "Kč (průměrná mzda 2025)", "text": "Průměrná mzda v Česku v roce 2025 činila 49 215 Kč.", "zdrojIndex": null},
-    {"id": "ztrata_po_narozeni_deti", "hodnota": 10, "jednotka": "% méně za následujících 20 let", "text": "Žena, která si pořídí dítě, vydělává v průběhu následujících dvaceti let průměrně o 10 % méně než bezdětná kolegyně.", "zdrojIndex": null},
-    {"id": "verejny_sektor_rozdil_cr", "hodnota": 17, "jednotka": "% (ženy ve veřejném sektoru)", "text": "Platy žen ve veřejném sektoru jsou o 17 % nižší než platy mužů. To je největší rozdíl v celé EU.", "zdrojIndex": null},
-    {"id": "verejny_sektor_polsko", "hodnota": -1, "jednotka": "% (Polsko, ženy berou více)", "text": "V Polsku berou ženy ve veřejném sektoru o 1 % více než muži.", "zdrojIndex": null},
-    {"id": "soukromy_sektor_cr", "hodnota": 19.6, "jednotka": "% (soukromý sektor, Česko)", "text": "Rozdíl ve mzdách žen a mužů v soukromém sektoru v Česku činí 19,6 %.", "zdrojIndex": null},
-    {"id": "zamestnanost_zen_s_detmi", "hodnota": 55, "jednotka": "% (ženy s dětmi do 6 let)", "text": "Zaměstnanost žen s dětmi do 6 let je 55 %.", "zdrojIndex": null},
-    {"id": "potreba_mist_predskolni_pece", "hodnota": "30–40 tisíc", "jednotka": "nových míst v předškolní péči", "text": "Česko potřebuje podle IDEA CERGE-EI 30–40 tisíc nových míst v zařízeních předškolní péče.", "zdrojIndex": null},
+    {"id": "mzdova_mezera_cr", "hodnota": 18.5, "jednotka": "% (rozdíl mezi muži a ženami)", "text": "Mzdová mezera mezi muži a ženami dosahuje v Česku 18,5 % (v textu zaokrouhleně 18 %).", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_druha_v_eu", "hodnota": 2, "jednotka": "místo v EU (od nejvyššího)", "text": "Mzdová mezera v Česku je druhá nejvyšší v EU.", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_estonsko", "hodnota": 18.8, "jednotka": "% (Estonsko, nejvyšší v EU)", "text": "Nejvyšší mzdovou mezeru v EU ukazuje graf u Estonska: 18,8 %.", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_eu_prumer", "hodnota": 11.1, "jednotka": "% (průměr EU)", "text": "Mzdová mezera v EU činí podle grafu 11,1 %.", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_lucembursko", "hodnota": -0.8, "jednotka": "% (Lucembursko, nejnižší v EU)", "text": "Lucembursko má záporný rozdíl −0,8 %, tedy nejnižší hodnotu v EU.", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_polsko", "hodnota": 4, "jednotka": "% (Polsko)", "text": "Mzdová mezera v Polsku činí 4 %.", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_litva", "hodnota": 10, "jednotka": "% (Litva)", "text": "Mzdová mezera v Litvě činí 10 %.", "zdrojIndex": 9},
+    {"id": "mzdova_mezera_rumunsko", "hodnota": 3.7, "jednotka": "% (Rumunsko)", "text": "Mzdová mezera v Rumunsku činí 3,7 %.", "zdrojIndex": 9},
+    {"id": "prumerna_mzda_litva_2025", "hodnota": 55677, "jednotka": "Kč (průměrná mzda 2025)", "text": "Průměrná mzda v Litvě v roce 2025 činila 55 677 Kč.", "zdrojIndex": null},
+    {"id": "prumerna_mzda_polsko_2025", "hodnota": 51815, "jednotka": "Kč (průměrná mzda 2025)", "text": "Průměrná mzda v Polsku v roce 2025 činila 51 815 Kč.", "zdrojIndex": null},
+    {"id": "prumerna_mzda_cr_2025", "hodnota": 49215, "jednotka": "Kč (průměrná mzda 2025)", "text": "Průměrná mzda v Česku v roce 2025 činila 49 215 Kč.", "zdrojIndex": null},
+    {"id": "ztrata_po_narozeni_deti", "hodnota": 10, "jednotka": "% méně za následujících 20 let", "text": "Žena, která si pořídí dítě, vydělává v průběhu následujících dvaceti let průměrně o 10 % méně než bezdětná kolegyně.", "zdrojIndex": null},
+    {"id": "verejny_sektor_rozdil_cr", "hodnota": 17, "jednotka": "% (ženy ve veřejném sektoru)", "text": "Platy žen ve veřejném sektoru jsou o 17 % nižší než platy mužů. To je největší rozdíl v celé EU.", "zdrojIndex": null},
+    {"id": "verejny_sektor_polsko", "hodnota": -1, "jednotka": "% (Polsko, ženy berou více)", "text": "V Polsku berou ženy ve veřejném sektoru o 1 % více než muži.", "zdrojIndex": null},
+    {"id": "soukromy_sektor_cr", "hodnota": 19.6, "jednotka": "% (soukromý sektor, Česko)", "text": "Rozdíl ve mzdách žen a mužů v soukromém sektoru v Česku činí 19,6 %.", "zdrojIndex": null},
+    {"id": "zamestnanost_zen_s_detmi", "hodnota": 55, "jednotka": "% (ženy s dětmi do 6 let)", "text": "Zaměstnanost žen s dětmi do 6 let je 55 %.", "zdrojIndex": null},
+    {"id": "potreba_mist_predskolni_pece", "hodnota": "30–40 tisíc", "jednotka": "nových míst v předškolní péči", "text": "Česko potřebuje podle IDEA CERGE-EI 30–40 tisíc nových míst v zařízeních předškolní péče.", "zdrojIndex": null},
     {"id": "soused_dt_financovani", "hodnota": 50, "jednotka": "% financování klasické dětské skupiny", "text": "Ministerstvo financí zkrátilo financování sousedských dětských skupin na polovinu oproti klasickým dětským skupinám.", "zdrojIndex": null},
-    {"id": "max_platba_detska_skupina_dnes", "hodnota": 7466, "jednotka": "Kč měsíčně (⅓ minimální mzdy)", "text": "Veřejně podporovaná dětská skupina může rodičům účtovat až třetinu minimální mzdy, dnes až 7 466 Kč.", "zdrojIndex": null},
-    {"id": "navrh_cenovy_strop", "hodnota": 3750, "jednotka": "Kč měsíčně (návrh, 1/6 minimální mzdy)", "text": "Návrh: maximální platbu zastropovat na cca 3 750 Kč měsíčně.", "zdrojIndex": null},
-    {"id": "navrh_snizeni_platoveho_rozdilu", "hodnota": 50, "jednotka": "% (snížení rozdílu ve veřejném sektoru do roku 2035)", "text": "Návrh: do roku 2035 snížit rozdíl mezi platy mužů a žen ve veřejném sektoru na polovinu.", "zdrojIndex": null},
-    {"id": "idea_pracovni_mista_skolka", "hodnota": 0.54, "jednotka": "nového pracovního místa na 1 místo ve školce", "text": "Jedno dodatečně obsazené místo ve školce vytvoří v průměru 0,54 nového pracovního místa, nejčastěji návratem matky na trh práce.", "zdrojIndex": null},
-    {"id": "navratnost_predskolniho_vzdelavani", "hodnota": 1.8, "jednotka": "× vyšší návratnost než u základního, středního a vysokého školství", "text": "Investice do předškolního vzdělávání má 1,8× vyšší návratnost než investice do základního, středního nebo vysokého školství.", "zdrojIndex": null},
-    {"id": "prinos_jednoho_pracovniho_mista", "hodnota": "46 000–64 000", "jednotka": "Kč (přínos jednoho pracovního místa)", "text": "Jedno pracovní místo ve školce přinese 46 000 až 64 000 korun.", "zdrojIndex": null},
+    {"id": "max_platba_detska_skupina_dnes", "hodnota": 7466, "jednotka": "Kč měsíčně (⅓ minimální mzdy)", "text": "Veřejně podporovaná dětská skupina může rodičům účtovat až třetinu minimální mzdy, dnes až 7 466 Kč.", "zdrojIndex": null},
+    {"id": "navrh_cenovy_strop", "hodnota": 3750, "jednotka": "Kč měsíčně (návrh, 1/6 minimální mzdy)", "text": "Návrh: maximální platbu zastropovat na cca 3 750 Kč měsíčně.", "zdrojIndex": null},
+    {"id": "navrh_snizeni_platoveho_rozdilu", "hodnota": 50, "jednotka": "% (snížení rozdílu ve veřejném sektoru do roku 2035)", "text": "Návrh: do roku 2035 snížit rozdíl mezi platy mužů a žen ve veřejném sektoru na polovinu.", "zdrojIndex": null},
+    {"id": "idea_pracovni_mista_skolka", "hodnota": 0.54, "jednotka": "nového pracovního místa na 1 místo ve školce", "text": "Jedno dodatečně obsazené místo ve školce vytvoří v průměru 0,54 nového pracovního místa, nejčastěji návratem matky na trh práce.", "zdrojIndex": null},
+    {"id": "navratnost_predskolniho_vzdelavani", "hodnota": 1.8, "jednotka": "× vyšší návratnost než u základního, středního a vysokého školství", "text": "Investice do předškolního vzdělávání má 1,8× vyšší návratnost než investice do základního, středního nebo vysokého školství.", "zdrojIndex": null},
+    {"id": "prinos_jednoho_pracovniho_mista", "hodnota": "46 000–64 000", "jednotka": "Kč (přínos jednoho pracovního místa)", "text": "Jedno pracovní místo ve školce přinese 46 000 až 64 000 korun.", "zdrojIndex": null},
     {"id": "prinos_mista_pro_verejne_rozpocty", "hodnota": 100000, "jednotka": "Kč ročně (více než, pro veřejné rozpočty)", "text": "Přínos jednoho nového místa ve školce pro veřejné rozpočty je více než 100 tisíc korun ročně.", "zdrojIndex": null},
-    {"id": "cil_zamestnanost_zen_s_detmi", "hodnota": 70, "jednotka": "% (cíl: zaměstnanost žen s dětmi do 6 let, z 55 %)", "text": "Cíl: zaměstnanost žen s dětmi do 6 let na 70 %.", "zdrojIndex": null},
-    {"id": "cil_mzdovy_rozdil", "hodnota": 12, "jednotka": "% (cíl: méně než, z 18,5 %)", "text": "Cíl: mzdový rozdíl snížit na méně než 12 %.", "zdrojIndex": null},
-    {"id": "prinos_1_procento_mzdove_mezery", "hodnota": 4.9, "jednotka": "mld. Kč ročně za každé 1 % snížení mzdové mezery v soukromém sektoru", "text": "Každé 1 % snížení mzdové mezery v soukromém sektoru přidá do veřejných rozpočtů 4,9 miliardy Kč ročně.", "zdrojIndex": null}
+    {"id": "cil_zamestnanost_zen_s_detmi", "hodnota": 70, "jednotka": "% (cíl: zaměstnanost žen s dětmi do 6 let, z 55 %)", "text": "Cíl: zaměstnanost žen s dětmi do 6 let na 70 %.", "zdrojIndex": null},
+    {"id": "cil_mzdovy_rozdil", "hodnota": 12, "jednotka": "% (cíl: méně než, z 18,5 %)", "text": "Cíl: mzdový rozdíl snížit na méně než 12 %.", "zdrojIndex": null},
+    {"id": "prinos_1_procento_mzdove_mezery", "hodnota": 4.9, "jednotka": "mld. Kč ročně za každé 1 % snížení mzdové mezery v soukromém sektoru", "text": "Každé 1 % snížení mzdové mezery v soukromém sektoru přidá do veřejných rozpočtů 4,9 miliardy Kč ročně.", "zdrojIndex": null}
   ],
   "priciny": [
-    {"poradi": 1, "typ": "řetězec", "pricina": "Mateřství, rodičovství a neformální péče", "popis": "Žena, která si pořídí dítě, vydělává v průběhu následujících dvaceti let průměrně o 10 % méně než bezdětná kolegyně. Největší ztrátu nesou vysokoškolačky.", "zdrojIndex": null},
-    {"poradi": 2, "typ": "řetězec", "pricina": "Nedostatek míst a drahá péče o nejmenší", "popis": "Česko potřebuje 30–40 tisíc nových míst v předškolní péči. Tam, kde místa jsou, jsou dětské skupiny příliš drahé a pro mnoho rodin se nevyplatí.", "zdrojIndex": null},
-    {"poradi": 3, "typ": "řetězec", "pricina": "Návrat na horší pozice a s nižším platem", "popis": "Po návratu z rodičovské dovolené se ženy typicky vrací na horší pozice a s nižším platem. Následně často opouštějí zaměstnání kvůli péči o seniora nebo postiženého člena domácnosti.", "zdrojIndex": null},
-    {"poradi": 4, "typ": "řetězec", "pricina": "Mzdová mezera a nevyužitý potenciál žen", "popis": "Mzdová mezera mezi muži a ženami dosahuje v Česku 18,5 %, druhé nejvyšší číslo v EU. Nevyužitý potenciál žen je přímou brzdou české ekonomiky.", "zdrojIndex": 9},
+    {"poradi": 1, "typ": "řetězec", "pricina": "Mateřství, rodičovství a neformální péče", "popis": "Žena, která si pořídí dítě, vydělává v průběhu následujících dvaceti let průměrně o 10 % méně než bezdětná kolegyně. Největší ztrátu nesou vysokoškolačky.", "zdrojIndex": null},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Nedostatek míst a drahá péče o nejmenší", "popis": "Česko potřebuje 30–40 tisíc nových míst v předškolní péči. Tam, kde místa jsou, jsou dětské skupiny příliš drahé a pro mnoho rodin se nevyplatí.", "zdrojIndex": null},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Návrat na horší pozice a s nižším platem", "popis": "Po návratu z rodičovské dovolené se ženy typicky vrací na horší pozice a s nižším platem. Následně často opouštějí zaměstnání kvůli péči o seniora nebo postiženého člena domácnosti.", "zdrojIndex": null},
+    {"poradi": 4, "typ": "řetězec", "pricina": "Mzdová mezera a nevyužitý potenciál žen", "popis": "Mzdová mezera mezi muži a ženami dosahuje v Česku 18,5 %, druhé nejvyšší číslo v EU. Nevyužitý potenciál žen je přímou brzdou české ekonomiky.", "zdrojIndex": 9},
     {"poradi": 5, "typ": "další", "pricina": "Podfinancované sousedské dětské skupiny", "popis": "Stát zavedl levnější alternativu, sousedské dětské skupiny, ale Ministerstvo financí jim zkrátilo financování na polovinu oproti klasickým dětským skupinám.", "zdrojIndex": null},
-    {"poradi": 6, "typ": "další", "pricina": "Velký rozdíl ve veřejném sektoru", "popis": "Platy žen ve veřejném sektoru jsou o 17 % nižší než platy mužů, což je největší rozdíl v celé EU.", "zdrojIndex": null},
-    {"poradi": 7, "typ": "další", "pricina": "Nízká zaměstnanost žen s dětmi do 6 let", "popis": "Zaměstnanost žen s dětmi do 6 let činí 55 %.", "zdrojIndex": null}
+    {"poradi": 6, "typ": "další", "pricina": "Velký rozdíl ve veřejném sektoru", "popis": "Platy žen ve veřejném sektoru jsou o 17 % nižší než platy mužů, což je největší rozdíl v celé EU.", "zdrojIndex": null},
+    {"poradi": 7, "typ": "další", "pricina": "Nízká zaměstnanost žen s dětmi do 6 let", "popis": "Zaměstnanost žen s dětmi do 6 let činí 55 %.", "zdrojIndex": null}
   ],
   "opatreni": [
     {
       "cislo": 1,
-      "nazev": "Dostupná péče o děti od jednoho roku věku",
-      "popis": "Upravíme nevyužité třídy v mateřských školách pro potřeby menších dětí, podpoříme vznik flexibilních dětských skupin a firemních školek a srovnáme financování sousedských dětských skupin s klasickými mateřskými školami.",
+      "nazev": "Dostupná péče o děti od jednoho roku věku",
+      "popis": "Upravíme nevyužité třídy v mateřských školách pro potřeby menších dětí, podpoříme vznik flexibilních dětských skupin a firemních školek a srovnáme financování sousedských dětských skupin s klasickými mateřskými školami.",
       "klicoveCislo": "péče od jednoho roku věku"
     },
     {
       "cislo": 2,
       "nazev": "Cenový strop pro veřejně podporovaná zařízení předškolní péče",
-      "popis": "Maximální platbu zastropujeme na cca 3 750 Kč (1/6 minimální mzdy) měsíčně namísto současných až 7 466 Kč (⅓ minimální mzdy).",
-      "klicoveCislo": "3 750 Kč měsíčně místo až 7 466 Kč"
+      "popis": "Maximální platbu zastropujeme na cca 3 750 Kč (1/6 minimální mzdy) měsíčně namísto současných až 7 466 Kč (⅓ minimální mzdy).",
+      "klicoveCislo": "3 750 Kč měsíčně místo až 7 466 Kč"
     },
     {
       "cislo": 3,
-      "nazev": "Snížíme platový rozdíl mezi muži a ženami uvnitř veřejného sektoru",
-      "popis": "Stát musí jít příkladem, a proto do roku 2035 snížíme rozdíl mezi platy mužů a žen ve veřejném sektoru na polovinu.",
+      "nazev": "Snížíme platový rozdíl mezi muži a ženami uvnitř veřejného sektoru",
+      "popis": "Stát musí jít příkladem, a proto do roku 2035 snížíme rozdíl mezi platy mužů a žen ve veřejném sektoru na polovinu.",
       "klicoveCislo": "poloviční rozdíl do roku 2035"
     },
     {
@@ -136,26 +136,26 @@
     }
   ],
   "cile": [
-    {"cil": "Zaměstnanost žen s dětmi do 6 let na 70 % (z 55 %)", "hodnota": 70, "jednotka": "% zaměstnanost žen s dětmi do 6 let"},
-    {"cil": "Mzdový rozdíl snížit na méně než 12 % (z 18,5 %)", "hodnota": 12, "jednotka": "% (méně než)"}
+    {"cil": "Zaměstnanost žen s dětmi do 6 let na 70 % (z 55 %)", "hodnota": 70, "jednotka": "% zaměstnanost žen s dětmi do 6 let"},
+    {"cil": "Mzdový rozdíl snížit na méně než 12 % (z 18,5 %)", "hodnota": 12, "jednotka": "% (méně než)"}
   ],
   "prinese": null,
   "zdroje": [
     {"index": 1, "citace": "Eurostat: Minimum wages – bi-annual data, 2026. ec.europa.eu/eurostat; směnný kurz 24,24 CZK/EUR."},
     {"index": 2, "citace": "Prokop, D. (PAQ Research): rozhovor iROZHLAS, 2024; Bodnár et al. (2018), Firms' Adjustment to Minimum Wages in CEE, IZA Journal of Labor Policy."},
     {"index": 3, "citace": "Kreiner, C. T. & Svarer, M. (2022): Danish Flexicurity: Rights and Duties, Journal of Economic Perspectives, 36(4), 81–104. doi.org/10.1257/jep.36.4.81"},
-    {"index": 4, "citace": "MPSV: Analýza rekvalifikací: kde jsme a co dál?, prosinec 2024. Výpočet autora: 382 mil. Kč / 16 500 osob ≈ 23 152 Kč/os. Srovnání s OECD: OECD Employment Outlook 2023; TUAC Policy Brief, listopad 2025."},
+    {"index": 4, "citace": "MPSV: Analýza rekvalifikací: kde jsme a co dál?, prosinec 2024. Výpočet autora: 382 mil. Kč / 16 500 osob ≈ 23 152 Kč/os. Srovnání s OECD: OECD Employment Outlook 2023; TUAC Policy Brief, listopad 2025."},
     {"index": 5, "citace": "European Commission: Education and Training Monitor 2025 – Czechia; Eurostat Adult Education Survey (AES) 2022."},
     {"index": 6, "citace": "Index prosperity Česka; MŠMT, NPI ČR: analýzy bariér celoživotního vzdělávání, 2023–2024."},
     {"index": 7, "citace": "World Economic Forum: Future of Jobs Report, 2023."},
-    {"index": 8, "citace": "Úřad práce ČR / Seznam Zprávy / MPSV: data o rekvalifikacích 2023–2026. Pokles v roce 2026 v důsledku ukončení financování z Národního plánu obnovy (NPO/ESF+). Bez čísla v podkladu, připojeno k č. 8: Prokop, D.: rozhovory iROZHLAS a Seznam Podcasty, 2024; OECD: Economic Surveys Czechia 2025 (URL v podkladu useknuto); Eurostat (2025): Childcare statistics – children under 3 in formal care. op.europa.eu; cíl EU (Barcelona 2.0): 45 % do roku 2030."},
-    {"index": 9, "citace": "Euronews (2026): Cost of pay gap in the EU – women earn €3,900 less than men a year. euronews.com"},
-    {"index": 10, "citace": "Institut předlužení – data a studie: exekuce; pokles vymáhané částky z 545 na 542 mld. Kč za pololetí 2025."},
-    {"index": 11, "citace": "Unie zaměstnavatelských svazů (2020), cit. dle Charita ČR; SP ČR – mzdová účetní ve firmě s ~1 000 zaměstnanci věnuje >25 % pracovního času správě exekucí."},
+    {"index": 8, "citace": "Úřad práce ČR / Seznam Zprávy / MPSV: data o rekvalifikacích 2023–2026. Pokles v roce 2026 v důsledku ukončení financování z Národního plánu obnovy (NPO/ESF+). Bez čísla v podkladu, připojeno k č. 8: Prokop, D.: rozhovory iROZHLAS a Seznam Podcasty, 2024; OECD: Economic Surveys Czechia 2025 (URL v podkladu useknuto); Eurostat (2025): Childcare statistics – children under 3 in formal care. op.europa.eu; cíl EU (Barcelona 2.0): 45 % do roku 2030."},
+    {"index": 9, "citace": "Euronews (2026): Cost of pay gap in the EU – women earn €3,900 less than men a year. euronews.com"},
+    {"index": 10, "citace": "Institut předlužení – data a studie: exekuce; pokles vymáhané částky z 545 na 542 mld. Kč za pololetí 2025."},
+    {"index": 11, "citace": "Unie zaměstnavatelských svazů (2020), cit. dle Charita ČR; SP ČR – mzdová účetní ve firmě s ~1 000 zaměstnanci věnuje >25 % pracovního času správě exekucí."},
     {"index": 12, "citace": "ExekuceInfo.cz – výpočet exekuce; Exekutorská komora ČR – statistiky."},
     {"index": 13, "citace": "NERV: Návrhy na reformu exekučního systému; Josef Středula (ČMKOS) – dlužníci vytlačováni mimo legální trh práce."},
-    {"index": 14, "citace": "PAQ Research: studie dopadu exekucí na nízkopříjmové domácnosti a samoživitele."},
-    {"index": 15, "citace": "Psychologický ústav AV ČR: výzkum dopadů exekucí na děti v zadlužených rodinách."},
+    {"index": 14, "citace": "PAQ Research: studie dopadu exekucí na nízkopříjmové domácnosti a samoživitele."},
+    {"index": 15, "citace": "Psychologický ústav AV ČR: výzkum dopadů exekucí na děti v zadlužených rodinách."},
     {"index": 16, "citace": "Karel Čada (sociolog): mezigenerační přenos chudoby, cit. dle Aktualne.cz."},
     {"index": 17, "citace": "PAQ Research / IDEA: analýza fiskálních nákladů předčasného odchodu ze vzdělávání, cit. dle HN (2021)."}
   ]

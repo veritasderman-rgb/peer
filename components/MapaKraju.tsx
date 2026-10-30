@@ -239,7 +239,7 @@ export function MapaKraju({ kraje, metriky }: Props) {
                     role="button"
                     tabIndex={0}
                     aria-pressed={vybrany}
-                    aria-label={`${k.nazev}: ${plna(metrika, v)}, ${poradi(metrika, k.id)}. z ${kraje.length} od nejlepšího`}
+                    aria-label={`${k.nazev}: ${plna(metrika, v)}, ${poradi(metrika, k.id)}. z ${kraje.length} od nejlepšího`}
                     onKeyDown={(e) => klavesa(e, k.id)}
                   >
                     <rect className={styles.bg} width={TILE} height={TILE} />
@@ -268,7 +268,7 @@ export function MapaKraju({ kraje, metriky }: Props) {
 
           <div className={styles.legend}>
             <p className={styles.legendTitle}>
-              {metrika.kompaktDelitel ? `Hodnota v dlaždici: ${metrika.kompaktJednotka} měsíčně` : `Hodnota v dlaždici: ${metrika.jednotka}`}
+              {metrika.kompaktDelitel ? `Hodnota v dlaždici: ${metrika.kompaktJednotka} měsíčně` : `Hodnota v dlaždici: ${metrika.jednotka}`}
               {" · tmavší = vyšší hodnota · "}
               {metrika.lepsiJe === "min" ? "lepší je nižší" : "lepší je vyšší"}
             </p>
@@ -324,7 +324,7 @@ export function MapaKraju({ kraje, metriky }: Props) {
                 })}
               </ul>
               <div className={styles.strategie}>
-                <h4>Co s tím chce strategie: {metrika.nazev.toLowerCase()}</h4>
+                <h4>Co s tím chce strategie: {metrika.nazev.toLowerCase()}</h4>
                 <p>{metrika.strategie}</p>
                 <Link href={`/${metrika.tema}`} className={styles.temaLink}>
                   Celé téma: {metrika.temaNazev} →
@@ -335,11 +335,11 @@ export function MapaKraju({ kraje, metriky }: Props) {
             <div className={styles.empty}>
               <h3 className={styles.detailName}>Vyber svůj kraj</h3>
               <p>
-                Klepni na dlaždici na mapě nebo kraj vyber ve výběru nahoře. Ukážu ti jeho čísla vedle průměru ČR a to, co s nimi
+                Klepni na dlaždici na mapě nebo kraj vyber ve výběru nahoře. Ukážu ti jeho čísla vedle průměru ČR a to, co s nimi
                 chce udělat strategie. Kraj si zapamatuju jen ve tvém prohlížeči.
               </p>
               <p className={styles.rowNar}>
-                Nejlepší a nejhorší kraj pro „{metrika.nazev.toLowerCase()}“:{" "}
+                Nejlepší a nejhorší kraj pro „{metrika.nazev.toLowerCase()}“:{" "}
                 <b>{razeni[0].nazev}</b> ({plna(metrika, metrika.hodnoty[razeni[0].id])}) a{" "}
                 <b>{razeni[razeni.length - 1].nazev}</b> ({plna(metrika, metrika.hodnoty[razeni[razeni.length - 1].id])}).
               </p>
@@ -349,7 +349,7 @@ export function MapaKraju({ kraje, metriky }: Props) {
       </div>
 
       <details className={`card ${styles.tabulka}`}>
-        <summary>Všech čtrnáct krajů v tabulce</summary>
+        <summary>Všech čtrnáct krajů v tabulce</summary>
         <div className={styles.tableWrap}>
           <table>
             <caption className="sr-only">Hodnoty metrik podle krajů, řazeno podle vybrané metriky: {metrika.nazev}</caption>

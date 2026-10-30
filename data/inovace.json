@@ -3,30 +3,30 @@
   "nazev": "Inovace jako motor silné ekonomiky",
   "garant": {
     "jmeno": "Jiří Hlavenka",
-    "role": "podnikatel a investor, zaštiťuje okruhy digitálního státu, AI a efektivních institucí"
+    "role": "podnikatel a investor, zaštiťuje okruhy digitálního státu, AI a efektivních institucí"
   },
   "hook": {
     "hodnota": 131,
     "jednotka": "startupů na milion obyvatel",
-    "veta": "V Česku je 131 startupů na milion obyvatel; Izrael jich má 410 a Rakousko dvojnásobek české hodnoty."
+    "veta": "V Česku je 131 startupů na milion obyvatel; Izrael jich má 410 a Rakousko dvojnásobek české hodnoty."
   },
   "grafy": {
     "pozicIndexu": {
-      "titulek": "Pořadí ČR v mezinárodním indexu inovací",
+      "titulek": "Pořadí ČR v mezinárodním indexu inovací",
       "polozky": [
-        {"kategorie": "Celkové pořadí (kategorie Průměrný inovátor)", "hodnota": 32, "poznamka": "z 139 měřených ekonomik"},
+        {"kategorie": "Celkové pořadí (kategorie Průměrný inovátor)", "hodnota": 32, "poznamka": "z 139 měřených ekonomik"},
         {"kategorie": "Technologické schopnosti", "hodnota": 20},
         {"kategorie": "Výsledné výstupy", "hodnota": 43},
-        {"kategorie": "Tržní sofistikovanost", "hodnota": 73, "poznamka": "nejhorší z uvedených kritérií"}
+        {"kategorie": "Tržní sofistikovanost", "hodnota": 73, "poznamka": "nejhorší z uvedených kritérií"}
       ],
-      "zdroj": "Mezinárodní index inovací (odkaz 1 v textu; zdroj v PDF neuveden)"
+      "zdroj": "Mezinárodní index inovací (odkaz 1 v textu; zdroj v PDF neuveden)"
     },
     "pozicEU": {
-      "titulek": "Pozice Česka v analýze EU",
+      "titulek": "Pozice Česka v analýze EU",
       "polozky": [
-        {"zeme": "Česko", "hodnota": 19, "poznamka": "z 27 zemí EU, hluboce pod průměrem EU"}
+        {"zeme": "Česko", "hodnota": 19, "poznamka": "z 27 zemí EU, hluboce pod průměrem EU"}
       ],
-      "zdroj": "Analýza EU (odkaz 2 v textu; zdroj v PDF neuveden)"
+      "zdroj": "Analýza EU (odkaz 2 v textu; zdroj v PDF neuveden)"
     },
     "startupyNaMilion": {
       "titulek": "Startupy na milion obyvatel",
@@ -34,109 +34,109 @@
         {"zeme": "Česko", "hodnota": 131},
         {"zeme": "Izrael", "hodnota": 410, "poznamka": "považovaný za vzor ve světě startupů"}
       ],
-      "poznamka": "Rakousko má dvojnásobný počet startupů v přepočtu na populaci (číslo v textu neuvedeno)",
-      "zdroj": "Údaj uveden v textu kapitoly 3.3; zdroj v PDF neuveden"
+      "poznamka": "Rakousko má dvojnásobný počet startupů v přepočtu na populaci (číslo v textu neuvedeno)",
+      "zdroj": "Údaj uveden v textu kapitoly 3.3; zdroj v PDF neuveden"
     },
     "startupAndScaleupIndex": {
-      "titulek": "Startup and Scaleup Index 2025 (EU v roce 2020 = 100)",
+      "titulek": "Startup and Scaleup Index 2025 (EU v roce 2020 = 100)",
       "osaMin": 0,
       "osaMax": 200,
       "kategorie": ["Front-runner", "High-performing", "Catching-up", "Rising"],
       "zeme": ["Estonsko", "Finsko", "Nizozemsko", "Dánsko", "Lucembursko", "Irsko", "Francie", "Belgie", "Rakousko", "Kypr", "Malta", "Litva", "EU", "Portugalsko", "Slovinsko", "Chorvatsko", "Itálie", "Polsko", "Bulharsko", "Slovensko", "Rumunsko"],
-      "poznamka": "Z textového výtahu PDF nelze spolehlivě určit, která země patří do které kategorie. Česko se v popiscích grafu nevyskytuje. Před publikací ověřit v originálním grafu.",
-      "zdroj": "Startup and Scaleup Index 2025 (titulek grafu v PDF; zdroj v PDF neuveden)"
+      "poznamka": "Z textového výtahu PDF nelze spolehlivě určit, která země patří do které kategorie. Česko se v popiscích grafu nevyskytuje. Před publikací ověřit v originálním grafu.",
+      "zdroj": "Startup and Scaleup Index 2025 (titulek grafu v PDF; zdroj v PDF neuveden)"
     }
   },
   "fakta": [
-    {"id": "pozice_index_celkove", "hodnota": 32, "jednotka": "místo z 139 ekonomik", "text": "V mezinárodním indexu inovací jsme na 32. místě z 139 měřených ekonomik v kategorii „Průměrný inovátor“, nedosahujeme tedy cíle patřit mezi silné inovátory (Strong innovator).", "zdrojIndex": 1},
-    {"id": "pozice_tech_schopnosti", "hodnota": 20, "jednotka": "místo", "text": "V oblasti technologických schopností nás žebříček staví na 20. místo.", "zdrojIndex": 1},
+    {"id": "pozice_index_celkove", "hodnota": 32, "jednotka": "místo z 139 ekonomik", "text": "V mezinárodním indexu inovací jsme na 32. místě z 139 měřených ekonomik v kategorii „Průměrný inovátor“, nedosahujeme tedy cíle patřit mezi silné inovátory (Strong innovator).", "zdrojIndex": 1},
+    {"id": "pozice_tech_schopnosti", "hodnota": 20, "jednotka": "místo", "text": "V oblasti technologických schopností nás žebříček staví na 20. místo.", "zdrojIndex": 1},
     {"id": "pozice_vystupy", "hodnota": 43, "jednotka": "místo", "text": "Ve výsledných výstupech jsme na 43. místě.", "zdrojIndex": 1},
-    {"id": "pozice_trzni_sofistikovanost", "hodnota": 73, "jednotka": "místo na světě", "text": "V kritériu tržní sofistikovanosti jsme až na 73. místě na světě. Platí, že „víme a umíme“, ale „neumíme to prodat“.", "zdrojIndex": 1},
-    {"id": "pozice_eu", "hodnota": 19, "jednotka": "místo z 27 zemí EU", "text": "Analýza EU nás staví na 19. místo z 27, hluboce pod průměr EU.", "zdrojIndex": 2},
-    {"id": "startupy_cr", "hodnota": 131, "jednotka": "startupů na milion obyvatel", "text": "V ČR je 131 startupů na milion obyvatel, což je velmi málo.", "zdrojIndex": null},
+    {"id": "pozice_trzni_sofistikovanost", "hodnota": 73, "jednotka": "místo na světě", "text": "V kritériu tržní sofistikovanosti jsme až na 73. místě na světě. Platí, že „víme a umíme“, ale „neumíme to prodat“.", "zdrojIndex": 1},
+    {"id": "pozice_eu", "hodnota": 19, "jednotka": "místo z 27 zemí EU", "text": "Analýza EU nás staví na 19. místo z 27, hluboce pod průměr EU.", "zdrojIndex": 2},
+    {"id": "startupy_cr", "hodnota": 131, "jednotka": "startupů na milion obyvatel", "text": "V ČR je 131 startupů na milion obyvatel, což je velmi málo.", "zdrojIndex": null},
     {"id": "startupy_izrael", "hodnota": 410, "jednotka": "startupů na milion obyvatel", "text": "Izrael, považovaný za vzor ve světě startupů, má 410 startupů na milion obyvatel.", "zdrojIndex": null},
-    {"id": "startupy_rakousko", "hodnota": 2, "jednotka": "× více startupů na obyvatele než ČR", "text": "Rakousko má v přepočtu na populaci dvojnásobný počet startupů oproti ČR.", "zdrojIndex": null},
-    {"id": "zlepseni_cr", "hodnota": "postupné zlepšování", "jednotka": "ve všech sledovaných ukazatelích", "text": "Česká republika se postupně zlepšuje ve všech sledovaných ukazatelích, ale zlepšují se i další evropské země.", "zdrojIndex": 3},
+    {"id": "startupy_rakousko", "hodnota": 2, "jednotka": "× více startupů na obyvatele než ČR", "text": "Rakousko má v přepočtu na populaci dvojnásobný počet startupů oproti ČR.", "zdrojIndex": null},
+    {"id": "zlepseni_cr", "hodnota": "postupné zlepšování", "jednotka": "ve všech sledovaných ukazatelích", "text": "Česká republika se postupně zlepšuje ve všech sledovaných ukazatelích, ale zlepšují se i další evropské země.", "zdrojIndex": 3},
     {"id": "dividendy_zahranicni_korporace", "hodnota": "několik set", "jednotka": "mld. Kč ročně", "text": "Zahraniční korporace ročně dividendují několik set miliard Kč do svých mateřských zemí.", "zdrojIndex": null},
-    {"id": "dividendy_ceske_firmy_v_zahranici", "hodnota": "jednotky", "jednotka": "mld. Kč ročně", "text": "Opačným směrem, od českých společností zakořeněných v zahraničí, proudí spíše jednotky miliard.", "zdrojIndex": null},
-    {"id": "sedm_roli_statu", "hodnota": 7, "jednotka": "rolí státu", "text": "Existuje sedmero rolí státu a stát musí být aktivní ve všech na přiměřeně dobré úrovni.", "zdrojIndex": null},
-    {"id": "yozma_izrael", "hodnota": 1993, "jednotka": "rok", "text": "Izrael již v roce 1993 přišel s průkopnickým státním startupovým fondem Yozma.", "zdrojIndex": null},
-    {"id": "dotacni_labyrint", "hodnota": "TAČR, OP TAK a další", "jednotka": "dotační tituly bez jednotné administrace", "text": "Dnešní dotační programy a tituly jsou komplikované a nejasné a nemají jednotnou administraci.", "zdrojIndex": null},
-    {"id": "jic_jihomoravsky", "hodnota": "Jihomoravský JIC", "jednotka": "příklad podnikatelského inkubátoru", "text": "Nejlepším případem podnikatelského inkubátoru v ČR je Jihomoravský JIC, velký hybatel rozvoje místního inovačního ekosystému.", "zdrojIndex": null},
-    {"id": "inkubatory_velka_mesta", "hodnota": 5, "jednotka": "měst pro další inkubátory", "text": "Podobné instituce mají vzniknout v dalších velkých městech se silným univerzitním zázemím: v Praze, Ostravě, Plzni, Liberci a Olomouci.", "zdrojIndex": null},
-    {"id": "esop_analogie", "hodnota": "slabý a komplikovaný", "jednotka": "ESOP (analogie)", "text": "Analogie ESOP je už schválená, ale je slabá a komplikovaná; plnohodnotný ESOP bez kompromisů prosazujeme.", "zdrojIndex": null},
-    {"id": "talentove_zkoumani", "hodnota": "každé dítě", "jednotka": "má projít talentovým zkoumáním", "text": "U domácích talentů je nutné je systematicky rozpoznávat od raného školního či předškolního věku, aby každé dítě prošlo talentovým zkoumáním.", "zdrojIndex": null},
-    {"id": "fraunhofer_model", "hodnota": "Německo", "jednotka": "model institutů aplikovaného výzkumu", "text": "Pro spolupráci výzkumu s praxí doporučujeme německý přístup pomocí institutů aplikovaného výzkumu (Fraunhoferovy instituty).", "zdrojIndex": null}
+    {"id": "dividendy_ceske_firmy_v_zahranici", "hodnota": "jednotky", "jednotka": "mld. Kč ročně", "text": "Opačným směrem, od českých společností zakořeněných v zahraničí, proudí spíše jednotky miliard.", "zdrojIndex": null},
+    {"id": "sedm_roli_statu", "hodnota": 7, "jednotka": "rolí státu", "text": "Existuje sedmero rolí státu a stát musí být aktivní ve všech na přiměřeně dobré úrovni.", "zdrojIndex": null},
+    {"id": "yozma_izrael", "hodnota": 1993, "jednotka": "rok", "text": "Izrael již v roce 1993 přišel s průkopnickým státním startupovým fondem Yozma.", "zdrojIndex": null},
+    {"id": "dotacni_labyrint", "hodnota": "TAČR, OP TAK a další", "jednotka": "dotační tituly bez jednotné administrace", "text": "Dnešní dotační programy a tituly jsou komplikované a nejasné a nemají jednotnou administraci.", "zdrojIndex": null},
+    {"id": "jic_jihomoravsky", "hodnota": "Jihomoravský JIC", "jednotka": "příklad podnikatelského inkubátoru", "text": "Nejlepším případem podnikatelského inkubátoru v ČR je Jihomoravský JIC, velký hybatel rozvoje místního inovačního ekosystému.", "zdrojIndex": null},
+    {"id": "inkubatory_velka_mesta", "hodnota": 5, "jednotka": "měst pro další inkubátory", "text": "Podobné instituce mají vzniknout v dalších velkých městech se silným univerzitním zázemím: v Praze, Ostravě, Plzni, Liberci a Olomouci.", "zdrojIndex": null},
+    {"id": "esop_analogie", "hodnota": "slabý a komplikovaný", "jednotka": "ESOP (analogie)", "text": "Analogie ESOP je už schválená, ale je slabá a komplikovaná; plnohodnotný ESOP bez kompromisů prosazujeme.", "zdrojIndex": null},
+    {"id": "talentove_zkoumani", "hodnota": "každé dítě", "jednotka": "má projít talentovým zkoumáním", "text": "U domácích talentů je nutné je systematicky rozpoznávat od raného školního či předškolního věku, aby každé dítě prošlo talentovým zkoumáním.", "zdrojIndex": null},
+    {"id": "fraunhofer_model", "hodnota": "Německo", "jednotka": "model institutů aplikovaného výzkumu", "text": "Pro spolupráci výzkumu s praxí doporučujeme německý přístup pomocí institutů aplikovaného výzkumu (Fraunhoferovy instituty).", "zdrojIndex": null}
   ],
   "priciny": [
-    {"poradi": 1, "typ": "řetězec", "pricina": "Subdodavatelský výrobní průmysl", "popis": "Výrobní průmysl je v drtivé míře subdodavatelem pracujícím na zakázku (typicky zahraničních) finálních výrobců.", "zdrojIndex": null},
-    {"poradi": 2, "typ": "řetězec", "pricina": "Nízká přidaná hodnota", "popis": "Výrobní průmysly obvykle neskýtají vysokou přidanou hodnotu, zaplňují jen menší část hodnotového řetězce a jsou silně surovinově a energeticky náročné.", "zdrojIndex": null},
-    {"poradi": 3, "typ": "řetězec", "pricina": "Nákladový tlak zadavatelů a konkurence", "popis": "Subdodavatelé jsou pod permanentním nákladovým tlakem zadavatelů, který roste s výkonnější a kvalitnější konkurencí z Asie i ze států jihovýchodní Evropy.", "zdrojIndex": null},
-    {"poradi": 4, "typ": "řetězec", "pricina": "Víme a umíme, ale neumíme to prodat", "popis": "Česko je na 73. místě na světě v tržní sofistikovanosti a brzdí nás také přílišné jednostranné zaměření českého průmyslu.", "zdrojIndex": 1},
-    {"poradi": 5, "typ": "další", "pricina": "Strach z neúspěchu", "popis": "Mladí lidé nejdou do podnikání, protože se bojí neúspěchu. Stigma neúspěchu je v české společnosti hluboce zakořeněné a trvá roky i desetiletí, takže talent se promrhá.", "zdrojIndex": null},
-    {"poradi": 6, "typ": "další", "pricina": "Slabý transfer technologií", "popis": "Transfer výzkumu z univerzit do praxe je velkou bolestí a spolupráce výzkumu s praxí je často jen formální, jako šance získat grant.", "zdrojIndex": null},
-    {"poradi": 7, "typ": "další", "pricina": "Dotační labyrint a komplikované daňové odpočty", "popis": "Odpočet nákladů na vývoj a výzkum od základu daně je komplikovaný a nejasný, firmy se bojí zpětného doměření s pokutou. Dotační programy jsou roztříštěné bez jednotné administrace.", "zdrojIndex": null},
-    {"poradi": 8, "typ": "další", "pricina": "Zdlouhavé lákání zahraničních talentů", "popis": "Procedury pro zahraniční vědce a experty jsou velmi zdlouhavé a často ponižující, s nedůstojnými kvótami, a integrace není zjednodušená.", "zdrojIndex": null},
-    {"poradi": 9, "typ": "další", "pricina": "Legislativní překážky pro startupy", "popis": "Analogie ESOP je slabá a komplikovaná, chybí programy druhé šance pro neúspěch a startupy nemají zjednodušenou administrativní zátěž v prvních letech.", "zdrojIndex": null},
-    {"poradi": 10, "typ": "další", "pricina": "Nevyzdvižený domácí talent", "popis": "Podnikatelský talent se rodí i v ČR, ale nedokážeme jej vyzdvihnout; v ČR je 131 startupů na milion obyvatel.", "zdrojIndex": null}
+    {"poradi": 1, "typ": "řetězec", "pricina": "Subdodavatelský výrobní průmysl", "popis": "Výrobní průmysl je v drtivé míře subdodavatelem pracujícím na zakázku (typicky zahraničních) finálních výrobců.", "zdrojIndex": null},
+    {"poradi": 2, "typ": "řetězec", "pricina": "Nízká přidaná hodnota", "popis": "Výrobní průmysly obvykle neskýtají vysokou přidanou hodnotu, zaplňují jen menší část hodnotového řetězce a jsou silně surovinově a energeticky náročné.", "zdrojIndex": null},
+    {"poradi": 3, "typ": "řetězec", "pricina": "Nákladový tlak zadavatelů a konkurence", "popis": "Subdodavatelé jsou pod permanentním nákladovým tlakem zadavatelů, který roste s výkonnější a kvalitnější konkurencí z Asie i ze států jihovýchodní Evropy.", "zdrojIndex": null},
+    {"poradi": 4, "typ": "řetězec", "pricina": "Víme a umíme, ale neumíme to prodat", "popis": "Česko je na 73. místě na světě v tržní sofistikovanosti a brzdí nás také přílišné jednostranné zaměření českého průmyslu.", "zdrojIndex": 1},
+    {"poradi": 5, "typ": "další", "pricina": "Strach z neúspěchu", "popis": "Mladí lidé nejdou do podnikání, protože se bojí neúspěchu. Stigma neúspěchu je v české společnosti hluboce zakořeněné a trvá roky i desetiletí, takže talent se promrhá.", "zdrojIndex": null},
+    {"poradi": 6, "typ": "další", "pricina": "Slabý transfer technologií", "popis": "Transfer výzkumu z univerzit do praxe je velkou bolestí a spolupráce výzkumu s praxí je často jen formální, jako šance získat grant.", "zdrojIndex": null},
+    {"poradi": 7, "typ": "další", "pricina": "Dotační labyrint a komplikované daňové odpočty", "popis": "Odpočet nákladů na vývoj a výzkum od základu daně je komplikovaný a nejasný, firmy se bojí zpětného doměření s pokutou. Dotační programy jsou roztříštěné bez jednotné administrace.", "zdrojIndex": null},
+    {"poradi": 8, "typ": "další", "pricina": "Zdlouhavé lákání zahraničních talentů", "popis": "Procedury pro zahraniční vědce a experty jsou velmi zdlouhavé a často ponižující, s nedůstojnými kvótami, a integrace není zjednodušená.", "zdrojIndex": null},
+    {"poradi": 9, "typ": "další", "pricina": "Legislativní překážky pro startupy", "popis": "Analogie ESOP je slabá a komplikovaná, chybí programy druhé šance pro neúspěch a startupy nemají zjednodušenou administrativní zátěž v prvních letech.", "zdrojIndex": null},
+    {"poradi": 10, "typ": "další", "pricina": "Nevyzdvižený domácí talent", "popis": "Podnikatelský talent se rodí i v ČR, ale nedokážeme jej vyzdvihnout; v ČR je 131 startupů na milion obyvatel.", "zdrojIndex": null}
   ],
   "opatreni": [
     {
       "cislo": 1,
       "nazev": "Lidský kapitál",
-      "popis": "Podpora podnikavosti od dětství po dospělost. Základem je vzdělávání směrem k podnikavosti, tedy ke schopnosti samostatné i týmové tvorby, iniciativnosti a nebojácnosti před překážkami a neúspěchem, s důrazem na STEM či STEAM, především s cílem zachytit mladý talent a rozvinout jej. Na vysokých (i středních) školách podporovat chuť mladých lidí zakládat podniky. Velkou mezerou je věda a výzkum: mladí vědci a doktorandi potřebují finanční i profesní podporu při založení vědeckého spinoffu a jeho růstu. Lidský kapitál pokračuje i v dospělosti, kde je nutné neustále zvyšovat dovednosti (skill-up) nebo se překvalifikovávat, protože nové technologické možnosti se otevírají enormním tempem.",
+      "popis": "Podpora podnikavosti od dětství po dospělost. Základem je vzdělávání směrem k podnikavosti, tedy ke schopnosti samostatné i týmové tvorby, iniciativnosti a nebojácnosti před překážkami a neúspěchem, s důrazem na STEM či STEAM, především s cílem zachytit mladý talent a rozvinout jej. Na vysokých (i středních) školách podporovat chuť mladých lidí zakládat podniky. Velkou mezerou je věda a výzkum: mladí vědci a doktorandi potřebují finanční i profesní podporu při založení vědeckého spinoffu a jeho růstu. Lidský kapitál pokračuje i v dospělosti, kde je nutné neustále zvyšovat dovednosti (skill-up) nebo se překvalifikovávat, protože nové technologické možnosti se otevírají enormním tempem.",
       "klicoveCislo": "STEM / STEAM od dětství; univerzitní spinoffy"
     },
     {
       "cislo": 2,
       "nazev": "Financování",
-      "popis": "Odpočet nákladů na vývoj a výzkum od základu daně je dnes komplikovaný a administrativně nejasný. Navrhujeme přednostní posouzení, zda chystaný inovační záměr úřad akceptuje, nebo zamítne. Známým nástrojem jsou daňové prázdniny, tedy daňové zvýhodnění investic: je to okamžitý impuls pro spuštění (zejména větších) investic a pro stát je dlouhodobě rozpočtově neutrální, protože své peníze dostane o několik let později. Startupy mají být financovány z veřejných peněz prostřednictvím fondů s vysokou účastí státu, zbytek doplní soukromí investoři. Tyto fondy jsou ziskové, protože získávají podíl ve firmách a následně jej prodávají. Vzorem je Izrael se státním startupovým fondem Yozma (1993) nebo americký „superfond“ OPIC. V ČR doporučujeme vytvořit podobnou strukturu místo dnešních komplikovaných a nejasných dotačních programů (TAČR, OP TAK a další).",
+      "popis": "Odpočet nákladů na vývoj a výzkum od základu daně je dnes komplikovaný a administrativně nejasný. Navrhujeme přednostní posouzení, zda chystaný inovační záměr úřad akceptuje, nebo zamítne. Známým nástrojem jsou daňové prázdniny, tedy daňové zvýhodnění investic: je to okamžitý impuls pro spuštění (zejména větších) investic a pro stát je dlouhodobě rozpočtově neutrální, protože své peníze dostane o několik let později. Startupy mají být financovány z veřejných peněz prostřednictvím fondů s vysokou účastí státu, zbytek doplní soukromí investoři. Tyto fondy jsou ziskové, protože získávají podíl ve firmách a následně jej prodávají. Vzorem je Izrael se státním startupovým fondem Yozma (1993) nebo americký „superfond“ OPIC. V ČR doporučujeme vytvořit podobnou strukturu místo dnešních komplikovaných a nejasných dotačních programů (TAČR, OP TAK a další).",
       "klicoveCislo": "státní startupový fond podle vzoru Yozma (Izrael, 1993)"
     },
     {
       "cislo": 3,
-      "nazev": "Legislativa a regulace",
-      "popis": "Inspirovat se zahraničím, kde jsou ověřené cesty, jak usnadnit život inovativním firmám a startupům. Nejsilnějším opatřením je tzv. ESOP (Employee Stock Options Plan), který umožňuje startupům hledat a motivovat špičkové lidi. Analogie je už schválená, ale je slabá a komplikovaná, prosazujeme proto plnohodnotný ESOP bez kompromisů. Dále je potřeba destigmatizovat krachy: programy „druhé šance“, kdy je neúspěch rychle smazán. Pro startupy zavést zjednodušenou administrativní zátěž v prvních letech nebo do dosažení větších tržeb a umožnit nedanění zisku, který se investuje do růstu v počátečních letech, jak to má např. Estonsko.",
-      "klicoveCislo": "plnohodnotný ESOP bez kompromisů; nedanění zisku v počátečních letech (vzor Estonsko)"
+      "nazev": "Legislativa a regulace",
+      "popis": "Inspirovat se zahraničím, kde jsou ověřené cesty, jak usnadnit život inovativním firmám a startupům. Nejsilnějším opatřením je tzv. ESOP (Employee Stock Options Plan), který umožňuje startupům hledat a motivovat špičkové lidi. Analogie je už schválená, ale je slabá a komplikovaná, prosazujeme proto plnohodnotný ESOP bez kompromisů. Dále je potřeba destigmatizovat krachy: programy „druhé šance“, kdy je neúspěch rychle smazán. Pro startupy zavést zjednodušenou administrativní zátěž v prvních letech nebo do dosažení větších tržeb a umožnit nedanění zisku, který se investuje do růstu v počátečních letech, jak to má např. Estonsko.",
+      "klicoveCislo": "plnohodnotný ESOP bez kompromisů; nedanění zisku v počátečních letech (vzor Estonsko)"
     },
     {
       "cislo": 4,
-      "nazev": "Infrastruktura a instituce",
-      "popis": "Úzce souvisí s lidským kapitálem. Největší bolestí českých univerzit je transfer výzkumu do praxe, proto navrhujeme vytvořit a financovat nezávislé instituce mimo univerzity, v partnerství s inovativními firmami a veřejnou sférou, jejichž jediným cílem bude technologický transfer. Univerzity a jejich lidé musí být na transferu motivováni metodou „cukru i biče“. Spolupráci výzkumu s praxí, která je dnes často jen formální, má pomoci německý přístup institutů aplikovaného výzkumu (Fraunhoferovy instituty). Dalším klíčovým prvkem jsou lokální podnikatelské inkubátory: nejlepším případem je Jihomoravský JIC, podobné instituce mají vzniknout v Praze, Ostravě, Plzni, Liberci a Olomouci.",
+      "nazev": "Infrastruktura a instituce",
+      "popis": "Úzce souvisí s lidským kapitálem. Největší bolestí českých univerzit je transfer výzkumu do praxe, proto navrhujeme vytvořit a financovat nezávislé instituce mimo univerzity, v partnerství s inovativními firmami a veřejnou sférou, jejichž jediným cílem bude technologický transfer. Univerzity a jejich lidé musí být na transferu motivováni metodou „cukru i biče“. Spolupráci výzkumu s praxí, která je dnes často jen formální, má pomoci německý přístup institutů aplikovaného výzkumu (Fraunhoferovy instituty). Dalším klíčovým prvkem jsou lokální podnikatelské inkubátory: nejlepším případem je Jihomoravský JIC, podobné instituce mají vzniknout v Praze, Ostravě, Plzni, Liberci a Olomouci.",
       "klicoveCislo": "vzor Jihomoravský JIC; 5 velkých měst (Praha, Ostrava, Plzeň, Liberec, Olomouc)"
     },
     {
       "cislo": 5,
       "nazev": "Stát jako poptávající",
-      "popis": "Stát (státní správa i samospráva, též prostřednictvím zřizovaných firem) by měl být inovátorem, nikoli tím, kdo inovuje jen tehdy, když je k tomu dotlačen okolnostmi. Stát nemusí inovovat vlastními silami, ale může inovaci poptávat a tím povzbuzovat podnikatele k zakládání inovativních startupů a posilovat odvětví, kde není tak silná poptávka z komerční sféry. Je k tomu potřeba změna přístupu a myšlení představitelů veřejné sféry. Legislativně pomůže zavedení tzv. sandboxů, tedy možnost testovat inovaci ve veřejné sféře lokálně i bez nutných změn zákona a až po ověření přijímat případné legislativní úpravy.",
+      "popis": "Stát (státní správa i samospráva, též prostřednictvím zřizovaných firem) by měl být inovátorem, nikoli tím, kdo inovuje jen tehdy, když je k tomu dotlačen okolnostmi. Stát nemusí inovovat vlastními silami, ale může inovaci poptávat a tím povzbuzovat podnikatele k zakládání inovativních startupů a posilovat odvětví, kde není tak silná poptávka z komerční sféry. Je k tomu potřeba změna přístupu a myšlení představitelů veřejné sféry. Legislativně pomůže zavedení tzv. sandboxů, tedy možnost testovat inovaci ve veřejné sféře lokálně i bez nutných změn zákona a až po ověření přijímat případné legislativní úpravy.",
       "klicoveCislo": "sandboxy: testování inovací bez nutné změny zákona"
     },
     {
       "cislo": 6,
-      "nazev": "Talent, jeho růst a lákání",
-      "popis": "Cílem inovativní ekonomiky není mít mnoho malých inovátorů, ale postupem času vybudovat velké domácí firmy s domácím kapitálem, které patří mezi světové lídry (příkladem je dánský Novo Nordisk). Domácí talenty je nutné systematicky rozpoznávat od raného školního či předškolního věku, aby každé dítě prošlo talentovým zkoumáním, a mimořádný talent individuálně rozvíjet, často i mimo běžný vzdělávací systém. U zahraničních talentů je potřeba zásadně změnit pravidla pro jejich lákání a integraci: bez zdlouhavých a ponižujících procedur a bez nedůstojných kvót, se zjednodušenou integrací, trvalým nebo dlouhodobým právem pobytu a standardním pojištěním, zejména zdravotním. Jde o poměrně malé počty osob, které ale mohou ekonomice zásadním způsobem pomoci.",
-      "klicoveCislo": "rozpoznávání talentu u každého dítěte; trvalé nebo dlouhodobé právo pobytu pro zahraniční experty"
+      "nazev": "Talent, jeho růst a lákání",
+      "popis": "Cílem inovativní ekonomiky není mít mnoho malých inovátorů, ale postupem času vybudovat velké domácí firmy s domácím kapitálem, které patří mezi světové lídry (příkladem je dánský Novo Nordisk). Domácí talenty je nutné systematicky rozpoznávat od raného školního či předškolního věku, aby každé dítě prošlo talentovým zkoumáním, a mimořádný talent individuálně rozvíjet, často i mimo běžný vzdělávací systém. U zahraničních talentů je potřeba zásadně změnit pravidla pro jejich lákání a integraci: bez zdlouhavých a ponižujících procedur a bez nedůstojných kvót, se zjednodušenou integrací, trvalým nebo dlouhodobým právem pobytu a standardním pojištěním, zejména zdravotním. Jde o poměrně malé počty osob, které ale mohou ekonomice zásadním způsobem pomoci.",
+      "klicoveCislo": "rozpoznávání talentu u každého dítěte; trvalé nebo dlouhodobé právo pobytu pro zahraniční experty"
     },
     {
       "cislo": 7,
-      "nazev": "Kultura a tolerance k neúspěchu",
-      "popis": "Mladí lidé se často bojí neúspěchu a do podnikání nejdou; stigma neúspěchu je v české společnosti hluboce zakořeněné a člověka pronásleduje roky či desetiletí. Talent se pak promrhá. Cílem je kultura, která neúspěch nebere jako stigma, ale jako běžnou součást cesty k úspěchu. K tomu slouží programy druhé šance, které neúspěch rychle smažou, a podpora podnikavosti již od dětství. Česká republika se přitom postupně zlepšuje ve všech sledovaných ukazatelích, ale i další evropské země si uvědomují důležitost inovativního podnikání pro svou budoucnost.",
+      "nazev": "Kultura a tolerance k neúspěchu",
+      "popis": "Mladí lidé se často bojí neúspěchu a do podnikání nejdou; stigma neúspěchu je v české společnosti hluboce zakořeněné a člověka pronásleduje roky či desetiletí. Talent se pak promrhá. Cílem je kultura, která neúspěch nebere jako stigma, ale jako běžnou součást cesty k úspěchu. K tomu slouží programy druhé šance, které neúspěch rychle smažou, a podpora podnikavosti již od dětství. Česká republika se přitom postupně zlepšuje ve všech sledovaných ukazatelích, ale i další evropské země si uvědomují důležitost inovativního podnikání pro svou budoucnost.",
       "klicoveCislo": "131 startupů na milion obyvatel (Izrael 410)"
     }
   ],
   "cile": [
-    {"cil": "Vytvořit prostředí, kde mohou vyrůstat nové silné domácí firmy", "hodnota": null, "jednotka": "kvalitativní cíl (bez číselné hodnoty v PDF)"},
-    {"cil": "Proměňovat dobré nápady v úspěšné firmy", "hodnota": null, "jednotka": "kvalitativní cíl (bez číselné hodnoty v PDF)"},
-    {"cil": "Posunout se od ekonomiky levnější práce k zemi, která sama vytváří špičkové technologie, inovace a světově úspěšné podniky", "hodnota": null, "jednotka": "kvalitativní cíl (bez číselné hodnoty v PDF)"}
+    {"cil": "Vytvořit prostředí, kde mohou vyrůstat nové silné domácí firmy", "hodnota": null, "jednotka": "kvalitativní cíl (bez číselné hodnoty v PDF)"},
+    {"cil": "Proměňovat dobré nápady v úspěšné firmy", "hodnota": null, "jednotka": "kvalitativní cíl (bez číselné hodnoty v PDF)"},
+    {"cil": "Posunout se od ekonomiky levnější práce k zemi, která sama vytváří špičkové technologie, inovace a světově úspěšné podniky", "hodnota": null, "jednotka": "kvalitativní cíl (bez číselné hodnoty v PDF)"}
   ],
   "prinese": [
-    "Silnější inovační ekonomika postavená na lidech, talentu a schopnosti proměňovat dobré nápady v úspěšné firmy.",
-    "Vyšší produktivita a více kvalitních pracovních míst.",
-    "Větší konkurenceschopnost a šance, že Česko přestane být jen zemí levnější práce."
+    "Silnější inovační ekonomika postavená na lidech, talentu a schopnosti proměňovat dobré nápady v úspěšné firmy.",
+    "Vyšší produktivita a více kvalitních pracovních míst.",
+    "Větší konkurenceschopnost a šance, že Česko přestane být jen zemí levnější práce."
   ],
   "zdroje": [
-    {"index": 1, "citace": "Mezinárodní index inovací (pořadí ČR: celkově 32. z 139 v kategorii „Průměrný inovátor“; technologické schopnosti 20.; výsledné výstupy 43.; tržní sofistikovanost 73.) – odkaz v textu, zdroj v PDF neuveden."},
-    {"index": 2, "citace": "Analýza EU (pořadí ČR 19. z 27 zemí EU) – odkaz v textu, zdroj v PDF neuveden."},
-    {"index": 3, "citace": "Zlepšování ČR ve sledovaných ukazatelích inovační výkonnosti – odkaz v textu, zdroj v PDF neuveden."}
+    {"index": 1, "citace": "Mezinárodní index inovací (pořadí ČR: celkově 32. z 139 v kategorii „Průměrný inovátor“; technologické schopnosti 20.; výsledné výstupy 43.; tržní sofistikovanost 73.) – odkaz v textu, zdroj v PDF neuveden."},
+    {"index": 2, "citace": "Analýza EU (pořadí ČR 19. z 27 zemí EU) – odkaz v textu, zdroj v PDF neuveden."},
+    {"index": 3, "citace": "Zlepšování ČR ve sledovaných ukazatelích inovační výkonnosti – odkaz v textu, zdroj v PDF neuveden."}
   ]
 }

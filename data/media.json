@@ -1,12 +1,12 @@
 {
-  "poznamka": "Kontakty, účty a loga ověřeny načtením uvedených stránek 16. 10. 2026. Nic není domyšlené: co zdroj neuvádí, je null nebo je v poli nenalezeno.",
+  "poznamka": "Kontakty, účty a loga ověřeny načtením uvedených stránek 16. 10. 2026. Nic není domyšlené: co zdroj neuvádí, je null nebo je v poli nenalezeno.",
   "kontakty": [
     {
       "role": "Tisková mluvčí České pirátské strany (hlavní kontakt pro média)",
       "jmeno": "Kristina Jochmannová",
       "email": "kristina.jochmannova@pirati.cz",
-      "telefon": "+420 778 111 466",
-      "zdroj": "https://www.pirati.cz/kontakt/ (sekce Kontakt pro média); shodně https://www.pirati.cz/lide/kristina-jochmannova/ a oznámení o jmenování https://www.pirati.cz/jak-pirati-pracuji/novou-tiskovou-mluvci-ceske-piratske-strany-se-stala-kristina-jochmannova/ (10. 12. 2025)"
+      "telefon": "+420 778 111 466",
+      "zdroj": "https://www.pirati.cz/kontakt/ (sekce Kontakt pro média); shodně https://www.pirati.cz/lide/kristina-jochmannova/ a oznámení o jmenování https://www.pirati.cz/jak-pirati-pracuji/novou-tiskovou-mluvci-ceske-piratske-strany-se-stala-kristina-jochmannova/ (10. 12. 2025)"
     },
     {
       "role": "Obecný e-mail České pirátské strany",
@@ -16,18 +16,18 @@
       "zdroj": "https://www.pirati.cz/kontakt/"
     },
     {
-      "role": "Správce webu a člen PEER (garant sekcí o zdraví a důchodech)",
+      "role": "Správce webu a člen PEER (garant sekcí o zdraví a důchodech)",
       "jmeno": "Josef Pavlovic",
       "email": "josef@josefpavlovic.cz",
       "telefon": null,
-      "zdroj": "https://josefpavlovic.cz/kontakt (e-mail; web neuvádí telefon ani odkazy na sociální sítě); členství v PEER: https://peer.pirati.cz/ a https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/"
+      "zdroj": "https://josefpavlovic.cz/kontakt (e-mail; web neuvádí telefon ani odkazy na sociální sítě); členství v PEER: https://peer.pirati.cz/ a https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/"
     }
   ],
   "nenalezeno": [
     "Samostatný e-mail ani telefon PEER (Pirátské expertní ekonomické rady) peer.pirati.cz neuvádí; odkazuje jen na obecnou stránku https://www.pirati.cz/kontakt/.",
-    "Tisková zpráva z 2. 9. 2026 neobsahuje blok Kontakt pro média; mediální dotazy ke strategii proto patří tiskové mluvčí strany.",
+    "Tisková zpráva z 2. 9. 2026 neobsahuje blok Kontakt pro média; mediální dotazy ke strategii proto patří tiskové mluvčí strany.",
     "PEER nemá vlastní účty na sítích uvedené na peer.pirati.cz; níže jsou jen oficiální účty strany.",
-    "Webová stránka josefpavlovic.cz neuvádí žádné odkazy na sociální sítě ani zmínku o PEER."
+    "Webová stránka josefpavlovic.cz neuvádí žádné odkazy na sociální sítě ani zmínku o PEER."
   ],
   "ucty": [
     {
@@ -66,7 +66,7 @@
     {
       "nazev": "Logo České pirátské strany, klasické (SVG)",
       "url": "https://pirati.cz/documents/220/logo.svg",
-      "poznamka": "Vektor pro web a tisk.",
+      "poznamka": "Vektor pro web a tisk.",
       "zdroj": "https://www.pirati.cz/download/"
     },
     {
@@ -106,73 +106,73 @@
       "zdroj": "https://www.pirati.cz/download/"
     },
     {
-      "nazev": "Všechna loga a barvy (styleguide)",
+      "nazev": "Všechna loga a barvy (styleguide)",
       "url": "https://styleguide.pirati.cz/2.22.0/",
-      "poznamka": "Styleguide uvádí barvy a písma (Pirati Yellow #fec934, Roboto, Bebas Neue) a odkazuje na loga na pirati.cz/download. Webová stránka pirati.cz/download je pod licencí CC BY-SA 4.0 a k použití loga neuvádí zvláštní pravidla; závazný grafický manuál (ochranná zóna, zakázané varianty) je na mrak.pirati.cz. Logo nedeformovat a nepřebarvovat; při pochybnostech se zeptat tiskové mluvčí.",
+      "poznamka": "Styleguide uvádí barvy a písma (Pirati Yellow #fec934, Roboto, Bebas Neue) a odkazuje na loga na pirati.cz/download. Webová stránka pirati.cz/download je pod licencí CC BY-SA 4.0 a k použití loga neuvádí zvláštní pravidla; závazný grafický manuál (ochranná zóna, zakázané varianty) je na mrak.pirati.cz. Logo nedeformovat a nepřebarvovat; při pochybnostech se zeptat tiskové mluvčí.",
       "zdroj": "https://styleguide.pirati.cz/2.22.0/"
     },
     {
       "nazev": "Značka rady PEER (SVG)",
       "url": "/garanti/rada.svg",
-      "poznamka": "Zaoblený čtverec s nápisem PEER; značka označuje radu u úvodu a přehledových stránek. Není to oficiální logo PEER.",
+      "poznamka": "Zaoblený čtverec s nápisem PEER; značka označuje radu u úvodu a přehledových stránek. Není to oficiální logo PEER.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Libor Dušek (SVG)",
       "url": "/garanti/dusek.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Jiří Hlavenka (SVG)",
       "url": "/garanti/hlavenka.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Tereza Nislerová (SVG)",
       "url": "/garanti/nislerova.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Zuzana Freitas Lopesová (SVG)",
       "url": "/garanti/freitas.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Jan Kříž (SVG)",
       "url": "/garanti/kriz.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Václav Vislous (SVG)",
       "url": "/garanti/vislous.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Milan Damborský (SVG)",
       "url": "/garanti/damborsky.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     },
     {
       "nazev": "Značka garanta: Josef Pavlovic (SVG)",
       "url": "/garanti/pavlovic.svg",
-      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
+      "poznamka": "Monogram se jménem a rolí; garant s uvedením jména u kapitol souhlasil.",
       "zdroj": "Web, stránka Kdo je kdo"
     }
   ],
-  "boilerplate": "PEER – Pirátská expertní ekonomická rada – je expertní tým České pirátské strany složený z ekonomů, podnikatelů, investorů, akademiků a odborníků z praxe. Spojuje zkušenosti z byznysu, veřejné správy a akademické sféry a dlouhodobě připravuje konkrétní, měřitelná a na datech založená řešení pro českou ekonomiku. Jeho prvním výstupem je Hospodářská strategie 2026–2035, která chce vyvést Česko z pasti levné práce a zrychlit růst ekonomiky o jeden procentní bod ročně. Strategie stojí na čtyřech pilířích (lidský potenciál, férový trh a dostupný kapitál, moderní energetika a průmysl, stát jako motor, ne brzda) a vznikla ve spolupráci s Institutem π a dalšími odborníky.",
-  "boilerplateZdroj": "https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ a https://peer.pirati.cz/hospodarska-strategie/",
+  "boilerplate": "PEER – Pirátská expertní ekonomická rada – je expertní tým České pirátské strany složený z ekonomů, podnikatelů, investorů, akademiků a odborníků z praxe. Spojuje zkušenosti z byznysu, veřejné správy a akademické sféry a dlouhodobě připravuje konkrétní, měřitelná a na datech založená řešení pro českou ekonomiku. Jeho prvním výstupem je Hospodářská strategie 2026–2035, která chce vyvést Česko z pasti levné práce a zrychlit růst ekonomiky o jeden procentní bod ročně. Strategie stojí na čtyřech pilířích (lidský potenciál, férový trh a dostupný kapitál, moderní energetika a průmysl, stát jako motor, ne brzda) a vznikla ve spolupráci s Institutem π a dalšími odborníky.",
+  "boilerplateZdroj": "https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/ a https://peer.pirati.cz/hospodarska-strategie/",
   "citace": [
     {
       "jmeno": "Libor Dušek",
-      "role": "ekonom a akademik, garant témat dostupného bydlení a moderní infrastruktury",
-      "text": "Zhoršující se dostupnost bydlení není jen sociální problém, ale má široké dopady na celou ekonomiku. Snižuje pracovní mobilitu a udržuje strukturální nezaměstnanost v chudších okresech.",
+      "role": "ekonom a akademik, garant témat dostupného bydlení a moderní infrastruktury",
+      "text": "Zhoršující se dostupnost bydlení není jen sociální problém, ale má široké dopady na celou ekonomiku. Snižuje pracovní mobilitu a udržuje strukturální nezaměstnanost v chudších okresech.",
       "zdroj": "představení PEER, pirati.cz, 2. 9. 2026",
       "url": "https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/",
       "temata": [
@@ -181,8 +181,8 @@
     },
     {
       "jmeno": "Jiří Hlavenka",
-      "role": "podnikatel a investor, zaštiťuje okruhy digitálního státu, AI a efektivních institucí",
-      "text": "Neobjevujeme kolo. Vycházíme z ekonomického výzkumu, zkušeností úspěšných zemí i práce předních think-tanků. Přidanou hodnotou PEER je, že jsme tyto poznatky spojili do jednoho komplexního plánu a u jednotlivých opatření se díváme také na jejich měřitelný dopad.",
+      "role": "podnikatel a investor, zaštiťuje okruhy digitálního státu, AI a efektivních institucí",
+      "text": "Neobjevujeme kolo. Vycházíme z ekonomického výzkumu, zkušeností úspěšných zemí i práce předních think-tanků. Přidanou hodnotou PEER je, že jsme tyto poznatky spojili do jednoho komplexního plánu a u jednotlivých opatření se díváme také na jejich měřitelný dopad.",
       "zdroj": "představení PEER, pirati.cz, 2. 9. 2026",
       "url": "https://www.pirati.cz/jak-pirati-pracuji/pirati-predstavuji-novou-expertni-ekonomickou-radu-peer-prichazi-s-hospodarskou-strategii-a-s-planem-jak-z-ceska-udelat-v-ekonomice-evropskeho-tygra/",
       "temata": [

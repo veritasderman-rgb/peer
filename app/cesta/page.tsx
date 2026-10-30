@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Cesta do 2035",
-  description: "Co se podle strategie stane kdy: datované milníky všech čtrnácti témat na jedné ose od roku 2026 do roku 2035 a za něj, s náběhem přínosu rok po roce.",
+  description: "Co se podle strategie stane kdy: datované milníky všech čtrnácti témat na jedné ose od roku 2026 do roku 2035 a za něj, s náběhem přínosu rok po roce.",
   alternates: { canonical: "/cesta" },
 };
 
@@ -28,7 +28,7 @@ export default function CestaPage() {
           <h1>Cesta do 2035</h1>
           <p className={styles.lede}>
             Strategie je na deset let. Tady je, co se má stát kdy: {milniky.length} datovaných milníků z {pocetTemat} témat
-            a k tomu přínos celé strategie, jak narůstá rok po roce. U všeho je zdroj, u odvozených roků je to napsané.
+            a k tomu přínos celé strategie, jak narůstá rok po roce. U všeho je zdroj, u odvozených roků je to napsané.
           </p>
           <p className={styles.legenda}>
             <span className={`${styles.leg} ${styles.legOpatreni}`}>Opatření</span>
@@ -44,12 +44,12 @@ export default function CestaPage() {
       <section className={`wrap ${styles.section}`} aria-labelledby="nabeh">
         <h2 id="nabeh">Přínos rok po roce</h2>
         <p className="prose muted">
-          Rychlejší růst se sčítá: {dopad.nabeh.map((b) => `${b.mld}`).join(", ")} miliard navíc v prvních čtyřech letech, až
+          Rychlejší růst se sčítá: {dopad.nabeh.map((b) => `${b.mld}`).join(", ")} miliard navíc v prvních čtyřech letech, až
           po {s.hdpNavicMldRocneKonecDekady} miliard ročně na konci dekády. Rok 1 bereme jako {prvniRok}.
         </p>
         <NabehChart body={dopad.nabeh} cil={s.hdpNavicMldRocneKonecDekady} startYear={prvniRok} />
         <p className="src">
-          <b>Zdroj:</b> {dopad.nabehZdroj}; konec dekády podle studie s. 88. Roky 5–9 nejsou vyčíslené, graf je mezi nimi ilustrativní.
+          <b>Zdroj:</b> {dopad.nabehZdroj}; konec dekády podle studie s. 88. Roky 5–9 nejsou vyčíslené, graf je mezi nimi ilustrativní.
         </p>
       </section>
 
@@ -64,9 +64,9 @@ export default function CestaPage() {
           <div className="prose">
             <p>
               Část strategie termín nemá, takže ji na osu nedáváme. <Link href="/euro">Euro</Link> má jen pořadí kroků (nejdřív
-              shoda, pak dva roky v „předsíni“ ERM II), ne rok vstupu. <Link href="/stat">Stát jako lídr</Link> chce 1 400 služeb
+              shoda, pak dva roky v „předsíni“ ERM II), ne rok vstupu. <Link href="/stat">Stát jako lídr</Link> chce 1 400 služeb
               digitalizovat „včas“, bez data. <Link href="/bydleni">Bydlení</Link> a <Link href="/kapital">spící kapitál</Link>
-              mluví o „dlouhodobě“ a „průběžně“. A dopady vzdělávacích reforem (+50 až 100 mld. Kč ročně) přijdou za 15 až 20 let,
+              mluví o „dlouhodobě“ a „průběžně“. A dopady vzdělávacích reforem (+50 až 100 mld. Kč ročně) přijdou za 15 až 20 let,
               tedy až po roce 2040.
             </p>
             <p>

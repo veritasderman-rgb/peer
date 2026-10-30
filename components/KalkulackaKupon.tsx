@@ -26,7 +26,7 @@ export function KalkulackaKupon() {
       <div className={s.fields}>
         <RangeField
           id="kalk-kupon-lide"
-          label="Lidí v domácnosti"
+          label="Lidí v domácnosti"
           unit="osob"
           value={people}
           min={1}
@@ -52,18 +52,18 @@ export function KalkulackaKupon() {
           <span className={`${s.big} num`}>{nf.format(perYear)}&nbsp;Kč</span>
           <span className={s.unit}>ročně</span>
         </p>
-        <p className={s.sentence}>Bez žádosti, na výplatní pásce, v důchodu nebo v dávkách.</p>
+        <p className={s.sentence}>Bez žádosti, na výplatní pásce, v důchodu nebo v dávkách.</p>
         <p className={s.sentence}>
-          <b>Kdo topí a jezdí úsporně, dostane víc, než zaplatil.</b>
+          <b>Kdo topí a jezdí úsporně, dostane víc, než zaplatil.</b>
         </p>
       </div>
 
       <p className={`src ${s.source}`}>
         Orientační odhad podle studie, s.&nbsp;67: při ceně povolenky kolem 60&nbsp;EUR vychází zhruba 5&nbsp;000&nbsp;Kč
         ročně na průměrnou domácnost. Web to přepočítává na osobu (průměrná domácnost podle ČSÚ má asi 2,3 osoby, tedy
-        2&nbsp;170&nbsp;Kč na osobu) a lineárně škáluje cenou povolenky (cena ÷ 60). Plán Pirátů k povolenkám počítal pro
-        rok 2025 s 2&nbsp;250&nbsp;Kč na osobu, tedy 9&nbsp;000&nbsp;Kč pro čtyřčlennou rodinu; tady používáme přepočet
-        ze strategie, skutečná částka závisí na ceně povolenky a spotřebě.
+        2&nbsp;170&nbsp;Kč na osobu) a lineárně škáluje cenou povolenky (cena ÷ 60). Plán Pirátů k povolenkám počítal pro
+        rok 2025 s 2&nbsp;250&nbsp;Kč na osobu, tedy 9&nbsp;000&nbsp;Kč pro čtyřčlennou rodinu; tady používáme přepočet
+        ze strategie, skutečná částka závisí na ceně povolenky a spotřebě.
       </p>
     </section>
   );

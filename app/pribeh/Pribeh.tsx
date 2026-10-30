@@ -39,7 +39,7 @@ function StageHook({ kc }: { kc: number }) {
       <motion.div className={`${s.avatarL} ${s.rada}`} initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.15 }}>
         <Garant kdo="rada" size={120} label="Pirátská expertní ekonomická rada" />
       </motion.div>
-      <Scena scena={{ typ: "cislo", hodnota: kc, jednotka: "Kč", popis: "ročně navíc pro každého, kdo pracuje (v průměru, na konci dekády)" }} active />
+      <Scena scena={{ typ: "cislo", hodnota: kc, jednotka: "Kč", popis: "ročně navíc pro každého, kdo pracuje (v průměru, na konci dekády)" }} active />
     </div>
   );
 }
@@ -56,7 +56,7 @@ function StageParadox({ eci, hdpPozice }: { eci: number; hdpPozice: string }) {
         <motion.span className={`display ${s.vsSlovo}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>vs.</motion.span>
         <motion.div className={`card ${s.vsKarta}`} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.7 }}>
           <span className={`display ${s.vsCislo}`}>{hdpPozice.replace(/^kolem\s*/, "~")}.</span>
-          <span className={s.vsPopis}>místo v HDP na obyvatele (životní úroveň)</span>
+          <span className={s.vsPopis}>místo v HDP na obyvatele (životní úroveň)</span>
         </motion.div>
       </div>
     </div>
@@ -188,10 +188,10 @@ function StageKapital({ k, sub, p, reduce }: { k: PribehData["kapital"]; sub: nu
       <p className={s.kapLegenda}>
         <span><i className={s.legSpi} /> spí</span>
         <span><i className={s.legPracuje} /> pracuje</span>
-        <span className="muted">1 čtvereček = 100 mld. Kč</span>
+        <span className="muted">1 čtvereček = 100 mld. Kč</span>
       </p>
       <motion.p className={s.kapZdvoj} animate={{ opacity: hotovo ? 1 : 0, scale: hotovo ? 1 : 0.9 }} transition={{ duration: 0.35 }}>
-        ×2 za {k.let} let už při 3 % ročně
+        ×2 za {k.let} let už při 3 % ročně
       </motion.p>
     </div>
   );
@@ -223,7 +223,7 @@ function Sloupec({ b, i, max, p, reduce, startRok }: { b: PribehData["dopad"]["n
 function StageDopad({ d, sub, p, reduce }: { d: PribehData["dopad"]; sub: number; p: MotionValue<number>; reduce: boolean }) {
   const max = Math.max(...d.nabeh.map((b) => b.mld));
   const kroky = [
-    { v: `+${d.pb} p. b.`, t: "růstu ročně" },
+    { v: `+${d.pb} p. b.`, t: "růstu ročně" },
     { v: `${cz(d.hdpMld)} mld.`, t: "Kč HDP navíc ročně" },
     { v: `+${cz(d.rozpocetMld)} mld.`, t: "Kč do rozpočtu ročně" },
   ];
@@ -238,12 +238,12 @@ function StageDopad({ d, sub, p, reduce }: { d: PribehData["dopad"]; sub: number
         ))}
       </ol>
       <figure className={`card ${s.graf}`}>
-        <div className={s.sloupce} role="img" aria-label={`Přínos navíc ročně v mld. Kč: ${d.nabeh.map((b) => `${d.startRok + b.rok - 1}: ${b.odhad ? "asi " : ""}${b.mld}`).join(", ")}`}>
+        <div className={s.sloupce} role="img" aria-label={`Přínos navíc ročně v mld. Kč: ${d.nabeh.map((b) => `${d.startRok + b.rok - 1}: ${b.odhad ? "asi " : ""}${b.mld}`).join(", ")}`}>
           {d.nabeh.map((b, i) => (
             <Sloupec key={b.rok} b={b} i={i} max={max} p={p} reduce={reduce} startRok={d.startRok} />
           ))}
         </div>
-        <figcaption className="src">Mld. Kč navíc oproti dnešnímu růstu, každý rok. Šedé sloupce (roky 5–9) jsou dopočítané mezi rokem 4 a cílem.</figcaption>
+        <figcaption className="src">Mld. Kč navíc oproti dnešnímu růstu, každý rok. Šedé sloupce (roky 5–9) jsou dopočítané mezi rokem 4 a cílem.</figcaption>
       </figure>
     </div>
   );
@@ -255,7 +255,7 @@ function StageTy({ kc }: { kc: number }) {
       <motion.div className={`${s.avatarL} ${s.rada}`} initial={{ scale: 0.7, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring", stiffness: 240, damping: 18 }}>
         <Garant kdo="rada" size={120} label="Pirátská expertní ekonomická rada" />
       </motion.div>
-      <Scena scena={{ typ: "cislo", hodnota: kc, jednotka: "Kč", popis: "ročně navíc ve mzdě nebo platu, v průměru" }} active />
+      <Scena scena={{ typ: "cislo", hodnota: kc, jednotka: "Kč", popis: "ročně navíc ve mzdě nebo platu, v průměru" }} active />
     </div>
   );
 }
