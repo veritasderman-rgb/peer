@@ -8,9 +8,9 @@
   padding: 0.9rem 1.1rem 1rem 1.2rem;
   background: var(--surface);
   color: var(--ink);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--sun);
-  border-radius: 12px;
+  border: 0;
+  border-top: 4px solid var(--sun);
+  box-shadow: var(--shadow);
 }
 
 .hlava {

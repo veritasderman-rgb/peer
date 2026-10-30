@@ -1,0 +1,76 @@
+# Aby web vypadal jako od člověka
+
+Podklad: vizuální identita z Pirátské znalostní báze (`get_brand`, zdroj styleguide.pirati.cz 2.22.0)
+a přímé měření komponent ve styleguide (tlačítka, karty, praporky, citace), říjen 2026.
+
+## Co říká styleguide a jak se od něj web lišil
+
+| Prvek | styleguide.pirati.cz 2.22 | Web před úpravou |
+|---|---|---|
+| Rohy | všude 0 px (tlačítka, karty, chipy) | pilulky (999px) a karty se zaoblením 10–12 px |
+| Tlačítko | plný obdélník, Roboto 400, padding 12 × 32 px | pilulka s rámečkem, Roboto Condensed bold |
+| Karta | bez rámečku, jemný stín (elevation), odsazení 32 px | 1px šedý rámeček + zaoblení |
+| Praporek (flag) | Bebas Neue na plné barvě, pravý okraj do šipky („Volte č. 2“) | nepoužit; místo něj drobný tyrkysový nadtitulek |
+| Citace | levá linka 2 px černá, kurzíva | žlutý 4px proužek; stejný proužek i u boxů, které citace nejsou |
+
+Zaoblené karty s tenkým rámečkem, pilulková tlačítka, barevný proužek na levé hraně každého boxu a malý
+nadtitulek nad každým nadpisem jsou dnes nejčastější znaky webů „vygenerovaných na jedno zadání“. Pirátský
+styleguide je ostřejší a plakátovější, takže stačí se ho držet a web přestane působit šablonovitě.
+
+## Hotovo v tomto kroku (jen vzhled, obsah beze změny)
+
+1. **Ostré rohy všude.** `--radius: 0`, všechny `border-radius: 999px` a drobná zaoblení (2–12 px) na 0;
+   kruhy (piktogramy, avatary, `50%`) zůstaly.
+2. **Tlačítka podle styleguide.** Obdélník, Roboto 500, širší vodorovné odsazení, při najetí se invertují.
+3. **Karty se stínem místo rámečku** (`--shadow` ze styleguide; v tmavém režimu tenký obrys, protože stín na
+   tmavé nevidět).
+4. **Konec proužků na levé hraně.** Citace mají styleguide linku 2 px černou; informační boxy („A co to stojí“,
+   poznámky na /cesta, /dopad, /jak-vznikl, /pro-sdileni) mají barvu nahoře jako lištu, „Pro tebe“
+   u opatření je oddělené jen čarou. Proužky, které nesou význam (časová osa: opatření / cíl / dopad,
+   postup scrollytellingu), zůstaly.
+5. **Úvodní stránka:** nadtitulek nad H1 je teď pirátský praporek; pryč nadtitulky „Za minutu“ a „Nevíš, kde
+   začít?“, které jen opakovaly nadpis; čísla témat jsou velká Bebas čísla místo žlutých koleček (každá karta
+   měla dvě kolečka vedle sebe).
+6. **Velká čísla bez odpočítávání od nuly.** Animace na snímku obrazovky zachytila „13,5 ročních platů“
+   místo 15,1. Kdo si stránku vyfotí ve špatnou chvíli, sdílí špatné číslo; navíc je to typický efekt
+   šablonových landing pages.
+
+## Návrh dalších kroků (potřebuje rozhodnutí lidí)
+
+### Vzhled
+
+- **Skutečné fotky garantů místo monogramů.** Kroužek s „LD“ je nejviditelnější znak, že za webem nejsou lidé.
+  Fotka (i z telefonu, jednotný ořez a černobílý filtr) udělá víc než jakákoli jiná úprava. Potřeba souhlas
+  garantů a fotky; komponenta `GarantSvg` se dá doplnit o `<img>` s monogramem jako zálohou.
+- **Méně položek v hlavní navigaci.** Dnes 13 položek v jednom řádku, jako vypsaná mapa webu. Návrh:
+  Témata · Příběh · Kolik ti to přinese · Můj kraj · Videa, zbytek („Velký obraz“, „Cesta do 2035“, „Jak se
+  to zaplatí“, „Otázky a námitky“, „O webu“, English) do patičky nebo rozbalovacího „Více“.
+- **Nadtitulky (`.eyebrow`) jen tam, kde nesou informaci.** Na webu jich je přes 30; nad většinou H2 jen opakují
+  nadpis. Ponechat u stránek témat („Téma 1 · Pilíř…“), jinde zrušit.
+- **Žluté zvýraznění v textu šetřit.** V příběhu Petry je zvýrazněné skoro každé číslo, takže nic nevyčnívá.
+  Jedno, maximálně dvě zvýraznění na odstavec.
+- **Hlavička v tmavém režimu.** Hlavička používá `--ink`, takže v tmavém režimu zesvětlí do šedé. Pirátský
+  web má hlavičku vždy černou; stačí jí dát pevné `#000`.
+- **Méně identických mřížek tří karet.** Témata, „Tři hloubky“, příčiny i opatření jsou všechno stejná mřížka.
+  U opatření by fungoval číslovaný seznam v jednom sloupci (jako „Program point list“ ve styleguide).
+- **Fotky místo prázdných ploch.** Styleguide počítá s fotkou v hero (organisms/hero). Jedna reálná fotka
+  na téma (sídliště, školka, fabrika) z vlastního nebo volně licencovaného zdroje, ne generovaná.
+
+### Text
+
+- **Sekce „Tři hloubky“ zrušit nebo zkrátit na jednu větu.** Web tu popisuje sám sebe („10 vteřin / 2 minuty
+  / 20 minut“); člověk by to spíš ukázal, než vysvětloval.
+- **Méně „tenhle web“.** Úvodní odstavec končí „Tenhle web ho vysvětluje bez ekonomické hantýrky.“ Lepší je
+  rovnou začít vysvětlovat.
+- **Hlas garantů nechat napsat garanty.** Věty jako „Pojď, ukážu ti, proč to tak je“ jsou u všech stejně
+  stavěné. Stačí každému garantovi poslat jeho 3–4 bubliny k přepsání vlastními slovy.
+- **Upozornění v patičce „Web postavila AI pod lidským vedením“ ponechat.** Je to poctivé a do budoucna
+  chrání před výtkou, že se něco tajilo. Lidský dojem má vzniknout z obsahu a fotek, ne ze zamlčení.
+
+## Zdroje
+
+- Pirátská znalostní báze, `get_brand` → https://styleguide.pirati.cz/2.22.0/ (barvy, písma, loga, pravidla)
+- styleguide.pirati.cz 2.22.0, patterns: atoms/buttons, atoms/cards, atoms/flags, atoms/quotations,
+  molecules/chips, organisms/hero (změřeno v prohlížeči: `border-radius: 0`, `.btn__body` padding 12px 32px,
+  `.card` box-shadow, `.card__body` padding 32px, citace `border-left: 2px solid #000; font-style: italic`)
+- loga ke stažení: https://www.pirati.cz/download/

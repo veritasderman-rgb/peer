@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <section className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
-          <p className="eyebrow">Hospodářská strategie 2026–2035 · PEER</p>
+          <p className="flag">Hospodářská strategie 2026–2035</p>
           <h1>Česko má na víc!</h1>
           <p className={styles.lead}>
             Vyrábíme jako elita, jsme 7. nejsložitější ekonomika světa. Bohatneme ale jen průměrně.
@@ -68,7 +68,6 @@ export default function Home() {
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="uvodni-video">
-        <p className="eyebrow">Za minutu</p>
         <h2 id="uvodni-video">Celá strategie v jednom videu</h2>
         <p className={`prose ${styles.depthIntro}`}>
           Co je špatně, proč, co navrhujeme a co to přinese. Namluvené, s titulky. Každé ze 14 témat má pak vlastní minutu.
@@ -77,7 +76,6 @@ export default function Home() {
       </section>
 
       <section className={`wrap ${styles.section}`} aria-labelledby="situace">
-        <p className="eyebrow">Nevíš, kde začít?</p>
         <h2 id="situace">Vyber, co se tě týká</h2>
         <p className={`prose ${styles.depthIntro}`}>
           Strategie má čtrnáct kapitol. Tebe se ale netýkají všechny stejně. Řekni, v jaké jsi situaci, a vybereme

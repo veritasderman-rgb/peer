@@ -23,7 +23,7 @@
   border: 2px solid var(--ink);
   color: var(--ink);
   padding: 0.35rem 0.8rem;
-  border-radius: 999px;
+  border-radius: 0;
 }
 .depthNav a:hover { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
 
@@ -42,7 +42,7 @@
 .goalUnit { font-family: var(--f-data); font-weight: 700; }
 .goals .muted { font-size: var(--s-1); }
 
-.cost { padding: 1.2rem; display: grid; gap: 0.8rem; align-content: start; border-left: 4px solid var(--alert); }
+.cost { padding: 1.2rem; display: grid; gap: 0.8rem; align-content: start; border-top: 6px solid var(--alert); }
 .cost p { font-size: var(--s-1); }
 
 .garant { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 1.2rem; padding: 1.2rem; align-items: start; }
@@ -52,9 +52,9 @@
   font-family: var(--f-display); font-size: 2rem; display: grid; place-items: center;
 }
 .garantName { font-size: var(--s2); }
-.quote { margin: 0.8rem 0; padding-left: 1rem; border-left: 4px solid var(--sun); font-style: italic; max-width: 60ch; }
+.quote { margin: 0.8rem 0; padding-left: 1rem; border-left: 2px solid var(--ink); font-style: italic; max-width: 60ch; }
 
-.fullText { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 0.9rem 1.1rem; }
+.fullText { border: 0; border-radius: var(--radius); box-shadow: var(--shadow); background: var(--surface); padding: 0.9rem 1.1rem; }
 .fullText summary { cursor: pointer; font-family: var(--f-data); font-weight: 700; color: var(--river); }
 .fullText[open] summary { margin-bottom: 1.2rem; }
 

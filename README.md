@@ -4,6 +4,7 @@ Web, který převypráví Hospodářskou strategii 2026–2035 Pirátské expert
 se značkami garantů (monogram, jméno, role), piktogramy témat, modelovými postavami, grafy, kalkulačkami a plným zněním každé kapitoly se zdroji.
 
 - Návrh a zdůvodnění: [`docs/navrh-webu.md`](docs/navrh-webu.md)
+- Vzhled podle styleguide.pirati.cz a další kroky: [`docs/lidsky-vzhled.md`](docs/lidsky-vzhled.md)
 - Původní studie: [`Piratska_Hospodarska_strategie.pdf`](Piratska_Hospodarska_strategie.pdf)
 - Pilotní téma: `/bydleni` (kapitola 1.1)
 

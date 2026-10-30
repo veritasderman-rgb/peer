@@ -49,7 +49,6 @@ export function BarChart({ items, unit, max, goal, title, source }: BarChartProp
             y={head + i * ROW + 24}
             width={`${pct(it.value)}%`}
             height={BAR_H}
-            rx="2"
           />
         ))}
         <line className={s.axis} x1="0" x2="0" y1={head} y2={height - 4} />

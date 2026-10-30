@@ -8,8 +8,8 @@
 }
 .card {
   background: var(--surface);
-  border: 1px solid var(--line);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
   padding: 1rem 1.1rem 1.1rem;
   display: grid;
   gap: 0.5rem;
@@ -33,9 +33,9 @@
   background: var(--sun);
   color: var(--sun-ink);
   padding: 0.15rem 0.5rem;
-  border-radius: 4px;
+  border-radius: 0;
 }
-.forYou { border-left: 4px solid var(--river); padding-left: 0.7rem; }
+.forYou { padding-top: 0.6rem; border-top: 1px solid var(--line); }
 .forYou .eyebrow { display: block; }
 .details { font-size: var(--s-1); color: var(--muted); }
 .details summary { cursor: pointer; font-family: var(--f-data); font-weight: 700; color: var(--river); }

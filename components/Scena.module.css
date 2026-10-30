@@ -68,14 +68,14 @@
   grid-column: 1 / -1;
   height: clamp(10px, 3.4cqi, 16px);
   background: var(--paper);
-  border-radius: 999px;
+  border-radius: 0;
   overflow: hidden;
 }
 .vypln {
   display: block;
   height: 100%;
   background: var(--river);
-  border-radius: 999px;
+  border-radius: 0;
   transform-origin: 0 50%;
 }
 .pruh[data-hi] .pruhNazev { font-weight: 700; }
@@ -97,7 +97,7 @@
 }
 .bunka {
   aspect-ratio: 1;
-  border-radius: 2px;
+  border-radius: 0;
   background: var(--line);
   transition: background-color 0.12s linear, transform 0.2s ease-out;
 }
@@ -114,7 +114,7 @@
   display: grid;
   gap: 0.15rem;
   padding: 0.7rem 0.8rem;
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid var(--line);
   background: var(--paper);
 }

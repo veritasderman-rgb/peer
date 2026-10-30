@@ -68,7 +68,7 @@
 .swatch {
   width: 14px;
   height: 14px;
-  border-radius: 3px;
+  border-radius: 0;
   flex: none;
 }
 .source { margin-top: 0.7rem; }

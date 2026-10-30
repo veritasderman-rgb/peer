@@ -242,8 +242,8 @@ export function MapaKraju({ kraje, metriky }: Props) {
                     aria-label={`${k.nazev}: ${plna(metrika, v)}, ${poradi(metrika, k.id)}. z ${kraje.length} od nejlepšího`}
                     onKeyDown={(e) => klavesa(e, k.id)}
                   >
-                    <rect className={styles.bg} width={TILE} height={TILE} rx={10} />
-                    <rect className={styles.ring} x={-2} y={-2} width={TILE + 4} height={TILE + 4} rx={12} />
+                    <rect className={styles.bg} width={TILE} height={TILE} />
+                    <rect className={styles.ring} x={-2} y={-2} width={TILE + 4} height={TILE + 4} />
                   </g>
                   {p.popisek.map((radek, i) => (
                     <text

@@ -7,7 +7,7 @@
 .akce { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; }
 .odkaz { font-family: var(--f-data); font-weight: 700; }
 
-.pravidla { padding: 1.1rem 1.2rem 1.2rem; display: grid; gap: 0.8rem; min-width: 0; border-left: 6px solid var(--sun); }
+.pravidla { padding: 1.1rem 1.2rem 1.2rem; display: grid; gap: 0.8rem; min-width: 0; border-top: 6px solid var(--sun); }
 .pravidla h2 { font-size: var(--s2); }
 .pravidla ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.5rem; font-size: var(--s-1); line-height: 1.5; max-width: 70ch; }
 .pravidla b { font-family: var(--f-data); }
@@ -43,7 +43,7 @@
 .pole {
   display: block; width: 100%; max-width: 100%; min-width: 0; resize: vertical;
   font: inherit; font-size: 16px; line-height: 1.5; color: var(--ink);
-  background: var(--paper); border: 1px solid var(--line-strong); border-radius: 6px; padding: 0.7rem 0.8rem;
+  background: var(--paper); border: 1px solid var(--line-strong); border-radius: 0; padding: 0.7rem 0.8rem;
 }
 .pole:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
 
