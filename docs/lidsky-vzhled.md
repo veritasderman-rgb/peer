@@ -61,7 +61,7 @@ takže se mu vzhled přiblížil:
 - **Tlačítka jako na PEER:** pilulky, Roboto Condensed tučně, verzálky; stejně tak výběrové „chipy“.
   Karty a grafy zůstávají hranaté.
 - **Typografie:** text 18/28 px (PEER), nadpisy sekcí Bebas 48 px, úvodní text v Roboto Condensed.
-- **Plochy bez stínů:** karty jsou šedé `#f0f0f0` na bílé, jako rozbalovací bloky na peer.pirati.cz.
+- **Plochy bez stínů:** karty jsou bílé na bílém papíru, odliší je tenký světle šedý obrys (`--line`).
 
 ## Návrh dalších kroků (potřebuje rozhodnutí lidí)
 
