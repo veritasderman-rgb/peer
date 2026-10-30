@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 0.78rem;
   padding: 0.15rem 0.55rem;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--line-strong);
 }
 .stitekStudie { background: var(--green-soft); border-color: var(--green); }

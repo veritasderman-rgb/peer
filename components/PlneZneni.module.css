@@ -11,4 +11,4 @@
 .ref { font-size: 0.72em; line-height: 0; }
 .ref a { text-decoration: none; padding: 0 0.1em; }
 .sources { font-size: var(--s-1); color: var(--muted); }
-.sources li:target { background: var(--sun); color: var(--sun-ink); padding: 0.2rem 0.4rem; border-radius: 4px; }
+.sources li:target { background: var(--sun); color: var(--sun-ink); padding: 0.2rem 0.4rem; border-radius: 0; }

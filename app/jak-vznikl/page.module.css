@@ -21,7 +21,7 @@
 .name { font-size: var(--s1); line-height: 1.05; }
 .role { font-size: var(--s-1); line-height: 1.4; }
 .temata { margin: 0.1rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem; font-family: var(--f-data); font-size: var(--s-1); font-weight: 700; }
-.temata a { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 0.1rem 0.6rem; text-decoration: none; color: var(--ink); }
+.temata a { background: var(--paper); border: 1px solid var(--line); border-radius: 0; padding: 0.1rem 0.6rem; text-decoration: none; color: var(--ink); }
 .temata a:hover { border-color: var(--ink); }
 
 /* kroky AI */
@@ -31,7 +31,7 @@
 .krokH { font-size: var(--s1); margin: 0; }
 .krokP { margin: 0; font-size: var(--s-1); line-height: 1.5; }
 .rucime { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.2rem; align-items: center; }
-.rucimeBox { padding: 1.1rem 1.2rem; display: grid; gap: 0.6rem; border-left: 4px solid var(--alert); }
+.rucimeBox { padding: 1.1rem 1.2rem; display: grid; gap: 0.6rem; border-top: 6px solid var(--alert); }
 .rucimeBox h3 { font-size: var(--s1); margin: 0; }
 .rucimeBox p { margin: 0; font-size: var(--s-1); line-height: 1.5; }
 
@@ -40,8 +40,8 @@
 .polozka { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
 .polozkaText { display: grid; gap: 0.15rem; min-width: 0; }
 .polozkaLidi { font-size: var(--s-1); }
-.bar { height: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
-.barFill { display: block; height: 100%; background: var(--river); border-radius: 999px; }
+.bar { height: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
+.barFill { display: block; height: 100%; background: var(--river); border-radius: 0; }
 .polozkaCena { font-weight: 700; white-space: nowrap; }
 .souhrn { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1rem; }
 .souhrnCard { padding: 1.1rem 1.2rem; display: grid; gap: 0.3rem; align-content: start; font-size: var(--s-1); }

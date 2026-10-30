@@ -47,7 +47,7 @@
   font-weight: 700;
   font-size: var(--s1);
   border: 2px solid var(--line-strong);
-  border-radius: 999px;
+  border-radius: 0;
   cursor: pointer;
 }
 .choiceOn {
@@ -100,7 +100,7 @@
   height: 14px;
   margin-top: 0.45rem;
   border: 2px solid var(--sun-ink);
-  border-radius: 999px;
+  border-radius: 0;
   overflow: hidden;
 }
 .fill {

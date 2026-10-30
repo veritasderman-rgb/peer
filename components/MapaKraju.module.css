@@ -31,7 +31,7 @@
   font-weight: 700;
   font-size: var(--s-1);
   padding: 0.5rem 0.95rem;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink);
@@ -48,7 +48,7 @@
   font-size: var(--s0);
   padding: 0.6rem 0.75rem;
   border: 1px solid var(--line-strong);
-  border-radius: 8px;
+  border-radius: 0;
   background: var(--surface);
   color: var(--ink);
   min-height: 44px;
@@ -70,7 +70,7 @@
   font-size: 0.78rem;
   letter-spacing: 0.02em;
   padding: 0.15rem 0.55rem;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--line-strong);
 }
 .stitekStudie { background: var(--green-soft); color: var(--ink); border-color: var(--green); }
@@ -94,7 +94,7 @@
 .legendTitle { font-size: 0.8rem; color: var(--muted); }
 .swatches { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
 .swatch { display: grid; gap: 0.25rem; min-width: 0; }
-.swatchColor { display: block; height: 14px; border-radius: 4px; background: var(--bg); border: 1px solid var(--line-strong); }
+.swatchColor { display: block; height: 14px; border-radius: 0; background: var(--bg); border: 1px solid var(--line-strong); }
 .swatchText { font-family: var(--f-data); font-size: 0.74rem; color: var(--muted); font-variant-numeric: tabular-nums; text-align: center; overflow-wrap: anywhere; }
 
 /* Detail kraje */
@@ -113,7 +113,7 @@
   cursor: pointer;
 }
 .rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
-.row { padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: 8px; display: grid; gap: 0.2rem; min-width: 0; }
+.row { padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: 0; display: grid; gap: 0.2rem; min-width: 0; }
 .rowOn { border-color: var(--ink); background: var(--paper); }
 .rowTop { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.2rem 0.8rem; }
 .rowName {
@@ -139,7 +139,7 @@
 .horsi { color: var(--alert); font-weight: 700; }
 .stejne { font-weight: 700; }
 
-.strategie { padding: 0.9rem 1rem; border-left: 4px solid var(--sun); background: var(--paper); border-radius: 0 8px 8px 0; display: grid; gap: 0.5rem; font-size: var(--s-1); }
+.strategie { padding: 0.9rem 1rem; background: var(--paper); border-radius: 0; display: grid; gap: 0.5rem; font-size: var(--s-1); }
 .strategie h4 { margin: 0; font-family: var(--f-data); font-size: var(--s0); line-height: 1.2; }
 .temaLink { font-weight: 700; justify-self: start; padding-block: 0.3rem; }
 

@@ -1,6 +1,7 @@
 /* Design tokens: brand podle styleguide.pirati.cz 2.22
    (černá + bílá základ, Pirati Yellow #fec934 jen jako akcentní plocha pod černým textem,
-   Cyan 500/200 pro odkazy a vedlejší akcent). Fonty dodává next/font v layout.tsx
+   Cyan 500/200 pro odkazy a vedlejší akcent). Tvary taky podle styleguide: ostré rohy, tlačítka jako plné
+   obdélníky, karty bez rámečku jen se stínem (atoms/cards, „elevation“). Fonty dodává next/font v layout.tsx
    jako --font-bebas, --font-roboto, --font-roboto-condensed. */
 :root {
   --paper: #f7f7f7;
@@ -35,7 +36,9 @@
   --gutter: max(16px, env(safe-area-inset-left, 0px));
   --maxw: 1080px;
   --prose: 68ch;
-  --radius: 10px;
+  --radius: 0;
+  /* stín karty ze styleguide (atoms/cards); v tmavém režimu ho nahradí tenký obrys */
+  --shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
   color-scheme: light;
 }
 
@@ -55,6 +58,7 @@
     --green-ink: #76cc9f;
     --green-soft: #1f3a2c;
     --focus: var(--sun);
+    --shadow: 0 0 0 1px var(--line);
     color-scheme: dark;
   }
 }
@@ -73,6 +77,7 @@
   --green-ink: #76cc9f;
   --green-soft: #1f3a2c;
   --focus: var(--sun);
+  --shadow: 0 0 0 1px var(--line);
   color-scheme: dark;
 }
 
@@ -107,18 +112,32 @@ p { margin: 0; }
 .num { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
 .display { font-family: var(--f-display); text-transform: uppercase; letter-spacing: 0.01em; line-height: 1; }
 .sun { background: var(--sun); color: var(--sun-ink); }
-mark { background: var(--sun); color: var(--sun-ink); padding: 0 0.2em; border-radius: 3px; }
+mark { background: var(--sun); color: var(--sun-ink); padding: 0 0.2em; }
 
+/* praporek ze styleguide (atoms/flags): Bebas na černé ploše, pravý okraj vystřižený do šipky */
+.flag {
+  justify-self: start;
+  display: inline-block;
+  font-family: var(--f-display); font-size: var(--s1); line-height: 1; letter-spacing: 0.02em; text-transform: uppercase;
+  background: var(--ink); color: var(--paper);
+  padding: 0.45rem 1.6rem 0.4rem 0.8rem;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.7rem) 50%, 100% 100%, 0 100%);
+}
+
+/* tlačítko podle styleguide (atoms/buttons): obdélník bez zaoblení, Roboto, vodorovně vzdušné */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  font-family: var(--f-data); font-weight: 700; font-size: var(--s0);
-  padding: 0.7rem 1.2rem; border-radius: 999px; border: 2px solid var(--ink);
+  font-family: var(--f-body); font-weight: 500; font-size: var(--s0); line-height: 1.3;
+  padding: 0.7rem 1.8rem; border-radius: 0; border: 2px solid var(--ink);
   background: var(--ink); color: var(--paper); text-decoration: none; cursor: pointer;
+  transition: background-color 0.12s, color 0.12s;
 }
+.btn:hover { background: var(--surface); color: var(--ink); }
 .btn.secondary { background: transparent; color: var(--ink); }
+.btn.secondary:hover { background: var(--ink); color: var(--paper); }
 .btn.sun { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
 
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.card { background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: var(--shadow); }
 .src { font-size: var(--s-1); color: var(--muted); }
 .src b { color: var(--ink); }
 
@@ -127,7 +146,7 @@ mark { background: var(--sun); color: var(--sun-ink); padding: 0 0.2em; border-r
 }
 
 /* odkaz „Přeskočit na obsah“: viditelný jen při zaměření klávesnicí */
-.skip { position: absolute; left: 1rem; top: -4rem; z-index: 30; background: var(--sun); color: var(--sun-ink); font-family: var(--f-data); font-weight: 700; padding: 0.6rem 1rem; border-radius: 6px; transition: top 0.15s; }
+.skip { position: absolute; left: 1rem; top: -4rem; z-index: 30; background: var(--sun); color: var(--sun-ink); font-family: var(--f-data); font-weight: 700; padding: 0.6rem 1rem; border-radius: 0; transition: top 0.15s; }
 .skip:focus { top: 0.6rem; outline: 3px solid var(--ink); }
 main:focus { outline: none; }
 

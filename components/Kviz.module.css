@@ -4,7 +4,7 @@
 .otazka { margin: 0; padding: 1rem 1.1rem 1.1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); display: block; min-width: 0; }
 .legend { float: left; width: 100%; margin: 0 0 0.75rem; padding: 0; font-family: var(--f-data); font-weight: 700; font-size: var(--s1); line-height: 1.25; display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
 .legend + * { clear: both; }
-.cislo { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 999px; background: var(--ink); color: var(--paper); font-size: var(--s-1); flex: 0 0 auto; }
+.cislo { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 0; background: var(--ink); color: var(--paper); font-size: var(--s-1); flex: 0 0 auto; }
 .nepovinne { font-weight: 400; color: var(--muted); font-size: var(--s-1); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; min-width: 0; }
@@ -16,7 +16,7 @@
   font-size: var(--s-1);
   line-height: 1.3;
   padding: 0.55rem 0.95rem;
-  border-radius: 999px;
+  border-radius: 0;
   border: 2px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink);
@@ -59,12 +59,12 @@
 .stojiUvod { font-size: var(--s-1); max-width: var(--prose); }
 .stojiSeznam { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.7rem; font-size: var(--s-1); line-height: 1.5; }
 .proc { display: block; font-family: var(--f-data); font-weight: 700; }
-.kolik { display: inline-block; margin-left: 0.4rem; padding: 0 0.4rem; border-radius: 4px; background: var(--alert-soft); font-weight: 700; font-size: 0.95em; }
+.kolik { display: inline-block; margin-left: 0.4rem; padding: 0 0.4rem; border-radius: 0; background: var(--alert-soft); font-weight: 700; font-size: 0.95em; }
 .stojiZdroj { display: block; overflow-wrap: anywhere; }
 
 .sdilet { padding: 1.1rem 1.15rem; display: grid; gap: 1rem; min-width: 0; }
 .obrazek { display: grid; gap: 0.8rem; justify-items: start; }
-.platno { display: block; width: 100%; max-width: 420px; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; border: 1px solid var(--line); background: var(--sun); }
+.platno { display: block; width: 100%; max-width: 420px; height: auto; aspect-ratio: 1 / 1; border-radius: 0; border: 1px solid var(--line); background: var(--sun); }
 .sdiletPozn { margin: 0; }
 .textBtn { font: inherit; font-weight: 700; color: var(--river); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 0.15em; cursor: pointer; }
 .textBtn:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }

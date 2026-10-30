@@ -25,7 +25,7 @@
   padding-block: 0.8rem 0.6rem;
   min-width: 0;
 }
-.stageBar { height: 4px; background: var(--line); border-radius: 4px; overflow: hidden; }
+.stageBar { height: 4px; background: var(--line); border-radius: 0; overflow: hidden; }
 .stageBarFill { display: block; height: 100%; background: var(--sun); transform-origin: 0 50%; }
 .stageStitek {
   margin-top: 0.5rem;
@@ -170,7 +170,7 @@
   font-weight: 700;
   line-height: 1.2;
   padding: 0.25rem 0.65rem;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--line-strong);
   color: var(--ink);
   background: var(--surface);
@@ -189,14 +189,14 @@
 }
 .kapBunka {
   aspect-ratio: 1;
-  border-radius: 3px;
+  border-radius: 0;
   background: var(--line);
   transition: background-color 0.25s ease, transform 0.25s ease;
 }
 .kapBunka[data-on] { background: var(--sun); transform: scale(1.06); }
 .kapLegenda { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1rem; font-family: var(--f-data); font-size: var(--s-1); }
 .kapLegenda span { display: inline-flex; align-items: center; gap: 0.35rem; }
-.legSpi, .legPracuje { display: inline-block; width: 12px; height: 12px; border-radius: 2px; background: var(--line); }
+.legSpi, .legPracuje { display: inline-block; width: 12px; height: 12px; border-radius: 0; background: var(--line); }
 .legPracuje { background: var(--sun); }
 .kapZdvoj {
   font-family: var(--f-display);
@@ -205,7 +205,7 @@
   background: var(--ink);
   color: var(--paper);
   padding: 0.2rem 0.9rem;
-  border-radius: 999px;
+  border-radius: 0;
 }
 
 /* 7 výsledek */
@@ -256,7 +256,7 @@
   right: 12%;
   bottom: 0;
   background: var(--river);
-  border-radius: 3px 3px 0 0;
+  border-radius: 0;
   transform-origin: 50% 100%;
 }
 .sloupecVypln[data-odhad] { background: var(--line-strong); opacity: 0.7; }
@@ -285,7 +285,7 @@
 .krok[data-active] .krokKarta { opacity: 1; box-shadow: inset 4px 0 0 var(--sun); }
 .krokNadpis { font-size: clamp(1.9rem, 3.4vw, 2.6rem); }
 .odstavec { font-size: var(--s1); line-height: 1.5; }
-.odstavec b { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; border-radius: 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.odstavec b { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; border-radius: 0; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .odkazy { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .krokChips { display: none; }
 .krokOdkaz { display: none; font-family: var(--f-data); font-weight: 700; }

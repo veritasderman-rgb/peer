@@ -74,7 +74,7 @@
   background: var(--surface);
   border: 1px solid var(--line);
   border-left: 4px solid var(--sun);
-  border-radius: 10px;
+  border-radius: 0;
   padding: 0.6rem 0.9rem;
   font-size: var(--s-1);
   line-height: 1.4;
@@ -109,7 +109,7 @@
 }
 .stepTitle { font-family: var(--f-display); font-weight: 400; font-size: var(--s2); text-transform: uppercase; }
 .stepText { font-size: var(--s1); max-width: 40ch; }
-.stepText b { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; border-radius: 3px; }
+.stepText b { background: var(--sun); color: var(--sun-ink); padding: 0 0.15em; border-radius: 0; }
 
 @media (max-width: 760px) {
   .story { grid-template-columns: 1fr; gap: 0; }

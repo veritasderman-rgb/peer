@@ -119,7 +119,7 @@
   display: block;
   height: 100%;
   background: var(--line-strong);
-  border-radius: 3px;
+  border-radius: 0;
   transition: width 0.25s ease;
 }
 .barToday { background: var(--alert); }
