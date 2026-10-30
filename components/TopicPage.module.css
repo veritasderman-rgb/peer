@@ -2,6 +2,8 @@
 .section { padding-block: 3.5rem 0; display: grid; gap: 1.25rem; align-content: start; }
 .section:last-child { padding-bottom: 2rem; }
 
+/* úvod tématu je černý pás přes celou šířku jako podstránky peer.pirati.cz */
+.heroBand { padding-block: 0.5rem 3rem; }
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
@@ -23,7 +25,7 @@
   border: 2px solid var(--ink);
   color: var(--ink);
   padding: 0.35rem 0.8rem;
-  border-radius: 0;
+  border-radius: 999px;
 }
 .depthNav a:hover { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
 

@@ -1,17 +1,20 @@
-/* Design tokens: brand podle styleguide.pirati.cz 2.22
-   (černá + bílá základ, Pirati Yellow #fec934 jen jako akcentní plocha pod černým textem,
-   Cyan 500/200 pro odkazy a vedlejší akcent). Tvary taky podle styleguide: ostré rohy, tlačítka jako plné
-   obdélníky, karty bez rámečku jen se stínem (atoms/cards, „elevation“). Fonty dodává next/font v layout.tsx
-   jako --font-bebas, --font-roboto, --font-roboto-condensed. */
+/* Design tokens podle webu PEER (peer.pirati.cz), který stojí na styleguide.pirati.cz:
+   bílý papír, černé pásy přes celou šířku, šedé plochy bez stínů, ostré rohy u karet,
+   tlačítka jako černé „pilulky“ v Roboto Condensed verzálkami, nadpisy Bebas Neue.
+   Akcent je fialová z loga PEER (#cf7bcc); jako barva textu na bílé její tmavší odstín #783777 (8:1, 4,5:1 i na ztlumených kartách).
+   Velké nadpisy v černých pásech mají přechod fialová → žlutá jako na peer.pirati.cz (.gradient).
+   Fonty dodává next/font v layout.tsx jako --font-bebas, --font-roboto, --font-roboto-condensed. */
 :root {
-  --paper: #f7f7f7;
-  --surface: #ffffff;
+  --paper: #ffffff;
+  --surface: #f0f0f0;
   --ink: #000000;
   --muted: #4c4c4c;
-  --line: #e0e0e0;
+  --line: #dcdcdc;
   --line-strong: #adadad;
-  --river: #004958;
-  --river-soft: #dcefee;
+  --river: #783777;
+  --river-soft: #f6e9f5;
+  --peer-violet: #cf7bcc;
+  --peer-yellow: #fdc801;
   --sun: #fec934;
   --sun-ink: #000000;
   --alert: #cc0b4d; /* tmavší odstín brand růžové: text min. 4,5:1 i na --alert-soft a --river-soft */
@@ -26,19 +29,20 @@
   --f-data: var(--font-roboto-condensed), var(--font-roboto), Helvetica, Arial, sans-serif;
 
   --s-1: 0.875rem;
-  --s0: 1.0625rem;
-  --s1: 1.25rem;
+  --s0: 1.125rem;
+  --s1: 1.3rem;
   --s2: 1.75rem;
-  --s3: 2.6rem;
-  --s4: clamp(2.8rem, 7vw, 4.6rem);
+  --s3: clamp(2.3rem, 5vw, 3rem);
+  --s4: clamp(3rem, 8vw, 5.5rem);
   --s5: clamp(4rem, 14vw, 9rem);
+  --s6: clamp(3.6rem, 12vw, 10.6rem); /* obří titulek v černém pásu, jako na peer.pirati.cz */
 
   --gutter: max(16px, env(safe-area-inset-left, 0px));
-  --maxw: 1080px;
+  --maxw: 1200px;
   --prose: 68ch;
   --radius: 0;
-  /* stín karty ze styleguide (atoms/cards); v tmavém režimu ho nahradí tenký obrys */
-  --shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  /* PEER má plochy bez stínů; token zůstává, aby se dal stín vrátit na jednom místě */
+  --shadow: none;
   color-scheme: light;
 }
 
@@ -50,15 +54,14 @@
     --muted: #adadad;
     --line: #343434;
     --line-strong: #4c4c4c;
-    --river: #57b3bd;
-    --river-soft: #16343a;
+    --river: #d68fd3;
+    --river-soft: #3a2438;
     --alert: #f1ae7b;
     --alert-soft: #3a2418;
     --green: #76cc9f;
     --green-ink: #76cc9f;
     --green-soft: #1f3a2c;
     --focus: var(--sun);
-    --shadow: 0 0 0 1px var(--line);
     color-scheme: dark;
   }
 }
@@ -69,15 +72,14 @@
   --muted: #adadad;
   --line: #343434;
   --line-strong: #4c4c4c;
-  --river: #57b3bd;
-  --river-soft: #16343a;
+  --river: #d68fd3;
+  --river-soft: #3a2438;
   --alert: #f1ae7b;
   --alert-soft: #3a2418;
   --green: #76cc9f;
   --green-ink: #76cc9f;
   --green-soft: #1f3a2c;
   --focus: var(--sun);
-  --shadow: 0 0 0 1px var(--line);
   color-scheme: dark;
 }
 
@@ -89,7 +91,7 @@ body {
   color: var(--ink);
   font-family: var(--f-body);
   font-size: var(--s0);
-  line-height: 1.6;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 img, svg { max-width: 100%; height: auto; }
@@ -99,7 +101,9 @@ a { color: var(--river); text-underline-offset: 0.15em; }
 button { font: inherit; }
 
 h1, h2, h3, h4 { margin: 0; line-height: 1.05; text-wrap: balance; }
-h1, h2 { font-family: var(--f-display); font-weight: 400; letter-spacing: 0.01em; text-transform: uppercase; }
+h1, h2 { font-family: var(--f-display); font-weight: 400; letter-spacing: 0; text-transform: uppercase; }
+h1 { line-height: 0.95; }
+h2 { line-height: 1.1; }
 h1 { font-size: var(--s4); }
 h2 { font-size: var(--s3); }
 h3 { font-family: var(--f-data); font-size: var(--s1); font-weight: 700; line-height: 1.2; }
@@ -114,28 +118,52 @@ p { margin: 0; }
 .sun { background: var(--sun); color: var(--sun-ink); }
 mark { background: var(--sun); color: var(--sun-ink); padding: 0 0.2em; }
 
-/* praporek ze styleguide (atoms/flags): Bebas na černé ploše, pravý okraj vystřižený do šipky */
-.flag {
-  justify-self: start;
-  display: inline-block;
-  font-family: var(--f-display); font-size: var(--s1); line-height: 1; letter-spacing: 0.02em; text-transform: uppercase;
-  background: var(--ink); color: var(--paper);
-  padding: 0.45rem 1.6rem 0.4rem 0.8rem;
-  clip-path: polygon(0 0, 100% 0, calc(100% - 0.7rem) 50%, 100% 100%, 0 100%);
+/* nadpis s přechodem fialová → žlutá (hlavní titulek na peer.pirati.cz); jen na černém pásu,
+   na bílé by žlutý konec neměl kontrast */
+.gradient {
+  background: linear-gradient(to right, var(--peer-violet), var(--peer-yellow));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--peer-yellow); /* záloha bez background-clip */
+  /* přechod se kreslí jen do rámečku písma; Bebas má háčky a čárky nad ním, tak rámeček nahoru zvětšíme */
+  padding-top: 0.14em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
-/* tlačítko podle styleguide (atoms/buttons): obdélník bez zaoblení, Roboto, vodorovně vzdušné */
+/* černý pás přes celou šířku stránky (PEER). Uvnitř se tokeny přepnou na tmavou sadu,
+   takže tlačítka, karty i odkazy v něm vypadají správně bez vlastních pravidel. */
+.band-dark {
+  --ink: #ffffff;
+  --paper: #000000;
+  --surface: #1a1a1a;
+  --muted: #c4c4c4;
+  --line: #333333;
+  --line-strong: #666666;
+  --river: var(--peer-violet);
+  --river-soft: #3a2438;
+  --alert: #f1ae7b;
+  --alert-soft: #3a2418;
+  --focus: var(--sun);
+  background: #000;
+  color: var(--ink);
+}
+
+/* tlačítko jako na peer.pirati.cz: pilulka, Roboto Condensed, verzálky */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  font-family: var(--f-body); font-weight: 500; font-size: var(--s0); line-height: 1.3;
-  padding: 0.7rem 1.8rem; border-radius: 0; border: 2px solid var(--ink);
+  font-family: var(--f-data); font-weight: 700; font-size: 1rem; line-height: 1.25;
+  text-transform: uppercase; letter-spacing: 0.01em;
+  padding: 0.75rem 2rem; border-radius: 999px; border: 2px solid var(--ink);
   background: var(--ink); color: var(--paper); text-decoration: none; cursor: pointer;
-  transition: background-color 0.12s, color 0.12s;
+  transition: background-color 0.12s, color 0.12s, border-color 0.12s;
 }
-.btn:hover { background: var(--surface); color: var(--ink); }
+.btn:hover { background: var(--paper); color: var(--ink); }
 .btn.secondary { background: transparent; color: var(--ink); }
 .btn.secondary:hover { background: var(--ink); color: var(--paper); }
 .btn.sun { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.btn.sun:hover { background: transparent; color: var(--ink); }
 
 .card { background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: var(--shadow); }
 .src { font-size: var(--s-1); color: var(--muted); }

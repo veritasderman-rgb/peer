@@ -1,4 +1,4 @@
-.footer { border-top: 3px solid var(--sun); margin-top: 4rem; padding: 2.5rem 0 3rem; background: var(--surface); color: var(--muted); font-size: var(--s-1); }
+.footer { margin-top: 5rem; padding: 4rem 0 5rem; color: var(--muted); font-size: var(--s-1); }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 2rem 2.5rem; }
 .col { display: grid; gap: 0.6rem; align-content: start; }
 .h { font-family: var(--f-data); font-size: var(--s-1); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink); margin: 0; }

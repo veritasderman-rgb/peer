@@ -27,7 +27,8 @@ export function TopicPage({ t }: { t: TopicConfig }) {
   const kdo = garantTematu(t.slug);
   return (
     <article className={styles.page}>
-      <section className={`wrap ${styles.hero}`} id="hook">
+      <section className={`band-dark ${styles.heroBand}`} id="hook">
+        <div className={`wrap ${styles.hero}`}>
         <div className={styles.heroText}>
           <nav className={styles.crumbs} aria-label="Kde jsi">
             <ol>
@@ -53,6 +54,7 @@ export function TopicPage({ t }: { t: TopicConfig }) {
         </div>
         <div className={styles.heroBobr}>
           <GarantBubble kdo={kdo} mood={t.hook.bobrMood ?? "surprised"} side="left">{t.hook.bobr}</GarantBubble>
+        </div>
         </div>
       </section>
 

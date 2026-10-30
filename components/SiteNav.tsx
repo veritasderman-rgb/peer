@@ -58,7 +58,7 @@ export function SiteNav() {
       <div className={`wrap ${styles.inner}`}>
         <Link href="/" className={styles.brand}>
           <span className={styles.flag} aria-hidden="true" />
-          <span className="display">Česko má na víc!</span>
+          <span className="display gradient">Česko má na víc!</span>
         </Link>
         <HledaniBox kompaktni className={styles.hledaniDesktop} />
         <button
