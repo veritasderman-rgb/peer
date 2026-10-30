@@ -1,12 +1,12 @@
 /* Design tokens podle webu PEER (peer.pirati.cz), který stojí na styleguide.pirati.cz:
-   bílý papír, černé pásy přes celou šířku, šedé plochy bez stínů, ostré rohy u karet,
+   bílý papír, černé pásy přes celou šířku, bílé karty s tenkým obrysem místo stínu, ostré rohy u karet,
    tlačítka jako černé „pilulky“ v Roboto Condensed verzálkami, nadpisy Bebas Neue.
    Akcent je fialová z loga PEER (#cf7bcc); jako barva textu na bílé její tmavší odstín #783777 (8:1, 4,5:1 i na ztlumených kartách).
    Velké nadpisy v černých pásech mají přechod fialová → žlutá jako na peer.pirati.cz (.gradient).
    Fonty dodává next/font v layout.tsx jako --font-bebas, --font-roboto, --font-roboto-condensed. */
 :root {
   --paper: #ffffff;
-  --surface: #f0f0f0;
+  --surface: #ffffff;
   --ink: #000000;
   --muted: #4c4c4c;
   --line: #dcdcdc;
@@ -41,8 +41,8 @@
   --maxw: 1200px;
   --prose: 68ch;
   --radius: 0;
-  /* PEER má plochy bez stínů; token zůstává, aby se dal stín vrátit na jednom místě */
-  --shadow: none;
+  /* karty jsou bílé na bílém, odliší je jen tenký obrys (box-shadow, ať nemění rozměry); bez stínů jako PEER */
+  --shadow: 0 0 0 1px var(--line);
   color-scheme: light;
 }
 
@@ -146,6 +146,7 @@ mark { background: var(--sun); color: var(--sun-ink); padding: 0 0.2em; }
   --alert: #f1ae7b;
   --alert-soft: #3a2418;
   --focus: var(--sun);
+  --shadow: none; /* v černém pásu karty odliší tmavší plocha, obrys by svítil */
   background: #000;
   color: var(--ink);
 }
