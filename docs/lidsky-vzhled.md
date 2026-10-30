@@ -63,6 +63,12 @@ takže se mu vzhled přiblížil:
 - **Typografie:** text 18/28 px (PEER), nadpisy sekcí Bebas 48 px, úvodní text v Roboto Condensed.
 - **Plochy bez stínů:** karty jsou bílé na bílém papíru, odliší je tenký světle šedý obrys (`--line`).
 
+## Bez tmavé varianty
+
+Web je vždy světlý. Tmavá varianta (podle nastavení systému) je zrušená a `color-scheme: only light`
+vypíná i automatické ztmavování v Chrome. Zmínky o tmavém režimu výš popisují stav před touto změnou.
+Doplňky prohlížeče typu Dark Reader si stránku ztmaví dál po svém; to web neovlivní.
+
 ## Návrh dalších kroků (potřebuje rozhodnutí lidí)
 
 ### Vzhled

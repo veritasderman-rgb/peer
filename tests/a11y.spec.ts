@@ -1,7 +1,8 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
-/* Přístupnost: axe-core (WCAG 2.0/2.1 A + AA) nad vybranými stránkami ve světlém i tmavém režimu.
+/* Přístupnost: axe-core (WCAG 2.0/2.1 A + AA) nad vybranými stránkami při světlém i tmavém nastavení systému.
+   Web má jen světlou variantu; běh s tmavým nastavením hlídá, že se stránka nepřepne a zůstane bílá.
    Selhává na porušeních s dopadem serious nebo critical; při selhání vypíše celý seznam.
    Běží nad produkčním buildem jako ostatní testy (viz playwright.config.ts). */
 
@@ -24,6 +25,10 @@ for (const scheme of SCHEMES) {
         expect(res?.status(), "HTTP status").toBe(200);
         /* počkáme na hydrataci a na dokončení případných přechodů barev */
         await page.waitForTimeout(600);
+
+        /* web je vždy světlý: bílé pozadí i při tmavém nastavení systému */
+        const pozadi = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+        expect(pozadi, "pozadí stránky").toBe("rgb(255, 255, 255)");
 
         const { violations } = await new AxeBuilder({ page }).withTags(TAGS).analyze();
         const serious = violations.filter((v) => v.impact === "serious" || v.impact === "critical");
